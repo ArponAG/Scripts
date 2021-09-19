@@ -1,3 +1,8 @@
+-- God Mode Script by Sensei Joshy#1060
+
+-- Fixed by s3ps#3601 & Arpon AG#6612  :p
+ 
+
 _DW96mDFmhACmtXoz, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
