@@ -2174,7 +2174,6 @@ function DiscordLib:Window(text)
 			function ChannelContent:Toggle(text,default,callback)
 				local toggled = default
 
-                print("reeeeeeeeeeeeeee")
 				local Toggle = Instance.new("TextButton")
 				local ToggleTitle = Instance.new("TextLabel")
 				local ToggleFrame = Instance.new("Frame")
