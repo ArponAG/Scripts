@@ -166,7 +166,7 @@ function sex()
                 warn(unitinfo)
                 if unitinfo ~= nil then
                     local unitinfo_ = unitinfo:split(" #")
-                    task.wait(0.5)
+                    task.wait(0.3)
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.equip_unit:InvokeServer(unitinfo_[2])
                 end
             end
