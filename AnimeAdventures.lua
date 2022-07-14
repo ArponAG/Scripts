@@ -76,8 +76,8 @@ function sex()
 
     --Webhook sender
     function webhook()
-
-        gems = tostring(game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.GoldGemXP.GemReward.Main.Amount.Text)
+        pcall(function()
+            gems = tostring(game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.GoldGemXP.GemReward.Main.Amount.Text)
             cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
             ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
             waves = cwaves:split(": ")
@@ -131,10 +131,6 @@ function sex()
             local sex = {Url = url, Body = porn, Method = "POST", Headers = headers}
             warn("Sending webhook notification...")
             request(sex)
-
-
-        pcall(function()
-            
         end)
 
     end
