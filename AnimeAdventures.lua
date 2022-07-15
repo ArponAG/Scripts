@@ -20,7 +20,7 @@ local UserInputService = game:GetService("UserInputService")
 getgenv().savefilename = "AnimeAdventures_"..game.Players.LocalPlayer.Name..".json"
 
 --Webhook sender
-local function webhook()
+local function wbtest()
 	pcall(function()
 		local url = tostring(getgenv().weburl) --webhook
 		print("webhook?")
@@ -463,7 +463,7 @@ function sex()
             updatejson()
         end)
         webhooktab:Button("Test Webhook", function()
-            webhook()
+            wbtest()
         end)
 
         -- set unit position end--
@@ -507,7 +507,7 @@ function sex()
             getgenv().autosummongem = bool
             while getgenv().autosummongem do
                 task.wait()
-                local args = {
+                local args = { 
                     [1] = "dbz_fighter",
                     [2] = "gems"
                 }
@@ -636,11 +636,73 @@ end))
 
 ------// Auto Leave \\------
 coroutine.resume(coroutine.create(function()
+
+    local function webhook()
+        pcall(function()
+            local url = tostring(getgenv().weburl) --webhook
+            print("webhook?")
+            if url == "" then
+                return
+            end
+    
+            gems = tostring(game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.GoldGemXP.GemReward.Main.Amount.Text)
+            cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
+            ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
+            waves = cwaves:split(": ")
+            ttime = ctime:split(": ")
+    
+            local data = {
+                ["content"] = "",
+                ["username"] = "Anime Adventures",
+                ["avatar_url"] = "https://tr.rbxcdn.com/e5b5844fb26df605986b94d87384f5fb/150/150/Image/Jpeg",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = "Anime Adventures | Result ✔",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["description"] = "🎮 **"..game:GetService("Players").LocalPlayer.Name.."** 🎮",
+                        ["color"] = 110335,
+    
+                        ["thumbnail"] = {
+                            ['url'] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.userId .. "&width=420&height=420&format=png"
+                        },
+    
+                        ["fields"] = {
+                            {
+                                ["name"] = "Total Waves:",
+                                ["value"] = tostring(waves[2]) ..
+                                    " <:wave:997136622363627530>",
+                                ["inline"] = true
+                            }, {
+                                ["name"] = "Recieved Gems:",
+                                ["value"] = gems .. " <:gem:997123585476927558>",
+                                ["inline"] = true
+                            }, {
+                                ["name"] = "Total Time:",
+                                ["value"] = tostring(ttime[2]) .. " ⏳",
+                                ["inline"] = true
+                            }
+                        }
+                    }
+                }
+            }
+    
+            local porn = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = porn, Method = "POST", Headers = headers}
+            warn("Sending webhook notification...")
+            request(sex)
+        end)
+    end
+
 	local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
 	GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
 	print("Changed", GameFinished.Value == true)
 	if GameFinished.Value == true then
-		task.wait(1.5)
+		task.wait(3.3)
 		pcall(function() webhook() end)
 		print("next")
 		task.wait(2)
