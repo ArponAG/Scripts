@@ -640,6 +640,7 @@ coroutine.resume(coroutine.create(function()
 	GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
 	print("Changed", GameFinished.Value == true)
 	if GameFinished.Value == true then
+		task.wait(1.5)
 		pcall(function() webhook() end)
 		print("next")
 		task.wait(2)
