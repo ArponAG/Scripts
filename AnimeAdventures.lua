@@ -41,16 +41,14 @@ local function webhook()
 			["embeds"] = {
 				{
 					["author"] = {
-						["name"] = "Anime Adventures | Result âœ”",
+						["name"] = "Anime Adventures | Result ✔",
 						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
 					},
-					["description"] = "ðŸŽ® **"..game:GetService("Players").LocalPlayer.Name.."** ðŸŽ®",
+					["description"] = "🎮 **"..game:GetService("Players").LocalPlayer.Name.."** 🎮",
 					["color"] = 110335,
 
 					["thumbnail"] = {
-						['url'] = "https://www.roblox.com/headshot-thumbnail/image?userId=" ..
-							game.Players.LocalPlayer.userId ..
-							"&width=420&height=420&format=png"
+						['url'] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. game.Players.LocalPlayer.userId .. "&width=420&height=420&format=png"
 					},
 
 					["fields"] = {
@@ -65,7 +63,7 @@ local function webhook()
 							["inline"] = true
 						}, {
 							["name"] = "Total Time:",
-							["value"] = tostring(ttime[2]) .. " â³",
+							["value"] = tostring(ttime[2]) .. " ⏳",
 							["inline"] = true
 						}
 					}
