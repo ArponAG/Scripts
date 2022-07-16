@@ -1,3 +1,4 @@
+--v0.9
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()
@@ -292,7 +293,7 @@ function sex()
 
         
 
-        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village"}, getgenv().world, function(world)
+        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -325,6 +326,14 @@ function sex()
                 table.clear(levels)
                 getgenv().levels = {"naruto_infinite", "naruto_level_1", "naruto_level_2", "naruto_level_3",
                                     "naruto_level_4", "naruto_level_5", "naruto_level_6"}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            elseif world == "Marine's Ford" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"marineford_infinite","marineford_level_1","marineford_level_2","marineford_level_3",
+                "marineford_level_4","marineford_level_5","marineford_level_6",}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
