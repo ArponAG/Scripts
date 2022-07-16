@@ -1,4 +1,4 @@
---v1.0
+--v1.1
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()
@@ -136,7 +136,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.0".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.1".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -877,4 +877,12 @@ coroutine.resume(coroutine.create(function()
         end
     end
 end))
+
+--anti afk
+pcall(function()
+	repeat wait() until game:IsLoaded()
+	for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+		v:Disable()
+	end
+end)
 ---------------------------------------------------------------------
