@@ -1,4 +1,4 @@
---v0.9
+--v1.0
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()
@@ -18,7 +18,7 @@ local RunService = game:GetService("RunService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
 
-getgenv().savefilename = "AnimeAdventures_"..game.Players.LocalPlayer.Name..".json"
+getgenv().savefilename = "Anime-Adventures_"..game.Players.LocalPlayer.Name..".json"
 
 --Webhook sender
 local function webhook()
@@ -103,6 +103,7 @@ function sex()
 
     getgenv().SpawnUnitPos = data.xspawnUnitPos
     getgenv().SelectedUnits = data.xselectedUnits
+    getgenv().autoabilities = data.autoabilities
 
     ---// updates the json file
     function updatejson()
@@ -121,7 +122,8 @@ function sex()
             level = getgenv().level,
             door = getgenv().door,
             xspawnUnitPos = getgenv().SpawnUnitPos,
-            xselectedUnits = getgenv().SelectedUnits
+            xselectedUnits = getgenv().SelectedUnits,
+            autoabilities = getgenv().autoabilities
         }
 
         local json = HttpService:JSONEncode(xdata)
@@ -134,7 +136,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v0.9".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.0".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -162,7 +164,7 @@ function sex()
 
         local function Equip()
             game:GetService("ReplicatedStorage").endpoints.client_to_server.unequip_all:InvokeServer()
-            for i = 1, 4 do
+            for i = 1, 6 do
                 local unitinfo = getgenv().SelectedUnits["U" .. i]
                 warn(unitinfo)
                 if unitinfo ~= nil then
@@ -193,6 +195,22 @@ function sex()
             getgenv().SelectedUnits["U4"] = bool
             Equip()
         end)
+
+        local axx =  game.Players.LocalPlayer.PlayerGui["spawn_units"].Lives.Main.Desc.Level.Text:split(" ")
+
+        if tonumber(axx[2]) >= 20 then
+            getgenv().drop5 = unitselecttab:Dropdown("Unit 5", Units, getgenv().SelectedUnits["U5"], function(bool)
+                getgenv().SelectedUnits["U5"] = bool
+                Equip()
+            end)
+        end
+
+        if tonumber(axx[2]) >= 50 then
+            getgenv().drop6 = unitselecttab:Dropdown("Unit 6", Units, getgenv().SelectedUnits["U6"], function(bool)
+                getgenv().SelectedUnits["U6"] = bool
+                Equip()
+            end)
+        end
         --------------// Refresh Unit List \\-------------
 
         unitselecttab:Button("Refresh Unit List", function()
@@ -200,6 +218,8 @@ function sex()
             drop2:Clear()
             drop3:Clear()
             drop4:Clear()
+            getgenv().drop5:Clear()
+            getgenv().drop6:Clear()
             loadUnit()
             game:GetService("ReplicatedStorage").endpoints.client_to_server.unequip_all:InvokeServer()
             for i, v in ipairs(Units) do
@@ -207,12 +227,16 @@ function sex()
                 drop2:Add(v)
                 drop3:Add(v)
                 drop4:Add(v)
+                getgenv().drop5:Add(v)
+                getgenv().drop6:Add(v)
             end
             getgenv().SelectedUnits = {
                 U1 = nil,
                 U2 = nil,
                 U3 = nil,
-                U4 = nil
+                U4 = nil,
+                U5 = nil,
+                U6 = nil
             }
         end) 
 
@@ -272,7 +296,12 @@ function sex()
             end
 
         end)
-        
+
+        autofarmtab:Toggle("Auto Abilities", getgenv().AutoFarm, function(bool)
+            getgenv().autoabilities = bool
+            updatejson()
+        end)
+
         autofarmtab:Toggle("Auto Upgrade Units", getgenv().autoupgrade, function(bool)
             getgenv().autoupgrade = bool
             updatejson()
@@ -381,6 +410,12 @@ function sex()
             getgenv().AutoFarm = bool
             updatejson()
         end)
+
+        autofarmtab:Toggle("Auto Abilities", getgenv().AutoFarm, function(bool)
+            getgenv().autoabilities = bool
+            updatejson()
+        end)
+
         autofarmtab:Toggle("Auto Start", getgenv().autostart, function(bool)
             getgenv().autostart = bool
             updatejson()
@@ -458,6 +493,26 @@ function sex()
                 "Done")
             MouseClick("UP4")
         end)
+
+        local axxc = game.Players.LocalPlayer.PlayerGui["spawn_units"].Lives.Main.Desc.Level.Text:split(" ")
+
+        if tonumber(axxc[2]) >= 20 then
+            autofarmtab:Button("Set Unit 6 Postion", function()
+                DiscordLib:Notification("Set Unit 4 Spawn Position",
+                    "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
+                    "Done")
+                MouseClick("UP5")
+            end)
+        end
+
+        if tonumber(axxc[2]) >= 50 then
+            autofarmtab:Button("Set Unit 5 Postion", function()
+                DiscordLib:Notification("Set Unit 4 Spawn Position",
+                    "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
+                    "Done")
+                MouseClick("UP6")
+            end)
+        end
 
 		--//Webhook Tab (in-game)\\--
 		webhooktab:Label("Webhook sends notification in discord everytime game Finishes.")
@@ -565,6 +620,7 @@ else
     local xdata = {
         -- unitname = "name",
         -- unitid = "id",
+        autoabilities = false,
         webhook = "",
         sellatwave = 0,
         autosell = false,
@@ -598,13 +654,27 @@ else
                 x = -2952.81689453125,
                 y = 91.80620574951172,
                 z = -707.9673461914062
+            },
+            
+            UP5 = {
+                x = -2952.81689453125,
+                y = 91.80620574951172,
+                z = -707.9673461914062
+            },
+
+            UP6 = {
+                x = -2952.81689453125,
+                y = 91.80620574951172,
+                z = -707.9673461914062
             }
         },
         xselectedUnits = {
             U1 = nil,
             U2 = nil,
             U3 = nil,
-            U4 = nil
+            U4 = nil,
+            U5 = nil,
+            U6 = nil
         }
 
     }
@@ -746,6 +816,23 @@ coroutine.resume(coroutine.create(function()
     end
 end))
 
+--//Auto Abilities--
+coroutine.resume(coroutine.create(function()
+    while task.wait() do
+        if getgenv().autoabilities then
+            if game.PlaceId ~= 8304191830 then
+                repeat task.wait() until game:GetService("Workspace"):FindFirstChild("_UNITS")
+                for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+                    repeat task.wait() until v:FindFirstChild("_stats")
+                    if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                    end
+                end
+            end
+        end
+    end
+end))
+
 ------// Auto Start \\------
 coroutine.resume(coroutine.create(function()
     while task.wait() do
@@ -790,4 +877,4 @@ coroutine.resume(coroutine.create(function()
         end
     end
 end))
-
+---------------------------------------------------------------------
