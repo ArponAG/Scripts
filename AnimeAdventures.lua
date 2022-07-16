@@ -497,8 +497,8 @@ function sex()
         local axxc = game.Players.LocalPlayer.PlayerGui["spawn_units"].Lives.Main.Desc.Level.Text:split(" ")
 
         if tonumber(axxc[2]) >= 20 then
-            autofarmtab:Button("Set Unit 6 Postion", function()
-                DiscordLib:Notification("Set Unit 4 Spawn Position",
+            autofarmtab:Button("Set Unit 5 Postion", function()
+                DiscordLib:Notification("Set Unit 5 Spawn Position",
                     "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
                     "Done")
                 MouseClick("UP5")
@@ -506,8 +506,8 @@ function sex()
         end
 
         if tonumber(axxc[2]) >= 50 then
-            autofarmtab:Button("Set Unit 5 Postion", function()
-                DiscordLib:Notification("Set Unit 4 Spawn Position",
+            autofarmtab:Button("Set Unit 6 Postion", function()
+                DiscordLib:Notification("Set Unit 6 Spawn Position",
                     "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
                     "Done")
                 MouseClick("UP6")
@@ -698,7 +698,7 @@ coroutine.resume(coroutine.create(function()
                 y = 3
                 z = 4
 
-                for i = 1, 4 do
+                for i = 1, 6 do
                     local unitinfo = getgenv().SelectedUnits["U" .. i]
                     if unitinfo ~= nil then
                         local unitinfo_ = unitinfo:split(" #")
