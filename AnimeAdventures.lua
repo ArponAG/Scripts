@@ -1,4 +1,4 @@
---v1.1
+--v1.2
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()
@@ -136,7 +136,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.1".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.2".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -197,16 +197,17 @@ function sex()
         end)
 
         local axx =  game.Players.LocalPlayer.PlayerGui["spawn_units"].Lives.Main.Desc.Level.Text:split(" ")
-
+        _G.drop5 = nil
+        _G.drop6 = nil
         if tonumber(axx[2]) >= 20 then
-            getgenv().drop5 = unitselecttab:Dropdown("Unit 5", Units, getgenv().SelectedUnits["U5"], function(bool)
+            _G.drop5 = unitselecttab:Dropdown("Unit 5", Units, getgenv().SelectedUnits["U5"], function(bool)
                 getgenv().SelectedUnits["U5"] = bool
                 Equip()
             end)
         end
 
         if tonumber(axx[2]) >= 50 then
-            getgenv().drop6 = unitselecttab:Dropdown("Unit 6", Units, getgenv().SelectedUnits["U6"], function(bool)
+            _G.drop6 = unitselecttab:Dropdown("Unit 6", Units, getgenv().SelectedUnits["U6"], function(bool)
                 getgenv().SelectedUnits["U6"] = bool
                 Equip()
             end)
@@ -218,8 +219,13 @@ function sex()
             drop2:Clear()
             drop3:Clear()
             drop4:Clear()
-            getgenv().drop5:Clear()
-            getgenv().drop6:Clear()
+            if _G.drop5 ~= nil then
+                _G.drop5:Clear()
+            end
+            if _G.drop6 ~= nil then
+                _G.drop6:Clear()
+            end 
+
             loadUnit()
             game:GetService("ReplicatedStorage").endpoints.client_to_server.unequip_all:InvokeServer()
             for i, v in ipairs(Units) do
@@ -227,8 +233,12 @@ function sex()
                 drop2:Add(v)
                 drop3:Add(v)
                 drop4:Add(v)
-                getgenv().drop5:Add(v)
-                getgenv().drop6:Add(v)
+                if _G.drop5 ~= nil then
+                    _G.drop5:Add(v)
+                end
+                if _G.drop6 ~= nil then
+                    _G.drop6:Add(v)
+                end 
             end
             getgenv().SelectedUnits = {
                 U1 = nil,
@@ -735,14 +745,14 @@ coroutine.resume(coroutine.create(function()
                         --place units 4
                         local args = {
                             [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y"] + y, pos["z"] + z), Vector3.new(0, 0, -1))
+                            [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
 
                         --place units 5
                         local args = {
                             [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y"] + y, pos["z"]), Vector3.new(0, 0, -1))
+                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                     end
