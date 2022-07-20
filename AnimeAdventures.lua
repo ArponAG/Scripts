@@ -1,4 +1,4 @@
---v1.2
+--v1.3
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()
@@ -63,10 +63,22 @@ local function webhook()
 							["value"] = gems .. " <:gem:997123585476927558>",
 							["inline"] = true
 						}, {
-							["name"] = "Total Time:",
-							["value"] = tostring(ttime[2]) .. " ⏳",
-							["inline"] = true
-						}
+                            ["name"] = "Recieved XP:",
+                            ["value"] = XP .. " 🧪",
+                            ["inline"] = true
+                        }, {
+                            ["name"] = "Total Time:",
+                            ["value"] = tostring(ttime[2]) .. " ⏳",
+                            ["inline"] = true
+                        }, {
+                            ["name"] = "Current Gems:",
+                            ["value"] = tostring(game.Players.LocalPlayer._stats.gem_amount.Value).." <:gem:997123585476927558>",
+                            ["inline"] = true
+                        }, {
+                            ["name"] = "Current Level:",
+                            ["value"] = tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text).. " ✨",
+                            ["inline"] = true
+                        }
 					}
 				}
 			}
@@ -136,7 +148,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.2".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.3".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -784,11 +796,11 @@ coroutine.resume(coroutine.create(function()
         if getgenv().autoupgrade then
             if game.PlaceId ~= 8304191830 then
                 local max = 8
-                repeat task.wait() until game:GetService("Workspace"):FindFirstChild("_UNITS")
+                repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
                 for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-                    repeat task.wait() until v:FindFirstChild("_stats")
+                    repeat task.wait() until v:WaitForChild("_stats")
                     if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
-                        repeat task.wait() until v:FindFirstChild("_stats"):FindFirstChild("upgrade")
+                        repeat task.wait() until v:WaitForChild("_stats"):WaitForChild("upgrade")
 
                         if v["_stats"].upgrade.Value == 0 or v["_stats"].upgrade.Value <= max then
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
@@ -808,15 +820,15 @@ coroutine.resume(coroutine.create(function()
         if getgenv().autosell and tonumber(getgenv().sellatwave) <= _wave.Value then
             getgenv().disableatuofarm = true
             if game.PlaceId ~= 8304191830 then
-                repeat task.wait() until game:GetService("Workspace"):FindFirstChild("_UNITS")
+                repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
                 for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
                     repeat
                         task.wait()
-                    until v:FindFirstChild("_stats")
+                    until v:WaitForChild("_stats")
                     if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
                         repeat
                             task.wait()
-                        until v:FindFirstChild("_stats"):FindFirstChild("upgrade")
+                        until v:WaitForChild("_stats"):WaitForChild("upgrade")
             
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
                     end
@@ -831,9 +843,9 @@ coroutine.resume(coroutine.create(function()
     while task.wait() do
         if getgenv().autoabilities then
             if game.PlaceId ~= 8304191830 then
-                repeat task.wait() until game:GetService("Workspace"):FindFirstChild("_UNITS")
+                repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
                 for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-                    repeat task.wait() until v:FindFirstChild("_stats")
+                    repeat task.wait() until v:WaitForChild("_stats")
                     if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                     end
