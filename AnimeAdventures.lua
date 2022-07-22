@@ -1,4 +1,4 @@
---v1.3.1
+--v1.4
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()
@@ -95,6 +95,18 @@ local function webhook()
 	end)
 end
 
+
+getgenv().UnitCache = {}
+
+for _, Module in next, game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Data"):WaitForChild("Units"):GetDescendants() do
+    if Module:IsA("ModuleScript") and Module.Name ~= "UnitPresets" then
+        for UnitName, UnitStats in next, require(Module) do
+            getgenv().UnitCache[UnitName] = UnitStats
+        end
+    end
+end
+
+
 function sex()
     -- reads jsonfile
     local jsonData = readfile(savefilename)
@@ -149,7 +161,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.3.1".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.4".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -570,12 +582,21 @@ function sex()
     end
 
     --------------------------------------------------
-    -------------------- Misc Tab --------------------
     --------------------------------------------------
 
-    if game.PlaceId == 8304191830 then
-        local misc = serv:Channel("Misc")
 
+    if game.PlaceId == 8304191830 then
+
+
+        --------------------------------------------------
+        -------------------- Auto Buy/Sell ---------------
+        getgenv().UnitSellTog = false
+        getgenv().autosummontickets = false
+        getgenv().autosummongem = false
+        getgenv().autosummongem10 = false
+
+
+        local misc = serv:Channel("Auto Buy/Sell")
         misc:Toggle("Auto Summon {Use Ticket 1}", getgenv().autosummontickets, function(bool)
             getgenv().autosummontickets = bool
             while getgenv().autosummontickets do
@@ -620,6 +641,18 @@ function sex()
             end
             updatejson()
         end)
+
+        local utts = misc:Dropdown("Select Rarity", {"Rare", "Epic", "Legendary"}, getgenv().UnitToSell, function(u)
+            getgenv().UnitToSell = u
+        end)
+
+        misc:Toggle("Auto Sell Units", getgenv().UnitSellTog, function(bool)
+            getgenv().UnitSellTog = bool
+        end)
+
+        
+
+
     end
 
     local credits = serv:Channel("Credits")
@@ -791,6 +824,34 @@ coroutine.resume(coroutine.create(function()
 	end)
 end))
 
+
+
+
+------// Auto Sell Units \\------
+coroutine.resume(coroutine.create(function()
+while task.wait() do
+    if getgenv().UnitSellTog then
+
+        for i, v in pairs(game:GetService("Players")[game.Players.LocalPlayer.Name].PlayerGui.collection.grid.List.Outer.UnitFrames:GetChildren()) do
+            if v.Name == "CollectionUnitFrame" then
+                repeat task.wait() until v:FindFirstChild("name")
+                for _, Info in next, getgenv().UnitCache do
+                    if Info.name == v.name.Text and Info.rarity == getgenv().UnitToSell then
+                        local args = {
+                            [1] = {
+                                [1] = tostring(v._uuid.Value)
+                            }
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_units:InvokeServer(unpack(args))
+                     end
+                end
+            end
+        end
+        
+    end
+end
+end))
+
 ------// Auto Upgrade \\------
 coroutine.resume(coroutine.create(function()
     while task.wait() do
@@ -903,9 +964,11 @@ end))
 
 --anti afk
 pcall(function()
-	repeat wait() until game:IsLoaded()
-	for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
-		v:Disable()
-	end
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
 end)
 ---------------------------------------------------------------------
