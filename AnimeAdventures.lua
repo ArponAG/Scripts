@@ -642,7 +642,7 @@ function sex()
             updatejson()
         end)
 
-        local utts = misc:Dropdown("Select Rarity", {"Rare", "Epic", "Legendary"}, getgenv().UnitToSell, function(u)
+        local utts = misc:Dropdown("Select Rarity", {"Rare", "Epic"}, getgenv().UnitToSell, function(u)
             getgenv().UnitToSell = u
         end)
 
