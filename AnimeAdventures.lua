@@ -1,4 +1,9 @@
---v1.4.1
+-- v1.4.1 --
+-- Hides users name automatically
+-- Fixed Auto upgrade
+-- Auto Ability might be broken (will fix later)
+
+
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()
