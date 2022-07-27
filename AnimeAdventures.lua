@@ -1,4 +1,4 @@
---v1.4
+--v1.4.1
 ---// Loading Section \\---
 task.wait(2)
 repeat  task.wait() until game:IsLoaded()
@@ -161,7 +161,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.4".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.4.1".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -902,19 +902,21 @@ end))
 
 --//Auto Abilities--
 coroutine.resume(coroutine.create(function()
-    while task.wait() do
-        if getgenv().autoabilities then
-            if game.PlaceId ~= 8304191830 then
-                repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
-                for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-                    repeat task.wait() until v:WaitForChild("_stats")
-                    if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+    pcall(function()
+        while task.wait() do
+            if getgenv().autoabilities then
+                if game.PlaceId ~= 8304191830 then
+                    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+                    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+                        repeat task.wait() until v:WaitForChild("_stats"):WaitForChild("Value")
+                        if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                        end
                     end
                 end
             end
         end
-    end
+    end)
 end))
 
 ------// Auto Start \\------
@@ -954,13 +956,23 @@ coroutine.resume(coroutine.create(function()
                     [1] = getgenv().door
                 }
 
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(
-                    args))
-
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                task.wait()
             end
         end
     end
 end))
+
+--hide name
+task.spawn(function()  -- Hides name for yters (not sure if its Fe)
+    while task.wait() do
+        pcall(function()
+            if game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead") then
+               workspace[game.Players.LocalPlayer.Name].Head["_overhead"]:Destroy()
+            end
+        end)
+    end
+end)
 
 --anti afk
 pcall(function()
