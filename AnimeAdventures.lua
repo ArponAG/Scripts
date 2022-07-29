@@ -909,9 +909,11 @@ coroutine.resume(coroutine.create(function()
                 if game.PlaceId ~= 8304191830 then
                     repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
                     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-                        repeat task.wait() until v:WaitForChild("_stats"):WaitForChild("Value")
-                        if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                        repeat task.wait() until v:WaitForChild("_stats")			
+                       if v:FindFirstChild("_stats") then
+                            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                            end
                         end
                     end
                 end
