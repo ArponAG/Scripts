@@ -1,4 +1,4 @@
--- v1.4.1 --
+-- v1.4.2 --
 -- Hides users name automatically
 -- Fixed Auto upgrade
 -- Auto Ability might be broken (will fix later)
@@ -355,7 +355,7 @@ function sex()
             end
         end)
 
-        autofarmtab:Textbox("Select Wave Number for Auto Sell {Press Enter}", getgenv().sellatwave, false, function(t)
+        autofarmtab:Textbox("Select Wave Number for Auto Sell {Press Enter}", tostring(getgenv().sellatwave), false, function(t)
             getgenv().sellatwave = tonumber(t)
             updatejson()
         end)
