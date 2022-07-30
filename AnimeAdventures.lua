@@ -934,7 +934,7 @@ coroutine.resume(coroutine.create(function()
                     end
                 end
 
-                task.wait(0.1)
+                task.wait(0.3)
 
                 local args = {
                     [1] = getgenv().door
@@ -942,7 +942,7 @@ coroutine.resume(coroutine.create(function()
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(
                     args))
 
-                    task.wait(0.1)
+                    task.wait(0.3)
 
                 local args = {
                     [1] = getgenv().door, -- Lobby 
@@ -953,7 +953,7 @@ coroutine.resume(coroutine.create(function()
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(
                     args))
 
-                    task.wait(0.1)
+                    task.wait(0.3)
 
                 local args = {
                     [1] = getgenv().door
