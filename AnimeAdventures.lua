@@ -31,7 +31,7 @@ local function webhook()
 		print("webhook?")
 		if url == "" then
 			return
-		end
+		end 
 			
     		XP = tostring(game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.GoldGemXP.XPReward.Main.Amount.Text)
 		gems = tostring(game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.GoldGemXP.GemReward.Main.Amount.Text)
