@@ -1,6 +1,6 @@
--- v1.4.3 --
+-- v1.4.4 --
 -- Added Ghoul City
--- Added delay on auto start (it was showing error "sending too many requests)
+-- Fixed Auto Start
 
 
 ---// Loading Section \\---
@@ -929,14 +929,17 @@ coroutine.resume(coroutine.create(function()
     end)
 end))
 
+
+getgenv().teleporting = true
 ------// Auto Start \\------
 coroutine.resume(coroutine.create(function()
     while task.wait() do
-        if getgenv().autostart and getgenv().AutoFarm then
+        if getgenv().autostart and getgenv().AutoFarm and getgenv().teleporting then
             if game.PlaceId == 8304191830 then
                 for i, v in pairs(game:GetService("Workspace")["_LOBBIES"].Story:GetDescendants()) do
                     if v.Name == "Owner" and v.Value == nil then
                         getgenv().door = v.Parent.Name
+                        getgenv().lobbypath = v.Parent:GetFullName() print(v.Parent:GetFullName())
                         break
                     end
                 end
@@ -965,10 +968,26 @@ coroutine.resume(coroutine.create(function()
                 }
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
                 task.wait()
+
+                for i, v in pairs(game:GetService("Workspace")["_LOBBIES"].Story:GetDescendants()) do
+                    if v.Name == "Owner" then
+                       local n = tostring(v.Value)
+                        if n == game:GetService("Players").LocalPlayer.Name then
+                            print(v.Parent.Teleporting.Value)
+                            if v.Parent.Teleporting.Value == true then
+                                getgenv().teleporting = false
+                            else
+                                getgenv().teleporting = true
+                            end
+                        end
+                    end
+                end  
+
             end
         end
     end
 end))
+
 
 --hide name
 task.spawn(function()  -- Hides name for yters (not sure if its Fe)
