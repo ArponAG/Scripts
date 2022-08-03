@@ -1,7 +1,6 @@
--- v1.4.2 --
--- Hides users name automatically
--- Fixed Auto upgrade
--- Auto Ability might be broken (will fix later)
+-- v1.4.3 --
+-- Added Ghoul City
+-- Added delay on auto start (it was showing error "sending too many requests)
 
 
 ---// Loading Section \\---
@@ -166,7 +165,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌊UPD 1] Anime Adventures v1.4.1".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[👻UPD 2] Anime Adventures v1.4.3".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -362,7 +361,7 @@ function sex()
 
         
 
-        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford"}, getgenv().world, function(world)
+        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -403,6 +402,14 @@ function sex()
                 table.clear(levels)
                 getgenv().levels = {"marineford_infinite","marineford_level_1","marineford_level_2","marineford_level_3",
                 "marineford_level_4","marineford_level_5","marineford_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            elseif world == "Ghoul City" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"tokyoghoul_infinite","tokyoghoul_level_1","tokyoghoul_level_2","tokyoghoul_level_3",
+                                    "tokyoghoul_level_4","tokyoghoul_level_5","tokyoghoul_level_6",}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
@@ -934,15 +941,14 @@ coroutine.resume(coroutine.create(function()
                     end
                 end
 
-                task.wait(0.3)
+                task.wait()
 
                 local args = {
                     [1] = getgenv().door
                 }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(
-                    args))
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
 
-                    task.wait(0.3)
+                task.wait()
 
                 local args = {
                     [1] = getgenv().door, -- Lobby 
@@ -950,15 +956,13 @@ coroutine.resume(coroutine.create(function()
                     [3] = true, -- Friends Only or not
                     [4] = getgenv().difficulty
                 }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(
-                    args))
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
 
-                    task.wait(0.3)
+                task.wait()
 
                 local args = {
                     [1] = getgenv().door
                 }
-
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
                 task.wait()
             end
