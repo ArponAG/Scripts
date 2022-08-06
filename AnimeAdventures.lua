@@ -1,8 +1,7 @@
--- Updated & Added new features by Omitooi (V3rm)
+-- Updated script with new features by Omitooi (V3rm)
 -- Script Thread: https://v3rmillion.net/showthread.php?tid=1182125
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/TrapstarKSSKSKSKKS/Main/main/Anime%20Adventures.lua"))()
-
-
+------------------------------
 
 -- v1.4.4 --
 -- Added Ghoul City
