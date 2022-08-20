@@ -1,11 +1,9 @@
--- Updated script with new features by Omitooi (V3rm)
--- Script Thread: https://v3rmillion.net/showthread.php?tid=1182125
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/TrapstarKSSKSKSKKS/Main/main/Anime%20Adventures.lua"))()
-------------------------------
+-- v1.4.5 --
+-- + Added Hollow World
 
 -- v1.4.4 --
--- Added Ghoul City
--- Fixed Auto Start
+-- + Added Ghoul City
+-- + Fixed Auto Start
 
 
 ---// Loading Section \\---
@@ -55,7 +53,7 @@ local function webhook()
 						["name"] = "Anime Adventures | Result ✔",
 						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
 					},
-					["description"] = "🎮 **"..game:GetService("Players").LocalPlayer.Name.."** 🎮",
+					["description"] = "🎮 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🎮",
 					["color"] = 110335,
 
 					["thumbnail"] = {
@@ -164,13 +162,13 @@ function sex()
         writefile(savefilename, json)
 
     end
-
+    
     --------------------------------------------------
     --------------------------------------------------
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[👻UPD 2] Anime Adventures v1.4.3".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🌒UPD 3] Anime Adventures 1.4.5".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -311,7 +309,7 @@ function sex()
                     end
                 end
 
-                task.wait(0.1)
+                task.wait()
 
                 local args = {
                     [1] = getgenv().door
@@ -319,24 +317,33 @@ function sex()
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(
                     args))
 
-                    task.wait(0.1)
+                task.wait()
 
-                local args = {
-                    [1] = getgenv().door, -- Lobby 
-                    [2] = getgenv().level, -- World
-                    [3] = true, -- Friends Only or not
-                    [4] = getgenv().difficulty
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(
-                    args))
+                if getgenv().level:match("infinite") then
+                    local args = {
+                        [1] = getgenv().door, -- Lobby 
+                        [2] = getgenv().level, -- World
+                        [3] = true, -- Friends Only or not
+                        [4] = "Hard"
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+                else
+                    local args = {
+                        [1] = getgenv().door, -- Lobby 
+                        [2] = getgenv().level, -- World
+                        [3] = true, -- Friends Only or not
+                        [4] = getgenv().difficulty
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+                end
 
-                    task.wait(0.1)
+
+                task.wait()
 
                 local args = {
                     [1] = getgenv().door
                 }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(
-                    args))
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
             end
 
         end)
@@ -366,7 +373,7 @@ function sex()
 
         
 
-        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City"}, getgenv().world, function(world)
+        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -415,6 +422,14 @@ function sex()
                 table.clear(levels)
                 getgenv().levels = {"tokyoghoul_infinite","tokyoghoul_level_1","tokyoghoul_level_2","tokyoghoul_level_3",
                                     "tokyoghoul_level_4","tokyoghoul_level_5","tokyoghoul_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            elseif world == "Hollow World" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"hueco_infinite","hueco_level_1","hueco_level_2","hueco_level_3",
+                                    "hueco_level_4","hueco_level_5","hueco_level_6",}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
@@ -936,6 +951,7 @@ end))
 
 
 getgenv().teleporting = true
+
 ------// Auto Start \\------
 coroutine.resume(coroutine.create(function()
     while task.wait() do
@@ -958,13 +974,23 @@ coroutine.resume(coroutine.create(function()
 
                 task.wait()
 
-                local args = {
-                    [1] = getgenv().door, -- Lobby 
-                    [2] = getgenv().level, -- World
-                    [3] = true, -- Friends Only or not
-                    [4] = getgenv().difficulty
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+                if getgenv().level:match("infinite") then
+                    local args = {
+                        [1] = getgenv().door, -- Lobby 
+                        [2] = getgenv().level, -- World
+                        [3] = true, -- Friends Only or not
+                        [4] = "Hard"
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+                else
+                    local args = {
+                        [1] = getgenv().door, -- Lobby 
+                        [2] = getgenv().level, -- World
+                        [3] = true, -- Friends Only or not
+                        [4] = getgenv().difficulty
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+                end
 
                 task.wait()
 
