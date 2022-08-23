@@ -1,9 +1,9 @@
+-- v1.4.6 --
+-- + Fixed Auto Ability
+
 -- v1.4.5 --
 -- + Added Hollow World
 
--- v1.4.4 --
--- + Added Ghoul City
--- + Fixed Auto Start
 
 
 ---// Loading Section \\---
@@ -168,7 +168,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌒UPD 3] Anime Adventures 1.4.5".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🌒UPD 3] Anime Adventures 1.4.6".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -938,7 +938,7 @@ coroutine.resume(coroutine.create(function()
                     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
                         repeat task.wait() until v:WaitForChild("_stats")			
                        if v:FindFirstChild("_stats") then
-                            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+                            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value > 0 then
                                 game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                             end
                         end
