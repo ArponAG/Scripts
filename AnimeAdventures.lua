@@ -1,3 +1,6 @@
+-- v1.4.7 --
+-- + Added Ant Kingdom
+
 -- v1.4.6 --
 -- + Fixed Auto Ability [if it breaks dm Arpon AG#6612]
 
@@ -168,7 +171,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[🌒UPD 3] Anime Adventures 1.4.6".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[🐛UPD 4] Anime Adventures 1.4.7".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -373,7 +376,7 @@ function sex()
 
         
 
-        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World"}, getgenv().world, function(world)
+        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World", "Ant Kingdom"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -430,6 +433,14 @@ function sex()
                 table.clear(levels)
                 getgenv().levels = {"hueco_infinite","hueco_level_1","hueco_level_2","hueco_level_3",
                                     "hueco_level_4","hueco_level_5","hueco_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            elseif world == "Ant Kingdom" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"hxhant_infinite","hxhant_level_1","hxhant_level_2","hxhant_level_3",
+                                    "hxhant_level_4","hxhant_level_5","hxhant_level_6",}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
