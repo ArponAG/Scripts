@@ -204,7 +204,7 @@ function sex()
                 warn(unitinfo)
                 if unitinfo ~= nil then
                     local unitinfo_ = unitinfo:split(" #")
-                    task.wait(0.3)
+                    task.wait(0.5)
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.equip_unit:InvokeServer(unitinfo_[2])
                 end
             end
@@ -891,26 +891,29 @@ while task.wait() do
 end
 end))
 
+
+
 ------// Auto Upgrade \\------
 coroutine.resume(coroutine.create(function()
-    while task.wait() do
-        if getgenv().autoupgrade then
-            if game.PlaceId ~= 8304191830 then
-                local max = 8
-                repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
-                for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-                    repeat task.wait() until v:WaitForChild("_stats")
-                    if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
-                        repeat task.wait() until v:WaitForChild("_stats"):WaitForChild("upgrade")
+    pcall(function()
+        while task.wait() do
+            if getgenv().autoabilities then
+                if game.PlaceId ~= 8304191830 then
 
-                        if v["_stats"].upgrade.Value == 0 or v["_stats"].upgrade.Value <= max then
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+                    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+                       if v:FindFirstChild("_stats") then
+                            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                            end
                         end
                     end
+
                 end
+                
             end
         end
-    end
+    end)
 end))
 
 
@@ -944,6 +947,7 @@ coroutine.resume(coroutine.create(function()
     pcall(function()
         while task.wait() do
             if getgenv().autoabilities then
+
                 if game.PlaceId ~= 8304191830 then
                     repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
                     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
@@ -954,6 +958,7 @@ coroutine.resume(coroutine.create(function()
                         end
                     end
                 end
+
             end
         end
     end)
