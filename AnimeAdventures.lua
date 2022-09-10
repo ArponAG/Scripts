@@ -1,7 +1,7 @@
 -- v1.4.8 --
 -- + Made autoJoin more reliable 
 -- - Removed these childish variable and function names
--- I am also an independent develeoper now ~Zero
+-- I am also an independent develeoper now ~Zero.
 
 -- v1.4.7 --
 -- + Added Ant Kingdom
