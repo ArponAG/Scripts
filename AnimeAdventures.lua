@@ -175,7 +175,7 @@ function setUp()
 
 	local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
 	local win = DiscordLib:Window("[🐛UPD 4] Anime Adventures 1.4.8".." - "..tostring(identifyexecutor()))
-	local serv = win:Server("Anime Adventures", "https://tr.rbxcdn.com/bc2ea8300bfaea9fb3193d7f801f0e8b/768/432/Image/Png")
+	local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
 
 	if game.PlaceId == 8304191830 then
 		local unitselecttab = serv:Channel("Select Units")
