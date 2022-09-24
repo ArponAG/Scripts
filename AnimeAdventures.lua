@@ -848,6 +848,11 @@ coroutine.resume(coroutine.create(function()
                             [1] = unitinfo_[2],
                             [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
                         }
+
+                        if getgenv().disableatuofarm then
+                            break
+                          end	
+                          
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                     end
                 end
