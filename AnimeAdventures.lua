@@ -1,3 +1,6 @@
+-- v1.4.9 --
+-- + Added Cursed Academy
+
 -- v1.4.8 --
 -- + Added Magic Town
 
@@ -171,7 +174,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[✨UPD 5] Anime Adventures 1.4.7".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[⛩️UPD 6] Anime Adventures 1.4.9".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -376,7 +379,7 @@ function sex()
 
         
 
-        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town"}, getgenv().world, function(world)
+        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -450,6 +453,14 @@ function sex()
                 table.clear(levels)
                 getgenv().levels = {"magnolia_infinite","magnolia_level_1","magnolia_level_2","magnolia_level_3",
                                     "magnolia_level_4","magnolia_level_5","magnolia_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+	    elseif world == "Cursed Academy" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"jjk_infinite","jjk_level_1","jjk_level_2","jjk_level_3",
+                                    "jjk_level_4","jjk_level_5","jjk_level_6",}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
@@ -848,11 +859,6 @@ coroutine.resume(coroutine.create(function()
                             [1] = unitinfo_[2],
                             [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
                         }
-
-                        if getgenv().disableatuofarm then
-                            break
-                          end	
-                          
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                     end
                 end
@@ -911,7 +917,7 @@ end))
 coroutine.resume(coroutine.create(function()
     pcall(function()
         while task.wait() do
-            if getgenv().autoupgrade then
+            if getgenv().autoabilities then
                 if game.PlaceId ~= 8304191830 then
 
                     repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
@@ -1069,4 +1075,4 @@ pcall(function()
     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
     end)
 end)
----------------------------------------------------------------------
+----------------------------- End of script ----------------------------------------
