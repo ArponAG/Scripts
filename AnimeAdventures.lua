@@ -917,7 +917,7 @@ end))
 coroutine.resume(coroutine.create(function()
     pcall(function()
         while task.wait() do
-            if getgenv().autoabilities then
+            if getgenv().autoupgrade then
                 if game.PlaceId ~= 8304191830 then
 
                     repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
