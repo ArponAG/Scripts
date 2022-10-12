@@ -1,15 +1,8 @@
+-- v1.5 --
+-- + Added Auto Infinity Castle
+
 -- v1.4.9 --
 -- + Added Cursed Academy
-
--- v1.4.8 --
--- + Added Magic Town
-
--- v1.4.7 --
--- + Added Ant Kingdom
-
--- v1.4.6 --
--- + Fixed Auto Ability [if it breaks dm Arpon AG#6612]
-
 
 
 ---// Loading Section \\---
@@ -131,6 +124,7 @@ function sex()
     getgenv().sellatwave = data.sellatwave 
     getgenv().autosell = data.autosell
     getgenv().AutoFarm = data.autofarm
+    getgenv().AutoFarmIC = data.autofarmic
     getgenv().weburl = data.webhook
     getgenv().autostart = data.autostart
     getgenv().autoupgrade = data.autoupgrade
@@ -153,12 +147,14 @@ function sex()
             autosell = getgenv().autosell,
             webhook = getgenv().weburl,
             autofarm = getgenv().AutoFarm,
+            autofarmic = getgenv().AutoFarmIC,
             autostart = getgenv().autostart,
             autoupgrade = getgenv().autoupgrade,
             difficulty = getgenv().difficulty,
             world = getgenv().world,
             level = getgenv().level,
             door = getgenv().door,
+
             xspawnUnitPos = getgenv().SpawnUnitPos,
             xselectedUnits = getgenv().SelectedUnits,
             autoabilities = getgenv().autoabilities
@@ -174,7 +170,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[⛩️UPD 6] Anime Adventures 1.4.9".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[⛩️UPD 6] Anime Adventures 1.5".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -294,7 +290,13 @@ function sex()
         --------------------------------------------------
         ------------------ Auto Farm Tab -----------------
         --------------------------------------------------
-        
+        autofarmtab:Label("Don't use Auto Start with Infinity Castle!")
+
+        autofarmtab:Toggle("Auto Farm Infinity Castle", getgenv().AutoFarmIC, function(bool)
+            getgenv().AutoFarmIC = bool
+            updatejson()
+        end)
+
         autofarmtab:Toggle("Auto Farm", getgenv().AutoFarm, function(bool)
             getgenv().AutoFarm = bool
             updatejson()
@@ -377,7 +379,10 @@ function sex()
             updatejson()
         end)
 
-        
+        getgenv().diff = autofarmtab:Dropdown("Select Difficulty", {"Normal", "Hard"}, getgenv().difficulty, function(diff)
+            getgenv().difficulty = diff
+            updatejson()
+        end)
 
         local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy"}, getgenv().world, function(world)
             getgenv().world = world
@@ -472,10 +477,7 @@ function sex()
             updatejson()
         end)
 
-        getgenv().diff = autofarmtab:Dropdown("Select Difficulty", {"Normal", "Hard"}, getgenv().difficulty, function(diff)
-            getgenv().difficulty = diff
-            updatejson()
-        end)
+
 
 		local webhooktab = serv:Channel("Webhook")
 		webhooktab:Label("Webhook sends notification in discord everytime\nGame is Finished!")
@@ -503,6 +505,12 @@ function sex()
         game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false
         game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
         game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+
+
+        autofarmtab:Toggle("Auto Farm Infinity Castle", getgenv().AutoFarmIC, function(bool)
+            getgenv().AutoFarmIC = bool
+            updatejson()
+        end)
 
         autofarmtab:Toggle("Auto Farm", getgenv().AutoFarm, function(bool)
             getgenv().AutoFarm = bool
@@ -539,7 +547,10 @@ function sex()
         end)
 
         function MouseClick(UnitPos)
+
             local connection
+            local _map = game:GetService("Workspace")["_BASES"].player.base["fake_unit"]:WaitForChild("HumanoidRootPart")
+
             connection = UserInputService.InputBegan:Connect(
                 function(input, gameProcessed)
                     if input.UserInputType == Enum.UserInputType.MouseButton1 then
@@ -550,27 +561,80 @@ function sex()
                         a.Position = mouse.hit.p
                         task.wait()
                         a.Anchored = true
-                        DiscordLib:Notification("Spawn Unit Posotion:", tostring(a.Position), "Okay!")
+                        --DiscordLib:Notification("Spawn Unit Posotion:", tostring(a.Position), "Okay!")
                         a.CanCollide = false
                         for i = 0, 1, 0.1 do
                             a.Transparency = i
                             task.wait()
                         end
                         a:Destroy()
-                        SpawnUnitPos[UnitPos]["x"] = a.Position.X
-                        SpawnUnitPos[UnitPos]["y"] = a.Position.Y
-                        SpawnUnitPos[UnitPos]["z"] = a.Position.Z
+
+                        if game.Workspace._map:FindFirstChild("namek mushroom model") then
+                            print("Namak")
+                            SpawnUnitPos["Namak"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Namak"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Namak"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("houses_new") then
+                            print("Aot")
+                            SpawnUnitPos["Aot"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Aot"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Aot"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("Snow Particles") then
+                            print("Snowy")
+                            SpawnUnitPos["Snowy"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Snowy"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Snowy"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("sand_gate") then
+                            warn("Sand")
+                            SpawnUnitPos["Sand"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Sand"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Sand"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("icebergs") then
+                            print("Marine")
+                            SpawnUnitPos["Marine"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Marine"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Marine"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
+                            print("Ghoul")
+                            SpawnUnitPos["Ghoul"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Ghoul"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Ghoul"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("Bones/dust") then
+                            print("Hollow")
+                            SpawnUnitPos["Hollow"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Hollow"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Hollow"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("campfire") then
+                            print("Ant")
+                            SpawnUnitPos["Ant"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Ant"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Ant"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("light poles") then
+                            print("Magic")
+                            SpawnUnitPos["Magic"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Magic"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Magic"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("LanternsGround") then
+                            print("Cursed")    
+                            SpawnUnitPos["Cursed"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Cursed"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Cursed"][UnitPos]["z"] = a.Position.Z
+                        end
+
                         updatejson()
                     end
                 end)
         end
+
 
         --// Set Position \\--
         autofarmtab:Button("Set Unit 1 Postion", function()
             DiscordLib:Notification("Set Unit 1 Spawn Position",
                 "Click on the floor to set the spawn unit position!\n (don't press \"Done\" until you set position)",
                 "Done")
+                warn(1)
             MouseClick("UP1")
+            warn(2)
         end)
 
         autofarmtab:Button("Set Unit 2 Postion", function()
@@ -611,6 +675,8 @@ function sex()
                 MouseClick("UP6")
             end)
         end
+
+
 
 		--//Webhook Tab (in-game)\\--
 		webhooktab:Label("Webhook sends notification in discord everytime game Finishes.")
@@ -740,6 +806,7 @@ else
         sellatwave = 0,
         autosell = false,
         autofarm = false,
+        autofarmic = false,
         autostart = false,
         autoupgrade = false,
         difficulty = "Normal",
@@ -747,40 +814,325 @@ else
         level = "nil",
         door = "nil",
         xspawnUnitPos = {
-            UP1 = {
-                x = -2952.81689453125,
-                y = 91.80620574951172,
-                z = -707.9673461914062
+            Cursed = {
+                UP1 = {
+                    y = 121.50992584228516,
+                    x = 398.6780090332031,
+                    z = -54.930965423583987
+                },
+                UP3 = {
+                    y = 122.73872375488281,
+                    x = 389.9792175292969,
+                    z = -62.68485641479492
+                },
+                UP2 = {
+                    y = 122.73583221435547,
+                    x = 393.9419860839844,
+                    z = -62.47216033935547
+                },
+                UP6 = {
+                    y = 121.5274887084961,
+                    x = 399.4963684082031,
+                    z = -60.31044387817383
+                },
+                UP5 = {
+                    y = 121.6282958984375,
+                    x = 400.8389587402344,
+                    z = -64.46269226074219
+                },
+                UP4 = {
+                    y = 122.73583221435547,
+                    x = 384.7088623046875,
+                    z = -62.72254943847656
+                }
             },
-
-            UP2 = {
-                x = -2952.81689453125,
-                y = 91.80620574951172,
-                z = -707.9673461914062
+            Sand = {
+                UP1 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP3 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP2 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP6 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP5 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP4 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                }
             },
-
-            UP3 = {
-                x = -2952.81689453125,
-                y = 91.80620574951172,
-                z = -707.9673461914062
+            Namak = {
+                UP1 = {
+                    y = 92.3384780883789,
+                    x = -2950.557861328125,
+                    z = -704.0296020507813
+                },
+                UP3 = {
+                    y = 92.5256118774414,
+                    x = -2950.2509765625,
+                    z = -709.864013671875
+                },
+                UP2 = {
+                    y = 92.5256118774414,
+                    x = -2950.45556640625,
+                    z = -697.2029418945313
+                },
+                UP6 = {
+                    y = 92.16944885253906,
+                    x = -2946.967041015625,
+                    z = -710.122802734375
+                },
+                UP5 = {
+                    y = 92.15478515625,
+                    x = -2947.684326171875,
+                    z = -699.6248779296875
+                },
+                UP4 = {
+                    y = 92.5256118774414,
+                    x = -2962.578369140625,
+                    z = -709.79541015625
+                }
             },
-
-            UP4 = {
-                x = -2952.81689453125,
-                y = 91.80620574951172,
-                z = -707.9673461914062
+            Ghoul = {
+                UP1 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP3 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP2 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP6 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP5 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP4 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                }
             },
-            
-            UP5 = {
-                x = -2952.81689453125,
-                y = 91.80620574951172,
-                z = -707.9673461914062
+            Hollow = {
+                UP1 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP3 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP2 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP6 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP5 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP4 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                }
             },
-
-            UP6 = {
-                x = -2952.81689453125,
-                y = 91.80620574951172,
-                z = -707.9673461914062
+            Ant = {
+                UP1 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP3 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP2 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP6 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP5 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP4 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                }
+            },
+            Aot = {
+                UP1 = {
+                    y = 34.257816314697269,
+                    x = -3011.1064453125,
+                    z = -681.9218139648438
+                },
+                UP3 = {
+                    y = 34.25492477416992,
+                    x = -3029.735107421875,
+                    z = -683.19970703125
+                },
+                UP2 = {
+                    y = 34.257816314697269,
+                    x = -3034.504638671875,
+                    z = -683.96728515625
+                },
+                UP6 = {
+                    y = 34.25492477416992,
+                    x = -3019.5390625,
+                    z = -681.8257446289063
+                },
+                UP5 = {
+                    y = 34.25492477416992,
+                    x = -3030.930419921875,
+                    z = -683.3449096679688
+                },
+                UP4 = {
+                    y = 34.442054748535159,
+                    x = -3006.80126953125,
+                    z = -686.213134765625
+                }
+            },
+            Magic = {
+                UP1 = {
+                    y = 4.323015213012695,
+                    x = -574.5573120117188,
+                    z = -844.439453125
+                },
+                UP3 = {
+                    y = 7.413990497589111,
+                    x = -578.31884765625,
+                    z = -815.1968383789063
+                },
+                UP2 = {
+                    y = 8.681072235107422,
+                    x = -590.5892944335938,
+                    z = -815.2868041992188
+                },
+                UP6 = {
+                    y = 10.61729621887207,
+                    x = -584.30224609375,
+                    z = -810.1135864257813
+                },
+                UP5 = {
+                    y = 7.413986682891846,
+                    x = -597.8843383789063,
+                    z = -814.5377807617188
+                },
+                UP4 = {
+                    y = 7.371179580688477,
+                    x = -560.8071899414063,
+                    z = -837.8366088867188
+                }
+            },
+            Marine = {
+                UP1 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP3 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP2 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP6 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP5 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                },
+                UP4 = {
+                    y = 91.80620574951172,
+                    x = -2952.81689453125,
+                    z = -707.9673461914063
+                }
+            },
+            Snowy = {
+                UP1 = {
+                    y = 35.055450439453128,
+                    x = -2863.987548828125,
+                    z = -121.31481170654297
+                },
+                UP3 = {
+                    y = 34.86832046508789,
+                    x = -2872.2841796875,
+                    z = -134.6203155517578
+                },
+                UP2 = {
+                    y = 35.055450439453128,
+                    x = -2870.818115234375,
+                    z = -127.33226013183594
+                },
+                UP6 = {
+                    y = 34.79566192626953,
+                    x = -2853.62548828125,
+                    z = -123.30137634277344
+                },
+                UP5 = {
+                    y = 34.79277038574219,
+                    x = -2853.63232421875,
+                    z = -119.10173034667969
+                },
+                UP4 = {
+                    y = 35.055450439453128,
+                    x = -2877.01025390625,
+                    z = -137.88760375976563
+                }
             }
         },
         xselectedUnits = {
@@ -809,57 +1161,519 @@ coroutine.resume(coroutine.create(function()
         
         if getgenv().AutoFarm and not getgenv().disableatuofarm then
             if game.PlaceId ~= 8304191830 then
-                x = 4
+                x = 1
                 y = 3
-                z = 4
+                z = 1
+                print("AutoFarming")
+                if game.Workspace._map:FindFirstChild("namek mushroom model") then
+                    print("Namak")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Namak"]["UP" .. i]
+    
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("houses_new") then
+                    print("Aot")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Aot"]["UP" .. i]
 
-                for i = 1, 6 do
-                    local unitinfo = getgenv().SelectedUnits["U" .. i]
-                    if unitinfo ~= nil then
-                        local unitinfo_ = unitinfo:split(" #")
-                        local pos = getgenv().SpawnUnitPos["UP" .. i]
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
 
-                        --place units 0
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
 
-                        --place units 1
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
 
-                        --place units 2 
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
 
-                        --place units 3 
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
 
-                        --place units 4
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("Snow Particles") then
+                    print("Snowy")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Snowy"]["UP" .. i]
 
-                        --place units 5
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("sand_gate") then
+                    print("Sand")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Sand"]["UP" .. i]
+
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("icebergs") then
+                    print("Marine")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Marine"]["UP" .. i]
+
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
+                    print("Ghoul")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Ghoul"]["UP" .. i]
+
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("Bones/dust") then
+                    print("Hollow")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Hollow"]["UP" .. i]
+
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("campfire") then
+                    print("Ant")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Ant"]["UP" .. i]
+
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("light poles") then
+                    print("Magic")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Magic"]["UP" .. i]
+
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+                elseif game.Workspace._map:FindFirstChild("LanternsGround") then
+                    print("Cursed")    
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["Cursed"]["UP" .. i]
+    
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"], pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] , pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
                     end
                 end
             end
@@ -882,8 +1696,6 @@ coroutine.resume(coroutine.create(function()
 	end
 	end)
 end))
-
-
 
 
 ------// Auto Sell Units \\------
@@ -915,7 +1727,8 @@ end))
 
 ------// Auto Upgrade \\------
 coroutine.resume(coroutine.create(function()
-    pcall(function()
+
+    local success, err = pcall(function() --///
         while task.wait() do
             if getgenv().autoupgrade then
                 if game.PlaceId ~= 8304191830 then
@@ -934,6 +1747,15 @@ coroutine.resume(coroutine.create(function()
             end
         end
     end)
+
+    if err then
+        warn("//////////////////////////////////////////////////")
+        error(err)
+        setclipboard(err.." Auto Abilities")
+        DiscordLib:Notification("Error send it to Arpon AG#6612", err.." Auto Abilities", "Okay!")
+        warn("//////////////////////////////////////////////////")
+    end
+
 end))
 
 
@@ -964,7 +1786,8 @@ end))
 
 --//Auto Abilities--
 coroutine.resume(coroutine.create(function()
-    pcall(function()
+
+    local success, err = pcall(function() --///
         while task.wait() do
             if getgenv().autoabilities then
 
@@ -982,6 +1805,16 @@ coroutine.resume(coroutine.create(function()
             end
         end
     end)
+     
+     if err then
+         warn("//////////////////////////////////////////////////")
+         error(err)
+         setclipboard(err.." Auto Abilities")
+         DiscordLib:Notification("Error send it to Arpon AG#6612", err.." Auto Abilities", "Okay!")
+         warn("//////////////////////////////////////////////////")
+     end
+
+
 end))
 
 
@@ -1055,6 +1888,39 @@ coroutine.resume(coroutine.create(function()
 end))
 
 
+
+------// Auto Start Infiniy Castle \\------
+coroutine.resume(coroutine.create(function()
+    while task.wait() do
+        if getgenv().AutoFarmIC and getgenv().AutoFarm then
+            if game.PlaceId == 8304191830 then
+
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12423.1855, 155.24025, 3198.07593, -1.34111269e-06, -2.02512282e-08, 1, 3.91705386e-13, 1, 2.02512282e-08, -1, 4.18864542e-13, -1.34111269e-06)
+                
+                getgenv().infinityroom = 0
+
+                for i, v in pairs(game:GetService("Players")[game.Players.LocalPlayer.Name].PlayerGui.InfiniteTowerUI.LevelSelect.InfoFrame.LevelButtons:GetChildren()) do
+                    if v.Name == "FloorButton" then
+                        if v.clear.Visible == false and v.Locked.Visible == false then
+                            local room = string.split(v.Main.text.Text, " ")
+                            getgenv().infinityroom = tonumber(room[2])
+                        end
+                    end
+                end
+                
+                task.wait(1.5)
+                local args = {
+                    [1] = getgenv().infinityroom
+                }
+                
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower:InvokeServer(unpack(args))
+                task.wait(6)
+            end
+        end
+    end
+end))
+
+
 --hide name
 task.spawn(function()  -- Hides name for yters (not sure if its Fe)
     while task.wait() do
@@ -1075,4 +1941,4 @@ pcall(function()
     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
     end)
 end)
------------------------------ End of script ----------------------------------------
+---------------------------------------------------------------------
