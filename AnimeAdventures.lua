@@ -561,7 +561,7 @@ function sex()
                         a.Position = mouse.hit.p
                         task.wait()
                         a.Anchored = true
-                        --DiscordLib:Notification("Spawn Unit Posotion:", tostring(a.Position), "Okay!")
+                        DiscordLib:Notification("Spawn Unit Posotion:", tostring(a.Position), "Okay!")
                         a.CanCollide = false
                         for i = 0, 1, 0.1 do
                             a.Transparency = i
