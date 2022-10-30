@@ -1,5 +1,9 @@
+-- v1.5.1 --
+-- + Added Thriller Park
+
 -- v1.5 --
 -- + Added Auto Infinity Castle
+
 
 -- v1.4.9 --
 -- + Added Cursed Academy
@@ -24,7 +28,7 @@ local RunService = game:GetService("RunService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
 
-getgenv().savefilename = "Anime-Adventures-"..game.Players.LocalPlayer.Name..".json"
+getgenv().savefilename = "Anime-Adventures-tb"..game.Players.LocalPlayer.Name..".json"
 
 --Webhook sender
 local function webhook()
@@ -125,6 +129,7 @@ function sex()
     getgenv().autosell = data.autosell
     getgenv().AutoFarm = data.autofarm
     getgenv().AutoFarmIC = data.autofarmic
+    getgenv().AutoFarmTP = data.autofarmtp
     getgenv().weburl = data.webhook
     getgenv().autostart = data.autostart
     getgenv().autoupgrade = data.autoupgrade
@@ -148,6 +153,7 @@ function sex()
             webhook = getgenv().weburl,
             autofarm = getgenv().AutoFarm,
             autofarmic = getgenv().AutoFarmIC,
+            autofarmtp = getgenv().AutoFarmTP,
             autostart = getgenv().autostart,
             autoupgrade = getgenv().autoupgrade,
             difficulty = getgenv().difficulty,
@@ -170,7 +176,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[⛩️UPD 6] Anime Adventures 1.5".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[👻] Anime Adventures 1.5.1".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -290,9 +296,14 @@ function sex()
         --------------------------------------------------
         ------------------ Auto Farm Tab -----------------
         --------------------------------------------------
-        autofarmtab:Label("Don't use Auto Start with Infinity Castle!")
+        autofarmtab:Label("Don't use Auto Start with Infinity Castle! or Thriller Park")
 
-        autofarmtab:Toggle("Auto Farm Infinity Castle", getgenv().AutoFarmIC, function(bool)
+        autofarmtab:Toggle("Auto Start Thriller Park", getgenv().AutoFarmTP, function(bool)
+            getgenv().AutoFarmTP = bool
+            updatejson()
+        end)
+
+        autofarmtab:Toggle("Auto Start Infinity Castle", getgenv().AutoFarmIC, function(bool)
             getgenv().AutoFarmIC = bool
             updatejson()
         end)
@@ -506,8 +517,12 @@ function sex()
         game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
         game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
 
+        autofarmtab:Toggle("Auto Start Thriller Park", getgenv().AutoFarmTP, function(bool)
+            getgenv().AutoFarmTP = bool
+            updatejson()
+        end)
 
-        autofarmtab:Toggle("Auto Farm Infinity Castle", getgenv().AutoFarmIC, function(bool)
+        autofarmtab:Toggle("Auto Start Infinity Castle", getgenv().AutoFarmIC, function(bool)
             getgenv().AutoFarmIC = bool
             updatejson()
         end)
@@ -616,6 +631,11 @@ function sex()
                             SpawnUnitPos["Magic"][UnitPos]["z"] = a.Position.Z
                         elseif game.Workspace._map:FindFirstChild("LanternsGround") then
                             print("Cursed")    
+                            SpawnUnitPos["Cursed"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["Cursed"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["Cursed"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("pumpkins") then
+                            print("thriller_park")    
                             SpawnUnitPos["Cursed"][UnitPos]["x"] = a.Position.X
                             SpawnUnitPos["Cursed"][UnitPos]["y"] = a.Position.Y
                             SpawnUnitPos["Cursed"][UnitPos]["z"] = a.Position.Z
@@ -796,7 +816,12 @@ end
 
 ---// Checks if file exist or not\\---
 if isfile(savefilename) then 
+
+    local jsonData = readfile(savefilename)
+    local data = HttpService:JSONDecode(jsonData)
+
     sex()
+
 else
     local xdata = {
         -- unitname = "name",
@@ -813,7 +838,7 @@ else
         world = "nil",
         level = "nil",
         door = "nil",
-
+    
         xspawnUnitPos = {
             Namak = {
                 UP1 = {
@@ -1134,9 +1159,41 @@ else
                     x = -2878.749755859375,
                     z = -138.48580932617188
                 }
+            },
+            thriller_park = {
+                UP1 = {
+                    y = 113.23728942871094,
+                    x =  -224.14295959472656,
+                    z = -657.738037109375
+                },
+                UP3 = {
+                    x = -224.78709411621094, 
+                    y = 109.37400817871094,
+                    z = -640.7178955078125 
+                },
+                UP2 = {
+                    x= -229.42715454101562,
+                    y = 109.37401580810547,
+                    z = -649.636474609375 
+                },
+                UP6 = {
+                    x = -214.7626190185547, 
+                    y = 109.37400817871094,
+                    z = -632.3900146484375 
+                },
+                UP5 = {
+                    x = -230.53053283691406,
+                    y = 109.37401580810547,
+                    z = -657.9769287109375 
+                },
+                UP4 = {
+                    x = -220.0915985107422,
+                    y = 109.37400817871094,
+                    z = -636.2127075195312 
+                }
             }
         },
-
+    
         xselectedUnits = {
             U1 = nil,
             U2 = nil,
@@ -1145,8 +1202,9 @@ else
             U5 = nil,
             U6 = nil
         }
-
+    
     }
+
     local json = HttpService:JSONEncode(xdata)
     writefile(savefilename, json)
 
@@ -1164,7 +1222,7 @@ coroutine.resume(coroutine.create(function()
         if getgenv().AutoFarm and not getgenv().disableatuofarm then
             if game.PlaceId ~= 8304191830 then
                 x = 1
-                y = 1
+                y = 0.7
                 z = 1
                 print("AutoFarming")
                 if game.Workspace._map:FindFirstChild("namek mushroom model") then
@@ -1677,6 +1735,57 @@ coroutine.resume(coroutine.create(function()
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                         end
                     end
+                elseif game.Workspace._map:FindFirstChild("pumpkins") then
+                        print("thriller_park")    
+                        for i = 1, 6 do
+                            local unitinfo = getgenv().SelectedUnits["U" .. i]
+                            if unitinfo ~= nil then
+                                local unitinfo_ = unitinfo:split(" #")
+                                local pos = getgenv().SpawnUnitPos["thriller_park"]["UP" .. i]
+        
+                                --place units 0
+                                local args = {
+                                    [1] = unitinfo_[2],
+                                    [2] = CFrame.new(Vector3.new(pos["x"], pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                                }
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+        
+                                --place units 1
+                                local args = {
+                                    [1] = unitinfo_[2],
+                                    [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                                }
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+        
+                                --place units 2 
+                                local args = {
+                                    [1] = unitinfo_[2],
+                                    [2] = CFrame.new(Vector3.new(pos["x"], pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                                }
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+        
+                                --place units 3 
+                                local args = {
+                                    [1] = unitinfo_[2],
+                                    [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                                }
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+        
+                                --place units 4
+                                local args = {
+                                    [1] = unitinfo_[2],
+                                    [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                                }
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+        
+                                --place units 5
+                                local args = {
+                                    [1] = unitinfo_[2],
+                                    [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                                }
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            end
+                        end
                 end
             end
         end
@@ -1891,7 +2000,7 @@ end))
 
 
 
-------// Auto Start Infiniy Castle \\------
+------// Auto Start Infiniy Castle && Thriller Park \\------
 coroutine.resume(coroutine.create(function()
     while task.wait() do
         if getgenv().AutoFarmIC and getgenv().AutoFarm then
@@ -1918,6 +2027,16 @@ coroutine.resume(coroutine.create(function()
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower:InvokeServer(unpack(args))
                 task.wait(6)
             end
+        elseif getgenv().AutoFarmTP and getgenv().AutoFarm then
+            if game.PlaceId == 8304191830 then
+                local args = {
+                    [1] = "_lobbytemplate_event330"
+                }
+                
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+                
+                task.wait(5)
+            end
         end
     end
 end))
@@ -1943,4 +2062,5 @@ pcall(function()
     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
     end)
 end)
+
 ---------------------------------------------------------------------
