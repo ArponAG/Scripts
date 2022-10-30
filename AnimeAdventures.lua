@@ -636,9 +636,9 @@ function sex()
                             SpawnUnitPos["Cursed"][UnitPos]["z"] = a.Position.Z
                         elseif game.Workspace._map:FindFirstChild("pumpkins") then
                             print("thriller_park")    
-                            SpawnUnitPos["Cursed"][UnitPos]["x"] = a.Position.X
-                            SpawnUnitPos["Cursed"][UnitPos]["y"] = a.Position.Y
-                            SpawnUnitPos["Cursed"][UnitPos]["z"] = a.Position.Z
+                            SpawnUnitPos["thriller_park"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["thriller_park"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["thriller_park"][UnitPos]["z"] = a.Position.Z
                         end
 
                         updatejson()
