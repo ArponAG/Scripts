@@ -1,3 +1,7 @@
+-- v1.5.2 --
+-- + Now you can select currently equipped units
+-- + Fixed Webhook 
+
 -- v1.5.1 --
 -- + Added Thriller Park
 
@@ -176,7 +180,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[👻] Anime Adventures 1.5.1".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[👻] Anime Adventures 1.5.2".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -202,8 +206,26 @@ function sex()
 
         loadUnit()
 
+        	
+        local function Check(x, y)
+            for i, v in ipairs(game:GetService("Players").LocalPlayer.PlayerGui.collection.grid.List.Outer.UnitFrames:GetChildren()) do
+                if v:IsA("ImageButton") then
+                    if v.Equipped.Visible == true then
+                        if v.Main.petimage:GetChildren()[2].Name == x then
+                            --print(v.name.Text.." #"..v._uuid.Value)
+                            getgenv().SelectedUnits["U"..tostring(y)] = tostring(v.name.Text.." #"..v._uuid.Value)
+                            updatejson()
+                            return true
+                        end
+                    end
+                end
+            end
+        end
+
+
         local function Equip()
             game:GetService("ReplicatedStorage").endpoints.client_to_server.unequip_all:InvokeServer()
+            
             for i = 1, 6 do
                 local unitinfo = getgenv().SelectedUnits["U" .. i]
                 warn(unitinfo)
@@ -215,6 +237,21 @@ function sex()
             end
             updatejson()
         end
+
+        unitselecttab:Button("Select Equipped Units", function()
+            for i, v in ipairs(game:GetService("Players").LocalPlayer.PlayerGui["spawn_units"].Lives.Frame.Units:GetChildren()) do
+                if v:IsA("ImageButton") then
+                    local unitxx = v.Main.petimage.WorldModel:GetChildren()[1]
+                    if unitxx ~= nil then
+                        if Check(unitxx.Name,v) then
+                            print(unitxx, v)
+                        end
+                    end
+                end
+            end
+            DiscordLib:Notification("Equipped Units Are Selected!", "The dropdowns may not show the unit names now, but it will show next time, Dont worry!", "Okay!")
+
+        end)
 
         local drop = unitselecttab:Dropdown("Unit 1", Units, getgenv().SelectedUnits["U1"], function(bool)
             getgenv().SelectedUnits["U1"] = bool
