@@ -30,9 +30,7 @@ local OrionLib = {
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
 
-local Success, Response = pcall(function()
-	Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json")).icons
-end)
+local Success, Response = Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json")).icons
 
 if not Success then
 	warn("\nOrion Library - Failed to load Feather Icons. Error code: " .. Response .. "\n")
@@ -1307,16 +1305,14 @@ function OrionLib:MakeWindow(WindowConfig)
 						end
 					elseif Bind.Binding then
 						local Key
-						pcall(function()
+
 							if not CheckKey(BlacklistedKeys, Input.KeyCode) then
 								Key = Input.KeyCode
 							end
-						end)
-						pcall(function()
+
 							if CheckKey(WhitelistedMouse, Input.UserInputType) and not Key then
 								Key = Input.UserInputType
 							end
-						end)
 						Key = Key or Bind.Value
 						Bind:Set(Key)
 						SaveCfg(game.GameId)
