@@ -1,16 +1,12 @@
+-- v1.5.3 --
+-- + Added Auto Load Script
+
 -- v1.5.2 --
 -- + Now you can select currently equipped units
 -- + Fixed Webhook 
 
 -- v1.5.1 --
 -- + Added Thriller Park
-
--- v1.5 --
--- + Added Auto Infinity Castle
-
-
--- v1.4.9 --
--- + Added Cursed Academy
 
 
 ---// Loading Section \\---
@@ -134,6 +130,7 @@ function sex()
     getgenv().AutoFarm = data.autofarm
     getgenv().AutoFarmIC = data.autofarmic
     getgenv().AutoFarmTP = data.autofarmtp
+    getgenv().AutoLoadTP = data.autoloadtp
     getgenv().weburl = data.webhook
     getgenv().autostart = data.autostart
     getgenv().autoupgrade = data.autoupgrade
@@ -158,6 +155,7 @@ function sex()
             autofarm = getgenv().AutoFarm,
             autofarmic = getgenv().AutoFarmIC,
             autofarmtp = getgenv().AutoFarmTP,
+            autoloadtp = getgenv().AutoLoadTP,
             autostart = getgenv().autostart,
             autoupgrade = getgenv().autoupgrade,
             difficulty = getgenv().difficulty,
@@ -180,11 +178,13 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[👻] Anime Adventures 1.5.2".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[👻] Anime Adventures 1.5.3".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
         local unitselecttab = serv:Channel("Select Units")
+
+
         local autofarmtab = serv:Channel("Auto Farm")
         --------------------------------------------------
         --------------- Select Units Tab -----------------
@@ -526,6 +526,17 @@ function sex()
         end)
 
 
+        
+        local autoloadtab = serv:Channel("Auto Load Script")
+		autoloadtab:Label("This Automatically executes script when you teleport to man.")
+        autoloadtab:Label("You don't need to put the script in AutoExec folder!")
+        autoloadtab:Toggle("Auto Load Script", getgenv().AutoLoadTP, function(bool)
+            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+            getgenv().AutoLoadTP = bool
+            updatejson()
+        end)
+
+        
 
 		local webhooktab = serv:Channel("Webhook")
 		webhooktab:Label("Webhook sends notification in discord everytime\nGame is Finished!")
@@ -547,8 +558,18 @@ function sex()
     else -- When in a match
 
         local autofarmtab = serv:Channel("Auto Farm")
+        local autoloadtab = serv:Channel("Auto Load Script")
         local autoseltab = serv:Channel("Auto Sell")
 		local webhooktab = serv:Channel("Webhook")
+
+		autoloadtab:Label("This Automatically executes script when you teleport to man.")
+        autoloadtab:Label("You don't need to put the script in AutoExec folder!")
+        autoloadtab:Toggle("Auto Load Script", getgenv().AutoLoadTP, function(bool)
+            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+            getgenv().AutoLoadTP = bool
+            updatejson()
+        end)
+
 
         game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false
         game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
@@ -578,6 +599,7 @@ function sex()
             getgenv().autostart = bool
             updatejson()
         end)
+
 
         autoseltab:Toggle("Auto Sell at Specfic Wave", getgenv().autosell, function(x)
             getgenv().autosell = x
@@ -2078,6 +2100,10 @@ coroutine.resume(coroutine.create(function()
     end
 end))
 
+if getgenv().AutoLoadTP then
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+end
+
 
 --hide name
 task.spawn(function()  -- Hides name for yters (not sure if its Fe)
@@ -2100,4 +2126,5 @@ pcall(function()
     end)
 end)
 
+print("Successfully Loaded!!")
 ---------------------------------------------------------------------
