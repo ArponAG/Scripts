@@ -1,12 +1,13 @@
+-- v1.5.4 --
+-- + Added Clover Kingdom
+-- + Fixed Select equipped units
+
 -- v1.5.3 --
 -- + Added Auto Load Script
 
 -- v1.5.2 --
 -- + Now you can select currently equipped units
 -- + Fixed Webhook 
-
--- v1.5.1 --
--- + Added Thriller Park
 
 
 ---// Loading Section \\---
@@ -28,7 +29,7 @@ local RunService = game:GetService("RunService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
 
-getgenv().savefilename = "Anime-Adventures-tb"..game.Players.LocalPlayer.Name..".json"
+getgenv().savefilename = "Anime-Adventures-UPD7"..game.Players.LocalPlayer.Name..".json"
 
 --Webhook sender
 local function webhook()
@@ -210,7 +211,7 @@ function sex()
         local function Check(x, y)
             for i, v in ipairs(game:GetService("Players").LocalPlayer.PlayerGui.collection.grid.List.Outer.UnitFrames:GetChildren()) do
                 if v:IsA("ImageButton") then
-                    if v.Equipped.Visible == true then
+                    if v.EquippedList.Equipped.Visible == true then
                         if v.Main.petimage:GetChildren()[2].Name == x then
                             --print(v.name.Text.." #"..v._uuid.Value)
                             getgenv().SelectedUnits["U"..tostring(y)] = tostring(v.name.Text.." #"..v._uuid.Value)
@@ -432,7 +433,7 @@ function sex()
             updatejson()
         end)
 
-        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy"}, getgenv().world, function(world)
+        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -517,6 +518,14 @@ function sex()
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
+        elseif world == "Clover Kingdom" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"clover_infinite","clover_level_1","clover_level_2","clover_level_3",
+                                    "clover_level_4","clover_level_5","clover_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
             end
         end)
 
@@ -590,7 +599,7 @@ function sex()
             updatejson()
         end)
 
-        autofarmtab:Toggle("Auto Abilities", getgenv().AutoFarm, function(bool)
+        autofarmtab:Toggle("Auto Abilities", getgenv().autoabilities, function(bool)
             getgenv().autoabilities = bool
             updatejson()
         end)
@@ -678,7 +687,7 @@ function sex()
                             SpawnUnitPos["Hollow"][UnitPos]["x"] = a.Position.X
                             SpawnUnitPos["Hollow"][UnitPos]["y"] = a.Position.Y
                             SpawnUnitPos["Hollow"][UnitPos]["z"] = a.Position.Z
-                        elseif game.Workspace._map:FindFirstChild("campfire") then
+                        elseif game.Workspace._map:FindFirstChild("Ant Nest") then
                             print("Ant")
                             SpawnUnitPos["Ant"][UnitPos]["x"] = a.Position.X
                             SpawnUnitPos["Ant"][UnitPos]["y"] = a.Position.Y
@@ -698,6 +707,11 @@ function sex()
                             SpawnUnitPos["thriller_park"][UnitPos]["x"] = a.Position.X
                             SpawnUnitPos["thriller_park"][UnitPos]["y"] = a.Position.Y
                             SpawnUnitPos["thriller_park"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("skeleton") then
+                            print("black_clover")    
+                            SpawnUnitPos["black_clover"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["black_clover"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["black_clover"][UnitPos]["z"] = a.Position.Z
                         end
 
                         updatejson()
@@ -1250,6 +1264,38 @@ else
                     y = 109.37400817871094,
                     z = -636.2127075195312 
                 }
+            },
+            black_clover = {
+                UP1 = {
+                    x = -168.1631622314453,
+                    y = 1.2332892417907715,
+                    z = -16.510467529296875 
+                },
+                UP3 = {
+                    x = -177.010986328125, 
+                    y = 1.2332888841629028,
+                    z = -8.177902221679688 
+                },
+                UP2 = {
+                    x = -177.07766723632812, 
+                    y = 1.2332888841629028, 
+                    z = -15.574569702148438 
+                },
+                UP6 = {
+                    x = -170.49185180664062, 
+                    y = 1.233289122581482,
+                    z = -19.157012939453125 
+                },
+                UP5 = {
+                    x = -173.08160400390625,
+                    y = 1.2332890033721924,
+                    z = -11.58660888671875 
+                },
+                UP4 = {
+                    x= -179.41287231445312,
+                    y = 1.2332887649536133, 
+                    z = -9.063766479492188  
+                }
             }
         },
     
@@ -1283,7 +1329,7 @@ coroutine.resume(coroutine.create(function()
                 x = 1
                 y = 0.7
                 z = 1
-                print("AutoFarming")
+                --print("AutoFarming")
                 if game.Workspace._map:FindFirstChild("namek mushroom model") then
                     print("Namak")
                     for i = 1, 6 do
@@ -1641,7 +1687,7 @@ coroutine.resume(coroutine.create(function()
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                         end
                     end
-                elseif game.Workspace._map:FindFirstChild("campfire") then
+                elseif game.Workspace._map:FindFirstChild("Ant Nest") then
                     print("Ant")
                     for i = 1, 6 do
                         local unitinfo = getgenv().SelectedUnits["U" .. i]
@@ -1845,6 +1891,57 @@ coroutine.resume(coroutine.create(function()
                                 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                             end
                         end
+                elseif game.Workspace._map:FindFirstChild("skeleton") then
+                    print("black_clover")    
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["black_clover"]["UP" .. i]
+    
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
                 end
             end
         end
@@ -2100,7 +2197,7 @@ coroutine.resume(coroutine.create(function()
     end
 end))
 
-if getgenv().AutoLoadTP then
+if getgenv().AutoLoadTP == true then
 queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
 end
 
