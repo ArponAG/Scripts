@@ -2062,8 +2062,10 @@ coroutine.resume(coroutine.create(function()
                     repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
                     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
                        if v:FindFirstChild("_stats") then
-                            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value > 0 then
-                                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                            if v._stats:FindFirstChild("player") and v._stats:FindFirstChild("xp") then
+                                if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value > 0 then
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                end
                             end
                         end
                     end
@@ -2075,9 +2077,9 @@ coroutine.resume(coroutine.create(function()
      
      if err then
          warn("//////////////////////////////////////////////////")
+         warn("//////////////////////////////////////////////////")
          error(err)
-         setclipboard(err.." Auto Abilities")
-         DiscordLib:Notification("Error send it to Arpon AG#6612", err.." Auto Abilities", "Okay!")
+         warn("//////////////////////////////////////////////////")
          warn("//////////////////////////////////////////////////")
      end
 
@@ -2223,5 +2225,5 @@ pcall(function()
     end)
 end)
 
-print("Successfully Loaded!!")
+print("- Successfully Loaded!!")
 ---------------------------------------------------------------------
