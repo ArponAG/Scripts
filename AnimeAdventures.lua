@@ -179,7 +179,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[👻] Anime Adventures 1.5.3".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[😈UPD 7] Anime Adventures 1.5.4".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
