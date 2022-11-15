@@ -1,13 +1,13 @@
+-- v1.5.5 --
+-- + Added Clover Legend
+-- + Fixed Auto Ability breaking randomly
+
 -- v1.5.4 --
 -- + Added Clover Kingdom
 -- + Fixed Select equipped units
 
 -- v1.5.3 --
 -- + Added Auto Load Script
-
--- v1.5.2 --
--- + Now you can select currently equipped units
--- + Fixed Webhook 
 
 
 ---// Loading Section \\---
@@ -179,7 +179,7 @@ function sex()
     -- Uilib Shits
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[😈UPD 7] Anime Adventures 1.5.4".." - "..tostring(identifyexecutor()))
+    local win = DiscordLib:Window("[😈UPD 7] Anime Adventures 1.5.5".." - "..tostring(identifyexecutor()))
     local serv = win:Server("Anime Adventures", "http://www.roblox.com/asset/?id=6031075938")
             
     if game.PlaceId == 8304191830 then
@@ -433,7 +433,8 @@ function sex()
             updatejson()
         end)
 
-        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford","Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom"}, getgenv().world, function(world)
+        local worlddrop = autofarmtab:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford",
+        "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom", "Clover Legend"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -523,6 +524,14 @@ function sex()
                 table.clear(levels)
                 getgenv().levels = {"clover_infinite","clover_level_1","clover_level_2","clover_level_3",
                                     "clover_level_4","clover_level_5","clover_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            end
+        elseif world == "Clover Legend" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"clover_legend_1","clover_legend_2",}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
@@ -1991,39 +2000,49 @@ end
 end))
 
 
+getgenv().autoupgradeerr = false
 
-------// Auto Upgrade \\------
-coroutine.resume(coroutine.create(function()
-
+function autoupgradefunc()
     local success, err = pcall(function() --///
-        while task.wait() do
-            if getgenv().autoupgrade then
-                if game.PlaceId ~= 8304191830 then
 
-                    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
-                    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-                       if v:FindFirstChild("_stats") then
-                            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
-                                game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
-                            end
-                        end
-                    end
-
+        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+        for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+           if v:FindFirstChild("_stats") then
+                if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
                 end
-                
             end
         end
+
     end)
 
     if err then
         warn("//////////////////////////////////////////////////")
-        error(err)
-        setclipboard(err.." Auto Abilities")
-        DiscordLib:Notification("Error send it to Arpon AG#6612", err.." Auto Abilities", "Okay!")
         warn("//////////////////////////////////////////////////")
+        getgenv().autoupgradeerr = true
+        error(err)
     end
+end
 
+
+------// Auto Upgrade \\------
+coroutine.resume(coroutine.create(function()
+    while task.wait() do
+        if getgenv().autoupgrade then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    autoupgradefunc()
+                end)
+            end
+            if  getgenv().autoupgradeerr == true then
+                task.wait(1)
+                autoupgradefunc()
+                getgenv().autoupgradeerr = false
+            end
+        end
+    end
 end))
+
 
 
 ------// Auto Sell \\------
@@ -2051,26 +2070,19 @@ coroutine.resume(coroutine.create(function()
     end
 end))
 
---//Auto Abilities--
-coroutine.resume(coroutine.create(function()
 
+getgenv().autoabilityerr = false
+
+function autoabilityfunc()
     local success, err = pcall(function() --///
-        while task.wait() do
-            if getgenv().autoabilities then
-
-                if game.PlaceId ~= 8304191830 then
-                    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
-                    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-                       if v:FindFirstChild("_stats") then
-                            if v._stats:FindFirstChild("player") and v._stats:FindFirstChild("xp") then
-                                if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value > 0 then
-                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-                                end
-                            end
-                        end
+        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+        for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+            if v:FindFirstChild("_stats") then
+                if v._stats:FindFirstChild("player") and v._stats:FindFirstChild("xp") then
+                    if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value > 0 then
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                     end
                 end
-
             end
         end
     end)
@@ -2078,11 +2090,30 @@ coroutine.resume(coroutine.create(function()
      if err then
          warn("//////////////////////////////////////////////////")
          warn("//////////////////////////////////////////////////")
+         getgenv().autoabilityerr = true
          error(err)
-         warn("//////////////////////////////////////////////////")
-         warn("//////////////////////////////////////////////////")
      end
 
+end
+
+
+--//Auto Abilities--
+coroutine.resume(coroutine.create(function()
+
+    while task.wait() do
+        if getgenv().autoabilities then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    autoabilityfunc()
+                end)
+            end
+            if  getgenv().autoabilityerr == true then
+                task.wait(1)
+                autoabilityfunc()
+                getgenv().autoabilityerr = false
+            end
+        end
+    end   
 
 end))
 
@@ -2225,5 +2256,5 @@ pcall(function()
     end)
 end)
 
-print("- Successfully Loaded!!")
+print("Successfully Loaded!!")
 ---------------------------------------------------------------------
