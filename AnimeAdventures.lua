@@ -187,17 +187,11 @@ function sex()
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
     local win = DiscordLib:Window("[😈UPD 7] Anime Adventures "..versionx.." - "..exec)
        
-    local cngelogserver = win:Server("Changelog        ", "http://www.roblox.com/asset/?id=11579189531")
-    local autofrmserver = win:Server("Auto Farm Section", "http://www.roblox.com/asset/?id=11579310982")
-    local webhookserver = win:Server("Discord Wehhook  ", "http://www.roblox.com/asset/?id=11585480207")
-    local creditsserver = win:Server("Credits          ", "http://www.roblox.com/asset/?id=11579371312")
-
-
-
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
     else
-        local gettrigon = cngelogserver:Channel("📐 Get Trigon Evo!")
+        local gettrigonserver = win:Server("Get Trigon Evo!", "http://www.roblox.com/asset/?id=7628278821")
+        local gettrigon = gettrigonserver:Channel("📐 Get Trigon Evo!")
         gettrigon:Label("⚠️ It looks like you're using "..exec..".💀⚠️")
         gettrigon:Label("❗ You maybe wanna try out Trigon Evo, It could be better\nthen "..exec..". 🤮")
         gettrigon:Label("❗ Click the button below to copy Trigon Evo's Discord server!!")
@@ -205,9 +199,17 @@ function sex()
             setclipboard("https://discord.gg/rnZXbd2yfW")
             DiscordLib:Notification("Copied!!", "✔ Trigon Evo's Discord Invite Link Has Been Copied To Your Clipboard!!", "Okay!")
         end)
-
-
     end
+
+    local autofrmserver = win:Server("Auto Farm Section", "http://www.roblox.com/asset/?id=11579310982")
+    local webhookserver = win:Server("Discord Wehhook  ", "http://www.roblox.com/asset/?id=11585480207")
+    local cngelogserver = win:Server("Changelog        ", "http://www.roblox.com/asset/?id=11579189531")
+    local creditsserver = win:Server("Credits          ", "http://www.roblox.com/asset/?id=11579371312")
+
+
+
+
+
 
     if game.PlaceId == 8304191830 then
 
@@ -216,21 +218,6 @@ function sex()
         local autofarmtab = autofrmserver:Channel("🤖 Auto Farm")
         local autoclngtab = autofrmserver:Channel("🎯 Auto Challenge")
     
---#region changelog
-        local changelog = cngelogserver:Channel("💬 Changelog")
-        changelog:Label("-- 1.5.9 --")
-        changelog:Label("+ Fixed Auto Farm not starting\n+ Added new default positions for units.")
-        changelog:Label("-- 1.5.8 --\n")
-        changelog:Label("+ Added Auto Challenge\n+ Added Auto Leave Toggle\n+ Better Auto Farming now\n+ Fixed some bugs\n")
-        changelog:Label("-- 1.5.7 -- ")
-        changelog:Label("+ Added Auto Buy for Special Banner")
-        changelog:Label("-- 1.5.6 -- ")
-        changelog:Label("+ Fixed not executing")
-        changelog:Label("-- 1.5.5 -- ")
-        changelog:Label("+ Added Clover Legend\n+ Fixed Auto Ability breaking randomly")
-        changelog:Label("-- v1.5.4 --")
-        changelog:Label("+ Added Clover Kingdom")
---#endregion
 
 --------------------------------------------------
 --------------- Select Units Tab -----------------
@@ -293,7 +280,7 @@ function sex()
                     end
                 end
             end
-            DiscordLib:Notification("Equipped Units Are Selected!", "The dropdowns may not show the unit names now, but it will show next time, Dont worry!", "Okay!")
+            DiscordLib:Notification("Equipped Units Are Selected!", "The dropdowns may not show the unit names now, but it will show next time you execute!", "Okay!")
 
         end)
 
@@ -480,7 +467,7 @@ function sex()
             elseif world == "Clover Legend - HARD" then
                     getgenv().leveldrop:Clear()
                     table.clear(levels)
-                    getgenv().levels = {"clover_legend_1","clover_legend_2",}
+                    getgenv().levels = {"clover_legend_1","clover_legend_2","clover_legend_3",}
                     for i, v in ipairs(levels) do
                         getgenv().leveldrop:Add(v)
                     end
@@ -737,21 +724,7 @@ function sex()
         
 
 
---#region Changelog
-        local changelog = cngelogserver:Channel("💬 Changelog")
-        changelog:Label("-- 1.5.9 --")
-        changelog:Label("+ Fixed Auto Farm not starting\n+ Added new default positions for units.")
-        changelog:Label("-- 1.5.8 --\n")
-        changelog:Label("+ Added Auto Challenge\n+ Added Auto Leave Toggle\n+ Better Auto Farming now\n+ Fixed some bugs\n")
-        changelog:Label("-- 1.5.7 -- ")
-        changelog:Label("+ Added Auto Buy for Special Banner")
-        changelog:Label("-- 1.5.6 -- ")
-        changelog:Label("+ Fixed not executing")
-        changelog:Label("-- 1.5.5 -- ")
-        changelog:Label("+ Added Clover Legend\n+ Fixed Auto Ability breaking randomly")
-        changelog:Label("-- v1.5.4 --")
-        changelog:Label("+ Added Clover Kingdom")
---#endregion
+
 
     local autofarmtab = autofrmserver:Channel("🤖 Auto Farm")
     local autoclngtab = autofrmserver:Channel("🎯 Auto Challenge")
@@ -1012,6 +985,23 @@ end)
 
     end
 --#endregion
+
+--#region changelog
+    local changelog = cngelogserver:Channel("💬 Changelog")
+    changelog:Label("-- 1.5.9 --")
+    changelog:Label("+ Fixed Auto Farm not starting\n+ Added new default positions for units.")
+    changelog:Label("-- 1.5.8 --\n")
+    changelog:Label("+ Added Auto Challenge\n+ Added Auto Leave Toggle\n+ Better Auto Farming now\n+ Fixed some bugs\n")
+    changelog:Label("-- 1.5.7 -- ")
+    changelog:Label("+ Added Auto Buy for Special Banner")
+    changelog:Label("-- 1.5.6 -- ")
+    changelog:Label("+ Fixed not executing")
+    changelog:Label("-- 1.5.5 -- ")
+    changelog:Label("+ Added Clover Legend\n+ Fixed Auto Ability breaking randomly")
+    changelog:Label("-- v1.5.4 --")
+    changelog:Label("+ Added Clover Kingdom")
+--#endregion
+
     local credits = creditsserver:Channel("✨ Credits")
     credits:Label("Arpon AG#6612")
     credits:Label("Forever4D#0001")
@@ -2398,14 +2388,16 @@ end
 
 coroutine.resume(coroutine.create(function()
     while task.wait() do
-        if checkChallenge() == false  then --challenge is not cleared
-            if  getgenv().AutoChallenge and checkReward() == true then
-                startChallenge() --start challenge
-            else
+        if getgenv().AutoFarmIC == false and getgenv().AutoFarmTP == false then
+            if checkChallenge() == false  then --challenge is not cleared
+                if  getgenv().AutoChallenge and checkReward() == true then
+                    startChallenge() --start challenge
+                else
+                    startfarming()--regular farming
+                end
+            elseif checkChallenge() == true then
                 startfarming()--regular farming
             end
-        elseif checkChallenge() == true then
-            startfarming()--regular farming
         end
     end
 end))
@@ -2413,42 +2405,55 @@ end))
 
 
 ------// Auto Start Infiniy Castle && Thriller Park \\------
-coroutine.resume(coroutine.create(function()
-    while task.wait() do
-        if getgenv().AutoFarmIC and getgenv().AutoFarm then
-            if game.PlaceId == 8304191830 then
 
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12423.1855, 155.24025, 3198.07593, -1.34111269e-06, -2.02512282e-08, 1, 3.91705386e-13, 1, 2.02512282e-08, -1, 4.18864542e-13, -1.34111269e-06)
-                
-                getgenv().infinityroom = 0
+local function FarmCastlePark()
+    if getgenv().AutoFarmIC and getgenv().AutoFarm then
+        if game.PlaceId == 8304191830 then
 
-                for i, v in pairs(game:GetService("Players")[game.Players.LocalPlayer.Name].PlayerGui.InfiniteTowerUI.LevelSelect.InfoFrame.LevelButtons:GetChildren()) do
-                    if v.Name == "FloorButton" then
-                        if v.clear.Visible == false and v.Locked.Visible == false then
-                            local room = string.split(v.Main.text.Text, " ")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12423.1855, 155.24025, 3198.07593, -1.34111269e-06, -2.02512282e-08, 1, 3.91705386e-13, 1, 2.02512282e-08, -1, 4.18864542e-13, -1.34111269e-06)
+            
+            getgenv().infinityroom = 0
 
-                            local args = {
-                                [1] = tonumber(room[2])
-                            }
-                            
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower:InvokeServer(unpack(args))
-                            getgenv().infinityroom = tonumber(room[2])
-                            break
-                        end
+            for i, v in pairs(game:GetService("Players")[game.Players.LocalPlayer.Name].PlayerGui.InfiniteTowerUI.LevelSelect.InfoFrame.LevelButtons:GetChildren()) do
+                if v.Name == "FloorButton" then
+                    if v.clear.Visible == false and v.Locked.Visible == false then
+                        local room = string.split(v.Main.text.Text, " ")
+
+                        local args = {
+                            [1] = tonumber(room[2])
+                        }
+                        
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower:InvokeServer(unpack(args))
+                        getgenv().infinityroom = tonumber(room[2])
+                        break
                     end
                 end
-                
-                task.wait(6)
             end
-        elseif getgenv().AutoFarmTP and getgenv().AutoFarm then
-            if game.PlaceId == 8304191830 then
-                local args = {
-                    [1] = "_lobbytemplate_event330"
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
-                
-                task.wait(5)
+            
+            task.wait(6)
+        end
+    elseif getgenv().AutoFarmTP and getgenv().AutoFarm then
+        if game.PlaceId == 8304191830 then
+            local args = {
+                [1] = "_lobbytemplate_event330"
+            }
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+            
+            task.wait(5)
+        end
+    end
+end
+
+coroutine.resume(coroutine.create(function()
+    while task.wait() do
+        if checkChallenge() == false  then --challenge is not cleared
+            if  getgenv().AutoChallenge and checkReward() == true then
+                startChallenge() --start challenge
+            else
+                FarmCastlePark()--regular farming
             end
+        elseif checkChallenge() == true then
+            FarmCastlePark()--regular farming
         end
     end
 end))
@@ -2478,6 +2483,8 @@ pcall(function()
     wait(1)
     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
     end)
+
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
 end)
 
 print("Successfully Loaded!!")
