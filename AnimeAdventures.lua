@@ -1,4 +1,4 @@
-local versionx = "1.5.9"
+local versionx = "1.6.0"
 
 ---// Loading Section \\---
 task.wait(2)
@@ -371,7 +371,7 @@ function sex()
         end)
 
         local worlddrop = slectworld:Dropdown("Select World", {"Plannet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford",
-        "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom", "Clover Legend - HARD"}, getgenv().world, function(world)
+        "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom", "Clover Legend - HARD","Hollow Legend - HARD"}, getgenv().world, function(world)
             getgenv().world = world
             updatejson()
             if world == "Plannet Namak" then
@@ -449,30 +449,37 @@ function sex()
                     getgenv().leveldrop:Add(v)
                 end
             elseif world == "Cursed Academy" then
-                    getgenv().leveldrop:Clear()
-                    table.clear(levels)
-                    getgenv().levels = {"jjk_infinite","jjk_level_1","jjk_level_2","jjk_level_3",
-                                        "jjk_level_4","jjk_level_5","jjk_level_6",}
-                    for i, v in ipairs(levels) do
-                        getgenv().leveldrop:Add(v)
-                    end
-            elseif world == "Clover Kingdom" then
-                    getgenv().leveldrop:Clear()
-                    table.clear(levels)
-                    getgenv().levels = {"clover_infinite","clover_level_1","clover_level_2","clover_level_3",
-                                        "clover_level_4","clover_level_5","clover_level_6",}
-                    for i, v in ipairs(levels) do
-                        getgenv().leveldrop:Add(v)
-                    end
-            elseif world == "Clover Legend - HARD" then
-                    getgenv().leveldrop:Clear()
-                    table.clear(levels)
-                    getgenv().levels = {"clover_legend_1","clover_legend_2","clover_legend_3",}
-                    for i, v in ipairs(levels) do
-                        getgenv().leveldrop:Add(v)
-                    end
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"jjk_infinite","jjk_level_1","jjk_level_2","jjk_level_3",
+                                    "jjk_level_4","jjk_level_5","jjk_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
                 end
-            end)
+            elseif world == "Clover Kingdom" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"clover_infinite","clover_level_1","clover_level_2","clover_level_3",
+                                    "clover_level_4","clover_level_5","clover_level_6",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            elseif world == "Clover Legend - HARD" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"clover_legend_1","clover_legend_2","clover_legend_3",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            elseif world == "Hollow Legend - HARD" then
+                getgenv().leveldrop:Clear()
+                table.clear(levels)
+                getgenv().levels = {"bleach_legend_1","bleach_legend_2","bleach_legend_3","bleach_legend_4","bleach_legend_5",}
+                for i, v in ipairs(levels) do
+                    getgenv().leveldrop:Add(v)
+                end
+            end
+        end)
 
       
             getgenv().leveldrop = slectworld:Dropdown("Select Level", getgenv().levels, getgenv().level, function(level)
@@ -988,6 +995,8 @@ end)
 
 --#region changelog
     local changelog = cngelogserver:Channel("💬 Changelog")
+    changelog:Label("-- 1.6.0 --")
+    changelog:Label("+ Added Legend Stages - Hollow Invation")
     changelog:Label("-- 1.5.9 --")
     changelog:Label("+ Fixed Auto Farm not starting\n+ Added new default positions for units.")
     changelog:Label("-- 1.5.8 --\n")
