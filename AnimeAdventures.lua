@@ -2303,8 +2303,8 @@ coroutine.resume(coroutine.create(function()
                 local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
             elseif getgenv().AutoLeave then
                 --
-                Teleport()
-                -- game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
+                --Teleport()
+                game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
             end
         end
 	end)
