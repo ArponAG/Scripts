@@ -1,4 +1,4 @@
-local versionx = "1.6.0"
+local versionx = "1.6.1"
 
 ---// Loading Section \\---
 task.wait(2)
@@ -19,7 +19,7 @@ local RunService = game:GetService("RunService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
 
-getgenv().savefilename = "Anime-Adventures_data"..game.Players.LocalPlayer.Name..".json"
+getgenv().savefilename = "Anime-Adventures_data7.6"..game.Players.LocalPlayer.Name..".json"
 getgenv().door = "_lobbytemplategreen1"
 
 --#region Webhook Sender
@@ -119,6 +119,7 @@ function sex()
 
 --#region global values
     getgenv().AutoLeave = data.AutoLeave
+    getgenv().AutoReplay = data.AutoReplay
     getgenv().AutoChallenge = data.AutoChallenge  
     getgenv().selectedreward = data.selectedreward
     getgenv().AutoChallengeAll = data.AutoChallengeAll
@@ -150,6 +151,7 @@ function sex()
             -- unitname = getgenv().unitname,
             -- unitid = getgenv().unitid,
             AutoLeave = getgenv().AutoLeave,
+            AutoReplay = getgenv().AutoReplay,
             AutoChallenge  = getgenv().AutoChallenge, 
             selectedreward = getgenv().selectedreward,
             AutoChallengeAll = getgenv().AutoChallengeAll, 
@@ -185,7 +187,7 @@ function sex()
     local exec = tostring(identifyexecutor())
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[😈UPD 7] Anime Adventures "..versionx.." - "..exec)
+    local win = DiscordLib:Window("[🌑UPD 7.6] Anime Adventures "..versionx.." - "..exec)
        
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
@@ -492,6 +494,10 @@ function sex()
 ------------------ Auto Farm Tab -----------------
 --------------------------------------------------
 --#region Auto Farm Tab
+        autofarmtab:Toggle("Auto Replay", getgenv().AutoReplay, function(bool)
+            getgenv().AutoReplay = bool
+            updatejson()
+        end)
         autofarmtab:Toggle("Auto Leave", getgenv().AutoLeave, function(bool)
             getgenv().AutoLeave = bool
             updatejson()
@@ -749,6 +755,10 @@ function sex()
         autoloadtab:Label("⚠️ If it doesnt work properly then put the script in Autoexec\nfolder!!! ⚠️")
 
 --#region Auto Farm Tab
+        autofarmtab:Toggle("Auto Replay", getgenv().AutoReplay, function(bool)
+            getgenv().AutoReplay = bool
+            updatejson()
+        end)
         autofarmtab:Toggle("Auto Leave", getgenv().AutoLeave, function(bool)
             getgenv().AutoLeave = bool
             updatejson()
@@ -864,6 +874,11 @@ function sex()
                             SpawnUnitPos["black_clover"][UnitPos]["x"] = a.Position.X
                             SpawnUnitPos["black_clover"][UnitPos]["y"] = a.Position.Y
                             SpawnUnitPos["black_clover"][UnitPos]["z"] = a.Position.Z
+                        elseif game.Workspace._map:FindFirstChild("graves") then
+                            print("hollow_leg")    
+                            SpawnUnitPos["hollow_leg"][UnitPos]["x"] = a.Position.X
+                            SpawnUnitPos["hollow_leg"][UnitPos]["y"] = a.Position.Y
+                            SpawnUnitPos["hollow_leg"][UnitPos]["z"] = a.Position.Z
                         end
 
                         updatejson()
@@ -995,6 +1010,9 @@ end)
 
 --#region changelog
     local changelog = cngelogserver:Channel("💬 Changelog")
+    changelog:Label("-- 1.6.1 --")
+    changelog:Label("+ Added Auto Replay")
+    changelog:Label("+ Fixed Hollow Stage")
     changelog:Label("-- 1.6.0 --")
     changelog:Label("+ Added Legend Stages - Hollow Invation")
     changelog:Label("-- 1.5.9 --")
@@ -1033,6 +1051,7 @@ else
     local xdata = {
         -- unitname = "name",
         -- unitid = "id",
+        AutoReplay = false,
         AutoLeave = true,
         AutoChallenge = false,
         selectedreward = "star_fruit_random",
@@ -1045,7 +1064,7 @@ else
         autofarm = false,
         autofarmic = false,
         autostart = false,
-        autoloadtp = false,
+        autoloadtp = true,
         autoupgrade = false,
         difficulty = "nil",
         world = "nil",
@@ -1084,6 +1103,39 @@ else
                 x  = -105.46223449707031,
                 z  = -51.20615005493164
              }
+           },
+           hollow_leg = {
+            UP1 = {
+                x = -168.71795654296875,
+                y = 36.04443359375, 
+                z = 564.4705810546875 
+            },
+            UP2 = {
+                x = -161.105712890625, 
+                y = 36.04443359375, 
+                z = 558.4195556640625 
+            },
+            UP3 = {
+                x = -161.05670166015625, 
+                y = 36.04443359375, 
+                z = 546.204833984375 
+               
+            },
+            UP4 = {
+                x = -163.51824951171875, 
+                y = 36.04443359375, 
+                z = 534.6953735351562 
+            },
+            UP5 = {
+                x = -170.02479553222656, 
+                y = 36.04443359375, 
+                z = 528.9660034179688
+            },
+            UP6 = {
+                x = -160.92405700683594, 
+                y = 36.04443359375, 
+                z = 565.2430419921875 
+            }
            },
             Cursed  = {
               UP1  = {
@@ -2087,6 +2139,57 @@ coroutine.resume(coroutine.create(function()
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                         end
                     end
+                elseif game.Workspace._map:FindFirstChild("graves") then
+                    print("Hollow Legend")
+                    for i = 1, 6 do
+                        local unitinfo = getgenv().SelectedUnits["U" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = getgenv().SpawnUnitPos["hollow_leg"]["UP" .. i]
+    
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 1
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 2 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 3 
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 4
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"]+ x, pos["y"] - y, pos["z"] + z), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                            --place units 5
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"] - y, pos["z"]), Vector3.new(0, 0, -1))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
                 end
             end
         end
@@ -2108,8 +2211,13 @@ coroutine.resume(coroutine.create(function()
             task.wait()
             pcall(function() webhook() end)
             print("next")
-            task.wait(2)
-            if getgenv().AutoLeave then
+            task.wait(2.1)
+            if getgenv().AutoReplay then
+                
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+
+            elseif getgenv().AutoLeave then
                 game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
             end
         end
