@@ -476,7 +476,7 @@ function sex()
             elseif world == "Hollow Legend - HARD" then
                 getgenv().leveldrop:Clear()
                 table.clear(levels)
-                getgenv().levels = {"bleach_legend_1","bleach_legend_2","bleach_legend_3","bleach_legend_4","bleach_legend_5",}
+                getgenv().levels = {"bleach_legend_1","bleach_legend_2","bleach_legend_3","bleach_legend_4","bleach_legend_5","bleach_legend_6",}
                 for i, v in ipairs(levels) do
                     getgenv().leveldrop:Add(v)
                 end
