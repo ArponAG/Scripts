@@ -608,7 +608,7 @@ function sex()
             updatejson()
             if exec == "Synapse X" and getgenv().AutoLoadTP then
                 syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
-            elseif exec == "Synapse X" and getgenv().AutoLoadTP then
+            elseif exec ~= "Synapse X" and getgenv().AutoLoadTP then
                 queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             end
 
@@ -765,7 +765,7 @@ function sex()
             updatejson()
             if exec == "Synapse X" and getgenv().AutoLoadTP then
                 syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
-            elseif exec == "Synapse X" and getgenv().AutoLoadTP then
+            elseif exec ~= "Synapse X" and getgenv().AutoLoadTP then
                 queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             end
 
