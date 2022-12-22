@@ -150,6 +150,7 @@ function sex()
         local xdata = {
             -- unitname = getgenv().unitname,
             -- unitid = getgenv().unitid,
+            autoloadtp = getgenv().AutoLoadTP,
             AutoLeave = getgenv().AutoLeave,
             AutoReplay = getgenv().AutoReplay,
             AutoChallenge  = getgenv().AutoChallenge, 
@@ -161,7 +162,6 @@ function sex()
             autofarm = getgenv().AutoFarm,
             autofarmic = getgenv().AutoFarmIC,
             autofarmtp = getgenv().AutoFarmTP,
-            autoloadtp = getgenv().AutoLoadTP,
             autostart = getgenv().autostart,
             autoupgrade = getgenv().autoupgrade,
             difficulty = getgenv().difficulty,
@@ -603,9 +603,15 @@ function sex()
 		autoloadtab:Label("This Automatically executes script when you teleport to man.")
         autoloadtab:Label("You don't need to put the script in AutoExec folder!")
         autoloadtab:Toggle("Auto Load Script", getgenv().AutoLoadTP, function(bool)
-            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+            --queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             getgenv().AutoLoadTP = bool
             updatejson()
+            if exec == "Synapse X" and getgenv().AutoLoadTP then
+                syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+            elseif exec == "Synapse X" and getgenv().AutoLoadTP then
+                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+            end
+
         end)
         autoloadtab:Label("⚠️ If it doesnt work properly then put the script in Autoexec\nfolder!!! ⚠️")
 
@@ -748,16 +754,21 @@ function sex()
 
     local autofarmtab = autofrmserver:Channel("🤖 Auto Farm")
     local autoclngtab = autofrmserver:Channel("🎯 Auto Challenge")
-    local autoloadtab = autofrmserver:Channel("⌛ Auto Load Script")
+    local autoloadtab = autofrmserver:Channel("⌛ Auto Load Script_")
     local autoseltab = autofrmserver:Channel("💸 Auto Sell")
     local webhooktab = webhookserver:Channel("🌐 Webhook")
     
 		autoloadtab:Label("This Automatically executes script when you teleport to man.")
         autoloadtab:Label("You don't need to put the script in AutoExec folder!")
         autoloadtab:Toggle("Auto Load Script", getgenv().AutoLoadTP, function(bool)
-            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             getgenv().AutoLoadTP = bool
             updatejson()
+            if exec == "Synapse X" and getgenv().AutoLoadTP then
+                syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+            elseif exec == "Synapse X" and getgenv().AutoLoadTP then
+                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+            end
+
         end)
         autoloadtab:Label("⚠️ If it doesnt work properly then put the script in Autoexec\nfolder!!! ⚠️")
 
