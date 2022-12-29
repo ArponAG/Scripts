@@ -1,4 +1,4 @@
-local versionx = "1.6.3"
+local versionx = "1.6.4"
 
 ---// Loading Section \\---
 task.wait(2)
@@ -509,7 +509,7 @@ function sex()
             getgenv().AutoLeave = bool
             updatejson()
         end)
-        autofarmtab:Toggle("Auto Start Thriller Park", getgenv().AutoFarmTP, function(bool)
+        autofarmtab:Toggle("Auto Farm Event ⭐⭐", getgenv().AutoFarmTP, function(bool)
             getgenv().AutoFarmTP = bool
             updatejson()
         end)
@@ -781,7 +781,7 @@ function sex()
             getgenv().AutoLeave = bool
             updatejson()
         end)
-        autofarmtab:Toggle("Auto Start Thriller Park", getgenv().AutoFarmTP, function(bool)
+        autofarmtab:Toggle("Auto Farm Event ⭐⭐", getgenv().AutoFarmTP, function(bool)
             getgenv().AutoFarmTP = bool
             updatejson()
         end)
@@ -897,7 +897,7 @@ function sex()
                             SpawnUnitPos["hollow_leg"][UnitPos]["x"] = a.Position.X
                             SpawnUnitPos["hollow_leg"][UnitPos]["y"] = a.Position.Y
                             SpawnUnitPos["hollow_leg"][UnitPos]["z"] = a.Position.Z
-                        elseif game.Workspace._map:FindFirstChild("graves") then
+                        elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
                             print("Cape Canaveral")    
                             SpawnUnitPos["jojo"][UnitPos]["x"] = a.Position.X
                             SpawnUnitPos["jojo"][UnitPos]["y"] = a.Position.Y
@@ -1033,6 +1033,9 @@ end)
 
 --#region changelog
     local changelog = cngelogserver:Channel("💬 Changelog")
+    changelog:Label("-- 1.6.4 --")
+    changelog:Label("+ Added auto farm for the NEW EVENT!")
+    changelog:Label("+ Fixes JoJo world unit placing issue")
     changelog:Label("-- 1.6.3 --")
     changelog:Label("+ Added JoJo World")
     changelog:Label("-- 1.6.2 --")
@@ -2746,12 +2749,31 @@ local function FarmCastlePark()
         end
     elseif getgenv().AutoFarmTP and getgenv().AutoFarm then
         if game.PlaceId == 8304191830 then
-            local args = {
-                [1] = "_lobbytemplate_event330"
-            }
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
-            
+
+            local cpos = plr.Character.HumanoidRootPart.CFrame
+
+            for i, v in pairs(game:GetService("Workspace")["_EVENT_CHALLENGES"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and v.Value == nil then
+
+                        local args = {
+                            [1] = tostring(v.Parent.Name)
+                        }
+                        
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+
+                        task.wait()
+
+                        plr.Character.HumanoidRootPart.CFrame = v.Parent.Door.CFrame
+                        break
+                    end
+                end
+
+            task.wait()
+
+            plr.Character.HumanoidRootPart.CFrame = cpos
+            warn("farming")
             task.wait(5)
+
         end
     end
 end
