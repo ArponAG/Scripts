@@ -518,13 +518,11 @@ getgenv().portalname = devilcity:Dropdown("Select Portal", {"csm_contract_0", "c
 end)
 
 devilcity:Button("Buy Portal", function()
-    if getgenv().buyportal then
         local args = {
             [1] = tostring(getgenv().portalnameX)
         }
         
         game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_csmportal_shop_item:InvokeServer(unpack(args))
-    end
 end)
 
 devilcity:Toggle("Auto Farm Portal", getgenv().farmprotal, function(bool)
