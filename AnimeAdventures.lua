@@ -518,11 +518,14 @@ getgenv().portalname = devilcity:Dropdown("Select Portal", {"csm_contract_0", "c
 end)
 
 devilcity:Button("Buy Portal", function()
+
+    if getgenv().buyportal then
         local args = {
             [1] = tostring(getgenv().portalnameX)
         }
-        
         game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_csmportal_shop_item:InvokeServer(unpack(args))
+    end
+
 end)
 
 devilcity:Toggle("Auto Farm Portal", getgenv().farmprotal, function(bool)
@@ -531,7 +534,7 @@ devilcity:Toggle("Auto Farm Portal", getgenv().farmprotal, function(bool)
 end)
 
 devilcity:Label("Only unlocked portals are playable")
-devilcity:Label("Also if you have any old tier portal it may start it, so dont buy\nlow tier portal you dont wanna farm.")
+devilcity:Label("Also if you have any old tier portal it may start it, so dont buy low tier portal you dont wanna farm.")
 
 --------------------------------------------------
 ------------------ Auto Farm Tab -----------------
@@ -2793,6 +2796,7 @@ local function startfarming()
                     }
                     
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                    break;
                 end
             end 
         end
