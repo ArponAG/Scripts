@@ -1583,7 +1583,8 @@ end
 coroutine.resume(coroutine.create(function()
     while task.wait(1.5) do
         local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
-        
+        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
+
         if getgenv().AutoFarm and not getgenv().disableatuofarm then
             if game.PlaceId ~= 8304191830 then
                 x = 1
