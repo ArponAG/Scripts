@@ -1,4 +1,4 @@
-local versionx = "1.6.4"
+local versionx = "1.6.5"
 
 ---// Loading Section \\---
 task.wait(2)
@@ -201,7 +201,7 @@ function sex()
     local exec = tostring(identifyexecutor())
 
     local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/Forever4D/Lib/main/DiscordLib2.lua")()
-    local win = DiscordLib:Window("[✨UPD 8] Anime Adventures "..versionx.." - "..exec)
+    local win = DiscordLib:Window("[👹UPD 9] Anime Adventures "..versionx.." - "..exec)
        
     if exec == "Synapse X" or exec == "ScriptWare" or exec == "Trigon" then
         print("Good boi")
@@ -1067,7 +1067,6 @@ end)
 local credits = creditsserver:Channel("✨ Credits")
 credits:Label("Arpon AG#6612")
 credits:Label("Forever4D#0001")
-credits:Label(" ")
 credits:Button("👉 Copy Official Discord Link!", function()
     setclipboard("https://discord.gg/2ttfCfzxut")
     DiscordLib:Notification("Copied!!", "✔ Discord Invite Link Has Been Copied To Your Clipboard!!", "Okay!")
@@ -1112,7 +1111,7 @@ else
         autofarm = false,
         autofarmic = false,
         autostart = false,
-        autoloadtp = true,
+        autoloadtp = false,
         autoupgrade = false,
         difficulty = "nil",
         world = "nil",
