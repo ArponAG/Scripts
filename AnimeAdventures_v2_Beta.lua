@@ -209,6 +209,68 @@ function setDefaultData()
                     z = 0
                 }
             },
+            opm = {
+                UP1 = {
+                    y = 0,
+					y2 = 0,
+					y3 = 0,
+					y4 = 0,
+					y5 = 0,
+					y6 = 0,
+                    x = 0,
+                    z = 0
+                },
+                UP3 = {
+                    y = 0,
+					y2 = 0,
+					y3 = 0,
+					y4 = 0,
+					y5 = 0,
+					y6 = 0,
+                    x = 0,
+                    z = 0
+                },
+                UP2 = {
+                    y = 0,
+					y2 = 0,
+					y3 = 0,
+					y4 = 0,
+					y5 = 0,
+					y6 = 0,
+                    x = 0,
+                    z = 0
+                },
+                UP6 = {
+                    y = 0,
+					y2 = 0,
+					y3 = 0,
+					y4 = 0,
+					y5 = 0,
+					y6 = 0,
+                    x = 0,
+                    z = 0
+                },
+                UP5 = {
+                    y = 0,
+					y2 = 0,
+					y3 = 0,
+					y4 = 0,
+					y5 = 0,
+					y6 = 0,
+                    x = 0,
+                    z = 0
+                },
+                UP4 = {
+                    y = 0,
+					y2 = 0,
+					y3 = 0,
+					y4 = 0,
+					y5 = 0,
+					y6 = 0,
+                    x = 0,
+                    z = 0
+                }
+            },
             hollow_leg = {
                 UP1 = {
                     y = 0,
@@ -1277,7 +1339,7 @@ function sex()
             selectworld:ClearDrop() local storylist;
             if getgenv().WorldCategory == "Story World" then
                 storylist = {"Planet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford",
-                "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom","Cape Canaveral"}
+                "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom","Cape Canaveral", "Alien Spaceship"}
             elseif getgenv().WorldCategory == "Legend Stages" then
                 storylist = {"Clover Kingdom", "Hollow Invasion"}
             elseif getgenv().WorldCategory == "Devil City" then
@@ -1301,6 +1363,32 @@ function sex()
 
             if level == "Planet Namak" then
                 levellist = {"namek_infinite", "namek_level_1", "namek_level_2", "namek_level_3", "namek_level_4", "namek_level_5", "namek_level_6"}
+            elseif level == "Alien Spaceship" then
+                levellist = {"opm_infinite", "opm_level_1", "opm_level_2", "opm_level_3", "opm_level_4", "opm_level_5", "opm_level_6"}
+            elseif level == "Shiganshinu District" then
+                levellist = {"aot_infinite", "aot_level_1", "aot_level_2", "aot_level_3", "aot_level_4","aot_level_5", "aot_level_6"}
+            elseif level == "Snowy Town" then
+                levellist = {"demonslayer_infinite", "demonslayer_level_1", "demonslayer_level_2", "demonslayer_level_3", "demonslayer_level_4", "demonslayer_level_5","demonslayer_level_6"}
+            elseif level == "Hidden Sand Village" then
+                levellist =  {"naruto_infinite", "naruto_level_1", "naruto_level_2", "naruto_level_3","naruto_level_4", "naruto_level_5", "naruto_level_6"}
+            elseif level == "Marine's Ford" then
+                levellist = {"marineford_infinite","marineford_level_1","marineford_level_2","marineford_level_3","marineford_level_4","marineford_level_5","marineford_level_6"}
+            elseif level == "Ghoul City" then
+                levellist = {"tokyoghoul_infinite","tokyoghoul_level_1","tokyoghoul_level_2","tokyoghoul_level_3","tokyoghoul_level_4","tokyoghoul_level_5","tokyoghoul_level_6"}
+            elseif level == "Hollow World" then
+                levellist = {"hueco_infinite","hueco_level_1","hueco_level_2","hueco_level_3","hueco_level_4","hueco_level_5","hueco_level_6"}
+            elseif level == "Ant Kingdom" then
+                levellist = {"hxhant_infinite","hxhant_level_1","hxhant_level_2","hxhant_level_3","hxhant_level_4","hxhant_level_5","hxhant_level_6"}
+            elseif level == "Magic Town" then
+                levellist =  {"magnolia_infinite","magnolia_level_1","magnolia_level_2","magnolia_level_3","magnolia_level_4","magnolia_level_5","magnolia_level_6"}
+            elseif level == "Cursed Academy" then
+                levellist = {"jjk_infinite","jjk_level_1","jjk_level_2","jjk_level_3", "jjk_level_4","jjk_level_5","jjk_level_6"}
+            elseif level == "Clover Kingdom" then
+                levellist = {"clover_infinite","clover_level_1","clover_level_2","clover_level_3","clover_level_4","clover_level_5","clover_level_6"}
+            elseif level == "Cape Canaveral" then
+                levellist = {"jojo_infinite","jojo_level_1","jojo_level_2","jojo_level_3","jojo_level_4","jojo_level_5","jojo_level_6",}
+            elseif level == "Alien Spaceship" then
+                levellist = {"opm_infinite","opm_level_1","opm_level_2","opm_level_3","opm_level_4","opm_level_5","opm_level_6",}
             end
 
             for i = 1, #levellist do
@@ -1587,6 +1675,8 @@ function sex()
                 updatepos("chainsaw", UnitPos, a,a2,a3,a4,a5,a6)
              elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
                 updatepos("jojo", UnitPos, a,a2,a3,a4,a5,a6)
+            elseif game.Workspace._map:FindFirstChild("secret") then
+                updatepos("opm", UnitPos, a,a2,a3,a4,a5,a6)
             end
 			_G.gg = false    
 			for i = 0, 1, 0.1 do
@@ -2235,6 +2325,8 @@ coroutine.resume(coroutine.create(function()
                     PlaceUnits("chainsaw")
                 elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
                     PlaceUnits("jojo")
+                elseif game.Workspace._map:FindFirstChild("secret") then
+                    PlaceUnits("opm")
                 end
             end
         end
