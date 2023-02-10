@@ -1363,8 +1363,6 @@ function sex()
 
             if level == "Planet Namak" then
                 levellist = {"namek_infinite", "namek_level_1", "namek_level_2", "namek_level_3", "namek_level_4", "namek_level_5", "namek_level_6"}
-            elseif level == "Alien Spaceship" then
-                levellist = {"opm_infinite", "opm_level_1", "opm_level_2", "opm_level_3", "opm_level_4", "opm_level_5", "opm_level_6"}
             elseif level == "Shiganshinu District" then
                 levellist = {"aot_infinite", "aot_level_1", "aot_level_2", "aot_level_3", "aot_level_4","aot_level_5", "aot_level_6"}
             elseif level == "Snowy Town" then
@@ -1406,8 +1404,10 @@ function sex()
 
         getgenv().updatedifficulty = function()
             selectdiff:ClearDrop() local level = getgenv().SelectedLevel; cata = getgenv().WorldCategory; local diff;
-            if level == "namek_infinite" or level == "aot_infinite"
-                or cata == "Legend Stages" then
+            if level == "namek_infinite" or level == "aot_infinite" or level == "demonslayer_infinite" 
+            or level == "naruto_infinite" or level == "marineford_infinite" or level == "tokyoghoul_infinite" or level == "hueco_infinite" 
+            or level == "hxhant_infinite" or level == "magnolia_infinite" or level == "jjk_infinite" or level == "clover_infinite" 
+            or level == "jojo_infinite" or level == "opm_infinite" or cata == "Legend Stages" then
                 diff = {"Hard"}
             else
                 diff = {"Normal", "Hard"}
