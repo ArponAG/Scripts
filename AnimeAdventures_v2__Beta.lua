@@ -450,7 +450,7 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoReplay})
 
-    AutoFarmConfig:Cheat("Checkbox","🏃 Auto Next Story  ", function(bool)
+    AutoFarmConfig:Cheat("Checkbox","🏃 Auto Next Story/Room  ", function(bool)
         print(bool)
         Settings.AutoNext = bool
         saveSettings()
