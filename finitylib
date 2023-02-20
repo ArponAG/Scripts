@@ -83,6 +83,7 @@ finity.dark_theme = { -- dark
 	textbox_placeholder = Color3.fromRGB(135, 135, 138),
 
 	dropdown_background = Color3.fromRGB(88, 88, 91),
+	dropdown_backgroundscroll = Color3.fromRGB(60,60,62),
 	dropdown_text = Color3.fromRGB(195, 195, 195),
 	dropdown_text_hover = Color3.fromRGB(232, 232, 232),
 	dropdown_scrollbar_color = Color3.fromRGB(118, 118, 121),
@@ -798,7 +799,8 @@ function finity.new(isdark, gprojectName, thinProject)
 							Name = "Dropdown",
 							BackgroundColor3 = Color3.new(1, 1, 1),
 							BackgroundTransparency = 1,
-							Size = UDim2.new(1, 0, 1, 0),
+							Position = UDim2.new(0.1, 0, 0, 0),
+							Size = UDim2.new(0.9, 0, 1, 0),
 							ZIndex = 2,
 							Image = "rbxassetid://3570695787",
 							ImageColor3 = theme.dropdown_background,
@@ -824,7 +826,7 @@ function finity.new(isdark, gprojectName, thinProject)
 
 						cheat.list = finity:Create("ScrollingFrame", {
 							Name = "List",
-							BackgroundColor3 = theme.dropdown_background,
+							BackgroundColor3 = theme.dropdown_backgroundscroll,
 							BackgroundTransparency = 0,
 							BorderSizePixel = 0,
 							Position = UDim2.new(0, 0, 1, 0),
@@ -916,7 +918,7 @@ function finity.new(isdark, gprojectName, thinProject)
 									end
 								end
 
-								finity.gs["TweenService"]:Create(cheat.list, TweenInfo.new(0.2), {Size = UDim2.new(1, 0, 0, math.clamp(cheat.list["UIListLayout"].AbsoluteContentSize.Y, 0, 150)), Position = UDim2.new(0, 0, 1, 0), ScrollBarImageTransparency = 0, BackgroundTransparency = 0.5}):Play()
+								finity.gs["TweenService"]:Create(cheat.list, TweenInfo.new(0.2), {Size = UDim2.new(1, 0, 0, math.clamp(cheat.list["UIListLayout"].AbsoluteContentSize.Y, 0, 150)), Position = UDim2.new(0, 0, 1, 0), ScrollBarImageTransparency = 0, BackgroundTransparency = 0.1}):Play()
 							else
 								for _, button in next, cheat.list:GetChildren() do
 									if button:IsA("TextButton") then
@@ -998,7 +1000,8 @@ function finity.new(isdark, gprojectName, thinProject)
 							Name = "Background",
 							BackgroundColor3 = Color3.new(1, 1, 1),
 							BackgroundTransparency = 1,
-							Size = UDim2.new(1, 0, 1, 0),
+							Position = UDim2.new(0.1, 0, 0, 0),
+							Size = UDim2.new(0.9, 0, 1, 0),							
 							ZIndex = 2,
 							Image = "rbxassetid://3570695787",
 							ImageColor3 = theme.textbox_background,
@@ -1012,6 +1015,8 @@ function finity.new(isdark, gprojectName, thinProject)
 							Name = "Textbox",
 							BackgroundColor3 = Color3.new(1, 1, 1),
 							BackgroundTransparency = 1,
+							TextScaled = true,
+							TextWrapped = true,
 							Position = UDim2.new(0, 0, 0, 0),
 							Size = UDim2.new(1, 0, 1, 0),
 							ZIndex = 2,
@@ -1195,8 +1200,8 @@ function finity.new(isdark, gprojectName, thinProject)
 							Name = "Background",
 							BackgroundColor3 = Color3.new(1, 1, 1),
 							BackgroundTransparency = 1,
-							Position = UDim2.new(0.5, 0, 0, 0),
-							Size = UDim2.new(0.5, 0, 1, 0),
+							Position = UDim2.new(0.1, 0, 0, 0),
+							Size = UDim2.new(0.9, 0, 1, 0),
 							ZIndex = 2,
 							Image = "rbxassetid://3570695787",
 							ImageColor3 = theme.button_background,
