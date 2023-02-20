@@ -450,7 +450,7 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoReplay})
 
-    AutoFarmConfig:Cheat("Checkbox","🏃 Auto Next Story/Room  ", function(bool)
+    AutoFarmConfig:Cheat("Checkbox","🏃 Auto Next Story  ", function(bool)
         print(bool)
         Settings.AutoNext = bool
         saveSettings()
@@ -1588,19 +1588,21 @@ coroutine.resume(coroutine.create(function()
             print("Changed", GameFinished.Value == true)
             if GameFinished.Value == true then
                 repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
-                local btn = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Buttons.Next
-                task.spawn(function()
-                    pcall(function()
-                        for i,v in pairs(getconnections(btn.Activated)) do
-                            v:Fire()
-                        end 
+                if Settings.WebhookEnabled then 
+                    local btn = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Buttons.Next
+                    task.spawn(function()
+                        pcall(function()
+                            for i,v in pairs(getconnections(btn.Activated)) do
+                                v:Fire()
+                            end 
+                        end)
                     end)
-                end)
-                
-                task.wait(2)
-                getgenv().item = game:GetService("Players").LocalPlayer.PlayerGui.HatchInfo.holder.info1.UnitName.Text
-                warn(game:GetService("Players").LocalPlayer.PlayerGui.HatchInfo.holder.info1.UnitName.Text)
-                webhook()
+                    task.wait(2)
+                    getgenv().item = game:GetService("Players").LocalPlayer.PlayerGui.HatchInfo.holder.info1.UnitName.Text
+                    warn(game:GetService("Players").LocalPlayer.PlayerGui.HatchInfo.holder.info1.UnitName.Text)
+    
+                    webhook()
+                end
                 print("next")
                 task.wait(1)
                 if Settings.AutoReplay then
