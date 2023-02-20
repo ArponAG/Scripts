@@ -99,7 +99,7 @@ local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
 
-local Window = Uilib.new(true, "[👹UPD 9] Anime Adventures "..version.." - "..exec)
+local Window = Uilib.new(true, "[UPD 10.7.5] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightShift)
 
 
@@ -537,6 +537,7 @@ local function credits()
     Developers:Cheat("Label","📐 UI By: detourious @ v3rmillion.net")    
     Developers:Cheat("Label","🔧 To toggle the script press \"RightShift\"")   
     Developers:Cheat("Button","🔗 Discord Invite", function()
+        setclipboard("https://discord.gg/2ttfCfzxut")
     end)    
     UIUPDT:Cheat("Label","[+] idk \n[+]reeeeeeeeeee")    
 end
