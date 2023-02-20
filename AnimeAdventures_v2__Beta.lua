@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b4"
+local version = "v2.0.0b5"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -23,6 +23,74 @@ local RunService = game:GetService("RunService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
 ------------------------------
+getgenv().item = "-"
+
+plr.PlayerGui:FindFirstChild("HatchInfo"):FindFirstChild("holder"):FindFirstChild("info1"):FindFirstChild("UnitName").Text = getgenv().item
+
+function webhook()
+
+    local url = Settings.WebhookUrl
+    print("webhook?")
+    if url == "" then
+    warn("Webhook Url is empty!")
+    return
+    end 
+    
+    userlevel = plr.PlayerGui:FindFirstChild("spawn_units"):FindFirstChild("Lives"):FindFirstChild("Main"):FindFirstChild("Desc"):FindFirstChild("Level").Text
+    totalgems = plr.PlayerGui:FindFirstChild("spawn_units"):FindFirstChild("Lives"):FindFirstChild("Frame"):FindFirstChild("Resource"):FindFirstChild("Gem"):FindFirstChild("Level").Text
+    
+    ResultHolder = plr.PlayerGui:FindFirstChild("ResultsUI"):FindFirstChild("Holder")
+    if game.PlaceId ~= 8304191830 then
+    levelname = game:GetService("Workspace"):FindFirstChild("_MAP_CONFIG"):FindFirstChild("GetLevelData"):InvokeServer()["name"]
+    result = ResultHolder.Title.Text else levelname, result = "nil","nil" end
+    
+    gold = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GoldReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
+    if gold == "+99999" then gold = "+0" end	 
+    gems = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GemReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
+    if gems == "+99999" then gems = "+0" end	 
+    xpx = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("XPReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
+    xp = xpx:split(" ")
+    if xp[1] == "+99999" then xp[1] = "+0" end
+    trophy = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("TrophyReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
+    if trophy == "+99999" then trophy = "+0" end	 
+    
+    totaltime =  ResultHolder:FindFirstChild("Middle"):FindFirstChild("Timer").Text
+    totalwaves = ResultHolder:FindFirstChild("Middle"):FindFirstChild("WavesCompleted").Text
+    
+    local data = {
+        ["content"] =" @everyone ",
+        ["embeds"] = {
+         {
+          ["title"] ="||"..plr.Name.."||",
+          ["url"] = "https://www.roblox.com/users/"..plr.UserId,
+          ["description"] = tostring(userlevel),
+          ["author"] = {["name"] = version},
+          ["color"] = null,
+          ["fields"] = {
+             {
+              ["name"] ="Result",
+              ["value"] = levelname.." — "..result,
+              ["inline"] = true
+             },
+             {
+              ["name"] ="Rewards",
+              ["value"] = getgenv().item.."\n"..gold.." Gold\n"..gems.." Gems\n"..xp[1].." XP\n"..trophy.." Trophy\n⬖ Total Gems = "..totalgems
+             }
+          }
+        }
+      }
+    }
+    
+    local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+    local headers = {["content-type"] = "application/json"}
+    request = http_request or request or HttpPost or syn.request or http.request
+    local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+    warn("Sending webhook notification...")
+    request(sex)
+
+end
+------------------------------\
 if game.CoreGui:FindFirstChild("FinityUI") then
     game.CoreGui["FinityUI"]:Destroy()
 end
@@ -31,18 +99,17 @@ local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
 
-local Window = Uilib.new(true, "[👹UPD 9] Anime Adventures "..version.." - "..exec)
+local Window = Uilib.new(true, "[UPD 10.7.5] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightShift)
 
-local Home = Window:Category(" 📋 Home")
-local Farm = Window:Category(" 🏹 Auto Farm")
-local UC = Window:Category(" 👥 Unit Config")
-local Misc = Window:Category(" 🛠 Misc")
 
+local Home = Window:Category(" 📋 Home")
 local Developers = Home:Sector("Anime Adventures")
 local asdasd = Home:Sector(" ")
-local UIUPDT = Home:Sector("UI UPDATE (January 20th)")
+local UIUPDT = Home:Sector("UI UPDATE (February 20th)")
 
+
+local Farm = Window:Category(" 🏹 Auto Farm")
 local SelectUnits = Farm:Sector("Units Selection")
 local SelectWorld = Farm:Sector("World Selection")
 local UnitPosition = Farm:Sector("Select Unit Position")
@@ -50,6 +117,10 @@ local MoreFarmConfig = Farm:Sector("More Farming Config")
 local AutoFarmConfig = Farm:Sector("Auto Farm Config")
 local ChallengeConfig = Farm:Sector("Challenge Config")
 
+
+local UC = Window:Category(" 👥 Unit Config")
+local NDY = UC:Sector("NOT DONE YET")
+local emptyxx = UC:Sector(" ")
 local Unit1 = UC:Sector("Unit 1")
 local Unit2 = UC:Sector("Unit 2")
 local Unit3 = UC:Sector("Unit 3")
@@ -57,6 +128,12 @@ local Unit4 = UC:Sector("Unit 4")
 local Unit5 = UC:Sector("Unit 5")
 local Unit6 = UC:Sector("Unit 6")
 
+
+local Misc = Window:Category(" 🛠 Misc")
+local AutoSummonSec = Misc:Sector("Auto Summon Units")
+local AutoSnipeMerchantSec = Misc:Sector("Auto Snipe Merchant")
+local WebhookSec = Misc:Sector("Discord Webhook")
+local OtherSec = Misc:Sector("Other Options")
 
 function saveSettings()
     local HttpService = game:GetService('HttpService')
@@ -142,7 +219,7 @@ local function UnitSec()
 
     GetUnits()
 
-    SelectUnits:Cheat("Button", "🦸 Select Current Units", function() --Selects Currently Equipped Units!
+    SelectUnits:Cheat("Button", "🦸 Select Units", function() --Selects Currently Equipped Units!
         Settings.SelectedUnits = {
             U1 = "nil",
             U2 = "nil",
@@ -155,50 +232,56 @@ local function UnitSec()
         GetUnits()
     end)
 
-    local a = SelectUnits:Cheat("Dropdown", "👥 Units Preset",function(preset)
+    function switchteam(string)
+        local args = { [1] = string }
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.switch_team_loadout:InvokeServer(unpack(args))
+    end
+
+    local a = SelectUnits:Cheat("Dropdown", "👥 Select Team",function(preset)
         Settings.SelectedPreset = preset
-    print(preset)
+        print(preset)
+        saveSettings()
     end, { 
-        options = { "Preset 1", "Preset 2", "Preset 3", "Preset 4","Preset 5" }, 
-        default = "Select Team"
+        options = { "Team 1", "Team 2", "Team 3", "Team 4","Team 5" }, 
+        default = Settings.SelectedPreset
     })
 
-    SelectUnits:Cheat("Button", "💾 Save Units Preset", function() --Saves to preset
+  --[[  SelectUnits:Cheat("Button", "💾 Save Units Preset", function() --Saves to preset
         preset = Settings.SelectedPreset
-        if preset == "Preset 1" then
+        if preset == "Team 1" then
             Settings.preset1 = Settings.SelectedUnits
-        elseif preset == "Preset 2" then
+        elseif preset == "Team 2" then
             Settings.preset2 = Settings.SelectedUnits
-        elseif preset == "Preset 3" then
+        elseif preset == "Team 3" then
             Settings.preset3 = Settings.SelectedUnits
-        elseif preset == "Preset 4" then
+        elseif preset == "Team 4" then
             Settings.preset4 = Settings.SelectedUnits
-        elseif preset == "Preset 5" then
+        elseif preset == "Team 5" then
             Settings.preset5 = Settings.SelectedUnits
         end
         print(preset)
         saveSettings()
 
     end)
+    ]]--
 
-    SelectUnits:Cheat("Button", "⌛ Load Units Preset", function() --loads preset
+    SelectUnits:Cheat("Button", "⌛ Switch Team", function() --loads preset
         preset = Settings.SelectedPreset
-        if preset == "Preset 1" then
-            loadpreset = Settings.preset1
-        elseif preset == "Preset 2" then
-            loadpreset = Settings.preset2
-        elseif preset == "Preset 3" then
-            loadpreset = Settings.preset3
-        elseif preset == "Preset 4" then
-            loadpreset = Settings.preset4
-        elseif preset == "Preset 5" then
-            loadpreset = Settings.preset5
-        elseif preset == "Preset 6" then
-            loadpreset = Settings.preset6
+        if preset == "Team 1" then
+            switchteam("1")
+        elseif preset == "Team 2" then
+            switchteam("2")
+        elseif preset == "Team 3" then
+            switchteam("3")
+        elseif preset == "Team 4" then
+            switchteam("4")
+        elseif preset == "Team 5" then
+            switchteam("5")
         end
         print(preset)
+        GetUnits()
 
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.unequip_all:InvokeServer()
+        --[[game:GetService("ReplicatedStorage").endpoints.client_to_server.unequip_all:InvokeServer()
             
         for i = 1, 6 do
             local unitinfo = loadpreset["U" .. i]
@@ -208,7 +291,8 @@ local function UnitSec()
                 task.wait(0.5)
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.equip_unit:InvokeServer(unitinfo_[2])
             end
-        end
+        end ]]--
+
     end)
 
 end
@@ -413,11 +497,13 @@ local function MoreFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoInfinityCastle})
 
+    --[[
     MoreFarmConfig:Cheat("Checkbox","⚡️ Auto Event Farm  ", function(bool)
         print(bool)
         Settings.AutoEventFarm = bool
         saveSettings()
     end,{enabled = Settings.AutoEventFarm})
+    ]]--
 end
 
 ----------------------------------------------
@@ -451,7 +537,8 @@ local function credits()
     Developers:Cheat("Label","📝 Also thanks to Trapstar#7845, bytenode#9646, HOLYSHz#3819 for the help!")    
     Developers:Cheat("Label","📐 UI By: detourious @ v3rmillion.net")    
     Developers:Cheat("Label","🔧 To toggle the script press \"RightShift\"")   
-    Developers:Cheat("Button","🔗 Copy Discord Invite", function()
+    Developers:Cheat("Button","🔗 Discord Invite", function()
+        setclipboard("https://discord.gg/2ttfCfzxut")
     end)    
     UIUPDT:Cheat("Label","[+] idk \n[+]reeeeeeeeeee")    
 end
@@ -544,177 +631,342 @@ function updatepos(map, UnitPos, a,a2,a3,a4,a5,a6)
     Settings[map][UnitPos]["y4"] = a4.Position.Y
     Settings[map][UnitPos]["y5"] = a5.Position.Y
     Settings[map][UnitPos]["y6"] = a6.Position.Y
-
+    print("updatepos")
     saveSettings()
 end
 
-function MouseClick2(UnitPos)
-    print("a")
-    local raycastParams = RaycastParams.new()
-    raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
-    raycastParams.FilterDescendantsInstances = {game:GetService("Workspace")["_terrain"]}
-    
-    _G.gg = true
-    task.wait(0.5)
-    local x = getgenv().posX
-    local z = getgenv().posZ
-
-    local a = Instance.new("Part", game.Workspace)
-    local a2 = Instance.new("Part", game.Workspace)
-    local a3 = Instance.new("Part", game.Workspace)
-    local a4 = Instance.new("Part", game.Workspace)
-    local a5 = Instance.new("Part", game.Workspace)
-    local a6 = Instance.new("Part", game.Workspace)
-
-    a.Size = Vector3.new(1, 1, 1)
-    a2.Size = Vector3.new(1, 1, 1)
-    a3.Size = Vector3.new(1, 1, 1)
-    a4.Size = Vector3.new(1, 1, 1)
-    a5.Size = Vector3.new(1, 1, 1)
-    a6.Size = Vector3.new(1, 1, 1)
-
-    a.Material = Enum.Material.Neon
-    a2.Material = Enum.Material.Neon
-    a3.Material = Enum.Material.Neon
-    a4.Material = Enum.Material.Neon
-    a5.Material = Enum.Material.Neon
-    a6.Material = Enum.Material.Neon
-    
-    --a.Position = mouse.hit.p
-    game:GetService("RunService").RenderStepped:Connect(function()
-        if _G.gg then
-            --pcall(function()
-                mouse.TargetFilter  = a
-                
-                local xPos = mouse.Hit.Position.X --x position of unit
-                local zPos = mouse.Hit.Position.Z --z position of unit
-                local rayOrigin = CFrame.new(xPos, 1000, zPos).p
-                local rayDestination = CFrame.new(xPos, -500, zPos).p
-                local rayDirection = (rayDestination - rayOrigin)
-                local raycastResult = workspace:Raycast(rayOrigin, rayDirection, raycastParams)
-                a.CFrame = CFrame.new(raycastResult.Position) * CFrame.Angles(0, -0, -0)
-                
-                
-                local xPos2 = a.Position.X --x position of unit
-                local zPos2 = a.Position.Z + z --z position of unit
-                local rayOrigin2 = CFrame.new(xPos2, 1000, zPos2).p
-                local rayDestination2 = CFrame.new(xPos2, -500, zPos2).p
-                local rayDirection2 = (rayDestination2 - rayOrigin2)
-                local raycastResult2 = workspace:Raycast(rayOrigin2, rayDirection2, raycastParams)
-                a2.CFrame = CFrame.new(raycastResult2.Position) * CFrame.Angles(0, -0, -0)
-                
-                local xPos3 = a.Position.X + x --x position of unit
-                local zPos3 = a.Position.Z  --z position of unit
-                local rayOrigin3 = CFrame.new(xPos3, 1000, zPos3).p
-                local rayDestination3 = CFrame.new(xPos3, -500, zPos3).p
-                local rayDirection3 = (rayDestination3 - rayOrigin3)
-                local raycastResult3 = workspace:Raycast(rayOrigin3, rayDirection3, raycastParams)
-                a3.CFrame = CFrame.new(raycastResult3.Position) * CFrame.Angles(0, -0, -0)
-                
-                local xPos4 = a.Position.X - x --x position of unit
-                local zPos4 = a.Position.Z  --z position of unit
-                local rayOrigin4 = CFrame.new(xPos4, 1000, zPos4).p
-                local rayDestination4 = CFrame.new(xPos4, -500, zPos4).p
-                local rayDirection4 = (rayDestination4 - rayOrigin4)
-                local raycastResult4 = workspace:Raycast(rayOrigin4, rayDirection4, raycastParams)
-                a4.CFrame = CFrame.new(raycastResult4.Position) * CFrame.Angles(0, -0, -0)
-
-                local xPos5 = a.Position.X + x--x position of unit
-                local zPos5 = a.Position.Z + z --z position of unit
-                local rayOrigin5 = CFrame.new(xPos5, 1000, zPos5).p
-                local rayDestination5 = CFrame.new(xPos5, -500, zPos5).p
-                local rayDirection5 = (rayDestination5 - rayOrigin5)
-                local raycastResult5 = workspace:Raycast(rayOrigin5, rayDirection5, raycastParams)
-                a5.CFrame = CFrame.new(raycastResult5.Position) * CFrame.Angles(0, -0, -0)
-
-                local xPos6 = a.Position.X - x --x position of unit
-                local zPos6 = a.Position.Z + z --z position of unit
-                local rayOrigin6 = CFrame.new(xPos6, 1000, zPos6).p
-                local rayDestination6 = CFrame.new(xPos6, -500, zPos6).p
-                local rayDirection6 = (rayDestination6 - rayOrigin6)
-                local raycastResult6 = workspace:Raycast(rayOrigin6, rayDirection6, raycastParams)
-                a6.CFrame = CFrame.new(raycastResult6.Position) * CFrame.Angles(0, -0, -0)
-            --end)
-        end
-    end)
-    task.wait()
-
-    a.Anchored = true
-    a2.Anchored = true
-    a3.Anchored = true
-    a4.Anchored = true
-    a5.Anchored = true
-    a6.Anchored = true
-
-    a.CanCollide = false
-    a2.CanCollide = false
-    a3.CanCollide = false
-    a4.CanCollide = false
-    a5.CanCollide = false
-    a6.CanCollide = false
-    kjqhwe = mouse.Button1Down:Connect(function()
-        kjqhwe:Disconnect()
-        print("b")
-        if game.Workspace._map:FindFirstChild("namek mushroom model") then
-            updatepos("Namak", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("houses_new") then
-            updatepos("Aot", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("Snow Particles") then
-            updatepos("Snowy", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("sand_gate") then 
-            updatepos("Sand", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("icebergs") then
-            updatepos("Marine", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
-            updatepos("Ghoul", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("Bones/dust") then
-            updatepos("Hollow", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("Ant Nest") then
-            updatepos("Ant", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("light poles") then
-            updatepos("Magic", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("LanternsGround") then
-            updatepos("Cursed", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("pumpkins") then    
-            updatepos("thriller_park", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("skeleton") then
-            updatepos("black_clover", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("graves") then
-            updatepos("hollow_leg", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("vending machines") then
-            updatepos("chainsaw", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
-            updatepos("jojo", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("secret") then
-            updatepos("opm", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("s") then
-            updatepos("west_city", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("Capybara") then
-            updatepos("Storm_Hideout", UnitPos, a,a2,a3,a4,a5,a6)
-        elseif game.Workspace._map:FindFirstChild("snow grass") then
-            updatepos("infinity_trian", UnitPos, a,a2,a3,a4,a5,a6)
-        end
-        _G.gg = false    
-        for i = 0, 1, 0.1 do
-            a.Transparency = i
-            a2.Transparency = i
-            a3.Transparency = i
-            a4.Transparency = i
-            a5.Transparency = i
-            a6.Transparency = i
-            task.wait()
-        end
-        a:Destroy()
-        a2:Destroy()
-        a3:Destroy()
-        a4:Destroy()
-        a5:Destroy()
-        a6:Destroy()
-        
-    end)
+function savepos(UnitPos, a,a2,a3,a4,a5,a6)
+    if game.Workspace._map:FindFirstChild("namek mushroom model") then
+        updatepos("Namak", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("houses_new") then
+        updatepos("Aot", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Snow Particles") then
+        updatepos("Snowy", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("sand_gate") then 
+        updatepos("Sand", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("icebergs") then
+        updatepos("Marine", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
+        updatepos("Ghoul", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Bones/dust") then
+        updatepos("Hollow", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Ant Nest") then
+        updatepos("Ant", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("light poles") then
+        updatepos("Magic", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("LanternsGround") then
+        updatepos("Cursed", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("pumpkins") then    
+        updatepos("thriller_park", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("skeleton") then
+        updatepos("black_clover", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("graves") then
+        updatepos("hollow_leg", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("vending machines") then
+        updatepos("chainsaw", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
+        updatepos("jojo", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("secret") then
+        updatepos("opm", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("s") then
+        updatepos("west_city", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Capybara") then
+        updatepos("Storm_Hideout", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("snow grass") then
+        updatepos("infinity_trian", UnitPos, a,a2,a3,a4,a5,a6)
+    end
+    warn("savepos")
 end
 
+function mobilegui(a,a2,a3,a4,a5,a6)
+	local BillboardGui = Instance.new("BillboardGui")
+	local Frame = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	local Done = Instance.new("TextButton")
+	local UICorner = Instance.new("UICorner")
+	local Cancel = Instance.new("TextButton")
+	local UICorner_2 = Instance.new("UICorner")
+
+	--Properties:
+	BillboardGui.Adornee = a
+	BillboardGui.Parent = game.Players.LocalPlayer.PlayerGui 
+	BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	BillboardGui.Active = true
+	BillboardGui.LightInfluence = 1.000
+	BillboardGui.Size = UDim2.new(7, 0, 3, 0)
+	BillboardGui.SizeOffset = Vector2.new(0, 1.5)
+
+	Frame.Parent = BillboardGui
+	Frame.BackgroundColor3 = Color3.fromRGB(49, 49, 57)
+	Frame.BackgroundTransparency = 1.000
+	Frame.Size = UDim2.new(1, 0, 0.5, 0)
+
+	UIListLayout.Parent = Frame
+	UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.Padding = UDim.new(0.0599999987, 0)
+
+	Done.Name = "Done"
+	Done.Parent = Frame
+	Done.BackgroundColor3 = Color3.fromRGB(34, 255, 0)
+	Done.Size = UDim2.new(0.469999999, 0, 1, 0)
+	Done.Font = Enum.Font.SourceSansBold
+	Done.Text = "Done"
+	Done.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Done.TextScaled = true
+	Done.TextSize = 1.000
+	Done.TextWrapped = true
+	Done.Activated:Connect(function()
+		_G.gg = false 
+		savepos(UnitPos, a,a2,a3,a4,a5,a6)
+		for i = 0, 1, 0.1 do
+			a.Transparency = i
+			a2.Transparency = i
+			a3.Transparency = i
+			a4.Transparency = i
+			a5.Transparency = i
+			a6.Transparency = i
+			task.wait()
+		end
+		a:Destroy()
+		a2:Destroy()
+		a3:Destroy()
+		a4:Destroy()
+		a5:Destroy()
+		a6:Destroy()
+		BillboardGui:Destroy();
+	end)
+	
+	UICorner.CornerRadius = UDim.new(0.119999997, 0)
+	UICorner.Parent = Done
+
+	Cancel.Name = "Cancel"
+	Cancel.Parent = Frame
+	Cancel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+	Cancel.Size = UDim2.new(0.469999999, 0, 1, 0)
+	Cancel.Font = Enum.Font.SourceSansBold
+	Cancel.Text = "Cancel"
+	Cancel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Cancel.TextScaled = true
+	Cancel.TextSize = 1.000
+	Cancel.TextWrapped = true
+	Cancel.Activated:Connect(function()
+		print("Cancel")
+		_G.gg = false 
+		for i = 0, 1, 0.1 do
+			a.Transparency = i
+			a2.Transparency = i
+			a3.Transparency = i
+			a4.Transparency = i
+			a5.Transparency = i
+			a6.Transparency = i
+			task.wait()
+		end
+		a:Destroy()
+		a2:Destroy()
+		a3:Destroy()
+		a4:Destroy()
+		a5:Destroy()
+		a6:Destroy()
+		BillboardGui:Destroy();
+	end)
+	
+	UICorner_2.CornerRadius = UDim.new(0.119999997, 0)
+	UICorner_2.Parent = Cancel
+end
+
+function MouseClick2(UnitPos)
+	if UserInputService.TouchEnabled then mobile = true else mobile = false end 
+	print("a")
+	local raycastParams = RaycastParams.new()
+	raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+	raycastParams.FilterDescendantsInstances = {game:GetService("Workspace")["_terrain"]}
+
+	_G.gg = true
+	task.wait(0.5)
+	local x = getgenv().posX
+	local z = getgenv().posZ
+
+	local a = Instance.new("Part", game.Workspace)
+	local a2 = Instance.new("Part", game.Workspace)
+	local a3 = Instance.new("Part", game.Workspace)
+	local a4 = Instance.new("Part", game.Workspace)
+	local a5 = Instance.new("Part", game.Workspace)
+	local a6 = Instance.new("Part", game.Workspace)
+
+	a.Size = Vector3.new(1, 1, 1)
+	a2.Size = Vector3.new(1, 1, 1)
+	a3.Size = Vector3.new(1, 1, 1)
+	a4.Size = Vector3.new(1, 1, 1)
+	a5.Size = Vector3.new(1, 1, 1)
+	a6.Size = Vector3.new(1, 1, 1)
+
+	a.Material = Enum.Material.Neon
+	a2.Material = Enum.Material.Neon
+	a3.Material = Enum.Material.Neon
+	a4.Material = Enum.Material.Neon
+	a5.Material = Enum.Material.Neon
+	a6.Material = Enum.Material.Neon
+
+	--a.Position = mouse.hit.p
+	game:GetService("RunService").RenderStepped:Connect(function()
+		pcall(function()
+			if _G.gg and not mobile then
+				mouse.TargetFilter  = a
+
+				local xPos = mouse.Hit.Position.X --x position of unit
+				local zPos = mouse.Hit.Position.Z --z position of unit
+				local rayOrigin = CFrame.new(xPos, 1000, zPos).p
+				local rayDestination = CFrame.new(xPos, -500, zPos).p
+				local rayDirection = (rayDestination - rayOrigin)
+				local raycastResult = workspace:Raycast(rayOrigin, rayDirection, raycastParams)
+				a.CFrame = CFrame.new(raycastResult.Position) * CFrame.Angles(0, -0, -0)
+
+
+				local xPos2 = a.Position.X --x position of unit
+				local zPos2 = a.Position.Z + z --z position of unit
+				local rayOrigin2 = CFrame.new(xPos2, 1000, zPos2).p
+				local rayDestination2 = CFrame.new(xPos2, -500, zPos2).p
+				local rayDirection2 = (rayDestination2 - rayOrigin2)
+				local raycastResult2 = workspace:Raycast(rayOrigin2, rayDirection2, raycastParams)
+				a2.CFrame = CFrame.new(raycastResult2.Position) * CFrame.Angles(0, -0, -0)
+
+				local xPos3 = a.Position.X + x --x position of unit
+				local zPos3 = a.Position.Z  --z position of unit
+				local rayOrigin3 = CFrame.new(xPos3, 1000, zPos3).p
+				local rayDestination3 = CFrame.new(xPos3, -500, zPos3).p
+				local rayDirection3 = (rayDestination3 - rayOrigin3)
+				local raycastResult3 = workspace:Raycast(rayOrigin3, rayDirection3, raycastParams)
+				a3.CFrame = CFrame.new(raycastResult3.Position) * CFrame.Angles(0, -0, -0)
+
+				local xPos4 = a.Position.X - x --x position of unit
+				local zPos4 = a.Position.Z  --z position of unit
+				local rayOrigin4 = CFrame.new(xPos4, 1000, zPos4).p
+				local rayDestination4 = CFrame.new(xPos4, -500, zPos4).p
+				local rayDirection4 = (rayDestination4 - rayOrigin4)
+				local raycastResult4 = workspace:Raycast(rayOrigin4, rayDirection4, raycastParams)
+				a4.CFrame = CFrame.new(raycastResult4.Position) * CFrame.Angles(0, -0, -0)
+
+				local xPos5 = a.Position.X + x--x position of unit
+				local zPos5 = a.Position.Z + z --z position of unit
+				local rayOrigin5 = CFrame.new(xPos5, 1000, zPos5).p
+				local rayDestination5 = CFrame.new(xPos5, -500, zPos5).p
+				local rayDirection5 = (rayDestination5 - rayOrigin5)
+				local raycastResult5 = workspace:Raycast(rayOrigin5, rayDirection5, raycastParams)
+				a5.CFrame = CFrame.new(raycastResult5.Position) * CFrame.Angles(0, -0, -0)
+
+				local xPos6 = a.Position.X - x --x position of unit
+				local zPos6 = a.Position.Z + z --z position of unit
+				local rayOrigin6 = CFrame.new(xPos6, 1000, zPos6).p
+				local rayDestination6 = CFrame.new(xPos6, -500, zPos6).p
+				local rayDirection6 = (rayDestination6 - rayOrigin6)
+				local raycastResult6 = workspace:Raycast(rayOrigin6, rayDirection6, raycastParams)
+				a6.CFrame = CFrame.new(raycastResult6.Position) * CFrame.Angles(0, -0, -0)	
+			elseif _G.gg and mobile then
+				warn("MOBILE DEVICE")
+				UserInputService.TouchLongPress:Connect(function()
+					mouse.TargetFilter  = a
+
+					local xPos = mouse.Hit.Position.X --x position of unit
+					local zPos = mouse.Hit.Position.Z --z position of unit
+					local rayOrigin = CFrame.new(xPos, 1000, zPos).p
+					local rayDestination = CFrame.new(xPos, -500, zPos).p
+					local rayDirection = (rayDestination - rayOrigin)
+					local raycastResult = workspace:Raycast(rayOrigin, rayDirection, raycastParams)
+					a.CFrame = CFrame.new(raycastResult.Position) * CFrame.Angles(0, -0, -0)
+
+
+					local xPos2 = a.Position.X --x position of unit
+					local zPos2 = a.Position.Z + z --z position of unit
+					local rayOrigin2 = CFrame.new(xPos2, 1000, zPos2).p
+					local rayDestination2 = CFrame.new(xPos2, -500, zPos2).p
+					local rayDirection2 = (rayDestination2 - rayOrigin2)
+					local raycastResult2 = workspace:Raycast(rayOrigin2, rayDirection2, raycastParams)
+					a2.CFrame = CFrame.new(raycastResult2.Position) * CFrame.Angles(0, -0, -0)
+
+					local xPos3 = a.Position.X + x --x position of unit
+					local zPos3 = a.Position.Z  --z position of unit
+					local rayOrigin3 = CFrame.new(xPos3, 1000, zPos3).p
+					local rayDestination3 = CFrame.new(xPos3, -500, zPos3).p
+					local rayDirection3 = (rayDestination3 - rayOrigin3)
+					local raycastResult3 = workspace:Raycast(rayOrigin3, rayDirection3, raycastParams)
+					a3.CFrame = CFrame.new(raycastResult3.Position) * CFrame.Angles(0, -0, -0)
+
+					local xPos4 = a.Position.X - x --x position of unit
+					local zPos4 = a.Position.Z  --z position of unit
+					local rayOrigin4 = CFrame.new(xPos4, 1000, zPos4).p
+					local rayDestination4 = CFrame.new(xPos4, -500, zPos4).p
+					local rayDirection4 = (rayDestination4 - rayOrigin4)
+					local raycastResult4 = workspace:Raycast(rayOrigin4, rayDirection4, raycastParams)
+					a4.CFrame = CFrame.new(raycastResult4.Position) * CFrame.Angles(0, -0, -0)
+
+					local xPos5 = a.Position.X + x--x position of unit
+					local zPos5 = a.Position.Z + z --z position of unit
+					local rayOrigin5 = CFrame.new(xPos5, 1000, zPos5).p
+					local rayDestination5 = CFrame.new(xPos5, -500, zPos5).p
+					local rayDirection5 = (rayDestination5 - rayOrigin5)
+					local raycastResult5 = workspace:Raycast(rayOrigin5, rayDirection5, raycastParams)
+					a5.CFrame = CFrame.new(raycastResult5.Position) * CFrame.Angles(0, -0, -0)
+
+					local xPos6 = a.Position.X - x --x position of unit
+					local zPos6 = a.Position.Z + z --z position of unit
+					local rayOrigin6 = CFrame.new(xPos6, 1000, zPos6).p
+					local rayDestination6 = CFrame.new(xPos6, -500, zPos6).p
+					local rayDirection6 = (rayDestination6 - rayOrigin6)
+					local raycastResult6 = workspace:Raycast(rayOrigin6, rayDirection6, raycastParams)
+					a6.CFrame = CFrame.new(raycastResult6.Position) * CFrame.Angles(0, -0, -0)	
+				end)
+			end
+		end)
+
+	end)
+	task.wait()
+
+	a.Anchored = true
+	a2.Anchored = true
+	a3.Anchored = true
+	a4.Anchored = true
+	a5.Anchored = true
+	a6.Anchored = true
+
+	a.CanCollide = false
+	a2.CanCollide = false
+	a3.CanCollide = false
+	a4.CanCollide = false
+	a5.CanCollide = false
+	a6.CanCollide = false
+	if _G.gg and not mobile then
+		kjqhwe = mouse.Button1Down:Connect(function()
+			kjqhwe:Disconnect()
+			print("b")
+			savepos(UnitPos, a,a2,a3,a4,a5,a6)
+			_G.gg = false 
+
+			for i = 0, 1, 0.1 do
+				a.Transparency = i
+				a2.Transparency = i
+				a3.Transparency = i
+				a4.Transparency = i
+				a5.Transparency = i
+				a6.Transparency = i
+				task.wait()
+			end
+			a:Destroy()
+			a2:Destroy()
+			a3:Destroy()
+			a4:Destroy()
+			a5:Destroy()
+			a6:Destroy()
+		end)
+	elseif _G.gg  and mobile then
+		mobilegui(a,a2,a3,a4,a5,a6)
+	end
+
+end
+
+
 local function UnitPosSec()
+
     UnitPosition:Cheat("Button", "Unit 1 Position", function()
         MouseClick2("UP1")
     end)
@@ -736,7 +988,8 @@ local function UnitPosSec()
 end
 
 local function unitconfig()
-
+    emptyxx:Cheat("Label","    ")
+    NDY:Cheat("Label","THIS SECTION IS NOT FINISHED SO IT WILL NOT WORK. FOR UPDATE JOIN DISCORD!")
     --//UNIT 1
     Unit1:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
@@ -836,7 +1089,142 @@ local function unitconfig()
     end, {placeholder = 999}) 
 end
 
+----------------------------------------------
+---------------- Auto Summon -----------------
+----------------------------------------------
+function SummonUnits(banner, method)
+    local args = {
+        [1] = tostring(banner),
+        [2] = tostring(method)
+    }
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_from_banner:InvokeServer(unpack(args)) 
+    wait(1.5)
+end
 
+function AutoSummon()
+    local aaselectbanner = AutoSummonSec:Cheat("Dropdown", "Select Banner",function(value)
+        getgenv().SelectedBanner = value
+    end, { options = {"Special", "Standard"}})
+
+    local aaselectbanner = AutoSummonSec:Cheat("Dropdown", "Select Method",function(value)
+        getgenv().SelectedMethod = value
+    end, { options = {"ticket", "gems", "gems10"}})
+
+    AutoSummonSec:Cheat("Checkbox","Auto Summon", function(bool)
+        getgenv().AutoSummon = bool
+    end)
+end
+
+----------------------------------------------
+------------ Auto Snipe Merchant -------------
+----------------------------------------------
+
+function buymerchant(item)
+    local args = { [1] = item } 
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(unpack(args))
+end
+
+function snipefunc(item)
+    if item =="Any StarFruits" then
+        if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
+            for i,v in pairs(game:GetService("Workspace")["travelling_merchant"]:FindFirstChild("stand"):FindFirstChild("items"):GetChildren()) do
+                if v.Name:match("StarFruit") then
+                    buymerchant(v.Name)
+                    print(v.Name)
+                end   
+            end
+        end        
+    elseif item == "Any Items"then
+        if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
+            for i,v in pairs(game:GetService("Workspace")["travelling_merchant"]:FindFirstChild("stand"):FindFirstChild("items"):GetChildren()) do
+                if v.Name:match("LuckPotion") or v.Name:match("star_remnant") or v.Name:match("summon_ticket") then
+                    buymerchant(v.Name)
+                    print(v.Name)
+                end  
+            end
+        end
+    else
+        for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.ItemShop:FindFirstChild("Window"):FindFirstChild("Outer"):FindFirstChild("ItemFrames"):GetChildren()) do
+            if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
+                for i,v in pairs(game:GetService("Workspace")["travelling_merchant"]:FindFirstChild("stand"):FindFirstChild("items"):GetChildren()) do
+                    if v.Name:match(tostring(item)) then
+                        buymerchant(v.Name)
+                        print(v.Name)
+                    end  
+                end
+            end 
+        end
+    end
+end
+
+
+function SnipeMerchant()
+    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Star Fruit",function(value)
+        Settings.ASM_SelectedFruit = value
+        saveSettings()
+    end, { options = {"None","Any StarFruits","StarFruit","StarFruitGreen","StarFruitRed", "StarFruitPink","StarFruitBlue","StarFruitEpic"}, default =Settings.ASM_SelectedFruit})
+   
+    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Other Items",function(value)
+        Settings.ASM_SelectedOtherItems = value
+        saveSettings()
+    end, { options = {"None","Any Items","LuckPotion","star_remnant","summon_ticket"}, default =Settings.ASM_SelectedOtherItems})
+
+    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Evo Items",function(value)
+        Settings.ASM_SelectedEvoItems = value
+        saveSettings()
+    end, { options = {"None"}, default =Settings.ASM_SelectedEvoItems})
+
+    AutoSnipeMerchantSec:Cheat("Checkbox","Enable Auto Snipe", function(bool)
+        Settings.AutoSnipeMerchant = bool
+        saveSettings()
+    end,{enabled = Settings.AutoSnipeMerchant })
+
+end
+
+----------------------------------------------
+-------------- Discord Webhook ---------------
+----------------------------------------------
+function Webhooksec()
+    WebhookSec:Cheat("Textbox", "Webhook Url", function(Value)
+        Settings.WebhookUrl = Value
+        saveSettings()
+    end, {placeholder = Settings.WebhookUrl})
+
+    WebhookSec:Cheat("Checkbox","Enable Webhook", function(bool)
+        Settings.WebhookEnabled = bool
+        saveSettings()
+    end,{enabled = Settings.WebhookEnabled})
+
+    WebhookSec:Cheat("Button", "Test Webhook", function()
+        print(Settings.WebhookUrl)
+        webhook()
+    end)
+end
+
+----------------------------------------------
+------------------ Others --------------------
+----------------------------------------------
+function autoload()
+    pcall(function()
+        local exec = tostring(identifyexecutor())
+        if exec == "Synapse X" and getgenv().AutoLoadTP then
+            syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua'))()")
+        elseif exec ~= "Synapse X" and getgenv().AutoLoadTP then
+            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua'))()")
+        end
+    end)
+end
+
+function others()
+    OtherSec:Cheat("Checkbox","Auto Load Script", function(bool)
+        Settings.AutoLoadScript = bool
+        saveSettings()
+        autoload()
+    end,{enabled = Settings.AutoLoadScript})
+end
+----------------------------------------------
+------------ /\/\/\/\/\/\/\/\/\ --------------
+----------------------------------------------
 if game.PlaceId == 8304191830 then
     UnitPosition:Cheat("Label","Not available in game Lobby!")    
     UnitSec()
@@ -846,8 +1234,13 @@ if game.PlaceId == 8304191830 then
     ChallengeSec()
     unitconfig()
     credits()
+    AutoSummon()
+    SnipeMerchant()
+    Webhooksec()
+    others()
 else
     SelectUnits:Cheat("Label","Only available in game Lobby!")    
+    AutoSummonSec:Cheat("Label","Only available in game Lobby!")    
     WorldSec()
     AutoFarmSec()
     MoreFarmSec()
@@ -855,6 +1248,9 @@ else
     UnitPosSec()
     unitconfig()
     credits()
+    SnipeMerchant()
+    Webhooksec()
+    others()
 end
 
 
@@ -906,8 +1302,6 @@ Settings.teleporting = true
 getgenv().door = "_lobbytemplategreen1"
 
 
-
-
 local function startfarming()
     if game.PlaceId == 8304191830 and 
         not Settings.farmprotal and Settings.AutoFarm and Settings.teleporting and not Settings.AutoInfinityCastle then
@@ -925,7 +1319,7 @@ local function startfarming()
                         local args = {
                             [1] = tostring(v.Parent.Name), -- Lobby 
                             [2] = Settings.SelectedLevel, -- World/Level
-                            [3] = Settings.isFriendOnly, -- Friends Only or not
+                            [3] = Settings.isFriendOnly or true, -- Friends Only or not
                             [4] = Settings.Difficulty }
     
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
@@ -967,7 +1361,7 @@ local function startfarming()
                         local args = {
                             [1] = tostring(v.Parent.Name), -- Lobby 
                             [2] = Settings.SelectedLevel, -- World/Level
-                            [3] = Settings.isFriendOnly, -- Friends Only or not
+                            [3] = Settings.isFriendOnly or true, -- Friends Only or not
                             [4] = Settings.Difficulty }
     
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
@@ -1187,34 +1581,77 @@ end))
 
 
 coroutine.resume(coroutine.create(function()
-	local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
-    GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
-        print("Changed", GameFinished.Value == true)
-        if GameFinished.Value == true then
-            repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
-            task.wait()
-            --pcall(function() webhook() end)
-            print("next")
-            task.wait(2.1)
-            if Settings.AutoReplay then
-                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                print("Replay...")
-            elseif Settings.AutoInfinityCastle then
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer()
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer()
-                print("Next Room...")
-            elseif Settings.AutoNext and not Settings.AutoInfinityCastle then
-                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                print("Next Story...")
-            elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext and not Settings.AutoInfinityCastle then
-                --Teleport()
-                 game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
-                 print("Returning to lobby...")
+	
+    task.spawn(function()
+        local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
+        GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
+            print("Changed", GameFinished.Value == true)
+            if GameFinished.Value == true then
+                repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
+                local btn = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Buttons.Next
+                task.spawn(function()
+                    pcall(function()
+                        for i,v in pairs(getconnections(btn.Activated)) do
+                            v:Fire()
+                        end 
+                    end)
+                end)
+                
+                task.wait(2)
+                getgenv().item = game:GetService("Players").LocalPlayer.PlayerGui.HatchInfo.holder.info1.UnitName.Text
+                warn(game:GetService("Players").LocalPlayer.PlayerGui.HatchInfo.holder.info1.UnitName.Text)
+                webhook()
+                print("next")
+                task.wait(1)
+                if Settings.AutoReplay then
+                    local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    print("Replay...")
+                elseif Settings.AutoInfinityCastle then
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer()
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer()
+                    print("Next Room...")
+                elseif Settings.AutoNext and not Settings.AutoInfinityCastle then
+                    local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    print("Next Story...")
+                elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext and not Settings.AutoInfinityCastle then
+                    game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
+                    print("Returning to lobby...")
+                end
+            end
+        end)
+    end)
+
+    while task.wait() do
+        if getgenv().AutoSummon then
+            if getgenv().SelectedBanner == "Special" and getgenv().SelectedMethod ~= nil then
+                SummonUnits("EventClover", getgenv().SelectedMethod)
+            elseif getgenv().SelectedBanner == "Standard" and getgenv().SelectedMethod ~= nil then
+                SummonUnits("Standard", getgenv().SelectedMethod)
             end
         end
-	end)
+
+        if Settings.AutoSnipeMerchant then
+            if Settings.ASM_SelectedFruit ~= "None" or Settings.ASM_SelectedFruit ~= nil then
+                if Settings.ASM_SelectedFruit == "Any StarFruits" then
+                    snipefunc("Any StarFruits")
+                else
+                    snipefunc(Settings.ASM_SelectedFruit)
+                end
+            end
+            if Settings.ASM_SelectedOtherItems ~= "None" or Settings.ASM_SelectedOtherItems ~= nil then
+                if Settings.ASM_SelectedOtherItems == "Any StarFruits" then
+                    snipefunc("Any Items")
+                else
+                    snipefunc(Settings.ASM_SelectedOtherItems)
+                end
+            end
+            if Settings.ASM_SelectedEvoItems ~= "None" or Settings.ASM_SelectedEvoItems ~= nil then
+           
+            end
+        end
+    end  
 end))
 
 
@@ -1493,5 +1930,10 @@ pcall(function()
     warn("Anti-AFK loaded!")
 end)
 
+if Settings.AutoLoadScript then
+    autoload()
+end
+
 game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
 
+print("Loaded!")
