@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b5"
+local version = "v2.0.0b6"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -621,7 +621,9 @@ function updatepos(map, UnitPos, a,a2,a3,a4,a5,a6)
         }
     saveSettings()
     end
-
+    pcall(function()
+        
+    end)
     Settings[map][UnitPos]["x"] = a.Position.X
     Settings[map][UnitPos]["z"] = a.Position.Z
 
@@ -1785,92 +1787,94 @@ end
 
 
 function PlaceUnits(map)
-    if Settings.AutoFarm and not getgenv().disableatuofarm then
-        x = getgenv().posX; z = getgenv().posZ
-        for i = 1, 6 do
-            local unitinfo = Settings.SelectedUnits["U" .. i]
-            if unitinfo ~= nil then
-                local unitinfo_ = unitinfo:split(" #")
-                local pos = Settings[map]["UP" .. i]
-                print(map.." attempt to place "..unitinfo_[1])
-
-                if unitinfo_[1] ~= "metal_knight_evolved" then
-
-                    --place units 0
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-        
-                    --place units 1
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-        
-                    --place units 2 
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-        
-                    --place units 3 
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y4"], pos["z"]) )
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-        
-                    --place units 4
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y5"], pos["z"] + z) )
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-        
-                    --place units 5
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y6"], pos["z"] + z) )
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-
-                elseif unitinfo_[1] == "metal_knight_evolved" then
-                    task.spawn(function()
+    pcall(function()
+        if Settings.AutoFarm and not getgenv().disableatuofarm then
+            x = getgenv().posX; z = getgenv().posZ
+            for i = 1, 6 do
+                local unitinfo = Settings.SelectedUnits["U" .. i]
+                if unitinfo ~= nil then
+                    local unitinfo_ = unitinfo:split(" #")
+                    local pos = Settings[map]["UP" .. i]
+                    print(map.." attempt to place "..unitinfo_[1])
+    
+                    if unitinfo_[1] ~= "metal_knight_evolved" then
+    
                         --place units 0
                         local args = {
                             [1] = unitinfo_[2],
                             [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    end)
-
-                    task.spawn(function()
+            
                         --place units 1
-                        task.wait(2)
                         local args = {
                             [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z) )
+                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    end)
-
-                    task.spawn(function()
-                        --place units 2
-                        task.wait(3)
+            
+                        --place units 2 
                         local args = {
                             [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"], pos["z"]) )
+                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    end)
+            
+                        --place units 3 
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y4"], pos["z"]) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            
+                        --place units 4
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y5"], pos["z"] + z) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            
+                        --place units 5
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y6"], pos["z"] + z) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                    elseif unitinfo_[1] == "metal_knight_evolved" then
+                        task.spawn(function()
+                            --place units 0
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end)
+    
+                        task.spawn(function()
+                            --place units 1
+                            task.wait(2)
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z) )
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end)
+    
+                        task.spawn(function()
+                            --place units 2
+                            task.wait(3)
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"], pos["z"]) )
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end)
+                    end
                 end
             end
         end
-    end
+    end)
 end
 
 coroutine.resume(coroutine.create(function()
