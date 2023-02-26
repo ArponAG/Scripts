@@ -85,7 +85,7 @@ function webhook()
     totalwaves = ResultHolder:FindFirstChild("Middle"):FindFirstChild("WavesCompleted").Text
     
     local data = {
-        ["content"] =" @everyone ",
+        ["content"] ="  ",
         ["embeds"] = {
          {
           ["title"] ="||"..plr.Name.."||",
