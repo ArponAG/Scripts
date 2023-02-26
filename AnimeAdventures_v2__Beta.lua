@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b6"
+local version = "v2.0.0b7"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -12,9 +12,36 @@ else
     repeat task.wait() until game:GetService("Workspace")["_waves_started"].Value == true
 end
 ------------------------------
-Settings = {}
 local a = 'Anime_Adventures' -- Paste Name
 local b = game:GetService('Players').LocalPlayer.Name .. '_AnimeAdventures.json' 
+Settings = {}
+function saveSettings()
+    local HttpService = game:GetService('HttpService')
+    if not isfolder(a) then
+        makefolder(a)
+    end
+    writefile(a .. '/' .. b, HttpService:JSONEncode(Settings))
+    Settings = ReadSetting()
+    warn("Settings Saved!")
+end
+
+function ReadSetting()
+    local s, e = pcall(function()
+        local HttpService = game:GetService('HttpService')
+        if not isfolder(a) then
+            makefolder(a)
+        end
+        return HttpService:JSONDecode(readfile(a .. '/' .. b))
+    end)
+    if s then
+        return e
+    else
+        saveSettings()
+        return ReadSetting()
+    end
+end
+
+Settings = ReadSetting()
 ------------------------------
 local HttpService = game:GetService("HttpService")
 local Workspace = game:GetService("Workspace") 
@@ -58,7 +85,7 @@ function webhook()
     totalwaves = ResultHolder:FindFirstChild("Middle"):FindFirstChild("WavesCompleted").Text
     
     local data = {
-        ["content"] =" ",
+        ["content"] =" @everyone ",
         ["embeds"] = {
          {
           ["title"] ="||"..plr.Name.."||",
@@ -134,34 +161,6 @@ local AutoSummonSec = Misc:Sector("Auto Summon Units")
 local AutoSnipeMerchantSec = Misc:Sector("Auto Snipe Merchant")
 local WebhookSec = Misc:Sector("Discord Webhook")
 local OtherSec = Misc:Sector("Other Options")
-
-function saveSettings()
-    local HttpService = game:GetService('HttpService')
-    if not isfolder(a) then
-        makefolder(a)
-    end
-    writefile(a .. '/' .. b, HttpService:JSONEncode(Settings))
-    Settings = ReadSetting()
-    warn("Settings Saved!")
-end
-
-function ReadSetting()
-    local s, e = pcall(function()
-        local HttpService = game:GetService('HttpService')
-        if not isfolder(a) then
-            makefolder(a)
-        end
-        return HttpService:JSONDecode(readfile(a .. '/' .. b))
-    end)
-    if s then
-        return e
-    else
-        saveSettings()
-        return ReadSetting()
-    end
-end
-
-Settings = ReadSetting()
 
 ----------------------------------------------
 ---------------- Units Selection -------------
@@ -330,7 +329,7 @@ local function WorldSec()
         selectworld:ClearDrop() local storylist;
         if Settings.WorldCategory == "Story Worlds" then
             storylist = {"Planet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford",
-            "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom","Cape Canaveral", "Alien Spaceship"}
+            "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom","Cape Canaveral", "Alien Spaceship","Fabled Kingdom"}
         elseif Settings.WorldCategory == "Legend Stages" then
             storylist = {"Clover Kingdom (Elf Invasion)", "Hollow Invasion","Cape Canaveral"}
         elseif Settings.WorldCategory == "Raid Worlds" then
@@ -380,7 +379,9 @@ local function WorldSec()
             levellist = {"jojo_infinite","jojo_level_1","jojo_level_2","jojo_level_3","jojo_level_4","jojo_level_5","jojo_level_6",}
         elseif level == "Alien Spaceship" then
             levellist = {"opm_infinite","opm_level_1","opm_level_2","opm_level_3","opm_level_4","opm_level_5","opm_level_6",}
-        ---///Legend Stages\\\---
+        elseif level == "Fabled Kingdom" then
+            levellist = {"7ds_infinite","7ds_level_1","7ds_level_2","7ds_level_3","7ds_level_4","7ds_level_5","7ds_level_6",}
+        --///Legend Stages\\\---
         elseif level == "Clover Kingdom (Elf Invasion)" then
             levellist = {"clover_legend_1","clover_legend_2","clover_legend_3"}
         elseif level == "Hollow Invasion" then
@@ -675,7 +676,9 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("Capybara") then
         updatepos("Storm_Hideout", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("snow grass") then
-        updatepos("infinity_trian", UnitPos, a,a2,a3,a4,a5,a6)
+       updatepos("infinity_trian", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
+        updatepos("fabled_kingdom", UnitPos, a,a2,a3,a4,a5,a6)
     end
     warn("savepos")
 end
@@ -995,36 +998,59 @@ local function unitconfig()
     --//UNIT 1
     Unit1:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
+        Settings.U1_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_Wave})
+
+    Unit1:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_TotalAmmount})
 
     Unit1:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
+        Settings.U1_UpgWave = Value
+    end, {placeholder = Settings.U1_UpgWave})
 
     Unit1:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 999})
+        Settings.U1_UpgCap = Value
+    end, {placeholder = Settings.U1_UpgCap})
 
     Unit1:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 999}) 
+        Settings.U1_SellWave = Value
+    end, {placeholder = Settings.U1_SellWave}) 
 
 
     --//UNIT 2
     Unit2:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
+        Settings.U2_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_Wave})
+
+    Unit2:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_TotalAmmount})
 
     Unit2:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
+        Settings.U2_UpgWave = Value
+    end, {placeholder = Settings.U2_UpgWave})
 
     Unit2:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
+        Settings.U2_UpgCap = Value
+    end, {placeholder = Settings.U2_UpgCap})
+
     Unit2:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 999}) 
+        Settings.U2_SellWave = Value
+    end, {placeholder = Settings.U2_SellWave}) 
     
     --//UNIT 3
     Unit3:Cheat("Textbox", "Place from wave", function(Value)
@@ -1254,8 +1280,9 @@ else
     Webhooksec()
     others()
 end
-
-
+----------------------------------------------
+------------ /\/\/\/\/\/\/\/\/\ --------------
+----------------------------------------------
 
 local function checkChallenge()
     for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
@@ -1660,131 +1687,195 @@ end))
 
 
 
-
-function PlacePos(map,name,_uuid,pos)
+function PlacePos(map,name,_uuid,unit)
     if Settings.AutoFarm and not getgenv().disableatuofarm then
         x = getgenv().posX; z = getgenv().posZ
-       
-        print(map.." attempt to place "..name)
+        local pos = Settings[map][unit]
+
+        warn(map.." attempt to place "..name)
 
         if name ~= "metal_knight_evolved" then
             warn("x")
-            --place units 0
-            local args = {
-                [1] = _uuid,
-                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
-            }
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-
-            --place units 1
-            local args = {
-                [1] = _uuid,
-                [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
-            }
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-
-            --place units 2 
-            local args = {
-                [1] = _uuid,
-                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
-            }
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-
-            --place units 3 
-            local args = {
-                [1] = _uuid,
-                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y4"], pos["z"]) )
-            }
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-
-            --place units 4
-            local args = {
-                [1] = _uuid,
-                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y5"], pos["z"] + z) )
-            }
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-
-            --place units 5
-            local args = {
-                [1] = _uuid,
-                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y6"], pos["z"] + z) )
-            }
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-
-        elseif name == "metal_knight_evolved" then
-            warn("y")
-            task.spawn(function()
-                --place units 0
-                local args = {
+            local i = math.random(1,6)
+            if i == 1 then
+                    local args = {
                     [1] = _uuid,
                     [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
                 }
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-            end)
-
-            task.spawn(function()
-                --place units 1
-                task.wait(2)
-                local args = {
+                return
+            elseif i == 2 then
+                    local args = {
                     [1] = _uuid,
-                    [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z) )
+                    [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
                 }
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-            end)
-
-            task.spawn(function()
-                --place units 2
-                task.wait(3)
-                local args = {
+                return
+            elseif i == 3 then
+                    local args = {
                     [1] = _uuid,
-                    [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"], pos["z"]) )
+                    [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
                 }
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-            end)
+                return
+            elseif i == 4 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y4"], pos["z"]) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            elseif i == 5 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y5"], pos["z"] + z) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            elseif i == 6 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y6"], pos["z"] + z) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            end
+        elseif name == "metal_knight_evolved" then
+            warn("y")
+            local i = math.random(1,6)
+            if i == 1 then
+                task.spawn(function()
+                    --place units 0
+                    local args = {
+                        [1] = _uuid,
+                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                end)
+            elseif i == 2 then
+                task.spawn(function()
+                    --place units 1
+                    task.wait(2)
+                    local args = {
+                        [1] = _uuid,
+                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                end)
+            elseif i == 3 then
+                task.spawn(function()
+                    --place units 2
+                    task.wait(3)
+                    local args = {
+                        [1] = _uuid,
+                        [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                end)
+            end
         end
-
     end
 end
 
-function GetCurrentAmmount(Unit)
+
+function updateunit(name, min)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") then
+            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                if v.Name == name and v._stats.upgrade.Value <= min then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+
+function sellunit(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+        end
+    end
+end
+
+
+function GetUnitInfo(Unit)
     local unitinfo = Settings.SelectedUnits[Unit]
     local unitinfo_ = unitinfo:split(" #")
-    
-    local idk = {}
-    
+    local _units = {}
+    local uu = {}
+    table.clear(_units)
+    table.clear(uu)
+    local name = " "
+    local min;
     for i, v in pairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do 
         for i,v in pairs(v:GetChildren()) do 
             if v.Name == "_stats" then
                 if v:FindFirstChild("uuid") then
                     if v.uuid.Value == unitinfo_[2] then
-                        table.insert(idk,v.Parent.Name)
+                        table.insert(_units,v.Parent.Name)
+                        name = v.Parent.Name
+                    end
+                end
+                if v:FindFirstChild("uuid") and v:FindFirstChild("upgrade") then
+                    if v.uuid.Value == unitinfo_[2] then
+                        table.insert(uu,v.upgrade.Value)
                     end
                 end
             end
         end
     end
-    return #idk
+    
+    if #uu ~= 0 then
+        min = math.min(table.unpack(uu))
+        table.sort(uu, function(a, b) return a < b end)
+        local min = uu[1]
+    end
+    
+    return #_units or 0, unitinfo_[1], unitinfo_[2], min or 0
 end
 
 
 function PlaceUnitsTEST(map)
-    current_wave = game:GetService("Workspace")["_wave_num"]
-    U1wave = 1
-    U1ammount = 2
-    
-    if current_wave <= U1wave then
-        if GetCurrentAmmount("U1") <= U1ammount then
-            local unitinfo = Settings.SelectedUnits["U1"] --Unit _uuid
-            if unitinfo ~= nil then
-                local unitinfo_ = unitinfo:split(" #")
-                local pos = Settings[map]["UP1"]
-                PlacePos(map, unitinfo_[1], unitinfo_[2], pos)
-            end
+    current_wave = game:GetService("Workspace")["_wave_num"].Value
+
+    U1_wv, U2_wv = Settings.U1_Wave or 0, Settings.U2_Wave or 0
+    U1_TAmm, U2_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6
+    U1_upgW, U2_upgW = Settings.U1_UpgWave or 0, Settings.U2_UpgWave or 0
+    U1_upgCap, U2_upgCap = Settings.U1_UpgCap or 99, Settings.U2_UpgCap or 99
+    U1_sellW, U2_sellW = Settings.U1_SellWave or 999, Settings.U2_SellWave or 999
+
+    --//Unit 1
+    local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
+    if U1_wv <= current_wave and U1_amm <= U1_TAmm then
+        if U1_sellW >= current_wave and U1_amm < U1_TAmm then
+            PlacePos(map, U1_name, U1_uuid,"UP1")
+        elseif U1_sellW <= current_wave then
+            sellunit(U1_name)
+        end
+        if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave then
+            updateunit(tostring(U1_name), U1_upgCap)
         end
     end
-    
-end
 
+    --//Unit 2
+    U2_amm, U2_name, U2_uuid, U2_u = GetUnitInfo("U2")
+    if U2_wv <= current_wave and U2_amm <= U2_TAmm then
+        if U2_sellW >= current_wave and U2_amm < U2_TAmm then
+            PlacePos(map, U2_name, U2_uuid,"UP1")
+        elseif U2_sellW <= current_wave then
+            sellunit(U2_name)
+        end
+        if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave then
+            updateunit(tostring(U2_name), U2_upgCap)
+        end
+    end
+
+
+end
+--fix sell and place spam
 
 function PlaceUnits(map)
     pcall(function()
@@ -1883,6 +1974,7 @@ coroutine.resume(coroutine.create(function()
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
             if game.Workspace._map:FindFirstChild("namek mushroom model") then
+                --PlaceUnitsTEST("Namak")
                 PlaceUnits("Namak")
             elseif game.Workspace._map:FindFirstChild("houses_new") then
                 PlaceUnits("Aot")
@@ -1920,6 +2012,8 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnits("Storm_Hideout")
             elseif game.Workspace._map:FindFirstChild("snow grass") then
                 PlaceUnits("infinity_trian")
+            elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
+                PlaceUnits("fabled_kingdom")
             end
         end
     end
@@ -1939,6 +2033,8 @@ end)
 if Settings.AutoLoadScript then
     autoload()
 end
+
+-- game:GetService("Players")["Nimble_Bot"].PlayerGui.HatchGuiNew.BannerFrames.EventClover.Main
 
 game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
 
