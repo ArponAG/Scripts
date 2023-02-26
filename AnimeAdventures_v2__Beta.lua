@@ -2037,8 +2037,10 @@ if Settings.AutoLoadScript then
     autoload()
 end
 
--- game:GetService("Players")["Nimble_Bot"].PlayerGui.HatchGuiNew.BannerFrames.EventClover.Main
-
-game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+if game.PlaceId ~= 8304191830 then
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+end
 
 print("Loaded!")
