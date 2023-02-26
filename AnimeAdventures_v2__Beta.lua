@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b7"
+local version = "v2.0.0b7a"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -331,7 +331,7 @@ local function WorldSec()
             storylist = {"Planet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford",
             "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom","Cape Canaveral", "Alien Spaceship","Fabled Kingdom"}
         elseif Settings.WorldCategory == "Legend Stages" then
-            storylist = {"Clover Kingdom (Elf Invasion)", "Hollow Invasion","Cape Canaveral"}
+            storylist = {"Clover Kingdom (Elf Invasion)", "Hollow Invasion","Cape Canaveral (Legend)", "Fabled Kingdom (Legend)"}
         elseif Settings.WorldCategory == "Raid Worlds" then
             storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid"}
         elseif Settings.WorldCategory == "Portals" then
@@ -386,8 +386,11 @@ local function WorldSec()
             levellist = {"clover_legend_1","clover_legend_2","clover_legend_3"}
         elseif level == "Hollow Invasion" then
             levellist = {"bleach_legend_1","bleach_legend_2","bleach_legend_3","bleach_legend_4","bleach_legend_5","bleach_legend_6"}
-        elseif level == "Cape Canaveral" then
+        elseif level == "Cape Canaveral (Legend)" then
             levellist = {"jojo_legend_1","jojo_legend_2","jojo_legend_3"}
+        elseif level == "Fabled Kingdom (Legend)" then
+            levellist = {"7ds_legend_1","7ds_legend_2","7ds_legend_3"}
+        --///Raids\\\---
         elseif level == "Storm Hideout" then
             levellist = {"uchiha_level_1","uchiha_level_2","uchiha_level_3","uchiha_level_4","uchiha_level_5"}
         elseif level == "West City" then
@@ -1638,7 +1641,7 @@ coroutine.resume(coroutine.create(function()
                     local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
                     local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
                     print("Replay...")
-                elseif Settings.AutoInfinityCastle then
+                elseif Settings.AutoNext and Settings.AutoInfinityCastle then
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer()
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer()
                     print("Next Room...")
