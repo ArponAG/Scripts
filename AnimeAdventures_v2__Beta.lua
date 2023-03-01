@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b7a"
+local version = "v2.0.0b8"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -85,7 +85,7 @@ function webhook()
     totalwaves = ResultHolder:FindFirstChild("Middle"):FindFirstChild("WavesCompleted").Text
     
     local data = {
-        ["content"] ="  ",
+        ["content"] =" ",
         ["embeds"] = {
          {
           ["title"] ="||"..plr.Name.."||",
@@ -335,7 +335,7 @@ local function WorldSec()
         elseif Settings.WorldCategory == "Raid Worlds" then
             storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid"}
         elseif Settings.WorldCategory == "Portals" then
-            storylist = {"Coming Soon...","Coming Soon..."}
+            storylist = {"Alien Portals","Devil Portals (ANY)"}
         end
     
         for i = 1, #storylist do
@@ -401,7 +401,13 @@ local function WorldSec()
             levellist = {"aot_raid_1"}
         elseif level == "Hiddel Sand Village - Raid" then
             levellist = {"naruto_raid_1"}
+        --///Portals\\\---
+        elseif level == "Alien Portals" then
+            levellist = {"portal_boros_g"}
+        elseif level == "Devil Portals (ANY)" then
+            levellist = {"portal_csm"}
         end
+
 
         for i = 1, #levellist do
             selectlevel:AddOption(levellist[i])
@@ -417,12 +423,14 @@ local function WorldSec()
     })
 
     getgenv().updatedifficulty = function()
-        selectdiff:ClearDrop() local level = Settings.SelectedLevel; cata = Settings.WorldCategory; local diff;
+        selectdiff:ClearDrop(); level = Settings.SelectedLevel; cata = Settings.WorldCategory; local diff;
         if level == "namek_infinite" or level == "aot_infinite" or level == "demonslayer_infinite" 
         or level == "naruto_infinite" or level == "marineford_infinite" or level == "tokyoghoul_infinite" or level == "hueco_infinite" 
         or level == "hxhant_infinite" or level == "magnolia_infinite" or level == "jjk_infinite" or level == "clover_infinite" 
         or level == "jojo_infinite" or level == "opm_infinite" or cata == "Legend Stages" or cata == "Raid Worlds" then
             diff = {"Hard"}
+        elseif cata == "Portals" then
+            diff = {"Default"}
         else
             diff = {"Normal", "Hard"}
         end
@@ -1330,14 +1338,37 @@ local function startChallenge()
     end
 end
 
+
+function GetPortals(id)
+    local reg = getreg()  --> returns Roblox's registry in a table
+    local portals = {}
+    for i,v in next, reg do
+        if type(v) == 'function' then --> Checks if the current iteration is a function
+            if getfenv(v).script then --> Checks if the function's environment is in a script
+                for _, v in pairs(debug.getupvalues(v)) do  --> Basically a for loop that prints everything, but in one line
+                    if type(v) == 'table' then
+                        if v["session"] then
+                            for _, item in pairs(v["session"]["inventory"]['inventory_profile_data']['unique_items']) do
+                              if item["item_id"] == id then
+                                table.insert(portals, item)
+                              end
+                            end
+                            return portals
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
 Settings.teleporting = true
 getgenv().door = "_lobbytemplategreen1"
 
 
 local function startfarming()
-    if game.PlaceId == 8304191830 and 
-        not Settings.farmprotal and Settings.AutoFarm and Settings.teleporting and not Settings.AutoInfinityCastle then
-        local cpos = plr.Character.HumanoidRootPart.CFrame; cata = Settings.WorldCategory
+    if game.PlaceId == 8304191830 and not Settings.farmprotal and Settings.AutoFarm and Settings.teleporting and not Settings.AutoInfinityCastle then
+        local cpos = plr.Character.HumanoidRootPart.CFrame; cata = Settings.WorldCategory; level = Settings.SelectedLevel;
         
         if cata == "Story Worlds" or cata == "Legend Stages" then
             if tostring(game.Workspace._LOBBIES.Story[getgenv().door].Owner.Value) ~= plr.Name then
@@ -1422,42 +1453,41 @@ local function startfarming()
                 warn("farming")
                 task.wait(3)
             end
-        end
-
-    elseif game.PlaceId == 8304191830 and Settings.AutoFarm and getgenv().teleporting and Settings.AutoFarmTP ~= true 
-            and Settings.AutoInfinityCastle ~= true and Settings.farmprotal or Settings.farmprotal then
-
-        for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.items.grid.List.Outer.ItemFrames:GetChildren()) do
-            if v.Name == "portal_csm" or v.Name == "portal_csm1" or v.Name == "portal_csm2" or v.Name == "portal_csm3" or v.Name == "portal_csm4" or v.Name == "portal_csm5"  then
-                print(v._uuid_or_id.value)
-                getgenv().PortalID = v._uuid_or_id.value
-                break;
+        elseif cata == "Portals" then
+            if level == "portal_boros_g" then
+                local args = {
+                    [1] = GetPortals("portal_boros_g")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("Aline farming")
+                task.wait(7)
+            elseif level == "portal_csm" then
+                local args = {
+                    [1] = GetPortals("portal_csm")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("Aline farming")
+                task.wait(7)
             end
         end
-          task.wait(1.5)
-
-          local args = {
-            [1] = tostring(getgenv().PortalID),
-            [2] = { ["friends_only"] = getgenv().isFriendOnly }
-        }
-        
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-
-        task.wait(1.5)
-
-        for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-            if v.Name == "Owner" then
-                if tostring(v.value) == game.Players.LocalPlayer.Name then
-                    local args = {
-                        [1] = tostring(v.Parent.Name)
-                    }
-                    
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                    break;
-                end
-            end 
-        end
-        task.wait(7)
     end
 end
 
@@ -1649,7 +1679,7 @@ coroutine.resume(coroutine.create(function()
                     local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
                     local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
                     print("Next Story...")
-                elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext and not Settings.AutoInfinityCastle then
+                elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext then
                     game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
                     print("Returning to lobby...")
                 end
@@ -2036,6 +2066,8 @@ end)
 if Settings.AutoLoadScript then
     autoload()
 end
+
+-- game:GetService("Players")["Nimble_Bot"].PlayerGui.HatchGuiNew.BannerFrames.EventClover.Main
 
 if game.PlaceId ~= 8304191830 then
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
