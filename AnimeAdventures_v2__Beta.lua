@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b8"
+local version = "v2.0.0_beta8"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
