@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0_beta8"
+local version = "v2.0.0_b9"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -694,7 +694,7 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
     warn("savepos")
 end
 
-function mobilegui(a,a2,a3,a4,a5,a6)
+function mobilegui(UnitPos, a,a2,a3,a4,a5,a6)
 	local BillboardGui = Instance.new("BillboardGui")
 	local Frame = Instance.new("Frame")
 	local UIListLayout = Instance.new("UIListLayout")
@@ -975,7 +975,7 @@ function MouseClick2(UnitPos)
 			a6:Destroy()
 		end)
 	elseif _G.gg  and mobile then
-		mobilegui(a,a2,a3,a4,a5,a6)
+		mobilegui(UnitPos, a,a2,a3,a4,a5,a6)
 	end
 
 end
