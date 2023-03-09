@@ -405,7 +405,7 @@ local function WorldSec()
         elseif level == "Alien Portals" then
             levellist = {"portal_boros_g"}
         elseif level == "Devil Portals (ANY)" then
-            levellist = {"portal_csm","portal_csm2"}
+            levellist = {"portal_csm","portal_csm2","portal_csm3"}
         elseif level == "Demon Portals" then
             levellist = {"portal_zeldris"}
         end
@@ -1502,6 +1502,22 @@ local function startfarming()
                     end 
                 end
                 warn("devil portal2 farming")
+                task.wait(7)
+            elseif level == "portal_csm3" then
+                local args = {
+                    [1] = GetPortals("portal_csm2")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("devil portal3 farming")
                 task.wait(7)
             elseif level == "portal_zeldris" then
                 local args = {
