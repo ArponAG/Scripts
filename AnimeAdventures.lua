@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0_b9"
+local version = "v2.0.0b10"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -335,7 +335,7 @@ local function WorldSec()
         elseif Settings.WorldCategory == "Raid Worlds" then
             storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid"}
         elseif Settings.WorldCategory == "Portals" then
-            storylist = {"Alien Portals","Devil Portals (ANY)"}
+            storylist = {"Alien Portals","Devil Portals (ANY)", "Demon Portals"}
         end
     
         for i = 1, #storylist do
@@ -405,7 +405,9 @@ local function WorldSec()
         elseif level == "Alien Portals" then
             levellist = {"portal_boros_g"}
         elseif level == "Devil Portals (ANY)" then
-            levellist = {"portal_csm"}
+            levellist = {"portal_csm","portal_csm2"}
+        elseif level == "Demon Portals" then
+            levellist = {"portal_zeldris"}
         end
 
 
@@ -1338,7 +1340,6 @@ local function startChallenge()
     end
 end
 
-
 function GetPortals(id)
     local reg = getreg()  --> returns Roblox's registry in a table
     local portals = {}
@@ -1484,8 +1485,41 @@ local function startfarming()
                         break;
                     end 
                 end
-                warn("Aline farming")
+                warn("devil portal farming")
                 task.wait(7)
+            elseif level == "portal_csm2" then
+                local args = {
+                    [1] = GetPortals("portal_csm2")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("devil portal2 farming")
+                task.wait(7)
+            elseif level == "portal_zeldris" then
+                local args = {
+                    [1] = GetPortals("portal_zeldris")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("Demon Portal farming")
+                task.wait(7)
+
             end
         end
     end
@@ -1728,7 +1762,6 @@ function PlacePos(map,name,_uuid,unit)
         warn(map.." attempt to place "..name)
 
         if name ~= "metal_knight_evolved" then
-            warn("x")
             local i = math.random(1,6)
             if i == 1 then
                     local args = {
@@ -1774,17 +1807,18 @@ function PlacePos(map,name,_uuid,unit)
                 return
             end
         elseif name == "metal_knight_evolved" then
-            warn("y")
             local i = math.random(1,6)
             if i == 1 then
                 task.spawn(function()
                     --place units 0
+                    print("p1")
                     local args = {
                         [1] = _uuid,
                         [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
                     }
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                 end)
+                return
             elseif i == 2 then
                 task.spawn(function()
                     --place units 1
@@ -1795,6 +1829,7 @@ function PlacePos(map,name,_uuid,unit)
                     }
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                 end)
+                return
             elseif i == 3 then
                 task.spawn(function()
                     --place units 2
@@ -1805,13 +1840,14 @@ function PlacePos(map,name,_uuid,unit)
                     }
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                 end)
+                return
             end
         end
     end
 end
 
 
-function updateunit(name, min)
+function upgradeunit(name, min)
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
        if v:FindFirstChild("_stats") then
             if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
@@ -1884,12 +1920,15 @@ function PlaceUnitsTEST(map)
     local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
     if U1_wv <= current_wave and U1_amm <= U1_TAmm then
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
+            print("placing u1..")
             PlacePos(map, U1_name, U1_uuid,"UP1")
         elseif U1_sellW <= current_wave then
+            print("selling u1..")
             sellunit(U1_name)
         end
         if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave then
-            updateunit(tostring(U1_name), U1_upgCap)
+            print("upgrading u1..")
+            upgradeunit(tostring(U1_name), U1_upgCap)
         end
     end
 
@@ -1897,12 +1936,15 @@ function PlaceUnitsTEST(map)
     U2_amm, U2_name, U2_uuid, U2_u = GetUnitInfo("U2")
     if U2_wv <= current_wave and U2_amm <= U2_TAmm then
         if U2_sellW >= current_wave and U2_amm < U2_TAmm then
-            PlacePos(map, U2_name, U2_uuid,"UP1")
+            print("placing u2..")
+            PlacePos(map, U2_name, U2_uuid,"UP2")
         elseif U2_sellW <= current_wave then
+            print("selling u2..")
             sellunit(U2_name)
         end
         if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave then
-            updateunit(tostring(U2_name), U2_upgCap)
+            print("upgrading u2..")
+            upgradeunit(tostring(U2_name), U2_upgCap)
         end
     end
 
@@ -2007,8 +2049,8 @@ coroutine.resume(coroutine.create(function()
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
             if game.Workspace._map:FindFirstChild("namek mushroom model") then
-                --PlaceUnitsTEST("Namak")
-                PlaceUnits("Namak")
+                PlaceUnitsTEST("Namak")
+                --PlaceUnits("Namak")
             elseif game.Workspace._map:FindFirstChild("houses_new") then
                 PlaceUnits("Aot")
             elseif game.Workspace._map:FindFirstChild("Snow Particles") then
