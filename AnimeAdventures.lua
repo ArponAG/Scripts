@@ -126,7 +126,7 @@ local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
 
-local Window = Uilib.new(true, "[UPD 10.7.5] Anime Adventures "..version.." - "..exec)
+local Window = Uilib.new(true, "[UPD 11.5.0] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightShift)
 
 
