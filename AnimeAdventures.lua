@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b10"
+local version = "v2.0.0b11"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -405,7 +405,7 @@ local function WorldSec()
         elseif level == "Alien Portals" then
             levellist = {"portal_boros_g"}
         elseif level == "Devil Portals (ANY)" then
-            levellist = {"portal_csm","portal_csm2","portal_csm3"}
+            levellist = {"portal_csm"}
         elseif level == "Demon Portals" then
             levellist = {"portal_zeldris"}
         end
@@ -1350,8 +1350,8 @@ function GetPortals(id)
                     if type(v) == 'table' then
                         if v["session"] then
                             for _, item in pairs(v["session"]["inventory"]['inventory_profile_data']['unique_items']) do
-                              if item["item_id"] == id then
-                                table.insert(portals, item)
+                            if item["item_id"]:match(id) then
+                                    table.insert(portals, item)
                               end
                             end
                             return portals
@@ -1455,88 +1455,58 @@ local function startfarming()
                 task.wait(3)
             end
         elseif cata == "Portals" then
-            if level == "portal_boros_g" then
-                local args = {
-                    [1] = GetPortals("portal_boros_g")[1]["uuid"],
-                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                
-                task.wait(1.5)
-                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                        local args = { [1] = tostring(v.Parent.Name) }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                        break;
-                    end 
-                end
-                warn("Aline farming")
-                task.wait(7)
-            elseif level == "portal_csm" then
-                local args = {
-                    [1] = GetPortals("portal_csm")[1]["uuid"],
-                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                
-                task.wait(1.5)
-                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                        local args = { [1] = tostring(v.Parent.Name) }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                        break;
-                    end 
-                end
-                warn("devil portal farming")
-                task.wait(7)
-            elseif level == "portal_csm2" then
-                local args = {
-                    [1] = GetPortals("portal_csm2")[1]["uuid"],
-                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                
-                task.wait(1.5)
-                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                        local args = { [1] = tostring(v.Parent.Name) }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                        break;
-                    end 
-                end
-                warn("devil portal2 farming")
-                task.wait(7)
-            elseif level == "portal_csm3" then
-                local args = {
-                    [1] = GetPortals("portal_csm2")[1]["uuid"],
-                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                
-                task.wait(1.5)
-                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                        local args = { [1] = tostring(v.Parent.Name) }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                        break;
-                    end 
-                end
-                warn("devil portal3 farming")
-                task.wait(7)
-            elseif level == "portal_zeldris" then
-                local args = {
-                    [1] = GetPortals("portal_zeldris")[1]["uuid"],
-                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                
-                task.wait(1.5)
-                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                        local args = { [1] = tostring(v.Parent.Name) }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                        break;
-                    end 
-                end
-                warn("Demon Portal farming")
-                task.wait(7)
+            pcall(function() 
+                if level == "portal_boros_g" then
+                    local args = {
+                        [1] = GetPortals("portal_boros_g")[1]["uuid"],
+                        [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                    
+                    task.wait(1.5)
+                    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                            local args = { [1] = tostring(v.Parent.Name) }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                            break;
+                        end 
+                    end
+                    warn("Aline farming")
+                    task.wait(7)
+                elseif level == "portal_csm" then
+                    local args = {
+                        [1] = GetPortals("portal_csm")[1]["uuid"],
+                        [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                    
+                    task.wait(1.5)
+                    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                            local args = { [1] = tostring(v.Parent.Name) }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                            break;
+                        end 
+                    end
+                    warn("devil portal farming")
+                    task.wait(7)
+                elseif level == "portal_zeldris" then
+                    local args = {
+                        [1] = GetPortals("portal_zeldris")[1]["uuid"],
+                        [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                    
+                    task.wait(1.5)
+                    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                            local args = { [1] = tostring(v.Parent.Name) }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                            break;
+                        end 
+                    end
+                    warn("Demon Portal farming")
+                    task.wait(7)
 
-            end
+                end
+            end)
         end
     end
 end
