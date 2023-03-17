@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b12"
+local version = "v2.0.0b13"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -312,7 +312,8 @@ local function WorldSec()
             "Story Worlds",
             "Legend Stages",
             "Raid Worlds",
-            "Portals"
+            "Portals",
+            "Dungeon"
         },
         default = Settings.WorldCategory
     })
@@ -336,6 +337,8 @@ local function WorldSec()
             storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid"}
         elseif Settings.WorldCategory == "Portals" then
             storylist = {"Alien Portals","Devil Portals (ANY)", "Demon Portals"}
+        elseif Settings.WorldCategory == "Dungeon" then
+            storylist = {"JJK Finger"}   
         end
     
         for i = 1, #storylist do
@@ -408,6 +411,9 @@ local function WorldSec()
             levellist = {"portal_csm"}
         elseif level == "Demon Portals" then
             levellist = {"portal_zeldris"}
+            ---///Dungeon\\\---    
+        elseif level == "JJK Finger" then
+            levellist = {"jjk_finger"} 
         end
 
 
@@ -431,7 +437,7 @@ local function WorldSec()
         or level == "hxhant_infinite" or level == "magnolia_infinite" or level == "jjk_infinite" or level == "clover_infinite" 
         or level == "jojo_infinite" or level == "opm_infinite" or cata == "Legend Stages" or cata == "Raid Worlds" then
             diff = {"Hard"}
-        elseif cata == "Portals" then
+        elseif cata == "Portals" or cata == "Dungeon"  then
             diff = {"Default"}
         else
             diff = {"Normal", "Hard"}
@@ -1504,6 +1510,56 @@ local function startfarming()
                     end
                     warn("Demon Portal farming")
                     task.wait(7)
+            elseif cata == "Dungeon" then
+            getgenv().door = "_lobbytemplate_event222"
+            local string_1 = "_lobbytemplate_event222";
+            local table_1 = {
+                ["selected_key"] = "key_jjk_finger"
+            };
+            local Target = game:GetService("ReplicatedStorage").endpoints["client_to_server"]["request_join_lobby"];
+            Target:InvokeServer(string_1, table_1);
+        
+            if tostring(game.Workspace._DUNGEONS.Lobbies[getgenv().door].Owner.Value) ~= plr.Name then
+                for i, v in pairs(game:GetService("Workspace")["_DUNGEONS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and v.Value == nil then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+    
+                        task.wait()
+                    
+                        local args = {
+                            [1] = tostring(v.Parent.Name), -- Lobby 
+                            [2] = Settings.SelectedLevel, -- World/Level
+                            [3] = Settings.isFriendOnly or true, -- Friends Only or not
+                            [4] = Settings.Difficulty 
+                        }
+    
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+    
+                        local args = { [1] =tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        
+                        getgenv().door = v.Parent.Name print(v.Parent.Name) --v.Parent:GetFullName()
+                        plr.Character.HumanoidRootPart.CFrame = v.Parent.Door.CFrame
+                        break
+                    end
+                end
+    
+                task.wait()
+    
+                plr.Character.HumanoidRootPart.CFrame = cpos
+    
+                if Workspace._DUNGEONS.Lobbies[getgenv().door].Owner == plr.Name then
+                    if Workspace._DUNGEONS.Lobbies[getgenv().door].Teleporting.Value == true then
+                        getgenv().teleporting = false
+                    else
+                        getgenv().teleporting = true
+                    end
+                end
+    
+                warn("DUNGEONS farming")
+                task.wait(3)
+            end
 
                 end
             end)
