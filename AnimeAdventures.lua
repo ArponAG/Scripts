@@ -55,7 +55,7 @@ getgenv().item = "-"
 plr.PlayerGui:FindFirstChild("HatchInfo"):FindFirstChild("holder"):FindFirstChild("info1"):FindFirstChild("UnitName").Text = getgenv().item
 
 function webhook()
-
+pcall(function()
     local url = Settings.WebhookUrl
     print("webhook?")
     if url == "" then
@@ -115,7 +115,7 @@ function webhook()
     local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
     warn("Sending webhook notification...")
     request(sex)
-
+end)
 end
 ------------------------------\
 if game.CoreGui:FindFirstChild("FinityUI") then
