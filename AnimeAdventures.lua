@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b14"
+local version = "v2.0.0b15"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -1346,13 +1346,46 @@ local function startChallenge()
     end
 end
 
+--test fixportal
+
+function getBorosPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_boros_g" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+
+function getCSMPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_csm" or "portal_csm1" or "portal_csm2" or "portal_csm3" or "portal_csm4" or "portal_csm5" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+
+function getZeldrisPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_zeldris" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+
+
 function GetPortals(id)
-    local reg = getreg()  --> returns Roblox's registry in a table
+    local reg = getreg() 
     local portals = {}
     for i,v in next, reg do
-        if type(v) == 'function' then --> Checks if the current iteration is a function
-            if getfenv(v).script then --> Checks if the function's environment is in a script
-                for _, v in pairs(debug.getupvalues(v)) do  --> Basically a for loop that prints everything, but in one line
+        if type(v) == 'function' then 
+            if getfenv(v).script then 
+                for _, v in pairs(debug.getupvalues(v)) do 
                     if type(v) == 'table' then
                         if v["session"] then
                             for _, item in pairs(v["session"]["inventory"]['inventory_profile_data']['unique_items']) do
@@ -1460,8 +1493,61 @@ local function startfarming()
                 warn("farming")
                 task.wait(3)
             end
+        elseif cata == "Portals" then
+            --aline fixportal
+            if level == "portal_boros_g" then
+                local args = {
+                    [1] = GetPortals("portal_boros_g")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("Aline farming")
+                task.wait(7)
+                --Devil fixportal		
+            elseif level == "portal_csm" then
+                local args = {
+                    [1] = GetPortals("portal_csm")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("Devil farming")
+                task.wait(7)
+                --7Ds fixportal		
+            elseif level == "portal_zeldris" then
+                local args = {
+                    [1] = GetPortals("portal_zeldris")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("7ds farming")
+                task.wait(7)
+            end
         elseif cata == "Dungeon" then
-
+            --ดันนิ้ว
             getgenv().door = "_lobbytemplate_event222"
             local string_1 = "_lobbytemplate_event222";
             local table_1 = {
@@ -1510,61 +1596,9 @@ local function startfarming()
     
                 warn("DUNGEONS farming")
                 task.wait(3)
-        elseif cata == "Portals" then
-            pcall(function() 
-                if level == "portal_boros_g" then
-                    local args = {
-                        [1] = GetPortals("portal_boros_g")[1]["uuid"],
-                        [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                    
-                    task.wait(1.5)
-                    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                            local args = { [1] = tostring(v.Parent.Name) }
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                            break;
-                        end 
-                    end
-                    warn("Aline farming")
-                    task.wait(7)
-                elseif level == "portal_csm" then
-                    local args = {
-                        [1] = GetPortals("portal_csm")[1]["uuid"],
-                        [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                    
-                    task.wait(1.5)
-                    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                            local args = { [1] = tostring(v.Parent.Name) }
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                            break;
-                        end 
-                    end
-                    warn("devil portal farming")
-                    task.wait(7)
-                elseif level == "portal_zeldris" then
-                    local args = {
-                        [1] = GetPortals("portal_zeldris")[1]["uuid"],
-                        [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                    
-                    task.wait(1.5)
-                    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                            local args = { [1] = tostring(v.Parent.Name) }
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                            break;
-                        end 
-                    end
-                    warn("Demon Portal farming")
-                    task.wait(7)
-                end
-            end)
+            end
         end
     end
-end
 end
 
 getgenv().autoabilityerr = false
