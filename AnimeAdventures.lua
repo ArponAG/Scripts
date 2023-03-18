@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b16"
+local version = "v2.0.0b17"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -352,7 +352,7 @@ local function UnitSec()
 end
 
 ----------------------------------------------
------------------- World Section -------------
+------------------ World Section -------------updatefix
 ----------------------------------------------
 local function WorldSec()
     SelectWorld:Cheat("Dropdown", "🌟 Select Category",function(value)
@@ -389,7 +389,7 @@ local function WorldSec()
         elseif Settings.WorldCategory == "Legend Stages" then
             storylist = {"Clover Kingdom (Elf Invasion)", "Hollow Invasion","Cape Canaveral (Legend)", "Fabled Kingdom (Legend)"}
         elseif Settings.WorldCategory == "Raid Worlds" then
-            storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid"}
+            storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid", "Freezo's Invasion"}
         elseif Settings.WorldCategory == "Portals" then
             storylist = {"Alien Portals","Devil Portals (ANY)", "Demon Portals"}
         elseif Settings.WorldCategory == "Dungeon" then
@@ -459,6 +459,8 @@ local function WorldSec()
             levellist = {"aot_raid_1"}
         elseif level == "Hiddel Sand Village - Raid" then
             levellist = {"naruto_raid_1"}
+        elseif level == "Freezo's Invasion" then
+            levellist = {"west_city_frieza_level_1","west_city_frieza_level_2","west_city_frieza_level_3","west_city_frieza_level_4","west_city_frieza_level_5"}
         --///Portals\\\---
         elseif level == "Alien Portals" then
             levellist = {"portal_boros_g"}
