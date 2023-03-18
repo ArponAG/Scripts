@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b15"
+local version = "v2.0.0b16"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -50,12 +50,46 @@ local RunService = game:GetService("RunService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
 ------------------------------
+
+------------item drop result
+function get_inventory_items()
+	for i,v in next, getgc() do
+		if type(v) == 'function' then 
+			if getfenv(v).script then 
+				if getfenv(v).script:GetFullName() == "ReplicatedStorage.src.client.Services.NPCServiceClient" then
+					for _, v in pairs(debug.getupvalues(v)) do 
+						if type(v) == 'table' then
+							if v["session"] then
+								return v["session"]["inventory"]['inventory_profile_data']['normal_items']
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+local Table_Items_Name_data = {}
+local Old_Inventory_table = {}
+for v2, v3 in pairs(game:GetService("ReplicatedStorage").src.Data.Items:GetDescendants()) do
+	if v3:IsA("ModuleScript") then
+		for v4, v5 in pairs(require(v3)) do
+		    Table_Items_Name_data[v4] = v5.name
+		end;
+	end;
+end;
+for i,v in pairs(get_inventory_items()) do
+	Old_Inventory_table[i] = v
+end
+
+
 getgenv().item = "-"
 
 plr.PlayerGui:FindFirstChild("HatchInfo"):FindFirstChild("holder"):FindFirstChild("info1"):FindFirstChild("UnitName").Text = getgenv().item
 
 function webhook()
-pcall(function()
+
     local url = Settings.WebhookUrl
     print("webhook?")
     if url == "" then
@@ -83,6 +117,22 @@ pcall(function()
     
     totaltime =  ResultHolder:FindFirstChild("Middle"):FindFirstChild("Timer").Text
     totalwaves = ResultHolder:FindFirstChild("Middle"):FindFirstChild("WavesCompleted").Text
+
+    local TextDropLabel = ""
+		local CountAmount = 1
+		for i,v in pairs(get_inventory_items()) do
+			if (v - Old_Inventory_table[i]) > 0 then
+				for NameData, NameShow in pairs(Table_Items_Name_data) do
+					if (v - Old_Inventory_table[i]) > 0 and tostring(NameData) == tostring(i) then
+						TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(string.gsub(i, i, NameShow)) .. " : x" .. tostring(v - Old_Inventory_table[i]) .. "\n"
+						CountAmount = CountAmount + 1
+					end
+				end;
+			end
+		end
+		if TextDropLabel == "" then
+			TextDropLabel = "Not Have Items Drops"
+		end
     
     local data = {
         ["content"] =" ",
@@ -101,12 +151,17 @@ pcall(function()
              },
              {
               ["name"] ="Rewards",
-              ["value"] = getgenv().item.."\n"..gold.." Gold\n"..gems.." Gems\n"..xp[1].." XP\n"..trophy.." Trophy\n⬖ Total Gems = "..totalgems
+              ["value"] = "\n"..gold.." Gold\n"..gems.." Gems\n"..xp[1].." XP\n"..trophy.." Trophy\n⬖ Total Gems = "..totalgems
+             },
+             {
+                ["name"] ="Items Drop :",
+                ["value"] = "```ini\n" .. TextDropLabel .. "```",
+                ["inline"] = false 
              }
-          }
-        }
-      }
-    }
+           }
+         }
+       }
+     }
     
     local xd = game:GetService("HttpService"):JSONEncode(data)
     
@@ -115,7 +170,7 @@ pcall(function()
     local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
     warn("Sending webhook notification...")
     request(sex)
-end)
+
 end
 ------------------------------\
 if game.CoreGui:FindFirstChild("FinityUI") then
@@ -1760,23 +1815,9 @@ coroutine.resume(coroutine.create(function()
             print("Changed", GameFinished.Value == true)
             if GameFinished.Value == true then
                 repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
-                if Settings.WebhookEnabled then 
-                    local btn = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Buttons.Next
-                    task.spawn(function()
-                        pcall(function()
-                            for i,v in pairs(getconnections(btn.Activated)) do
-                                v:Fire()
-                            end 
-                        end)
-                    end)
-                    task.wait(2)
-                    getgenv().item = game:GetService("Players").LocalPlayer.PlayerGui.HatchInfo.holder.info1.UnitName.Text
-                    warn(game:GetService("Players").LocalPlayer.PlayerGui.HatchInfo.holder.info1.UnitName.Text)
-    
-                    webhook()
-                end
+                pcall(function() webhook() end)
                 print("next")
-                task.wait(1)
+                task.wait(2.1)
                 if Settings.AutoReplay then
                     local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
                     local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
