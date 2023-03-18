@@ -569,7 +569,7 @@ end
 ----------------------------------------------
 local function MoreFarmSec()
 
-    castleconfig:Cheat("Checkbox","🏯 Auto Next Level inf castle  ", function(bool)
+    MoreFarmConfig:Cheat("Checkbox","🏯 Auto Next Level inf castle  ", function(bool)
         print(bool)
         Settings.AutoContinue = bool
         saveSettings()
