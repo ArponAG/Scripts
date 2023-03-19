@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b20"
+local version = "v2.0.0b21"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -1145,66 +1145,114 @@ local function unitconfig()
     --//UNIT 3
     Unit3:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
-
+        Settings.U3_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_Wave})
+    
+    Unit3:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_TotalAmmount})
+    
     Unit3:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
-
+        Settings.U3_UpgWave = Value
+    end, {placeholder = Settings.U3_UpgWave})
+    
     Unit3:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
+        Settings.U3_UpgCap = Value
+    end, {placeholder = Settings.U3_UpgCap})
+    
     Unit3:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 999}) 
+        Settings.U3_SellWave = Value
+    end, {placeholder = Settings.U3_SellWave}) 
 
     --//UNIT 4
     Unit4:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
-
+        Settings.U4_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_Wave})
+    
+    Unit4:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_TotalAmmount})
+    
     Unit4:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
-
+        Settings.U4_UpgWave = Value
+    end, {placeholder = Settings.U4_UpgWave})
+    
     Unit4:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
+        Settings.U4_UpgCap = Value
+    end, {placeholder = Settings.U4_UpgCap})
+    
     Unit4:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 999}) 
+        Settings.U4_SellWave = Value
+    end, {placeholder = Settings.U4_SellWave}) 
     
         --//UNIT 5
         Unit5:Cheat("Textbox", "Place from wave", function(Value)
-        Value = tonumber(Value)
-    end, {placeholder = 0})
-
-    Unit5:Cheat("Textbox", "Upgrade from wave", function(Value)
-        Value = tonumber(Value)
-    end, {placeholder = 0})
-
-    Unit5:Cheat("Textbox", "Upgrade Cap", function(Value)
-        Value = tonumber(Value)
-    end, {placeholder = 0})
-    Unit5:Cheat("Textbox", "Auto Sell at wave", function(Value)
-        Value = tonumber(Value)
-    end, {placeholder = 999}) 
+            Value = tonumber(Value)
+            Settings.U5_Wave = Value
+            saveSettings()
+        end, {placeholder = Settings.U5_Wave})
+        
+        Unit5:Cheat("Textbox", "Total Units", function(Value)
+            Value = tonumber(Value)
+            Settings.U5_TotalAmmount = Value
+            saveSettings()
+        end, {placeholder = Settings.U5_TotalAmmount})
+        
+        Unit5:Cheat("Textbox", "Upgrade from wave", function(Value)
+            Value = tonumber(Value)
+            Settings.U5_UpgWave = Value
+        end, {placeholder = Settings.U5_UpgWave})
+        
+        Unit5:Cheat("Textbox", "Upgrade Cap", function(Value)
+            Value = tonumber(Value)
+            Settings.U5_UpgCap = Value
+        end, {placeholder = Settings.U5_UpgCap})
+        
+        Unit5:Cheat("Textbox", "Auto Sell at wave", function(Value)
+            Value = tonumber(Value)
+            Settings.U5_SellWave = Value
+        end, {placeholder = Settings.U5_SellWave}) 
 
     --//UNIT 6
     Unit6:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
-
+        Settings.U6_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_Wave})
+    
+    Unit6:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_TotalAmmount})
+    
     Unit6:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
-
+        Settings.U6_UpgWave = Value
+    end, {placeholder = Settings.U6_UpgWave})
+    
     Unit6:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 0})
+        Settings.U6_UpgCap = Value
+    end, {placeholder = Settings.U6_UpgCap})
+    
     Unit6:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
-    end, {placeholder = 999}) 
+        Settings.U6_SellWave = Value
+    end, {placeholder = Settings.U6_SellWave}) 
 end
 
 ----------------------------------------------
@@ -2128,14 +2176,14 @@ function GetUnitInfo(Unit)
 end
 
 
---[[function PlaceUnitsTEST(map)
+function PlaceUnitsTEST(map)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
 
-    U1_wv, U2_wv = Settings.U1_Wave or 0, Settings.U2_Wave or 0
-    U1_TAmm, U2_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6
-    U1_upgW, U2_upgW = Settings.U1_UpgWave or 0, Settings.U2_UpgWave or 0
-    U1_upgCap, U2_upgCap = Settings.U1_UpgCap or 99, Settings.U2_UpgCap or 99
-    U1_sellW, U2_sellW = Settings.U1_SellWave or 999, Settings.U2_SellWave or 999
+    U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 0, Settings.U2_Wave or 0, Settings.U3_Wave or 0, Settings.U4_Wave or 0, Settings.U5_Wave or 0, Settings.U6_Wave or 0
+    U1_TAmm, U2_TAmm, U3_TAmm, U4_TAmm, U5_TAmm, U6_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6, Settings.U3_TotalAmmount or 6, Settings.U4_TotalAmmount or 6, Settings.U5_TotalAmmount or 6, Settings.U6_TotalAmmount or 6
+    U1_upgW, U2_upgW, U3_upgW, U4_upgW, U5_upgW, U6_upgW = Settings.U1_UpgWave or 0, Settings.U2_UpgWave or 0, Settings.U3_UpgWave or 0, Settings.U4_UpgWave or 0, Settings.U5_UpgWave or 0, Settings.U6_UpgWave or 0
+    U1_upgCap, U2_upgCap, U3_upgCap, U4_upgCap, U5_upgCap, U6_upgCap = Settings.U1_UpgCap or 99, Settings.U2_UpgCap or 99, Settings.U3_UpgCap or 99, Settings.U4_UpgCap or 99, Settings.U5_UpgCap or 99, Settings.U6_UpgCap or 99
+    U1_sellW, U2_sellW, U3_sellW, U4_sellW, U5_sellW, U6_sellW = Settings.U1_SellWave or 999, Settings.U2_SellWave or 999, Settings.U3_SellWave or 999, Settings.U4_SellWave or 999, Settings.U5_SellWave or 999, Settings.U6_SellWave or 999
 
     --//Unit 1
     local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
@@ -2169,8 +2217,71 @@ end
         end
     end
 
+    --//Unit 3
+    U3_amm, U3_name, U3_uuid, U3_u = GetUnitInfo("U3")
+    if U3_wv <= current_wave and U3_amm <= U3_TAmm then
+	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
+		    print("placing u3..")
+		    PlacePos(map, U3_name, U3_uuid,"UP3")
+	    elseif U3_sellW <= current_wave then
+		    print("selling u3..")
+		    sellunit(U3_name)
+	    end
+	    if U3_u < U3_upgCap and U3_upgW <= current_wave and U3_sellW >= current_wave then
+		    print("upgrading u3..")
+		    upgradeunit(tostring(U3_name), U3_upgCap)
+	    end
+    end
 
-end]]
+    --//Unit 4
+    U4_amm, U4_name, U4_uuid, U4_u = GetUnitInfo("U4")
+    if U4_wv <= current_wave and U4_amm <= U4_TAmm then
+	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
+		    print("placing u4..")
+		    PlacePos(map, U4_name, U4_uuid,"UP4")
+	    elseif U4_sellW <= current_wave then
+		    print("selling u4..")
+		    sellunit(U4_name)
+	    end
+	    if U4_u < U4_upgCap and U4_upgW <= current_wave and U4_sellW >= current_wave then
+		    print("upgrading u4..")
+		    upgradeunit(tostring(U4_name), U4_upgCap)
+	    end
+    end
+
+    --//Unit 5
+    U5_amm, U5_name, U5_uuid, U5_u = GetUnitInfo("U5")
+    if U5_wv <= current_wave and U5_amm <= U5_TAmm then
+	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
+		    print("placing u5..")
+		    PlacePos(map, U5_name, U5_uuid,"UP5")
+	    elseif U5_sellW <= current_wave then
+		    print("selling u5..")
+		    sellunit(U5_name)
+	    end
+	    if U5_u < U5_upgCap and U5_upgW <= current_wave and U5_sellW >= current_wave then
+		    print("upgrading u5..")
+		    upgradeunit(tostring(U5_name), U5_upgCap)
+	    end
+    end
+
+    --//Unit 6
+    U6_amm, U6_name, U6_uuid, U6_u = GetUnitInfo("U6")
+    if U6_wv <= current_wave and U6_amm <= U6_TAmm then
+	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
+		    print("placing u6..")
+		    PlacePos(map, U6_name, U6_uuid,"UP6")
+	    elseif U6_sellW <= current_wave then
+		    print("selling u5..")
+		    sellunit(U6_name)
+	    end
+	    if U6_u < U6_upgCap and U6_upgW <= current_wave and U6_sellW >= current_wave then
+		    print("upgrading u5..")
+		    upgradeunit(tostring(U6_name), U6_upgCap)
+	    end
+    end
+
+end
 --fix sell and place spam
 
 function PlaceUnits(map)
