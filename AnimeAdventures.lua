@@ -2234,9 +2234,9 @@ end
 function PlaceUnitsTEST(map)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
 
-    U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 0, Settings.U2_Wave or 0, Settings.U3_Wave or 0, Settings.U4_Wave or 0, Settings.U5_Wave or 0, Settings.U6_Wave or 0
+    U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 1, Settings.U2_Wave or 1, Settings.U3_Wave or 1, Settings.U4_Wave or 1, Settings.U5_Wave or 1, Settings.U6_Wave or 1
     U1_TAmm, U2_TAmm, U3_TAmm, U4_TAmm, U5_TAmm, U6_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6, Settings.U3_TotalAmmount or 6, Settings.U4_TotalAmmount or 6, Settings.U5_TotalAmmount or 6, Settings.U6_TotalAmmount or 6
-    U1_upgW, U2_upgW, U3_upgW, U4_upgW, U5_upgW, U6_upgW = Settings.U1_UpgWave or 0, Settings.U2_UpgWave or 0, Settings.U3_UpgWave or 0, Settings.U4_UpgWave or 0, Settings.U5_UpgWave or 0, Settings.U6_UpgWave or 0
+    U1_upgW, U2_upgW, U3_upgW, U4_upgW, U5_upgW, U6_upgW = Settings.U1_UpgWave or 1, Settings.U2_UpgWave or 1, Settings.U3_UpgWave or 1, Settings.U4_UpgWave or 1, Settings.U5_UpgWave or 1, Settings.U6_UpgWave or 1
     U1_upgCap, U2_upgCap, U3_upgCap, U4_upgCap, U5_upgCap, U6_upgCap = Settings.U1_UpgCap or 99, Settings.U2_UpgCap or 99, Settings.U3_UpgCap or 99, Settings.U4_UpgCap or 99, Settings.U5_UpgCap or 99, Settings.U6_UpgCap or 99
     U1_sellW, U2_sellW, U3_sellW, U4_sellW, U5_sellW, U6_sellW = Settings.U1_SellWave or 999, Settings.U2_SellWave or 999, Settings.U3_SellWave or 999, Settings.U4_SellWave or 999, Settings.U5_SellWave or 999, Settings.U6_SellWave or 999
 
@@ -2439,43 +2439,43 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnitsTEST("Namak")
                 --PlaceUnits("Namak")
             elseif game.Workspace._map:FindFirstChild("houses_new") then
-                PlaceUnits("Aot")
+                PlaceUnitsTEST("Aot")
             elseif game.Workspace._map:FindFirstChild("Snow Particles") then
-                PlaceUnits("Snowy")
+                PlaceUnitsTEST("Snowy")
             elseif game.Workspace._map:FindFirstChild("sand_gate") then 
-                PlaceUnits("Sand")
+                PlaceUnitsTEST("Sand")
             elseif game.Workspace._map:FindFirstChild("icebergs") then
-                PlaceUnits("Marine")
+                PlaceUnitsTEST("Marine")
             elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
-                PlaceUnits("Ghoul")
+                PlaceUnitsTEST("Ghoul")
             elseif game.Workspace._map:FindFirstChild("Bones/dust") then
-                PlaceUnits("Hollow")
+                PlaceUnitsTEST("Hollow")
             elseif game.Workspace._map:FindFirstChild("Ant Nest") then
-                PlaceUnits("Ant")
+                PlaceUnitsTEST("Ant")
             elseif game.Workspace._map:FindFirstChild("light poles") then
-                PlaceUnits("Magic")
+                PlaceUnitsTEST("Magic")
             elseif game.Workspace._map:FindFirstChild("LanternsGround") then
-                PlaceUnits("Cursed")
+                PlaceUnitsTEST("Cursed")
             elseif game.Workspace._map:FindFirstChild("pumpkins") then    
-                PlaceUnits("thriller_park")  
+                PlaceUnitsTEST("thriller_park")  
             elseif game.Workspace._map:FindFirstChild("skeleton") then
-                PlaceUnits("black_clover")
+                PlaceUnitsTEST("black_clover")
             elseif game.Workspace._map:FindFirstChild("graves") then
-                PlaceUnits("hollow_leg")
+                PlaceUnitsTEST("hollow_leg")
             elseif game.Workspace._map:FindFirstChild("vending machines") then
-                PlaceUnits("chainsaw")
+                PlaceUnitsTEST("chainsaw")
             elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
-                PlaceUnits("jojo")
+                PlaceUnitsTEST("jojo")
             elseif game.Workspace._map:FindFirstChild("secret") then
-                PlaceUnits("opm")
+                PlaceUnitsTEST("opm")
             elseif game.Workspace._map:FindFirstChild("s") then
-                PlaceUnits("west_city")
+                PlaceUnitsTEST("west_city")
             elseif game.Workspace._map:FindFirstChild("Capybara") then
-                PlaceUnits("Storm_Hideout")
+                PlaceUnitsTEST("Storm_Hideout")
             elseif game.Workspace._map:FindFirstChild("snow grass") then
-                PlaceUnits("infinity_trian")
+                PlaceUnitsTEST("infinity_trian")
             elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-                PlaceUnits("fabled_kingdom")
+                PlaceUnitsTEST("fabled_kingdom")
             end
         end
     end
