@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b19"
+local version = "v2.0.0b20"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -2128,7 +2128,7 @@ function GetUnitInfo(Unit)
 end
 
 
-function PlaceUnitsTEST(map)
+--[[function PlaceUnitsTEST(map)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
 
     U1_wv, U2_wv = Settings.U1_Wave or 0, Settings.U2_Wave or 0
@@ -2170,7 +2170,7 @@ function PlaceUnitsTEST(map)
     end
 
 
-end
+end]]
 --fix sell and place spam
 
 function PlaceUnits(map)
