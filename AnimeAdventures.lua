@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b18"
+local version = "v2.0.0b19"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -393,7 +393,7 @@ local function WorldSec()
         elseif Settings.WorldCategory == "Portals" then
             storylist = {"Alien Portals","Devil Portals (ANY)", "Demon Portals"}
         elseif Settings.WorldCategory == "Dungeon" then
-            storylist = {"JJK Finger"}   
+            storylist = {"Cursed Womb"}   
         end
     
         for i = 1, #storylist do
@@ -469,7 +469,7 @@ local function WorldSec()
         elseif level == "Demon Portals" then
             levellist = {"portal_zeldris"}
             ---///Dungeon\\\---    
-        elseif level == "JJK Finger" then
+        elseif level == "Cursed Womb" then
             levellist = {"jjk_finger"} 
         end
 
@@ -515,7 +515,14 @@ end
 ---------------- AutoFarm Config -------------
 ----------------------------------------------
 local function AutoFarmSec()
-    AutoFarmConfig:Cheat("Checkbox","🌾 Auto Farm  ", function(bool)
+
+    AutoFarmConfig:Cheat("Checkbox","🌾 Auto Start  ", function(bool)
+        print(bool)
+        Settings.autostart = bool
+        saveSettings()
+    end,{enabled = Settings.autostart })
+
+    AutoFarmConfig:Cheat("Checkbox","👨‍🌾 Auto Place unit  ", function(bool)
         print(bool)
         Settings.AutoFarm = bool
         saveSettings()
@@ -1471,7 +1478,7 @@ getgenv().door = "_lobbytemplategreen1"
 
 
 local function startfarming()
-    if game.PlaceId == 8304191830 and not Settings.farmprotal and Settings.AutoFarm and Settings.teleporting and not Settings.AutoInfinityCastle then
+    if game.PlaceId == 8304191830 and not Settings.farmprotal and Settings.autostart and Settings.AutoFarm and Settings.teleporting and not Settings.AutoInfinityCastle then
         local cpos = plr.Character.HumanoidRootPart.CFrame; cata = Settings.WorldCategory; level = Settings.SelectedLevel;
         
         if cata == "Story Worlds" or cata == "Legend Stages" then
@@ -1910,7 +1917,7 @@ coroutine.resume(coroutine.create(function()
             if GameFinished.Value == true then
                 repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
                 pcall(function() webhook() end)
-                print("next")
+                print("Wait next or leave")
                 task.wait(2.1)
                 if Settings.AutoReplay then
                     local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
