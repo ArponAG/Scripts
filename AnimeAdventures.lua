@@ -83,28 +83,75 @@ for i,v in pairs(get_inventory_items()) do
 	Old_Inventory_table[i] = v
 end
 
+----------------Map & ID Map
+
+local function GetCurrentLevelId()
+    if game.Workspace._MAP_CONFIG then
+        return game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["id"]
+    end
+end
+
+local function GetCurrentLevelName()
+    if game.Workspace._MAP_CONFIG then
+        return game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["name"]
+    end
+end
+
+function comma_value(p1)
+	local value = p1;
+	while true do
+		local value2, value3 = string.gsub(value, "^(-?%d+)(%d%d%d)", "%1,%2");
+		value = value2;
+		if value3 ~= 0 then else
+			break;
+		end;
+	end;
+	return value;
+end;
+----------------endMap & ID Map
 
 getgenv().item = "-"
 
 plr.PlayerGui:FindFirstChild("HatchInfo"):FindFirstChild("holder"):FindFirstChild("info1"):FindFirstChild("UnitName").Text = getgenv().item
 
 function webhook()
-
     local url = Settings.WebhookUrl
     print("webhook?")
     if url == "" then
-    warn("Webhook Url is empty!")
-    return
+        warn("Webhook Url is empty!")
+        return
     end 
     
+    local Time = os.date('!*t', OSTime);
+
+	local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+    local exec = tostring(identifyexecutor())
+
     userlevel = plr.PlayerGui:FindFirstChild("spawn_units"):FindFirstChild("Lives"):FindFirstChild("Main"):FindFirstChild("Desc"):FindFirstChild("Level").Text
     totalgems = plr.PlayerGui:FindFirstChild("spawn_units"):FindFirstChild("Lives"):FindFirstChild("Frame"):FindFirstChild("Resource"):FindFirstChild("Gem"):FindFirstChild("Level").Text
     
     ResultHolder = plr.PlayerGui:FindFirstChild("ResultsUI"):FindFirstChild("Holder")
     if game.PlaceId ~= 8304191830 then
     levelname = game:GetService("Workspace"):FindFirstChild("_MAP_CONFIG"):FindFirstChild("GetLevelData"):InvokeServer()["name"]
+
     result = ResultHolder.Title.Text else levelname, result = "nil","nil" end
+    if result == "VICTORY" then result = "VICTORY" end
+    if result == "DEFEAT" then result = "DEFEAT" end
     
+    _map = game:GetService("Workspace")["_BASES"].player.base["fake_unit"]:WaitForChild("HumanoidRootPart")
+    GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+    world = GetLevelData.world or GetLevelData.name
+    mapname = game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["name"]
+    cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
+	ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
+    btp = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.V.Text
+    btp3 = plr.PlayerGui:FindFirstChild("BattlePass"):FindFirstChild("Main"):FindFirstChild("Level"):FindFirstChild("V").Text
+    waves = cwaves:split(": ")
+    if waves ~= nil and waves[2] == "999" then waves[2] = "N/A [Test Webhook]" end	
+	ttime = ctime:split(": ")
+    if waves ~= nil and ttime[2] == "22:55" then ttime[2] = "N/A [Test Webhook]" end	
+
     gold = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GoldReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
     if gold == "+99999" then gold = "+0" end	 
     gems = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GemReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
@@ -117,6 +164,7 @@ function webhook()
     
     totaltime =  ResultHolder:FindFirstChild("Middle"):FindFirstChild("Timer").Text
     totalwaves = ResultHolder:FindFirstChild("Middle"):FindFirstChild("WavesCompleted").Text
+
 
     local TextDropLabel = ""
 		local CountAmount = 1
@@ -134,34 +182,46 @@ function webhook()
 			TextDropLabel = "Not Have Items Drops"
 		end
     
-    local data = {
-        ["content"] =" ",
-        ["embeds"] = {
-         {
-          ["title"] ="||"..plr.Name.."||",
-          ["url"] = "https://www.roblox.com/users/"..plr.UserId,
-          ["description"] = tostring(userlevel),
-          ["author"] = {["name"] = version},
-          ["color"] = null,
-          ["fields"] = {
-             {
-              ["name"] ="Result",
-              ["value"] = levelname.." — "..result,
-              ["inline"] = true
-             },
-             {
-              ["name"] ="Rewards",
-              ["value"] = "\n"..gold.." Gold\n"..gems.." Gems\n"..xp[1].." XP\n"..trophy.." Trophy\n⬖ Total Gems = "..totalgems
-             },
-             {
-                ["name"] ="Items Drop :",
-                ["value"] = "```ini\n" .. TextDropLabel .. "```",
-                ["inline"] = false 
-             }
-           }
-         }
-       }
-     }
+        local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = "Anime Adventures V2 ✔️",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱\nExecutors  : 🎮 "..exec.." 🎮 ",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+                            {
+                                ["name"] ="Current Level ✨ & BTP Lv 🛸 & Gems 💎 & Gold 💰",
+                                ["value"] = "```ini\n"..tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text)..  " ✨\nBTP Lv. : ".. btp3 .." 🛸\nCurrent Gems : "..tostring(comma_value(game.Players.LocalPlayer._stats.gem_amount.Value)).. " 💎\nCurrent Gold : "  ..tostring(comma_value(game.Players.LocalPlayer._stats.gold_amount.Value))..  " 💰```",
+                            },
+                            {
+                                ["name"] ="Results :",
+                                ["value"] = " ```ini\nWorld : "..mapname.. " 🌏\nMap : "..world.. " 🗺️\nResults : "..result.. " ⚔️\nWave End : " ..tostring(waves[2]).." 🌊\nTime : " ..tostring(ttime[2]).." ⌛```",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] ="Rewards :",
+                                ["value"] = "```ini\n" ..comma_value(gold).." Gold 💰\n"..comma_value(gems).." Gems 💎\n"..comma_value(xp[1]).." XP 🧪\n"..trophy.." Trophy 🏆```",
+                            },
+                            {
+                                ["name"] ="Items Drop :",
+                                ["value"] = "```ini\n" .. TextDropLabel .. "```",
+                                ["inline"] = false 
+                            }
+                        }
+                        }
+                }
+            }
+        
     
     local xd = game:GetService("HttpService"):JSONEncode(data)
     
