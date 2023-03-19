@@ -2291,7 +2291,7 @@ function GetUnitInfo(Unit)
 end
 
 
-function PlaceUnitsTEST(map)
+function PlaceUnitsTEST(map,name,_uuid,unit)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
 
     U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 1, Settings.U2_Wave or 1, Settings.U3_Wave or 1, Settings.U4_Wave or 1, Settings.U5_Wave or 1, Settings.U6_Wave or 1
@@ -2399,7 +2399,7 @@ function PlaceUnitsTEST(map)
 end
 --fix sell and place spam
 
-function PlaceUnits(map)
+function PlaceUnits(map,name,_uuid,unit)
     pcall(function()
         if Settings.AutoFarm and not getgenv().disableatuofarm then
             x = getgenv().posX; z = getgenv().posZ
