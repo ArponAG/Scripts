@@ -1220,7 +1220,7 @@ end
 
 local function unitconfig()
     --emptyxx:Cheat("Label","    ")
-    NDY:Cheat("Label","THIS SECTION IS NOT FINISHED SO IT WILL NOT WORK. FOR UPDATE JOIN DISCORD!")
+    --NDY:Cheat("Label","THIS SECTION IS NOT FINISHED SO IT WILL NOT WORK. FOR UPDATE JOIN DISCORD!")
     NDY2:Cheat("Label","    ")
 
     NDY:Cheat("Checkbox"," Open Unit Config  ", function(bool)
