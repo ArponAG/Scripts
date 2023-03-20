@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b22"
+local version = "v2.0.0b23"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -1163,16 +1163,19 @@ local function unitconfig()
     Unit1:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
         Settings.U1_UpgWave = Value
+        saveSettings()
     end, {placeholder = Settings.U1_UpgWave})
 
     Unit1:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U1_UpgCap = Value
+        saveSettings()
     end, {placeholder = Settings.U1_UpgCap})
 
     Unit1:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U1_SellWave = Value
+        saveSettings()
     end, {placeholder = Settings.U1_SellWave}) 
 
 
@@ -1192,16 +1195,19 @@ local function unitconfig()
     Unit2:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
         Settings.U2_UpgWave = Value
+        saveSettings()
     end, {placeholder = Settings.U2_UpgWave})
 
     Unit2:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U2_UpgCap = Value
+        saveSettings()
     end, {placeholder = Settings.U2_UpgCap})
 
     Unit2:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U2_SellWave = Value
+        saveSettings()
     end, {placeholder = Settings.U2_SellWave}) 
     
     --//UNIT 3
@@ -1220,16 +1226,19 @@ local function unitconfig()
     Unit3:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
         Settings.U3_UpgWave = Value
+        saveSettings()
     end, {placeholder = Settings.U3_UpgWave})
     
     Unit3:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U3_UpgCap = Value
+        saveSettings()
     end, {placeholder = Settings.U3_UpgCap})
     
     Unit3:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U3_SellWave = Value
+        saveSettings()
     end, {placeholder = Settings.U3_SellWave}) 
 
     --//UNIT 4
@@ -1248,16 +1257,19 @@ local function unitconfig()
     Unit4:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
         Settings.U4_UpgWave = Value
+        saveSettings()
     end, {placeholder = Settings.U4_UpgWave})
     
     Unit4:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U4_UpgCap = Value
+        saveSettings()
     end, {placeholder = Settings.U4_UpgCap})
     
     Unit4:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U4_SellWave = Value
+        saveSettings()
     end, {placeholder = Settings.U4_SellWave}) 
     
         --//UNIT 5
@@ -1276,16 +1288,19 @@ local function unitconfig()
         Unit5:Cheat("Textbox", "Upgrade from wave", function(Value)
             Value = tonumber(Value)
             Settings.U5_UpgWave = Value
+            saveSettings()
         end, {placeholder = Settings.U5_UpgWave})
         
         Unit5:Cheat("Textbox", "Upgrade Cap", function(Value)
             Value = tonumber(Value)
             Settings.U5_UpgCap = Value
+            saveSettings()
         end, {placeholder = Settings.U5_UpgCap})
         
         Unit5:Cheat("Textbox", "Auto Sell at wave", function(Value)
             Value = tonumber(Value)
             Settings.U5_SellWave = Value
+            saveSettings()
         end, {placeholder = Settings.U5_SellWave}) 
 
     --//UNIT 6
@@ -1304,16 +1319,19 @@ local function unitconfig()
     Unit6:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
         Settings.U6_UpgWave = Value
+        saveSettings()
     end, {placeholder = Settings.U6_UpgWave})
     
     Unit6:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U6_UpgCap = Value
+        saveSettings()
     end, {placeholder = Settings.U6_UpgCap})
     
     Unit6:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U6_SellWave = Value
+        saveSettings()
     end, {placeholder = Settings.U6_SellWave}) 
 end
 
@@ -2137,7 +2155,6 @@ coroutine.resume(coroutine.create(function()
 end))
 
 
-
 function PlacePos(map,name,_uuid,unit)
     if Settings.AutoFarm and not getgenv().disableatuofarm then
         x = getgenv().posX; z = getgenv().posZ
@@ -2195,7 +2212,7 @@ function PlacePos(map,name,_uuid,unit)
             if i == 1 then
                 task.spawn(function()
                     --place units 0
-                    print("p1")
+                    print("p1 metal knight evolved")
                     local args = {
                         [1] = _uuid,
                         [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
@@ -2289,7 +2306,6 @@ function GetUnitInfo(Unit)
     
     return #_units or 0, unitinfo_[1], unitinfo_[2], min or 0
 end
-
 
 function PlaceUnitsTEST(map,name,_uuid,unit)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
@@ -2399,7 +2415,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 end
 --fix sell and place spam
 
-function PlaceUnits(map)
+function PlaceUnits(map,name,_uuid,unit)
     pcall(function()
         if Settings.AutoFarm and not getgenv().disableatuofarm then
             x = getgenv().posX; z = getgenv().posZ
@@ -2496,46 +2512,46 @@ coroutine.resume(coroutine.create(function()
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
             if game.Workspace._map:FindFirstChild("namek mushroom model") then
-                PlaceUnits("Namak")
+                PlaceUnitsTEST("Namak")
                 --PlaceUnits("Namak")
             elseif game.Workspace._map:FindFirstChild("houses_new") then
-                PlaceUnits("Aot")
+                PlaceUnitsTEST("Aot")
             elseif game.Workspace._map:FindFirstChild("Snow Particles") then
-                PlaceUnits("Snowy")
+                PlaceUnitsTEST("Snowy")
             elseif game.Workspace._map:FindFirstChild("sand_gate") then 
-                PlaceUnits("Sand")
+                PlaceUnitsTEST("Sand")
             elseif game.Workspace._map:FindFirstChild("icebergs") then
-                PlaceUnits("Marine")
+                PlaceUnitsTEST("Marine")
             elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
-                PlaceUnits("Ghoul")
+                PlaceUnitsTEST("Ghoul")
             elseif game.Workspace._map:FindFirstChild("Bones/dust") then
-                PlaceUnits("Hollow")
+                PlaceUnitsTEST("Hollow")
             elseif game.Workspace._map:FindFirstChild("Ant Nest") then
-                PlaceUnits("Ant")
+                PlaceUnitsTEST("Ant")
             elseif game.Workspace._map:FindFirstChild("light poles") then
-                PlaceUnits("Magic")
+                PlaceUnitsTEST("Magic")
             elseif game.Workspace._map:FindFirstChild("LanternsGround") then
-                PlaceUnits("Cursed")
+                PlaceUnitsTEST("Cursed")
             elseif game.Workspace._map:FindFirstChild("pumpkins") then    
-                PlaceUnits("thriller_park")  
+                PlaceUnitsTEST("thriller_park")  
             elseif game.Workspace._map:FindFirstChild("skeleton") then
-                PlaceUnits("black_clover")
+                PlaceUnitsTEST("black_clover")
             elseif game.Workspace._map:FindFirstChild("graves") then
-                PlaceUnits("hollow_leg")
+                PlaceUnitsTEST("hollow_leg")
             elseif game.Workspace._map:FindFirstChild("vending machines") then
-                PlaceUnits("chainsaw")
+                PlaceUnitsTEST("chainsaw")
             elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
-                PlaceUnits("jojo")
+                PlaceUnitsTEST("jojo")
             elseif game.Workspace._map:FindFirstChild("secret") then
-                PlaceUnits("opm")
+                PlaceUnitsTEST("opm")
             elseif game.Workspace._map:FindFirstChild("s") then
-                PlaceUnits("west_city")
+                PlaceUnitsTEST("west_city")
             elseif game.Workspace._map:FindFirstChild("Capybara") then
-                PlaceUnits("Storm_Hideout")
+                PlaceUnitsTEST("Storm_Hideout")
             elseif game.Workspace._map:FindFirstChild("snow grass") then
-                PlaceUnits("infinity_trian")
+                PlaceUnitsTEST("infinity_trian")
             elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-                PlaceUnits("fabled_kingdom")
+                PlaceUnitsTEST("fabled_kingdom")
             end
         end
     end
