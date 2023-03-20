@@ -1,5 +1,5 @@
 --Beta
-local version = "v2.0.0b23"
+local version = "v2.0.0b24"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -52,35 +52,62 @@ local UserInputService = game:GetService("UserInputService")
 ------------------------------
 
 ------------item drop result
+local ItemInventoryServiceClient = require(game.ReplicatedStorage.src.client.Services.ItemInventoryServiceClient)
+function get_inventory_items_unique_items()
+	return ItemInventoryServiceClient["session"]['inventory']['inventory_profile_data']['unique_items']
+end
 function get_inventory_items()
-	for i,v in next, getgc() do
-		if type(v) == 'function' then 
-			if getfenv(v).script then 
-				if getfenv(v).script:GetFullName() == "ReplicatedStorage.src.client.Services.NPCServiceClient" then
-					for _, v in pairs(debug.getupvalues(v)) do 
-						if type(v) == 'table' then
-							if v["session"] then
-								return v["session"]["inventory"]['inventory_profile_data']['normal_items']
-							end
-						end
-					end
-				end
-			end
-		end
-	end
+	return ItemInventoryServiceClient["session"]["inventory"]['inventory_profile_data']['normal_items']
+end
+function get_Units_Owner()
+	return ItemInventoryServiceClient["session"]["collection"]["collection_profile_data"]['owned_units']
 end
 
-local Table_Items_Name_data = {}
-local Old_Inventory_table = {}
+local Count_Portal_list = 0
+local Table_All_Items_Old_data = {}
+local Table_All_Items_New_data = {}
 for v2, v3 in pairs(game:GetService("ReplicatedStorage").src.Data.Items:GetDescendants()) do
 	if v3:IsA("ModuleScript") then
 		for v4, v5 in pairs(require(v3)) do
-		    Table_Items_Name_data[v4] = v5.name
-		end;
-	end;
-end;
+		    Table_All_Items_Old_data[v4] = {}
+			Table_All_Items_Old_data[v4]['Name'] = v5['name']
+		    Table_All_Items_Old_data[v4]['Count'] = 0
+
+			Table_All_Items_New_data[v4] = {}
+			Table_All_Items_New_data[v4]['Name'] = v5['name']
+			Table_All_Items_New_data[v4]['Count'] = 0
+		end
+	end
+end
+local Data_Units_All_Games = require(game:GetService("ReplicatedStorage").src.Data.Units)
+for i,v in pairs(Data_Units_All_Games) do
+    if v.rarity then
+        Table_All_Items_Old_data[i] = {}
+        Table_All_Items_Old_data[i]['Name'] = v['name']
+        Table_All_Items_Old_data[i]['Count'] = 0
+        Table_All_Items_Old_data[i]['Count Shiny'] = 0
+
+        Table_All_Items_New_data[i] = {}
+        Table_All_Items_New_data[i]['Name'] = v['name']
+        Table_All_Items_New_data[i]['Count'] = 0
+        Table_All_Items_New_data[i]['Count Shiny'] = 0
+    end
+end
 for i,v in pairs(get_inventory_items()) do
-	Old_Inventory_table[i] = v
+	Table_All_Items_Old_data[i]['Count'] = v
+end
+for i,v in pairs(get_inventory_items_unique_items()) do
+    if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
+        Count_Portal_list = Count_Portal_list + 1
+        Table_All_Items_Old_data[v['item_id']]['Count'] = Table_All_Items_Old_data[v['item_id']]['Count'] + 1
+    end
+end
+for i,v in pairs(get_Units_Owner()) do
+    Table_All_Items_Old_data[v["unit_id"]]['Count'] = Table_All_Items_Old_data[v["unit_id"]]['Count'] + 1
+    if v.shiny then
+        Table_All_Items_Old_data[v["unit_id"]]['Count'] = Table_All_Items_Old_data[v["unit_id"]]['Count'] - 1
+        Table_All_Items_Old_data[v["unit_id"]]['Count Shiny'] = Table_All_Items_Old_data[v["unit_id"]]['Count Shiny'] + 1
+    end
 end
 
 ----------------Map & ID Map
@@ -145,8 +172,8 @@ function webhook()
     mapname = game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["name"]
     cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
 	ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
-    btp = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.V.Text
-    btp3 = plr.PlayerGui:FindFirstChild("BattlePass"):FindFirstChild("Main"):FindFirstChild("Level"):FindFirstChild("V").Text
+    btp = plr.PlayerGui:FindFirstChild("BattlePass"):FindFirstChild("Main"):FindFirstChild("Level"):FindFirstChild("V").Text
+    btp2 = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.Title.Text
     waves = cwaves:split(": ")
     if waves ~= nil and waves[2] == "999" then waves[2] = "N/A [Test Webhook]" end	
 	ttime = ctime:split(": ")
@@ -167,20 +194,65 @@ function webhook()
 
 
     local TextDropLabel = ""
-		local CountAmount = 1
-		for i,v in pairs(get_inventory_items()) do
-			if (v - Old_Inventory_table[i]) > 0 then
-				for NameData, NameShow in pairs(Table_Items_Name_data) do
-					if (v - Old_Inventory_table[i]) > 0 and tostring(NameData) == tostring(i) then
-						TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(string.gsub(i, i, NameShow)) .. " : x" .. tostring(v - Old_Inventory_table[i]) .. "\n"
-						CountAmount = CountAmount + 1
+	local CountAmount = 1
+    for i,v in pairs(get_inventory_items()) do
+        Table_All_Items_New_data[i]['Count'] = v
+    end
+    for i,v in pairs(get_inventory_items_unique_items()) do
+        if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
+            Table_All_Items_New_data[v['item_id']]['Count'] = Table_All_Items_New_data[v['item_id']]['Count'] + 1
+        end
+    end
+    for i,v in pairs(get_Units_Owner()) do
+        Table_All_Items_New_data[v["unit_id"]]['Count'] = Table_All_Items_New_data[v["unit_id"]]['Count'] + 1
+        if v.shiny then
+            Table_All_Items_New_data[v["unit_id"]]['Count'] = Table_All_Items_New_data[v["unit_id"]]['Count'] - 1
+            Table_All_Items_New_data[v["unit_id"]]['Count Shiny'] = Table_All_Items_New_data[v["unit_id"]]['Count Shiny'] + 1
+        end
+    end
+
+	for i,v in pairs(Table_All_Items_New_data) do
+		if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+			if v['Count Shiny'] and v['Count'] then
+				if v['Count'] > 0 or v['Count Shiny'] > 0 then
+					if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+						TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count'])
+						if v['Count Shiny'] > 0 and (v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) > 0 then
+							TextDropLabel = TextDropLabel .. " | " .. tostring(v['Name']) .. " (Shiny) : x" .. tostring(v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) .. "\n"
+                            CountAmount = CountAmount + 1
+                        else
+                            TextDropLabel = TextDropLabel .. "\n"
+                            CountAmount = CountAmount + 1
+						end
 					end
-				end;
+				end
+			end
+		elseif v['Count Shiny'] and v['Count Shiny'] > 0 and (v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) > 0 then
+			TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " (Shiny) : x" .. tostring(v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) .. "\n"
+			CountAmount = CountAmount + 1
+		end
+	end
+
+    for i,v in pairs(Table_All_Items_New_data) do
+		if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+            if v['Count Shiny'] and v['Count'] then
+			elseif string.find(i,"portal") or string.find(i,"disc") then
+				Count_Portal_list = Count_Portal_list + 1
+				if string.gsub(i, "%D", "") == "" then
+					TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+				else
+					TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " Tier " .. tostring(string.gsub(i, "%D", "")) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+                end
+				CountAmount = CountAmount + 1
+			else
+				TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+                CountAmount = CountAmount + 1
 			end
 		end
-		if TextDropLabel == "" then
-			TextDropLabel = "Not Have Items Drops"
-		end
+	end
+	if TextDropLabel == "" then
+		TextDropLabel = "Not Have Items Drops"
+	end
     
         local data = {
             ["content"] = "",
@@ -200,8 +272,8 @@ function webhook()
                         ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
                         ["fields"] = {
                             {
-                                ["name"] ="Current Level ✨ & BTP Lv 🛸 & Gems 💎 & Gold 💰",
-                                ["value"] = "```ini\n"..tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text)..  " ✨\nBTP Lv. : ".. btp3 .." 🛸\nCurrent Gems : "..tostring(comma_value(game.Players.LocalPlayer._stats.gem_amount.Value)).. " 💎\nCurrent Gold : "  ..tostring(comma_value(game.Players.LocalPlayer._stats.gold_amount.Value))..  " 💰```",
+                                ["name"] ="Current Level ✨ & Portals 🌀 & Gems 💎 & Gold 💰",
+                                ["value"] = "```ini\n"..tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text)..  " ✨\nCurrent Portals : ".. tostring(Count_Portal_list) .." 🌀\nCurrent Gems : "..tostring(comma_value(game.Players.LocalPlayer._stats.gem_amount.Value)).. " 💎\nCurrent Gold : "  ..tostring(comma_value(game.Players.LocalPlayer._stats.gold_amount.Value))..  " 💰```",
                             },
                             {
                                 ["name"] ="Results :",
