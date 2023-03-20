@@ -2305,7 +2305,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U1_wv <= current_wave and U1_amm <= U1_TAmm then
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
             print("placing u1..")
-            PlaceUnits(map, U1_name, U1_uuid,"UP1")
+            PlacePos(map, U1_name, U1_uuid,"UP1")
         elseif U1_sellW <= current_wave then
             print("selling u1..")
             sellunit(U1_name)
@@ -2321,7 +2321,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U2_wv <= current_wave and U2_amm <= U2_TAmm then
         if U2_sellW >= current_wave and U2_amm < U2_TAmm then
             print("placing u2..")
-            PlaceUnits(map, U2_name, U2_uuid,"UP2")
+            PlacePos(map, U2_name, U2_uuid,"UP2")
         elseif U2_sellW <= current_wave then
             print("selling u2..")
             sellunit(U2_name)
@@ -2337,7 +2337,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U3_wv <= current_wave and U3_amm <= U3_TAmm then
 	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
 		    print("placing u3..")
-		    PlaceUnits(map, U3_name, U3_uuid,"UP3")
+		    PlacePos(map, U3_name, U3_uuid,"UP3")
 	    elseif U3_sellW <= current_wave then
 		    print("selling u3..")
 		    sellunit(U3_name)
@@ -2353,7 +2353,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U4_wv <= current_wave and U4_amm <= U4_TAmm then
 	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
 		    print("placing u4..")
-		    PlaceUnits(map, U4_name, U4_uuid,"UP4")
+		    PlacePos(map, U4_name, U4_uuid,"UP4")
 	    elseif U4_sellW <= current_wave then
 		    print("selling u4..")
 		    sellunit(U4_name)
@@ -2369,7 +2369,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U5_wv <= current_wave and U5_amm <= U5_TAmm then
 	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
 		    print("placing u5..")
-		    PlaceUnits(map, U5_name, U5_uuid,"UP5")
+		    PlacePos(map, U5_name, U5_uuid,"UP5")
 	    elseif U5_sellW <= current_wave then
 		    print("selling u5..")
 		    sellunit(U5_name)
@@ -2385,7 +2385,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U6_wv <= current_wave and U6_amm <= U6_TAmm then
 	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
 		    print("placing u6..")
-		    PlaceUnits(map, U6_name, U6_uuid,"UP6")
+		    PlacePos(map, U6_name, U6_uuid,"UP6")
 	    elseif U6_sellW <= current_wave then
 		    print("selling u5..")
 		    sellunit(U6_name)
@@ -2496,46 +2496,46 @@ coroutine.resume(coroutine.create(function()
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
             if game.Workspace._map:FindFirstChild("namek mushroom model") then
-                PlaceUnitsTEST("Namak")
+                PlaceUnits("Namak")
                 --PlaceUnits("Namak")
             elseif game.Workspace._map:FindFirstChild("houses_new") then
-                PlaceUnitsTEST("Aot")
+                PlaceUnits("Aot")
             elseif game.Workspace._map:FindFirstChild("Snow Particles") then
-                PlaceUnitsTEST("Snowy")
+                PlaceUnits("Snowy")
             elseif game.Workspace._map:FindFirstChild("sand_gate") then 
-                PlaceUnitsTEST("Sand")
+                PlaceUnits("Sand")
             elseif game.Workspace._map:FindFirstChild("icebergs") then
-                PlaceUnitsTEST("Marine")
+                PlaceUnits("Marine")
             elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
-                PlaceUnitsTEST("Ghoul")
+                PlaceUnits("Ghoul")
             elseif game.Workspace._map:FindFirstChild("Bones/dust") then
-                PlaceUnitsTEST("Hollow")
+                PlaceUnits("Hollow")
             elseif game.Workspace._map:FindFirstChild("Ant Nest") then
-                PlaceUnitsTEST("Ant")
+                PlaceUnits("Ant")
             elseif game.Workspace._map:FindFirstChild("light poles") then
-                PlaceUnitsTEST("Magic")
+                PlaceUnits("Magic")
             elseif game.Workspace._map:FindFirstChild("LanternsGround") then
-                PlaceUnitsTEST("Cursed")
+                PlaceUnits("Cursed")
             elseif game.Workspace._map:FindFirstChild("pumpkins") then    
-                PlaceUnitsTEST("thriller_park")  
+                PlaceUnits("thriller_park")  
             elseif game.Workspace._map:FindFirstChild("skeleton") then
-                PlaceUnitsTEST("black_clover")
+                PlaceUnits("black_clover")
             elseif game.Workspace._map:FindFirstChild("graves") then
-                PlaceUnitsTEST("hollow_leg")
+                PlaceUnits("hollow_leg")
             elseif game.Workspace._map:FindFirstChild("vending machines") then
-                PlaceUnitsTEST("chainsaw")
+                PlaceUnits("chainsaw")
             elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
-                PlaceUnitsTEST("jojo")
+                PlaceUnits("jojo")
             elseif game.Workspace._map:FindFirstChild("secret") then
-                PlaceUnitsTEST("opm")
+                PlaceUnits("opm")
             elseif game.Workspace._map:FindFirstChild("s") then
-                PlaceUnitsTEST("west_city")
+                PlaceUnits("west_city")
             elseif game.Workspace._map:FindFirstChild("Capybara") then
-                PlaceUnitsTEST("Storm_Hideout")
+                PlaceUnits("Storm_Hideout")
             elseif game.Workspace._map:FindFirstChild("snow grass") then
-                PlaceUnitsTEST("infinity_trian")
+                PlaceUnits("infinity_trian")
             elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-                PlaceUnitsTEST("fabled_kingdom")
+                PlaceUnits("fabled_kingdom")
             end
         end
     end
