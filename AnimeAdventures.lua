@@ -2305,7 +2305,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U1_wv <= current_wave and U1_amm <= U1_TAmm then
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
             print("placing u1..")
-            PlacePos(map, U1_name, U1_uuid,"UP1")
+            PlaceUnits(map, U1_name, U1_uuid,"UP1")
         elseif U1_sellW <= current_wave then
             print("selling u1..")
             sellunit(U1_name)
@@ -2321,7 +2321,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U2_wv <= current_wave and U2_amm <= U2_TAmm then
         if U2_sellW >= current_wave and U2_amm < U2_TAmm then
             print("placing u2..")
-            PlacePos(map, U2_name, U2_uuid,"UP2")
+            PlaceUnits(map, U2_name, U2_uuid,"UP2")
         elseif U2_sellW <= current_wave then
             print("selling u2..")
             sellunit(U2_name)
@@ -2337,7 +2337,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U3_wv <= current_wave and U3_amm <= U3_TAmm then
 	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
 		    print("placing u3..")
-		    PlacePos(map, U3_name, U3_uuid,"UP3")
+		    PlaceUnits(map, U3_name, U3_uuid,"UP3")
 	    elseif U3_sellW <= current_wave then
 		    print("selling u3..")
 		    sellunit(U3_name)
@@ -2353,7 +2353,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U4_wv <= current_wave and U4_amm <= U4_TAmm then
 	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
 		    print("placing u4..")
-		    PlacePos(map, U4_name, U4_uuid,"UP4")
+		    PlaceUnits(map, U4_name, U4_uuid,"UP4")
 	    elseif U4_sellW <= current_wave then
 		    print("selling u4..")
 		    sellunit(U4_name)
@@ -2369,7 +2369,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U5_wv <= current_wave and U5_amm <= U5_TAmm then
 	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
 		    print("placing u5..")
-		    PlacePos(map, U5_name, U5_uuid,"UP5")
+		    PlaceUnits(map, U5_name, U5_uuid,"UP5")
 	    elseif U5_sellW <= current_wave then
 		    print("selling u5..")
 		    sellunit(U5_name)
@@ -2385,7 +2385,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U6_wv <= current_wave and U6_amm <= U6_TAmm then
 	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
 		    print("placing u6..")
-		    PlacePos(map, U6_name, U6_uuid,"UP6")
+		    PlaceUnits(map, U6_name, U6_uuid,"UP6")
 	    elseif U6_sellW <= current_wave then
 		    print("selling u5..")
 		    sellunit(U6_name)
@@ -2399,7 +2399,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 end
 --fix sell and place spam
 
-function PlaceUnits(map,name,_uuid,unit)
+function PlaceUnits(map)
     pcall(function()
         if Settings.AutoFarm and not getgenv().disableatuofarm then
             x = getgenv().posX; z = getgenv().posZ
