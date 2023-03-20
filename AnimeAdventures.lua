@@ -314,7 +314,7 @@ local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG
 local exec = tostring(identifyexecutor())
 
 local Window = Uilib.new(true, "[UPD 11.5.0] Anime Adventures "..version.." - "..exec)
-Window.ChangeToggleKey(Enum.KeyCode.RightShift)
+Window.ChangeToggleKey(Enum.KeyCode.RightControl)
 
 
 local Home = Window:Category(" 📋 Home")
@@ -763,7 +763,7 @@ local function credits()
     Developers:Cheat("Label","📝 Scripted by: Arpon AG#6612 & Forever4D#0001 ")    
     Developers:Cheat("Label","📝 Also thanks to Trapstar#7845, bytenode#9646, HOLYSHz#3819 for the help!")    
     Developers:Cheat("Label","📐 UI By: detourious @ v3rmillion.net")    
-    Developers:Cheat("Label","🔧 To toggle the script press \"RightShift\"")   
+    Developers:Cheat("Label","🔧 To toggle the script press \"RightControl\"")   
     Developers:Cheat("Button","🔗 Discord Invite", function()
         setclipboard("https://discord.gg/2ttfCfzxut")
     end)    
