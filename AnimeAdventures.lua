@@ -904,7 +904,7 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("snow grass") then
        updatepos("infinity_trian", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-        updatepos("fabled_kingdom", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("7ds", UnitPos, a,a2,a3,a4,a5,a6)
     end
     warn("savepos")
 end
