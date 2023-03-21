@@ -1,5 +1,5 @@
---Beta
-local version = "v2.0.0b25"
+--Beta updatefix
+local version = "v2.0.0b26"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -312,8 +312,8 @@ end
 local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
-
-local Window = Uilib.new(true, "[UPD 11.5.0] Anime Adventures "..version.." - "..exec)
+--updatefix
+local Window = Uilib.new(true, "[UPD 11.7.5] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightControl)
 
 
@@ -514,7 +514,7 @@ local function WorldSec()
         getgenv().updatedifficulty()
         saveSettings()
     end, {options = { }, default = Settings.SelectedWorld })
-
+--fixmap
     getgenv().updateworld = function()
         selectworld:ClearDrop() local storylist;
         if Settings.WorldCategory == "Story Worlds" then
@@ -602,7 +602,7 @@ local function WorldSec()
             levellist = {"portal_csm"}
         elseif level == "Demon Portals" then
             levellist = {"portal_zeldris"}
-            ---///Dungeon\\\---    
+            ---///Dungeon\\\---    updatefix
         elseif level == "Cursed Womb" then
             levellist = {"jjk_finger"} 
         elseif level == "Crused Parade" then
@@ -760,8 +760,8 @@ end
 ------------------ credits -------------------
 ----------------------------------------------
 local function credits()
-    Developers:Cheat("Label","📝 Scripted by: Arpon AG#6612 & Forever4D#0001 ")    
-    Developers:Cheat("Label","📝 Also thanks to Trapstar#7845, bytenode#9646, HOLYSHz#3819 for the help!")    
+    Developers:Cheat("Label","📝 Scripted by: Arpon AG#6612 & Forever4D#0001 & HOLYSHz#3819 ")    
+    Developers:Cheat("Label","📝 Also thanks to Trapstar#7845, bytenode#9646 for the help!")    
     Developers:Cheat("Label","📐 UI By: detourious @ v3rmillion.net")    
     Developers:Cheat("Label","🔧 To toggle the script press \"RightControl\"")   
     Developers:Cheat("Button","🔗 Discord Invite", function()
@@ -863,7 +863,7 @@ function updatepos(map, UnitPos, a,a2,a3,a4,a5,a6)
     print("updatepos")
     saveSettings()
 end
-
+--updatefix fixmap
 function savepos(UnitPos, a,a2,a3,a4,a5,a6)
     if game.Workspace._map:FindFirstChild("namek mushroom model") then
         updatepos("Namak", UnitPos, a,a2,a3,a4,a5,a6)
@@ -904,7 +904,7 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("snow grass") then
        updatepos("infinity_trian", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-        updatepos("7ds", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("fabled_kingdom", UnitPos, a,a2,a3,a4,a5,a6)
     end
     warn("savepos")
 end
@@ -2012,7 +2012,7 @@ local function FarmInfinityCastle()
         end
     end
 end
-
+--updatefix fixmap
 coroutine.resume(coroutine.create(function()
     while task.wait() do
         if not Settings.AutoInfinityCastle then
@@ -2058,7 +2058,7 @@ coroutine.resume(coroutine.create(function()
     end
 end))
 
-
+--updatefix fixmap
 coroutine.resume(coroutine.create(function()
     while task.wait(2) do
 
@@ -2639,7 +2639,7 @@ coroutine.resume(coroutine.create(function()
             elseif game.Workspace._map:FindFirstChild("snow grass") then
                 PlaceUnitsTEST("infinity_trian")
             elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-                PlaceUnitsTEST("7ds")
+                PlaceUnitsTEST("fabled_kingdom")
             end
         end
     end
@@ -2690,7 +2690,7 @@ coroutine.resume(coroutine.create(function()
             elseif game.Workspace._map:FindFirstChild("snow grass") then
                 PlaceUnits("infinity_trian")
             elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-                PlaceUnits("7ds")
+                PlaceUnits("fabled_kingdom")
             end
         end
     end
