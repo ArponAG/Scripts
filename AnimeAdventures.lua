@@ -1562,7 +1562,7 @@ function SnipeMerchant()
     AutoSnipeMerchantSec:Cheat("Dropdown", "Select Star Fruit",function(value)
         Settings.ASM_SelectedFruit = value
         saveSettings()
-    end, { options = {"None","Any StarFruits","StarFruit","StarFruitGreen","StarFruitRed", "StarFruitPink","StarFruitBlue","StarFruitEpic"}, default =Settings.ASM_SelectedFruit})
+    end, { options = {"None","StarFruit","StarFruitGreen","StarFruitRed", "StarFruitPink","StarFruitBlue","StarFruitEpic"}, default =Settings.ASM_SelectedFruit})
    
     AutoSnipeMerchantSec:Cheat("Dropdown", "Select Other Items",function(value)
         Settings.ASM_SelectedOtherItems = value
