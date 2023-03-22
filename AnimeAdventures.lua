@@ -175,9 +175,9 @@ function webhook()
     btp = plr.PlayerGui:FindFirstChild("BattlePass"):FindFirstChild("Main"):FindFirstChild("Level"):FindFirstChild("V").Text
     btp2 = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.Title.Text
     waves = cwaves:split(": ")
-    if waves ~= nil and waves[2] == "999" then waves[2] = "N/A [Test Webhook]" end	
+    if waves ~= nil and waves[2] == "999" then waves[2] = "Use [Auto Leave at Wave] or [Test Webhook]" end	
 	ttime = ctime:split(": ")
-    if waves ~= nil and ttime[2] == "22:55" then ttime[2] = "N/A [Test Webhook]" end	
+    if waves ~= nil and ttime[2] == "22:55" then ttime[2] = "Use [Auto Leave at Wave] or [Test Webhook]" end	
 
     gold = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GoldReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
     if gold == "+99999" then gold = "+0" end	 
@@ -316,7 +316,6 @@ local exec = tostring(identifyexecutor())
 local Window = Uilib.new(true, "[UPD 11.7.5] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightControl)
 
-
 local Home = Window:Category(" 📋 Home")
 local Developers = Home:Sector("Anime Adventures")
 local asdasd = Home:Sector(" ")
@@ -434,24 +433,6 @@ local function UnitSec()
         default = Settings.SelectedPreset
     })
 
-  --[[  SelectUnits:Cheat("Button", "💾 Save Units Preset", function() --Saves to preset
-        preset = Settings.SelectedPreset
-        if preset == "Team 1" then
-            Settings.preset1 = Settings.SelectedUnits
-        elseif preset == "Team 2" then
-            Settings.preset2 = Settings.SelectedUnits
-        elseif preset == "Team 3" then
-            Settings.preset3 = Settings.SelectedUnits
-        elseif preset == "Team 4" then
-            Settings.preset4 = Settings.SelectedUnits
-        elseif preset == "Team 5" then
-            Settings.preset5 = Settings.SelectedUnits
-        end
-        print(preset)
-        saveSettings()
-
-    end)
-    ]]--
 
     SelectUnits:Cheat("Button", "⌛ Switch Team", function() --loads preset
         preset = Settings.SelectedPreset
@@ -469,17 +450,6 @@ local function UnitSec()
         print(preset)
         GetUnits()
 
-        --[[game:GetService("ReplicatedStorage").endpoints.client_to_server.unequip_all:InvokeServer()
-            
-        for i = 1, 6 do
-            local unitinfo = loadpreset["U" .. i]
-            warn(unitinfo)
-            if unitinfo ~= nil then
-                local unitinfo_ = unitinfo:split(" #")
-                task.wait(0.5)
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.equip_unit:InvokeServer(unitinfo_[2])
-            end
-        end ]]--
 
     end)
 
@@ -2116,6 +2086,11 @@ coroutine.resume(coroutine.create(function()
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
 
             if Settings.autoQuit and not Settings.AutoSell and tonumber(Settings.AutoSellWave) <= _wave.Value then
+                pcall(function() webhook() end)
+                print("send Webhook")
+                task.wait(2.1)
+                print("Returning to lobby...")
+                task.wait(2.1)
                 Teleport()
             end
 
@@ -2415,7 +2390,6 @@ function PlacePos(map,name,_uuid,unit)
     end
 end
 
-
 function upgradeunit(name, min)
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
        if v:FindFirstChild("_stats") then
@@ -2490,7 +2464,6 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     --//Unit 1
     local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
     if U1_wv <= current_wave and U1_amm <= U1_TAmm then
-        PlacePos(map, U1_name, U1_uuid,"UP1")
         if U1_UnP <= U2_UnP or U3_UnP or U4_UnP or U5_UnP or U6_UnP then
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
             print("placing u1..")
@@ -2509,7 +2482,6 @@ end
     --//Unit 2
     local U2_amm, U2_name, U2_uuid, U2_u = GetUnitInfo("U2")
     if U2_wv <= current_wave and U2_amm <= U2_TAmm then
-        PlacePos(map, U2_name, U2_uuid,"UP2")
         if U2_UnP <= U1_UnP or U3_UnP or U4_UnP or U5_UnP or U6_UnP then
         if U2_sellW >= current_wave and U2_amm < U2_TAmm then
             print("placing u2..")
@@ -2528,7 +2500,6 @@ end
     --//Unit 3
     local U3_amm, U3_name, U3_uuid, U3_u = GetUnitInfo("U3")
     if U3_wv <= current_wave and U3_amm <= U3_TAmm then
-        PlacePos(map, U3_name, U3_uuid,"UP3")
         if U3_UnP <= U1_UnP or U2_UnP or U4_UnP or U5_UnP or U6_UnP then
 	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
 		    print("placing u3..")
@@ -2547,7 +2518,6 @@ end
     --//Unit 4
     local U4_amm, U4_name, U4_uuid, U4_u = GetUnitInfo("U4")
     if U4_wv <= current_wave and U4_amm <= U4_TAmm then
-        PlacePos(map, U3_name, U3_uuid,"UP3")
         if U4_UnP <= U1_UnP or U2_UnP or U3_UnP or U5_UnP or U6_UnP then
 	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
 		    print("placing u4..")
@@ -2566,7 +2536,6 @@ end
     --//Unit 5
     local U5_amm, U5_name, U5_uuid, U5_u = GetUnitInfo("U5")
     if U5_wv <= current_wave and U5_amm <= U5_TAmm then
-        PlacePos(map, U3_name, U3_uuid,"UP3")
         if U5_UnP <= U1_UnP or U2_UnP or U3_UnP or U4_UnP or U6_UnP then
 	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
 		    print("placing u5..")
@@ -2585,7 +2554,6 @@ end
     --//Unit 6
     local U6_amm, U6_name, U6_uuid, U6_u = GetUnitInfo("U6")
     if U6_wv <= current_wave and U6_amm <= U6_TAmm then
-        PlacePos(map, U3_name, U3_uuid,"UP3")
         if U6_UnP <= U1_UnP or U2_UnP or U3_UnP or U4_UnP or U5_UnP then
 	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
 		    print("placing u6..")
