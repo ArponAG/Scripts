@@ -1528,7 +1528,7 @@ function snipefunc(item)
     if item =="Any StarFruits" then
         if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
             for i,v in pairs(game:GetService("Workspace")["travelling_merchant"]:FindFirstChild("stand"):FindFirstChild("items"):GetChildren()) do
-                if v.Name:match("StarFruit") then
+                if v.Name:match("StarFruitsRainbow") then
                     buymerchant(v.Name)
                     print(v.Name)
                 end   
