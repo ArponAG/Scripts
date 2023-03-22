@@ -694,13 +694,19 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoUpgrade})
 
-    AutoFarmConfig:Cheat("Checkbox","⭐️ Auto Sell Units  ", function(bool)
+    AutoFarmConfig:Cheat("Checkbox","⭐️ Sell Units At Wave  ", function(bool)
         print(bool)
         Settings.AutoSell = bool
         saveSettings()
     end,{enabled = Settings.AutoSell})
 
-    AutoFarmConfig:Cheat("Textbox", "💸 Auto Sell Wave", function(Value)
+    AutoFarmConfig:Cheat("Checkbox","⭐️ Leave At Wave  ", function(bool)
+        print(bool)
+        Settings.autoQuit = bool
+        saveSettings()
+    end,{enabled = Settings.autoQuit})
+
+    AutoFarmConfig:Cheat("Textbox", "Sell or Leave at Wave", function(Value)
         Value = tonumber(Value)
         Settings.AutoSellWave = Value
         saveSettings()
@@ -708,7 +714,7 @@ local function AutoFarmSec()
 end
 
 ----------------------------------------------
---------------- More Farm Config -------------
+--------------- More Farm Config ------------- Settings.autoQuit
 ----------------------------------------------
 local function MoreFarmSec()
 
@@ -724,13 +730,6 @@ local function MoreFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoInfinityCastle})
 
-    --[[
-    MoreFarmConfig:Cheat("Checkbox","⚡️ Auto Event Farm  ", function(bool)
-        print(bool)
-        Settings.AutoEventFarm = bool
-        saveSettings()
-    end,{enabled = Settings.AutoEventFarm})
-    ]]--
 end
 
 ----------------------------------------------
@@ -1666,7 +1665,7 @@ local function checkChallenge()
     end
 end
 
-local function checkReward()
+local function checkReward() 
     if checkChallenge() == false then
         if Settings.SelectedReward == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value then
             return true
@@ -2091,6 +2090,16 @@ coroutine.resume(coroutine.create(function()
             elseif checkChallenge() == true then
                 startfarming()--S_Farming
             end
+        elseif not Settings.AutoInfinityCastle == true then--Infiniy Castle
+            if not checkChallenge() then --Challenge_Not_Complete
+                if  Settings.AutoChallengeAll then
+                    startChallenge() --S_Challenge
+                else
+                    startfarming()--S_Farming
+                end
+            elseif checkChallenge() == true then
+                startfarming()--S_Farming
+            end
         elseif Settings.AutoInfinityCastle == true then--Infiniy Castle
             if not checkChallenge() then --Challenge_Not_Complete
                 if  Settings.AutoChallenge and checkReward() == true then
@@ -2105,7 +2114,12 @@ coroutine.resume(coroutine.create(function()
 
         if game.PlaceId ~= 8304191830 then
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
-            if Settings.AutoSell and tonumber(Settings.AutoSellWave) <= _wave.Value then
+
+            if Settings.autoQuit and not Settings.AutoSell and tonumber(Settings.AutoSellWave) <= _wave.Value then
+                Teleport()
+            end
+
+            if Settings.AutoSell and not Settings.autoQuit and tonumber(Settings.AutoSellWave) <= _wave.Value then
                 getgenv().disableatuofarm = true
                 repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
                 for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
@@ -2476,6 +2490,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     --//Unit 1
     local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
     if U1_wv <= current_wave and U1_amm <= U1_TAmm then
+        PlacePos(map, U1_name, U1_uuid,"UP1")
         if U1_UnP <= U2_UnP or U3_UnP or U4_UnP or U5_UnP or U6_UnP then
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
             print("placing u1..")
@@ -2494,6 +2509,7 @@ end
     --//Unit 2
     local U2_amm, U2_name, U2_uuid, U2_u = GetUnitInfo("U2")
     if U2_wv <= current_wave and U2_amm <= U2_TAmm then
+        PlacePos(map, U2_name, U2_uuid,"UP2")
         if U2_UnP <= U1_UnP or U3_UnP or U4_UnP or U5_UnP or U6_UnP then
         if U2_sellW >= current_wave and U2_amm < U2_TAmm then
             print("placing u2..")
@@ -2512,6 +2528,7 @@ end
     --//Unit 3
     local U3_amm, U3_name, U3_uuid, U3_u = GetUnitInfo("U3")
     if U3_wv <= current_wave and U3_amm <= U3_TAmm then
+        PlacePos(map, U3_name, U3_uuid,"UP3")
         if U3_UnP <= U1_UnP or U2_UnP or U4_UnP or U5_UnP or U6_UnP then
 	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
 		    print("placing u3..")
@@ -2530,6 +2547,7 @@ end
     --//Unit 4
     local U4_amm, U4_name, U4_uuid, U4_u = GetUnitInfo("U4")
     if U4_wv <= current_wave and U4_amm <= U4_TAmm then
+        PlacePos(map, U3_name, U3_uuid,"UP3")
         if U4_UnP <= U1_UnP or U2_UnP or U3_UnP or U5_UnP or U6_UnP then
 	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
 		    print("placing u4..")
@@ -2548,6 +2566,7 @@ end
     --//Unit 5
     local U5_amm, U5_name, U5_uuid, U5_u = GetUnitInfo("U5")
     if U5_wv <= current_wave and U5_amm <= U5_TAmm then
+        PlacePos(map, U3_name, U3_uuid,"UP3")
         if U5_UnP <= U1_UnP or U2_UnP or U3_UnP or U4_UnP or U6_UnP then
 	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
 		    print("placing u5..")
@@ -2566,6 +2585,7 @@ end
     --//Unit 6
     local U6_amm, U6_name, U6_uuid, U6_u = GetUnitInfo("U6")
     if U6_wv <= current_wave and U6_amm <= U6_TAmm then
+        PlacePos(map, U3_name, U3_uuid,"UP3")
         if U6_UnP <= U1_UnP or U2_UnP or U3_UnP or U4_UnP or U5_UnP then
 	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
 		    print("placing u6..")
