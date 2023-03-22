@@ -2463,7 +2463,8 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 
     --//Unit 1
     local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
-    if U1_wv <= current_wave and U1_amm <= U1_TAmm and U1_UnP <= U2_UnP and U1_UnP <= U3_UnP and U1_UnP <= U4_UnP and U1_UnP <= U5_UnP and U1_UnP <= U6_UnP then
+    if U1_wv <= current_wave and U1_amm <= U1_TAmm then
+        --[[if U1_UnP <= U1_wv and U1_UnP <= U2_UnP and U1_UnP <= U3_UnP and U1_UnP <= U4_UnP and U1_UnP <= U5_UnP and U1_UnP <= U6_UnP then]]
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
             print("placing u1..")
             PlacePos(map, U1_name, U1_uuid,"UP1")
@@ -2471,16 +2472,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
             print("selling u1..")
             sellunit(U1_name)
         end
-        if U1_u < U1_upgCap and U1_upgP <= U2_upgP or U3_upgP or U4_upgP or U5_upgP or U6_upgP and U1_upgW <= current_wave and U1_sellW >= current_wave then
+        if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave --[[and U1_upgP <= U2_upgP and U1_upgP <= U3_upgP and U1_upgP <= U4_upgP and U1_upgP <= U5_upgP and U1_upgP <= U6_upgP]] then
             print("upgrading u1..")
             upgradeunit(tostring(U1_name), (U1_upgCap))
         end
     end
-
+--end
 
     --//Unit 2
     local U2_amm, U2_name, U2_uuid, U2_u = GetUnitInfo("U2")
-    if U2_wv <= current_wave and U2_amm <= U2_TAmm and U2_UnP <= U1_UnP and U2_UnP <= U3_UnP and U2_UnP <= U4_UnP and U2_UnP <= U5_UnP and U2_UnP <= U6_UnP then
+    if U2_wv <= current_wave and U2_amm <= U2_TAmm then
+        --[[if U2_UnP <= U2_wv and  U2_UnP <= U1_UnP and U2_UnP <= U3_UnP and U2_UnP <= U4_UnP and U2_UnP <= U5_UnP and U2_UnP <= U6_UnP then]]
         if U2_sellW >= current_wave and U2_amm < U2_TAmm then
             print("placing u2..")
             PlacePos(map, U2_name, U2_uuid,"UP2")
@@ -2488,16 +2490,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
             print("selling u2..")
             sellunit(U2_name)
         end
-        if U2_u < U2_upgCap and U2_upgP <= U1_upgP or U3_upgP or U4_upgP or U5_upgP or U6_upgP and U2_upgW <= current_wave and U2_sellW >= current_wave then
+        if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave --[[and U2_upgP <= U1_upgP and U2_upgP <= U3_upgP and U2_upgP <= U4_upgP and U2_upgP <= U5_upgP and U2_upgP <= U6_upgP]]  then
             print("upgrading u2..")
             upgradeunit(tostring(U2_name), (U2_upgCap))
         end
     end
-
+--end
 
     --//Unit 3
     local U3_amm, U3_name, U3_uuid, U3_u = GetUnitInfo("U3")
-    if U3_wv <= current_wave and U3_amm <= U3_TAmm and U3_UnP <= U1_UnP and U3_UnP <= U2_UnP and U3_UnP <= U4_UnP and U3_UnP <= U5_UnP and U3_UnP <= U6_UnP then
+    if U3_wv <= current_wave and U3_amm <= U3_TAmm then
+        --[[if U3_UnP <= U3_wv and U3_UnP <= U1_UnP and U3_UnP <= U2_UnP and U3_UnP <= U4_UnP and U3_UnP <= U5_UnP and U3_UnP <= U6_UnP then]]
 	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
 		    print("placing u3..")
 		    PlacePos(map, U3_name, U3_uuid,"UP3")
@@ -2505,16 +2508,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("selling u3..")
 		    sellunit(U3_name)
 	    end
-        if U3_u < U3_upgCap and U3_upgP <= U1_upgP or U2_upgP or U4_upgP or U5_upgP or U6_upgP and U3_upgW <= current_wave and U3_sellW >= current_wave then
+        if U3_u < U3_upgCap and U3_upgW <= current_wave --[[and U3_sellW >= current_wave and U3_upgP <= U1_upgP and U3_upgP <= U2_upgP and U3_upgP <= U4_upgP and U3_upgP <= U5_upgP and U3_upgP <= U6_upgP]] then
             print("upgrading u3..")
             upgradeunit(tostring(U3_name), (U3_upgCap))
         end
     end
-
+--end
 
     --//Unit 4
     local U4_amm, U4_name, U4_uuid, U4_u = GetUnitInfo("U4")
-    if U4_wv <= current_wave and U4_amm <= U4_TAmm and U4_UnP <= U1_UnP and U4_UnP <= U2_UnP and U4_UnP <= U3_UnP and U4_UnP <= U5_UnP and U4_UnP <= U6_UnP then
+    if U4_wv <= current_wave and U4_amm <= U4_TAmm then
+        --[[if U4_UnP <= U4_wv and U4_UnP <= U1_UnP and U4_UnP <= U2_UnP and U4_UnP <= U3_UnP and U4_UnP <= U5_UnP and U4_UnP <= U6_UnP then]]
 	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
 		    print("placing u4..")
 		    PlacePos(map, U4_name, U4_uuid,"UP4")
@@ -2522,16 +2526,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("selling u4..")
 		    sellunit(U4_name)
 	    end
-        if U4_u < U4_upgCap and U4_upgP <= U1_upgP or U2_upgP or U3_upgP or U5_upgP or U6_upgP and U4_upgW <= current_wave and U4_sellW >= current_wave then
+        if U4_u < U4_upgCap and U4_upgW <= current_wave and U4_sellW >= current_wave --[[and U4_upgP <= U1_upgP and U4_upgP <= U2_upgP and U4_upgP <= U3_upgP and U4_upgP <= U5_upgP and U4_upgP <= U6_upgP]] then
             print("upgrading u4..")
             upgradeunit(tostring(U4_name), (U4_upgCap))
         end
     end
-
+--end
 
     --//Unit 5
     local U5_amm, U5_name, U5_uuid, U5_u = GetUnitInfo("U5")
-    if U5_wv <= current_wave and U5_amm <= U5_TAmm and U5_UnP <= U1_UnP and U5_UnP <= U2_UnP and U5_UnP <= U3_UnP and U5_UnP <= U4_UnP and U5_UnP <= U6_UnP then
+    if U5_wv <= current_wave and U5_amm <= U5_TAmm then
+        --[[if U5_UnP <= U5_wv and U5_UnP <= U1_UnP and U5_UnP <= U2_UnP and U5_UnP <= U3_UnP and U5_UnP <= U4_UnP and U5_UnP <= U6_UnP then]]
 	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
 		    print("placing u5..")
 		    PlacePos(map, U5_name, U5_uuid,"UP5")
@@ -2539,16 +2544,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("selling u5..")
 		    sellunit(U5_name)
 	    end
-        if U5_u < U5_upgCap and U5_upgP <= U1_upgP or U2_upgP or U3_upgP or U4_upgP or U6_upgP and U5_upgW <= current_wave and U5_sellW >= current_wave then
+        if U5_u < U5_upgCap and U5_upgW <= current_wave and U5_sellW >= current_wave --[[and U5_upgP <= U1_upgP and U5_upgP <= U2_upgP and U5_upgP <= U3_upgP and U5_upgP <= U4_upgP and U5_upgP <= U6_upgP]] then
             print("upgrading u5..")
             upgradeunit(tostring(U5_name), (U5_upgCap))
         end
     end
-
+--end
 
     --//Unit 6
     local U6_amm, U6_name, U6_uuid, U6_u = GetUnitInfo("U6")
-    if U6_wv <= current_wave and U6_amm <= U6_TAmm and U6_UnP <= U1_UnP and U6_UnP <= U2_UnP and U6_UnP <= U3_UnP and U6_UnP <= U4_UnP and U6_UnP <= U5_UnP then
+    if U6_wv <= current_wave and U6_amm <= U6_TAmm then
+        --[[if U6_UnP <= U6_wv and U6_UnP <= U1_UnP and U6_UnP <= U2_UnP and U6_UnP <= U3_UnP and U6_UnP <= U4_UnP and U6_UnP <= U5_UnP then]]
 	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
 		    print("placing u6..")
 		    PlacePos(map, U6_name, U6_uuid,"UP6")
@@ -2556,12 +2562,13 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("selling u6..")
 		    sellunit(U6_name)
 	    end
-        if U6_u < U6_upgCap and U6_upgP <= U1_upgP or U2_upgP or U3_upgP or U4_upgP or U5_upgP and U6_upgW <= current_wave and U6_sellW >= current_wave then
+        if U6_u < U6_upgCap and U6_upgW <= current_wave and U6_sellW >= current_wave --[[and U6_upgP <= U1_upgP and U6_upgP <= U2_upgP and U6_upgP <= U3_upgP and U6_upgP <= U4_upgP and U6_upgP <= U5_upgP]]  then
             print("upgrading u6..")
             upgradeunit(tostring(U6_name), (U6_upgCap))
         end
     end
 end
+--end
 
 --fix sell and place spam
 
