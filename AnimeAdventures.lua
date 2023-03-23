@@ -401,10 +401,165 @@ function BabyWebhook()
             local headers = {["content-type"] = "application/json"}
             request = http_request or request or HttpPost or syn.request or http.request
             local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
-            warn("Sending infcastle webhook notification...")
+            warn("Sending  BTP & Inf Castle & Tournament  webhook notification...")
             request(sex)
         end
 end
+
+--special
+function SpecialSummonSniperWebhook()
+    if Settings.BabyWebhookEnabled then
+	local url = Settings.WebhookUrl
+    print("webhook baby?")
+    if url == "" then
+        warn("Webhook Url is empty!")
+        return
+    end 
+		
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        special_banner = game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.EventClover.Main
+        units = {
+            special_banner["Featured_One"],
+            special_banner["Featured_Two"],
+            special_banner["Featured_Three"]
+        }
+
+        unitNamesForJson = {
+            special_banner["Featured_One"].name.Text,
+            special_banner["Featured_Two"].name.Text,
+            special_banner["Featured_Three"].name.Text
+        }
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Special Banner ",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+                            {
+                                ["name"] = "```" .. units[1].name.Text .. "```",
+                                ["value"] = "```(" .. units[1].Rarity.Text .. ") [Featured]```",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "```" .. units[2].name.Text .. "```",
+                                ["value"] = "```(" .. units[2].Rarity.Text .. ")```",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "```" .. units[3].name.Text .. "```",
+                                ["value"] = "```(" .. units[3].Rarity.Text .. ")```",
+                                ["inline"] = true
+                            }
+                        }
+                    }
+                }
+            }
+        
+    
+            local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending special banner webhook notification...")
+            request(sex)
+        end
+end
+
+--Standar
+function StandardSummonSniperWebhook()
+    if Settings.BabyWebhookEnabled then
+	local url = Settings.WebhookUrl
+    print("webhook baby?")
+    if url == "" then
+        warn("Webhook Url is empty!")
+        return
+    end 
+		
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        units = {
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["1"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["2"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["3"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["4"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["5"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["6"].Main
+        }
+
+        
+            U1 = units[1].petimage.WorldModel:GetChildren()[1].Name
+            U2 = units[2].petimage.WorldModel:GetChildren()[1].Name
+            U3 = units[3].petimage.WorldModel:GetChildren()[1].Name
+            U4 = units[4].petimage.WorldModel:GetChildren()[1].Name
+            U5 = units[5].petimage.WorldModel:GetChildren()[1].Name
+            U6 = units[6].petimage.WorldModel:GetChildren()[1].Name
+        
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Standard Banner ",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+
+                        }
+				    }
+			    }
+		    }
+
+        for i, unit in pairs(units) do
+            unit_stats = {
+                ["name"] = "```" .. unit.petimage.WorldModel:GetChildren()[1].Name .."```",
+                ["value"] = "```(" ..unit.Rarity.Text ..")```",
+                ["inline"] = true
+            }
+            table.insert(data["embeds"][1]["fields"], unit_stats)
+        end
+        
+    
+            local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending Standard banner webhook notification...")
+            request(sex)
+        end
+    end
+
 ------------------------------\
 if game.CoreGui:FindFirstChild("FinityUI") then
     game.CoreGui["FinityUI"]:Destroy()
@@ -1682,6 +1837,8 @@ function Webhooksec()
     WebhookSec:Cheat("Button", "Test Baby Webhook", function()
         print(Settings.WebhookUrl)
         BabyWebhook()
+        SpecialSummonSniperWebhook()
+        StandardSummonSniperWebhook()
     end)
 end
 
@@ -2272,7 +2429,7 @@ coroutine.resume(coroutine.create(function()
             end
         end
         
-        if Settings.AutoUpgrade then
+        if Settings.AutoUpgrade and not Settings.unitconfig then
             if game.PlaceId ~= 8304191830 then
                 pcall(function()
                     autoupgradefunc()
@@ -2282,6 +2439,32 @@ coroutine.resume(coroutine.create(function()
                 task.wait()
                 autoupgradefunc()
                 getgenv().autoupgradeerr = false
+            end
+        end
+
+        if Settings.AutoUpgrade and Settings.unitconfig then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    upgradeunitTest(name)
+                end)
+            end
+            if  getgenv().autoupgradeerr2 == true then
+                task.wait()
+                upgradeunitTest(name)
+                getgenv().autoupgradeerr2 = false
+            end
+        end
+
+        if Settings.unitconfig and not Settings.AutoUpgrade then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    upgradeunitTest(name)
+                end)
+            end
+            if  getgenv().autoupgradeerr2 == true then
+                task.wait()
+                upgradeunitTest(name)
+                getgenv().autoupgradeerr2 = false
             end
         end
     end
@@ -2532,32 +2715,6 @@ function PlacePos(map,name,_uuid,unit)
     end
 end
 
-function upgradeunit(name, min)
-
-    unitList = {}
-    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
-            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
-                if v.Name == name and v._stats.upgrade.Value <= min then
-                    table.insert(unitList, {v["_stats"]["id"].Value, v["_stats"]["uuid"].Value, v, v["_stats"]["upgrade"].Value})
-                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
-                end
-            end
-        end
-    end
-end
-
-function sellunit(name) 
-    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
-    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-        repeat task.wait() until v:WaitForChild("_stats")
-        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
-        end
-    end
-end
-
-
 function GetUnitInfo(Unit)
     local unitinfo = Settings.SelectedUnits[Unit]
     local unitinfo_ = unitinfo:split(" #")
@@ -2594,9 +2751,50 @@ function GetUnitInfo(Unit)
     return #_units or 0, unitinfo_[1], unitinfo_[2], min or 0
 end
 
+function upgradeunitTest(name)
+    local success, err = pcall(function() --///
+
+        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+        for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+           if v:FindFirstChild("_stats") then
+            if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end)
+
+    if err then
+        warn("//////////////////////////////////////////////////")
+        warn("//////////////////////////////////////////////////")
+        getgenv().autoupgradeerr2 = true
+        error(err)
+    end
+end
+
+function upgradeunit(name, min)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") then
+            if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 and v._stats.upgrade.Value <= min then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+
+function sellunit(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+        end
+    end
+end
+
 function PlaceUnitsTEST(map,name,_uuid,unit)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
-    
+
     U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 1, Settings.U2_Wave or 1, Settings.U3_Wave or 1, Settings.U4_Wave or 1, Settings.U5_Wave or 1, Settings.U6_Wave or 1
     U1_TAmm, U2_TAmm, U3_TAmm, U4_TAmm, U5_TAmm, U6_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6, Settings.U3_TotalAmmount or 6, Settings.U4_TotalAmmount or 6, Settings.U5_TotalAmmount or 6, Settings.U6_TotalAmmount or 6
     U1_upgW, U2_upgW, U3_upgW, U4_upgW, U5_upgW, U6_upgW = Settings.U1_UpgWave or 1, Settings.U2_UpgWave or 1, Settings.U3_UpgWave or 1, Settings.U4_UpgWave or 1, Settings.U5_UpgWave or 1, Settings.U6_UpgWave or 1
@@ -2619,7 +2817,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         end
         if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave --[[and U1_upgP <= U2_upgP and U1_upgP <= U3_upgP and U1_upgP <= U4_upgP and U1_upgP <= U5_upgP and U1_upgP <= U6_upgP]] then
             print("upgrading u1..")
-            upgradeunit(tostring(U1_name), (U1_upgCap))
+            upgradeunitTest(U1_name)
         end
     end
 --end
@@ -2637,7 +2835,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         end
         if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave --[[and U2_upgP <= U1_upgP and U2_upgP <= U3_upgP and U2_upgP <= U4_upgP and U2_upgP <= U5_upgP and U2_upgP <= U6_upgP]]  then
             print("upgrading u2..")
-            upgradeunit(tostring(U2_name), (U2_upgCap))
+            upgradeunitTest(U2_name)
         end
     end
 --end
@@ -2653,9 +2851,9 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("selling u3..")
 		    sellunit(U3_name)
 	    end
-        if U3_u < U3_upgCap and U3_upgW <= current_wave --[[and U3_sellW >= current_wave and U3_upgP <= U1_upgP and U3_upgP <= U2_upgP and U3_upgP <= U4_upgP and U3_upgP <= U5_upgP and U3_upgP <= U6_upgP]] then
+        if U3_u < U3_upgCap and U3_upgW <= current_wave and U3_sellW >= current_wave --[[and U3_upgP <= U1_upgP and U3_upgP <= U2_upgP and U3_upgP <= U4_upgP and U3_upgP <= U5_upgP and U3_upgP <= U6_upgP]] then
             print("upgrading u3..")
-            upgradeunit(tostring(U3_name), (U3_upgCap))
+            upgradeunitTest(U3_name)
         end
     end
 --end
@@ -2673,7 +2871,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 	    end
         if U4_u < U4_upgCap and U4_upgW <= current_wave and U4_sellW >= current_wave --[[and U4_upgP <= U1_upgP and U4_upgP <= U2_upgP and U4_upgP <= U3_upgP and U4_upgP <= U5_upgP and U4_upgP <= U6_upgP]] then
             print("upgrading u4..")
-            upgradeunit(tostring(U4_name), (U4_upgCap))
+            upgradeunitTest(U4_name)
         end
     end
 --end
@@ -2691,7 +2889,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 	    end
         if U5_u < U5_upgCap and U5_upgW <= current_wave and U5_sellW >= current_wave --[[and U5_upgP <= U1_upgP and U5_upgP <= U2_upgP and U5_upgP <= U3_upgP and U5_upgP <= U4_upgP and U5_upgP <= U6_upgP]] then
             print("upgrading u5..")
-            upgradeunit(tostring(U5_name), (U5_upgCap))
+            upgradeunitTest(U5_name)
         end
     end
 --end
@@ -2709,12 +2907,11 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 	    end
         if U6_u < U6_upgCap and U6_upgW <= current_wave and U6_sellW >= current_wave --[[and U6_upgP <= U1_upgP and U6_upgP <= U2_upgP and U6_upgP <= U3_upgP and U6_upgP <= U4_upgP and U6_upgP <= U5_upgP]]  then
             print("upgrading u6..")
-            upgradeunit(tostring(U6_name), (U6_upgCap))
+            upgradeunitTest(U6_name)
         end
     end
 end
 --end
-
 --test reset unit config
 function reunitcon()
     print("reset unit config ?")
