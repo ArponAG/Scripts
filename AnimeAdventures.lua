@@ -428,7 +428,7 @@ local ChallengeConfig = Farm:Sector("Challenge Config")
 
 local UC = Window:Category(" 👥 Unit Config")
 local NDY = UC:Sector("Beta Unit Config ")
-local NDY2 = UC:Sector(" ")
+local NDY2 = UC:Sector(" Reset Unit Config ")
 local emptyxx = UC:Sector(" ")
 local emptyxx2 = UC:Sector(" ")
 local Unit1 = UC:Sector("Unit 1")
@@ -1285,13 +1285,18 @@ end
 local function unitconfig()
     --emptyxx:Cheat("Label","    ")
     --NDY:Cheat("Label","THIS SECTION IS NOT FINISHED SO IT WILL NOT WORK. FOR UPDATE JOIN DISCORD!")
-    NDY2:Cheat("Label","    ")
+    --NDY2:Cheat("Label","    ")
 
     NDY:Cheat("Checkbox"," Open Unit Config  ", function(bool)
         print(bool)
         Settings.unitconfig = bool
         saveSettings()
     end,{enabled = Settings.unitconfig })
+
+    NDY2:Cheat("Button", "Test Reset unit config", function()
+        print(Settings.reunitc)
+        reunitcon()
+    end)
 
     --//UNIT 1
     Unit1:Cheat("Textbox", "Placement Priority", function(Value)
@@ -1335,7 +1340,6 @@ local function unitconfig()
         Settings.U1_SellWave = Value
         saveSettings()
     end, {placeholder = Settings.U1_SellWave}) 
-
 
     --//UNIT 2
     Unit2:Cheat("Textbox", "Placement Priority", function(Value)
@@ -2586,7 +2590,7 @@ end
 
 function PlaceUnitsTEST(map,name,_uuid,unit)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
-
+    
     U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 1, Settings.U2_Wave or 1, Settings.U3_Wave or 1, Settings.U4_Wave or 1, Settings.U5_Wave or 1, Settings.U6_Wave or 1
     U1_TAmm, U2_TAmm, U3_TAmm, U4_TAmm, U5_TAmm, U6_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6, Settings.U3_TotalAmmount or 6, Settings.U4_TotalAmmount or 6, Settings.U5_TotalAmmount or 6, Settings.U6_TotalAmmount or 6
     U1_upgW, U2_upgW, U3_upgW, U4_upgW, U5_upgW, U6_upgW = Settings.U1_UpgWave or 1, Settings.U2_UpgWave or 1, Settings.U3_UpgWave or 1, Settings.U4_UpgWave or 1, Settings.U5_UpgWave or 1, Settings.U6_UpgWave or 1
@@ -2704,6 +2708,108 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     end
 end
 --end
+
+--test reset unit config
+function reunitcon()
+    print("reset unit config ?")
+
+    if Settings.U1_Wave then
+        Settings.U1_Wave = 1 end
+    if Settings.U2_Wave then
+        Settings.U2_Wave = 1 end
+    if Settings.U3_Wave then
+        Settings.U3_Wave = 1 end
+    if Settings.U4_Wave then
+        Settings.U4_Wave = 1 end
+    if Settings.U5_Wave then
+        Settings.U5_Wave = 1 end
+    if Settings.U6_Wave then
+        Settings.U6_Wave = 1 end
+
+    if Settings.U1_TotalAmmount then
+        Settings.U1_TotalAmmount = 6 end
+    if Settings.U2_TotalAmmount then
+        Settings.U2_TotalAmmount = 6 end
+    if Settings.U3_TotalAmmount then
+        Settings.U3_TotalAmmount = 6 end
+    if Settings.U4_TotalAmmount then
+        Settings.U4_TotalAmmount = 6 end
+    if Settings.U5_TotalAmmount then
+        Settings.U5_TotalAmmount = 6 end
+    if Settings.U6_TotalAmmount then
+        Settings.U6_TotalAmmount = 6 end
+
+    if Settings.U1_UpgWave then
+        Settings.U1_UpgWave = 1 end
+    if Settings.U2_UpgWave then
+        Settings.U2_UpgWave = 1 end
+    if Settings.U3_UpgWave then
+        Settings.U3_UpgWave = 1 end
+    if Settings.U4_UpgWave then
+        Settings.U4_UpgWave = 1 end
+    if Settings.U5_UpgWave then
+        Settings.U5_UpgWave = 1 end
+    if Settings.U6_UpgWave then
+        Settings.U6_UpgWave = 1 end
+
+    if Settings.U1_UpgCap then
+        Settings.U1_UpgCap = 99 end
+    if Settings.U2_UpgCap then
+        Settings.U2_UpgCap = 99 end
+    if Settings.U3_UpgCap then
+        Settings.U3_UpgCap = 99 end
+    if Settings.U4_UpgCap then
+        Settings.U4_UpgCap = 99 end
+    if Settings.U5_UpgCap then
+        Settings.U5_UpgCap = 99 end
+    if Settings.U6_UpgCap then
+        Settings.U6_UpgCap = 99 end
+
+    if Settings.U1_SellWave then
+        Settings.U1_SellWave = 99 end
+    if Settings.U2_SellWave then
+        Settings.U2_SellWave = 99 end
+    if Settings.U3_SellWave then
+        Settings.U3_SellWave = 99 end
+    if Settings.U4_SellWave then
+        Settings.U4_SellWave = 99 end
+    if Settings.U5_SellWave then
+        Settings.U5_SellWave = 99 end
+    if Settings.U6_SellWave then
+        Settings.U6_SellWave = 99 end
+
+    if Settings.U1_UpgPro then
+        Settings.U1_UpgPro = 1 end
+    if Settings.U2_UpgPro then
+        Settings.U2_UpgPro = 1 end
+    if Settings.U3_UpgPro then
+        Settings.U3_UpgPro = 1 end
+    if Settings.U4_UpgPro then
+        Settings.U4_UpgPro = 1 end
+    if Settings.U5_UpgPro then
+        Settings.U5_UpgPro = 1 end
+    if Settings.U6_UpgPro then
+        Settings.U6_UpgPro = 1 end
+
+    if Settings.U1_UnPlace then
+        Settings.U1_UnPlace = 1 end
+    if Settings.U2_UnPlace then
+        Settings.U2_UnPlace = 1 end
+    if Settings.U3_UnPlace then
+        Settings.U3_UnPlace = 1 end
+    if Settings.U4_UnPlace then
+        Settings.U4_UnPlace = 1 end
+    if Settings.U5_UnPlace then
+        Settings.U5_UnPlace = 1 end
+    if Settings.U6_UnPlace then
+        Settings.U6_UnPlace = 1 end
+  
+end
+
+if Settings.reunitc then
+    reunitcon()
+end
+
 
 --fix sell and place spam
 
