@@ -317,7 +317,7 @@ end
 function BabyWebhook()
     if Settings.BabyWebhookEnabled then
 	local url = Settings.WebhookUrl
-    print("webhook?")
+    print("webhook baby?")
     if url == "" then
         warn("Webhook Url is empty!")
         return
@@ -344,16 +344,22 @@ function BabyWebhook()
         if rankper == "10%" then rankper = "10% or Not Ranked Yet" end
         --Current Rank
         crt = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentRank.Ranking.V.Text
+        if crt == "10%" then crt = "Tournament Load Not Yet" end
         --Current Prize%
         cpp = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentPrize.V.Text
+        if cpp == "10%" then cpp = "Tournament Load Not Yet" end
         --Current Prize
         cp = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentPrize.Prize.Text
+        if cp == "0% ~ 49.99%" then cp = "Tournament Load Not Yet" end
         --Current Place#
         cpr = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Main.Wrapper.Container.YourRow.Place.Text
+        if cpr == "#123456" then cpr = "Tournament Load Not Yet" end
         --Dmg or kill 
         cdk = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Main.Wrapper.Container.YourRow.Amount.Text
+        if cdk == "123456789000000" then cdk = "Tournament Load Not Yet" end
         --Bracket
         cubk = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.LevelSelect.InfoFrame.ScoreInfo.Bracket.V.Text
+        if cubk == "N" then cubk = "Tournament Load Not Yet" end
 
 		local data = {
             ["content"] = "",
