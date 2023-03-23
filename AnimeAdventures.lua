@@ -1,5 +1,5 @@
 --Beta updatefix
-local version = "v2.0.0b26"
+local version = "v2.0.0b27"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -142,6 +142,7 @@ getgenv().item = "-"
 plr.PlayerGui:FindFirstChild("HatchInfo"):FindFirstChild("holder"):FindFirstChild("info1"):FindFirstChild("UnitName").Text = getgenv().item
 
 function webhook()
+    if Settings.WebhookEnabled then
     local url = Settings.WebhookUrl
     print("webhook?")
     if url == "" then
@@ -172,8 +173,15 @@ function webhook()
     mapname = game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["name"]
     cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
 	ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
-    btp = plr.PlayerGui:FindFirstChild("BattlePass"):FindFirstChild("Main"):FindFirstChild("Level"):FindFirstChild("V").Text
-    btp2 = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.Title.Text
+    --room
+    rankroom = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.FurthestRoom.V.V.Text
+    --Rank title 
+    ranktitle = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.RankTitle.V.V.Text
+    --rank %
+    rankper = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.Ranking.V.V.Text
+
+
+
     waves = cwaves:split(": ")
     if waves ~= nil and waves[2] == "999" then waves[2] = "Use [Auto Leave at Wave] or [Test Webhook]" end	
 	ttime = ctime:split(": ")
@@ -256,12 +264,12 @@ function webhook()
     
         local data = {
             ["content"] = "",
-                ["username"] = "Anime Adventures",
+                ["username"] = "Anime Adventures | ArponAG V2",
                 ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
                 ["embeds"] = {
                     {
                         ["author"] = {
-                            ["name"] = "Anime Adventures V2 ✔️",
+                            ["name"] = "ArponAG V2 | Results ✔️",
                             ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
                         },
                         ["thumbnail"] = {
@@ -303,6 +311,93 @@ function webhook()
     warn("Sending webhook notification...")
     request(sex)
 
+end
+end
+
+function BabyWebhook()
+    if Settings.BabyWebhookEnabled then
+	local url = Settings.WebhookUrl
+    print("webhook?")
+    if url == "" then
+        warn("Webhook Url is empty!")
+        return
+    end 
+		
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        --BTP lv.
+        btplv = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.V.Text
+        --next ammo level
+        nextlvbtp = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.FurthestRoom.V.Text
+       --room
+        rankroom = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.FurthestRoom.V.V.Text
+        if rankroom == "10" then rankroom = "10 or Not Room Yet" end
+        --Rank title 
+        ranktitle = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.RankTitle.V.V.Text
+        if ranktitle == "Grandmaster" then ranktitle = "Grandmaster or Not Ranked Yet" end
+        --rank %
+        rankper = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.Ranking.V.V.Text
+        if rankper == "10%" then rankper = "10% or Not Ranked Yet" end
+        --Current Rank
+        crt = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentRank.Ranking.V.Text
+        --Current Prize%
+        cpp = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentPrize.V.Text
+        --Current Prize
+        cp = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentPrize.Prize.Text
+        --Current Place#
+        cpr = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Main.Wrapper.Container.YourRow.Place.Text
+        --Dmg or kill 
+        cdk = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Main.Wrapper.Container.YourRow.Amount.Text
+        --Bracket
+        cubk = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.LevelSelect.InfoFrame.ScoreInfo.Bracket.V.Text
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Current BTP & Inf Castle & Tournament Results ✔️",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+                            {
+                                ["name"] ="Current Battle Pass Results 🔋 ",
+                                ["value"] = "```ini\nCurrent BTP Lv. : "..btplv.."  🔋\nAMMO TO NEXT : "..nextlvbtp.. "  🔋```",
+                            },
+                            {
+                                ["name"] ="Current Tournament Results 🏆",
+                                ["value"] = "```ini\nYour Bracket: : "..cubk.."  🏆\nCurrent Rank : ["..cpr.." - "..crt.."]  🏆\nDMG or Kill : "..cdk.. "  🏆\nCurrent Prize : "..cpp.. "  🏆\nReward Prize : "  ..cp..  "  🏆```",
+                            },
+                            {
+                                ["name"] ="Current Infinity Castle Results  🚪",
+                                ["value"] = "```ini\nCurrent Room : "..rankroom.."  🚪\nCurrent Rank : "..ranktitle.. "  📊\nCurrent Percent : "  ..rankper..  "  🏅```",
+                            }
+                        }
+                    }
+                }
+            }
+        
+    
+            local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending infcastle webhook notification...")
+            request(sex)
+        end
 end
 ------------------------------\
 if game.CoreGui:FindFirstChild("FinityUI") then
@@ -1564,9 +1659,19 @@ function Webhooksec()
         saveSettings()
     end,{enabled = Settings.WebhookEnabled})
 
+    WebhookSec:Cheat("Checkbox","Enable Baby Webhook [BTP,Castle,Tour]", function(bool)
+        Settings.BabyWebhookEnabled = bool
+        saveSettings()
+    end,{enabled = Settings.BabyWebhookEnabled})
+
     WebhookSec:Cheat("Button", "Test Webhook", function()
         print(Settings.WebhookUrl)
         webhook()
+    end)
+
+    WebhookSec:Cheat("Button", "Test Baby Webhook", function()
+        print(Settings.WebhookUrl)
+        BabyWebhook()
     end)
 end
 
@@ -1590,6 +1695,12 @@ function others()
         saveSettings()
         autoload()
     end,{enabled = Settings.AutoLoadScript})
+
+    OtherSec:Cheat("Checkbox","Hide Name Player", function(bool)
+        Settings.hidenamep = bool
+        saveSettings()
+        hidename()
+    end,{enabled = Settings.hidenamep})
 end
 ----------------------------------------------
 ------------ /\/\/\/\/\/\/\/\/\ --------------
@@ -1770,6 +1881,9 @@ local function startfarming()
                     end
                 end
     
+            pcall(function() BabyWebhook() end)
+                print("send Webhook")
+                task.wait(1.1)
                 warn("farming")
                 task.wait(3)
             end
@@ -1812,6 +1926,9 @@ local function startfarming()
                     end
                 end
     
+            pcall(function() BabyWebhook() end)
+                print("send Webhook")
+                task.wait(1.1)
                 warn("farming")
                 task.wait(3)
             end
@@ -1848,6 +1965,9 @@ local function startfarming()
                         break;
                     end 
                 end
+            pcall(function() BabyWebhook() end)
+                print("send Webhook")
+                task.wait(1.1)
                 warn("Devil farming")
                 task.wait(7)
                 --7Ds fixportal		
@@ -1865,6 +1985,9 @@ local function startfarming()
                         break;
                     end 
                 end
+            pcall(function() BabyWebhook() end)
+                print("send Webhook")
+                task.wait(1.1)
                 warn("7ds farming")
                 task.wait(7)
             end
@@ -1916,6 +2039,9 @@ local function startfarming()
                     end
                 end
     
+            pcall(function() BabyWebhook() end)
+                print("send Webhook")
+                task.wait(1.1)
                 warn("DUNGEONS jjk_finger farming")
                 task.wait(3)
             end
@@ -1968,6 +2094,9 @@ local function startfarming()
                         end
                     end
         
+                pcall(function() BabyWebhook() end)
+                    print("send Webhook")
+                    task.wait(1.1)
                     warn("DUNGEONS jjk_raid farming")
                     task.wait(3)
                 end
@@ -2059,6 +2188,7 @@ coroutine.resume(coroutine.create(function()
                 end
             elseif checkChallenge() == true then
                 startfarming()--S_Farming
+                BabyWebhook()
             end
         elseif not Settings.AutoInfinityCastle == true then--Infiniy Castle
             if not checkChallenge() then --Challenge_Not_Complete
@@ -2069,6 +2199,7 @@ coroutine.resume(coroutine.create(function()
                 end
             elseif checkChallenge() == true then
                 startfarming()--S_Farming
+                BabyWebhook()
             end
         elseif Settings.AutoInfinityCastle == true then--Infiniy Castle
             if not checkChallenge() then --Challenge_Not_Complete
@@ -2079,6 +2210,7 @@ coroutine.resume(coroutine.create(function()
                 end
             elseif checkChallenge() == true then
                 FarmInfinityCastle()--S_Farming
+                BabyWebhook()
             end
         end
 
@@ -2391,10 +2523,13 @@ function PlacePos(map,name,_uuid,unit)
 end
 
 function upgradeunit(name, min)
+
+    unitList = {}
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-       if v:FindFirstChild("_stats") then
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
             if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
                 if v.Name == name and v._stats.upgrade.Value <= min then
+                    table.insert(unitList, {v["_stats"]["id"].Value, v["_stats"]["uuid"].Value, v, v["_stats"]["upgrade"].Value})
                    game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
                 end
             end
@@ -2787,6 +2922,7 @@ if game.PlaceId ~= 8304191830 then
     game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
 end
 --hide name
+function hidename()
 task.spawn(function()  -- Hides name for yters (not sure if its Fe)
     while task.wait() do
         pcall(function()
@@ -2796,6 +2932,11 @@ task.spawn(function()  -- Hides name for yters (not sure if its Fe)
         end)
     end
 end)
+end
+
+if Settings.hidenamep then
+    hidename()
+end
 
 warn("Hider Name Loaded!!!")
 warn(" AA v2 Loaded !!!")
