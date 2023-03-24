@@ -597,7 +597,7 @@ function ShopSniperWebhook()
                 })
             else
                 table.insert(data["embeds"][1]["fields"], {
-                    ["name"] = "```" .. item["id"],
+                    ["name"] = "```" .. item["id"].."```",
                     ["value"] = "```" .. item["gold_cost"] .. " 💰```",
                     ["inline"] = true
                 })
