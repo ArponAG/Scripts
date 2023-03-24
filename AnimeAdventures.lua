@@ -2334,6 +2334,7 @@ function PlacePos(map,name,_uuid,unit)
         end
     end
 end
+
 function upgradeunit(name, min)
     unitList = {}
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
@@ -2347,6 +2348,7 @@ function upgradeunit(name, min)
         end
     end
 end
+
 function sellunit(name) 
     repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
@@ -2356,6 +2358,7 @@ function sellunit(name)
         end
     end
 end
+
 function GetUnitInfo(Unit)
     local unitinfo = Settings.SelectedUnits[Unit]
     local unitinfo_ = unitinfo:split(" #")
@@ -2391,9 +2394,9 @@ function GetUnitInfo(Unit)
     
     return #_units or 0, unitinfo_[1], unitinfo_[2], min or 0
 end
+
 function PlaceUnitsTEST(map,name,_uuid,unit)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
-    
     U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 1, Settings.U2_Wave or 1, Settings.U3_Wave or 1, Settings.U4_Wave or 1, Settings.U5_Wave or 1, Settings.U6_Wave or 1
     U1_TAmm, U2_TAmm, U3_TAmm, U4_TAmm, U5_TAmm, U6_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6, Settings.U3_TotalAmmount or 6, Settings.U4_TotalAmmount or 6, Settings.U5_TotalAmmount or 6, Settings.U6_TotalAmmount or 6
     U1_upgW, U2_upgW, U3_upgW, U4_upgW, U5_upgW, U6_upgW = Settings.U1_UpgWave or 1, Settings.U2_UpgWave or 1, Settings.U3_UpgWave or 1, Settings.U4_UpgWave or 1, Settings.U5_UpgWave or 1, Settings.U6_UpgWave or 1
@@ -2414,7 +2417,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         end
         if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave --[[and U1_upgP <= U2_upgP and U1_upgP <= U3_upgP and U1_upgP <= U4_upgP and U1_upgP <= U5_upgP and U1_upgP <= U6_upgP]] then
             print("upgrading u1..")
-            upgradeunit(tostring(U1_name, U1_upgCap))
+            upgradeunit(tostring(U1_name), (U1_upgCap))
         end
     end
 --end
@@ -2431,7 +2434,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         end
         if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave --[[and U2_upgP <= U1_upgP and U2_upgP <= U3_upgP and U2_upgP <= U4_upgP and U2_upgP <= U5_upgP and U2_upgP <= U6_upgP]]  then
             print("upgrading u2..")
-            upgradeunit(tostring(U2_name, U2_upgCap))
+            upgradeunit(tostring(U2_name), (U2_upgCap))
         end
     end
 --end
@@ -2504,6 +2507,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     end
 end
 --end
+
 --test reset unit config
 function reunitcon()
     print("reset unit config ?")
