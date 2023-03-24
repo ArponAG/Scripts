@@ -155,12 +155,6 @@ function webhook()
     mapname = game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["name"]
     cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
 	ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
-    --room
-    rankroom = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.FurthestRoom.V.V.Text
-    --Rank title 
-    ranktitle = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.RankTitle.V.V.Text
-    --rank %
-    rankper = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.Ranking.V.V.Text
     waves = cwaves:split(": ")
     if waves ~= nil and waves[2] == "999" then waves[2] = "Use [Auto Leave at Wave] or [Test Webhook]" end	
 	ttime = ctime:split(": ")
@@ -304,13 +298,13 @@ function BabyWebhook()
         nextlvbtp = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.FurthestRoom.V.Text
        --room
         rankroom = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.FurthestRoom.V.V.Text
-        if rankroom == "10" then rankroom = "10 or Not Room Yet" end
+        if rankroom == "10" then rankroom = "Inf Castle Load Not Yet" end
         --Rank title 
         ranktitle = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.RankTitle.V.V.Text
-        if ranktitle == "Grandmaster" then ranktitle = "Grandmaster or Not Ranked Yet" end
+        if ranktitle == "Grandmaster" then ranktitle = "Inf Castle Load Not Yet" end
         --rank %
         rankper = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.Ranking.V.V.Text
-        if rankper == "10%" then rankper = "10% or Not Ranked Yet" end
+        if rankper == "10%" then rankper = "Inf Castle Load Not Yet" end
         --Current Rank
         crt = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentRank.Ranking.V.Text
         if crt == "10%" then crt = "Tournament Load Not Yet" end
