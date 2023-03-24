@@ -332,16 +332,6 @@ function BabyWebhook()
 
 		local data = {
             ["content"] = "",
-
-    
-          
-            
-    
-
-          
-    
-    
-  
                 ["username"] = "Anime Adventures V2",
                 ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
                 ["embeds"] = {
@@ -384,6 +374,256 @@ function BabyWebhook()
             request(sex)
         end
 end
+
+function SnipeShopNew()
+    if Settings.snipeWebhookEnabled then
+pcall(function() 
+    SpecialSummonSniperWebhook()
+    StandardSummonSniperWebhook()
+    ShopSniperWebhook()
+end)
+end
+end
+--special
+function SpecialSummonSniperWebhook()
+    if Settings.snipeWebhookEnabled then
+	local url = Settings.WebhookUrl
+    print("webhook Special banner?")
+    if url == "" then
+        warn("Webhook Url is empty!")
+        return
+    end 
+		
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        special_banner = game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.EventClover.Main
+        units = {
+            special_banner["Featured_One"],
+            special_banner["Featured_Two"],
+            special_banner["Featured_Three"]
+        }
+
+        unitNamesForJson = {
+            special_banner["Featured_One"].name.Text,
+            special_banner["Featured_Two"].name.Text,
+            special_banner["Featured_Three"].name.Text
+        }
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Special Banner ",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+                            {
+                                ["name"] = "```" .. units[1].name.Text .. "```",
+                                ["value"] = "```(" .. units[1].Rarity.Text .. ") [Featured]```",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "```" .. units[2].name.Text .. "```",
+                                ["value"] = "```(" .. units[2].Rarity.Text .. ")```",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "```" .. units[3].name.Text .. "```",
+                                ["value"] = "```(" .. units[3].Rarity.Text .. ")```",
+                                ["inline"] = true
+                            }
+                        }
+                    }
+                }
+            }
+        
+    
+            local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending special banner webhook notification...")
+            request(sex)
+        end
+end
+
+--Standar
+function StandardSummonSniperWebhook()
+    if Settings.snipeWebhookEnabled then
+	local url = Settings.WebhookUrl
+    print("webhook Standard Banner?")
+    if url == "" then
+        warn("Webhook Url is empty!")
+        return
+    end 
+		
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        units = {
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["1"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["2"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["3"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["4"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["5"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["6"].Main
+        }
+
+        
+            U1 = units[1].petimage.WorldModel:GetChildren()[1].Name
+            U2 = units[2].petimage.WorldModel:GetChildren()[1].Name
+            U3 = units[3].petimage.WorldModel:GetChildren()[1].Name
+            U4 = units[4].petimage.WorldModel:GetChildren()[1].Name
+            U5 = units[5].petimage.WorldModel:GetChildren()[1].Name
+            U6 = units[6].petimage.WorldModel:GetChildren()[1].Name
+        
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Standard Banner ",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+
+                        }
+				    }
+			    }
+		    }
+
+        for i, unit in pairs(units) do
+            unit_stats = {
+                ["name"] = "```" .. unit.petimage.WorldModel:GetChildren()[1].Name .."```",
+                ["value"] = "```(" ..unit.Rarity.Text ..")```",
+                ["inline"] = true
+            }
+            table.insert(data["embeds"][1]["fields"], unit_stats)
+        end
+        
+    
+            local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending Standard banner webhook notification...")
+            request(sex)
+        end
+    end
+
+--Bulma's Shop webhook
+
+function ShopSniperWebhook()
+    if Settings.snipeWebhookEnabled then
+        local url = Settings.WebhookUrl
+        print("webhook Bulma's webhook?")
+        if url == "" then
+            warn("Webhook Url is empty!")
+            return
+        end 
+		print(game:GetService("ReplicatedStorage").src.client.Services.TravellingMerchantServiceClient)
+
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        shop_items = require(game:GetService("ReplicatedStorage").src.client.Services["TravellingMerchantServiceClient"]).SELLING_ITEMS
+        shop_item_ids = {}
+        
+        print("exechere9")
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Bulma's Shop ",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+
+                        }
+				    }
+			    }
+		    }
+
+		
+		print("exechere4")
+		
+		for i, item in pairs(shop_items) do
+            table.insert(shop_item_ids, item["id"])
+            if item["gem_cost"] then
+                table.insert(data["embeds"][1]["fields"], {
+                    ["name"] = "```" .. item["id"].."```",
+                    ["value"] = "```" .. item["gem_cost"] .. " 💎```",
+                    ["inline"] = true
+                })
+            else
+                table.insert(data["embeds"][1]["fields"], {
+                    ["name"] = "```" .. item["id"],
+                    ["value"] = "```" .. item["gold_cost"] .. " 💰```",
+                    ["inline"] = true
+                })
+            end
+		end
+    
+        --print(dump(data["embeds"][1]["fields"]))
+
+        if not game:GetService("Workspace")["travelling_merchant"]["is_open"].Value then
+            table.insert(data["embeds"][1]["fields"], {
+                    ["name"] = "SHOP CLOSED",
+                    ["value"] = "SHOP CLOSED",
+                    ["inline"] = true
+                })
+        end
+        print("exec1")
+
+		local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending Snipe Bulma's Shop webhook notification...")
+            request(sex)
+        end
+    end
 ------------------------------\
 if game.CoreGui:FindFirstChild("FinityUI") then
     game.CoreGui["FinityUI"]:Destroy()
@@ -1517,21 +1757,34 @@ function Webhooksec()
         Settings.WebhookUrl = Value
         saveSettings()
     end, {placeholder = Settings.WebhookUrl})
+
     WebhookSec:Cheat("Checkbox","Enable Webhook", function(bool)
         Settings.WebhookEnabled = bool
         saveSettings()
     end,{enabled = Settings.WebhookEnabled})
+
     WebhookSec:Cheat("Checkbox","Enable Baby Webhook [BTP,Castle,Tour]", function(bool)
         Settings.BabyWebhookEnabled = bool
         saveSettings()
     end,{enabled = Settings.BabyWebhookEnabled})
+
+    WebhookSec:Cheat("Checkbox","Enable Snipe Webhook [Banner & Shop]", function(bool)
+        Settings.snipeWebhookEnabled = bool
+        saveSettings()
+    end,{enabled = Settings.snipeWebhookEnabled})
+
     WebhookSec:Cheat("Button", "Test Webhook", function()
         print(Settings.WebhookUrl)
         webhook()
     end)
+end
+
+function Webhooksec2()
+
     WebhookSec:Cheat("Button", "Test Baby Webhook", function()
         print(Settings.WebhookUrl)
         BabyWebhook()
+        SnipeShopNew()
     end)
 end
 ----------------------------------------------
@@ -1574,6 +1827,7 @@ if game.PlaceId == 8304191830 then
     AutoSummon()
     SnipeMerchant()
     Webhooksec()
+    Webhooksec2()
     others()
 else
     SelectUnits:Cheat("Label","Only available in game Lobby!")    
@@ -1588,6 +1842,8 @@ else
     SnipeMerchant()
     Webhooksec()
     others()
+    WebhookSec:Cheat("Label","")
+    WebhookSec:Cheat("Label","Test Baby&Shop Webhook Only available in game Lobby!")
 end
 ----------------------------------------------
 ------------ /\/\/\/\/\/\/\/\/\ --------------
@@ -1726,7 +1982,11 @@ local function startfarming()
                     end
                 end
     
-            pcall(function() BabyWebhook() end)
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
                 print("send Webhook")
                 task.wait(1.1)
                 warn("farming")
@@ -1771,7 +2031,11 @@ local function startfarming()
                     end
                 end
     
-            pcall(function() BabyWebhook() end)
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
                 print("send Webhook")
                 task.wait(1.1)
                 warn("farming")
@@ -1810,7 +2074,11 @@ local function startfarming()
                         break;
                     end 
                 end
-            pcall(function() BabyWebhook() end)
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
                 print("send Webhook")
                 task.wait(1.1)
                 warn("Devil farming")
@@ -1830,7 +2098,11 @@ local function startfarming()
                         break;
                     end 
                 end
-            pcall(function() BabyWebhook() end)
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
                 print("send Webhook")
                 task.wait(1.1)
                 warn("7ds farming")
@@ -1884,7 +2156,11 @@ local function startfarming()
                     end
                 end
     
-            pcall(function() BabyWebhook() end)
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
                 print("send Webhook")
                 task.wait(1.1)
                 warn("DUNGEONS jjk_finger farming")
@@ -1939,7 +2215,11 @@ local function startfarming()
                         end
                     end
         
-                pcall(function() BabyWebhook() end)
+                    pcall(function() 
+                        BabyWebhook() 
+                        SnipeShopNew()
+                    
+                    end)
                     print("send Webhook")
                     task.wait(1.1)
                     warn("DUNGEONS jjk_raid farming")
@@ -2013,6 +2293,7 @@ local function FarmInfinityCastle()
     end
 end
 --updatefix fixmap
+
 coroutine.resume(coroutine.create(function()
     while task.wait() do
         if not Settings.AutoInfinityCastle then
@@ -2025,6 +2306,7 @@ coroutine.resume(coroutine.create(function()
             elseif checkChallenge() == true then
                 startfarming()--S_Farming
                 BabyWebhook()
+                SnipeShopNew()
             end
         elseif not Settings.AutoInfinityCastle == true then--Infiniy Castle
             if not checkChallenge() then --Challenge_Not_Complete
@@ -2036,6 +2318,7 @@ coroutine.resume(coroutine.create(function()
             elseif checkChallenge() == true then
                 startfarming()--S_Farming
                 BabyWebhook()
+                SnipeShopNew()
             end
         elseif Settings.AutoInfinityCastle == true then--Infiniy Castle
             if not checkChallenge() then --Challenge_Not_Complete
@@ -2047,6 +2330,7 @@ coroutine.resume(coroutine.create(function()
             elseif checkChallenge() == true then
                 FarmInfinityCastle()--S_Farming
                 BabyWebhook()
+                SnipeShopNew()
             end
         end
         if game.PlaceId ~= 8304191830 then
