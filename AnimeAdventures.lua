@@ -2529,7 +2529,7 @@ function PlacePos(map,name,_uuid,unit)
         x = getgenv().posX; z = getgenv().posZ
         local pos = Settings[map][unit]
         warn(map.." attempt to place "..name)
-        if name ~= "metal_knight_evolved" and name ~= "vegeta_super_evolved" then
+        if name ~= "metal_knight" and name ~= "metal_knight_evolved" and name ~= "vegeta_super" and name ~= "vegeta_super_evolved" then
             local i = math.random(1,6)
             if i == 1 then
                     local args = {
@@ -2574,12 +2574,12 @@ function PlacePos(map,name,_uuid,unit)
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                 return
             end
-        elseif name == "metal_knight_evolved" then
+        elseif name == "metal_knight" and name == "metal_knight_evolved" and name == "vegeta_super" and name == "vegeta_super_evolved" then
             local i = math.random(1,6)
             if i == 1 then
                 task.spawn(function()
                     --place units 0
-                    warn("p1 metal knight evolved")
+                    warn("p metal knight or vegeta super ")
                     local args = {
                         [1] = _uuid,
                         [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
@@ -2608,45 +2608,9 @@ function PlacePos(map,name,_uuid,unit)
                     }
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                 end)
-                return
-        elseif name == "vegeta_super_evolved" then
-            local i = math.random(1,6)
-            if i == 1 then
-                task.spawn(function()
-                    --place units 0
-                    warn("p vegeta_super_evolved")
-                    local args = {
-                        [1] = _uuid,
-                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                end)
-                    return
-                elseif i == 2 then
-                    task.spawn(function()
-                        --place units 1
-                        task.wait(2)
-                        local args = {
-                            [1] = _uuid,
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    end)
-                        return
-                    elseif i == 3 then
-                        task.spawn(function()
-                            --place units 2
-                            task.wait(3)
-                            local args = {
-                                [1] = _uuid,
-                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
-                            }
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        end)
-                    end
-                end
-            return
+            end
         end
+        return
     end
 end
 
@@ -2917,7 +2881,7 @@ if Settings.reunitc then
     reunitcon()
 end
 --fix sell and place spam
-function PlaceUnits(map,name,_uuid,unit)
+function PlaceUnits(map)
     pcall(function()
         if Settings.AutoFarm and not getgenv().disableatuofarm then
             x = getgenv().posX; z = getgenv().posZ
@@ -2926,9 +2890,9 @@ function PlaceUnits(map,name,_uuid,unit)
                 if unitinfo ~= nil then
                     local unitinfo_ = unitinfo:split(" #")
                     local pos = Settings[map]["UP" .. i]
-                    print(" ด่าน "..map.." กำลังวางหรืออัพตัว "..unitinfo_[1])
+                    print(map.." attempt to place "..unitinfo_[1])
     
-                    if unitinfo_[1] ~= "metal_knight_evolved" and unitinfo_[1] ~= "vegeta_super_evolved" then
+                    if unitinfo_[1] ~= "metal_knight" and unitinfo_[1] ~= "metal_knight_evolved" and unitinfo_[1] ~= "vegeta_super" and unitinfo_[1] ~= "vegeta_super_evolved" then
     
                         --place units 0
                         local args = {
@@ -2972,40 +2936,10 @@ function PlaceUnits(map,name,_uuid,unit)
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
     
-                    elseif unitinfo_[1] == "metal_knight_evolved" then
+                    elseif unitinfo_[1] == "metal_knight" and unitinfo_[1] == "metal_knight_evolved" and unitinfo_[1] == "vegeta_super" and unitinfo_[1] == "vegeta_super_evolved" then
                         task.spawn(function()
                             --place units 0
                             warn("U metal_knight_evolved" )
-                            local args = {
-                                [1] = unitinfo_[2],
-                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
-                            }
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        end)
-    
-                        task.spawn(function()
-                            --place units 1
-                            task.wait(2)
-                            local args = {
-                                [1] = unitinfo_[2],
-                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z) )
-                            }
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        end)
-    
-                        task.spawn(function()
-                            --place units 2
-                            task.wait(3)
-                            local args = {
-                                [1] = unitinfo_[2],
-                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"], pos["z"]) )
-                            }
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        end)
-                    elseif unitinfo_[1] == "vegeta_super_evolved" then
-                        task.spawn(function()
-                            --place units 0
-                            warn("U vegeta_super_evolved" )
                             local args = {
                                 [1] = unitinfo_[2],
                                 [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
