@@ -2608,6 +2608,7 @@ function PlacePos(map,name,_uuid,unit)
                     }
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                 end)
+                return
         elseif name == "vegeta_super_evolved" then
             local i = math.random(1,6)
             if i == 1 then
