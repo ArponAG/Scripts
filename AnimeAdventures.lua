@@ -2529,7 +2529,7 @@ function PlacePos(map,name,_uuid,unit)
         x = getgenv().posX; z = getgenv().posZ
         local pos = Settings[map][unit]
         warn(map.." attempt to place "..name)
-        if name ~= "metal_knight" and name ~= "metal_knight_evolved" and name ~= "vegeta_super" and name ~= "vegeta_super_evolved" then
+        if name ~= "metal_knight_evolved" and name ~= "vegeta_super_evolved" then
             local i = math.random(1,6)
             if i == 1 then
                     local args = {
@@ -2574,12 +2574,12 @@ function PlacePos(map,name,_uuid,unit)
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                 return
             end
-        elseif name == "metal_knight" and name == "metal_knight_evolved" and name == "vegeta_super" and name == "vegeta_super_evolved" then
+        elseif name == "metal_knight_evolved" and name == "vegeta_super_evolved" then
             local i = math.random(1,6)
             if i == 1 then
                 task.spawn(function()
                     --place units 0
-                    warn("p metal knight or vegeta super ")
+                    warn("p1")
                     local args = {
                         [1] = _uuid,
                         [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
@@ -2890,7 +2890,7 @@ function PlaceUnits(map)
                     local pos = Settings[map]["UP" .. i]
                     print(map.." attempt to place "..unitinfo_[1])
     
-                    if unitinfo_[1] ~= "metal_knight" and unitinfo_[1] ~= "metal_knight_evolved" and unitinfo_[1] ~= "vegeta_super" and unitinfo_[1] ~= "vegeta_super_evolved" then
+                    if unitinfo_[1] ~= "metal_knight_evolved" and unitinfo_[1] ~= "vegeta_super_evolved" then
     
                         --place units 0
                         local args = {
@@ -2934,10 +2934,10 @@ function PlaceUnits(map)
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
     
-                    elseif unitinfo_[1] == "metal_knight" and unitinfo_[1] == "metal_knight_evolved" and unitinfo_[1] == "vegeta_super" and unitinfo_[1] == "vegeta_super_evolved" then
+                    elseif unitinfo_[1] == "metal_knight_evolved" and unitinfo_[1] == "vegeta_super_evolved" then
                         task.spawn(function()
                             --place units 0
-                            warn("U metal_knight_evolved" )
+                            warn("p2" )
                             local args = {
                                 [1] = unitinfo_[2],
                                 [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
