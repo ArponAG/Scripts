@@ -2649,30 +2649,6 @@ function PlacePos(map,name,_uuid,unit)
     end
 end
 
-function upgradeunit(name, min)
-    unitList = {}
-    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
-            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
-                if v.Name == name and v._stats.upgrade.Value <= min then
-                    table.insert(unitList, {v["_stats"]["id"].Value, v["_stats"]["uuid"].Value, v, v["_stats"]["upgrade"].Value})
-                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
-                end
-            end
-        end
-    end
-end
-
-function sellunit(name) 
-    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
-    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-        repeat task.wait() until v:WaitForChild("_stats")
-        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
-        end
-    end
-end
-
 function GetUnitInfo(Unit)
     local unitinfo = Settings.SelectedUnits[Unit]
     local unitinfo_ = unitinfo:split(" #")
@@ -2708,6 +2684,31 @@ function GetUnitInfo(Unit)
     
     return #_units or 0, unitinfo_[1], unitinfo_[2], min or 0
 end
+
+function upgradeunit(name, min)
+    unitList = {}
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                if v.Name == name and v._stats.upgrade.Value <= min then
+                    table.insert(unitList, {v["_stats"]["id"].Value, v["_stats"]["uuid"].Value, v, v["_stats"]["upgrade"].Value})
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+
+function sellunit(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+        end
+    end
+end
+
 
 function PlaceUnitsTEST(map,name,_uuid,unit)
     current_wave = game:GetService("Workspace")["_wave_num"].Value
@@ -2924,7 +2925,7 @@ function PlaceUnits(map,name,_uuid,unit)
                 if unitinfo ~= nil then
                     local unitinfo_ = unitinfo:split(" #")
                     local pos = Settings[map]["UP" .. i]
-                    print(map.." attempt to place "..unitinfo_[1])
+                    print(" ด่าน "..map.." กำลังวางหรืออัพตัว "..unitinfo_[1])
     
                     if unitinfo_[1] ~= "metal_knight_evolved" and unitinfo_[1] ~= "vegeta_super_evolved" then
     
@@ -2973,6 +2974,7 @@ function PlaceUnits(map,name,_uuid,unit)
                     elseif unitinfo_[1] == "metal_knight_evolved" then
                         task.spawn(function()
                             --place units 0
+                            warn("U metal_knight_evolved" )
                             local args = {
                                 [1] = unitinfo_[2],
                                 [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
@@ -3035,6 +3037,7 @@ function PlaceUnits(map,name,_uuid,unit)
         end
     end)
 end
+
 coroutine.resume(coroutine.create(function()
     while task.wait(1.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and Settings.unitconfig and not getgenv().disableatuofarm then
