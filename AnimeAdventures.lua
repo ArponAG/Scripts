@@ -2528,7 +2528,7 @@ function PlacePos(map,name,_uuid,unit)
     if Settings.AutoFarm and not getgenv().disableatuofarm then
         x = getgenv().posX; z = getgenv().posZ
         local pos = Settings[map][unit]
-        warn(map.." attempt to place "..name)
+        --warn(map.." attempt to place "..name)
         if name ~= "metal_knight_evolved" then
             local i = math.random(1,6)
             if i == 1 then
@@ -2614,6 +2614,7 @@ function PlacePos(map,name,_uuid,unit)
     end
 end
 
+
 function GetUnitInfo(Unit)
     local unitinfo = Settings.SelectedUnits[Unit]
     local unitinfo_ = unitinfo:split(" #")
@@ -2662,15 +2663,108 @@ function upgradeunit(name, min)
     end
 end
 
+---------------------------------
+---------test sell unit----------
+---------------------------------
+--test
 function sellunit(name) 
     repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
         repeat task.wait() until v:WaitForChild("_stats")
         if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
             game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+
+
+--unit1
+function sellunit1(name) 
+    U1_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U1_SellWave) <= U1_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
         end
     end
 end
+
+--unit2
+function sellunit2(name) 
+    U2_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U2_SellWave) <= U2_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit3
+function sellunit3(name) 
+    U3_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U3_SellWave) <= U3_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit4
+function sellunit4(name) 
+    U4_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U4_SellWave) <= U4_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit5
+function sellunit5(name) 
+    U5_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U5_SellWave) <= U5_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit6
+function sellunit6(name) 
+    U6_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U6_SellWave) <= U6_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+---------------------------------
+---------------------------------
+---------------------------------
 
 
 function PlaceUnitsTEST(map,name,_uuid,unit)
@@ -2687,14 +2781,15 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U1_wv <= current_wave and U1_amm <= U1_TAmm then
         --[[if U1_UnP <= U1_wv and U1_UnP <= U2_UnP and U1_UnP <= U3_UnP and U1_UnP <= U4_UnP and U1_UnP <= U5_UnP and U1_UnP <= U6_UnP then]]
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
-            print("placing u1..")
+            print("placing u1.."..U1_name)
             PlacePos(map, U1_name, U1_uuid,"UP1")
-        elseif U1_sellW <= current_wave then
-            print("selling u1..")
-            sellunit(U1_name)
+        end
+        if U1_sellW <= current_wave then
+            print("selling u1.."..U1_name)
+            sellunit1(U1_name)
         end
         if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave --[[and U1_upgP <= U2_upgP and U1_upgP <= U3_upgP and U1_upgP <= U4_upgP and U1_upgP <= U5_upgP and U1_upgP <= U6_upgP]] then
-            print("upgrading u1..")
+            print("upgrading u1.."..U1_name)
             upgradeunit(tostring(U1_name), (U1_upgCap))
         end
     end
@@ -2704,14 +2799,15 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U2_wv <= current_wave and U2_amm <= U2_TAmm then
         --[[if U2_UnP <= U2_wv and  U2_UnP <= U1_UnP and U2_UnP <= U3_UnP and U2_UnP <= U4_UnP and U2_UnP <= U5_UnP and U2_UnP <= U6_UnP then]]
         if U2_sellW >= current_wave and U2_amm < U2_TAmm then
-            print("placing u2..")
+            print("placing u2.."..U2_name)
             PlacePos(map, U2_name, U2_uuid,"UP2")
-        elseif U2_sellW <= current_wave then
-            print("selling u2..")
-            sellunit(U2_name)
+        end
+        if U2_sellW <= current_wave then
+            print("selling u2.."..U2_name)
+            sellunit2(U2_name)
         end
         if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave --[[and U2_upgP <= U1_upgP and U2_upgP <= U3_upgP and U2_upgP <= U4_upgP and U2_upgP <= U5_upgP and U2_upgP <= U6_upgP]]  then
-            print("upgrading u2..")
+            print("upgrading u2.."..U2_name)
             upgradeunit(tostring(U2_name), (U2_upgCap))
         end
     end
@@ -2721,14 +2817,15 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U3_wv <= current_wave and U3_amm <= U3_TAmm then
         --[[if U3_UnP <= U3_wv and U3_UnP <= U1_UnP and U3_UnP <= U2_UnP and U3_UnP <= U4_UnP and U3_UnP <= U5_UnP and U3_UnP <= U6_UnP then]]
 	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
-		    print("placing u3..")
+		    print("placing u3.."..U3_name)
 		    PlacePos(map, U3_name, U3_uuid,"UP3")
-	    elseif U3_sellW <= current_wave then
-		    print("selling u3..")
-		    sellunit(U3_name)
+        end
+	    if U3_sellW <= current_wave then
+		    print("selling u3.."..U3_name)
+		    sellunit3(U3_name)
 	    end
         if U3_u < U3_upgCap and U3_upgW <= current_wave --[[and U3_sellW >= current_wave and U3_upgP <= U1_upgP and U3_upgP <= U2_upgP and U3_upgP <= U4_upgP and U3_upgP <= U5_upgP and U3_upgP <= U6_upgP]] then
-            print("upgrading u3..")
+            print("upgrading u3.."..U3_name)
             upgradeunit(tostring(U3_name), (U3_upgCap))
         end
     end
@@ -2738,14 +2835,15 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U4_wv <= current_wave and U4_amm <= U4_TAmm then
         --[[if U4_UnP <= U4_wv and U4_UnP <= U1_UnP and U4_UnP <= U2_UnP and U4_UnP <= U3_UnP and U4_UnP <= U5_UnP and U4_UnP <= U6_UnP then]]
 	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
-		    print("placing u4..")
+		    print("placing u4.."..U4_name)
 		    PlacePos(map, U4_name, U4_uuid,"UP4")
-	    elseif U4_sellW <= current_wave then
-		    print("selling u4..")
-		    sellunit(U4_name)
+        end
+	    if U4_sellW <= current_wave then
+		    print("selling u4.."..U4_name)
+		    sellunit4(U4_name)
 	    end
         if U4_u < U4_upgCap and U4_upgW <= current_wave and U4_sellW >= current_wave --[[and U4_upgP <= U1_upgP and U4_upgP <= U2_upgP and U4_upgP <= U3_upgP and U4_upgP <= U5_upgP and U4_upgP <= U6_upgP]] then
-            print("upgrading u4..")
+            print("upgrading u4.."..U4_name)
             upgradeunit(tostring(U4_name), (U4_upgCap))
         end
     end
@@ -2755,14 +2853,15 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U5_wv <= current_wave and U5_amm <= U5_TAmm then
         --[[if U5_UnP <= U5_wv and U5_UnP <= U1_UnP and U5_UnP <= U2_UnP and U5_UnP <= U3_UnP and U5_UnP <= U4_UnP and U5_UnP <= U6_UnP then]]
 	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
-		    print("placing u5..")
+		    print("placing u5.."..U5_name)
 		    PlacePos(map, U5_name, U5_uuid,"UP5")
-	    elseif U5_sellW <= current_wave then
-		    print("selling u5..")
-		    sellunit(U5_name)
+        end
+	    if U5_sellW <= current_wave then
+		    print("selling u5.."..U5_name)
+		    sellunit5(U5_name)
 	    end
         if U5_u < U5_upgCap and U5_upgW <= current_wave and U5_sellW >= current_wave --[[and U5_upgP <= U1_upgP and U5_upgP <= U2_upgP and U5_upgP <= U3_upgP and U5_upgP <= U4_upgP and U5_upgP <= U6_upgP]] then
-            print("upgrading u5..")
+            print("upgrading u5.."..U5_name)
             upgradeunit(tostring(U5_name), (U5_upgCap))
         end
     end
@@ -2772,18 +2871,19 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     if U6_wv <= current_wave and U6_amm <= U6_TAmm then
         --[[if U6_UnP <= U6_wv and U6_UnP <= U1_UnP and U6_UnP <= U2_UnP and U6_UnP <= U3_UnP and U6_UnP <= U4_UnP and U6_UnP <= U5_UnP then]]
 	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
-		    print("placing u6..")
+		    print("placing u6.."..U6_name)
 		    PlacePos(map, U6_name, U6_uuid,"UP6")
-	    elseif U6_sellW <= current_wave then
-		    print("selling u6..")
-		    sellunit(U6_name)
+        end
+	    if U6_sellW <= current_wave then
+		    print("selling u6.."..U6_name)
+		    sellunit6(U6_name)
 	    end
         if U6_u < U6_upgCap and U6_upgW <= current_wave and U6_sellW >= current_wave --[[and U6_upgP <= U1_upgP and U6_upgP <= U2_upgP and U6_upgP <= U3_upgP and U6_upgP <= U4_upgP and U6_upgP <= U5_upgP]]  then
-            print("upgrading u6..")
+            print("upgrading u6.."..U6_name)
             upgradeunit(tostring(U6_name), (U6_upgCap))
+            end
         end
     end
-end
 --end
 
 --test reset unit config
