@@ -1843,6 +1843,11 @@ function others()
         DelTer()
     end,{enabled = Settings.deletemap})
 
+    OtherSec:Cheat("Button", "Leave To Lobby", function()
+        warn("Return to Lobby")
+        Teleport()
+    end)
+
     OtherSec:Cheat("Button", "Redeem All Code", function()
         print(Settings.redeemc)
         Reedemcode()
