@@ -1752,10 +1752,12 @@ function SnipeMerchant()
         Settings.ASM_SelectedOtherItems = value
         saveSettings()
     end, { options = {"None","Any Items","LuckPotion","star_remnant","summon_ticket"}, default =Settings.ASM_SelectedOtherItems})
+
     AutoSnipeMerchantSec:Cheat("Dropdown", "Select Evo Items",function(value)
         Settings.ASM_SelectedEvoItems = value
         saveSettings()
     end, { options = {"None"}, default =Settings.ASM_SelectedEvoItems})
+    
     AutoSnipeMerchantSec:Cheat("Checkbox","Enable Auto Snipe", function(bool)
         Settings.AutoSnipeMerchant = bool
         saveSettings()
@@ -1835,6 +1837,13 @@ function others()
         saveSettings()
         hidename()
     end,{enabled = Settings.hidenamep})
+
+    OtherSec:Cheat("Checkbox","Auto Grab Daily Quest ", function(bool)
+        print(Settings.autoDailyquest)
+        Settings.autoDailyquest = bool
+        saveSettings()
+        autoDailyquest()
+    end,{enabled = Settings.autoDailyquest})
 
     OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
         Settings.deletemap = bool
@@ -3330,6 +3339,18 @@ end
 if Settings.deletemap then
     DelMap()
     DelTer()
+end
+
+--Auto Grab Daily Quest
+function autoDailyquest()
+    if Settings.autoDailyquest then
+         game:GetService("ReplicatedStorage").endpoints.client_to_server.accept_npc_quest:InvokeServer("7ds_daily")
+         wait(15)
+    end
+end
+
+if Settings.autoDailyquest then
+    autoDailyquest()
 end
 
 --ReedemCode
