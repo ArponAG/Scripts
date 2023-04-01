@@ -1,5 +1,5 @@
 --Beta updatefix
-local version = "v2.0.0b30"
+local version = "v2.0.0b31"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -799,7 +799,7 @@ local function WorldSec()
         elseif Settings.WorldCategory == "Raid Worlds" then
             storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid", "Freezo's Invasion"}
         elseif Settings.WorldCategory == "Portals" then
-            storylist = {"Alien Portals","Devil Portals (ANY)", "Demon Portals"}
+            storylist = {"Alien Portals","Zeldris Portals", "Demon Portals"}
         elseif Settings.WorldCategory == "Dungeon" then 
             storylist = {"Cursed Womb","Crused Parade"}   
         end
@@ -874,8 +874,8 @@ local function WorldSec()
         --///Portals\\\---
         elseif level == "Alien Portals" then
             levellist = {"portal_boros_g"}
-        elseif level == "Devil Portals (ANY)" then
-            levellist = {"portal_csm"}
+        elseif level == "Demon Portals" then
+            levellist = {"april_portal_item"}
         elseif level == "Demon Portals" then
             levellist = {"portal_zeldris"}
             ---///Dungeon\\\---    updatefix
@@ -1029,16 +1029,16 @@ getgenv().posZ = 1.5
 ----------------------------------------------
 ---------------- Unit Config -----------------
 ----------------------------------------------
-function updatepos(world, UnitPos, a,a2,a3,a4,a5,a6)
+function updatepos(map, UnitPos, a,a2,a3,a4,a5,a6)
     local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
     world = GetLevelData.world or GetLevelData.name
-    warn(world)		
-    if Settings[world] == nil then
-        Settings[world] = {}
+    warn(map)		
+    if Settings[map] == nil then
+        Settings[map] = {}
         saveSettings()
     end
-    if Settings[world][UnitPos] == nil then
-        Settings[world] = {
+    if Settings[map][UnitPos] == nil then
+        Settings[map] = {
             UP1 = {
                 x = 0,
                 z = 0,
@@ -1105,20 +1105,18 @@ function updatepos(world, UnitPos, a,a2,a3,a4,a5,a6)
     pcall(function()
         
     end)
-    Settings[world][UnitPos]["x"] = a.Position.X
-    Settings[world][UnitPos]["z"] = a.Position.Z
-    Settings[world][UnitPos]["y"] = a.Position.Y
-    Settings[world][UnitPos]["y2"] = a2.Position.Y
-    Settings[world][UnitPos]["y3"] = a3.Position.Y
-    Settings[world][UnitPos]["y4"] = a4.Position.Y
-    Settings[world][UnitPos]["y5"] = a5.Position.Y
-    Settings[world][UnitPos]["y6"] = a6.Position.Y
+    Settings[map][UnitPos]["x"] = a.Position.X
+    Settings[map][UnitPos]["z"] = a.Position.Z
+    Settings[map][UnitPos]["y"] = a.Position.Y
+    Settings[map][UnitPos]["y2"] = a2.Position.Y
+    Settings[map][UnitPos]["y3"] = a3.Position.Y
+    Settings[map][UnitPos]["y4"] = a4.Position.Y
+    Settings[map][UnitPos]["y5"] = a5.Position.Y
+    Settings[map][UnitPos]["y6"] = a6.Position.Y
     print("updatepos")
     saveSettings()
 end
-
 --updatefix fixmap
-
 function saveposTEST(UnitPos, a,a2,a3,a4,a5,a6)
     local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
     world = GetLevelData.world or GetLevelData.name
@@ -1128,34 +1126,33 @@ function saveposTEST(UnitPos, a,a2,a3,a4,a5,a6)
     warn("savepos test")
 end
 
-
 function savepos(UnitPos, a,a2,a3,a4,a5,a6)
     if game.Workspace._map:FindFirstChild("namek mushroom model") then
-        updatepos("Namak", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("namek", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("houses_new") then
-        updatepos("Aot", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("aot", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("Snow Particles") then
-        updatepos("Snowy", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("demonslayer", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("sand_gate") then 
-        updatepos("Sand", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("naruto", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("icebergs") then
-        updatepos("Marine", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("marineford", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
-        updatepos("Ghoul", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("tokyo_ghoul", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("Bones/dust") then
-        updatepos("Hollow", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("hueco", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("Ant Nest") then
-        updatepos("Ant", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("hxhant", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("light poles") then
-        updatepos("Magic", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("magnolia", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("LanternsGround") then
-        updatepos("Cursed", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("jjk", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("pumpkins") then    
         updatepos("thriller_park", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("skeleton") then
-        updatepos("black_clover", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("clover", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("graves") then
-        updatepos("hollow_leg", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("bleach_legend", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("vending machines") then
         updatepos("chainsaw", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
@@ -1165,16 +1162,17 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("s") then
         updatepos("west_city", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("Capybara") then
-        updatepos("Storm_Hideout", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("uchiha", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("snow grass") then
-       updatepos("infinity_trian", UnitPos, a,a2,a3,a4,a5,a6)
+       updatepos("demonslayer_raid_1", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-        updatepos("fabled_kingdom", UnitPos, a,a2,a3,a4,a5,a6)
+        updatepos("7ds", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
         updatepos("mha", UnitPos, a,a2,a3,a4,a5,a6)
     end
     warn("savepos")
 end
+
 function mobilegui(UnitPos, a,a2,a3,a4,a5,a6)
 	local BillboardGui = Instance.new("BillboardGui")
 	local Frame = Instance.new("Frame")
@@ -1211,7 +1209,7 @@ function mobilegui(UnitPos, a,a2,a3,a4,a5,a6)
 	Done.TextWrapped = true
 	Done.Activated:Connect(function()
 		_G.gg = false 
-		saveposTEST(UnitPos, a,a2,a3,a4,a5,a6)
+		savepos(UnitPos, a,a2,a3,a4,a5,a6)
 		for i = 0, 1, 0.1 do
 			a.Transparency = i
 			a2.Transparency = i
@@ -1408,7 +1406,7 @@ function MouseClick2(UnitPos)
 		kjqhwe = mouse.Button1Down:Connect(function()
 			kjqhwe:Disconnect()
 			print("b")
-			saveposTEST(UnitPos, a,a2,a3,a4,a5,a6)
+			savepos(UnitPos, a,a2,a3,a4,a5,a6)
 			_G.gg = false 
 			for i = 0, 1, 0.1 do
 				a.Transparency = i
@@ -2002,15 +2000,17 @@ function getBorosPortals()
     end
     return portals
 end
-function getCSMPortals()
+
+function getDemonPortals()
     local portals = {}
     for _, item in pairs(get_inventory_items_unique_items()) do
-        if item["item_id"] == "portal_csm" or "portal_csm1" or "portal_csm2" or "portal_csm3" or "portal_csm4" or "portal_csm5" then
+        if item["item_id"] == "april_portal_item" then
             table.insert(portals, item)
         end
     end
     return portals
 end
+
 function getZeldrisPortals()
     local portals = {}
     for _, item in pairs(get_inventory_items_unique_items()) do
@@ -2163,10 +2163,10 @@ local function startfarming()
                 end
                 warn("Aline farming")
                 task.wait(7)
-                --Devil fixportal		
-            elseif level == "portal_csm" then
+                --Demon fixportal		
+            elseif level == "april_portal_item" then
                 local args = {
-                    [1] = GetPortals("portal_csm")[1]["uuid"],
+                    [1] = GetPortals("april_portal_item")[1]["uuid"],
                     [2] = { ["friends_only"] = getgenv().isFriendOnly } }
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
                 
@@ -2178,14 +2178,13 @@ local function startfarming()
                         break;
                     end 
                 end
-                pcall(function() 
-                    BabyWebhook() 
-                    SnipeShopNew()
-                
-                end)
+            pcall(function() 
+                BabyWebhook()
+                SnipeShopNew()
+             end)
                 print("send Webhook")
                 task.wait(1.1)
-                warn("Devil farming")
+                warn("Demon farming")
                 task.wait(7)
                 --7Ds fixportal		
             elseif level == "portal_zeldris" then
@@ -2634,14 +2633,15 @@ coroutine.resume(coroutine.create(function()
     end  
 end))
 
-function PlacePos(world,name,_uuid,unit)
+function PlacePos(map,name,_uuid,unit)
     if Settings.AutoFarm and not getgenv().disableatuofarm then
         local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
         x = getgenv().posX; z = getgenv().posZ
         world = GetLevelData.world or GetLevelData.name
-			print(tostring(world))
-        local pos = Settings[world][unit]
-        --warn(" ด่าน "..map.." กำลังวางหรืออัพตัว "..name)
+			--print(tostring(world))
+            print(map)
+        local pos = Settings[map][unit]
+        --warn(map.." attemp to place "..name)
         if name ~= "metal_knight_evolved" then
             local i = math.random(1,6)
             if i == 1 then
@@ -2899,7 +2899,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         --[[if U1_UnP <= U1_wv and U1_UnP <= U2_UnP and U1_UnP <= U3_UnP and U1_UnP <= U4_UnP and U1_UnP <= U5_UnP and U1_UnP <= U6_UnP then]]
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
             print("placing u1.."..U1_name)
-            PlacePos(world, U1_name, U1_uuid,"UP1")
+            PlacePos(map, U1_name, U1_uuid,"UP1")
         end
         if U1_sellW <= current_wave then
             print("selling u1.."..U1_name)
@@ -2917,7 +2917,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         --[[if U2_UnP <= U2_wv and  U2_UnP <= U1_UnP and U2_UnP <= U3_UnP and U2_UnP <= U4_UnP and U2_UnP <= U5_UnP and U2_UnP <= U6_UnP then]]
         if U2_sellW >= current_wave and U2_amm < U2_TAmm then
             print("placing u2.."..U2_name)
-            PlacePos(world, U2_name, U2_uuid,"UP2")
+            PlacePos(map, U2_name, U2_uuid,"UP2")
         end
         if U2_sellW <= current_wave then
             print("selling u2.."..U2_name)
@@ -2935,7 +2935,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         --[[if U3_UnP <= U3_wv and U3_UnP <= U1_UnP and U3_UnP <= U2_UnP and U3_UnP <= U4_UnP and U3_UnP <= U5_UnP and U3_UnP <= U6_UnP then]]
 	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
 		    print("placing u3.."..U3_name)
-		    PlacePos(world, U3_name, U3_uuid,"UP3")
+		    PlacePos(map, U3_name, U3_uuid,"UP3")
         end
 	    if U3_sellW <= current_wave then
 		    print("selling u3.."..U3_name)
@@ -2953,7 +2953,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         --[[if U4_UnP <= U4_wv and U4_UnP <= U1_UnP and U4_UnP <= U2_UnP and U4_UnP <= U3_UnP and U4_UnP <= U5_UnP and U4_UnP <= U6_UnP then]]
 	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
 		    print("placing u4.."..U4_name)
-		    PlacePos(world, U4_name, U4_uuid,"UP4")
+		    PlacePos(map, U4_name, U4_uuid,"UP4")
         end
 	    if U4_sellW <= current_wave then
 		    print("selling u4.."..U4_name)
@@ -2971,7 +2971,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         --[[if U5_UnP <= U5_wv and U5_UnP <= U1_UnP and U5_UnP <= U2_UnP and U5_UnP <= U3_UnP and U5_UnP <= U4_UnP and U5_UnP <= U6_UnP then]]
 	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
 		    print("placing u5.."..U5_name)
-		    PlacePos(world, U5_name, U5_uuid,"UP5")
+		    PlacePos(map, U5_name, U5_uuid,"UP5")
         end
 	    if U5_sellW <= current_wave then
 		    print("selling u5.."..U5_name)
@@ -2989,7 +2989,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         --[[if U6_UnP <= U6_wv and U6_UnP <= U1_UnP and U6_UnP <= U2_UnP and U6_UnP <= U3_UnP and U6_UnP <= U4_UnP and U6_UnP <= U5_UnP then]]
 	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
 		    print("placing u6.."..U6_name)
-		    PlacePos(world, U6_name, U6_uuid,"UP6")
+		    PlacePos(map, U6_name, U6_uuid,"UP6")
         end
 	    if U6_sellW <= current_wave then
 		    print("selling u6.."..U6_name)
@@ -3096,19 +3096,20 @@ if Settings.reunitc then
     reunitcon()
 end
 --fix sell and place spam
-function PlaceUnits(world)
+function PlaceUnits(map)
     pcall(function()
         if Settings.AutoFarm and not getgenv().disableatuofarm then
             local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
             x = getgenv().posX; z = getgenv().posZ
             world = GetLevelData.world or GetLevelData.name
-			print(tostring(world))
+			--print(tostring(world))
+            print(map)
             for i = 1, 6 do
                 local unitinfo = Settings.SelectedUnits["U" .. i]
                 if unitinfo ~= nil then
                     local unitinfo_ = unitinfo:split(" #")
-                    local pos = Settings[world]["UP" .. i]
-                    print(" ด่าน "..world.." กำลังวางหรืออัพตัว "..unitinfo_[1])
+                    local pos = Settings[map]["UP" .. i]
+                    print(map.." attemp to place "..unitinfo_[1])
     
                     if unitinfo_[1] ~= "metal_knight_evolved" then
     
@@ -3235,31 +3236,31 @@ coroutine.resume(coroutine.create(function()
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
             if game.Workspace._map:FindFirstChild("namek mushroom model") then
-                PlaceUnitsTEST("Namak")
+                PlaceUnitsTEST("namek")
             elseif game.Workspace._map:FindFirstChild("houses_new") then
-                PlaceUnitsTEST("Aot")
+                PlaceUnitsTEST("aot")
             elseif game.Workspace._map:FindFirstChild("Snow Particles") then
-                PlaceUnitsTEST("Snowy")
+                PlaceUnitsTEST("demonslayer")
             elseif game.Workspace._map:FindFirstChild("sand_gate") then 
-                PlaceUnitsTEST("Sand")
+                PlaceUnitsTEST("naruto")
             elseif game.Workspace._map:FindFirstChild("icebergs") then
-                PlaceUnitsTEST("Marine")
+                PlaceUnitsTEST("marineford")
             elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
-                PlaceUnitsTEST("Ghoul")
+                PlaceUnitsTEST("tokyo_ghoul")
             elseif game.Workspace._map:FindFirstChild("Bones/dust") then
-                PlaceUnitsTEST("Hollow")
+                PlaceUnitsTEST("hueco")
             elseif game.Workspace._map:FindFirstChild("Ant Nest") then
-                PlaceUnitsTEST("Ant")
+                PlaceUnitsTEST("hxhant")
             elseif game.Workspace._map:FindFirstChild("light poles") then
-                PlaceUnitsTEST("Magic")
+                PlaceUnitsTEST("magnolia")
             elseif game.Workspace._map:FindFirstChild("LanternsGround") then
-                PlaceUnitsTEST("Cursed")
+                PlaceUnitsTEST("jjk")
             elseif game.Workspace._map:FindFirstChild("pumpkins") then    
                 PlaceUnitsTEST("thriller_park")  
             elseif game.Workspace._map:FindFirstChild("skeleton") then
-                PlaceUnitsTEST("black_clover")
+                PlaceUnitsTEST("clover")
             elseif game.Workspace._map:FindFirstChild("graves") then
-                PlaceUnitsTEST("hollow_leg")
+                PlaceUnitsTEST("bleach_legend")
             elseif game.Workspace._map:FindFirstChild("vending machines") then
                 PlaceUnitsTEST("chainsaw")
             elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
@@ -3269,11 +3270,11 @@ coroutine.resume(coroutine.create(function()
             elseif game.Workspace._map:FindFirstChild("s") then
                 PlaceUnitsTEST("west_city")
             elseif game.Workspace._map:FindFirstChild("Capybara") then
-                PlaceUnitsTEST("Storm_Hideout")
+                PlaceUnitsTEST("uchiha")
             elseif game.Workspace._map:FindFirstChild("snow grass") then
-                PlaceUnitsTEST("infinity_trian")
+                PlaceUnitsTEST("demonslayer_raid_1")
             elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-                PlaceUnitsTEST("fabled_kingdom")
+                PlaceUnitsTEST("7ds")
             elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
                 PlaceUnitsTEST("mha")
             end
@@ -3286,32 +3287,32 @@ coroutine.resume(coroutine.create(function()
             warn("Disabled Unit Config")
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
-            if game.Workspace._map:FindFirstChild("namek mushroom model") then
-                PlaceUnits("Namak")
+           if game.Workspace._map:FindFirstChild("namek mushroom model") then
+                PlaceUnits("namek")
             elseif game.Workspace._map:FindFirstChild("houses_new") then
-                PlaceUnits("Aot")
+                PlaceUnits("aot")
             elseif game.Workspace._map:FindFirstChild("Snow Particles") then
-                PlaceUnits("Snowy")
+                PlaceUnits("demonslayer")
             elseif game.Workspace._map:FindFirstChild("sand_gate") then 
-                PlaceUnits("Sand")
+                PlaceUnits("naruto")
             elseif game.Workspace._map:FindFirstChild("icebergs") then
-                PlaceUnits("Marine")
+                PlaceUnits("marineford")
             elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
-                PlaceUnits("Ghoul")
+                PlaceUnits("tokyo_ghoul")
             elseif game.Workspace._map:FindFirstChild("Bones/dust") then
-                PlaceUnits("Hollow")
+                PlaceUnits("hueco")
             elseif game.Workspace._map:FindFirstChild("Ant Nest") then
-                PlaceUnits("Ant")
+                PlaceUnits("hxhant")
             elseif game.Workspace._map:FindFirstChild("light poles") then
-                PlaceUnits("Magic")
+                PlaceUnits("magnolia")
             elseif game.Workspace._map:FindFirstChild("LanternsGround") then
-                PlaceUnits("Cursed")
+                PlaceUnits("jjk")
             elseif game.Workspace._map:FindFirstChild("pumpkins") then    
                 PlaceUnits("thriller_park")  
             elseif game.Workspace._map:FindFirstChild("skeleton") then
-                PlaceUnits("black_clover")
+                PlaceUnits("clover")
             elseif game.Workspace._map:FindFirstChild("graves") then
-                PlaceUnits("hollow_leg")
+                PlaceUnits("bleach_legend")
             elseif game.Workspace._map:FindFirstChild("vending machines") then
                 PlaceUnits("chainsaw")
             elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
@@ -3321,11 +3322,11 @@ coroutine.resume(coroutine.create(function()
             elseif game.Workspace._map:FindFirstChild("s") then
                 PlaceUnits("west_city")
             elseif game.Workspace._map:FindFirstChild("Capybara") then
-                PlaceUnits("Storm_Hideout")
+                PlaceUnits("uchiha")
             elseif game.Workspace._map:FindFirstChild("snow grass") then
-                PlaceUnits("infinity_trian")
+                PlaceUnits("demonslayer_raid_1")
             elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
-                PlaceUnits("fabled_kingdom")
+                PlaceUnits("7ds")
             elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
                 PlaceUnits("mha")
             end
