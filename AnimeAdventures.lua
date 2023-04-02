@@ -876,7 +876,7 @@ local function WorldSec()
             levellist = {"portal_boros_g"}
         elseif level == "Demon Portals" then
             levellist = {"april_portal_item"}
-        elseif level == "Demon Portals" then
+        elseif level == "Zeldris Portals" then
             levellist = {"portal_zeldris"}
             ---///Dungeon\\\---    updatefix
         elseif level == "Cursed Womb" then
@@ -1161,7 +1161,7 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
         updatepos("opm", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("s") then
         updatepos("west_city", UnitPos, a,a2,a3,a4,a5,a6)
-    elseif game.Workspace._map:FindFirstChild("Capybara") then
+    elseif game.Workspace._map:FindFirstChild("bushes and flowers") then
         updatepos("uchiha", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("snow grass") then
        updatepos("demonslayer_raid_1", UnitPos, a,a2,a3,a4,a5,a6)
@@ -1719,14 +1719,29 @@ local function LAGGYconfig()
         saveSettings()
     end, {min = 150, max = 300, suffix = "", default = 150})]]
 
-    LG1:Cheat("Slider", "LAG Lv.", function(Value)
+    LG1:Cheat("Textbox", "LAG Threads", function(Value)
+        print("LAG threads.:", Value)
+        Settings.max = tonumber(Value)
+        saveSettings()
+    end, {placeholder = Settings.max or 160})
+
+    LG1:Cheat("Textbox", "LAG Tries ", function(Value)
+        print("LAG tries.:", Value)
+        Settings.mix = tonumber(Value)
+        saveSettings()
+    end, {placeholder = Settings.mix or 0})
+
+    --[[LG1:Cheat("Slider", "LAG Lv.", function(Value)
         print("LAG Lv.:", Value)
         Settings.mix = tonumber(Value)
         saveSettings()
-    end, {min = 0.8, max = 7, suffix = "", default = 0.8 })
-
-    LG1:Cheat("Label"," recommended level 1 - 3  ")
-    LG1:Cheat("Label"," Set to 0.8 for close LAG ")
+    end, {min = 0.8, max = 7, suffix = "", default = 0.8 })]]
+    LG1:Cheat("Label","  ")
+    LG1:Cheat("Label"," Set Tries to 0 for close LAG ")
+    LG1:Cheat("Label"," threads = lower the faster it lags ")
+    LG1:Cheat("Label"," tries = the higher the faster it lags ")
+    LG1:Cheat("Label"," def settings : threads = 250 ,tries = 1 ")
+    LG1:Cheat("Label"," fast-lag settings: threads = 10 ,tries = 1.5 ")
 
 end
 ----------------------------------------------
@@ -1872,6 +1887,10 @@ function autoload()
         end
     end)
 end
+if Settings.AutoLoadScript then
+    autoload()
+end
+
 function others()
 
     OtherSec:Cheat("Checkbox","⌛ Auto Load Script ⌛", function(bool)
@@ -2486,10 +2505,35 @@ coroutine.resume(coroutine.create(function()
             end
         end
         
-        if Settings.AutoUpgrade then
+        if Settings.AutoUpgrade and not Settings.unitconfig then
             if game.PlaceId ~= 8304191830 then
                 pcall(function()
                     autoupgradefunc()
+                end)
+            end
+            if  getgenv().autoupgradeerr == true then
+                task.wait()
+                autoupgradefunc()
+                getgenv().autoupgradeerr = false
+            end
+        end
+
+        if Settings.unitconfig and not Settings.AutoUpgrade then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    upgradeunit(name, min)
+                end)
+            end
+            if  getgenv().autoupgradeerr == true then
+                task.wait()
+                autoupgradefunc()
+                getgenv().autoupgradeerr = false
+            end
+        end
+        if Settings.unitconfig and Settings.AutoUpgrade then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    upgradeunit(name, min)
                 end)
             end
             if  getgenv().autoupgradeerr == true then
@@ -2865,6 +2909,19 @@ function upgradeunit(name, min)
     end
 end
 
+function upgradeunit1(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.id.Value == name then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+
 ---------------------------------
 ---------test sell unit----------
 ---------------------------------
@@ -2978,6 +3035,7 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     U1_sellW, U2_sellW, U3_sellW, U4_sellW, U5_sellW, U6_sellW = Settings.U1_SellWave or 999, Settings.U2_SellWave or 999, Settings.U3_SellWave or 999, Settings.U4_SellWave or 999, Settings.U5_SellWave or 999, Settings.U6_SellWave or 999
     U1_upgP, U2_upgP, U3_upgP, U4_upgP, U5_upgP, U6_upgP = Settings.U1_UpgPro or 1, Settings.U2_UpgPro or 1, Settings.U3_UpgPro or 1, Settings.U4_UpgPro or 1, Settings.U5_UpgPro or 1, Settings.U6_UpgPro or 1
     U1_UnP, U2_UnP, U3_UnP, U4_UnP, U5_UnP, U6_UnP = Settings.U1_UnPlace or 1, Settings.U2_UnPlace or 1, Settings.U3_UnPlace or 1, Settings.U4_UnPlace or 1, Settings.U5_UnPlace or 1, Settings.U6_UnPlace or 1
+    
     --//Unit 1
     local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
     if U1_wv <= current_wave and U1_amm <= U1_TAmm then
@@ -2992,7 +3050,8 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         end
         if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave --[[and U1_upgP <= U2_upgP and U1_upgP <= U3_upgP and U1_upgP <= U4_upgP and U1_upgP <= U5_upgP and U1_upgP <= U6_upgP]] then
             print("upgrading u1.."..U1_name)
-            upgradeunit(tostring(U1_name), (U1_upgCap))
+            --upgradeunit(tostring(U1_name), (U1_upgCap))
+            upgradeunit(U1_name, U1_upgCap)
         end
     end
 --end
@@ -3010,7 +3069,8 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
         end
         if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave --[[and U2_upgP <= U1_upgP and U2_upgP <= U3_upgP and U2_upgP <= U4_upgP and U2_upgP <= U5_upgP and U2_upgP <= U6_upgP]]  then
             print("upgrading u2.."..U2_name)
-            upgradeunit(tostring(U2_name), (U2_upgCap))
+            --upgradeunit(tostring(U2_name), (U2_upgCap))
+            upgradeunit(U2_name, U2_upgCap)
         end
     end
 --end
@@ -3028,7 +3088,8 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 	    end
         if U3_u < U3_upgCap and U3_upgW <= current_wave --[[and U3_sellW >= current_wave and U3_upgP <= U1_upgP and U3_upgP <= U2_upgP and U3_upgP <= U4_upgP and U3_upgP <= U5_upgP and U3_upgP <= U6_upgP]] then
             print("upgrading u3.."..U3_name)
-            upgradeunit(tostring(U3_name), (U3_upgCap))
+            --upgradeunit(tostring(U3_name), (U3_upgCap))
+            upgradeunit(U3_name, U3_upgCap)
         end
     end
 --end
@@ -3046,7 +3107,8 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 	    end
         if U4_u < U4_upgCap and U4_upgW <= current_wave and U4_sellW >= current_wave --[[and U4_upgP <= U1_upgP and U4_upgP <= U2_upgP and U4_upgP <= U3_upgP and U4_upgP <= U5_upgP and U4_upgP <= U6_upgP]] then
             print("upgrading u4.."..U4_name)
-            upgradeunit(tostring(U4_name), (U4_upgCap))
+            --upgradeunit(tostring(U4_name), (U4_upgCap))
+            upgradeunit(U4_name, U4_upgCap)
         end
     end
 --end
@@ -3064,7 +3126,8 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 	    end
         if U5_u < U5_upgCap and U5_upgW <= current_wave and U5_sellW >= current_wave --[[and U5_upgP <= U1_upgP and U5_upgP <= U2_upgP and U5_upgP <= U3_upgP and U5_upgP <= U4_upgP and U5_upgP <= U6_upgP]] then
             print("upgrading u5.."..U5_name)
-            upgradeunit(tostring(U5_name), (U5_upgCap))
+            --upgradeunit(tostring(U5_name), (U5_upgCap))
+            upgradeunit(U5_name, U5_upgCap)
         end
     end
 --end
@@ -3082,7 +3145,8 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 	    end
         if U6_u < U6_upgCap and U6_upgW <= current_wave and U6_sellW >= current_wave --[[and U6_upgP <= U1_upgP and U6_upgP <= U2_upgP and U6_upgP <= U3_upgP and U6_upgP <= U4_upgP and U6_upgP <= U5_upgP]]  then
             print("upgrading u6.."..U6_name)
-            upgradeunit(tostring(U6_name), (U6_upgCap))
+            --upgradeunit(tostring(U6_name), (U6_upgCap))
+            upgradeunit(U6_name, U6_upgCap)
             end
         end
     end
@@ -3354,7 +3418,7 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnitsTEST("opm")
             elseif game.Workspace._map:FindFirstChild("s") then
                 PlaceUnitsTEST("west_city")
-            elseif game.Workspace._map:FindFirstChild("Capybara") then
+            elseif game.Workspace._map:FindFirstChild("bushes and flowers") then
                 PlaceUnitsTEST("uchiha")
             elseif game.Workspace._map:FindFirstChild("snow grass") then
                 PlaceUnitsTEST("demonslayer_raid_1")
@@ -3406,7 +3470,7 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnits("opm")
             elseif game.Workspace._map:FindFirstChild("s") then
                 PlaceUnits("west_city")
-            elseif game.Workspace._map:FindFirstChild("Capybara") then
+            elseif game.Workspace._map:FindFirstChild("bushes and flowers") then
                 PlaceUnits("uchiha")
             elseif game.Workspace._map:FindFirstChild("snow grass") then
                 PlaceUnits("demonslayer_raid_1")
@@ -3418,25 +3482,7 @@ coroutine.resume(coroutine.create(function()
         end
     end
 end))
-pcall(function()
-    local vu = game:GetService("VirtualUser")
-    game:GetService("Players").LocalPlayer.Idled:connect(function()
-        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-        wait(1)
-        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-    end)
-    game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
-    warn(" Anti-AFK Loaded !!!")
-end)
-if Settings.AutoLoadScript then
-    autoload()
-end
---disms
-if game.PlaceId ~= 8304191830 then
-    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
-    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
-    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
-end
+
 
 --hide name
 function hidename()
@@ -3507,19 +3553,38 @@ end
 if Settings.redeemc then
     Reedemcode()
 end
-----------------------------------
-----------LAGGY CONFIG------------
-----------------------------------
 
+--disms
+if game.PlaceId ~= 8304191830 then
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+end
+
+pcall(function()
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        wait(1)
+        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
+    warn("Anti-AFK Loaded!!!")
+end)
+warn("Hider Name Loaded!!!")
+warn("AA v2 Loaded!!!")
+
+
+--testlag
 function Laggy()
-    shared.TeleportToSky = false -- for games that show ur ping (like custom duels)
+    --[[shared.TeleportToSky = false -- for games that show ur ping (like custom duels)
     
     if shared.TeleportToSky then
     local char = game:GetService('Players').LocalPlayer.Character
     char.HumanoidRootPart.CFrame = CFrame.new(0,9e9,0)
     task.wait(0.5)
     char.HumanoidRootPart.Anchored = true
-    end
+    end]]
     while wait(1.5) do --// don't change it's the best
     game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
     local function getmaxvalue(val)
@@ -3537,7 +3602,8 @@ function Laggy()
     
     table.insert(spammedtable, {})
     z = spammedtable[1]
-     
+
+    tableincrease = tonumber(Settings.max or 160)
     for i = 1, tableincrease do
         local tableins = {}
         table.insert(z, tableins)
@@ -3557,36 +3623,27 @@ function Laggy()
          table.insert(maintable, spammedtable)
     end
      
-    tries = tonumber(Settings.mix)
+    tries = tonumber(Settings.mix or 0)
     for i = 1, tries do
          game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
     end
 end
     
-    tableincrease = tonumber(Settings.max)
-    tries = tonumber(Settings.mix)
+    tableincrease = tonumber(Settings.max or 160)
+    tries = tonumber(Settings.mix or 0)
      
-    bomb(160, tries)
+    bomb(tableincrease, tries)
 
     end
 end
-    
-if Settings.LaggyL1 then
-    if  Laggy() == false then
+
+
+
+if  Laggy() == false then
         Laggy() 
     end
-end
-if not Settings.LaggyL1 then
-    if Laggy() == true then
+if Laggy() == true then
         notLaggy()
-    end
 end
 
-
-----------------------------------
--------------END LAGGY------------
-----------------------------------
-
-
-warn("Hider Name Loaded!!!")
-warn(" AA v2 Loaded !!!")
+warn("All Loaded !!!")
