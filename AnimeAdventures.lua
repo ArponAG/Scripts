@@ -664,7 +664,8 @@ local WebhookSec = Misc:Sector("Discord Webhook")
 local LG = Window:Category("🛠️ OTHER [BETA]")
 local LG1 = LG:Sector("Beta LAGGY Config ")
 local OtherSec = LG:Sector("Other Options")
-
+local OtherSec2 = LG:Sector("")
+local reFarmConfig = LG:Sector("🤖 Reset Farm Config 🤖")
 
 
 ----------------------------------------------
@@ -990,6 +991,219 @@ local function MoreFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoInfinityCastle})
 end
+
+-----------------------------------------------
+--resetautofarm config
+--resetall
+function refarmcon()
+    print("reset AutoFarm & find Picoro config ?")
+
+    --findPicoro
+    if Settings.picoHOP then
+        Settings.picoHOP = false end
+   --Start
+    if Settings.autostart then
+        Settings.autostart = false end
+    --Place unit
+    if Settings.AutoFarm then
+        Settings.AutoFarm = false end
+    --Replay
+    if Settings.AutoReplay then
+        Settings.AutoReplay = false end
+    --Next Story
+    if Settings.AutoNext then
+        Settings.AutoNext = false end
+    --Leave
+    if Settings.AutoLeave then
+        Settings.AutoLeave = false end
+    --Abilities
+    if Settings.AutoAbilities then
+        Settings.AutoAbilities = false end
+    --Upgrade
+    if Settings.AutoUpgrade then
+        Settings.AutoUpgrade = false end
+    --AutoSell
+    if Settings.AutoSell then
+        Settings.AutoSell = false end
+    --autoQuitWave
+    if Settings.autoQuit then
+        Settings.autoQuit = false end
+    --AutoSellWave
+    if Settings.AutoSellWave then
+        Settings.AutoSellWave = 0 end
+    --Inf Castle--
+    --Next Level inf cas
+    if Settings.AutoContinue then
+        Settings.AutoContinue = false end
+    --Auto Infinity Castle 
+    if Settings.AutoInfinityCastle then
+        Settings.AutoInfinityCastle = false end
+        saveSettings()
+        autoload2()
+  
+end
+
+if Settings.refarmc then
+    refarmcon()
+    autoload2()
+end
+
+--setAutoFarmStory
+function setfarm1()
+    print("Set AutoFarm Story ?")
+
+   --Start
+    if Settings.autostart then
+        Settings.autostart = true end
+    --Place unit
+    if Settings.AutoFarm then
+        Settings.AutoFarm = true end
+    --Replay
+    if Settings.AutoReplay then
+        Settings.AutoReplay = false end
+    --Next Story
+    if Settings.AutoNext then
+        Settings.AutoNext = false end
+    --Leave
+    if Settings.AutoLeave then
+        Settings.AutoLeave = true end
+    --Abilities
+    if Settings.AutoAbilities then
+        Settings.AutoAbilities = true end
+    --Upgrade
+    if Settings.AutoUpgrade then
+        Settings.AutoUpgrade = true end
+    --AutoSell
+    if Settings.AutoSell then
+        Settings.AutoSell = true end
+    --autoQuitWave
+    if Settings.autoQuit then
+        Settings.autoQuit = false end
+    --AutoSellWave
+    if Settings.AutoSellWave then
+        Settings.AutoSellWave = 50 end
+    --Inf Castle--
+    --Next Level inf cas
+    if Settings.AutoContinue then
+        Settings.AutoContinue = false end
+    --Auto Infinity Castle 
+    if Settings.AutoInfinityCastle then
+        Settings.AutoInfinityCastle = false end
+        saveSettings()
+        autoload2()
+  
+end
+
+if Settings.setfarm1 then
+    setfarm1()
+    autoload2()
+end
+
+--setAutoFarmStorynReplay
+function setfarm2()
+    print("Set AutoFarm Story & Replay ?")
+
+   --Start
+    if Settings.autostart then
+        Settings.autostart = true end
+    --Place unit
+    if Settings.AutoFarm then
+        Settings.AutoFarm = true end
+    --Replay
+    if Settings.AutoReplay then
+        Settings.AutoReplay = true end
+    --Next Story
+    if Settings.AutoNext then
+        Settings.AutoNext = false end
+    --Leave
+    if Settings.AutoLeave then
+        Settings.AutoLeave = true end
+    --Abilities
+    if Settings.AutoAbilities then
+        Settings.AutoAbilities = true end
+    --Upgrade
+    if Settings.AutoUpgrade then
+        Settings.AutoUpgrade = true end
+    --AutoSell
+    if Settings.AutoSell then
+        Settings.AutoSell = true end
+    --autoQuitWave
+    if Settings.autoQuit then
+        Settings.autoQuit = false end
+    --AutoSellWave
+    if Settings.AutoSellWave then
+        Settings.AutoSellWave = 50 end
+    --Inf Castle--
+    --Next Level inf cas
+    if Settings.AutoContinue then
+        Settings.AutoContinue = false end
+    --Auto Infinity Castle 
+    if Settings.AutoInfinityCastle then
+        Settings.AutoInfinityCastle = false end
+        saveSettings()
+        autoload2()
+  
+end
+
+if Settings.setfarm2 then
+    setfarm2()
+    autoload2()
+end
+
+--setAutoInfCastle
+function setfarmIC()
+    print("Set AutoFarm Inf Castle ?")
+
+   --Start
+    if Settings.autostart then
+        Settings.autostart = false end
+    --Place unit
+    if Settings.AutoFarm then
+        Settings.AutoFarm = true end
+    --Replay
+    if Settings.AutoReplay then
+        Settings.AutoReplay = false end
+    --Next Story
+    if Settings.AutoNext then
+        Settings.AutoNext = false end
+    --Leave
+    if Settings.AutoLeave then
+        Settings.AutoLeave = false end
+    --Abilities
+    if Settings.AutoAbilities then
+        Settings.AutoAbilities = true end
+    --Upgrade
+    if Settings.AutoUpgrade then
+        Settings.AutoUpgrade = true end
+    --AutoSell
+    if Settings.AutoSell then
+        Settings.AutoSell = true end
+    --autoQuitWave
+    if Settings.autoQuit then
+        Settings.autoQuit = false end
+    --AutoSellWave
+    if Settings.AutoSellWave then
+        Settings.AutoSellWave = 50 end
+    --Inf Castle--
+    --Next Level inf cas
+    if Settings.AutoContinue then
+        Settings.AutoContinue = true end
+    --Auto Infinity Castle 
+    if Settings.AutoInfinityCastle then
+        Settings.AutoInfinityCastle = true end
+        saveSettings()
+        autoload2()
+  
+end
+
+if Settings.setfarmIC then
+    setfarmIC()
+    autoload2()
+end
+
+
+-----------------------------------------------
+
 
 ----------------------------------------------
 ----------------- Challenge ------------------
@@ -1696,6 +1910,34 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U6_SellWave}) 
 end
+
+---------------------------------------------
+--resetautofarmUI
+local function reFarmconfig()
+
+    reFarmConfig:Cheat("Button", "Reset Farm config", function()
+        print(Settings.refarmc)
+        refarmcon()
+    end)
+
+    reFarmConfig:Cheat("Button", "Set Story", function()
+        print(Settings.setfarm1)
+        setfarm1()
+    end)
+
+    reFarmConfig:Cheat("Button", "Set Story & Replay", function()
+        print(Settings.setfarm2)
+        setfarm2()
+    end)
+
+    reFarmConfig:Cheat("Button", "Set Inf Castle & Next Level", function()
+        print(Settings.setfarmIC)
+        setfarmIC()
+    end)
+
+end
+---------------------------------------------
+
 ---------------------------------------------
 local function LAGGYconfig()
     LG1:Cheat("Label"," Is a BETA Version // Enjoy ")
@@ -1731,16 +1973,15 @@ local function LAGGYconfig()
         saveSettings()
     end, {placeholder = Settings.mix or 0})
 
-
     LG1:Cheat("Slider", "LAG Lv. [slide]", function(Value)
         print("LAG Lv.:", Value)
         Settings.mix = tonumber(Value)
         saveSettings()
     end, {min = 0.8, max = 7, suffix = "", default = 0 })
-    
+
     LG1:Cheat("Label","  ")
     LG1:Cheat("Label"," HOPE Y'all Enjoy ")
-    LG1:Cheat("Label"," if use LAG Lv. don't set LAG Threads & LAG Tries ")
+    LG1:Cheat("Label"," if use LAG Lv. don't set Threads & Tries ")
     LG1:Cheat("Label"," Set Tries or LAG Lv. to 0 for close LAG ")
     LG1:Cheat("Label"," threads = lower the faster it lags ")
     LG1:Cheat("Label"," tries = the higher the faster it lags ")
@@ -1895,6 +2136,20 @@ if Settings.AutoLoadScript then
     autoload()
 end
 
+function autoload2()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua'))()
+end
+
+if Settings.refarmc then
+    autoload2() end
+if Settings.setfarm1 then
+    autoload2() end
+if Settings.setfarm2 then
+    autoload2() end
+if Settings.setfarmIC then
+    autoload2() end
+
+
 function others()
 
     OtherSec:Cheat("Checkbox","⌛ Auto Load Script ⌛", function(bool)
@@ -1952,6 +2207,7 @@ if game.PlaceId == 8304191830 then
     MoreFarmSec()
     ChallengeSec()
     unitconfig()
+    reFarmconfig()
     LAGGYconfig()
     credits()
     AutoSummon()
@@ -1968,6 +2224,7 @@ else
     ChallengeSec()
     UnitPosSec()
     unitconfig()
+    reFarmconfig()
     LAGGYconfig()
     credits()
     SnipeMerchant()
