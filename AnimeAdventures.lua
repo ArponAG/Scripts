@@ -1731,13 +1731,17 @@ local function LAGGYconfig()
         saveSettings()
     end, {placeholder = Settings.mix or 0})
 
-    --[[LG1:Cheat("Slider", "LAG Lv.", function(Value)
+
+    LG1:Cheat("Slider", "LAG Lv. [slide]", function(Value)
         print("LAG Lv.:", Value)
         Settings.mix = tonumber(Value)
         saveSettings()
-    end, {min = 0.8, max = 7, suffix = "", default = 0.8 })]]
+    end, {min = 0.8, max = 7, suffix = "", default = 0 })
+    
     LG1:Cheat("Label","  ")
-    LG1:Cheat("Label"," Set Tries to 0 for close LAG ")
+    LG1:Cheat("Label"," HOPE Y'all Enjoy ")
+    LG1:Cheat("Label"," if use LAG Lv. don't set LAG Threads & LAG Tries ")
+    LG1:Cheat("Label"," Set Tries or LAG Lv. to 0 for close LAG ")
     LG1:Cheat("Label"," threads = lower the faster it lags ")
     LG1:Cheat("Label"," tries = the higher the faster it lags ")
     LG1:Cheat("Label"," def settings : threads = 250 ,tries = 1 ")
