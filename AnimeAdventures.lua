@@ -2643,7 +2643,6 @@ function TeleportHOP()
                 wait(3)
                 HopServer()
             elseif game.Workspace._npcs:FindFirstChild("piccolo_npc") then
-                Setting.picoHOP = false
                 local a={[1]="veku_jacket"} game:GetService("ReplicatedStorage").endpoints.client_to_server.try_purchase_april_item:InvokeServer(unpack(a))
                 local a={[1]="veku_jacket"} game:GetService("ReplicatedStorage").endpoints.client_to_server.try_purchase_april_item:InvokeServer(unpack(a))
             end
