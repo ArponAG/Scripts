@@ -1900,12 +1900,12 @@ function others()
         TeleportHOP()
     end,{enabled = Settings.picoHOP})
 
-    OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
+    --[[OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
         Settings.deletemap = bool
         saveSettings()
         DelTer()
         DelMap()
-    end,{enabled = Settings.deletemap})
+    end,{enabled = Settings.deletemap})]]
 
     OtherSec:Cheat("Button", "Leave To Lobby", function()
         warn("Return to Lobby")
@@ -3454,7 +3454,7 @@ if Settings.hidenamep then
     hidename()
 end
 
---delete map 
+--[[delete map 
 function DelMap()
 	task.spawn(function()  -- Hides name for yters (not sure if its Fe)
 		while task.wait() do
@@ -3481,7 +3481,7 @@ end
 if Settings.deletemap then
     DelMap()
     DelTer()
-end
+end]]
 
 --Auto Grab Daily Quest
 function autoDailyquest()
