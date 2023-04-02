@@ -1893,6 +1893,13 @@ function others()
         autoDailyquest()
     end,{enabled = Settings.autoDailyquest})
 
+    OtherSec:Cheat("Checkbox","Find Picoro [HOP]", function(bool)
+        print(bool)
+        Settings.picoHOP = bool
+        saveSettings()
+        TeleportHOP()
+    end,{enabled = Settings.picoHOP})
+
     OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
         Settings.deletemap = bool
         saveSettings()
@@ -1909,7 +1916,6 @@ function others()
         print(Settings.redeemc)
         Reedemcode()
     end)
-
     
 end
 ----------------------------------------------
@@ -2571,6 +2577,86 @@ function Teleport()
        end)
    end
 end
+
+-------------------------------------------
+--testHOP
+Time = 3 -- seconds
+repeat wait() until game:IsLoaded()
+wait(Time)
+local PlaceID = game.PlaceId
+local AllIDs = {}
+local foundAnything = ""
+local actualHour = os.date("!*t").hour
+local Deleted = false
+function HopServer()
+   local Site;
+   if foundAnything == "" then
+       Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+   else
+       Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+   end
+   local ID = ""
+   if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+       foundAnything = Site.nextPageCursor
+   end
+   local num = 0;
+   for i,v in pairs(Site.data) do
+       local Possible = true
+       ID = tostring(v.id)
+       if tonumber(v.maxPlayers) > tonumber(v.playing) then
+           for _,Existing in pairs(AllIDs) do
+               if num ~= 0 then
+                   if ID == tostring(Existing) then
+                       Possible = false
+                   end
+               else
+                   if tonumber(actualHour) ~= tonumber(Existing) then
+                       local delFile = pcall(function()
+                           delfile("NotSameServers.json")
+                           AllIDs = {}
+                           table.insert(AllIDs, actualHour)
+                       end)
+                   end
+               end
+               num = num + 1
+           end
+           if Possible == true then
+               table.insert(AllIDs, ID)
+               wait()
+               pcall(function()
+                   writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+                   wait()
+                   game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+               end)
+               wait(4)
+           end
+       end
+   end
+end
+
+function TeleportHOP()
+    while wait() do
+     warn("Teleport HOP")
+        pcall(function()
+            HopServer()
+            if game.ReplicatedStorage.LOBBY_ASSETS._EVENT_NPCS:FindFirstChild("piccolo_npc") then
+                wait(3)
+                HopServer()
+            elseif game.Workspace._npcs:FindFirstChild("piccolo_npc") then
+                Setting.picoHOP = false
+                local a={[1]="veku_jacket"} game:GetService("ReplicatedStorage").endpoints.client_to_server.try_purchase_april_item:InvokeServer(unpack(a))
+                local a={[1]="veku_jacket"} game:GetService("ReplicatedStorage").endpoints.client_to_server.try_purchase_april_item:InvokeServer(unpack(a))
+            end
+        end)
+    end
+ end 
+
+if Settings.picoHOP and game.ReplicatedStorage.LOBBY_ASSETS._EVENT_NPCS:FindFirstChild("piccolo_npc") then
+    TeleportHOP()
+--[[else
+    Settings.picoHOP and game.Workspace:FindFirstChild("_npcs"):FindFirstChild("piccolo_npc")]]
+end
+-------------------------------------------
 coroutine.resume(coroutine.create(function()
 	
     task.spawn(function()
