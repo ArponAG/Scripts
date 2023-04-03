@@ -1942,30 +1942,11 @@ end
 local function LAGGYconfig()
     LG1:Cheat("Label"," Is a BETA Version // Enjoy ")
 
-    --[[LG1:Cheat("Textbox", "Lag KeyBind", function(Value)
-        getgenv().zzz = value
-        saveSettings()
-    end, {placeholder = getgenv().zzz})]]
-
-
-    --[[LG1:Cheat("Checkbox"," Enable LAGGY ", function(bool)
-        print(Settings.LaggyL1)
-        Settings.LaggyL1 = bool
-        saveSettings()
-        Laggy()
-    end,{enabled = Settings.LaggyL1})]]
-
-    --[[LG1:Cheat("Slider", "LAG Value", function(Value)
-        print("LAG Value:", Value)
-        Settings.max = tonumber(Value)
-        saveSettings()
-    end, {min = 150, max = 300, suffix = "", default = 150})]]
-
     LG1:Cheat("Textbox", "LAG Threads", function(Value)
         print("LAG threads.:", Value)
         Settings.max = tonumber(Value)
         saveSettings()
-    end, {placeholder = Settings.max or 160})
+    end, {placeholder = Settings.max or 22})
 
     LG1:Cheat("Textbox", "LAG Tries ", function(Value)
         print("LAG tries.:", Value)
@@ -1973,20 +1954,33 @@ local function LAGGYconfig()
         saveSettings()
     end, {placeholder = Settings.mix or 0})
 
+    LG1:Cheat("Textbox", "Delay ", function(Value)
+        print("Delay.:", Value)
+        Settings.delag = tonumber(Value)
+        saveSettings()
+    end, {placeholder = Settings.delag or 1.5})
+
     LG1:Cheat("Slider", "LAG Lv. [slide]", function(Value)
         print("LAG Lv.:", Value)
         Settings.mix = tonumber(Value)
         saveSettings()
-    end, {min = 0.8, max = 7, suffix = "", default = 0 })
+    end, {min = 0, max = 7, suffix = "", default = 0 })
+
+    LG1:Cheat("Slider", "Delay [slide]", function(Value)
+        print("Delay.:", Value)
+        Settings.delag = tonumber(Value)
+        saveSettings()
+    end, {min = 0, max = 10, suffix = "", default = 1.5 })
+
 
     LG1:Cheat("Label","  ")
-    LG1:Cheat("Label"," HOPE Y'all Enjoy ")
-    LG1:Cheat("Label"," if use LAG Lv. don't set Threads & Tries ")
-    LG1:Cheat("Label"," Set Tries or LAG Lv. to 0 for close LAG ")
-    LG1:Cheat("Label"," threads = lower the faster it lags ")
-    LG1:Cheat("Label"," tries = the higher the faster it lags ")
-    LG1:Cheat("Label"," def settings : threads = 250 ,tries = 1 ")
-    LG1:Cheat("Label"," fast-lag settings: threads = 10 ,tries = 1.5 ")
+    LG1:Cheat("Label"," Set Tries to 0 for close LAG ")
+    LG1:Cheat("Label"," Threads = lower the faster it lags ")
+    LG1:Cheat("Label"," Tries = the higher the faster it lags ")
+    LG1:Cheat("Label"," Delay = lower the faster it lags")
+    LG1:Cheat("Label"," def settings : threads = 250, tries = 1, Delay = 1.5 ")
+    LG1:Cheat("Label"," fast-lag settings: threads = 10, tries = 1.5, Delay = 1.5 ")
+
 
 end
 ----------------------------------------------
@@ -3156,7 +3150,6 @@ function GetUnitInfo(Unit)
 end
 
 --test Upgrade
-
 function upgradeunit(name, min)
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
        if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
@@ -3170,18 +3163,86 @@ function upgradeunit(name, min)
     end
 end
 
+
+--U1
 function upgradeunit1(name)
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
        if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
-            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
                 --if v.Name == name and v._stats.upgrade.Value <= min then
-                if v._stats.id.Value == name then
+                if v._stats.upgrade.Value <= tonumber(Settings.U1_UpgCap or 99) then
                    game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
                 end
             end
         end
     end
 end
+--U2
+function upgradeunit2(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U2_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U3
+function upgradeunit3(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U3_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U4
+function upgradeunit4(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U4_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U5
+function upgradeunit5(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U5_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U6
+function upgradeunit6(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U6_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+
 
 ---------------------------------
 ---------test sell unit----------
@@ -3835,18 +3896,10 @@ end)
 warn("Hider Name Loaded!!!")
 warn("AA v2 Loaded!!!")
 
-
 --testlag
 function Laggy()
-    --[[shared.TeleportToSky = false -- for games that show ur ping (like custom duels)
-    
-    if shared.TeleportToSky then
-    local char = game:GetService('Players').LocalPlayer.Character
-    char.HumanoidRootPart.CFrame = CFrame.new(0,9e9,0)
-    task.wait(0.5)
-    char.HumanoidRootPart.Anchored = true
-    end]]
-    while wait(1.5) do --// don't change it's the best
+    delaylag = tonumber(Settings.delag or 1.5)
+    while wait(tonumber(Settings.delag or 1.5)) do --// don't change it's the best
     game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
     local function getmaxvalue(val)
        local mainvalueifonetable = 499999
@@ -3864,7 +3917,7 @@ function Laggy()
     table.insert(spammedtable, {})
     z = spammedtable[1]
 
-    tableincrease = tonumber(Settings.max or 160)
+    tableincrease = tonumber(Settings.max or 22)
     for i = 1, tableincrease do
         local tableins = {}
         table.insert(z, tableins)
@@ -3890,15 +3943,13 @@ function Laggy()
     end
 end
     
-    tableincrease = tonumber(Settings.max or 160)
+    tableincrease = tonumber(Settings.max or 22)
     tries = tonumber(Settings.mix or 0)
      
     bomb(tableincrease, tries)
 
     end
 end
-
-
 
 if  Laggy() == false then
         Laggy() 
