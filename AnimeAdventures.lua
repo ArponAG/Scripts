@@ -627,8 +627,8 @@ end
 local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
---updatefix
-local Window = Uilib.new(true, "[UPD 11.7.5] Anime Adventures "..version.." - "..exec)
+--updatefix fixmap
+local Window = Uilib.new(true, "[UPD 12.0.0] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightControl)
 local Home = Window:Category(" 📋 Home")
 local Developers = Home:Sector("Anime Adventures")
@@ -3668,7 +3668,7 @@ end
 
 --open unitconfig
 
-coroutine.resume(coroutine.create(function()
+--[[coroutine.resume(coroutine.create(function()
     while task.wait(1.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and Settings.unitconfig and not getgenv().disableatuofarm then
             warn("Enable Unit Config")
@@ -3696,10 +3696,10 @@ coroutine.resume(coroutine.create(function()
         print("function called")
         end
     end
-end))
+end))]]
 
 ------------------------------------------------------------------------------------------
---updatefix fixmap
+--updatefix fixmap warn("Enable Unit Config")
 coroutine.resume(coroutine.create(function()
     while task.wait(1.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and Settings.unitconfig and not getgenv().disableatuofarm then
@@ -3752,13 +3752,15 @@ coroutine.resume(coroutine.create(function()
         end
     end
 end))
+
+--warn("Disabled Unit Config")
 coroutine.resume(coroutine.create(function()
     while task.wait(1.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and not Settings.unitconfig and not getgenv().disableatuofarm then
-            warn("Disabled Unit Config")
+            warn("ปิด ฟังชั่น ตั้งค่า Unit")
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
-           if game.Workspace._map:FindFirstChild("namek mushroom model") then
+            if game.Workspace._map:FindFirstChild("namek mushroom model") then
                 PlaceUnits("namek")
             elseif game.Workspace._map:FindFirstChild("houses_new") then
                 PlaceUnits("aot")
@@ -3804,7 +3806,6 @@ coroutine.resume(coroutine.create(function()
         end
     end
 end))
-
 
 --hide name
 function hidename()
