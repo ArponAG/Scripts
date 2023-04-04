@@ -2966,19 +2966,19 @@ coroutine.resume(coroutine.create(function()
                 pcall(function() webhook() end)
                 print("Wait next or leave")
                 task.wait(2.1)
-                if Settings.AutoNext then
-                    local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                    local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                    print("Next Story...") 
-                elseif Settings.AutoReplay then
-                    local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                    local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+            if Settings.AutoReplay then
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
                     print("Replay...") 
-                elseif Settings.AutoContinue then
-                    local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))
-                    local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))   
+            elseif Settings.AutoNext then
+                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    print("Next Story...") 
+            elseif Settings.AutoContinue then
+                local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))
+                local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))   
                     print("Next Room infint Castle...")              
-                elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext and not Settings.AutoContinue then
+            elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext and not Settings.AutoContinue then
                    game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
                 
                     Teleport()
@@ -2987,6 +2987,7 @@ coroutine.resume(coroutine.create(function()
             end
         end)
     end)
+    
     while task.wait() do
         if getgenv().AutoSummon then
             if getgenv().SelectedBanner == "Special" and getgenv().SelectedMethod ~= nil then
@@ -3019,9 +3020,9 @@ end))
 
 function PlacePos(map,name,_uuid,unit)
     if Settings.AutoFarm and not getgenv().disableatuofarm then
-        local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+        --local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
         x = getgenv().posX; z = getgenv().posZ
-        world = GetLevelData.world or GetLevelData.name
+        --world = GetLevelData.world or GetLevelData.name
 			--print(tostring(world))
             print(map)
         local pos = Settings[map][unit]
@@ -3090,7 +3091,7 @@ function PlacePos(map,name,_uuid,unit)
                     task.wait(2)
                     local args = {
                         [1] = _uuid,
-                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
+                        [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y2"], pos["z"]) )
                     }
                     game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                 end)
@@ -3570,9 +3571,9 @@ end
 function PlaceUnits(map)
     pcall(function()
         if Settings.AutoFarm and not getgenv().disableatuofarm then
-            local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+            --local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
             x = getgenv().posX; z = getgenv().posZ
-            world = GetLevelData.world or GetLevelData.name
+            --world = GetLevelData.world or GetLevelData.name
 			--print(tostring(world))
             print(map)
             for i = 1, 6 do
@@ -3594,7 +3595,7 @@ function PlaceUnits(map)
                         --place units 1
                         local args = {
                             [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
+                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y2"], pos["z"]) )
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
             
@@ -3615,18 +3616,19 @@ function PlaceUnits(map)
                         --place units 4
                         local args = {
                             [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y5"], pos["z"] + z) )
+                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y5"], pos["z"]) )
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
             
                         --place units 5
                         local args = {
                             [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y6"], pos["z"] + z) )
+                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y6"], pos["z"]) )
                         }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
     
                     elseif unitinfo_[1] == "metal_knight_evolved" then
+                       
                         task.spawn(function()
                             --place units 0
                             warn("p1" )
@@ -3636,17 +3638,17 @@ function PlaceUnits(map)
                             }
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                         end)
-    
+                  
                         task.spawn(function()
                             --place units 1
                             task.wait(2)
                             local args = {
                                 [1] = unitinfo_[2],
-                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"] + z) )
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]) )
                             }
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
                         end)
-    
+                   
                         task.spawn(function()
                             --place units 2
                             task.wait(3)
@@ -3757,7 +3759,7 @@ end))
 coroutine.resume(coroutine.create(function()
     while task.wait(1.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and not Settings.unitconfig and not getgenv().disableatuofarm then
-            warn("ปิด ฟังชั่น ตั้งค่า Unit")
+            warn("Disable Unit Config")
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
             if game.Workspace._map:FindFirstChild("namek mushroom model") then
