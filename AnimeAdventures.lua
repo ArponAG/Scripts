@@ -49,7 +49,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
 ------------------------------
 ------------item drop result
-local ItemInventoryServiceClient = require(game.ReplicatedStorage.src.client.Services.ItemInventoryServiceClient)
+--[[local ItemInventoryServiceClient = require(game.ReplicatedStorage.src.client.Services.ItemInventoryServiceClient)
 function get_inventory_items_unique_items()
 	return ItemInventoryServiceClient["session"]['inventory']['inventory_profile_data']['unique_items']
 end
@@ -89,20 +89,20 @@ for i,v in pairs(Data_Units_All_Games) do
 end
 for i,v in pairs(get_inventory_items()) do
 	Table_All_Items_Old_data[i]['Count'] = v
-end
-for i,v in pairs(get_inventory_items_unique_items()) do
-    if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
-        Count_Portal_list = Count_Portal_list + 1
-        Table_All_Items_Old_data[v['item_id']]['Count'] = Table_All_Items_Old_data[v['item_id']]['Count'] + 1
-    end
-end
-for i,v in pairs(get_Units_Owner()) do
-    Table_All_Items_Old_data[v["unit_id"]]['Count'] = Table_All_Items_Old_data[v["unit_id"]]['Count'] + 1
-    if v.shiny then
-        Table_All_Items_Old_data[v["unit_id"]]['Count'] = Table_All_Items_Old_data[v["unit_id"]]['Count'] - 1
-        Table_All_Items_Old_data[v["unit_id"]]['Count Shiny'] = Table_All_Items_Old_data[v["unit_id"]]['Count Shiny'] + 1
-    end
-end
+end]]
+--for i,v in pairs(get_inventory_items_unique_items()) do
+    --if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
+        --Count_Portal_list = Count_Portal_list + 1
+        --Table_All_Items_Old_data[v['item_id']]['Count'] = Table_All_Items_Old_data[v['item_id']]['Count'] + 1
+    --end
+--end
+--for i,v in pairs(get_Units_Owner()) do
+    --Table_All_Items_Old_data[v["unit_id"]]['Count'] = Table_All_Items_Old_data[v["unit_id"]]['Count'] + 1
+    --if v.shiny then
+        --Table_All_Items_Old_data[v["unit_id"]]['Count'] = Table_All_Items_Old_data[v["unit_id"]]['Count'] - 1
+        --Table_All_Items_Old_data[v["unit_id"]]['Count Shiny'] = Table_All_Items_Old_data[v["unit_id"]]['Count Shiny'] + 1
+    --end
+--end
 ----------------Map & ID Map
 local function GetCurrentLevelId()
     if game.Workspace._MAP_CONFIG then
