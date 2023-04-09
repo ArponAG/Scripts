@@ -172,64 +172,64 @@ function webhook()
     
     totaltime =  ResultHolder:FindFirstChild("Middle"):FindFirstChild("Timer").Text
     totalwaves = ResultHolder:FindFirstChild("Middle"):FindFirstChild("WavesCompleted").Text
-    local TextDropLabel = ""
-	local CountAmount = 1
-    for i,v in pairs(get_inventory_items()) do
-        Table_All_Items_New_data[i]['Count'] = v
-    end
-    for i,v in pairs(get_inventory_items_unique_items()) do
-        if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
-            Table_All_Items_New_data[v['item_id']]['Count'] = Table_All_Items_New_data[v['item_id']]['Count'] + 1
-        end
-    end
-    for i,v in pairs(get_Units_Owner()) do
-        Table_All_Items_New_data[v["unit_id"]]['Count'] = Table_All_Items_New_data[v["unit_id"]]['Count'] + 1
-        if v.shiny then
-            Table_All_Items_New_data[v["unit_id"]]['Count'] = Table_All_Items_New_data[v["unit_id"]]['Count'] - 1
-            Table_All_Items_New_data[v["unit_id"]]['Count Shiny'] = Table_All_Items_New_data[v["unit_id"]]['Count Shiny'] + 1
-        end
-    end
-	for i,v in pairs(Table_All_Items_New_data) do
-		if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
-			if v['Count Shiny'] and v['Count'] then
-				if v['Count'] > 0 or v['Count Shiny'] > 0 then
-					if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
-						TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count'])
-						if v['Count Shiny'] > 0 and (v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) > 0 then
-							TextDropLabel = TextDropLabel .. " | " .. tostring(v['Name']) .. " (Shiny) : x" .. tostring(v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) .. "\n"
-                            CountAmount = CountAmount + 1
-                        else
-                            TextDropLabel = TextDropLabel .. "\n"
-                            CountAmount = CountAmount + 1
-						end
-					end
-				end
-			end
-		elseif v['Count Shiny'] and v['Count Shiny'] > 0 and (v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) > 0 then
-			TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " (Shiny) : x" .. tostring(v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) .. "\n"
-			CountAmount = CountAmount + 1
-		end
-	end
-    for i,v in pairs(Table_All_Items_New_data) do
-		if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
-            if v['Count Shiny'] and v['Count'] then
-			elseif string.find(i,"portal") or string.find(i,"disc") then
-				Count_Portal_list = Count_Portal_list + 1
-				if string.gsub(i, "%D", "") == "" then
-					TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
-				else
-					TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " Tier " .. tostring(string.gsub(i, "%D", "")) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
-                end
-				CountAmount = CountAmount + 1
-			else
-				TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
-                CountAmount = CountAmount + 1
-			end
-		end
-	end
-	if TextDropLabel == "" then
-		TextDropLabel = "Not Have Items Drops"
-	end
+    --local TextDropLabel = ""
+	--local CountAmount = 1
+    --for i,v in pairs(get_inventory_items()) do
+       --Table_All_Items_New_data[i]['Count'] = v
+    --end
+    --for i,v in pairs(get_inventory_items_unique_items()) do
+        --if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
+            --Table_All_Items_New_data[v['item_id']]['Count'] = Table_All_Items_New_data[v['item_id']]['Count'] + 1
+       -- end
+    --end
+   -- for i,v in pairs(get_Units_Owner()) do
+        --Table_All_Items_New_data[v["unit_id"]]['Count'] = Table_All_Items_New_data[v["unit_id"]]['Count'] + 1
+        --if v.shiny then
+           -- Table_All_Items_New_data[v["unit_id"]]['Count'] = Table_All_Items_New_data[v["unit_id"]]['Count'] - 1
+           --Table_All_Items_New_data[v["unit_id"]]['Count Shiny'] = Table_All_Items_New_data[v["unit_id"]]['Count Shiny'] + 1
+        --end
+    --end
+	--for i,v in pairs(Table_All_Items_New_data) do
+		--if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+			--if v['Count Shiny'] and v['Count'] then
+			--	if v['Count'] > 0 or v['Count Shiny'] > 0 then
+				--	if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+					--	TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count'])
+					--	if v['Count Shiny'] > 0 and (v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) > 0 then
+					--		TextDropLabel = TextDropLabel .. " | " .. tostring(v['Name']) .. " (Shiny) : x" .. tostring(v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) .. "\n"
+                      --      CountAmount = CountAmount + 1
+                      --  else
+                       --     TextDropLabel = TextDropLabel .. "\n"
+                       --     CountAmount = CountAmount + 1
+					--	end
+					--end
+				--end
+			--end
+		--elseif v['Count Shiny'] and v['Count Shiny'] > 0 and (v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) > 0 then
+			--TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " (Shiny) : x" .. tostring(v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) .. "\n"
+			--CountAmount = CountAmount + 1
+		--end
+	--end
+   -- for i,v in pairs(Table_All_Items_New_data) do
+		--if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+          --  if v['Count Shiny'] and v['Count'] then
+			--elseif string.find(i,"portal") or string.find(i,"disc") then
+				--Count_Portal_list = Count_Portal_list + 1
+			--if string.gsub(i, "%D", "") == "" then
+					--TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+			--else
+			--		TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " Tier " .. tostring(string.gsub(i, "%D", "")) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+               -- end
+				--CountAmount = CountAmount + 1
+			--else
+				--TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+               -- CountAmount = CountAmount + 1
+		--	end
+		--end
+	--end
+	--if TextDropLabel == "" then
+		--TextDropLabel = "Not Have Items Drops"
+	--end
     
         local data = {
             ["content"] = "",
@@ -260,12 +260,12 @@ function webhook()
                             {
                                 ["name"] ="Rewards :",
                                 ["value"] = "```ini\n" ..comma_value(gold).." Gold 💰\n"..comma_value(gems).." Gems 💎\n"..comma_value(xp[1]).." XP 🧪\n"..trophy.." Trophy 🏆```",
-                            },
-                            {
+                            }
+                            --[[{
                                 ["name"] ="Items Drop :",
                                 ["value"] = "```ini\n" .. TextDropLabel .. "```",
                                 ["inline"] = false 
-                            }
+                            }]]
                         }
                         }
                 }
