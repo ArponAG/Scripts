@@ -16,13 +16,21 @@
 		detourious @ v3rmillion.net
 		deto#7612  @ discord.gg
 
-	0.9				
+	0.8				
 --]]
 
 local aaa = game:HttpGet("https://tr.rbxcdn.com/8d2e44c592feea3fc10d94a4e3d6459c/420/420/Image/Png")
 writefile("circle.png", aaa)
-local getasset = getsynasset or getcustomasset or function(id) return "rbxasset://3570695787" end
+--local getasset = getsynasset or getcustomasset or function(id) return "rbxasset://3570695787" end
 
+function getasset(id)
+    local exec = tostring(identifyexecutor())
+	if exec == "Synapse X" then
+        return getsynasset(id)
+	else
+		return "rbxassetid://3570695787"
+	end
+end
 
 local finity = {}
 finity.gs = {}
