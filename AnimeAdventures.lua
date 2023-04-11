@@ -2148,6 +2148,16 @@ if Settings.setfarmIC then
 
 function others()
 
+    OtherSec:Cheat("Button", "Leave To Lobby", function()
+        warn("Return to Lobby")
+        Teleport()
+    end)
+
+    OtherSec:Cheat("Button", "Redeem All Code", function()
+        print(Settings.redeemc)
+        Reedemcode()
+    end)
+
     OtherSec:Cheat("Checkbox","⌛ Auto Load Script ⌛", function(bool)
         Settings.AutoLoadScript = bool
         saveSettings()
@@ -2167,12 +2177,26 @@ function others()
         autoDailyquest()
     end,{enabled = Settings.autoDailyquest})
 
-    OtherSec:Cheat("Checkbox","Find Picoro [HOP]", function(bool)
+    OtherSec:Cheat("Checkbox","Auto Feed EGG ", function(bool)
+        print(bool)
+        Settings.AutoFeedEgg = bool
+        saveSettings()
+        --FeedEggA()
+    end,{enabled = Settings.AutoFeedEgg})
+    
+    OtherSec:Cheat("Checkbox","Auto Claim EGG ", function(bool)
+        print(bool)
+        Settings.AutoClaimEgg = bool
+        saveSettings()
+        --ClaimEggA()
+    end,{enabled = Settings.AutoClaimEgg})
+
+    --[[OtherSec:Cheat("Checkbox","Find Picoro [HOP]", function(bool)
         print(bool)
         Settings.picoHOP = bool
         saveSettings()
         TeleportHOP()
-    end,{enabled = Settings.picoHOP})
+    end,{enabled = Settings.picoHOP})]]
 
     --[[OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
         Settings.deletemap = bool
@@ -2180,16 +2204,6 @@ function others()
         DelTer()
         DelMap()
     end,{enabled = Settings.deletemap})]]
-
-    OtherSec:Cheat("Button", "Leave To Lobby", function()
-        warn("Return to Lobby")
-        Teleport()
-    end)
-
-    OtherSec:Cheat("Button", "Redeem All Code", function()
-        print(Settings.redeemc)
-        Reedemcode()
-    end)
     
 end
 ----------------------------------------------
@@ -3868,6 +3882,55 @@ if Settings.autoDailyquest then
     autoDailyquest()
 end
 
+--AutoFeedEgg
+function FeedEgg()
+    if game.Workspace.EasterArea:FindFirstChild("leaderboard") then
+    eggs = {"easter_egg_1","easter_egg_2","easter_egg_3","easter_egg_4","easter_egg_5","easter_egg_6"}
+        for _, v in pairs(eggs) do
+        pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["feed_easter_meter"]:InvokeServer(v)()    end)
+        end
+    end
+end
+
+function FeedEggA()
+    print("Feed Eggs")
+        pcall(function()
+            FeedEgg()
+            wait(1)
+            FeedEgg()
+        return FeedEggA()
+        end)
+    end
+
+if Settings.AutoFeedEgg then
+    FeedEggA()
+end
+
+--AutoClaimEgg
+function ClaimEgg()
+    if game.Workspace.EasterArea:FindFirstChild("leaderboard") then
+    eggs = {"easter_egg_1","easter_egg_2","easter_egg_3","easter_egg_4","easter_egg_5","easter_egg_6"}
+        for _, v in pairs(eggs) do
+        pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["claim_easter_meter"]:InvokeServer(v)()    end)
+        end
+    end
+end
+
+function ClaimEggA()
+     print("Claim Eggs")
+        pcall(function()
+            ClaimEgg()
+                wait(1)
+            ClaimEgg()
+        return ClaimEggA()
+        end)
+    end
+
+if Settings.AutoClaimEgg then
+    ClaimEgg()
+end
+
+
 --ReedemCode
 function Reedemcode()
     codes = {"TWOMILLION","subtomaokuma","CHALLENGEFIX","GINYUFIX","RELEASE","SubToKelvingts","SubToBlamspot","KingLuffy","TOADBOIGAMING","noclypso","FictioNTheFirst","GOLDENSHUTDOWN","GOLDEN"
@@ -3883,6 +3946,12 @@ end
 
 --disms
 if game.PlaceId ~= 8304191830 then
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+end
+--disms
+if game.PlaceId == 8304191830 then
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
     game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
