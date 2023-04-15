@@ -2191,12 +2191,12 @@ function others()
         --ClaimEggA()
     end,{enabled = Settings.AutoClaimEgg})
 
-    --[[OtherSec:Cheat("Checkbox","Find Picoro [HOP]", function(bool)
+    OtherSec:Cheat("Checkbox","Find Picoro [HOP]", function(bool)
         print(bool)
         Settings.picoHOP = bool
         saveSettings()
         TeleportHOP()
-    end,{enabled = Settings.picoHOP})]]
+    end,{enabled = Settings.picoHOP})
 
     --[[OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
         Settings.deletemap = bool
