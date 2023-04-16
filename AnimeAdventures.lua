@@ -23,7 +23,7 @@ end
   -- End of Loading Section
   
   -- Start of Save and Read Settings Function
-local a = 'Anime_Adventures' -- Paste Name
+local a = 'V2_Anime_Adventures' -- Paste Name
 local b = game:GetService('Players').LocalPlayer.Name .. '_AnimeAdventures.json' 
 
 Settings = {}
