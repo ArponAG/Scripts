@@ -1,1 +1,4036 @@
-([[This file was protected with MoonSec V3 by Federal#9999]]):gsub('.+', (function(a) _kdECQw_cSYoV = a; end)); mOYnSUsQxHCvkm_S=_ENV;ywnEpQuvOStbiJK='zJNHhd-jWO> STB3WSBS-NTWdJSjH> ,N-v3WjB>oJjWB>-wT->BH >SJHNj>WJaW-3SjASOh  >JJWd^O>d#HjTBHd3B hWBO- TNhW B>NJ3-N3TW-3HdjS-Nj>HHW jNO>>JhNJT36>Wl3-->SShBShH->3BSdjSTW-B jj>hdHS hS -HOOSNdOO8JWhB -TBNdBSdhhSp3fO JTOJSOdJ3W-SBJd-O3J jOJHOOJBW CWWN3jNOTThjSdhUjj33>NJHWT3 hTB--BTHdNSBhd WNJ>dT-W>6O- )JWhB>-mT-h> 5HNOTJjWhT h T-dHT d> TuB jN->TNNOWXBWh3>jpT-O TdhB BHh>>JBWWx.-TBW-hBj-HTch- SH/OB63WOVgjhBJdSS dOSBhh >H!>-JSONhWWJ3O->Bsd-S>N O JTW JTO 5-jS3N--SShd>TN-> NNO-6HjBBTjT3---TSdNH  NN-OHYBjTW3ujjWBB-hhB JNW>WJjNOOBJhW>l7j-SSTJJWdJSWH> (N-J?W 3W-HjdB>-qT-hSSNHW>BNhOTJWW-3SjNB-NWS>hp N33OHJWO JdWh3>jfhSS hh>TJ3OjJNNH ^{SWN3W-S Hh SJH-OJJOWT33-OAgjhBJdSS hTOWN3>uJ-WTASdd3BjhBW-TBhd-SShNJ O-ndWSOHHBjS3N-WTSN> hN > SBW>7HjSB JSBOhOTJ3h >HN>dNAWj3 WNBOdBOFdTSdh- !TBWJJOW3Khd3Bjd WBH>WT3}>WHddNBBWH3W-33NdjTWMdOJ2jjT3H3NNhO>JkOW+jjNBWdBTWh>SLH- NNOOWLBWhNOj5BjdSTNhWSNjH>>NDO-H WN3O-BBhOHTsh- SHN>WJBOh.>>N3--TBNdWSBhh >H2 jJSONrWjB3h- B)j-BOhN WNB>hJ>OjQ-WBJJ-WT3dhT hu -NS hHNWB:-j>3h--TSdNSBON hNT>0JjWS?HjWB3-hT>dBS-HS NNOOBJhW><, TBS-hTWdsShH  UHW -JNW>3BWhB>-QT-dBTOHW JNh>jJsW-3SONBTdBTjh>SHH->TNN>>J3Wh3Bj63hdSTNhWTBh >>NhO-JGWNQ -B3---Tph  SH3>WJBOhN>OT3-jJBNdTSBdO >hNShJSOWuWW 3h->B8j-TdhN BNB>>J>ON^-jS3T-WBddhS>hs -NS hN WBISj>DJ--TSdNT>dW hHH>INdWSoNjW&5jBT>d>S-hH NNWOBJWOeGtjBBSWNTWh3ShH>ShN->WJNWT3BjhB>-?T-hSS3HW ONhO>JnW-,HjN3hdBT-h>SNH->SHjOWJdWhGdj93NdSTNdj BH >>NSO-JjWN3SjNBh-NTc-r SHH>WJBT3t>WW3-jhBNdWSBh>8BHA>BJSON*Wj33hj&BDd-T>hN WNB>-J>OLr-jSF,-WTBdhSBhM -NS>NN-WB:hj>3W--TSdNSWhS hN>>8JOWS&NjWBBjNT>dcS-hH NNWOBJhOWuyj-BS-HTWhBShH>3ON->dJNO_3BjhB>-CTWhSSSHW>BNhO>JiW-#OjN3JdBT-h>SNH->SH-OW:BWhtHj.B-dSTNdH BHh>>NNO-KSWN3WW-Bhd>Txh- SHN>WNN>h+>WA3->3BNdOSBd-B7HR>-JSOW^WjB3hW>JSd-SShN WNB> J>>NJSjS3N-WBjdhS>h.SWHO>NJWWBt>j>3p--3Sd-SWHB hN>>6N9WSJhOdBB-hT>dWS-HS NNW -JhW>Y_jjBS-NTW-LS H> {N- 4JNWW3BW-Js-CT-hSSdHW>BNhS)H W-3SjNNHdBTdh>T-H- c-JOWtBWhHdjRBjdST-Wj BHh>>dSO-bTWN3W>hBhd>Tshj SHN>WHt >+>W*3-jWBNdWSBd-T>HQ>jJSOTwWjB3hW>B3d-SThN ONB -J>>NNHjS3d-WBHdhS>ho -NB>NJOWByjj>3#--TS-3SWHB hN>>CJWWSgNjTBB-hT>dJS-HT NNWThJhW>m=jjBS-NTWhBS-H> <N->HJNWW3BjdB>-6T-hSSNHWOB-HO J8W-3SjNBWdBThW>SJH->SNNOWyBWh-> !BOdSTNhW BHj> N%O-)SW?3 jhBhd>To OH?>hJJWS3 sTWd3--SBNSSN3>-N-OdT>JSONeWjBJO->BJd-SShN WNB>hNBO^rWjS3N-WTBdhS>-H -NT>NJ>WBG-j>J-OjTSdHSWhh hN >fJTWSa- jBB-hT>d-S-HT NNSTTJhW>GxWHBS-HTWhBBOH> JN-OTJNWW3Bjh3B-*TWhSSNHW>BNh>x-hW-33jNBWdBTdh>SNH->SHlOW{BWh3>j_B-dSTNW* BHh>>NNO-YSWN3WjhBhd T4hO SHH>WNNTH1>W_3-OBBNdOSBhhT3Hy>jJSON(WjB3h->3hd-SBhN WNB>hJ>OKNOjS3H-WB8dhSSh5TSdj>NJOWBH-j>3J--BNdNSSjT hN>>9hWWSoHjWBBOjT>dJS-HS NNWOBNNTOLZjjBSOhTWh3ShH  ZN>T JNWW3B>-B>-JT-hSBjHW>3NhOTJbW-3SjN3NdBT-h>SXH->SNN>>V3Wh3Tj7BjdSTNhWTEhm>>NhO-?TWN3W-BBhdTTMhj SH->WN,OhHVWO3--TBNjdSBhd >Hd>-N}TJKWjB3hWjB7djSSh-3jNB>hJ>SN<-jT3Nj>N dhS hL >NS>NJW>RdJj>3N--TBdNSWHB hdT>XJOWSrNjWBB-hBSOTS-hv NNOOBJhW>fh hBS-hTWj3ShH  iN- !JNWB3BjdB>-(T-hSTTHW dNhOBJ=W-3SjNB dBTSh>ShH->SNNOWNOWh2Hj{BOdSTNhW BH>>>N>O-%SWN3W-BBhjdT4dJ SHj>WJBOhM>Wd3-jWBNdTSBhh >H5SfJSO +WW>3h-SB?d-<3hNS,NB>SJ>OOi-jS3H-WBjdhS3hV -NS>NNTWBtSj>3W--BddNBWhH hHN>mJBWSldjWBB->T>djS-hH NHeOBJhOj/6jjBS-WTWddShHB hN-OBJN>>3BjdB>-sJShSSHHW ,NhO>JXW-hNjNBWdBT-h>S!H->SdWOWABWh3 jKB-dSTHhO BHh>>NFO-ESWN3B-BBhd>T6j> SHh>WJBOhw>Wg3-j BNd SBhd >Hb>-JS>BVWWN3h- B)d-SShNS NB>jJ>ON(-jB3N-WB-dhSSh4 -NS>dJWWBKdj>3X--TTdNSWHB -N>>VJ-WS0NjWBB-hTSd{S-HS NHhOBJhW>aqj-BS-NTWWhShH> =NjOSJNWW33jhB>-eT-';judQGXVjWvypROICQ='oB.M}0+r6bn ?Th2.?Tbn.0TB}?nMhM+22 .+B.?T b 0}?6?a}i2? +r*.0..T26T}0Snr660Fr2.n20TB0Tn}60BTr?.r2.Th0nnB6.+nrb.}22T 0rnh6hMrr+.B2?T60}n 6 h}rM.h2bT00Bn666nBrA. 2+T.0hn060rhbb60}BM?06M}M.hh bb0BB+6}6?B0?.6rr..2TTb00n?6?+0b0B>T60r .+hBbh0B?+?h0+d??06B...Wh00%06hB??}MEM?r T+6.Mh!bMW6Bzb6}+}6  nr+PT6TMbn}n?! 2Mb2h;er0+Bhnn.++B}B+6br62h r+z0h.M6hb+B2an6B}Bhnhbr .&Brbr06BB? rTMM2b +r}.2hr6nb!}T2  Mr6h+2.rr+.Tb?T}.}02?r6+2hbnh t.MQ2??0}YMT.rh6V.r MbrB*Bh??6M}+ . B}Mh6T202Bh.5?60B22 0rnr?2.nnbM..?+Tr6.MT2nnT...n .+8+.TrbBrT2.hT }+}TnTb0MB6Bn6hrb%. n6I.hMEnM+.BrTcrnr6MTn6 ;Mb.}b 0 P}ZMb0MnMB ErB.hh br}TB}TB6+}s-Bn}nn+rB0?Tb.;Dq?bBr?2Mhr0?02B+b.6b&M?6?nMh2+h.rYBTh?b6bnJT?+60+?h}2.n90rBn6+60Br ? MM.2.2}+r0}A 6T}MI6kn6MM+2+n?0}0nBr?0rT}. Nn2}B2Mn2+ B2Tr6y6MMnnh +rBMFb+b}}0,b  6?Mn2B }.pBh?2bM}0T26?6hUBnn rM .?hBbn0 HT ?rb}4?Mnr+nBnbI620uBB Tr M.n+n0B2h+h?+0B. ??nr6.22.0h0Th2b}6 *n?n??}!*ln +B.+.6bT0?}S??r.r6M0hMb +d?h?T02B.?h6MMT26bhnB06??T}62}h } .+M.rTbnn0612T.MhM?hT B+M2Tnnn?B2?6TB0b26h?rh+m2+T}+MBTT? ?} W0 2n}MMhTn+6?B T0b0r}(M ?r20?2Mn?6nBbT.6Tr._B  r60n2snM66BrTB6?rX22 brr06h?n+6+B0Tg6b+hz. hb?. h0n+6}BM??6T+?2nhVr}0}hMbT0 M?? 60}}.} M+T.nC?b 0}BM2}6MMT2+T?+ .}hB?}0+M6?26b++20nh+?}hh0bTr?< ?06.+}26 0b..rhB?C00=6hhrTM+2.T++?.Bv}bM}T7rh?r M}2rT}+MBTTb ?}nMm?}n}MMhTn 6?B T0b}r}/M Trn0?h n}+M}}TM6T}+.?  r}MBB}n066BrTB62rx22 brb06h2n66+B ?h }} FMh.rB. hT?n02B0266h}r.+ 0+hMB-hnM0nM?? 60}M.} .b6.?Y?b 00BM2}6MMT2?T?+ .0h.?}0My?? n?M 20nhb}.MT?bbr?Oh2<6r}SBhnT+6.B<+b0}2ehhhrTM+2BT++0BhTb h}T:+?kn+MThhT}+MB?T2 ?0M_ThnrbM.2.T.+BBnTn n}2*+h6r+0?h2Tt02BbT6 6}2yrh+rTM+B}nM0?Bh2?6 }}22h}r606h2nb6+B0?26b+h2T rrJ0+hTnr6}B TM .}B2  nbn.bhMb?6.BbTM V}r22Th+T.rhr?+00lh?Tnh}.2hT?+ .+hX?}0MvT??n?Mn.Q Mb}.MTTb?r?BM? nn}B2nT6+r.Uh.?x}2D6?Mn6M?B?n +}.MO}bM}T&+h?r M02MT}+MB?Tr ?} D0?.n}MMhTn?6?B T06hr}z6?Mn.M62.TS02BbT  6}T&.h+r?.hB}nM0TBb2?6 }+)ch}rrBh2BT0b6}6 h TrhM2h +8022Bb+6T_T???hr.. nT+M.6.nbT0 }}2?r}r?402Q+r.rTLT+bM}B2b h.?.  T+ .}Thbn0r2?22 +.nM.hTn?B.Bl?B60Mr#6 ++TM_b?bn} l2?B0 c6KnrT.+.6 rbn+MB+?0bdM222 6.?..nBbh0 qb?B6+2}2M60M.M}n++B,nB/?Tr MM26++++.2h.bB0?/ ? 6}2L26+?+?hBTr+b} ? ?6M}}dhT +rB.6Th}n}6T6? 6r.hnhn0.r..bn6TX2???h}=2 nTnM++B+6?bT}6VM?ErMh62+nh+ B06n66}T 6 hr .bhBn+B}B.n0b>w}?+?6Mn20nrnB06T}?n0TBr +nnMTh}n0nn06L2T.MhMn)} B+r. bnbb0?A?6.66}02Mn rNThTT+2}TT}?.bM}62Mrzrsh}n+n6BnT06r}BMh2 nb+B.+b}bM.0Bs6}r 2b2MnnBhB?n2+bz62?6?M+}.2tnr+nT+T0+r0-??nb6.M2?6 bMh.nTb0A}r?0  r?MThbnr0hT.T3+MBT ? q}Bhn2+n}0 Bh6n6bB 2TT^}bh6T?+nB+BMT}b0}B22 +.n.6  r0B}36b?}.}h2? Mr+h.2UbB00srnB6}}T(tn2rn.bhbn.B+5T6h6n22>.n2r6MMhnn7P?L?660.:/2? B+hh6T?0?06T/?M}BMr2nnn.xB2hwnB}T; ?.M+M}?r6B.AB}n+}h0nA6 26.hhhTr2r>BBT06r}b{n? rrM0h?+-0h2Bn }nMh??r66}M.hbn?B6BrnbbnM 22 B+bM+nnbT.}B.hMb6}M?C?HM}2+26+n.0TrbB} MbTB 0r6.6bhn}+Bi2?r6?2nL.6 r+hnn?nh.#h.6T6nMM5pnb}M.0bnbb0?e?6.6B}}2}+n+b.?T?0.0BB}?}MnMb2?n?...Bh.nM}2lT?}M6Mr Br6rh2rn}}h0?an?B6}2%h26B.+BTb?0?0hTB6?MT2M 6 nMBBrnC}n0 ^+?BrhMBn+nhM+h}h+0nBnT.r+rBM6h60h0TTrb?bhBB2? n+2g} . }0nB+?h}}}.irr.rnLMhh+0.0?h?T02*}2 r }f2? r+BBrh-b 0+BB?r+hr}MBT2br0??nTi0 }+ T B.+.bhU0?0M?Tb.b}a62.6wM?hr }+2B?BhbB}2M+?.+6r+.}T bh_nPbb }OMr rr+r6B2T+0r<TT.T}rbpt nr Bh.}hB62}rk?rnrb1  nrbMMh+nM}n}T9}r66pM 2n+*0ha2TM600+*}  rhhnh6bb0Tq2nb0+06? r}6.d0nnnn+0.}6nb6lr2b?;rNh+T2r2}.#}66bB}h +?}}0.bh?b?B.BBT.bMM22T }.6.rnB+6+hhrb}Mh}?2n Br}hdT2rBB+lT6T}?}h?Br?M?hrbT+.+}Tb?.0Mibnh }rBB2Trb?qn4bb }290?Mrr.#.MTn}h0+BBTRM+M}h0nb0 .?TnbB0}?! h+2MMh0r2.?.hnB}n}bc? ?M.MB2. M02T}TM+05nVB6M}m}. 0+2.2T bB0+062?6+Mh26n.nnMMBhb0002hv}?B+2.rh?0n0bh nR0bB}?66+.n.Th}06+RB Tn}1Mhh2 M+0M+h}b 0h?n?6rbMTh26bM+M6n 0}0MB+?+M?M 2hnh.}.Mh+b+W?q ??6TMbnhnTM2h}T 0TBnB?b1r?;+ 0+ M;M.n?02Bhs6r?6}CT26+2.2T6hbb}}2I? 2M}M??}r.r}hrn.6?-}22?+r+h?h +0.n.?b20?B}T.b.}>}.h0+2. T.Tsb0WF56bBr?2M M0?0 hTb.6b*b?n6}}}h2n0+T.nhBbn062?Y. 2+T.0hn060nhbT}} M2 } r+hhnhB0 .J..b000BB?nr0}}232.b+0B{ 6.bKMh20 6.}.M 00n0BTWbYb._0?}rB.rh?hhbB0fTrrh6}}Bh2nr+?TnTb+ B TMbV}2UrnnnT+}T6hAb 0n?4 h+2MMh0 ++}B Th}n}62b T+2Ib + 6. T}?2+000BI?6rbM6h rb0T.<TE}+}0Z+?rrMMBh60?0 T0b?n.B ?6r.6f.hh0n6B}BMn0}n}B?B6/6.2n B+BBrT?Th0}*?20 N.6.hh bb0BB+6}6MB0?+60M620 .0}0r>h6.6n}0s}+n+6BbTT62+{Oh?0662}2.nM+rBb M+D+.T0rh6?y22Mn r}.tTbb?0h?. T6}M}nnn +M.?T6bB0}B+6.MTDbhT 3+tT+T0b+0rsMr6rrybnhn0.}h}h+0bBbTMr2M02n2?njM)B}b2}+}hTr?.Mb2bn.n6+0BM? bx2h2T62MT22 rrBB}Br?h}.}nK0?}.n.6TbbT}2.{?h60}6 } .+M.rTbrM.G..b0Mh}}?2?r6M2 T2n.0.?6?r6nMn <n2r...b6br0njn6Nr2}.2.+6+r2bbhb0B}TTbB}b2  BrnMr2Mn}+Mf6Or?nrn2Z2.+?+ThBnTb600ZM  6;hh2+r2rrMMn bv0MB;r6rr_b + 6.nh^bhna}6j.r+r}Mbn}nn+rB0?Tb.1!2hbBrn2+?r6bM?B+ TbM} SbrnrBh2  n6}2BM?002}NTB h+0.6T r00rhr? 6hMh } nrr.0TTn.B;B5Tb6?M /+ 0r0.hbnn+B+sT6 6hM V} 2r+.?b6nA}rX  T00Mb2?n?...6h0bM} Barhrbz2 }n?r0.6Trn.0BBB?nMhMB +n?.r.}hB62}r-?rn6M2nh?r2.?.hnj0 BA?hTF}M2?n+n?+bBr?2b}*.^nbM6 }0CB+nrM.2b6nB0TBr?=rT. hMn6B+.}nr0BAhB16.MTh+h?nb0rA2T}}.}BTM6&6.2}n2060hB ?b6B}+ } }}0.Mb?nT06BMTk6M26=+ hr .0bnb60T?6TDrr%+y6rnMrB TMbhBnh??BbBBTh0 0}?.2bhb6B+^b6n}gM6)B }+M.hTTbT0+?n60r 5T2b+2+MT6h}bB0nB0??6.hhhT+2.?.hnt0 I}pM?+r+20nh+b.MBBn 0S}6BB?}rMMhhTnT++Tnb0bnBTKhr2Mh}_ .+TB+..?2b60M%n?A.?MnnLb2+.B.bB}n7022 +.nM6  r0BnT?Th0F}u T?.rz.rhn0++}hr6+}%M??2r?rh2!nn+}NhvnT}6BMr2 +n+b.?T?0.0BB}?}Mn}:2Tn +M.6b+n}.r?r?+M6}b2}n2+?B2b}bM.}B+6r}+}6 nr0BhB?hB}?0}2 6n6?2h nb20rBn?T+r01??bhrM}M?2br+r2hhB0D}n?6  M?2.hn M++B0hm62}2c6r?Mr.T 2n .BB06nb+}M!??rrhM}n:b2.BThh#0.^T + 0r6.6nr+pB T0?n0TMh 2rh6u2.nT0+0bBP6}6.2T?.?}M+2. rrBBh.Kb.}?2+*} .+b.?b6b+.bT+T6}nW}nh }MI.n b66+Bh?nh6b}? } }0 hnh?0hBb2266Mh}. .+?.+hfhN6rB+B66n}r. hM !0rh+h60nB+2  M}.}} +rR0rBBTTbn,.???h}z2nnT+6.6.nbT0+*b?0r?r?.M . }.+hM?rr2}?2M6.6}2+ .br}2Thh{0.pT2MnTrbM+bh+6+nT?b+}bq02nrr.T2.2}+r.>Tn6T}r5B?T .}M.Bn0bn.bFTT{672+20 6+6Thhnbr+_B T.662}2nr+r7B2Trn00Mh6T66?2n2nnBM%M.n}02}0? ?B6}M} Mr2++h&TM0}BTTj6+M+BnT0b M..n?BrMM+20 2}0}Mh}+B+pB0h06+M}hhb2+bBrh.02+?.b?0rT.T2M6r+2.+hb ZM2&h r0r00hnn r..?T.0 +r!? Brb. hM6h+ B0h062++.r 20+M6hBnr++.6?Tb}0BTT Br0l T26..r2+TBrT+.2b  +T2rhhnMMr.}?bbN&T2TTr6hZnT nh+MF0hT++.w?0n +B2MThnT.B.hh b0}+2Mnh6nBT2}bbr0:BTb+.0nu+nr}rh2  bbBT.n?.n.06u0 +M?M.h} rrBhn r6hM 2M ?+b2ThM6r}b.+ T0n.b?Tn002hb 66T0rCB ?b M25??b}M.TT.6 } Br?b65122T +0?B+ }b+0fhWbb+TBS?rn2+bMbh.62M+? T r?}2h} .M?.+TM6Bq2Thb0rM.r2Bbr0hB?nhr +N22?B6B.Ti.+bM6j0Trn}+B2B 0} .M2.nr}bhT? b0}BT6rTrr}}2B BMb.?hb6TBb2.nM+B.r h62+.hb b6BBr2r6h66/.hT+B}M2T?r62M}h06?}+Brh 02}2Bbn bn.b?bn +2262br.M2TB?M+TM?hBn}+nB2Trn>}T22?++2MM2r B+6BBTs6b} _n?rrr}eTTn0MhB ?0b?0rTTT ra.bT2n00TBrhh+n.}Th?6}2Yb?+ B0B2}h?r2..%}?++ .+hrb0+69ThTn}} TrT0+bu02nbr0.dr? }2}+D#b.02MB2h6 0?Tb?bbMM6T;nr+BBrh+b }hh6TB66M 20n2+}B02bb.0 l0?j6+0+hb660Th hn6r}2TMT.6TBM2BnT}}2 hMbM+T.} ?6nB}2b M+nMT?TnB} Kr 0}M}.kTn.+s2rT?6B.0?Tn2rhMM b }.hhMT066}.8M 0M2.b2b?M}2Br?r+n}?Thb6+0MrTT wr}.0TBn+}T226B6!BT_0n+} BT?2b+}6#. _rb.M2.rb0r3M?0n.02B2nhr}}}T?n M}_b 2+.%r?B6T6cB2 2n6+MTr?BrMBnh rb+bM.2nnrMy.6?2r0B02Mn6+r.Mh.n}}B.b brrMrTe? +2.+hb60B+I0hBb BBU2b 0bBMnBrB+ .0?+rMMTKnbT+ >2h062++dT 2+T.?hTnr+bQ2?T0r}b#B?nb..22Mnn+r.rTB00}Lhbnn+TM}f}b?0+M.bbb6M02r r+r}6h2 2rbZ0?6rb.pT} 26?2MTTrbrM.h?B620?T0nh+6..TrbT00.?n66TM22h?966M0hhbb+M.nh}6 . 10??0 hTT2nB+mB0nBrn}Mh0?T0TMBh.62}nB2?n}r}BBB  02.+T nM0}.}bT+T.2h0 M0TW2TrbM}0w+?h61.hhTbb}52rT2b20y.Mbb0MB9hBn2+hMbTMbT.+h- TrTMrQ+ .0+B.T 6Tq2BM?b+0.rwrb2MrM0h26b0.BnnTr 7r7.n++nmTTr6b01q ?0} .MRXnr0bMB?+60+0T6 Mrr2B2hrrM?hhT66TQr>Bn?+ B2T2n6}hTrbn6B0 2rnbMMMM2nbr+}4BT}6b}/BtnT0TB hnrn}0.bhvr6}B5hn+r}M22+600rBBT>6n}})2 b00Mn ?b M.D?b0rMMnhM BrV2h2.n?0M3T??rrWTh0br}TBM2{b?}.TT 0r0ZhT2+T+?2MTBn6M2_+Tb+0.6h2b MrP TBbM..E}TrrB.B?}n+.M*ThT6BM Tr rrBB 2.b20r=rnn6?}+T0nh+62B?_n.02iB?brbMr2r M}r7Bh+b }0B?hB66Br206h+M}MTM6T+ghnh0b?B6hh r+r2T rb80+TMT.6TMr2B6n}}M2 b+20?.}?B6n.2h0 M}.MThBnB}B2 ?+6b.0hrnb}c2rT2bB+bTbn2}B. ?n h00.W?0r2.MBhbrr22b-bn00r.rT66T}l3hn +T.M2++ Mr.0?b6b}0T? rr .Th?rh0Mh2?26r}6?0 #rhM62.rb0r.B?0n.}+2 n0}..bh6r2}rWBn660}?TM B}rB2h+r0}022 }bh} Brn2MMhT bn+}?hnh+rn(MT.nT0 B  nb2+2:MT.rMMr?bnT+?2h2b6TM22T? 6n22h0 bM2Mnhbb BnhB B+2.0 rn26Bh0T/+hM 20 2r.2 hT 0+b26Tnb?MTTT?0r0.22y .0TBr??n6}rB2  r0}T2r B+n,2nh0?+MBT .+?20?}bn0bG0hnnB}Mf0?}+n2MThbT0.! nrb,}2qanb+TY+TrbT+}unn6b.}r2r?v+0M0nbbb}h.nn+bC0 l0?2+}BbTMb.B B ?Qb2}Mh0?T66MBh 62. .+ h6?BMBBnT+iM? 6b+0r2+bTb .r_+60r.J2T.6 }+prTF6MMT2}bb0?M6Tr+hBMB. T0M.MhT6B++< ?06r}b2b  6}}??0+T0rM+TM600}2Bb06MB2hBr++nlrh?r20.B}?Br6. ?Bn2} _0?M++0%2+?0rh.MTT6M+BhT? r }+?Mn0r}.bT?rr0N%BnrbM<r2.6T+TB2nbnM0MTr?rr u0 2??+bM.T6rMMNhn +bT}6?2n6r+(VTBb}}0Bb6T+2BMTd .+0.bn}+0B2h T.}?M2?i6M}.2bn?0?.TT ?T}.M+hMbB0Mhrhr6}+EB6T+r.qMhB hr}26b26.}.?T hMh}BT r0+2BnnM6h0rI?nM+0M{2? M+b.rb r 0?h26>6+2rTr }ryB+?.0M0M2+n bBMr?T6 +0TT T0B06?.r?6}MbnT+T}nt0b0}2M.?T 20Thh26nr+B.} b0M.T*M?6M.M02}+b}+Dh?_b+.n?br+0T.2TG+r.0T062}+09V+6B6}MBn0+0BrX.?}rh.r?0r2}Th2h?6+.BpU6 6B}?Tr?3Mr.T 26nM 2bn2+?2ny2b 00.hh066BT2r6rMh}+x.+?MMp?T2nl0n2n?rr+2+?+ M0B4nh}rhBbB}6T+r}}2rnT0}T2h.0b0+2B6 M .? 0bM.HhMTTbh.dirnb+MMh M+b+nBT h}2-2hTrn+IMM hb}MTB&ThbM}bh bbM M?n2n0+MTr rrnM}2+ &0?.bT+nnMbT0Tnb.}0hMrr.hM62m0?02B06T}rOB 6n?062?nbn6M0BrT}}2}B?Mr^MMM}hr6.B hT626?}MhBb rBM* u0?MBBn B+ }+2r+2+ .?hMbb}jBBnM}02+TT+n0qh ?r00}+{d?h6n.T?26br?2TT2b?Mr2Bnn6+2 2BrM.MTTbT6>}.Q ?n0r.2? 60Bh2b hb60}7b }++Mnh. .}6.}T}+ MBhn?+rh2bh 6b}+..br+0N. 2r26aBr B+rB BhT?b+cbhgnBrM20T}rTBbB?n 6b}h  r..22MTnnn}X?hnT6r.b2Tb?MM2BT6rbB0B6T.}3qr rrBMBh.T+6M0bBn6T}B_B2rbbMMhThnrTChB6?r6B.BTbrM0+B6n0b 00?2TCr2.B2r ++ hbh6rb06B.b26}Mr2Bb20.TT?hrr0BBZ606+BBh.+r}nhB 2+TMMx?nM6 2+TB+ }h..?n}n8}hr?B0MBbn2nh}MhBbBrB.M:?6Mr0Brnr6r+6..bbrM.bmn?}r2h62Lnn.?TT MrB}Mp+ rr62MnTnn}+2 ?.r?}0 brb0+BBhh6}MhTb? +B.?V7rBM0h h06r0?22?b6B262r 0MMZTh66xMn26 }0TM92hrM+b.h?0b MhB.6Tr}BThkrB+ T?nMr?xT?Tb2}B.}Tb+2+0)r T+2MnhMr?022p rb+.rP0Trbn} T 6M002r2}+0}M22bMnr0.W?606.B0Tbb.+6qhbB6..  hr2MbJ02. MMnBbh+brM22.br0rMN2Mnb+hB?nr6n0Mk+ 06<.2h2n6B?BMbB6re} hrTr+2.T}nM}?Bh +6hM?TbrbMO.62Bn}0MBh?T6T}+ nr0r..2TTb00n?6T+}6Mn?T +M..nh}r}0b2?n}6r.0 n }MNl0hhrrMrhnnb6b}3?r+h++.2h.bB0?O ? 6}26h2r=+?h}T+00}n?6 hM?MMn6nM+nBnbm62B79.6}rr20 .nh....bn6TC.2T?}r}hnhb+n0TT.?Tb}}} n bMr2}2=+}0 T?T60Q}??Br rBM}h}+MB?B}TTb/M2pn brbM.n+bTBhBnb.66_M2T }.6M+ nn.Bh2hT+bMBT2+ rrT. bnn60+HTTVM?}620 hrbMGh+0.0n?+?066M6nh ?M2M-nBb?B6hTT+02B2T.bBrB.6b}b..0?n?_}BM? 6b 0+..h.b0}2V?n}MT2M2}rDM2B2h8r2Mr12?200h?h2n+..B6bMb}BEh??06nUhh266}TO?b0+}}??6 0+rM?2Mn}0r26?M}}0.XS rrnh+2.b2+6.MTnbe2?2 r6+2h?h++}+:T6? }WM Q. ..6M>n0+.06T.?b}nMT h B.2h?h60?0+T}?r}6}} brM+b.nh brU?B6?06h}bXs +...Bb+b006u6rh6nMrip  r..6b}bMf6dr?nrn2?21 b+?B h+b000Kh6.r?2n2++h+BT2TbbOW}B.b+rh2nTh .}n2?h+bB}6h}r+6}M.hbn?B6.}TBbn00Q??..h.Tn.nB+}B}6nb6B s?rTr62}?b .M 2 nh+T}TJ}rL+h_Bn+b?BTB6b}bn..e+b2r2Bbh.n0Bb?2Tc}?MhpB  r}B}?nr+ME?6? 6.2h2}+2r-h? nn6}0h6n +TMrT}rB}S2bh.0h0M2+T0blBbhMnrr+Tnh6b+}TBGr?66M02h br4.+b.bBx+V0?+6rMMn6 }+B.nh0b?0. h TMnM}nhnh.+Bbbn6TW ?6  M6M6 ,n+.}.Nb06r}h2hr}r?2Whn+60 T?T.}T;n2TrnrB2.h6++0bTrbB6r}n2nr_r?.b2.nT+}Bn6+60_.2br+r+hhh}+.00?n?06?M? . B.2h?h60?0M?6?M6nMn i 6Mg.?n}nLm?Zr?hrh2}2?rB.h.nbhb0B+Yb6n6+2  0n +hBhnQb}0TBF 26nMb2b ..+BTbhbnB.L66MrTM}n6 +Mn..bh+?0M22TI0TBb18nBBn.6T+6T0i ??6r0Mh2b w++T.T}}+}096 6.hM? 2 g.BB?b6+T0+T2b20.BB2Bn6B}B.n0}n})?7 ?M6.h 2nTM}2b bb+.i TrMr}2O?.6M}G20T?+0..2 +?+2.+n.b6BMB}b46n.2TT6T0M.9? r B0h}??}6. h} n+T.??nrT0??}T.6HMr2n++r.B2h6nM0nByr?r 262.+?+Mh}Tr06}h?b6+6.2+2++.0T.}T}}n}b?n TMhMBn2nB+6B66hb=Jn_B6.r6hnh0n?0?T.T}0.}6 n 0r?.?n.nnB2T?T6}?}? 6 Mrn.nn5b2.)B?b}b8W0 2 0r+MrhM06+}BBTnb0}?L.+h+Th.hBn}0}?nT+6M}?Hr hr}hch60}0MB+?+}0}620 hrbMgh+0.0zhB?066M6 rr_. h0b2b006C6bb6}}n2b r+6!M r6+}rBMT+rTB.22 .M MMTh0n062nb 6}.r?hb6}+h.T?06.0hT nrb32h  0+bMBnbb}0B22 rr?hnhbr .gT2T60}MrqB?}r}NT2b6r}BT b.6n0MH+ 06,.2h2n6B?TrT}bBM22r ?.n.6nnn+.2B6b}6?}+T+  0hy+hb6rB?B+b.+r0GTbbb}?a h n..bTC?6bB}}2M h+T.Th+0n0B?2?0}.Mb +nT. h0T bh}h?T6+rh}r2nnbr}.MhMb?B-xr60r2M+nnn6M?.}n/r+.nh}n20+Mb2nb}B?.nT6620. h?nrr}x2  .+6T}TM}6}ren nMy.h?Bn..MBhbn+206hBnB0}BM2MnnB+Bhnr}?}??. hMnMBh.60+rB+ hr0}r 2r0r+2.2B60+62T ?+2}0Th+hrB.6n}n}B0B+b.+y}B<?nT+kBMhMrhBrh}b266/}20 *0?KJTbb 0 BM6V6hM?2M +...n M0606TB?n}+B 20b6+0QHh.6TMB? 6B6.2hTb 6M2L??+nB}F!hrn6+MM2? r+h.}b)62>}qM?}60MBn+ .02.6hMbn0v ?  M6.2n?nM.BT TBb}}} n?+rMM?2rnh+}TR?2}?}M?I r.?.rhhbhB}BMbB} }Ba} }MMM+hMn?+rBhT}}>}6?2 Mr+.+n00hBbTMTc6TM 2M 6.+M}T2rBB+;2?rbpM?20 6rnhrhrn}B}C?T066Mr:. BrB.nbh0b0?LbT.6T}}2n++0222?.6}x6<r?nrn2b?0 _+TB TMb6D+iMbr6E2?? nhMh..T2bM0 2Mr66BMhn+n?.6B+Trbb}TB0?}rbMB 2nn+rB0?Tb.p922 b} M} m60+h2r r+n.bIb?-}rM.h2bT00Bn66b+Bb=.rh+U.+h bn} BhTB6nB0Vm T+ .Mh60+02hrTs}?}b2n }0.Brh1b60ThM?h6 Mb2B +.}.+ 0bhBnW2n666BrK)  00Ib Bb?0b^r 26}2.2.  +hBTh6br0rB%r?rnM0 .nh.nh+n:0nx2_??brr.22}+.rB2MTB0.}b?n6(6T2n }+hrrTT?b0bM2?}rTMr2MnTrb+}.B?26r}? n?.} M} ln6+.2.Trrn../0nM}rM.nhn ++20Tnb60}<n  M..n2Mn+00.4?262}6 ?rrr}2w2#nT06B? 06 MBh6r}.2.h rn.BbB}b1+0}hTrbr}nlbhbn!X?, ?hrh2T2n r+0BTh.0x0yBb??r }+20 0+hTnTb0+}T?h?KM2Mb2_+}+.T6h+b}} Khrn6+MM2? r+h.}bFb6I}GM?+r+1r2}rT02T2T?+M}rDn nMLM+2MnB0bBh6?6n7?;66%6ee0h6+}+.ThT+b5.Gu0n60^MMTB++0nTn?T}h0B?. ?M6.bh.b.02f2Ta6n.} T6br}MBT2br0??n?nbM}+20?D+2.2h60}}2T:6 66}02Mn rdThT?0h0nhM??}6Mb2.n.+2B2hEbnM}??TM}}Mr } ..hYMh?r0M0h6nr6rMh + ^.?.B nbn.bB.?T+rB  B+h+BThT?06M}2B?hrB.}h2 r0 h>Tn0+0 U+ I+AMS??6204T brb.7h2m +r .nT nh+BBnbM02}M?d hMnB?h.nr0+^rTn6T}+ 26 r?.b2.nT+}Bn6h6hp}yUr?r6! ?bnr}B=hn66pCB T !}B.0h6b6.bB}TBr2Mr2?+n++2 h?n}+B< b 6+}M2Bnb+hT?T6+T0+T.?n6}B}2bb?}}.r?0}h0}BB 2rrM?nnnnrM.+T0nj}2:2?6M}Mb %+ +6.0TM6 0< h??}2Mnnh+bM0.DTT6 }MJ6r+r0#r2.++.BhTT6b0}M2 ?C.hM4 2n6.}2bh.+ . ThbTrTM}  n++MBB?b6h2?Kn6TM..6n+bTBhB6b}+b0.T b }hJThTn}B?B+b.r0}TEM h0rMrT?n}BrT.6n66q}h+n?rB.tTBn}0rB_ h6+Z.hB rr+ML  b.+}h+6r}B2Tw-6B+?.bTr620}?.?n0MM} .nb.n.}nWr MB<MT}0rB6?nb?.6..bhrV}n2} r0b.02r6..Mh2Tnbr}02T?.M!.2?B++.=T2T60}.bB.b 0 fh?TnT+}Tb?666v+2Trhr62}TMnb+6..nT6}0+T6rbMM22hrbhBnBnnM0T}+?. nr}3}hb6?M}Br 0}r}?2n Br}hfhMbnB+B?b20bM6 b h+?.Mh+0.0hP T}62}+2?+6+rh+h.0h0+BYnQ60.6Tf M0B20Tbbn0 Krr?6}UT2+r.}rMp brb.?h ? 6.%b2tr2+6h}T?b+.+P nh0+MbTrr 02..T.+M}r_6?br0MMhn++++h2nbb.8h2Tn rNB}2}nr0?xMbMb6}+2T?4.?M6h0nh+b.)T+}n0NTM6Tr+2.hnn}M}Bb ?+}}rh0rr+bMzh90h00T}6?6n3+T ?}}T_T?9r202B+bB66a}2? +}+. ?hr+0b2r6b}M}M8(ra+rh+bhb?B6B;?n0nM2h.6n+TL nMbnB+kh?606MTh>66+ Xbb 00.Bk0?6r6Kb2nnrrS. h.b6y}Jn6+06.+?T66}n2n?B+ enfB6.rh2r2-+?0hB}?hb2M+D}nb0n2Bn?+}0hT b.b6>T?< hMnB?h.nr0+PrTn6T}+2} ?M6B+2. 30+..Tnrn}? TrrMB2ThBn}0}h0Tj6TM 2M 6.+.T rn..bB}TBr2Mr2?+n+nMMh+b0+&V2?2662}2hrGrXh0h.b2}T{0?nM6M+?rn2++h.h.bT0??.?nM2}}2.nb+?T6hw+b0M?66M}2Mrhh+n+n2MnTb+B.<n?}0}MbT?6}+rf0brb?}n;B?}MLM?hb .+T.}Tn}TWrT0 br?.? TnB+}B}n066B t}6z0..r2r6M} B  .b0Y}k r?+2h?hn++M .}nT+T.IT2 2r+hhh6+}0b2.T.+B}nZ0b20Mhbn+bbB+B}bK+?.bp+nb0?.rh2bMB6B.6hbMMhh6b6+6)}?r66BM?2??}0Mh n62r6DB?Br}MMBM?nM2L h2+?+?hBThb }b8B?+M}MM?0+}BhB?T2b?i}U?b0MnM6 }6br.2   +h.TVT?}M .?nT+nB B+6?6n}2 n b} .T R+n+.Th R6000hBnbrbBU2M+.06TnT+}h}n 2 0r6.6bhnn0r.8T b.}6 } M}M.rhnbn. B+TM6BMb2h+?rM2TbTn&B?Bn ?0T}+hbbH0ns6n(n0B}?T ?}h3T ?n}M+2}bT0bBM..b 6}FmT0 h}r_r nrb0bBar?6.M2hTn0+nT6Tr+b0}T ?+6MMBhbnhB?B?h0b6}rB.?B6BMnn+n}02T?b?0+B/?0?6r0Mh2b _++.Tbn0},hBr6Jrn2+?0 0Mn9BTb+h}.hTrnMMhbnr++..T?b+} }B!} }.nMWhTb 0MB66+6+}2/. Br?. h n}B(B6?b}+AB2h  +b.Bh+0}0eh0TTbbBB2? b+rB2h}0.}2hMT brf22n r+0BTh.0m}2hBTbb0sT26 0+MB hu}h0TT2Trrb2?h?rD+?.BTh06} BTb06gMTh nM+6T+T0+r0.?+6BrhM hbnB++T}T}+00TBb ?r2M?n} .M0Bhbn+206hBnB0}BM2Mnn..B06n66}T 6 hr .bhBn+B}B.n0b}D} 26 r+MMhBbb0h??? 0 }M2nr++?22 bn.BhQp?+6 Mnh  hrB.nnMn60+pTTXM?M ?Tr.r+h+nB I.b?bT br2T?bnT+h.2T bb0/???.00{226r}}bM.  r .hhT?T6}2b2hn?+M.+b.b600!M  6=hh2+r2+rThbb+0}T=}r6r2h?hrnh0hT}Tn0+}}hM r6.Bbhn 6M2TnT60}0.2}b0rh.B?6b.}OT6T6}TRn 26DM}.. }r.B2Tr6?}b90&n 6+2M.bhn+.2B6b}6h.nkmb60rqrT2bbB6B66T0bMTZ: ;.+.0 rn..bET?h62M 2b 7.?.. 0+206T}?b+.}.TB nr0{2?M0b0hD??M6+2.2B6Mr/h.bT+b}TBz?/0BM+h0 60 20Tr+r} mh h}2M}2r }B?. nTb+B.hrTg0bBb??6 + ..bnb+wn?0 nr2hn2pnT0 BMT6}+}0Tr?+M+2B Tn00?T6?h}?}M?} hMn!2266B}B2} MbM}n?. ?M6;T2+r2M22. BbB}6 T6 }0.hnnn.0?h?TBr}B?22bT.2M}h.bb0??6?h6 Mb2B +.}M: 0b+B}Z 6?6+q.h}nn+2Bh?2n.00eh6n6}kt206h+h2Th+nBM h2600BM?2bnr02.}b.b2.MA}6.rb2n2}rz+TBhT6r+M *} ?6B262.+hrMBh?6r6}6h}nr+62M 2nn+rB0?Tb.Js22bB6b.bnn+0..BBb.}Tvn4+  r62.hhnM+5. nM6 }. h?.}rUBhn++0hB6n66TMyT6  0bh 2#bh00B66}6MMM2nnb}M.Bn.0T.b7T T6 MM?Tn .?hr Mbr06Bb?06MMn + nM22bbbn 0+T.nrb<BbTb6?} . h.n BBB+?}r Mhnnnb0b.d?2+b0}?66M}2MM2} 0+BB2T+0.0+T b0r?.r2.+h0SB+T 6nM :h?Brn.rnT .+tBrTn}+}020 ?+ s025+}B2TTb.bCU?hh }rb.6Tbn?02B6?+6hqnhr 6rTBBTT6n0Tc06260}+Gr MrB.6n}n6.Thr?hrb}}?N 0}h.h Tn++B2 n2rb22s} .+b.?b6br}rCh T0r}. +rB.2h}h.0h}Sq+? rn. 2h B+nB6he0?Mbwn?2+M.2T?n20rhBTr6r002Tbrr02+ BrT+B.}T}+0}Tg}6-r+2}2b+?++h. rnP.bhbb?0 M 2.+n+}ha 0bh.rhrbn0bMb2A+0MMhTT+0..rBKbb0bI?? n +.TrT?6n}BG}rj+2B22.b0.2B.?B60M0%6n +0.rhnbnBfBM?n}+M? n 2M..?n66n0aB0?}r0}62  }Ml.nn+66}hBM?.rM}+2b .. 2b Mb?B6hTT+02B2T.bBrB.6bTn.0x7r?nM+M0h0n?0 20T66r} 2 ?.rB. hT j+YT+Tbbx1?O.6/60262.+h+M2?T?+ 0}82nb0T2+2L+?+B2nTn+b0.ZTnr0 2B 2rb+.Th Mb?.0h0b60rMrhh+M+6B+?TbL2?2 n rb.B  bh}TBB?B62Mr2B Mr+.+b?bb} B2?B0 MT?T Br}.}bnbb0?:?bTbBMB2?r6+Ts+h+r00hBb M+rMB?  n.nh0 Bb+0bB+rhrT)226r}}bM.  r .hhT?T6}2?26+?.rB?hB}?}62  2}B2+n  T+6h} bn.. h bh0TMT2} T.MBBn b+}r?}r2} .22.n.MM.}TBbn00;??..hMT TnB+}B}n0bX}T2  Mr6h+h+n2+.BBT?6 } m}r<r+.bn+b?BhBnb.60xM5A T+ .Mh60++}hrT.0b}}iBn2+r.?bnn6. ETbT6hM ,} 2r+.?b6n0B}B.6hr?B h2 n0B..2:rrB.BW6?rnBbhT 6}2.Ahhr0BV?nTr6.2h2  +}0.nh6n}0n& 6.r62r#0+ 0r..bh6p}+&  n+ Mh2Bnn0rheT?0BkhZBr2Mb.22.n.B6BhT 6b}B7+r}r}MT2lb2+nBbTbb.2h2rrnrb2.20++++TrT}bBM22r ?.n.n2Mn+00.f?262}6 } n+Thnnn+}BhTMT96TM 2M 6.+.Bn+nTBnB66h6nM  ?n?MD..n}n0B6BB6?6Bsuz6r}+?h6h}+ 0+BM?BrbMhn?n MT.+n.bn0}h}?b+?B}2rb0Mb.2Tnb00.=06r6&2?TB n}MZM +r000j?b}rrh?hnn2BnBTT}}6}h?nn?r.Mrh+br+nBTT++}BT22r}6.MAhrnnB+BbTG}}}MT+62r62}?b .M 2 nh+T}TH}rvrh.?hMn+B.B0??}zM2B.6 M0.hnnr2+62B B+}.M,M n.+M}h.bb0??6T}6B}+20n r6ThhBb6u?B.6hrCM+2 nn0 .hhBbn+6hB?MM6}+2}n +hTnh}+ }h?n?6}}}b2}bh}hBh nrTMh???+}.M2h 660 .}?nrnM_?n?}}/M0?hnhMT.+hBr .2?6?.MhM}20nI+Tcnn2rT0+?+?BMrGMh}rb0nB06nb.}MT0 hMnM.h?r?+B_}n?62.TTB .r?.bT2nM.TBBT}6}B0266 M0.hnnn}M .qT06TMb22 b}BMM r+B0nT+n b}BTTTbd}2.2h++T+BB}T}6M}Dnh ?r}MBT + }2BYTBrT2.2?6M++h.h!0?+B=? +++M+T.b00+h}Th0n0r7MnurMM?h.b.}6h.T?06}Th+?+00Mh2bbM}rh>Tn0+}?RT 660..?rb0+hThTb}2B 2?bBr..Tn.nn0 hTT+0.}nw}b}rbB??}nr}0hb?Tb=}N + 0r+MrhM060Mhb??}6}+?.?rr.B???b?M62  ?}n}}?_ r+rMnhbnB+M2.?r}6}. hbMr?U0?0r6MrBr?h}+}_ ?n +rH2 2b0M 2Tb2}}M2 06Brb2rTn0+0}TyT06s.nTnnn}+ub?n060.?hnn+r}}hrbn+0.TTB0+01??nhr}Mbh6bb+?B2T60}}h?n?B+}.?hhnn+n.0Tn0.}T?M62rMM+h+0?0 B?TT6b2hqB 6.?.  hrr+lT? 6r00.20n6rMM T206++B}? 6h2n2T }.6.hnnnr06B. Kr0Mh2+  }..0bnn60+_TT(M?}620 n+bB2h?0.00<?6Kr2B.2nr+0./2h?62}.jTT0rb2._{nh+0.6b}bM.0?2?6}}.+h? B+OBBh}br0^T  ?6+MMhbnTMrB Th6hB2p?b0r62}2.+h}-B2h+b}}M2hnn6.2M 2 M++.+T0b.Vm5h?+6M.T TnB+..M?2}}}MT0r2r62}T+b?+BB(?Bb}}riU6 +2M.h.060rB6Tb602n2T }.6.r2nrMBTB+b.+r0ZTbbb}?w h n.jhB??n6B}} U jrMMRb6nl.bB.6h+?M0T6nT+hMBhTb+B+B16?rrM}hB 0+?.MTTr+k6a+? M+Mb27+}+MM+n2b6B}BB?.r?BnT2n6+Q.0b=bh}?;M?+M.Mr?M  rrh2T0+00T?n6}Mh}r 2n8+nBr?TbBB 22?.r.8M2?rb+.ThnTbT..hb?B0+.nT0+.B TB62}hFn?}rhMM2Bhn++M .}nT+T.#T2 2r+2Th+rM+ .rb26*}n2rnTrB2 T2n.0.hM?r66}b20+n+22 2Mn2.rOTbTb0v. ?r+r22rT bh}h?}?M6+M+n?n +hBhb}bM.0Cr6r6.2hTM ?}0N0 6rr0rlhb0rbM?h?rT+..0h.}n}bT ?}}zM62.6.+r<n .b0MM?6TPMG.h2M0h+BB6b}6 BhTr?}MrM?hnnB+}TtT0r2}M?0?.+biMhrb00bTbT}0w.0Ihbr0r;n?bnb+LRbnB60}+9r M.6MdTrb }Thr? rbMT T 6M}vb2.r M hhnT6T}}hT60+b.?T?+T0BB}?}00}H2Tn +M.6b+nO.rBh6 662T26r}}bM.  r .hhT?T6}2z2+ M+BBbTh}?} T ?+6MMBhbnhB?B?n b+0M&B brhh?h? 0+6Brh.bB0B3nr+rT2. .+?.+T hM6h}bQ+ b.hM?2} B0 T=?hbM2h2T?qr#h+h0n606?hT26n}0p. 0.nM62/nT0r???n622n2T }.6.+ 6+M0?T6 +r2..2r 6r MrhS0}+.B&?r6n2+2}6r+6hbh}+w+#2M?B6?}rh.?.}rT?T bh}h?}?M00MMhrnn0T20Tn+ }T2T?Br .T?0nT+}T6Th0n.?B+nn0T.T?bb++62}T+}n06X+ T6qh?h2n+Bnh+b2++}6 ??nr6.22.0h+BB66?6?B?? 6}.hM?hnnB+}T,TM6n2h2h6h}Bh+2}n.0bB?666 }. + +}6mB 406++B}? 6h2n2T }.6.6 6rM..?nT66+MTtd+?+2.+bnn.}b#T TbDMMhT h+?.Mh+0.0_hM?}}040?bnT+h.2T 0p}hhB?MrMMnhb6B+0.6T6+b}TJh?2r 2W2MnnBhBh a0bBr?K?hr?MM2++.+hB h:62}0B.r6r M.n+rMr62BT}}60+&}  rhhn2lnT0 BMT6}+}?Tr b+bM?T2rr+.B2?T60}n 6 6}bM}T n+B2hx?00T}6m0 M+ Mubhn?.2Bn?B6?Mr 2 }}MMHTrn.}ThrT60b}B26r}+?2hnn0T+.BZ?r6n2+2b a.?M. }+20ncB??}0k0h rBr+.}T bh4ns6b rT.T2}nMM .6?2bnBMT0 b0M}}?0nb+?B?b.bB0.BM 2rTM} & +Mn2MTh600O?b6b+2202nn602..6h6?B2QB Br6.r 2n?0MBhbr0bMTTr?6}b.T2;nJB+B.T?6bM2aM6TrBM}h}r00TB}bW6rMrUnnT}+M.TbbT}TB ?MrTVMj6 ++TMkb?bn.Tfh62}2BM2r 6rb.0bnb6. HT T6}MM? n2r... Mnr0nBn?b6+2}V. nrr.B Bb00+Br?MM6M 2.+h+0B0h66 .}B> rr . 2bnB0 hBh+b}} :hrnr6i h?+T.T2BT0b+0rfMr6r+Xbh b +.BBnb6T0GZ)bBr0M6h60h0T.=TJ}+}0%+?rrMh6h n..Mh.n++B}} 6?+r}. hh0n++BMT66rMTLnrIrM.nbh+6.hB.6+b}}.2b ?.6.hh bb0BB+6}bPs}2h6r+?.2h?0}0}h0b.}68n ZnhrMThhBb6{?Trb?6g2}F. )+r.nb+bb0x?}?}0}S0n? n+6B2h.}h0+2T?BrB}}hrnBM .+?TbB}Bp6 rrB2MhTbT+ BMn 6h.B1.6M}Mqrh rT0 *2T.60BT8B?.6M.2n}nr0hT.b2n}BTfLr}6.M:hrnnB+..nr6bMb8/n2}rM. Tn6}2.Y?066} A6rC+2eB29+M.MT6? r }b2B .rrh.h6rM0?T6b.6?MM2rnb}B.0h6b6.bB+ T6BMBJ}nr+B2 h}+T0BB.TMr22}2?nM+rBrhn6T}rhB??rMMrhrnh0TBr?2b?}MRr r60.ThrnBMbB?n2bABBTBb0rb< hbbT+ZBMn 620.).r6rrMnhn+p02.3hB6T(.{0 ?MuMS?Br .6T.hG6h}0z6r}r?.Mhrbr+n3T?r+B0M2M r+r.hTTbr.2B.n06+:r?r6 +2-BT2bM0+HbnB60}+zr M.6M:Trb } Bh?Br B0fHnr+ B h.bB} TMTCrrM h  b+BB  Mb+.bGn6 } K22M60+MBrTn6T.0sb??r?2.2B }+}TnTbb?}??. h66M0h n2MbBThHbV.B_??brr.22}+.+.2BT+bb0+ h?}}22? .rMBnB6TT}6} 4.r+}B_+2F0h+?BnTBb}>JxM nM 2b/,rb+.T-Th6?}MX+r.r.M02.0n0nh b?0n/6??6r.n.6hT060 B.6+6?06TB6B.6M+h}b 0h?nT.rbMThT?1+MBTT0n.}b:T T6}MMhTnr}B.?TMbr}rB0 Trrf22.60++hrnr+ }2hB 2rMM+hb6B+..?Tb620MTT?B6}M}?0 .0bBT?Tn;}M2T 06..bhTbT+}BM?T6r.B*? Mrr.r20bT0rh2TAbn}r2T?B} .22.n.MMBrT6bb}0 n?.+b.TTT >0MAT?0b.Mb2TnTr}.MTTbrMBB??M6rMr50nT+r22hMn+0+??? 6?}T2b+hrB.6nb+r+hhrT(Mh}?2n Br}hHh?bb0h7T?Mbc2+2b t.}h22++206?+T}6.Mb2?+6r(BrT 6 0h:B  00}!hrn 0 ..TB6 .M5+bbrn2   r2+M20TM6r}n2Tb0r+}mhTnM+r2BT0b6}6Tb h}2MBhB }0r..?b6hM2Tb?}+ MxhB++++jTT.0BBB2rrTr.O0h++r.rh ?2+BM22M ++bdB20n6+6BrT}}.0&46?0+222hMn}+0BB6+6hM02bnbr?B2TbrM0hJ0?brb}Ch2nb}B.} rb6BbTbbT6BBM2Bn0+6B  Mbr0n3n6:r2}.2.+6+r.nTn0p02B.T.6BMhn? nr..2Tb+b}T3h?2r 212+ M+BBbTh}?06???*}2M}2r }B?..nT0nBPT.r6r+M n+nb+:T}b2+}}h ??nr6.22.0h+BB66?b.B??Tr}6.MdhrnnB+Bh?06bMbd?n2+bVMhhb00bCbT{r2Mb   0+0MMT rM0+hb?n} v ?2 M}0.MTrbn}Th0?b6n} 2r+?+2.+bn+r+?h0?hM?}n26n2r.Thhn+20B>B?6rrA22}60r{Brh66T0RBMT&M6Mr?b 6. h njbM}MBB brnM2nnnnM Bhn&0n0}2  2rB!bhT c+72BTh60}b2b??+2.b?Mn+M0BbTnb }r ??}+ .2T2 .00{2nbb}M 22n2r+.0T2br+}U ?2r2}T20n2+baBh}rr06Tbbb0T}BTM B+0.6T rM0rBn?n}JM2I. ..6.rh6nb00?n?T6}262h6b}M2Xbnn60+ITT<M?}}h n202M.T062.bB   r2.22+n0022rTn+T}h?2620MMr?bnr0 BhTB+b}Tzh?2r 2,26b2+MBMh+6b}MTT?6+2MMhMnn0bBMb b6M2#M M6B.bhMr 0h2BT.0MBMTr  }T. T2n.00hTTBb}}} n br?.?n.nB+}B}6n6b}?2?r.rBM}h}0n0bBnT 6r2?22 +.n.n nr0.6??Tn66M2X.+hrB.6b?b?.?h=6}b.}/2r n.+.?hbbr}2B}6.66BM20n0r6B  Mbh0 Hb?B6+2}u.60r)Brh.6T0+BM?BrbMhn?n?MT.6?2bnBMT} b0BMb2y+?+}2+n.000nP6 26.hh2Bn6.}.nnhb6M2Xn6M}M.bn2 }+.BbT?}6}+Tb  + M.hBrb0TBhT26 5cI6n2rn2M 0bbMM.}n06b}?2?r.rBM.2Mb20TB}b:b+B6a}n r+h2n2b0B .=?h60}6 } .}0.rTrbh}Th0?b6n} 2r+?r}B h+02.Bm0b2bzBB20 6+6ThTTbh02k 6a6+}M2Bnb+hT?Tn+T}222T.r0}*hrnn0Th.Tr0+0+?h?g}BFB +nb0b.t?200q2P0?6r6hhhTnh+2B bJbM}n h h}h,b T+I+hB?TMb+D.&6?0rM. 2!0h0Th2TB6B0}2r?.+b.TT2rb+}c ?26B<+2 rnrn2.h0+0.0TnT } R02  ?rT.bbhnB06??bhbhBr2n+hr?.nhBn}BgB+TM6BMb2h+?+n2TT262+./0bT66}02Mn r9Thh}+20n_B?0r0M?h n0MT.nTBb}B0T0  00Mh?r }0 BhTB+ 0}2T?BrBM2hrnBMbBTThb2} ?D?6+2MMhM +0bBMnT0.}b2b?W+2}n?MrD.Mh2TMb+}+ ?  rh.hn}nM++B+6?6 }h2hr}rMM}20nBB+BbTl}}X2??6hr.h+2}n.0bB?666 }. +6B}B3Kh}06++B}? 6h2n2T }.62M 0r}0+?nT66+MT;x+?r..2TTb00n?6?+0bM h  h+B.?TMb+}b?h?M}.}. nn?.ThTn.b0}0j?  }B2 2B .rMB2b}br}h?.?.0}ST  r?Bh.?TnbB0}?f?y6M}Vn6n+Mbhrn60+BnTBr6r+M n+nb+3T}T}++BMT0r+6}M.hbn?B6BhT 6b}B7+r}rn2}2}+60?T?? 0A}T?}?0}rM.h2bT00Bn666+Bb?+6 6B.?hrn}0r???n0h7r?0+h+?MBb?b20+?n?60nV? .?C+h.0h60}0r7h6.6FB.?.+nr6.+TTn_X?{2?+}r*+?nn?..MdThb006?}T;rT}.2Bnrr}TnTTb}L6P+bn}+252hn?+M.+b.bh.MB}b0r+}5hTnM+r2BT0b6}6Tb?}}2MB?B 0+6.6Trb}d.BU?660.2 2nM+}.0TB}+}?Tr b}b.T2Dn*B+B0T+br}M 6  r.h+ M 6MBB.66b+}}2  h.n.n  nf.TBBT.bMM2 }n2}0M5 rb 0h#h6}6M}+2++?+ .?hTbbwhBB?6M?Mn??6J.}M.hLbr0n?+?b6l2} 26}++T?hnb6}2B.rhrh}B2h+++02rn602B}Tbb0M+M}2b+}+rBhb.+N+}TT hM}}.2=nr+nT+hM+r0z2b?n+2Srh6 .02B0Tb+M}r5n n} Mb?Bb20MBh?r6?MT2r62rxMnhrbT+Bh ?2b.}.TM rr6Mbh00n+Mh ?brT}62B ++r.B bbT+-B/6+60}+pr M.6. h.0+.}.6nB6.269+ }+ .hbnn+0MB6?rrT}n Q M+nThT? /.bTT636hM?2M +...nTBnM}rhB?T0MM}2hn +B.0n2bM0+K+brrn>T rr+Mb.Than&}2_?rn66}K2TnrMrB T?bT}b h ?}22b 6r 02..T.}6}rRn nM(.22.n.B6B+nb6ni ? r}rMM+h+0?06..?260}bTM rrn.n  n++MBB?b6h2?2 6T+2B22.b0.TB2nM60H0:}r Mb2Th.n0+.?n?60 MT h 2.+.}hb0}0nBr?0rT}. Cn2}B.bTMb+Bb9  T00}.hbn?022bT + }2B.?.0MM}2hn +B.0n2bM0+w+brr M?2TnbBh.}hB62}r&?rn6F2n2 +h+ h.TB0+}n?n?n}TM620nM0 .e6h6?B2??bB6rM.hTnn0TT.TH+}wT? r}r.Mrn.n00?TP?h+vB. 6?+r}. hh0n0TB}666+B6?6rtrh.?hMn+B.B0??}T)?TJ ..6M+h}b 0h?nT+6M}62rnTrnhjhMbnkhA?nZ}?2+N} .+b.?b6n0.bBnb r?}+2Mnb+T2rT bh}hT2?n00Mr?r  +h.hTTbn=6B+?h6 M0?0nb+n. Tr}?0.TT 2}2MM2+n+B?B T?bT}b h?Br6h? b hMrB66hb?}n,B?}M*Mb?Bn+MMBrT6bb}0 n 0} M+ TnB+}B}6n6b}?2?r.rBM.2Mb2B}Br?h}.}ZT.6+.nM6h+bT+G???26+2n?06n+?h.2xbh00B66}6}}rz}+?+ 2Tnh+0BnT2b M?Mn22+n+T.}b6+++nhM?}Mn}62+nTrNT?h6+T0+22TBr0eThh 6+0B T2+b}TBm?30BM+?rn00b.}?Tb }M2Tb0r+}9hTnM+r2BT0b6}6Tb TrhM2h +Q+P2B?26M}h2r?0+T.r 2nM++B+6?6 }?gT b.hMBh60?.n.hnr662hx? nrBM}n<n?0bBh?T6M0< + brlh}h. +.2hM6+b}}.2b ?.6M9Trn6}Thr?n0bMnp} B+r.  0bb0?7?bT6OBM Tr?M2MMh+n+00B.6f6h}+fMnTMT.Bh.nM}2?}?.0022 h6B+0.6T6}h}TBS?mM+M026n6BhB?n2bqBBTBrnrbM?h?+.+B.}T}}n}b!? ?M.MB2. M02T}Tr6hL.I.b.}B{&n} .+9BrTn}+}?zb r+2M}n.n}MMB0?0b6M TM hr .bhBn+B}..n0bT0bTB +rbM+bhbT.2TTb.}M}} } .rrh.h6n00MD T9MhMT?2 ++B.0Tr+20}BrT}M?Mn?TrnM3hBTT0.0IB06%6+}M2Bnb+hT?Tn+T}222?.r0YT26 0+MB h-}h0}T2?;rBiBhrr2+n.rT06T0.?q 20BM.hMr}0b2BTbbE:}Snb0}2Mnn+nB+6B66h6T.JTb hMlMhh?nM++T.hs6B}02rbBrn.MhrbbMBB}?000M T0?+}r. hhbh.2BMT+6+Br2  h+h22hMn}+0BB6+6b}f } }}+2Mn20++}B.?b6?2626  r6hWThrB.BhB6h00Jh PnhrMThhBb6%?R?bh} Dnnh ?+n.Bh}0m0+BM?BrbMhn?n MTB2?2n.}0B< rr .T?r .0bBT?20}0}2  2M222h0+ 0h.6T06 }2Tb T6<Ml?B 000Bb?bb:M22bbMrh.0hbbb+?G2?b+B}.*? b+2MM TnB+}B}n06b}nq  r.?M T b2}2B+?0r2Bbd}n +2B22.b0}2hr? 6hMh } Mr+.+b?b 0hsh6}6M}}i0 B.+.bhS0}0}h}b2}Tgr # h+?.Mh+0.00Y?6R6S0.? rbM.T?hnb6}2B.rhrh}B2h+++?2rn}0nBb?.?a60282MnnBh.} a+bBMT.rn66M+hT yB?B?T2b?)}Z}b0}+^} .rb.TT}T.brL.L0 ?Ml2n?pnnB6.+T}6 }h n Tr}h62Ubr0 l Th6BM H? nrBM}nKbhMBB.bM0MBr2  ?rT.bbhb?.2BB?B66Mr?2 Mr+.+ rb6+.u2?06bBM2r n+n2 h6620MYMT+rbMM?T ?02.MTMbn}bSMb rhBB2.rMMM2rT +T} 22?.r0LThh 6+0B T2+b}TB)?k0BM02+ r+MT6T b.{+Qh 0rb.b2?b20b.nT6620. h ?}2Md BrBM0BbTnb }r ? n}T.2T2n+00hTTBb}}}T0 br?.?n.nB+}B}6n6b}n;  r.?M.h2bT00Bn666hBr2? 2r?h}h}r0..T6bn}tMhZM+hrB.6b?b?.?hrb0Mh}?2n Br}hEhMbn>h<hnm}b(n : h+?.Mh+0.0h# Tir2M0V.+6+ ..b++B.6enrh6?Mn2B }.R.6?2bM}MB+ brMKT26b2+MBMTn6b}MT  h0BM. MrMMrB nT6 M2d. 0}T.h26n00 B2nb6T0uCEbBrh2.hbbb+?c2b66 M X. BMrSMh+rb0nT b 02}MT0 M+r.nTTr0+bB?T?6 }6 +?}r?MbhMrM0rB6Tb602n7.r++TBT2_bMB?S2 26+M0  6r+n2TTh02B2hM?r0bMrh nh+B2bTTnY0&?+?06+}r2M+6+ ..b++M.6dnrh6?Mn2B }.#.6b?bM}MB+ b}.M0h0n?0 hBnTbD.MQ}60}0WbhTr20TBBT}6rB2ZM?}60MBn+nb+3T}T}++B} ??nr6.22.0h0h.BTh}+0.Tr66}y2}  r}B+B}Tb}}}r2hr.}C1}h+0n+6B+?Tba2?F.6T+2B22.b0+H)rT.rTBrm.nbr}B2n}bbB6B6bI6ndM?Mr6+ B h.bBBrTB?+0bMn  r M2.M 0bM}rvn T00M+)5nT+M.r Bb00636bb6BM6 } }0 B2?2n.}022Tn0MM0h0 M0 hBh+b}} 8hrnr6j h?+T.T2BT0b+0rAMr6r+Kbh b +.BBnb6T0Y4FbBr.M?hbb2+MhTTBb}}}T0 brnM hr0?+.hT?2r20.20?x+rM.TTrr+.8bT}r2#}2br6r62/hn+M.MT6? r }.2BrrMB.+ bbnB T b26MB02Mnr+nBT 0bb0?U?6.6B}}2}+n+b.?T?0.0BB}?}MnMb2?n?...Bh.nM}2?}?rrh2.2.6.MTh n+}h0?tn?B6}2q22b2+MBMTn6b}MTT?6+2MMhM +0bBMn 620{BB TM.M0h?+c. h}nn+0}6 ??nr6.22.0h+nBrT?6 }BPhr}rr.hn.n.r}hTb 0r2h%? nrBM}n5n++MBB?b6h2?q.r?r?2fT2+}06T6T0}?}T?2 nrr.0TTn.B_fhnB}hBM=b }+2.?T20}0.h+62}T2+2} b.}.rTh0.08h.bT}T2}_. L+r.nb+bb0d?}bt0+M+n? n+6B2h.}h0B%6r?}+}h?rn6Bh.?TnbB0}?x??0B}.?Mnr+6.bT0}n0&T  T}TMB2}n}BnBbTnb }r ? 2r+hnh6r M0h06?bn}622?..h.h 2nnMBB0T+br}M 6 M}b.h  b2+.B.666r}n2nrW+2M%2BbTB.B0??}pBZT,6 +?h.2=bh00B66}6rMh . <6}2Tnh0}+.BS?r6n2+Q.n2r}.MTbn+/?D2?+MnM6??rh..M8Thb006?}?.0022 h6B+..?Tb620MTT?B6}M}?0 .0b. ?2+b00T ?26.}.2BnhB?.nh.b2}bTb TrhM2h +P0h2Bb 0nBTeB?}r}hnhbnn+ Br6?62}+ n 6}?26n. W0hB0T6}}0_2T?.rB.r2}0n0TB}660rBn2nrUrh.?hMn+B.B nM6+M0w^nb+bB2TbrB0.B??br2}M?T Br}.} 0nr. B} T6hMM?  2r.M.hBbhF?BnT.62Mb?bnT+h.2T 0&0bhB?}rMMhhrnr0TBrn2bM0+>+r?r Mhhh+}+M.+T+}?}nTT hM222n6nr+nBnb_6?0+lM brT:rh nh0hh2T?6M}r2r?n+T.rn?+rMM.rTnbn}b&+r}6.Mn2rnBMBB0T+br}M 6 hr .bhBn+B}Bnb}b0Y62?r?rb2FT2+}+}hrT.62MT20 n.6.+ b++. .B??6r}}2r+?+n2hnr+0Ihs?TBM?M22++n+62n 0+0p?Bn?6r2}.nh B+6T?n6+h}h?}T.6sMr2n+++b.Hb}0h++T2?1M+}}2.nb+?T6h0+b0nT  265}BhT+.+62MT0+0}bv? ?M.MB2. M02T}Tr6h*.jQbM}T2Tn} .+XBrTn}+}2Tr?.}b.Thhn20 T)TQ+B}+TM rrn.nnCb2+.B.666r}6Yb 0.n.Th}06.6h6nM6}2nk6 ++TMib?b20+?n?6b?B0?++?rn.6T2n.zhBn?r6?M 2B h.}.rTh0.0<h}b+Mn}62+nTrET?Tn+TBrT+bbrn}}2Bnr+ 20Tbb?}?TT?nrB}.hr6B022Mhrbn0n/b?+M}}.2n r+B2BT0b+0r(Mr6r+3b Mr.M0BbT?6?1.!B?.6M.2n}nr0hT.T1+}BU n?6r+.T240?+6B0Tn6bM2:?r.r0.?nX+2M.B.66b+}}2  h.n.0  nr}TB6?B6+Mr2B6b+nM}hBbr0 h0?b6?M??T h}M.?T0nr} hMTr6n}n2b +.}M.hnnr0BhB?06+}r2M+6+M2bh06 0+22?}r0.2?rn +hBhb}bM0+y+r?r Mhhh+}+.20T+0rBr?m 26.M.n6nr+nBnbz620.t.r6rrMnhn+q02..T.}6}rFn nMa.22O B0TT.T06?P85)bk} 2  M0?+nB6?2b.2hNB 6.?26 0r+0n?hT?6n}B9}r^rM.nbh+n. h6nM6+2nm6 ++TMjb?b20+?n?n0?gn? +?rn.6T2n.:hBB?6M?%6?6?6}B.}b6n+0}Y ?hMn}+2M 6+rBThn0O0Munrhrh0C?brbMBTnh6b+}TBIr?6.M2hTn0+nT6Th06}??? T}2M}2r }B?.bnT0nBuT}r6r+M n+nb+dT}n(++B2;2r+6}M.hbn?B6B T.}+0MT66}.hM?hnnB+}THTM6n2hz b#Mb2bnJnh0?BMT+}.}.k0?..nMf  +b.6T6bh0.2n26 T.6. h.0+.Bh+TrMh}?2n Br}hIh6620MgMT+rbMM?T?06B2bT?+20GTBbB00Mb? nb0T._TM+ }?B+?MrbMT?rn +hBhn2b?}M#r r6n.Thr6B+?BMTr6r}h2T r+2MMhM B0bBMn 6h.BX.6M}M/rh rT0 -2T.60BT2h?6r0. h2rb0T.mT:+B}0G+?rrMh62sbr0 { Th6BM T0?T6b:Bh}rr06Tbbb0T}BTM B+0.6T rM0rBn?n}DM2l%?B+Th.hnbB00;0T6r M0?2 h+B.0T0b?} {0bT6VBM2}r0M02bTT+2}T*B?}rry22M +++T?T b?0TYbrh6BM6n?rnM?.Tb}n.0DWr?nM+Mb23+}M.M+n2b2C+B}?.rbM?n6n6+ .6bPbb.BTI6hMhV. n+#0h.M6hbB}6 ?6 6hZr2r0h+?BnTBb}I(f+bBrM.M2+bbMBB+nrb.Mbw}n2+2ZMhhb0+QTbbnr2Br22 +M..r ?+6B .7?h60}6 } r+hhnh.r}0h90TA}bDbh2r0rn.6T2n.&hV?b26BMB26nrM2.Mh}n00B?+?hr0}* br 022bT?+ }2B.?.M6Mr26 b+0.MTn0+}hTh?nrBM? 0r00 hBh+b}} -hrnr6m hTbT+}BMn 620)BB TM.MnhBn?.0hr? +0}6Tr  rh.hn}nv+nBr?TbBB 22?.r.cM2J+}0 # Th6BZn2TnTr}.Mnbr006h ??}TPTTB 0}r.0Tbb?}2hr?6b.M220 b}M.rhnbn. m2TzbBMT . 6}M.0T0n6} hM?60b}}h  ++B.B 0n/}rB.6 }?MB?b B+6h}Tb+hBn?TT.6:Mr2n+++b.Eb?b}.+B{ r6.2   nB.r.?TnbB0}?; h0BMMhMnn0b2BT0b+0rdMr66m.r2.+ .TBBn 6hBTXB?}r}hnhbnn+ BrT06?56#/b9r?.Mhh+r.rVTbMb6}+2T?I.?.n Tb2}2B+?00T}BJ.?M+2h}h?bM0hTrbbrTBr2n6b+TMch>0+00B6?6MhMT2h 2+ h/hMbnB Tbbh622+5} .+b.?b6n}0BB+?0r }6nh B+6T?hbnh.rT6rh6?Mn2B }.g.6b?bM}MB+ b}.M0h0n?0 hBnTbc.M!}60}0NbhTr20TBBT}6rB2KD?nrr.T2Br 02..T.+M0_?}  + MhhB+n0TeTT}6MebT0 6} .?nT+TMBB0nr60Mb2?n2}rM hhnh0TBn66b+}ht  0}0.bhnn 0r??T}}6M2h2?.+0hhhBbB061r6T0bM??2 1MB2B 0bb. ,b T6WMM? n2r...b6br0n>n6ar2}.2.+6+r.nTn0C}?B+?MrbMT?rn +hBhn2b}0rB}r?6.,T nrt.2T6T+b q+cb?kM}Mn?+r2.bhrbqbh}?AM?+M.Mhh  ,02B0h.}6} 7.r+r?s6 }0h+?BnTBb}w*&6n2rM.M2+bb0MhTT?r2}M2M n+b.M  b?++BM?b6TBr2  h+h22h?+i0r:rTnrT=+2bnbrUB2n0rB0}hr?6}bwb?T B}M.BT0b6} hMTr6n}n2b +.}M.hnnr0BhB?06+}r2M+6r,BrT 6 0h5B  00}}hrn 0 ..TB6 .Mjr?nrn2-h2 .+.T6hrbn0nfb?+M}}.2n r+B2BT0b+0reMr6r6M 26+t++2Bbh0}BM ? nr2hnhTn}B6Bhnn+MjT? r}6.MLhrnnB+..?2b}}M2b?+.?.2h+0n+5h?b6}.0#2h 0r6h}h?bM0r=rTnrTMrTB?Z+M.rTrbh}T%rb26y}n2rnTrB2 T2n.0.hMT-}}M h  h+BhnTT6T0}QM6b00M6? n?.ThT Bb0.r&0 br?.2?r  +h.hTTbnV6B+?h6 M0?0nb+n. Tr}?0}2  2+2}.h0b2Mb.6? 62M2X+ 0+23rh nh0hT}TMb+}+ ?  rh.hn}nM+}.0TB}+}h20 b+bM?T2bbMMBh?06bMbg9n2+b.Bh0b0+M! ?00T}BI} }.n.bhnn 0r???26+2n?+6}}+22h.0++}B.?b6?26a_nr+ B hhbB} jMTzrrM h  .+BB T0+20n,B?0r0}Mh n0MT.Bh.nM}2?}?rrh2.2.6}M.2Bb}n.04yr?nM+M?2bnr02.}b.nBB.B.6+6r2nhh+h0Th.TM0+0ITb?}6B.2hrn?BnB6n 06BTBM hrbM+hb0h0?2sbb0r:f2h?M.hMBh60?.bhh?h}}0.E8 rrnh+hbn-B}B.n+0.2?,n 6+2M.bhnB06Tbb6bhBr26+hr?.nhBn}BpB??b6hMT2M?:.+.bhH0}.F.+b2652+l} .+b.?b6b6.bS b r?}+2Mnb+T2rT bh}hT2 200M6hr 60T20hbb?0?x ?6M+}}2? b+M2MTrb60b_0rnr0# hhbT+hBMn 620.&.r6rrM62bn0Bn.bn b?BTihbMr6e02rr +rhTTBb}}} n brnM hr0?02B+6n0bBnT0 +.?Mnh6b2+.?hTB662?2n6hM h}2.n&0rBn6+6+}bq++h+T22nT+6B?hVb+MhM?,B+?+2.+bnb6+?h0brM?}n26n2r.ThT?+2BbT6b r?}+2Mnb+T2rT bh}hT2??rMM0hb6M+?20T+nO}TmM?r0BM026n6MbBTThb2} ?<?6+2MBh0r2+62BT0b6}6 h TrhM2h +Q+MBnb 0b+{Tb nM#Mhh?nM++T.Th6 0H22 06.h6h n.B+h}h6+B}. 6?+r}. hh0n0rh ?hrT0B2M6 +?M+hMbb0Thr? 6hMh?2 n}0M3Trbr}Th0?n6T}n . B}M2Bn0b0Bn!h T62MM2} b.}.n 0bhBnT}?hr0Mbh 6M+r.nTn+ 02B.T.6BMhn? nr..2Tb+b}Txh?2r 2c2+6B+?BMTM6b.B&+?b6+hhhTr2.ThBTB0+}n2b? +2M*20+E++2BTn0+Ba{n Br0.r 2nM++B+nr6 }h2hr}rMM+h+0?0 Bh?h}}}.T0 +Mr2rn_b2+.B.666r}6Yb 0.nM4hTb 0MB66+6+B02n Trnh.h6rM.XT+bnMhM?UB+?+2.+bnnC.nh0b}M?}n26n2r.ThhBb6f?Trbh6+2}X. v+r.nb+bh}0Pb b6?.2hb6Mr0B0Tb6b0W22 b0BM}?rn6.bhbnTbB.MyB 0r6. ?Mnr+6.bT0}n}T)}r6rh3b?Mr.Bn.6T+6T0C ??}+ .2T2 .00i2nbb M 22n2r+.0T2rr0nhT?h}2g2TM r}b.rT bh0Bhb?T6h}22 rsr6B2hMbM++>b?M0T}2h2 M+M.nTbbM. ChnB6.#M?M6r+ 2TT 620.J0bT6B}}2}+n+b.?T?0.0BB.TMr22}2rnh..2s .b?7nB6?+rT}1n?n2++TnhHn?.0T}r?6nM6h2 .BhBhhBbhs+_2br}6fB }r .?T+T}bbK})r hM.M6U}rT.2T}h.bY}rfnr+r+mrhbbb+?a2Tn6B}+2rbBr?.Mh6bbBhBMb.b.7n2hrTMT2.h0b00?3 bB} MhU6 0+ .2 bbT+(BwnB6hM02bnbr?B2TbrM0hf0?brb}3h2nb}B.} rb6BbTbbT6BBM2Bn0+6B  Mb}0hv ?B60O22M +++2rT b?0TQbrh6+.T2BnBr}BrTB+ 0+2T?BrBM6hrnBMbB?n2buBBTBb0rb_ hbbT+ZBMn 620.y.r6rrM62bn0BnBTT}}6}hT66nMPMhh?nM++T.Tn6B}020?6+ .0 2nn0BB0?06?M 206TrHOMh}+0.0hb?T02MT2B }+r22hMn}+0BB6+6hM02bnbr?B2TbrM0hD0?brb};h2nb}B.} rb6BbTbbT6BBM2Bn0+6B  Mbr0nun6yr2}.2.+6+r.nTn0,}2B.?.M6Mr2nnn.XB2h.b.{6mr?nrn2Qh2 QrBBTb.b0}??(?X0.>  nr0B?.nT6620. h?Br6h? 6rMM+Bn6hb?}nCB?}MJMMhn0h.nh0hn+M}+ n?6r+.T2D0?+6B0Tn6bM2c?r.r0.?nenjM)hwbT}.0H2h 0r6h}hrbhBnBn?B60M0A6n +0}L bb } Bb?B}r}?2n Br}h#ThrB0.TMbM0rM 2? T+bThT?+20BJB?6rrF22M +++2rT6n.}2Q0?b0MMr2nnnM .+hMbB}bJhr?r pTh2b2r.B0nTb2.Mw0606}2  brT+..0h.}n}6T  TMhM2n+n}+bT}Tnbr}02T?.M3.2?Bnb0MB+bb6 MTT0?.+b.?T2rb0 h ?2b.}.TM?rrnMnhbn+B}..Tnbr}BTB 0r+MrhM060 B.6h6hM02bnbr?B2Tb }.Tg2 26TM0  ?:+h.0h60}0.h0?+}r=r? n2rdMBTT0.0lhM?0r0M?h 6M+r.nTn+ }2B.?.M6Mr26 b+0Tnh.6b}T2TTyrM.T?r+r+?BMTr6r}h2T r}2MM2+n+B?B T?bT}b h?Br6h? rrbM+2BT}}60+9}  rhhn2+nM+6Br?TbnxHWM n.h.h h+h.6TVTh6?}M-+r.r0.?nin6}2BM?Mb+Mb2M?}r..bh?060+hb?n} V ?2 Mr}M0hB0+0}hr?brb}Jh26r+ .hTh+20VBn?rrT}B? n2r... Mbh0 Db?B6+2}2.60+rBrhn6T0622?.r0q22nnB+}Brb?bBBdB366rn2   rf+MBMTn6b_2?b?26.}.2BnhB?.nh.b2}bTb TrhM2h +m+MBn6hb+MT5B B6}.rhB .+xBrTn}+}}Tr 6Mb2b TnB+..M?2}}}.T0 r+r.hTTr00bB???0T}BS} }.n.bh?b?B.BBT}6}2n2b nr .rb?b20+?n?n0?B0?06M.+M}h.bb0??6? 6.2+?}rn}..}b6n+0}k ?hMnMT2}+6+62nnb+rQnB6?+rT}8n?n2++TnTnn?.0T0bOM+}}2.nb+?T6h}bB0+(0  66hh2Bn6B?B?n?0TBT h??rnMB2}+p+6f2TM6M0+2b M}TM?T2nM0MBn?b6MB 2??+rM.bhTrr0 Bh?h02}n&r 0+TM.nQbhMBBM?Mb+Mb<. 2+T.0hn060hT6? 0TM? ? ?+M.+Tb0h0MT.T.}nM? TrTM..0T0b?} TB6 }0}b?Tn2.2..n0+M=?B.?2rTM02n+6+r2bn++ 0fBMTQM6M+?bnn.?.Tb}b.0r?.?B0MM0 0r0Mb.+?Tbp}MTT?++2MMh0rT+B.}T}+00b5???r M6n+ }+?.bTM+M}r{6?br0hn2gnT0 BMT6}+}}Tr b+bM?T2n6+0BM? bC2h_}rhrB%Mh.+.+.zb??r2l}2br6r62;h.+M.MT6? r }.2BrrMBh h2rM00T0?6} *b . 6r0.MT n%Yh{Tb2}?BB2+ br+ThT?+209T.TMMnM62T+6+r2bT 0 B T2??rMM+hb6M+?B0Tb6 .M!r?nrnP h2 .+.T6Trb60bG0rn6..bhTbTr&BM?T+r0b2b T+TM}hMbTM0BbT?6?<.HB?.6M.2n}nr0hT.n>0rBhCgr}6.M8hrnnB+B?Tb6rM2F}r.rBIMh0b0+6G T+rT}B2M6Tr6B2hMb0Bnm26h6hd+2brbMbhhh202BbD2T=bBMT . 0+?hxnh+0.nVh6.b9Mh20 6.}.nhrb0}TB.6:rhBB2MnMr+Bbh.b2}Tv0?nM6Mh 6n MTB?b?b?}MU+ bMhMM . ..nB?bT0TB.V0 0r?.  B+ .0.bnT62u2J.60}Mh?2.n20TB0Tn}6}rTb6+} Md2M 3B6B+nb6nQ?uTr}r.Mrn.nBMMB0b000BbN+nTrc.M Tn+}2BM?00T}Bs} }}0.bhnn 0r??T.62MT20 n.6.r bb } Bh?B0b}}uBn2+r.?bnb6. B+ T6BMM?  5rMM*b6br.bc 6 } 5z(B+6++. b+b?B6B.nBrg}bT}b+rBM}b?b.B}Bc rr .T Mnb+?B?nTbB0}S}rnrbM?h?+.+B.}T}}n}bun? rrh?h2n+Bnhrn.++}6 ??nr6.22.0h+BB66?6?0hTr6+}+h62+n}0 Bh6nb+}M86 r+TMnnvnM0n?h?h0hu2?br<rh.?hMn+B.B6T06MM #v+hr}hhh++.+4T+?2}n}T?T .r0M.bnbn. T66h0B2+2} b.}.rTh0.0.h}bT}T2}E. !+r.nb+bb0(?}bB0}M6n? n+6B2h.}h0Bw6r?r?v? 2+}r..4Trbn-+D?brrb.b2?b2+nBBT?6r.Bv? Mrh.bnhnM....bnb}fT?T6.6M2MnTn.M0B+br0rB 22bB+2.Mh+bbMBB0T+br}M 6?#+r. T nh0Bf b9} Br2  h+hh}hMn}+0BB6+6?Br2bnbr?B2h?+.0 hr?+}+}+hT 6+Mh6TT0?0?T}?h}rxr ?n202.+T00 B0?2TM0rM2 b }.2hTb+n0.rT}bbrh}B2h+++02rhj0n0 ?.?i602Q226BrMhMnM+r0}2  2rBx 26bTrBBMn 620.Q.bMr+jbhn+ . h2TM+0}M2r n+T&0hbn?0?T.TBb.0M22r}rr.hn.n.M}h36nb6}+2T?-.?.2h+0n.+h??h}.0(2h 0r6h}hnr00rFrTnrTB02h6 r+BThBbB06_r?B0b}+hT 6MB2BTrrB06hMTdrr}.hT6r+hBbTT6T0 DM T00M6? n?.ThT Bb0.r/0 br?.2?rn +?.TTb}h0+?n?BrB}}hrrm+MBMTn6bx2T  h0BM. MrMMrB nT6 M29. 0}TMB2}n}BnBbTnb }r ??}+ .2T2 .0032nbb6M 22n2r+.0T2rr0nhT?h}2e2TM r}b.rT bh0Bhb?Tbd}F + 0r6.6bhbT+UB76+6.}?2bn2rM2ThBn}0}h0TX6TM 2M 6.+.} rbb}bB? 20r}.22nT+0.nb6bh.bB}  r2.22+n0022rh}6 }h?262r0=2266B+hB0T66 .0Uh rr . 2bnB0 2Mhrbn0nEb?+M}}.2n r+B2BT0b+0r<Mr6rhM hbnB++T}T.+0}r2r?n+TL02xnT0 BMT6}+}?Tr?.+b.TTTn}0M8Tn0b.Mb2?rTMT.M Tn+.2B??M6+MbTM ?+0.bTbnr}2LbnB60}626+h+T.hh2b B)BM?nMh) ?r66}M.+bnn60+iTT%M?M22++nMr2.2++20.?+T}6.Mb2?+6r}.Bh+b0} B6rh6BM6n?rbM+M6 Bb}G6B+?}r Mhnn O+TB TMb6e+j0brrb.b2?b2+nBBT06r.BW? Mrr.bnhnh00Bbbb0bM2?0 66..2h0nbMMBrTn6nB _6n2rM.M2+bb0MhTT6r2}M2M n+b.MT n6}2BM?MbBMb2MnT}0Mbh?n?0 B66+b}}?1b M}M.rh6nb00?nTO6TM 2M 6.+.0 rbb}bB? 26nMB20nr}B.?TMbr}b?h?hr0Mb brb02h0T bh}h?}?M6}}02B+++?.bTr620}?.?}}.M2 +nnMbBhhBbhS+B.br}}2n b+.+!.0bgbM}n h6b0/Mhn+ }+.BbT?}6}nTb  + MhhBrb+ h2T}0B0;?r60}b.h2BnhB+B0nr6?#n( r.rgM0n,nbMBBb?M6r7b2hnT}0M.TbbT}2hbT00 M2S. .}M.+ bbnB T b26MB02Mnr+nBT 0bb0nB ?rM?Mh?Tn202M.T0+T0.hM?hr0M?h 6M+6. h60V}2hB?+}MxM 6 b.XBhhM}h0}TJ?n0b.6^B6?}h.bh?0}}????6+2MMh0+ +B.}T}+0}bc? ?M.MB2}n}BnBbT?6?7.zB?}r}hnhbn?0?T.TBb}}} n br?.?n.nB+..M?2}}}r2hr.r.Y} ++hB}..TL6r}n + brph} 0+TMYhb??}&}h2? Mr+h.h0b?BDBFn^00H6 .?*+h.0h60}0r*h6.6.B.?T6_MnThh?bn0BB}6!6MMnnhnh}Y2bn?+MKnB6?+rT}4n? 6+0.nTb620??.?0r?29?lrnr?20T6}?0nD6 26.hhhh B+hT+T0+r}b2b??+226h b +.BBT.br,.Dn Br0.r?Bn?+BBhnr6 }h2h62rPMnhrbT+Bh ?2b.}.TM hr .bhBn+B}Bnb}66/62rr?rb2H2^rM0hB ?b6B}+ } .}02. rnT06BMTi6M262+6nMM2Bbnb60T?6? 6.2+2}66M+Thh?bn0BB}6U6MMnnhr?Mh.Wb+n}0.{b??M6M 2.+++}26nb}h0?<n?B6}2chh6B. hnnTbB0.BM 2M}M? - }.6.0bb+0}bc? ?M.MB2. M02T}Tr6hP.L:T}}T2 n} .+EBrTn}+}+fb?+.h.T 2rU. T?nM0n2h2??B.?.2h+0n.6h???}.0i2h 0r6h}hTr00hvr?rrTB02+?y+T.MhrrB00B6?60b}n?2 6+B.+Tr+20jBn?rrT}B? n2r... Mbr06Bb?0Mn}M?  }0TBTTM+ }2B.?.M6Mr2nnn.vB2h7nB}T?.?0r?2p  6.+.T6h+b}} *hrn6k/ hTrT+B..hM62S}Yr hM.2??.rT0hT}h.bK}r_nr+6..22}nM0b.+6?62}+ n606?90h+0?+nB6?2b.2h2b62r}NBh.n?0b<2TM0T}BN} }}0.n  n?.T.BT}b}}MDV+hr?M}2Bb . G2TebBMT . .}MM} 0bb0?i?6.6B}}2}+n+b.?T?0.0=hM?}}0S0nhnTrP.1b+n006B6?r6}2.Ol 6r0B2n2bM0}B0?BM+M+2b +BhBTn2bB}BB} r}>MMhMnn0bBnT2}n0.2b T+2Hb2}nb++h2TMb+}+Tr  rh.hn}nM+}.0TB}+}bF(r}}}!E?Gn.B+.}T.6b}? 6?R+r. T nh0Bf n0bEMr2 n r..BT bM+PJr? r }b2Bn +02ThBn.+Md26}6rMh .6.Mh2T rbnkhB??n6B}} D +rM.BTbbhf?UbbTbM.22MnM+nBbTM+ 0+BM?BrbMhn? bM .+hMbB}b(hr?r?tTg0?BMb. n2b6B}&}nT6+Mr22 6+T.6b6n0+B?nTMrB. h2nh0hBbh++0}6BB?}rMMhhTnT++TnTn0.}0?M?GrT. hMn6B+B0nr6nMb2Tn2}rM6h0nh+b.jT+}.}B2B6B+rB2hMbM.}/b?M0 M2H. .M}.BT n}00.B?T6?M?2r?}}M.+h2n.0BB?? 6 }} 6nhM-.Mn}n5B0B.?2rTM02n+6+r2bT?6 }2uB?MrMaMhbnB+0B0n+6 }0T2?n0BM026n6MbM0b +r}?D2??M}Mn?0rM.6B ? bb}B=.?rM.M7?Mn}.0h0nbb}0B22 rr?hnhbr 0bCTTX6MB sM n.h.TTTnB0 kTnr+B42??r.6A.hh0n6B}B}?M6h/b?rnT}rM2h?+}0rdr?hrT0r?2 Mr}M0hB0+0+I0Tf} Zbh26b6BM0n+bb}bBd 2bbBB20 6+62bh.6Tq2Bt6 } MB? nhMT.Bh}b}.0B. brT.Td{nM0T2rTM0+} ?h?2}.}. Mr2+M.}h0bBH+H??brr.22}+.+62MT060062 bMrhM hbnB++T}T}+00t2r?.M 2?hBrb+}.B?26r}? n?6} M+TTn60MT TV02}?2M h+b=M2}r00TB}bj66Bn?+rbrh.?hMn+B.B0??}6}hTW6 r+BTh6+B.Bzr6Tb.}z2r n.+.} rbb}bB/ 20r}}h  +.22BT0+2+khB?066M6nhnT+h.2T bb0_??T.0+v22nnB+?h0n06 BBB+?}r Mhnnn6M BT?Tb}}MT ?6+2Mn Mr00b2Mh}+0}bW? ?M.MB2}n}BnBbT?6?e.ZB?}r}hnhbnn+ Br6?62}+ n6 }GY}h60?+nB6?2b.2h-B 6.?.? hrB.r?hT?6n}BD}r#rM.nbhbhrvhbbT002nj6 ++TM)b?bn02?nT+6M}?3r hr}h=T2n.0.hM?r66}b20+n+n.Thn0.0BhM?0r0}6h r}+rBrTh6T}hBMrh6+.T2BnMMT.6TTbn.M^r?nrnP h2 .+.T6Trb60b#0rn6<MTh nM+6T+T?0+0r?n  MhM. . ..+.Mnbb+MTVB B6}.rhBr ++ETTB6B}62r B}b.? 2nG.BhBn06bB 2bnTrt.M  n6}2BM?Mb+Mb2M6Tr6B2hMbM0nGb?M0 MhTB .MM2M rb .T_  26.M0?T 6}M.0T0n6} B+ T66MM?T 602.nT00n0nYB??}0e0h rB++2bTn0 B T2?M00MMhrnn0T20h.6b}T2TTprM.T?r .0bBT?Tb}}M2Tb0r6R h?+T.T2BT0+r}02b ?+2jrhnn2Bn.+TMb?0r:h?}M*M6T2nM0M.+?b6M}0l6 6.h.? 2nQ.BhBn06bB 2bnTr>.M  n+MBBM?Mb+MbTB?M}rM22 rM06B T6}#M2TBr2M}h0h+0+0}Bb6}6BB02?nr+ BT 0bn0TBn6.6BBM?8r+.r.Bb6b+0 ?+?+0rMrhbnT022rh6+T0t2262r01T2 6M++B0n+6 .MV ?.M+}.?r6B+?T6TMbn}n?A?b0.g 2}+.rZBhT0b6:}BB M6B.b?M .00.M? +M}62r6r+Tir2rrb0T.zTs+B}0C6 6}b.T21nUMBB}nr66{b?b6TrBQMhBb006v nM6+Bb2 n r..B bbT+9B/6+60}+fr M.6. h.0+0+h6nB00lb .?(+h.0h60}0rmh6.6.B}?T6BM}Thh?bn0BB}6i6R}MjW+6+h2bnb+.B+TTbMM6M+2 +++b.vb}+0BbTh?.M+}}2.nb+?T6h<6r} 2 ?hrB. hM I0rB ? b.}B2  0}2MnhBn000.M? 60BT2h?6r0. h2rb0T.3TW+B}?8b r+2M}n.n6MBB?nr6bMb#?n2rn.Bh?brB?B??M6hCr?rnTMM.6  b?BTTTnB60Br20nb+?B2 rn}} c2 2b.M0h26br6B T2620+#0 20rMn?Tnh.2h2 Mbr.bjr  rhMB?b +0T.BTBn}}r7Bb 6n.T2BnB+6BrTB+b}?T2?y}B#B?0nbM Bb?Tbu}MT ?6+2MMhM +0bBMnTb6M2QM Mrn.bhMb 02Q2TT60M2Tr n}T.hn2+2MMBrnb6rM 2h B}bM+TTnB0B.}?r6BB tnnTrB.Bh6br0Bhb??02}R?B6B}0.b  bb}TBp?M0 }6h2 M+MM+TbbM.TB6 26MMM2nnb+MB T2620T:0 20rMn?Tnh.2h2 Mbr.bzr  rhMB?b +0T.BTBn}}rJBb 6n.T2BnB+6BrTB+b}nB}?BrrM ?0nb+?B?nTbB0.BM 2M}M?hMnr0r.n?T6rM2P? Mrr.rhhbT0rBBn b+MTeB Br2.rhBrb0T.GTZ}+}0V+?rrMh6h+n B+..?2b60Mgn?^.?M}T b2}2..?0r2}B/} }.n.bh?b?B.BBT}6}2n2b ?+?h.hBn.+Mj26}6rMh .6}Mr2? rbnmhB??n6B}} = M+nTh d++.n3?6V6hM?2M +...0T?0a..T+bn00M6n? n+6B2h.}h0B*6r?r?FT?rr?MBT6h+b}} 8hrn6+.bhTbT+}BM?T+r0.2b T+T}%hMbTM0BbTnb }r ??.r2.Th0nnB6Brnb6 M Lh Br?.MhrbbBhBh?06bIb?bn2M0. hhbhB}BMT}b0}B +?.+0.bTbnw}24bnM6hM02bnbr?B2TbrB00B6?6MhMT2h 2+ hAhMbnxh5hbh0bQh?}+nr6.+TTn:5?B.?2rTM02n+6+02bh26 }222?+r0.2?r .+2BTT0bn;6B0br6.M2hTn0+nT6T6+b+BBTb06r5 2}rR+4mbh.bM0 B}?b6}2},B T.+.2?T6r} -n nr0}.?Bn}+T.(?2bn}bWb?.M+M+nhnBB2B?Tb6rM2l}r.rBEMh+b00bF nMb}}Bwn?0r?M.bhbT}TTT?Mr M2h261+0B2 rb 0hZhbarTMrSt BrT.bh6b60M.Cb26.} 2hnTr6.rhrn9B}gn6?r2)w2?rB+h. TbbB0+?}?M00M6hrn 0TB2?202}02T?BrBi.hrnBM .+nTbB0}/}b0bB2r?Mn6+ .6b8b+.B?26}rr.r20bT0h.M6h6?B2Q96B}B<02snT0 BMT6}+}0Tr 0+b.?T2rr02B+6n6bMb2T r+bAM T+ .6?hT?6n}B=}r%r^B2hn+0.MgbnMb }6?z M+M.nTb M. m2TjbBMT . .+B.?nr+0} h0TTbBS.20n0+?B 20+T0BB}?}00Mhhb+ +?hrnr6T.r!nbbrT}E276B+hB0Tb6b0?22 b0M.2 .nr.n. bhbhi2T  26=}BhT+.+0B?bx+.B6Tnb0r6h?2nn602..6hbn}r#?  rBMhn}nr0hT.T.+}B6?2r}6.MvhrnnB+Bh?06bMbw?n2+bcMhhb00babTNr2Mb?B h+0.bTbnr}2*bnB6.}?2bn2rM2ThBn}0}h0TN6TM 2M 6.+.0 rbb}bB? 26nMB20nr.?.?TMbrBrTr T}M}b2? ?+ .6b+n}0?Bb?M0MMr26 b+0Tnh.6b}T2TT*rM.T?r .0bBT?Tb}}M2T606..bhTbT+ BM?T+0}b%? ?M.MB2}n}BnBbT?6?y.>B?.6M.2n}nr0hT.nM0TBhTr n.hM?hnnB+}TgTM6n2h2hbk}M2?nsnh0?BMT+}.}6J0 M+ M&bhn}BhBhb.6B-+qMrn+h2Th6n00MH THMhM??2r?}BMrh.bT0n)T6.6xB} Tr .}..hr0.00!?6z}?B>2.+6r+.}T bhvnPT?}M6<+?6nn.Z.hT?bM0+?.?0r?2p  6SM B?b.nf}h)0?6M}M}2r }B?B nT0hB6?n62}bh?hnn2BnBTT}}6}+BnbM}0hn26n+0T.-6?6nBT?r6+}b.n2}nB0rB n06b}?2?6Trnhhh++++MTrnM6}}h2  Br022hMn+0+hr? 6?}T2b+hr+hnh.+.02TMb26M}+2++?+ .?hTbbVhBB?6M?Mn?hr .}M.hfbr0n?+T.r2}}2Mnbr+T?T2b+NnS6T?00G0n? n+6B2h.}h}hT2?6rB}.hrr2+^.nTr6T0BT  26.M.?M BMb..? 6 }BTb?T6e}*h2n?Bn.6h;bT}rTr  r?MThb0h0hh2T66B0.2r62rMM+h+0?0 Bh?h}}}Mq}?0rBh+hbnQB}Thn}6+2?wn 6+2M.bhnB06Tbb60?Br26+hr?.nhBn}B3BaTMbu262r6bMr2.n++n.B?6?+6 2+2b S.}2i2++209?+T}6.Mb2?+6r}2bhn+ }?B+?MrbMT?rn +hBhn262.0fnbrr6}.h2n0+b2MTrbn}nT  26%}BhT+.0T2MT6+0}b9? ?M.MB2. M02T}Tn+0}rTr  rh.hn}nM++B+6?6nBT2hr2M2h6hrnn0nT3?2bv0B2Tr.rn.Bh0b0+64 ?002m}2 n r..B2?r0..T0nB60}626+h+T.hh2b BxBM?nMhv2? 6n+?h^hhb?0MB+6.6nMB20n0r6B T0+20nkB?0r0M?h n0.T.nTBb0}0BM  r0JT2B .rMB2b}br}h?.?.0}Pr?.+}r..ATrbnW+c+?b6+hhhbr2.Thbb?+MBr h ?6Bh?h2n+Bnh?bhn+B2F.r+6}M.hbn?B6B T.}h}020?6+ f}28br0 j Tb6BM ?B?+r}. hh0n06h ??}TPTTB 0r+MrhM060+hb? r }.2B6b+TM/hRrB0.B??br2}M?T Br}.} 0n<0Tc ?M662+206r+bBbh?62.rB.?2rTM02n+6++2bh}6 }2ABbbrh}B2h+++02rTb0bBb?h?2M+M}2b+}+nh+h>+2MhBrn.+}M2/.+n+ch.Th60}b2 6BrrMnhnr 0?.+TM6b}TTr  rh.h 2nM+}.0TB}+}bp^r?rM.M2+bbM.Bh?06bMb3rn2+bh22}n.0bB?666+Bb2nr M 22hMn}+0BB6+6}Br2bnbr3B2 rb 0hKhb26M}+2++?+ .hTh0}0MB+?+M?M 2hnh.}.Mh+b+1?7 ??6TMbnh B+6T?n +}.6%nrh6?Mn2B }.X.MTn}hB?Tnbnr?2{2hn?+M.+b.b0}??X?k0.j. ?+.rvBhT0b6c}Ar hM.WH  r?+!T}h.bC}rZnr+rbMVn}n}M0h2n{0?J>Hh ?rMM+n.n6+0BM? bY2hae62rB.B2}br.2BnTr60MTZ.r_rhqB2b 0.TB.T0b.2n2b6 Mbhhb2nGB:uhTMMh}};Bn2+r.?bnbb. B. T6BMM?  prMMKb6b+.bT+6?MTMbnhn?rBT?h.b2}T,0?nM6M+?bn 0 BhTB+b0}BB 2rrM?nn AM B??T0T}MT ?+6MMBhbnhB?B nT6hM2Tx 0}TM0h?+H++2Bn b+#.2T?}r}hnhbr?M0Bn6?bn}622?..hM?TTnB0MhTT+r2}M206Trc.B BbrMB..nM6r}n2n6 +2M.h.rM0rBn?n0 M2m1?B+Th.hnbB00g0T6r M0 nr0}B.0h6b6Wh8T?h62M  dnhrMThhnbr+>B T.662}2?nM+rBrhn6T}r7b??r?2.2B }+}TnTbbn0 urr?r2M+nnrrMr2}n2b.q+B}?.rbM?n6 }+B.+T06 06 h?Br6h? nrMM+Bn6hb?}nCB?}MIM+2MnB0bBh6?b6=?RT686M2}hh+60rT??T0,}}TM hr .bhBn+B}B.n00.BrLT 6rMM_hM060+hnbM0B2n26 T.6. h.0+.Mh+nB6.26A+ }+ .hbnbT0}?6?+0n3n u h+?.Mh+0.00H?6Arh0.? rT..MgThb006?}?.0022 h6B+0.+hrbMp6Bc rrb.T?rnnMbBThRb-F+q0?+6rMMn6n +.hMnB++.Bx.r66+M}h nhBn.+TMb6}r2T?nM8MMhn0h0?M%nb0nKu>h ?rMM+n.b2MMB??0b+M TM }rh. hBn0.2BMT+6+Br2?6Tr6B2T2b0.TB.T0b.2n2b6 MbhTTT+.0?s0Tbr M?4B+?+?2Thj+.B?B+ T6BMM? n2r... Mnr0nBn?b6+2}=. nrr.B Bb00+Br?MM6M0?b .0 .?TB+b}TBN?ZM+M026n6BhBTThb2} ?#?Mrnhhh?6UMbhrbdbh}?XM?+M.M0h?+T.?M.n 6?t.B! hr0M6n}n}+r.}6?b}BT? 66MnY1 n0?0nB26n6T}} 66}6nqMh}0n+6B+?TbF2?>.6T+222h{nn0riTTB0 M2/. .}M.M bn.} BT?B0bMnc} B+r.  0bb0?1?bT6B}.lMn2.}B2 0bh}rBb T00Mb2?n?...Bh.nM}2?}TV00}+?r bMT..n2nM.0BBbrr Mhhh+}+M.+T+}?}nTT hM222n6nr+nBnb=6?0+7M brTRrh nh0hh2Tr6h8n^n Br0.026b 00h2nb6 M Db BMrM?hnnB+}TV?h+B}.?M6M}r. h?nT0b?h??02}B2B 6+r22hMn+0+hrT 6h}h2T n.6M+hhn 00h0?b6n} 2r+?r..2TTb00n?6?0}6}b ? 2Ms.nn}b6B6B66?r f22n r+0BTh.0t}hhB6h0M}b2}n2+?B2b}b..+?26TM+M}2b+}+rBhb.02..TT hM}}.2Znr+nT+TbbOI}&.b+}+h?2nn602..6hbB}6 ? n6hdr b0h+?BnTBb}OA2hbBM 2n TnB+..M?2}}}?2M?}+byMhBr00bB???}.}B:.?M+2h}hrbhB2TTn.0TMh }?.rL.rhn0++.l2T}6MMbC++?+2.+bnb6+?h0b+M?}n26n2r.Thhn+206WB?MrrF22; n+rBThB+ }2B.?.0MMM?b }0 ._TB+b}hBB?hM+M0?rr0.bBhbhb6}BB0 rr6MTn6nMMbBrbh060.2b T+2trh nh0hh2hMb+0+-0?.MxMh2+ M0ThTTBb.0M22r}6cJ0hhbr0bdTn06b}?2?r.rBM}h}0n0bBnT 6r2?22 +.n.6 ?r0.M??Tn66M2(.+hrB.6nb+6+hhr?6Mh}?2n Br}hKh1nM+Z?6Tl0b=r?}r+M?2+b6b+0 ?+?b6N2}?X?+M2.,b+n}0.)b??M6Mh?bn M B?h+bM}bYTbrr Mhhhr2+}20Th6r0b2Tb0r+}shTnM+r2BT0b6}6Tb TrhM2h +z+F2BTn6M002bbBr0M6h60h0TBhT26 we2TbB6.FM20rb0hh T2+B}TTM rrn.nnXb2+.B.666+Bb2nr M h}hMn+0+??? 6hMh } Mr+.+b?b 0?BT?bMh}B26+?+?2?n2+0yhB??n6B}} i M+nThTh+h.4T26X6hM?2M +...nTBb0}0B6  r0U22hnB+0B0T?6 }0TT?B6.}Mh2+}+rBhb.+BB+TTbrrnhh2?nn+B.}btb6M2SM M6+.bhMrTr0MBnb6T}h)2  M8MMhn++++4TTB6B0}2r B6?Y0hrbr+0)TbMb6}+2T?<.?.n TbhB2T2nM6r}6#b 0.n.6  bT}TB}?M0 M2H. .}M.rhnbnBcX2T.6.262r 6rb.0bnbT0}?6?606> ?.+nr6.+TTn&D?B}  r2.2f.n0022bbbbh}0&b b6R.2hb6B+0.+hrbMs6J ?.M+m}?.6lM Bhb.nq}hf0?6M}M}2r }B?..nT0TB}?nbm}rh?hnn2BnBTT}}6Br?hb.r+hn26n+0T.F6?b}M 22n26..0T2rb+}3 ?2r2}+20n2MB. T nb0Bhb?nb}}B2r  }0.bh?b?.TB6T06MM gX+hr}2ThnbB00i0T6r M0?2?B+B.0T0b?} c0bT6gBM2}r0M02bTT+2}TeB?}rr822?nM+rBrhn6T}rhBTMrMMrhrnh0TBrn2b..0=+6r}r3 h26B02BMT+6b.Bvh 0rb.b2?b20b2MTh60}b2b?%+2.b?Bn}MrB6bb0bBTCBbMrB.0h6b MMBhnb6 M ph Br?.MhhbbMMBh?0beM ?-?K+rM.n + 0BTr??02}_?B6B}0.b  bb}TB,?M0 }6h2 M+MM+TbbM} B6 26MMM2nnb+MBT rn.}b#T T6 MMhT60+62 T?0TBThB?00rM0hbn?022rTnb2unB+?M6?}r2h }.zB2h.b..M;}?hr MB20r2+M.+T++r} m??Trbhh2} B02BrT?}n0cTb?++TMBhB }0rBBn bTMT!B Br6.rhBrb0?h2T_0BBBT0 b} .bTTnq0Mh T6r2}M2M?++b.M Tn2}2BM?M6nMb2M6 +h8Bh.+M.Mhr? 0TM h2 .+02ThnbB00#0T6r M0?2 n+B.0T0b?} L0bT6JBM2}r0M02bTT+2}TCB?}rrW22n60+rBrhn6T0622?nr0R22nnB+?Brb?b?}MHh6r}r.T Mn6M B?bT0T.Bf0brr0.bh?b2Mr.}? 62M2B. 0+2.r2}b 02N2T+60M22bbMrh.0hbbb+rp2?b+B}}Tr 6Mb2b TnBMMBB?066M TM +r h+2.b2+6.MTnbq2?2  h+h22hMn+0+??? 6hMh } Mr+.+b?b 0hLh6}6M}}_0 B.+.bh>0}0}h+br0}2+G} .+b.?b6b 0.?+?+0+{n?3+6r+.}T bh^n9T?}M6Er?06}MT.Ob}n.0Xcr?nM+M?2bnr02.}b.bs.MY0 066. 2+bT+WBMnTb6M2X. 0Mn.2nhnh.+B6bb0bfhfB Br6.rnT+r0TBhT26 (DPM n.h2T  r60?T3Th6?}M;+r.r.M02.0n+>h bn0}I6??6+.n.6hT060 B.6+0+( B.6 +hh.29bh00B66}6}}rg}+?r.2Tnn+^.}?6?+6 2+2b K.}.n }+0F?Bn?6r2}.nh B+6T?nr+h0+?}T.6)Mr2n+++hB0Tb6b0?22 b0MMhh0nb0b.P?26b}B_0 06M. h0rT+v2MT}00B0Tb T}2.ThBn}0rh2TMb}00aBr+rbMQn}rmM0h2T6}+0}I. br?h62xbr0 ; Th6BM T0?}+r. T n.0BS nM6+Bb2nr M 22hMr00MXr?nrTB02b nr .rb?n6} H2 26+M0h26br}B T262+.j0 20rMn?Tnh.2h2 Mbr.byr  rhMB?bnTrj.lb+b006;6rhrTMh22n .%.MTn}h0}hsb;M+}}2.nb+?T6T b.*+T}T60BMnn6 ++}B Th}n}nGT?nM.M.?MrBMHhPn}0b-.1q?0M9MMhn0h+}M#nb0?Iz-h ?rMM+n.nn0BB0?0b6M 2062M}. T n.0B.?n00.{0TB }}r.6nb+b.TBBnM6BM026n }M.}hhb 0BB0b26M}+2+6rr6B T2620+)0 20b}}h n202M.T062.r=6T.r2M02b6M+r.nTn+ }2BRTBrT2.2nnB+0B0h66 }0T26}r . 2.nBr?20n.00.B9}brr62b brT+B2MTB60}62 bMrrMnhn+q02.ghB6T-.%0 ?MUM+D.r .?T.h*6h}0x6r}r?.Mhrbr+nWT?r+B}?2M r+r.hTTbr}2BM?MbBMb2M6 +hCBh.+M.Mhr? 0TM h2 .+02ThBn.+Ma26}bJMM2rnr+hBTTrrB0?-M?rrr}nhTnrM2.. 0b+BrTrb r2BBh2nM++Bb Bb006g6rhrT};2j+++0.6T6}h}TBF?>M+M.2?nb02.MnTbB0}>}b06..bhTbTrfBM?T+r0.2b T+TM}hMbT00Bb?bbrM22bbBr.M?hbb2+MhTTBb}}}T0 brnM hr0?+}_ ?2r20.20n2}bM}T b2}2B+?0r2Mr2 n rb.BT rM0rBn?n}EM2Q. ..6.rh6nb00?n?T6}262666M?2Mbnn60+fTTQM?}.22nT+0.nb6bh.bE   6hMB?b }rBB2Trb?InB6b 6+.T26nM+?.bTr620}?.?.0MMhh0 s.bhn?2+r}2&+6.rnZ? 6+ rQBhT0b6a}/r hMn}w?}nh00.*bb0bM2?0?nr6.22.0h0?h2TB6B}62r62rMM}20nBB+Bh?0bOWb? n2}bMn  b2+.B.666r}6pb 0rM.nn+n?.hBn?B6?W0?0n MBM+h}b 0h?n?60 MThT }+M2 T2n,+BCT6.6nMB2?r0MrB  0n+.ry ?hrh2}2M }r0.Bb+bb0Y?}?}0+sr?0++r}..Tbb?&6B}?B6+M0h  6Bh.BT6}?}?Bhbr}nP.n6 ++}B Th}n}6T  T+TM}hMr 0?.+TM6b}TTr  rh.h 2n?0MBr?rbnMT2rbBr?.Mhrbr0h5T?r}b}M2M?B+bkB20n6+6BrT}}.0xS6?0+222hMn}+0BB6+6}Br2bnbrdB2 rb 0h*h6}6M}+2++?+ .hTh0}0MB}T06B2+2b {.}.} }+2.BT 6u6hM?2M +...0T?0l0Zh.bM}b2._Fnh+0.6b}nv}TB.?Brr}}nnnT+}T6T6+6B T0rn66M+hT 4B?BnT2}n0+wM??6rMh2}+H02..T.+M}}Kh  rBM0 2nM++B+nr62}+?.?.+b.TTT !0MdTnr+B}M2M?B+bh22}n.0bB?666+Bb2nr M 22hMn}+0BB6+6}Br2bnbr;B2 rb 0h!hb2bM}+!+ 0r.hvhhn++MUTbT6B}.(Mn2.}..hr0.0hm T}62}+2?+6+r.nTn+ }2B.?.M6Mr26 b+0TnTTb}P6Trb.0.M+nn 6++BTh,}?}2H+rn}bC+:+r2+.T+h}b.}b9?r66I.rh b +hBB? +00TBbbBr0M+2rnMB6B+nb6 M -. B}b.T2vngB+B0T+br}M 6?,+r. T nh0By n0brMr2 n r..BT rM0rBn?n}cM2O. ..6.rhnbnBQS2T.6.262r n+nh*T2n.0.?6?+0blr  nhM2.Mh+b+.rS ?hrh(2)vnTr+MBh6bh)nBq?MM6Mr2nnnM .+hMbB}bFhr?6nVT n ?+}BhnTb6003M  6&hh2rr2rrMMn b+0M%B brhh?h?rT..h0br+M}hd  brBM+n}n+M0TbbM+B=6_/?br?. 2+n0+0Bhb.b.{rv}?B+2.rh?0n06h T+}.}6<0 M+ MGbhbb.2T?Th0LCn } nrr.0TTn.B%q2nB}h0I?.r?.+.} rn2B+ZhTr6nMb_} MrM.?nDn}B0m2?+MnM0??r6rnhTT?0v0h%??M6+2.2hn r}.2h+b?H6B}r?r Mhhh+}0220TM0rBr?w 20B2+hT+T.?.hnB0?B}Tr606}20n r=r.h+Tt}60}=B?n60M?2.++0TTrb?bhB1?TbB} 262n+hB+BBT666K+2h?rrn.b2}nM+MB?bt6+w022 +.nM.hTn?B.Bn?B6}MrY6 ++TM9b?b .Tf262}h07?.rT.+.hT0b6} h06n}?}h2}6V.T2bTTnq09?+T.r2}6QM nr9T?hnn.02cbrhrT}Y2e+2.rBb?rb6}?Y+6MrrMhhh+}+.BMn.n}Br2T6.}}}+ brr.ThBh.0M4TcT?nMnMBn rLr.h}nB+0B2???h}_hnh0n?0?TnT.b }h2T?6rrMr2N+}0nTbTM6n2hz+?B6Nh+hhb006: T?6n}BI}rl+2aBhM+M...}b+0B2nj.nb+?B2 b0h.p..b0}rBM2r n+nhAh?bb+.BTT}6n2+E} ?rb.Mb6br0nCn6b}BBTh3bhrb&MbTbB06x6rhr?.T ? hM.Brb?nlBMT.T}}6(}  +T.r.rh}0}} ?06n6?2h  r2Mbh+h60 e}22?+r+2}h? 0+6Brh.bB0BEnrhr}2MhTn}B6.WT bnVQm6n2r..02+n}0 Bh6n6bB 2TrTM?Mh H+ B}B??M6+MbTMr6MnM? }bbB hr?h0T002?r?M+hbT6+ .6?n?0}0R}2n?b}B.2T0bn} h0TP6B2h b60+n2 Th0TB}?h?h6b}6nh }M4.TTnb?}}h0?B0TB+ 0nr+hBhb}02#6BB?hM+Aw Mr2++BMnM6b.M?r +}b9+n2rI.nBh? 0 }BTb??+T2hhMrT.n.?T}6hBTDB?}r}hn2+nM+?.rThb}:dlh?+6M.Tn.nB+}B}bM} }+E}nMrbM}nrb +.B.666+Mr?+?6MT.Bn+nnBTT?Th0MM ?+rrMBMBhh0++.?n?b6?M?  r6.h.+h2n.0BB?? 6 }} 6 +.T.rTh0.}Th}beb.:+2M+6r+.}T bh-nB+?M6?}r2h }.<.+b}bM0+(+r?rrITh +2.2T6Tr+bYhA060}}}+hbn6.?hMT?0MVb?hT8}+J0n+ .02.6hMbn0q?}  M02n2?+h. h2nb0+06??r}+2M+h++}0?.0T66r0.{B?Brnhhh}+M0TB}66bA} {nr#r6B2h.b0++B}? 6h2n2b6 +ThTn?nh.qT 6}6?MM2+nb}Mh6nnn?}2TBbT6 MB2+nr}BM.TT0nB0hB?+0rMn b ?MT.Bh}b}ynB+?M6?}r2h }.s.hh+nM}T?.?B6}M} M+ }h.rhrb?MT?r  6.M.n6n+0rh+h60?}B?+666nM< ?+ ++TTbrbr0}?}  M02n2?+h. h2nb0+06? r}+2M+h++}0?.0T66r0.tB?Brnhhh}+M0TB}66bL} ,nrur6B2h.b0++B}? 6h2n2b6 +ThTn?nh.QT 6}6?MM2+nb}Mh6nnn?0.Th6 0rM 2hnh.}MGTTn++BB6?hMn}69K T+rT?T bh}h?T60+0M2?2?<0MhBT0b?}??.?8rB5Oe.r00 h&Th0rB+B66 r6Xy B+ + .6b662Jb?hTY}.22?MrT.n.?bh}6}M-n nM6M{2bn?0 .+T0b0}h?. 6MrMBh60?+}B2Th}}}?2M ++bMnh6b2+.?h?T02}B?B6#6.2}n206+#_r?nrTBr ?rh6R.0n0rB00B6?6Mh}n2r?Yr M.h60}+.BnTr6B2+20 6+6hrb2rnM 2+?T6M2 h2 +++T?Tn6 BnB?bBr02n26rBM/M.n0b_}b? 6060}.nn YBhBThibJP2??6.rn}M2+n0r/B2T2b6:?gn6Br M.n+nBM6h}h+0n}M ??nr6.22.0h+nBrhdb 0.F6r}rnh6hrnn0nT1? +BM2?M6M.?.  T+.0bTbb6bn}C?T6rMrMKnr0T...}bn062nl+ Mr?Mrhhn}B6m26b}h0{?.r2}M2Tnnn?Bh?6?M6nMn 6 Crb.?T n+00B0?h}.M6 r B+6T?h}b20h?}??rMM+hb n+6B2h.}h}TT2?B}BS47.r}.2T6h:6r}n2TbrM?2hq,r0.hT2n b..B?0 }}0!MnTr +h2Bhb6h0rcn b6}MM2Mn?.ST hf}hmb22?.r.}0 Tn}MMB6b60.302}6MM?2+T?+h.rT0nM6r}n2nrlr?.b2.nT+}Bn6+b}}?/b M.6.rhnbnBbTB }6.BT20 r.T.Bh6b6PhV? T}?}h?Bnr.?hh2G+MBT=n6 6+2T r rr}h}T 00BnB?6h} D2?br+r6h?b}620+c+6}r?}026nrr..BhBbnmhK}6MrTM}n6 k+ .nbPb6M2_. 06+M}h nhBnBbn 6TOT???h}82 n}n?0MB+?b+Mt6?n??M22 n rr+n- b?6BB ?#?++r26TT+}B?Bn?T}n}.A  h+TM6hrnr+PT}62623. T Mr+.+n6bbB6B.6T}rk02h B.hM}T0+0} T}?0}}Mh brM.ThrnM+M.rB0  69MB? ?Mr22rhn+T0h22bQr0QT2.6M++h0h6+b}TB)?DM+}.h2 6rM.nhO}?0nB.?2rbhhhT R+pT2brr }6h}?}6?2Mhrnh0hT}T.6MB.B}66+T2.2-+b.6.nb266B6?MrTrTMnnnnBB hPh.0}BBT062M?Mh B0n00B???}n}.H  h+TM6hrnr+kT}?n}b}M2n+hr+MB280+0h/0?6r }?2n Br}hUT2rB0MTMb.b}:+?B+nr.BbT?62.b?hb<b.c ?rrBMT.Bh}b}^nB+?M6?}r2h }.L.hh+nM}T?.?B6}M} M+ 0s2 h+r?02?r  6.M.n6n+0rh+h60T}B?+?}MT2?2hrM.?hbbr0B0B9hr+r?hnhbn?0?T hb6nM ?n??}B.0nn+?+hhB?20?M2?B rrn.nnb 0rBhbT}bBM22r ?.n.b  brBn/26h62LM T6brrBTnhbM.T.0hB0b}rhTrT+M2TT20?0TqMbMrb222h 2}+.02.nM} 2hnM+MM?22 0rn.6 Mbh0MBFbbrT*2h +h+Mh.hM0rBBB}?B6n}02? .BhBTbn0nB}?h6M}2MM2+n+B?.6T0bh0bBG?+M.MIh +6..BnhMb+}0BN 2r2M6n?+r+}.B?26r}? n?.} }M22n6+0BM? bS2h2T62M?Mh -+ .2BnTr60MT1.r;+h22hrbhB.B6b}bBMhVwn6}b.0?BrnBdBh??6M}+ . ^}M.?n6n00.B} ?0TMbT06h.?..TT0 0BB.TMr22}2.60.bhMT bh}h?}?rrh2.26r}+.kBT0nwMr#6T+0T26hhri+nh+?66.}6BX?+0rM?2B+ rVBhT0b6>}SMb0rr2r +r 02.EhB6Tf.XBbMr020 0rb0T.*T,}+}h20 b+ f0 . }.+h.n0b.Mb!+nTrB.Mn +n+?Thbbr2Bb?+?6Mn2r bnn0r.UT b.}6 } ?}M.rhnbnBbT.6T}n#+?1rn.2.0h6b6BrTF6n6.} 2hnTr6.rhrn-B}N 6?rh3D2?r}r+h6h.0?0.?T?n6rM0hT .._..n2br}h?.?B0.NT T+}r..yTrbn*+Vb?lM}22?+r2+BT+h}b.}b8?r6r M.n+n0Mr2Bb2}60+9}  rhhnh6nTB6.}TBbn00c??..h.h2rnn0b.}TMbM}??X +M6. n?n6BTBr?h}.}n +?}r..bh?060hB ?b6B}+ } M}0hnhi+0..e66?6MA0?Mr0.2h0n?b.B+TDTw}bQr brr.?.Mn0+MB0TBbB}M92GUnTr+MBh6bhunDb6 rT2r T6B+0.+hrbM#6Gh? rbMB2++}+M20n}6n!hx06r}02r?M }+B.nh0b?0.?+ ?Mr2}h + 02TTn?+0}r?0 rrh.hn}+2B6.BTh}+BeT0 br?.? TnB+}B}n06b}?2?6TrBM.2Mb2B}B.Tr}.}h2 ?}r2M+h?060+T}br}bL+26r+M?hhh6+.+}T+T.}nM?  r6+nh6n2+70nT}T+}6}} bn2r... Mbr0nVn6Or2}W4BnT...0T?0p}2h.b }62.I7nh+0.6b}b}0rB}r?rhUT  r}.nhTn }?}nP2rnrTM}n6nrM6hbb/bh}?kM?+M.MQ20+x+?Bbh.bT0}unr+}Bsl  r0.2h}bT0?^?Tt6b}M2  6+6.6h0n9}}}M=+ +}r.62.b200BbnM6r}n2n6 +hMMbhnn0r./T b.}6 } .MG2Mn0+.0}T.b6}n}} h?OM..hn+b6BrT}?+}}f  ? +MkM.n}n)B01 ?hrh>22w n+rBThB+ }2B.?.0MMr26 b+0TnT6bTQ6B}?B6n}02? .Bhhbn6+MBTTr6?}0K} }r6MBh nM+HBCT36T}6h?h nh0hh2TMb+}+ ?  rh.hn}nM+}.0TB}+}bv=r}rMg+ 2r.B+.}T.6b}? 6  r.h+ +r6MBBM66b+}}2  h.n.6hT06+}BBTnb0}?y.+hr}BThnbM00B6?60bMT2h 2+ h#hMbnyhJTnS0b-b d h+?.Mh+0.0.B0T.MnM6? r M6h6n2+6cn86?TM6M 2.++M626Tb}h0?)n?B6}2Ehh MBh.nTrnF0 B.?6M}}BhT ++bB h}6 0622 nrhMBnh  rrhvhb6M:b2  0+?pM TbnMBhb?60rB4T. XM226 n+M0MhTTgbb}?2 ?+r0M0hh+.0bTnT?}h}q?. ?M+M.nrnB06??T}}1}h2? Mr+h.hhb +}B2T+6?262rnrr}BTT2ne+B&T? 6.2+2?+nr6.+TTnvI?B6?06h}bwx +...Bb+b00+Br?MM6Mrhr n0T2rT6}h}TBw?gM+M026n6r hBTrbn}n?Z ?6+MMhbnTMrB Th6hB2V.?rM.Mhh  }+2.+T?}60z?}  M?M6hTnn.}.&b0+B}0Y6 6.h.n2}nB0rB n06b}?2?6TrBM.2Mb2B}B.Tr}.}h2 ?}r2M+h?06+<T}? }?}62T nM}MFn0rB00B6?6MhMTl> d.+.0h6b6yhNT?h62M  l M+nThnTr#0B?+T}6.Mb2?+6+h. TbbB0+?}?M00}+?r .+2BTT0bny6;M66r?2?2.6B+nhHn}00.Bz}?bM}}!hT +rB.6Th}n}nBM?+r0}Wh2n2+6T?brb}0B22 rr?hnh6+n++Thhx0.}?Tr 6M+M+nhnBBhB0b+6bLr?} rM}. n?b2BTTbb } Br2 r6MhhT bnn0r.3T b.}6 ? nM..Mn0+BB6Bh6h6}!B Tr}r}hnh.0TBbf?bT6B}}2}60+b.?T?+T0BB.TMr22}2n r+0BTh.0)}2hBT.0MM+2 ++r.B2h6nM0nBwr?r?}026nrr..BhBbnch?b?+6MMBhbnhB?.}nT6hK?X?6}rr2}h +?02TTbn6TRndB6.r02MnTrb0TTnbT}2B ^? b6.MT2}nnB+Bhn06b}?2?6TrBM}h}r00bB???}.}B4} }.n.bh?b?B.BBT}6}VM?vr?M+2On0';KegDKZfAEgrUClzEaSVXEoHCMcQHDQAA={"73/lu:7Y_**(37:3*.Y7Cwk3_S./wlYY/kkC_SY/:6ul","w6_Sukwk*6/Cuwu:ll/wkY.kuCl6Y6l3wlu76.S../76:l:uCCw(3C._w/YCk7S*w//CSkk.YS","u**_*(uw(_**k.3*:7Sw6Yw7*Y:/3uu7lw:*_l:C/ul763Y:CC.7C","6(Su_k.63*lSl7(/wSu3lY3_(:_:C:u36uSlY7.7:YCl3:7./7wS*YY6lu*7*.7Ckl*YllS7*k:Ck6.k(u3kC**","S7l(6(*63_w3wSu3/.Y.w_C:CYl363S.S3:3Y(Y7_*w::((*/*.7lS7u*Y.*S/(C6_Y_Y_k(k(*77/Y*7/l3:ulSw/7S/_3.u6C:(:Yk7k/","C:lu:C_3ul:7*63.3u(_Y_**3*/YCu*l_ku/wll67C36376uY*7S","Cl:/YSlwY.:w/.C_(kY7(wCS6w:SC:C./w.//u*Sllwk3SSC*_","6kw6C*lk___S(.l3Y:w_lkC.uw6kCu*k.//_CS_.lkC/:*kk:_wSu.*SCuS/.S*_3(w**k***_/3lC*/C(Y6CY7/SkCY.3w_wC","6::uk(Y(wuulY._3/7.6_S7ll:w*w.Sl(6Y6_kwu/7kwlCu_6uk_.:_(:l7/.l/w(Y/37k7wS7k//::w.kYSukuwYl6(w_3w","_u367C*7C6w66u/k(3_67_luY/u6.uk6:kw(7.w:lll7Y6Sw:C(Y(/:/3w/u3u7wul737l","YY/*Sk3/C(:/kw3:wk3Y73(/**l7:Cw_.Y/_667k_7*..(YCS3C_3(k:._w7l(Ck/_(/wk:(Yw:u(/(._w_*S7((Sk:_","6Yl./Sw__SS.C73k.lY/w*.33/w7_(C..kl66ku3*:7Y(C:/63uku.Y*3k:w3_.6k7Sl/C:lww(ukkC*./76:/l(Y7_:YS7C_C_7(wl3l","6w*lC_ku.kSuw.Skw6._*wS.lCCkw*_S:(Y_kk6*_SS(*3Su73CkSCSk6lw*S.6.7w_//.l*/C(:6(YYS_6*wY33l*33S(C:k/6/:Yk7S66*uu_63ku.6CCS.l*/S.76.S33(6S_.*wC(_76S_Yu*l63S:7w./.37C7/Cl/C*_C6(ul*l:k.:(kSC*l6S3Clk/:u/7/3kCl_uk7kl7376C7wCYC/Sw6._:66l7.:((k.Ck(7wC7Cu:_w/C*lYk67YS*3:.6uwC6wSu3(/Swlk._u/ClC7l/*_w6_l:l6uu.l6(SS*3lu7_7(w*_YwSC(_Y_S6_Su__776S.k6(.(7_33.C(7Y7/S:*w/_:_l_7YY36kY_*3/w7(k/lY/6kw(k:Y/6w:(:/*/l.Yluu6u_YC37.6_*Yk(3kSYk:/.__3k6(Y3//l:l*YY_uYlS.SS/6_S.k.ulS:lS(6/3.//ulY/uk.lu3u*373wu7CY/l.76uY*C/lC/7u:k.(ww6wCl*lC_ww/l*Yk(3*:*3YS*3wC7/7u3(7ku7kkYl(wlC_(63u:*_Yw.6wYSl_u(Y7k7Y(.(*S7kSY3wll3uSS*._6w63Y_:l_/u_7u/6.wY_Y_Y7:6S6u_wu3(l.7uk:uC:_wYw*/YY/3l3Ck3_C7Cuk3Yu_lk.:w.wwl_Yll7:w7.k73l*YS*wY/*uku(7//ku*(YY.3kw3wu(/k(_:w66*l7k/_*Sk.6.6/*k6SSl*kCSu_3*u(:7(.lY.6w(uuSwY(C7C6_:S/7w(C6.6/l:7/.776S:_*6*Cu/w667uk_k((*Sk37u6uw.:_3_.(6kY/lSl7l3_S3.6klY(k._67:./*w./3w7k63uulS_*6S(/k:6k//7673:7wCwY*wuwY(C_*kS(6l:Cw*Cw__7lC.::lwul(:6*7/7lCkY7Y7k(*6/w_(Sl7u*SCw367_Yk3/uuu3C77lCw.l__**_(_*:wYw:u*_CS(w(uk76uC6lk66*/((l_*u.:C7l.(l_*Y(.lu(66wl/w7w::YC/w*/uY*wY3u*w.Yl/*S/l((l6Y(YuY*w/u_(3_k__C/u6.:.:k(uC6luk66YC.lY7/3.uCl6ll:/C6k6u(l_.7.uk3_k(*kY*k:..Y.3k7(l:/6CSk/*_*376w_k*lY6*.63.l//S*lw*Cul/Y/_S_:k:3w.Y/7C7ul77(*YwS3u.6lw/lluk6:w.7Sk(.(*:/_wY.7/C.u*_*6:3w/637:.w_/.w*:_w6l3_lC/kY6//lu.Cluk(6:37:wYl7C*(YY_u6wu:7/l(*3S3.__wS66l_6_SC36lw.66:7*k_S::l*_*7_3/:wkCu_7_6kS_Cw:w3C7u.u.w*:u__.7Y:llk3/666u/__*l73(:.k.(3:/Su.luu_*C/lS/(YkCw*3u/3ww7:k..3(llY3ku*7:7w*Slu6u.(wSCuw_kuS.33./37_3u.S(k//wSlk_63.S_3wCSw/6.(Y.YCYw/Y_*C*uY77u7C63/6(._u3/_u_w63(w6uu*_uuu::7_.6.SCS_u/7_w7YS/6wS7:77uwlS3:YS*lY3_63*l6l..3.SuC/Y/:YYS:k7*k7.:3*:(uk3Yl6ww3(k/l6_C/333.3uwY_u*./Y7.w76u6(7_u*CuYw:6wS/(.YY6Yk37(u:_.uC6S7.7.llw:l7lYS*7Y.C..S*..kuwY/YSCYCSl3Cl7wYl*3w3Y_/ll(:C(*.YuS77u7(7Su3*kS/CkY7kY6/uk_Y:ll.3((:k(*:6**Sk(CwYY_7l_w_.S(S*YSlkCS:/7.*33uu*Sl*.:..:uC7_w7CS377:wwY3l7(wCCkk3wSu:___w/C*//:6__7Slw(uCkS73l6_36(7._w.kS.S.w37//w7Y.wkul6w33k6./YC(YY(3(lCk6_7/k(.uw**(S:wuw:**_S:*l.w.C3CY*l*/lwk*36C*:(k3Y7l6uY37k/.S_k/3_:*CuwYw_S.3YC7_7_:///(k(3S3k___uu63wSu7kS__(7/_.Y:./(S._Y7C(wkuS6*u:73.lSww.*(Cw(wlk.wC//3:C:.77lS73k6.**7/_u3:S(6(C3k73Y7.S*:k7/66C:6Y37:3k/37kCY*w/:YYCku.6**:6_3wk_wYu_Sk/*:(*.l_:l7.wkl.C37_(.3kkulkSSkll(_w.36..S*Yk(lwY._SC/7C(:l/(/w*_7CSS:.k36uC/63.uS*.*:76kk/k76l3wl_3llYlY7:.C*ku67(u7uYSYC(6_w3u37S6ku..SwS7.S7_S*Y6C/k3:./*_YuS_wulC.*6C:Y:6u6Y(CYS6:Y*Cuw.w*u.w6//7_.Y*6ulkCY*(6.Y/S*w(l*/_6_S7_Cw.SY.w_/7/.C/6C/l3Y(_3l7wY3l:(_/.ClS.7*lC*Suu3::ulu7wlk7u./6_*uS.llY3:3/6wYCCSk.u_:_SY/:_CS77Y:_376*k:37*l:6w//_*uk.:l:..6/6kYk(C/k6S6:*3(uwkw:7.w/lww_..kS/lk./uk6_Yk7/w(((_*(./7/*k3Y(l(_.Y3kC7.wSwuw/6/(3S*./u6.66(Y.lCw((kw:YC_CY//_.u.wkS(w_.3*_*lk_3u36ulCu(k_3:3Y6u:C6Yk33(kk_.*kw(7_.Y::w/Y/C3k7CSk:33*/kSk.:..kSwC*(u//7uu3luYklk37Yu6:(S.(u((/ClS3Sk*C(SSYw6CuS7wC.Y37*lY.376_wYw/w(7.kuuCY:.6Su:Ck(73Clk/u:Y3.l:*.S.wkYC_3Cuk73w.6.Y*(/SC/67w/u3/wwuY7_63u/SC37*:__37CS_7w/l:l7k3/(//3:wlk*.(w3Skw(_CY3/(7/Swu/_l7737l:(lCY37666..*(ul7l.:.k(3.w_kS36((/_uCl3/C3_Y37C6C3:Sukk6k3..77/kkC_:36/6*uSu__/uSl(:(C7./7*Clkkl/_u(lw(_:7S67SCSCu:.6l7./uw_*w*.Y/(:/(kY.uuu*w6lC3_6w(k*6l7:(736/*YYl..CY/_k7uw_:.*_YS.7u(6l7(l:.*YlS(k66S7S6:ww/Sw(7_S((u7Ykw6u_*3/k(:w__u_.33((luk.((l*Sw:uu6//3u3:lu*kul377_(.ll(3lw(/k7(/k_(6SSS*w*w(wYSCu3./76C_*kl_Y*k*3YYu*7u:(kYC/7w.67l*CSu:C3S*Sk7wY",""};return(function(f,...)local _;local r;local t;local s;local u;local d;local e=24915;local n=0;local l={};while n<942 do n=n+1;while n<0x290 and e%0x14bc<0xa5e do n=n+1 e=(e+366)%11335 local h=n+e if(e%0x2f72)<=0x17b9 then e=(e-0x3d5)%0x697a while n<0x167 and e%0x3f18<0x1f8c do n=n+1 e=(e+363)%45093 local u=n+e if(e%0x2704)<=0x1382 then e=(e+0x129)%0xba0b local e=41601 if not l[e]then l[e]=0x1 _={};end elseif e%2~=0 then e=(e+0x2ec)%0xb58e local e=97564 if not l[e]then l[e]=0x1 d=getfenv and getfenv();end else e=(e*0x101)%0x69c0 n=n+1 local e=82572 if not l[e]then l[e]=0x1 t=string;end end end elseif e%2~=0 then e=(e-0x28a)%0x7e56 while n<0x84 and e%0x3d92<0x1ec9 do n=n+1 e=(e-865)%35100 local u=n+e if(e%0x265c)<0x132e then e=(e+0x27b)%0x53f7 local e=87678 if not l[e]then l[e]=0x1 s=tonumber;end elseif e%2~=0 then e=(e*0x2bf)%0x716 local e=31076 if not l[e]then l[e]=0x1 end else e=(e*0x258)%0x4257 n=n+1 local e=82678 if not l[e]then l[e]=0x1 d=(not d)and _ENV or d;end end end else e=(e+0x331)%0x1a0c n=n+1 while n<0x137 and e%0x1dfa<0xefd do n=n+1 e=(e+794)%31509 local h=n+e if(e%0xb8e)<0x5c7 then e=(e+0x28d)%0x81aa local e=46034 if not l[e]then l[e]=0x1 r="\4\8\116\111\110\117\109\98\101\114\68\69\107\84\77\87\69\77\0\6\115\116\114\105\110\103\4\99\104\97\114\109\103\97\118\68\68\68\115\0\6\115\116\114\105\110\103\3\115\117\98\120\86\66\86\105\95\109\100\0\6\115\116\114\105\110\103\4\98\121\116\101\88\108\118\119\81\87\85\98\0\5\116\97\98\108\101\6\99\111\110\99\97\116\84\67\109\110\90\87\69\84\0\5\116\97\98\108\101\6\105\110\115\101\114\116\75\108\101\68\111\117\101\95\5";end elseif e%2~=0 then e=(e-0x340)%0xb9c local e=31591 if not l[e]then l[e]=0x1 end else e=(e*0x19a)%0x261e n=n+1 local e=2000 if not l[e]then l[e]=0x1 u=function(u)local e=0x01 local function l(n)e=e+n return u:sub(e-n,e-0x01)end while true do local n=l(0x01)if(n=="\5")then break end local e=t.byte(l(0x01))local e=l(e)if n=="\2"then e=_.DEkTMWEM(e)elseif n=="\3"then e=e~="\0"elseif n=="\6"then d[e]=function(e,n)return f(8,nil,f,n,e)end elseif n=="\4"then e=d[e]elseif n=="\0"then e=d[e][l(t.byte(l(0x01)))];end local n=l(0x08)_[n]=e end end end end end end end e=(e-770)%13135 end u(r);local n={};for e=0x0,0xff do local l=_.mgavDDDs(e);n[e]=l;n[l]=e;end local function h(e)return n[e];end local t=(function(r,u)local f,l=0x01,0x10 local n={{},{},{}}local d=-0x01 local e=0x01 local t=r while true do n[0x03][_.xVBVi_md(u,e,(function()e=f+e return e-0x01 end)())]=(function()d=d+0x01 return d end)()if d==(0x0f)then d=""l=0x000 break end end local d=#u while e<d+0x01 do n[0x02][l]=_.xVBVi_md(u,e,(function()e=f+e return e-0x01 end)())l=l+0x01 if l%0x02==0x00 then l=0x00 _.KleDoue_(n[0x01],(h((((n[0x03][n[0x02][0x00]]or 0x00)*0x10)+(n[0x03][n[0x02][0x01]]or 0x00)+t)%0x100)));t=r+t;end end return _.TCmnZWET(n[0x01])end);u(t(77,"7km%aNWJ60!pLrB?pNWpa!?rpWW!kpBL0?Wt?%LrWkkrBm%mBaLW!BJN?L!!JJ%JLr!mB%0NJ6W%kp!rNB%??k0%aa0aa6m0B%0a6J%pLB0parrp!JWa!pN?am?W!06Ja?rk0a%pB0!0NLLmJ6N6kVp?JWm6kB!?J6%kr!0rma?r%??%rW6!%?fJLl6!mdrapkahkJNW1!Bp!aN%aW?J6BNa?Npaa!mrWrmk_Jp0W?Wakk0LWJCrr66rma6a%!kLrk6W%0BNpa6Wm??a!r%N??LktkpJ0Ward%paW%aL?L!BNl?6LpNB1BJB%mk%LWJ!JmkBp06L%p?a6NmW0Na0m?rr0%NBmp?xJ?%*qw!rNr!LWmaa?L!!Nri?Hm6!NaBL!B6ERpBLm0rrL;Jkmp?m!k6,%%rL6BaN?%a:?arN6La%mWL0JWakrZ!kW6B6NJXp?m!aNN%LLr0?%%400JarmaWBm%V%prJkk?gN!WWrPaBa0Wm>BW%6BLL?6m%%Y0Bj6ka1?J!0arrra?_%BW0WaB%6?a!pNk.a!BJik6WWkL?LpkWak0LW!pWNkpraJW50L6JBB%0JJ0mrBNL6WN%pBg6paN?B0J?!!B6?am?rp6WLmLBa0aaN?6LakkLN!6Wkkk<m0!%NI!ppa?kaL%m6rBp?W?m!rp6?JakWB.0k%?r%6UWa!NNJ%LV%LNJkk?LB!?Nr*JNW{6BBrWWJmRrk!pmru0LkKJp00r0J%Wrp0ra0BJ!Ea0p6W!Nk%0?m!{%Lna0kNJ?WW0kpc%Bk0?%JB?Lma%?6r0k!LBplWWk!}!0?aWkWLJ6rm!Br%kBaLJJ6NBk6!aNWkJ?m0rm60Na6mLrB!mNJyJLr0!aarBpJ?0!L6?ak%rrr0%kr^apNW?z?NrkF?a!NWrmN?X!ka6k?LaWmLkJWNJi6p?JN%rz!0!Nam?paWJ%J6paTmerm6J%pkrLh6?amr66?Np_6NN 6BB0BJN%JrB6!a!kk! aJp0WLaBAWrL0JWmB%!BWNm0r6krr<p%W0a<B?!JWr?rra64mr6k%akrLB!!amk0LN6?mrB!0BBN0J6.W0m0!B6Wmp?k0maN0Wa0%kBWr6J6mJrLJB%%rJ0!?!!r0NaamBBJ6k%k?66Nap?kNBkk?N!!0?aar?60%Nkm!kN0LmJNN?ABLr!BNNk%!NJ%%NL0mWr0pLJ%a?BNLrN%mar!6?mr6!%rmNrN0BJamapLJaaNBB6kBB!k6W%W<aL%0J%0?k6pakkmNmONBL0!66ak?k6rWmOr!WaNpWW0aB?r?W6LNW?k0%WgmJpakr"));u(t(30,"#%7fms(,zB0Tc8v v7c0%B c8cTsBc,, (fz7T!sv0cB00zmsz7Tf7 %cT,osf0-,sssm77m%fcBTz0v(f,(f%%80TB%8vc7BTz7(0mT7%r8 ,0TBz(,s7vz8)% Z7v7TT07,8 8m,%8%7vfc0z ,vmv78%8P  v8csmf0zssTsw7(0svvcz0T01,0s87m% rJ8,cszv(co-v0ffI, z8f08Bv(8(7f%%mDM8T0%0 (%m 7B7%yf8z(cs%z7,fsfm(7fIz0TTBT%,am7sm7sR8 8(vs20s,%sTmz7f ,TvcB, zs,Bsmcz0Bcf8f0-Bc,%s(70R%8czJ((TmB%,,s0f0%f 08sB B0zffcf0DfvPvm(/m,Bz(,m0f(%%BmvscY0m,,sTmsfMv% ,TTT((z(Bs78hTmbsvXcmB,,T(sfvYi%/8zczTmBEsd t8f7SIm88cm0cBfsvmc7z%m8scs0,f_%m(7f 7sNzvzc%0zzfm:78=s sv 8TBTz6%m sm77(  v(cv0Nz8(vm87B% 8mTBs3fmzfs,mG%T Tvvc(T,B%mc7 %,d,8s(cs7B8,f(zfvT8}?vzc80 Bmm fs%B%287T(0(,m%B"));TAnaoGAcIxsGiTM=function(e)e((-_.TTbBiJSe+(function()local l,n=_.eyMHboRt,_.inMKyxge;(function(e)e(e(e))end)(function(e)if l>_.vwWqpKdn then return e end l=l+_.inMKyxge n=(n-_._tCSGBOO)%_.yWmsiyMs if(n%_.KQhKLvRv)<_.sqUhVbEu then n=(n*_.ztLdWoqU)%_.MlbtzOfu return e(e(e))else return e end return e end)return n;end)()))end;MTiGsxIcAGoanAT={_.OhoFbIDf,_.ybnhrQ__};local e=(-_.hedSHhHE+(function()local d,n=_.eyMHboRt,_.inMKyxge;(function(n,e)e(n(e,e),e(n,e)and n(e,e))end)(function(l,e)if d>_.wpXxtzXF then return e end d=d+_.inMKyxge n=(n-_.LfxTRoif)%_.sH_DSrJx if(n%_.LHttjimh)<_.iYSkGeyF then n=(n+_.hFeFiDGk)%_.gUiMzyPc return l(e(e,e and l)and l(e,e and e),e(l,l)and e(l,e))else return e end return e end,function(e,l)if d>_.TxfrvufC then return e end d=d+_.inMKyxge n=(n+_.luyllcrg)%_.bilraAMP if(n%_.hRug_flR)<=_.ABOTQOOh then n=(n+_.tYAcaBTP)%_.iXomhICt return l(e(e,e),e(l,l))else return e end return l end)return n;end)())local h=_.bBpVdnhF or _.tCwYrBah;local ue=(getfenv)or(function()return _ENV end);local u=_.GVOJFtof;local r=_.iGMKrAjo;local d=_.yeWf_JPF;local g=_.inMKyxge;local function le(k,...)local a=t(e,"!2Q1uVlL_d7XO8}0V72Q2XQuQ}1l10u_V2V7l1_}XV_2dldcdd7Q7d0X_2}771Vul}OQLud8L28X1_L_Lu1VuXuuu8VlV82V0d83ud2Lu088j7072l2L_V8l011X0Q08P2o72127X2LtlrVVuOVLVXlul8Lu8O88L78X7lX1XVX}OLO}Vdl1l7l7L_L72Q2}Q2Q71117OQX}OV8d}QLV_l_u_8dld8Q2Q8Q_1uuOVlV8V8lXl8c15X2u28QlQ01_VV_7VuVOlVl}LL_D_dXl8X7V78XlX0O_82872}QO0l0}zL2;2dQQ7X_VL8udX8V_l2l7L2X_O?Od818X}u}}1uul1XulVQV7Ll1lLLL}dldu7QX27XO2OlOQ8l}l0V0_020_3O2V80QL11Q}17VQVOl1l1L2L1uu_Ld7d0707LX8OXO0O0}1}O}l0_0u2-2dQJQ%QQ1}uluSeu28l}Q01_u2u7V1l1lVl}lLOLX78VX28d}2}Xi20do80O2_281217V6Q_u}lulzuV_2_7d2d2d170XLX2duVQV7l1lOLVL}_LO58d717XXuX8OlO08_2}Q70l&2DVU}2L2}uVOl01L7VkLLV0l_L2L_8X0}+d}0002LQO2{28u_VOu_10L2__VO_2LO__d1_dXOd}7QXV8uOXOX8>}l80}_7lXQXVX}OLO}10Z21_071LqdQ22_Q2Q7128QV_T}u28}XLdu1_0u770l?XVQ21:_81O}8_}1}L0g0dTKV_wz1_dX1Ql_u2u7V1V7OX}70d00Xli02u2QQ}Qd1XuLuX+LVdlOQQ_b_QL}__dXd8l2X}OQLOO7}l8O}10}Pl<TOuQ22}Q_1X02u8ulV}V}l}LX1}t0272}QL1)1LX76VOLXLlLl0L__2_7d12O}l}}X7OVOd8Q8XV_u}V_lXl82uQ_Q1QO1V1OlVu_}8V8__XX2l7u}dlL_2udQ0X8OVO}8L}#}dLQuQuuf}2l20Q_1217O1dydVl2l0L(Ld_Q_dOQ7lQ7L2X}VdXL8l}d}V}}0L0}L/L2l}LOdu77dLd77s7}O1}lLlL}_LdNdd7Q7XXuX8Od8u8_}2}702__lX7}OlQ2Qd1Q1Xuuu8Vl_X7_Lu_L_1_OdVdO}o}O7V}2L}07L8O_7OO20dQ12u2OQVQ}1Lu^uduQd7lLLuLlL0__0LFd2V222lQ2Q0818}}Q}X0u0XL0_X_ldQQX111OuVu}VLlZd2XQL}_d_8dld07lQ2Q012uX8_}Q}L0>0dlVL1LV_0Qd1u1_u2u7V2dQ}_XldQ_2_ddQdX7u78Xl8XD_8Q87}1}O0V0}yLV1VdQV1X1u18ulu8XQOQ}MOL0OC7}u>L}}08Q}Qd102X1L}Q}80207f1a7VL_LLd8u17uQuXVuV8llu0}LO2_8VVd}7V7}XV87}#}O0Q071XQ1LOL}_2dX7V7X7LlXO_X}828u}l720azVqX2QO}13Q01}uu0XVXVQV_lQldL}Vu1*1lVVV}lLL3Ld_Q_X7zd87l70X_O2O7818O}V}}0L,Ku_Q-Qd1QlO1l10u_V2V7l1lOLVL}_Ldtdd7}d_d}X8OlO08_}2}7u}v121m}2LQMQd1Q1Xuuu8Vll8l0L2L7_1_OdV7VXVX XdOQOX8u88}l}00_A022LIfdC0Q}1LuEudVQXlluOXLl_ldld2d7717OXVX}slQO0l}Q}X0u08uVu}Lul9Q7111OuVu}VLl}L?LQLX}Q}7_1_d7_X2X7O1QL8V1O}L0.VLTQ2QQ2QXlVQ0um_G_ddQdX7u78XlX0O_828778780VO88V8_1_}1}OV10}FLl8Bl-OQX1u187278V_l2O_L1LO}1_}dL73oLO-OQOuO88l80}_0207.1+O2V2}Q}1}1d7FuXVuV8llO8L__2_7d10ddQd_XLOoQu8Q8XuQ}80l00ll2227_2QOuu1}uLVyl_d}lXLuL8_l_07L8877X1XO.2O}8L}/uL0Q0X;u^8Lu20Q__}QLQ8uOVVXdlLLCLd}{_Xdud8Ru70X_8sO7818O}VQ81lP#id2Q2XQulOLV10u_V2V7d0lO81L}_Ld90L7Q7XXuX8Q1XOOQ}2}701VLiVA}2LL}Qd1Qu7_SVOVlV0LV_8_Q_18Xd}d}7LX*O2OQ27880X01}00_182du02O_1Q}1LuS7L70u_u}l8LlL0__}Od7h27OXVX}}Q8_8d}Q}X0u08FluXQLQ21_uyu7uV_7lllJldLQLX_u_8d0X77_X2X7Q2OO1QOX820Y0dEQ^X2uL_Ql_81_d0_ldQVOlVLl_s_B_d8-dX7O78XlX082822_}1}O08:LIL2YV_12QXdQ18ul7OuVuXl7L1LO_V_}dL7LXlO:07QQO82Q80}_02mQu12dQ1V8Q}18uT_2Vdl2lul0l0L__2ddd107}uXOOuOLXlXO8X}u}80l00v_2227Q1QO1OuXVu_OVdlQlXXu_uduO}d071X20QO7OOx}8L}*}dT2J_222uW1=dQ_1217u1uOVVV}lLLULd_Q_Xdud8}Q70X_O2O7812_QV0X0}o0{d2Q2XQuQ8uVQO1QV2V7l1lOLVL}_LdBdd7Q7XXuX8OlO02_28}7010OWV2VQuQLQd1Q1XuuVOV8uOVQL2L7_1_OdVd}7LXDXdOQOX8u88}l}00_u2ul212OQVQ}1LuNudVQVXL1Lul1ld__d2d7717OXVX}OL8n8d}Q}X0u08Gl 02_Q21217udV1VOlVl8LzLdl_l}_8dld07_X2X7O1OO8V8}}L0P0d Q5X2uuVlLL8LOduu7__7OlV72OQOdO8L0_Vd2dL_OdLdX7u78XuLV}0OluX}u}O0V0}DL2Y2duOlX1Luvulu0V_8u808VL8_V_}dL7g7dXQO1Tu8;8780}_02VOLO_5L720QL1U1duQuXVuLV7lLQdQ_2_7d1d700Q7111XQduuuXV&u8LLL}L}_O_}71_27X70X_OQ8uX6}O0V0O_ddVd_7277Ql1.1L1LuVuL}O%10XSu)82uVu__XVL}d1_1XXd77LXL0XX80L8L2V20XQX8O2O78187Vu1uX_2LaOQu2XQuQ81u8OOl+QXLX2mO21VQlL}QQqO1ld__8080lL8X}O}7010O)1X}+u_Cd1O7QbVuVu_X7lldL2L7_1_OdVd}}20FX7OQOX8u88}l}0%_u2z8QQ2OQVQ}_X_2XLX1O77X7}8dO_B;Tu}2nOPyRQO2OO8W8d}Q}d2uO2_22X2dQ2Q7111OuVu}dl7ElOLOLX_u_8duL}LX1uQdX_L0+ul}uL01*XPQkX2u2XO0L1L2VVu1_u0L7221d2l7}V02X0O271qXOEO_8287}1}O0VQuuL21Q7QQQX1u1XO/7XX}8OO78V0O}121}O0 QOQ71V1mQ88L80}_0207)1^OVOV}Q_1Z1duQuXVuV8_l70Ld_2_7d1dO7V7}0_;{OO}u8X}u}80uLl_7_QL_LLd2d_XV7X818080O78q818l}8dX7777X1XOO1u0V1l=l7L2L2L0_22dQVQ_1217u2Od8u8u}Q02LO_d_Xdud87uVXlV87L2lVlO}_0l0LFhNd2h_0dl7}7dX2O18uV8l_lOLVL}_V08ObO7dLXLO2OlO08_VVl1l1l2h_2Q2LQ{Qd1DXXOlXOVdlul_L2L7_20V.}}Xd0X1O2OQOX8u8X272181OQ2Ld8__QlQ}1Lu&udVQVXlu78L0L0__d2d}717OXVO28u838d}Q}dVXVOVdlLL0dV_Q_V_Xdd7}82l2ldLQLX_u_8dld07_XuOFO1OO8V8OlulelLLX_u2V28QlQ01_u2u7u1dXlLl}LL_f_7dQdX7u7}XlX0O_8287}18O1u0}>L2I2dQLQX1u18lld8V_lQl7L1LO_l_}dL7}7dX1XXOVO88L80}_vu07pu9O2V2}QL1R1duluXVVV8lLl0Ld_2_7d_dO7V7}X_OhOd8Q8X}u}80l00p_2227Q1111V1}uLV 8dlQlXLuL8_l_0d_72OVX1X8OVO08L}m}d0Q,7Cu;02lQ2Q_1217u1V8VVV0lLL2Ld_u_Xdu7}7l70X_OQO7818O}V%40LCMed2Q2XQuQ81lVdu_V2V7lulOLVL}_L70dd7Q7XXul2OlO08_}2}7010OnVQX2LQ2Qd111Xuuu8VlLLl_L1L7_V_OdVd}7LX8XdO1OX8V88}_}00_H}.7212OQLQ}1du>u0V7VXlul8_dL0_dd2dX71X+ViX}OL86}O}Q}O0u08u1P02_Q2Q7111OuVl;7ul>l7LQL}_u_8dl7VXuX2XOO1O88V80}L010dfQLX2u28Ql1Q1_u2u7V1OOlVl}LL_2_ddQdX7u28XlX0O_8187}1}O0Vl8aL222dQuQX1u18ulVuV_l2l7L1LO_l_}XL107dXQXXOuO88780}}lu07E1kOQ_2}Q_1#17uQu0}0V8lll0_X_2_Xd17tu<7}XLOh}L8Q8O}u002L00a_222OQ1QO1V1}8XV&VdlQl0LuL8_l_0dd7277X1O2OVO}8L}(020Q0OAu212l20Q_12u}u1uOVVlDlLL2LddudVdud87lXnX_O2O781}_}V}}0Lh2ad212XQu101l10u_VQV7l1lOLV0L_Ldadd7Q7XXuX8O_Q88_}Q}7010OMVg}2L_dQd111XuVu8VLV0l__dL7_1_Odld}7LXeXdOVOX8u88}d000_F2f7227Q7d7d_dX87L8u8}OqO80L}}0}}_0Q7l7OXVX}OL81}7}Q}X0u0XVd_2_dd17d72XVLQ8QOV}#dl}L}8k100dld07_X2OQO1OO8VHudx030d+Q2p2u2}Ql121_uV}VV1VOlVL1LL_2_d7u}_7u7}XlOyO_8287}10d0V00HL2Q2dQQQX1_8_ulu0V_l_l7LuLOdL70dL727dXVXXOuO88l}O}_0Q07YVxO2V2}QLu_1duQuXVVV8lll0Ld___7d1dO7l7}XLO.Od8Q8X8uQO0dM;+_2227Q2Q81V1}uLV&VdlQ8XXu_=_l_0d_727XX1XOOVO}8L}-}d1Q0}&db82l20dOdQdO70X2V_lulLL<Ld0V00zl+l2u2lXdO2O7818O}V}}0L,JCd2Q2XQ7Q81l10u_lTV7lVlOLVL}_Ld{ddXl7XXLX8OLO08_}2}70_0Ocdg}2_Q*Qd1Q1Xu7u8VdV0l7L2LO_1_Od8d}7dXxXdOQO}8u8802}00_ 2kX212OQV1Kl7u3udVQVX0Ql8LLL0__d2d7717Ou8X}Od8c8d}Q}X0u08QX(02dQ2QO111}uVLuLll<l7LQ_2_u_}dl7V7_XVVVO1OO8V}u}L020dIl7l2u28Ql1O1_uQu7V1}7lVl0LL_2_ddQdX7uuVXlO2O_8287}1}O0Xe7AL212dQQQX1V18u_u0V_8Ql7L1LO_V_}dL7h7dQQXXOuO88_80}_02072LiO2l2}Q71f17uQu0}0V8lll07d_2_Xd1dO117}X_OTOd8Q8X}u}8_}00J72227Q1QO1V1}lOVxV7lQl8LuL0_lXVu2727XX1}8OVO08L}L}d0ldlJu.82lVWQ_1Q17u1}1VVV0lLLfLd_Q_X7Q787lX(X_0QO78u8O}l}}0XdX>d2Q2XVVQ81L10u_80V7lulOL_L}_LdiddO77XXlX8OlO08_}20OGX0OT_D}2_Q&Qd1Qu8V0u8V7V0ldL2L7_1_O7ld}7_XcX8OQO88us1}L}00dx21X2128QV1(1Luu}uVQVXlud}Ll_a__71XX7178XVOQOL8S8d0u3O0u00.l2u2_Q2Q711l}uVV2VLlIldLQLXdl7Rdl717_XQX7O1OO8d}X}L0Q0d1Q+X2V28QlOL1_uLu7VuVOlVl}LL7X_ddddX7_78XlX0O_}O87}X}O0d0}RL252d1lQX1818udu0V_l2l7LOLO_0_}dL7.7dXQXXOdO8}280}80207s1fO122}111s1}uQuXVuV8Lll0_2_2dld1d}7V7}qGON828Q}1}u0l0l00Q122Q1Q1121V1}uLVwl0lQL1Lu_V_ld_d_O2XVX1OuOV8l8L}1}d0Qrutu2u2lQlQ_1d17u1V_VVV0lLLlLd_d_Xd_OL7lX2X_}QO78u8O}V0X0Lx2Wd2u2XQuQ81luOu_V2V7lVlOLVL}_L7_dd7Q7XXVX8OlO08d}2}7010O=VD}2LQKQX1Q1Xuuu8OXV0l_L2L7_1_OdVd}X0XwXdOQOO8u88}l050d:2J72128QVQ}1Lu^udVQuX71l8LlL0__dld7717O8V5OOL828d}Q}X0V08Gl2d2_QQQ71u1Oulu}VLLXldL1LX_u_8dld07_OVX7OuOO8l8}}_0k0d2}/X2u28QLQ01_u2u7VuVOlVl}L__=_ddQdX7u787l0}O_8287}1020V0}.L1HlLQQQO1u18ulVfV_l2l0L1L8_V_0dL727dXQOuOuO}8l80}_0207P1222V20QL121du1uXVul2lll0L__Q_7d1dO7VXlXLO6Od8V}2}u}80l08_V_2__dO7V1_uXuLV{Vdl(}X}l0}Inx22dP0QXQ2QX1}uZ87}V}d0Q0X#Q_}dOdOd71Q17u1uOVVV}lLLIXd_VdQdud87l781_uQududVLVd0208#<Nd2Q2d7VdX7VX_X7VulVl1lOLVLO010O272}QX1V1O1Ou7uO}Q}7010OjVy}2L2 l_1l1Xuuu8VlV0l_L2L7_1_OdV727LXmXdOQQL8u88}l0Y0_32U721d2QVQ}1Lu=udVQVXlu_VLlL0__dQd7717OXVX}OL8T8d}Q}X0u08Udp02_Q2Q7_01OuVu}V_lMldLQLX0d_8dld07_X2X7O1OO}88}}L0 07bQ9X2u28QlQ01_u2u7V1VOlVLQLL_U_ddQ0L7u7}XlORO_8287}1l20V00tL242dQQQX1uVVulu0V_lQl7L1LO_V7ldL7E7dX1XXOuO88L80}_0207G1qO2V2}QX1g1duQuXXPV8lLl0Ld_2_7d1dO277}X_O>Od8Q8X}u}8R}00f_222XQ1QO1V1}V0V3VdlQlOLuL8_ldT}07277X1O}u8O}8d}y}70Q0XTuC81220QX1217u1uOVVV}LQL)L8_Q_Odud87l70O}O2O88180}V0Q0LvcQ12Q20QuQ81l10u_V2Lll1L9LV_Q_Ld/dd7Q7}XuOQOlO08_}2}701QQRV2Y2LQVQd1u1Xu7OJVll2l_LOL7_u_Odld}7XuXXdOQOX8088}L}00OdO/7212O1QQ}1_uNud7}VXlLl8LLL0__d2d7XF7OX_X}Od8m8d}Q08u208Sd/02XQ2Q7111O88u}VXlnl7LQLX_u_8XXd07XX2XOO1O}8V:udR0y0ORQ1X2u2}Ql1u1_uV}VV1VOlVd}LL_2_ddQQd7uXbXlX0O_8287}11V0V*2UL212dQ1QX17d8ulVQV_L_l7LuLO_V_}dX1X7dXQXX8XO88L80}O_O07e1yOQ}2}Q_1#1dd}uXVLV8lll0L__2_77UdO7_7}XdOUOd8Q8XLQ}80d004_2227Q1QOL}1}u7V+VOlQlOLuL8}Q_0dO7277X1XOOVO}lV}Y}}0Q0Xnua82lQV1u12u5u1u0VVV0lLL2Ld_Q0Odud87lX1X_O2O781V0}V010LJ2#d2_2X1lL71luuu_V1V7l1lOLVXX_Ldldd7Q7XXuX8OlZO8_}_}7010O4l3}28QOQd171Xuuu8VLV0ldL2L70u_OdVd}7XXNXdOQ8X3C88}8}000U22Q212O1ZQ}1Ou#VUVQV8luL0LLL0_}d2dX717OXVX}OX8-}>}Q}X0u08el60QzQ21211u1uVu}VLlHlXLQ_1_udQdld07_X28QO18Q8V}l}L020daQdd2uQ1QlQ01_u2u7V180lVLuLL_2_ddVdX7uX7XlO1O_8187}1}O0V?2qL212dQQQX1u18V_dOV_lul7LlLO_V_}dL1_7dXlXXOVO88l80}_2l07(lxO2L2}Qd1hV0l2uXVLV8dOl0Ld_2dpd17iuz7}XLO,008Q8O}u02d200T_22L(Q1Q81V1}8VVzVOlQlXLuL8_l70QL727}X1X8OV8l8L}a}80Q0}au2b2lQ1Q_V2V2u1V9VVV0lLLuLd_Qdudu7>7lXQX_OVO78101}V0Q0L+.Rd2Q2XQu1V1luuu_V2V7l1lOdVd7_Ldldd717XXOX8Ol2_8_}l}70_0OTXE}1LX0Qd1_1XuVu8V7V0l}L8L7_7_OdLd}7_XMX7OQOXuV88}l}00Ob2-7212O7_Q}1Ouku0VQlQluL0O1L0_8d2dO717OXVX}Cu8680}Q}X0u08Glb0VVQ212111OuVu0VLllLVLQ_1_u_}dl7:7_XQX7O1188V8}}L0u0dEQ<XQuudQl1l1_u_u7VXVOlV_QLL_V_ddddX7l78O_O_O_8L87}u}O0V0}wLQL2dQdQX1u18ulu0V_LVl7L7LO_O_}dL7G7dO1XXOOO88X80}_02072V,O2X2}Q01+17uQuX}QV8lOl0L__2_7d1XO0}7}X}OHO78Q}1}u}8m100)}22Q=Q1111VV}uOVnl6lQlOLu_2_l_0dO72XkX1O1OV828L}N0l0Q00xuD02l20Q_12udu1u0VVV}lLLoLd_Q71dud87lXUX_O2O78V}u}V}}0L=2kd2Q2XQuQ81l70__VuV}l1lOLVLOzL2Qn_7V7XXuX8Ol8e8_}2}7010O=Vs}VLQ2Qd1Q1Xuuu8Vl_07_LQL7_1_OdVd}7L7n0_O1OX8u88}l}00_02Od2u2OQVQ}1LuEudVQVXlul8LlL0O_d2d7717Ou1X}OO8Y8d}Q}X0u08u04028Q2Q0111OuVVuXLlKl}LQ_Q_u_}dld07_XVVVO1OO8V}V}L020drQdd2uQQQlQ01_u2u7V17VlVL1LL_V_ddQdX7uX7XlOuO_8187}1}O0V_O^L2V2dQ1QX1u18ul07V_lQl7L_LO_l_}7dXl7dXLXXOOO88l8007F_07UdbO2X2}QL1muXV_uXVXV8l8l0L__2_77QdO787}X_OkOd8Q8X0d}80}002?222}Q11}uu1}VEVxl2lQlXLu_07L_07Q7278X1XOOVO}8}}c0u0QceSuq02luV8212uVu1llVVV0lLL_Ld_lQldud87lOdX_OQO781l7}V070LbQId2Q2XuudV1luOu_VQV7lVlOLV_8_Ld0dd7_7XXuX8Ol8L8_02}70d0ONVK}2LQ1Qd101XVuu8V_V0l__LL7_0_O72d}XuXS8dOlOX88880Q}008U21G1Q2O1^Q}Vuuiu7VQl2luL222L0__d2XL7178XVOQlQ8Z8d}Q600u0}(lg07lQ21l111}uVu}VL_a0dLQ___u_}dl727_X2X8O18X8V}u}L0G0dxQQL2uQ8Ql1V1_u2u7V1V0lVLXLLdw_ddudX7uX8XlOXO_88870b}O0VsL?L2d2dQXQXuC18lOl}V_lOl7d7LO_l_}dX7Y78u8XXOuO80880}d020}d}?O2V2}V}1z17uQlX07V8l8l0L0_2d.d1dO}27}O1OnOO8Q8X}u}8Y}002u22Q2Q11_1VV}u8V6lVlQLLLu_1_l_0d872XLX1X0OVO}8LP*;10QfdIu2%2lQ2Q_1218u1VOVVl7lLL>Ld_Q_Odu7}7lXXX_O2O781{Q}V0O0L22^d2u2XQulu1luOu_V}V7L2lOLV_d_Ld8dd7X7XO2X8Ol808_}0}7080O,VW}2L1dQdu21XuLu8VlV0___uL7d1_O7Qd}7_X6Xd8LOX}1880V}0H_ 2W7282OQ0Q}uVu=V_VQl2L7l8LOL0Oud2dX71XuXVOQlQ8x8d}QQL0u0}Fl,07lQ21l111OuVu}VLlE}OLQ_L_u_8dl7d7_X2OLO18l8V}*}L030dQQX22uQQQl1u1_uLu7L1gQlVLuLL_l_dd_dX7_u_XlX0O_}287}u}O0V2l:L2)2dQ1QX1u18uXV>V_l2l7LuLO_V_}dL7E7d7Q07OuO88l80}80207>1QOl12}Q_1&1duQuOVuV8L_l0Ld_2_Xd1d87V7}OQOnO78Q8X}u}80l002u222XQ1Q81V10uLVDlllQlXLuL}_l_0d_7208XuXOOV}j0d}4}d0Q1_Puj82lQVu11217u1VzVVV0lLL2Ld_lQldud87lX1X_OQO78LLL}V}}0L1B/d212XQul71l10u_V2V7l1lOLV}X_Ld2dd7Q7XXuX8Ol828_}2}7010OzlI}1LX0Qd1Q1Xuuu8L_V0L7d0L7_u_OX1d}7LXnOXO8OX8l88Q1}00_N22F202OQ_Q}17uyu7VQVOlul8}LL0__d2dX717OXVX}lL8:8X}Q}80u0}hlQ227Q2QO11_duVu}VLLQLdLQL}_uO1dld07_82OOO1O08V}2}LQ20d2u2V2uQ2QluL1_u2u7L1lylVLQLL_u_dXVdXXlX_XlOuO_CL87}1}O2Vd89L2V2dQLQXVX18V_0dV_lLl77dLO_V_}XLXQ7dX_XXO7O8{d80}_;807c7RO2V2}QL15uXV2uXVOV8_ul0L__2dOdVdO7}7}}uOoOd8Q}80X}8PD00Q72227Q1131L1}u0VRL7lQlOLuL82}_07u7270X1XOOVO}2X}D0l0Qcl3ue82l201212ulu1u}VVlclLLc_}_QdQdu7_7lXXX_O2O}81}1}V070LoX5d2luVQu1V1lV7u_VQV7l1}VLV_l_Ld_dd7Q7XX7OdOl8L8_}1}70u0O5X&}2Ld2Qd1Q1Xulu8VlV0l_}QL7_1_Oddd}7LXeXd11OX8u88}}}00_i2J7_u2OQVQ}17usudVQVX8Vl8LlL0_0d2d7717OQlX}OL8T87}Q}X0u08_6o0Q2Q21Q111OuVu}ldlWL1LQLX_u_8dld0O2X2O1O1O}8V}e}L0 2uFQ+X2uQlQlQ01_u2luV1VOlVL%LL_=_ddQ7d7u78XlX0O_8287}L#l0V0}WLlQ27Q1QXul_7ulu0V__Ol7L1LO7V1ldL7g7dXQXX}lO8}_0L}_0207uX/O2V2}1d1l1duQuXL0V8lll0d_dO_7d1dO7V7};_Ox8X8V8X}u}81000M_22271LQO1V1}u_V?VdlQL8L_L8_l_0O87277X1O}2QO}8L}C070Q0XcuM8dX20Qd1217u1uOVVV}LdLyLX_Q_Xdud87l708QO2O8818O}V}}0L2QQV2Q20Qulu1l10u_l1L1l1L2LVdO_LdbddXuX1XuO1Ol0O8_}2}7GVh0(V2V2LuQQd1Q1Xu_ddVllul_X7L7_u_O7L}X7LXdXdO_OX8u88&l2O0_k7r72O2OuXQ}1LV8udVOVXlOl8LlL0__d_d77O7OXLX}Od8{8d0d}X0l08:}?0Q2Q2Q71l1Ou}u}VdlEL2LQLXd6_8d_d0X2X2OQO18;008}}O0 173QeO2uQ0uLQ018u2lOV1VOlV_ULX_4_0dQ7d7u78Xl828-82}2}1*}0V0}GL2uQ2QQ1i1udLulVkV__277L1_V_VdldLOQ7d8QQ8Ou8L8l}1}_1007.12X2VQ7QL1_1duQuXVulullLOL__d_7d1dO7VXXXLO7Od808X}l}80l2uw_2u27QOQO101}lLl_VdlXlXL_L88u_0d_X277X}XOO8O}8L}m}d_70X26M82}20Q_1217d8uOV}V}L1L9LX_Q7Xddd8Xn70OIO2}O818O}_}}07pG2Q2QQVQu12lz10u8V27Ll1l8LV_ud1dBd}7QXQXuX}Ol818_}2VX010ODVi02LQzQd1Q7Ouuu8VlV0l_L2L7_108dVd}7LX1XdOQOX8uu}}l}00_j1n7212O1LOX1Luludd8VXlul8LO_X__dLd7Ad7OXlX}OL8#88L8}X0u08lO{02dQ21O_o1OuXu}7Ql;ldLQLXd8_8dOd07dX2XOO18Q8X8}}80pl);QxO2u2}Ql1181u2u7V1O1lVl0LLdQ8ldQ727u0DXlX0O_82LQ}1010Vj1ZL2I2d1uL01uuVulV1V_l2l7_V_O_VdLdLOQ7dXQXX8l8l8l}d}_QV07-1FOQLQdQL1X1dl1uXVuV8L__QL__8_7X1dO7V7}XLOlOd8d8X0k}80_00b_2L27QXQO171}uLVzlXXllXL8L8d7_0d_72XOO2XOO0O}Q_}?}d0Qn822y8Q220lu1217u1V}luV}L1LWLX_Q_Xdu707}70OVO2)}818O}V}}Gdjj222QQ_QuQ01l10V7V2l1l1L2LVL}_L7Q}87QXVXu81OlO08_01YQ01BLxVuW2LQ.Qduu18uuVdVld1l_L2L7dV7ddV7X7L0iXdOQOX}l02}l080_2(Y7212OQV101LududlhVXlll8Lld2__dXd77_7OXVX}8d028d}8}XQ108Nls0Q7uQQ7101O_2u}VLl5LXd1LXd2_88Xd07_X2OO8_OO}18}Q20:0d#Q28Q}281VQ0LLu2u7V1VOlOl}_2_Fd_dQd87u78O1X081828O}1}O0V0}2d2qQVQQ1n1u18ull2V7l2LLL1_2_V_}dLXQOVXQOdOu8l8l80}_T1V8i12X2VVQQL1*1dVul2Vul8ll_2L__2_77V7O7VX0XL87Od8Q8X}u0u0lMX^_QQ27QVQO1VVVuLV8VdlLlXLuL8d_7Ld_7077}XXOOVO}}d0l}d?20X1_Y82l2017VQ17V1uOV}V}lLLj_X71_X7Vd80l70X_O28OVQ8O0L}}-QD=hd2Q2X1XQ8u110V7V2VOl1lOLLL}dQdk7l7Q7OXuO0}LO0}u}22_010OqVz}1XQ:1l1Qu+uuu8VlL2l7L2___18_dVd}7LOQXOOQ878u?l}l}00_21Q121QOQVlt1LuCudluV8luL}LldX__d2d7XVO1XV8>OL}L8d}Q}X0u2dCl2O2_11Q71V1OuVdLVLl8ldL_LXd2_87_7_7_X0X7}2OO8V8}0d0l0d229XQ228QlQ01_V8u7l1VOlXl}L}_-_07ddXXu78V_X0Od828X}104dS0}>L2<XXQQQO1uu2}2u0V_l2QdL1L8_V7cX_7vXdXQ88OuO88l802702)X/12L2V2}QLuQ17uQV8VuL0lll0L__V7qd17O7VlOXLO2Od8QQu}u420lv7W_Qu27Q1101VVQuLVlVdLllXL7d1_l71d_uO77XuXOOlO}8XLX}d0Q0X70v82L20QOOO17u1uO2QV}l_LPLdOX_X7_d87O70X0O2O78d8O0d}}+X,*222Q2XQLQ8uX10V1V2l8l1lO__L}dOdod07QOwXuX8O_O0}O}2}O010}HV:}11Qh181Qu0uuVlVlV0ldL2_}_174dVd}7L8lX8OQ808ud7}l0S0_11;72LXLQVQ}1L08udV1VXluqVLld1__d}d7717OXVk8OL}V8d}}}X0u08ilQX2_1VQ71V1Oulu}ldLVld_lLX72_8dld07_OOX78LOO8l8}}_0R0dW7UX2u28QLQ01_u2u7OOVOLdl}_X_(_ddQd8wQ78OXX0OO8287}1}OV}0}2O2327QQQO1uu2LNu0l_l22rL1L8_V7}187)XLXQOdOu}08l80_J02#7I1222V2}QLuQ_8uQVOVu_dlll0L_d17Qd17}7V01XLO/Od}u0u}u5i0lp_?_22271VuL1VVQuLl1VdlQlX_lL}_l7ud_OX77X1XOOVO08L0>}dDL0Xjl;82l11Q_1d17V1uOVVV}lLduLddQ_Xddd87l70O7O0O7}u8O0V}}0Lo(2XQd2X1lQ81L10u_V2lOl}lO__L}X^dGdd7QX8X_X887O022}2}701I}#}/}QOQFlu1Q1Xuuu8L1V0L_L2_0_1_}dVd}10XsOQOQ8X8u88}l}0u2.22721QQQV1l1LuldOVQlQluu2Ll_g__72d77LuLXVX}OL7u8d}1}X0uultl202_QLQ7171OuVdLVLlLld_QLX_O_8dl}_7_O2X7OdOO8}8}}8u10dC7vX0128QLQ0u_u2u}}}VOlVl}Vl_C_7dQdX1O78OlX0O88287}10}2V0}2_2J1_QQQX1uu0u7u0l7l2LuL1LO_V7Jd87zXOXQ}8OuO88l020l02v}=1Vl2V2}QLuQu}uQlSVu71lll0L__272d17O7VO1XLOQOd8Q}7}u0V0ltVz_Q2271Vu81Vu}uLLQVdlQlXLu70_l7sd_7O77X1XO8L8V8L0Q}d2u0XFu&82711Q_u2171QuOVlV}LdX8Lddl_XdXd87l70X}O8O7}_8O}V}}0_<q2)2Q2XdVQ81l10V#V2V7l1lO}lL}_Ldq7u7Q7XXuX81LO08_}208010OUV;}__QpQd1QuQuuu8VlV08dL2L7_1d7dVd}7LXgQ7OQOX8u}7}l}00_S2LX212OQV171Lu+udVQddlu_2Ll_2__dQd771O2XV82OL8j8d}Q}X0_QLDl202_ruQ71u1OlXl8VLl}ldluLX_V_8Xud07OuOX7O1OOOL8}}_0#08d8KX2u28Q2Q01du2u7}XVOLVl}_u_K_ddQ78uD78OLX0888287}1}O080}2L2A2XQQQO1uu0l2u0l_l2_LL1LO_V_}X27bXdXQXOOuO}8l80rQ0207N1I82V2}QL1Cu1uQVXVul8lll0L__1}_d1787VXlXLOoOd8Quu}u0}0lFhn_2Q27u1OX1Vu}uLVXVdX1lXLu}u_ldld_7L77O1XO8L}Q8L0v}d2u0X6uU82l1XQ_uQ17u}uOVVV}LdLXLddu_XXld87l70XOOuO7}18O0V}00_R ?dVX2X1_Q8u210VXV2V7:2lO_dL}_8d?787QX2X}X887O08}}Q}X01&dmV2QXQQ*Qd1Qu2uVu}Vll1&1L2L7_1dXdld07LXiV2OQ808u}7}l}00_Y2Vd2112QV171LuwudVQV8lu_2Ll_2__dQd7XVX6XV8QOL}88d}Q}X0u/VxlQ12_QQQ71u1OuVllVLlMldL1LX_u_8dl2_7_OVX78LOO8V8}}du}0d2LjX2d28QlQ01_77u7l_VOlll}L__,_8XOdXXu78XLOwOd82}D}0}OMV0}C82j27QQQ81u18XLu0V_l2LZL1LO_V_}j_7G7dXQOVOuO88l800702iX?1U02V2}QLuQuduQV8Vu7llll0L__272d1707VX1XLOhOd}u0L}uF20l18=_22271V181VV1uLdQVdlQlX_lL}_l7Vd_8V77X1XO8L8p8L0L}drX0Xzuj8Q_u#Q_ud17l8uOVVV}lL2LLddV_X7Od87_70X_8}O7}L8O}7}}0Lii2X2l2X1dQ8V}10u_V2lOLdlO_XL}7Od%dd7QX8O2X888O0tO}2}701+}2l*}Q0Qpl71Q1XuuV0VOV0_2L2_V_1_OdVd}O8XCO8OQ}u8u80}l}0u_F22X211RQVQ01LVQl7VQl8lu_0LlL0__d2OO71X0XVO0OL8{8d0u0u0u22-l122_Q2Q71LVLuVl{VLdXl7L1LXdl7}dlXV7_81X7O1OO8V24}LRL0df8TX2u281_u11_Vdu7LVVOlVl}LXdQ_d7_dX8}7}XLX0O_ld8708}O/V0}&L2&2d_uQXu018V2u0L2l2l7LVLO72_}7_79X}XQXXOXO80^80tu020OS12QQ_2}u21NlOu1uOVuV}llL121_2_7d1O07l70XLOulu8Q8X}uQl0LbJG_22XQQ1ul1VuXuLVAVdlQX7Lud__ldXd_7277X1X}OV}_8L}Q}d010X2l#}2l1dQ_u}17u1uOVVlLlL_7Ld_1_XdVd87lX1X_O2O78u8O}V}}0XQ7.dQ_2XVYQ}1L10uOLXV7LVlOd8L0__dw7X}07XOlX8O}O08_}20)ll0O2L6}VlQ2Q71Q1OuuV202V0l_L2Xd_u_8dVX&0uXcOXOQ}08u88}l}0dT:22821Q}QVQ}1Lu(LdVQl0luL0LlL0__d27071O2XVO1OL848d0u0L0u21 lV}2_Q2Q7uVV1uVlVVLdAldLQLXdld7dlXL7_}VX7O1OO}L0X}Lrd0daV*X2u281_121_VXu7l}VOlVl}LL7l_d7LdXX}78X_X0O_1V870L}O0L0}Sd2k2dQLQXu_18uLu0V7l2LO_LLOd7_}717y7dXQO880O8}O80Q00207G1^OQ}2}1X1cu0uQuXVuV8LQl0_X_2_7d1d}7VXK2VOT888Q8O}u}80l00_l22Q8Q1u)1V1}uLVEl0lQL}LuL8_l_0d_72OVX1XOOVO}8L}5}d0Q21tuT82lQnQ_1217u1");local n=_.eyMHboRt;_.yMZnArKU(function()_.m_DmAewp()n=n+_.inMKyxge end)local function e(e,l)if l then return n end;n=e+n;end local l,n,o=f(_.eyMHboRt,f,e,a,_.XlvwQWUb);local function t()local n,l=_.XlvwQWUb(a,e(_.inMKyxge,_.GVOJFtof),e(_.jpkTiCVB,_.alQVvDFt)+_.yeWf_JPF);e(_.yeWf_JPF);return(l*_.sUIfdwaq)+n;end;local le=true;local c=_.eyMHboRt local function m()local d=n();local e=n();local u=_.inMKyxge;local d=(l(e,_.inMKyxge,_.cjCBPxpH)*(_.yeWf_JPF^_.CEBUofMs))+d;local n=l(e,_.zgjAuszg,_.FKcaUykV);local e=((-_.inMKyxge)^l(e,_.CEBUofMs));if(n==_.eyMHboRt)then if(d==c)then return e*_.eyMHboRt;else n=_.inMKyxge;u=_.eyMHboRt;end;elseif(n==_.LfCJrDDa)then return(d==_.eyMHboRt)and(e*(_.inMKyxge/_.eyMHboRt))or(e*(_.eyMHboRt/_.eyMHboRt));end;return _.qVoncoVR(e,n-_.bRnnQUnh)*(u+(d/(_.yeWf_JPF^_.VeYR_sOC)));end;local p=n;local function b(n)local l;if(not n)then n=p();if(n==_.eyMHboRt)then return'';end;end;l=_.xVBVi_md(a,e(_.inMKyxge,_.GVOJFtof),e(_.jpkTiCVB,_.alQVvDFt)+n-_.inMKyxge);e(n)local e=""for n=(_.inMKyxge+c),#l do e=e.._.xVBVi_md(l,n,n)end return e;end;local c=#_.OhoFbIDf(s('\49.\48'))~=_.inMKyxge local e=n;local function te(...)return{...},_.jyqJKQ_K('#',...)end local function de()local h={};local a={};local e={};local s={a,h,nil,e};local e=n()local f={}for d=_.inMKyxge,e do local l=o();local n;if(l==_.eyMHboRt)then n=(o()~=#{});elseif(l==_.inMKyxge)then local e=m();if c and _.KXFCQanj(_.OhoFbIDf(e),'.(\48+)$')then e=_.KOQfFHVB(e);end n=e;elseif(l==_.GVOJFtof)then n=b();end;f[d]=n;end;for e=_.inMKyxge,n()do h[e-(#{_.inMKyxge})]=de();end;for s=_.inMKyxge,n()do local e=o();if(l(e,_.inMKyxge,_.inMKyxge)==_.eyMHboRt)then local h=l(e,_.yeWf_JPF,_.GVOJFtof);local o=l(e,_.iGMKrAjo,_.alQVvDFt);local e={t(),t(),nil,nil};if(h==_.eyMHboRt)then e[u]=t();e[r]=t();elseif(h==#{_.inMKyxge})then e[u]=n();elseif(h==k[_.yeWf_JPF])then e[u]=n()-(_.yeWf_JPF^_.YayG_ctp)elseif(h==k[_.GVOJFtof])then e[u]=n()-(_.yeWf_JPF^_.YayG_ctp)e[r]=t();end;if(l(o,_.inMKyxge,_.inMKyxge)==_.inMKyxge)then e[d]=f[e[d]]end if(l(o,_.yeWf_JPF,_.yeWf_JPF)==_.inMKyxge)then e[u]=f[e[u]]end if(l(o,_.GVOJFtof,_.GVOJFtof)==_.inMKyxge)then e[r]=f[e[r]]end a[s]=e;end end;s[_.GVOJFtof]=o();return s;end;local function ne(l,e,n)local d=e;local d=n;return s(_.KXFCQanj(_.KXFCQanj(({_.yMZnArKU(l)})[_.yeWf_JPF],e),n))end local function m(ee,o,s)local function de(...)local t,y,c,ne,b,n,a,p,j,z,k,l;local e=_.eyMHboRt;while-_.inMKyxge<e do if e>=_.GVOJFtof then if e<=_.iGMKrAjo then if _.iGMKrAjo~=e then p={};j={...};else z=_.jyqJKQ_K('#',...)-_.inMKyxge;k={};end else if e~=_.GVOJFtof then for n=_.YUZmJnga,_._Dhaxcmn do if _.alQVvDFt~=e then l=f(_.mzLqcvdd);break;end;e=-_.yeWf_JPF;break;end;else l=f(_.mzLqcvdd);end end else if e<=_.eyMHboRt then t=f(_.alQVvDFt,_.xeacRTEU,_.inMKyxge,_.jpWThBUH,ee);y=f(_.alQVvDFt,_.wiQHAkGL,_.yeWf_JPF,_.AocnMhwX,ee);else if e>-_.yeWf_JPF then for l=_._BwJhkmX,_.JmjOTrhH do if _.inMKyxge~=e then n=-_.LXyhmTWu;a=-_.inMKyxge;break;end;c=f(_.alQVvDFt,_.lroXzrXD,_.GVOJFtof,_.jpWThBUH,ee);b=te ne=_.eyMHboRt;break;end;else n=-_.LXyhmTWu;a=-_.inMKyxge;end end end e=e+_.inMKyxge;end;for e=_.eyMHboRt,z do if(e>=c)then p[e-c]=j[e+_.inMKyxge];else l[e]=j[e+_.inMKyxge];end;end;local z=z-c+_.inMKyxge local e;local f;function ZRFKZgKEBGSm()le=false;end;local function c(...)while true do end end while le do if n<-_.vYpXGauO then n=n+42 end e=t[n];f=e[g];if f<=85 then if f>42 then if f<=63 then if 52>=f then if f<48 then if 45<=f then if 45>=f then local f;for _=0,5 do if 2<_ then if _>3 then if 3<=_ then for f=28,88 do if _>4 then l[e[d]][l[e[u]]]=l[e[r]];break;end;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];break;end;else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end else l[e[d]][l[e[u]]]=l[e[r]];n=n+1;e=t[n];end else if _>0 then if _~=0 then repeat if 2>_ then l[e[d]]=l[e[u]];n=n+1;e=t[n];break;end;f=e[d]l[f]=l[f](l[f+1])n=n+1;e=t[n];until true;else f=e[d]l[f]=l[f](l[f+1])n=n+1;e=t[n];end else l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];end end end else if f==46 then for f=0,1 do if f~=-4 then for _=25,71 do if 1>f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l[e[d]]=s[e[u]];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end else local o,k,s,a,_,h,f;l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];f=0;while f>-1 do if 4>f then if f<=1 then if f>0 then k=d;else o=e;end else if-2~=f then repeat if 2<f then a=l;break;end;s=u;until true;else a=l;end end else if f<=5 then if 5==f then h=o[k];else _=a[o[s]];end else if 2<=f then for e=28,93 do if 6~=f then f=-2;break;end;l[h]=_;break;end;else l[h]=_;end end end f=f+1 end n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;end end else if f>43 then local _;for f=0,6 do if 2>=f then if f>0 then if f>=-1 then repeat if 2~=f then _=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];break;end;l[e[d]]=s[e[u]];n=n+1;e=t[n];until true;else l[e[d]]=s[e[u]];n=n+1;e=t[n];end else l[e[d]][e[u]]=l[e[r]];n=n+1;e=t[n];end else if 5>f then if 1<=f then for _=42,72 do if 4~=f then l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];break;end;else l[e[d]]=o[e[u]];n=n+1;e=t[n];end else if f>=2 then for r=18,66 do if f>5 then _=e[d]l[_](h(l,_+1,e[u]))break;end;l[e[d]]=l[e[u]];n=n+1;e=t[n];break;end;else l[e[d]]=l[e[u]];n=n+1;e=t[n];end end end end else local _,s,a,r,k,c,f,b;for f=0,6 do if f<3 then if f>0 then if f<2 then l[e[d]]=o[e[u]];n=n+1;e=t[n];else l[e[d]]=o[e[u]];n=n+1;e=t[n];end else l[e[d]]=o[e[u]];n=n+1;e=t[n];end else if 5<=f then if 3<f then for o=28,88 do if 5<f then b=e[d]l[b]=l[b](h(l,b+1,e[u]))break;end;f=0;while f>-1 do if 3>=f then if f>=2 then if-2<=f then repeat if f~=3 then a=u;break;end;r=l;until true;else r=l;end else if f~=1 then _=e;else s=d;end end else if f>=6 then if f~=4 then for e=19,91 do if f<7 then l[c]=k;break;end;f=-2;break;end;else f=-2;end else if 0<=f then for e=11,62 do if 4~=f then c=_[s];break;end;k=r[_[a]];break;end;else k=r[_[a]];end end end f=f+1 end n=n+1;e=t[n];break;end;else f=0;while f>-1 do if 3>=f then if f>=2 then if-2<=f then repeat if f~=3 then a=u;break;end;r=l;until true;else r=l;end else if f~=1 then _=e;else s=d;end end else if f>=6 then if f~=4 then for e=19,91 do if f<7 then l[c]=k;break;end;f=-2;break;end;else f=-2;end else if 0<=f then for e=11,62 do if 4~=f then c=_[s];break;end;k=r[_[a]];break;end;else k=r[_[a]];end end end f=f+1 end n=n+1;e=t[n];end else if-1~=f then repeat if f~=3 then f=0;while f>-1 do if f<4 then if f<=1 then if f~=0 then s=d;else _=e;end else if f>=-1 then for e=25,58 do if 3>f then a=u;break;end;r=l;break;end;else a=u;end end else if 5<f then if f>=2 then for e=12,58 do if 7~=f then l[c]=k;break;end;f=-2;break;end;else f=-2;end else if f<5 then k=r[_[a]];else c=_[s];end end end f=f+1 end n=n+1;e=t[n];break;end;f=0;while f>-1 do if 4<=f then if 6>f then if f>=3 then repeat if 5>f then k=r[_[a]];break;end;c=_[s];until true;else c=_[s];end else if f>2 then for e=30,95 do if f~=7 then l[c]=k;break;end;f=-2;break;end;else f=-2;end end else if 2<=f then if f<3 then a=u;else r=l;end else if-3~=f then repeat if 1>f then _=e;break;end;s=d;until true;else s=d;end end end f=f+1 end n=n+1;e=t[n];until true;else f=0;while f>-1 do if f<4 then if f<=1 then if f~=0 then s=d;else _=e;end else if f>=-1 then for e=25,58 do if 3>f then a=u;break;end;r=l;break;end;else a=u;end end else if 5<f then if f>=2 then for e=12,58 do if 7~=f then l[c]=k;break;end;f=-2;break;end;else f=-2;end else if f<5 then k=r[_[a]];else c=_[s];end end end f=f+1 end n=n+1;e=t[n];end end end end end end else if 50<=f then if f<=50 then local f,_,h;for r=0,2 do if 0>=r then l[e[d]]=#l[e[u]];n=n+1;e=t[n];else if-1<=r then for o=13,71 do if r~=1 then f=e[d];_=l[f]h=l[f+2];if(h>0)then if(_>l[f+1])then n=e[u];else l[f+3]=_;end elseif(_<l[f+1])then n=e[u];else l[f+3]=_;end break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end end else if f~=49 then for t=18,89 do if f~=52 then local e=e[d]l[e]=l[e](l[e+1])break;end;local f,_,k,s,a,c,o,h,b;local t=0;while t>-1 do if 3<=t then if 5<=t then if 2~=t then for e=22,83 do if 5~=t then t=-2;break;end;n=b;break;end;else t=-2;end else if-1~=t then for e=15,98 do if 4~=t then o=f[s];h=f[a];break;end;b=o==h and _[c]or 1+k;break;end;else o=f[s];h=f[a];end end else if 1<=t then if t==1 then _=e;k=n;else s=_[d];a=_[r];c=u;end else f=l;end end t=t+1 end break;end;else local f,_,k,s,o,c,h,a,b;local t=0;while t>-1 do if 3<=t then if 5<=t then if 2~=t then for e=22,83 do if 5~=t then t=-2;break;end;n=b;break;end;else t=-2;end else if-1~=t then for e=15,98 do if 4~=t then h=f[s];a=f[o];break;end;b=h==a and _[c]or 1+k;break;end;else h=f[s];a=f[o];end end else if 1<=t then if t==1 then _=e;k=n;else s=_[d];o=_[r];c=u;end else f=l;end end t=t+1 end end end else if f~=47 then repeat if 49~=f then for f=0,6 do if 3<=f then if 5>f then if 3<f then l(e[d],e[u]);n=n+1;e=t[n];else l(e[d],e[u]);n=n+1;e=t[n];end else if f>=3 then repeat if f<6 then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);until true;else l(e[d],e[u]);end end else if 1<=f then if f==2 then l(e[d],e[u]);n=n+1;e=t[n];else l[e[d]]=l[e[u]];n=n+1;e=t[n];end else l[e[d]]=l[e[u]];n=n+1;e=t[n];end end end break;end;local o,k,c,s,a,f,_,r,h;for f=0,2 do if 1<=f then if-2<f then for b=14,97 do if 1~=f then _=e[d];r=l[_]h=l[_+2];if(h>0)then if(r>l[_+1])then n=e[u];else l[_+3]=r;end elseif(r<l[_+1])then n=e[u];else l[_+3]=r;end break;end;f=0;while f>-1 do if f<3 then if 0<f then if 1==f then k=d;else c=u;end else o=e;end else if f>4 then if 1<f then repeat if 5~=f then f=-2;break;end;l(a,s);until true;else f=-2;end else if 4>f then s=o[c];else a=o[k];end end end f=f+1 end n=n+1;e=t[n];break;end;else _=e[d];r=l[_]h=l[_+2];if(h>0)then if(r>l[_+1])then n=e[u];else l[_+3]=r;end elseif(r<l[_+1])then n=e[u];else l[_+3]=r;end end else l[e[d]]=#l[e[u]];n=n+1;e=t[n];end end until true;else for f=0,6 do if 3<=f then if 5>f then if 3<f then l(e[d],e[u]);n=n+1;e=t[n];else l(e[d],e[u]);n=n+1;e=t[n];end else if f>=3 then repeat if f<6 then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);until true;else l(e[d],e[u]);end end else if 1<=f then if f==2 then l(e[d],e[u]);n=n+1;e=t[n];else l[e[d]]=l[e[u]];n=n+1;e=t[n];end else l[e[d]]=l[e[u]];n=n+1;e=t[n];end end end end end end else if 58<=f then if f<=60 then if f>58 then if f>56 then for _=13,73 do if f>59 then local p,b,_,c,s,a,h,k,f;l[e[d]]=#l[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]]%l[e[r]];n=n+1;e=t[n];l[e[d]]=l[e[u]]+e[r];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];p=e[d];b=l[e[u]];l[p+1]=b;l[p]=b[e[r]];n=n+1;e=t[n];f=0;while f>-1 do if 4>f then if f<=1 then if 1==f then c=d;else _=e;end else if 2==f then s=u;else a=l;end end else if f<6 then if 2<f then for e=30,82 do if 5>f then h=a[_[s]];break;end;k=_[c];break;end;else h=a[_[s]];end else if f>5 then for e=29,64 do if 7~=f then l[k]=h;break;end;f=-2;break;end;else l[k]=h;end end end f=f+1 end n=n+1;e=t[n];f=0;while f>-1 do if f<=3 then if f>1 then if-1<=f then for e=21,82 do if 2<f then a=l;break;end;s=u;break;end;else a=l;end else if f~=-2 then repeat if f~=1 then _=e;break;end;c=d;until true;else _=e;end end else if f>=6 then if 4<f then for e=43,98 do if f<7 then l[k]=h;break;end;f=-2;break;end;else l[k]=h;end else if f~=3 then for e=16,87 do if f~=4 then k=_[c];break;end;h=a[_[s]];break;end;else h=a[_[s]];end end end f=f+1 end break;end;local h,o,s,t,_,a,f;local n=0;while n>-1 do if 3>n then if 1>n then h=d;o=u;s=r;else if-1<=n then repeat if n>1 then _=t[o];break;end;t=e;until true;else t=e;end end else if 5<=n then if 1<n then repeat if 5<n then n=-2;break;end;l[a]=f;until true;else n=-2;end else if n==3 then a=t[h];else f=l[_];for e=1+_,t[s]do f=f..l[e];end;end end end n=n+1 end break;end;else local a,o,h,t,_,s,f;local n=0;while n>-1 do if 3>n then if 1>n then a=d;o=u;h=r;else if-1<=n then repeat if n>1 then _=t[o];break;end;t=e;until true;else t=e;end end else if 5<=n then if 1<n then repeat if 5<n then n=-2;break;end;l[s]=f;until true;else n=-2;end else if n==3 then s=t[a];else f=l[_];for e=1+_,t[h]do f=f..l[e];end;end end end n=n+1 end end else local e=e[d]l[e](l[e+1])end else if 61>=f then l[e[d]]={};else if 62<f then l[e[d]][l[e[u]]]=l[e[r]];else local u,o,h,f,r,_;for a=0,1 do if a==0 then u=e[d]l[u](l[u+1])n=n+1;e=t[n];else u=e[d];o={};for e=1,#k do h=k[e];for e=0,#h do f=h[e];r=f[1];_=f[2];if r==l and _>=u then o[_]=r[_];f[1]=o;end;end;end;end end end end end else if 55<=f then if f>55 then if f<57 then l[e[d]]=l[e[u]]%l[e[r]];else local e=e[d]l[e]=l[e]()end else local h,_;for f=0,6 do if 2<f then if f<=4 then if f==4 then l[e[d]]=l[e[u]]%e[r];n=n+1;e=t[n];else l[e[d]]=o[e[u]];n=n+1;e=t[n];end else if f~=4 then repeat if f>5 then h=e[u];_=l[h]for e=h+1,e[r]do _=_..l[e];end;l[e[d]]=_;break;end;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end end else if f<1 then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];else if f>=-2 then for _=15,91 do if 1~=f then l[e[d]]=l[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]]+l[e[r]];n=n+1;e=t[n];break;end;else l[e[d]]=l[e[u]]+l[e[r]];n=n+1;e=t[n];end end end end end else if f>53 then l[e[d]]=s[e[u]];else local e=e[d];local n=l[e];for e=e+1,a do _.KleDoue_(n,l[e])end;end end end end else if 74>=f then if 68>=f then if f>65 then if f<67 then local e=e[d];do return h(l,e,a)end;else if 64<f then repeat if f~=68 then local e=e[d];a=e+z-1;for n=e,a do local e=p[n-e];l[n]=e;end;break;end;local f;for _=0,3 do if 1<_ then if-2~=_ then repeat if _>2 then l[e[d]][l[e[u]]]=l[e[r]];break;end;l[e[d]][l[e[u]]]=l[e[r]];n=n+1;e=t[n];until true;else l[e[d]][l[e[u]]]=l[e[r]];end else if 1>_ then l[e[d]]=l[e[u]];n=n+1;e=t[n];else f=e[d]l[f]=l[f](l[f+1])n=n+1;e=t[n];end end end until true;else local e=e[d];a=e+z-1;for n=e,a do local e=p[n-e];l[n]=e;end;end end else if f~=61 then repeat if 64~=f then l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];l[e[d]]=l[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;break;end;l[e[d]]=l[e[u]]-e[r];until true;else l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];l[e[d]]=l[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;end end else if f>71 then if 73<=f then if 71~=f then repeat if 74>f then l[e[d]]=l[e[u]][l[e[r]]];break;end;local f,_,r;for h=0,2 do if 1<=h then if 0<h then repeat if h~=2 then l(e[d],e[u]);n=n+1;e=t[n];break;end;f=e[d];_=l[f]r=l[f+2];if(r>0)then if(_>l[f+1])then n=e[u];else l[f+3]=_;end elseif(_<l[f+1])then n=e[u];else l[f+3]=_;end until true;else f=e[d];_=l[f]r=l[f+2];if(r>0)then if(_>l[f+1])then n=e[u];else l[f+3]=_;end elseif(_<l[f+1])then n=e[u];else l[f+3]=_;end end else l[e[d]]=#l[e[u]];n=n+1;e=t[n];end end until true;else l[e[d]]=l[e[u]][l[e[r]]];end else local e=e[d]l[e]=l[e]()end else if 69<f then if f>=68 then repeat if 70~=f then local n=e[d]l[n]=l[n](h(l,n+1,e[u]))break;end;local t=l[e[r]];if not t then n=n+1;else l[e[d]]=t;n=e[u];end;until true;else local n=e[d]l[n]=l[n](h(l,n+1,e[u]))end else local n=e[d];local d=l[e[u]];l[n+1]=d;l[n]=d[e[r]];end end end else if f<80 then if f>76 then if 78>f then l[e[d]]=s[e[u]];else if 78<f then local f;l[e[d]]=l[e[u]];n=n+1;e=t[n];f=e[d]l[f](l[f+1])n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;else l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];l[e[d]]=l[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;end end else if 74~=f then repeat if 76~=f then l[e[d]][e[u]]=l[e[r]];break;end;local d=e[d];local t=l[d]local f=l[d+2];if(f>0)then if(t>l[d+1])then n=e[u];else l[d+3]=t;end elseif(t<l[d+1])then n=e[u];else l[d+3]=t;end until true;else local d=e[d];local t=l[d]local f=l[d+2];if(f>0)then if(t>l[d+1])then n=e[u];else l[d+3]=t;end elseif(t<l[d+1])then n=e[u];else l[d+3]=t;end end end else if f<83 then if 81<=f then if 80<f then for n=17,58 do if 82>f then local n=e[d]local d,e=b(l[n](h(l,n+1,e[u])))a=e+n-1 local e=0;for n=n,a do e=e+1;l[n]=d[e];end;break;end;local e=e[d]l[e]=l[e](h(l,e+1,a))break;end;else local n=e[d]local d,e=b(l[n](h(l,n+1,e[u])))a=e+n-1 local e=0;for n=n,a do e=e+1;l[n]=d[e];end;end else local n=e[d];local d=l[n];for e=n+1,e[u]do _.KleDoue_(d,l[e])end;end else if f>=84 then if f~=80 then for _=12,96 do if f<85 then local _;for f=0,6 do if f<=2 then if 1<=f then if-1~=f then for _=26,94 do if 1~=f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end else l(e[d],e[u]);n=n+1;e=t[n];end else if 4<f then if f~=3 then repeat if 5~=f then l[e[d]]=l[e[u]];break;end;_=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]];end else if 0<f then for _=39,90 do if 3<f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end end end break;end;local d=e[d];local f=l[d+2];local t=l[d]+f;l[d]=t;if(f>0)then if(t<=l[d+1])then n=e[u];l[d+3]=t;end elseif(t>=l[d+1])then n=e[u];l[d+3]=t;end break;end;else local _;for f=0,6 do if f<=2 then if 1<=f then if-1~=f then for _=26,94 do if 1~=f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end else l(e[d],e[u]);n=n+1;e=t[n];end else if 4<f then if f~=3 then repeat if 5~=f then l[e[d]]=l[e[u]];break;end;_=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]];end else if 0<f then for _=39,90 do if 3<f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end end end end else local t=l[e[r]];if not t then n=n+1;else l[e[d]]=t;n=e[u];end;end end end end end else if f<21 then if f>=10 then if 15>f then if f>11 then if f<13 then local a=y[e[u]];local h;local f={};h=_.IuEQI__R({},{__index=function(n,e)local e=f[e];return e[1][e[2]];end,__newindex=function(l,e,n)local e=f[e]e[1][e[2]]=n;end;});for d=1,e[r]do n=n+1;local e=t[n];if e[g]==113 then f[d-1]={l,e[u]};else f[d-1]={o,e[u]};end;k[#k+1]=f;end;l[e[d]]=m(a,h,s);else if f>11 then for n=11,88 do if 13<f then l[e[d]]=#l[e[u]];break;end;do return l[e[d]]end break;end;else l[e[d]]=#l[e[u]];end end else if f>=7 then for t=25,90 do if f~=11 then if not l[e[d]]then n=n+1;else n=e[u];end;break;end;l[e[d]]=l[e[u]]%e[r];break;end;else if not l[e[d]]then n=n+1;else n=e[u];end;end end else if 18>f then if f<=15 then local f;l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]];n=n+1;e=t[n];f=e[d]l[f]=l[f](l[f+1])n=n+1;e=t[n];l[e[d]][l[e[u]]]=l[e[r]];n=n+1;e=t[n];do return end;else if 16<f then local _;for f=0,6 do if 2<f then if 5>f then if 1<f then for _=34,85 do if 4>f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end else if 2~=f then repeat if 5~=f then l[e[d]]=l[e[u]];break;end;_=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];until true;else _=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];end end else if 1>f then l(e[d],e[u]);n=n+1;e=t[n];else if 0<=f then for _=42,58 do if 2>f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end end end else if(e[d]<l[e[r]])then n=n+1;else n=e[u];end;end end else if f<=18 then for f=0,6 do if f>2 then if 4<f then if f>=4 then for _=36,55 do if 5~=f then l(e[d],e[u]);break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end else if 0~=f then repeat if f~=3 then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];until true;else l(e[d],e[u]);n=n+1;e=t[n];end end else if f>0 then if f>=-1 then for _=45,97 do if 2>f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]];n=n+1;e=t[n];break;end;else l[e[d]]=l[e[u]];n=n+1;e=t[n];end else l[e[d]]={};n=n+1;e=t[n];end end end else if 15~=f then repeat if 19<f then local n=e[d]l[n](h(l,n+1,e[u]))break;end;for f=0,1 do if-2<=f then repeat if 0~=f then if not l[e[d]]then n=n+1;else n=e[u];end;break;end;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end end until true;else local n=e[d]l[n](h(l,n+1,e[u]))end end end end else if f<=4 then if 2<=f then if f<3 then do return l[e[d]]end else if f>=0 then repeat if 4>f then local t=e[d];local u={};for e=1,#k do local e=k[e];for n=0,#e do local n=e[n];local d=n[1];local e=n[2];if d==l and e>=t then u[e]=d[e];n[1]=u;end;end;end;break;end;local f,_,h;for r=0,2 do if 0>=r then l(e[d],e[u]);n=n+1;e=t[n];else if r~=0 then for o=46,78 do if r~=2 then l(e[d],e[u]);n=n+1;e=t[n];break;end;f=e[d];_=l[f]h=l[f+2];if(h>0)then if(_>l[f+1])then n=e[u];else l[f+3]=_;end elseif(_<l[f+1])then n=e[u];else l[f+3]=_;end break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end end until true;else local f,_,h;for r=0,2 do if 0>=r then l(e[d],e[u]);n=n+1;e=t[n];else if r~=0 then for o=46,78 do if r~=2 then l(e[d],e[u]);n=n+1;e=t[n];break;end;f=e[d];_=l[f]h=l[f+2];if(h>0)then if(_>l[f+1])then n=e[u];else l[f+3]=_;end elseif(_<l[f+1])then n=e[u];else l[f+3]=_;end break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end end end end else if f>-2 then repeat if f~=0 then s[e[u]]=l[e[d]];break;end;l[e[d]]=l[e[u]]-e[r];until true;else s[e[u]]=l[e[d]];end end else if 6>=f then if 1~=f then for h=41,79 do if 6~=f then local e=e[d];local n=l[e];for e=e+1,a do _.KleDoue_(n,l[e])end;break;end;local f;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];f=e[d]l[f]=l[f](l[f+1])n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]=#l[e[u]];n=n+1;e=t[n];if(l[e[d]]==e[r])then n=n+1;else n=e[u];end;break;end;else local f;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];f=e[d]l[f]=l[f](l[f+1])n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]=#l[e[u]];n=n+1;e=t[n];if(l[e[d]]==e[r])then n=n+1;else n=e[u];end;end else if f>7 then if f>=5 then for _=13,58 do if 8~=f then for f=0,3 do if f>=2 then if f>-1 then for _=36,54 do if f~=3 then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];break;end;if not l[e[d]]then n=n+1;else n=e[u];end;break;end;else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end else if f>0 then l(e[d],e[u]);n=n+1;e=t[n];else l(e[d],e[u]);n=n+1;e=t[n];end end end break;end;do return end;break;end;else do return end;end else l[e[d]]=l[e[u]]%l[e[r]];end end end end else if 32>f then if f>=26 then if f<=28 then if f<=26 then local e=e[d]l[e]=l[e](h(l,e+1,a))else if f~=26 then for _=49,93 do if 28>f then local c,b,k,h,s,a,_,f;for f=0,4 do if 1<f then if 3<=f then if f>=1 then repeat if f~=3 then f=0;while f>-1 do if 3<=f then if f>4 then if f>4 then repeat if f>5 then f=-2;break;end;l[a]=_;until true;else l[a]=_;end else if f~=3 then _=l[s];for e=1+s,h[k]do _=_..l[e];end;else a=h[c];end end else if 1>f then c=d;b=u;k=r;else if-3~=f then for n=40,75 do if 2>f then h=e;break;end;s=h[b];break;end;else h=e;end end end f=f+1 end break;end;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];until true;else f=0;while f>-1 do if 3<=f then if f>4 then if f>4 then repeat if f>5 then f=-2;break;end;l[a]=_;until true;else l[a]=_;end else if f~=3 then _=l[s];for e=1+s,h[k]do _=_..l[e];end;else a=h[c];end end else if 1>f then c=d;b=u;k=r;else if-3~=f then for n=40,75 do if 2>f then h=e;break;end;s=h[b];break;end;else h=e;end end end f=f+1 end end else l[e[d]]=l[e[u]]%e[r];n=n+1;e=t[n];end else if f>-1 then repeat if 1>f then l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]]+l[e[r]];n=n+1;e=t[n];until true;else l[e[d]]=o[e[u]];n=n+1;e=t[n];end end end break;end;local f;for _=0,6 do if 3>_ then if _>=1 then if-2~=_ then repeat if _<2 then f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];break;end;l[e[d]]=s[e[u]];n=n+1;e=t[n];until true;else l[e[d]]=s[e[u]];n=n+1;e=t[n];end else l[e[d]][e[u]]=l[e[r]];n=n+1;e=t[n];end else if 5<=_ then if _>=1 then repeat if _~=5 then f=e[d]l[f](h(l,f+1,e[u]))break;end;l[e[d]]=l[e[u]];n=n+1;e=t[n];until true;else f=e[d]l[f](h(l,f+1,e[u]))end else if 4>_ then l[e[d]]=o[e[u]];n=n+1;e=t[n];else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end end end end break;end;else local c,b,k,_,s,a,h,f;for f=0,4 do if 1<f then if 3<=f then if f>=1 then repeat if f~=3 then f=0;while f>-1 do if 3<=f then if f>4 then if f>4 then repeat if f>5 then f=-2;break;end;l[a]=h;until true;else l[a]=h;end else if f~=3 then h=l[s];for e=1+s,_[k]do h=h..l[e];end;else a=_[c];end end else if 1>f then c=d;b=u;k=r;else if-3~=f then for n=40,75 do if 2>f then _=e;break;end;s=_[b];break;end;else _=e;end end end f=f+1 end break;end;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];until true;else f=0;while f>-1 do if 3<=f then if f>4 then if f>4 then repeat if f>5 then f=-2;break;end;l[a]=h;until true;else l[a]=h;end else if f~=3 then h=l[s];for e=1+s,_[k]do h=h..l[e];end;else a=_[c];end end else if 1>f then c=d;b=u;k=r;else if-3~=f then for n=40,75 do if 2>f then _=e;break;end;s=_[b];break;end;else _=e;end end end f=f+1 end end else l[e[d]]=l[e[u]]%e[r];n=n+1;e=t[n];end else if f>-1 then repeat if 1>f then l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]]+l[e[r]];n=n+1;e=t[n];until true;else l[e[d]]=o[e[u]];n=n+1;e=t[n];end end end end end else if f<30 then if(l[e[d]]==l[e[r]])then n=n+1;else n=e[u];end;else if 28<f then for t=25,55 do if f<31 then n=e[u];break;end;if(l[e[d]]~=e[r])then n=n+1;else n=e[u];end;break;end;else n=e[u];end end end else if 23>f then if 21~=f then if(l[e[d]]==l[e[r]])then n=n+1;else n=e[u];end;else local _;for f=0,6 do if f<3 then if 0>=f then l(e[d],e[u]);n=n+1;e=t[n];else if f>=-1 then for r=18,55 do if f~=1 then _=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end else if f>4 then if f>=3 then repeat if f~=5 then l(e[d],e[u]);break;end;l(e[d],e[u]);n=n+1;e=t[n];until true;else l(e[d],e[u]);end else if 2<f then repeat if 4~=f then l[e[d]]={};n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]];n=n+1;e=t[n];end end end end end else if 24>f then l[e[d]]=(e[u]~=0);else if 22~=f then for _=26,75 do if 24~=f then local f;for _=0,1 do if-2~=_ then for r=45,65 do if _>0 then if not l[e[d]]then n=n+1;else n=e[u];end;break;end;f=e[d]l[f]=l[f]()n=n+1;e=t[n];break;end;else f=e[d]l[f]=l[f]()n=n+1;e=t[n];end end break;end;do return end;break;end;else local f;for _=0,1 do if-2~=_ then for r=45,65 do if _>0 then if not l[e[d]]then n=n+1;else n=e[u];end;break;end;f=e[d]l[f]=l[f]()n=n+1;e=t[n];break;end;else f=e[d]l[f]=l[f]()n=n+1;e=t[n];end end end end end end else if f>36 then if f<=39 then if f<38 then local e=e[d]l[e]=l[e](l[e+1])else if 37<f then repeat if f>38 then local f;l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];l[e[d]]=l[e[u]];n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);break;end;local n=e[d]l[n]=l[n](h(l,n+1,e[u]))until true;else local f;l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];l[e[d]]=l[e[u]];n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);end end else if f<41 then local _;for f=0,4 do if f>=2 then if 2<f then if 4>f then _=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];else if(l[e[d]]==e[r])then n=n+1;else n=e[u];end;end else l(e[d],e[u]);n=n+1;e=t[n];end else if-3~=f then for _=23,96 do if 0<f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]];n=n+1;e=t[n];break;end;else l(e[d],e[u]);n=n+1;e=t[n];end end end else if 42==f then local d=e[d];local f=l[d+2];local t=l[d]+f;l[d]=t;if(f>0)then if(t<=l[d+1])then n=e[u];l[d+3]=t;end elseif(t>=l[d+1])then n=e[u];l[d+3]=t;end else local n=e[d];local d=l[n];for e=n+1,e[u]do _.KleDoue_(d,l[e])end;end end end else if 34<=f then if 35>f then for f=0,1 do if f>=-1 then repeat if f~=1 then l[e[d]]=s[e[u]];n=n+1;e=t[n];break;end;if not l[e[d]]then n=n+1;else n=e[u];end;until true;else l[e[d]]=s[e[u]];n=n+1;e=t[n];end end else if f~=32 then repeat if f>35 then local f;l[e[d]]=l[e[u]];n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];f=e[d]l[f]=l[f](h(l,f+1,e[u]))break;end;l[e[d]]={};until true;else l[e[d]]={};end end else if f>=31 then repeat if f<33 then local _;for f=0,6 do if f<3 then if f<1 then l(e[d],e[u]);n=n+1;e=t[n];else if f>0 then repeat if 1~=f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];until true;else l(e[d],e[u]);n=n+1;e=t[n];end end else if 4<f then if 3~=f then for o=33,85 do if 6~=f then _=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]][l[e[r]]];break;end;else _=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];end else if 0<f then repeat if f>3 then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];until true;else l(e[d],e[u]);n=n+1;e=t[n];end end end end break;end;local t,f,r,h,_;local n=0;while n>-1 do if n>2 then if 5<=n then if 2<=n then for e=47,97 do if 5~=n then n=-2;break;end;l(_,h);break;end;else n=-2;end else if n<4 then h=t[r];else _=t[f];end end else if n<1 then t=e;else if-2~=n then for e=27,67 do if n>1 then r=u;break;end;f=d;break;end;else f=d;end end end n=n+1 end until true;else local f,t,r,_,h;local n=0;while n>-1 do if n>2 then if 5<=n then if 2<=n then for e=47,97 do if 5~=n then n=-2;break;end;l(h,_);break;end;else n=-2;end else if n<4 then _=f[r];else h=f[t];end end else if n<1 then f=e;else if-2~=n then for e=27,67 do if n>1 then r=u;break;end;t=d;break;end;else t=d;end end end n=n+1 end end end end end end end else if 128<f then if f>149 then if 161>f then if 154>=f then if 152>f then if f>=146 then for n=32,92 do if 151~=f then o[e[u]]=l[e[d]];break;end;l[e[d]]=#l[e[u]];break;end;else l[e[d]]=#l[e[u]];end else if 152<f then if 153<f then local f;l[e[d]]=l[e[u]];n=n+1;e=t[n];f=e[d]l[f](l[f+1])n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;n=n+1;e=t[n];for e=e[d],e[u]do l[e]=nil;end;else l[e[d]]=l[e[u]][l[e[r]]];end else local t,f,h,o,r,_;local n=0;while n>-1 do if 3>=n then if 2>n then if-1<=n then for l=40,82 do if 0<n then f=d;break;end;t=e;break;end;else t=e;end else if 2~=n then o=l;else h=u;end end else if n<6 then if n>=1 then repeat if 5~=n then r=o[t[h]];break;end;_=t[f];until true;else _=t[f];end else if n~=4 then repeat if 7~=n then l[_]=r;break;end;n=-2;until true;else n=-2;end end end n=n+1 end end end else if f>=158 then if 158<f then if 160==f then local f;f=e[d]l[f](l[f+1])n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]]=s[e[u]];else l[e[d]]=l[e[u]][e[r]];end else local c,_,k,b,p,a,s,h,o,f;for f=0,1 do if f~=-2 then for m=34,70 do if f>0 then f=0;while f>-1 do if f>2 then if f<=4 then if f>=1 then for e=36,82 do if 4>f then s=c[b];h=c[p];break;end;o=s==h and _[a]or 1+k;break;end;else o=s==h and _[a]or 1+k;end else if 1<=f then repeat if f~=6 then n=o;break;end;f=-2;until true;else f=-2;end end else if f>=1 then if f~=2 then _=e;k=n;else b=_[d];p=_[r];a=u;end else c=l;end end f=f+1 end break;end;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];break;end;else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end end end else if f>155 then if f~=152 then repeat if 156<f then for f=0,1 do if 1>f then l[e[d]]=s[e[u]];n=n+1;e=t[n];else if l[e[d]]then n=n+1;else n=e[u];end;end end break;end;local f;l(e[d],e[u]);n=n+1;e=t[n];f=e[d]l[f](l[f+1])n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;n=n+1;e=t[n];for e=e[d],e[u]do l[e]=nil;end;until true;else for f=0,1 do if 1>f then l[e[d]]=s[e[u]];n=n+1;e=t[n];else if l[e[d]]then n=n+1;else n=e[u];end;end end end else n=e[u];end end end else if 166>f then if 162>=f then if f~=159 then repeat if f>161 then local a=y[e[u]];local h;local f={};h=_.IuEQI__R({},{__index=function(n,e)local e=f[e];return e[1][e[2]];end,__newindex=function(l,e,n)local e=f[e]e[1][e[2]]=n;end;});for d=1,e[r]do n=n+1;local e=t[n];if e[g]==113 then f[d-1]={l,e[u]};else f[d-1]={o,e[u]};end;k[#k+1]=f;end;l[e[d]]=m(a,h,s);break;end;local f;l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];l[e[d]]=l[e[u]];n=n+1;e=t[n];l(e[d],e[u]);until true;else local a=y[e[u]];local h;local f={};h=_.IuEQI__R({},{__index=function(n,e)local e=f[e];return e[1][e[2]];end,__newindex=function(l,e,n)local e=f[e]e[1][e[2]]=n;end;});for d=1,e[r]do n=n+1;local e=t[n];if e[g]==113 then f[d-1]={l,e[u]};else f[d-1]={o,e[u]};end;k[#k+1]=f;end;l[e[d]]=m(a,h,s);end else if f<164 then l[e[d]]=l[e[u]]+l[e[r]];else if f~=162 then for _=31,69 do if f~=164 then local n=e[d]local d,e=b(l[n](h(l,n+1,e[u])))a=e+n-1 local e=0;for n=n,a do e=e+1;l[n]=d[e];end;break;end;local _;for f=0,5 do if 2<f then if 4<=f then if f<5 then _=e[d]l[_]=l[_](l[_+1])n=n+1;e=t[n];else if not l[e[d]]then n=n+1;else n=e[u];end;end else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end else if 0<f then if f>0 then for _=24,88 do if 1~=f then l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;else l[e[d]]=o[e[u]];n=n+1;e=t[n];end else l[e[d]]=o[e[u]];n=n+1;e=t[n];end end end break;end;else local _;for f=0,5 do if 2<f then if 4<=f then if f<5 then _=e[d]l[_]=l[_](l[_+1])n=n+1;e=t[n];else if not l[e[d]]then n=n+1;else n=e[u];end;end else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end else if 0<f then if f>0 then for _=24,88 do if 1~=f then l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;else l[e[d]]=o[e[u]];n=n+1;e=t[n];end else l[e[d]]=o[e[u]];n=n+1;e=t[n];end end end end end end else if 169<=f then if f>169 then if 170~=f then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l[e[d]]=#l[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]]-l[e[r]];n=n+1;e=t[n];l(e[d],e[u]);else local f,h,o;for _=0,6 do if 2<_ then if _<5 then if 1~=_ then repeat if 3<_ then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];until true;else l(e[d],e[u]);n=n+1;e=t[n];end else if _==5 then l(e[d],e[u]);n=n+1;e=t[n];else f=e[d];h=l[f]o=l[f+2];if(o>0)then if(h>l[f+1])then n=e[u];else l[f+3]=h;end elseif(h<l[f+1])then n=e[u];else l[f+3]=h;end end end else if 1>_ then l[e[d]]=s[e[u]];n=n+1;e=t[n];else if _==1 then l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];else l[e[d]]={};n=n+1;e=t[n];end end end end end else if(l[e[d]]==e[r])then n=n+1;else n=e[u];end;end else if 167>f then l[e[d]]=l[e[u]]+e[r];else if f>=163 then repeat if 168>f then local k,y,c,b,p,m,y,f,_,a,o,s,r;k=e[d]l[k]=l[k](h(l,k+1,e[u]))n=n+1;e=t[n];f=0;while f>-1 do if f<=3 then if f<=1 then if f>-3 then repeat if 0~=f then c=d;break;end;_=e;until true;else c=d;end else if f>1 then for e=33,54 do if 2<f then p=l;break;end;b=u;break;end;else b=u;end end else if 5<f then if 3~=f then for e=27,81 do if f>6 then f=-2;break;end;l[r]=m;break;end;else f=-2;end else if 5==f then r=_[c];else m=p[_[b]];end end end f=f+1 end n=n+1;e=t[n];f=0;while f>-1 do if 2>=f then if 0>=f then _=e;else if-1<=f then repeat if f~=1 then o=u;break;end;a=d;until true;else o=u;end end else if f<=4 then if f>2 then repeat if 3~=f then r=_[a];break;end;s=_[o];until true;else r=_[a];end else if 2<=f then repeat if 6>f then l(r,s);break;end;f=-2;until true;else f=-2;end end end f=f+1 end n=n+1;e=t[n];f=0;while f>-1 do if 2>=f then if 0<f then if 0~=f then for e=17,70 do if 1~=f then o=u;break;end;a=d;break;end;else a=d;end else _=e;end else if 5>f then if f~=3 then r=_[a];else s=_[o];end else if 1<=f then for e=11,68 do if f~=5 then f=-2;break;end;l(r,s);break;end;else l(r,s);end end end f=f+1 end n=n+1;e=t[n];f=0;while f>-1 do if f>=3 then if 5<=f then if 1<f then repeat if f~=6 then l(r,s);break;end;f=-2;until true;else f=-2;end else if f==3 then s=_[o];else r=_[a];end end else if f>0 then if f>=-1 then for e=14,63 do if 2>f then a=d;break;end;o=u;break;end;else o=u;end else _=e;end end f=f+1 end n=n+1;e=t[n];f=0;while f>-1 do if f<=2 then if f>=1 then if-2<=f then for e=49,52 do if 1~=f then o=u;break;end;a=d;break;end;else o=u;end else _=e;end else if 4>=f then if 3==f then s=_[o];else r=_[a];end else if f==5 then l(r,s);else f=-2;end end end f=f+1 end n=n+1;e=t[n];f=0;while f>-1 do if 3>f then if 1>f then _=e;else if 0~=f then repeat if f~=2 then a=d;break;end;o=u;until true;else a=d;end end else if 4<f then if 3<=f then repeat if f<6 then l(r,s);break;end;f=-2;until true;else l(r,s);end else if 4~=f then s=_[o];else r=_[a];end end end f=f+1 end break;end;l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];s[e[u]]=l[e[d]];n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];s[e[u]]=l[e[d]];n=n+1;e=t[n];l[e[d]]=(e[u]~=0);n=n+1;e=t[n];s[e[u]]=l[e[d]];until true;else l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];s[e[u]]=l[e[d]];n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];s[e[u]]=l[e[d]];n=n+1;e=t[n];l[e[d]]=(e[u]~=0);n=n+1;e=t[n];s[e[u]]=l[e[d]];end end end end end else if f<139 then if f<=133 then if f<131 then if 129~=f then local n=e[d]l[n](h(l,n+1,e[u]))else l[e[d]]=l[e[u]]-l[e[r]];end else if 132>f then l[e[d]][l[e[u]]]=l[e[r]];else if f~=133 then l[e[d]]=m(y[e[u]],nil,s);else local _,o,r,a,h,f;for f=0,6 do if 2>=f then if f>=1 then if-3~=f then repeat if 2>f then l[e[d]]={};n=n+1;e=t[n];break;end;l[e[d]]={};n=n+1;e=t[n];until true;else l[e[d]]={};n=n+1;e=t[n];end else l[e[d]]={};n=n+1;e=t[n];end else if 4<f then if 3<f then for s=49,57 do if 5~=f then f=0;while f>-1 do if f>2 then if 5<=f then if 1~=f then for e=46,88 do if f>5 then f=-2;break;end;l(h,a);break;end;else l(h,a);end else if f>0 then for e=42,83 do if f~=3 then h=_[o];break;end;a=_[r];break;end;else h=_[o];end end else if 0>=f then _=e;else if-1~=f then for e=10,92 do if 1<f then r=u;break;end;o=d;break;end;else r=u;end end end f=f+1 end break;end;f=0;while f>-1 do if f>=3 then if f<5 then if 4~=f then a=_[r];else h=_[o];end else if 5<f then f=-2;else l(h,a);end end else if 1<=f then if-2<f then for e=30,72 do if 1<f then r=u;break;end;o=d;break;end;else o=d;end else _=e;end end f=f+1 end n=n+1;e=t[n];break;end;else f=0;while f>-1 do if f>2 then if 5<=f then if 1~=f then for e=46,88 do if f>5 then f=-2;break;end;l(h,a);break;end;else l(h,a);end else if f>0 then for e=42,83 do if f~=3 then h=_[o];break;end;a=_[r];break;end;else h=_[o];end end else if 0>=f then _=e;else if-1~=f then for e=10,92 do if 1<f then r=u;break;end;o=d;break;end;else r=u;end end end f=f+1 end end else if f>0 then repeat if f>3 then f=0;while f>-1 do if 3>f then if f>=1 then if-1<=f then repeat if f~=2 then o=d;break;end;r=u;until true;else r=u;end else _=e;end else if 5<=f then if f>5 then f=-2;else l(h,a);end else if f~=4 then a=_[r];else h=_[o];end end end f=f+1 end n=n+1;e=t[n];break;end;f=0;while f>-1 do if 3<=f then if 4<f then if f>=4 then repeat if f<6 then l(h,a);break;end;f=-2;until true;else f=-2;end else if 4==f then h=_[o];else a=_[r];end end else if 0<f then if-3~=f then repeat if 2>f then o=d;break;end;r=u;until true;else r=u;end else _=e;end end f=f+1 end n=n+1;e=t[n];until true;else f=0;while f>-1 do if 3>f then if f>=1 then if-1<=f then repeat if f~=2 then o=d;break;end;r=u;until true;else r=u;end else _=e;end else if 5<=f then if f>5 then f=-2;else l(h,a);end else if f~=4 then a=_[r];else h=_[o];end end end f=f+1 end n=n+1;e=t[n];end end end end end end end else if 135>=f then if f>131 then repeat if 134<f then local f,_,r;for h=0,2 do if 0>=h then l[e[d]]=#l[e[u]];n=n+1;e=t[n];else if h==2 then f=e[d];_=l[f]r=l[f+2];if(r>0)then if(_>l[f+1])then n=e[u];else l[f+3]=_;end elseif(_<l[f+1])then n=e[u];else l[f+3]=_;end else l(e[d],e[u]);n=n+1;e=t[n];end end end break;end;l[e[d]]=l[e[u]][e[r]];until true;else l[e[d]]=l[e[u]][e[r]];end else if f>136 then if f~=137 then l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];l[e[d]]=l[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;else if(e[d]<l[e[r]])then n=n+1;else n=e[u];end;end else l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]={};end end end else if 143>=f then if f>=141 then if f>141 then if 140~=f then for _=10,77 do if 142~=f then for f=0,6 do if 3<=f then if f>=5 then if 3<=f then for _=11,89 do if 6>f then l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]][e[r]];break;end;else l[e[d]]=l[e[u]][e[r]];end else if 4~=f then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];else l[e[d]]=(e[u]~=0);n=n+1;e=t[n];end end else if f>=1 then if f>-1 then repeat if f<2 then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];end else l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];end end end break;end;l[e[d]]=o[e[u]];break;end;else for f=0,6 do if 3<=f then if f>=5 then if 3<=f then for _=11,89 do if 6>f then l[e[d]]=o[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]][e[r]];break;end;else l[e[d]]=l[e[u]][e[r]];end else if 4~=f then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];else l[e[d]]=(e[u]~=0);n=n+1;e=t[n];end end else if f>=1 then if f>-1 then repeat if f<2 then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];end else l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];end end end end else l[e[d]][e[u]]=l[e[r]];end else if 135~=f then for n=15,81 do if 140>f then local e=e[d];do return h(l,e,a)end;break;end;local n=e[d];do return l[n](h(l,n+1,e[u]))end;break;end;else local n=e[d];do return l[n](h(l,n+1,e[u]))end;end end else if 147>f then if f<=144 then local f,o;for _=0,5 do if 2<_ then if _>3 then if _~=4 then l[e[d]]=l[e[u]]+l[e[r]];else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end else f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];end else if 0>=_ then f=e[d];o=l[e[u]];l[f+1]=o;l[f]=o[e[r]];n=n+1;e=t[n];else if-1~=_ then repeat if _<2 then l[e[d]]=l[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]];n=n+1;e=t[n];end end end end else if f>=141 then for n=41,95 do if 146>f then local e=e[d]l[e](l[e+1])break;end;l[e[d]]=l[e[u]]*e[r];break;end;else l[e[d]]=l[e[u]]*e[r];end end else if f<148 then for e=e[d],e[u]do l[e]=nil;end;else if 148~=f then local f,_,o,a,s,b,k,h,c;local t=0;while t>-1 do if 2<t then if t<=4 then if t>0 then for e=16,76 do if t~=3 then c=k==h and _[b]or 1+o;break;end;k=f[a];h=f[s];break;end;else k=f[a];h=f[s];end else if t>=3 then for e=24,76 do if t~=6 then n=c;break;end;t=-2;break;end;else t=-2;end end else if 0<t then if t~=-2 then repeat if 2~=t then _=e;o=n;break;end;a=_[d];s=_[r];b=u;until true;else _=e;o=n;end else f=l;end end t=t+1 end else local f;o[e[u]]=l[e[d]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];f=e[d]l[f](l[f+1])n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;end end end end end end else if f<107 then if f>95 then if 101<=f then if f>=104 then if 104>=f then local k,p,_,o,c,s,b,a,f;for f=0,5 do if 3>f then if f>0 then if f~=-1 then for r=45,53 do if f~=1 then f=0;while f>-1 do if f<=3 then if f<=1 then if f~=-3 then for n=29,80 do if f~=1 then _=e;break;end;o=d;break;end;else o=d;end else if f~=-1 then repeat if 2<f then s=l;break;end;c=u;until true;else c=u;end end else if f>=6 then if 6<f then f=-2;else l[a]=b;end else if f~=0 then for e=16,53 do if 5~=f then b=s[_[c]];break;end;a=_[o];break;end;else a=_[o];end end end f=f+1 end n=n+1;e=t[n];break;end;f=0;while f>-1 do if 4<=f then if f>5 then if 7>f then l[a]=b;else f=-2;end else if f>3 then for e=37,54 do if f~=4 then a=_[o];break;end;b=s[_[c]];break;end;else a=_[o];end end else if 2>f then if f~=0 then o=d;else _=e;end else if 1<f then repeat if 3~=f then c=u;break;end;s=l;until true;else s=l;end end end f=f+1 end n=n+1;e=t[n];break;end;else f=0;while f>-1 do if 4<=f then if f>5 then if 7>f then l[a]=b;else f=-2;end else if f>3 then for e=37,54 do if f~=4 then a=_[o];break;end;b=s[_[c]];break;end;else a=_[o];end end else if 2>f then if f~=0 then o=d;else _=e;end else if 1<f then repeat if 3~=f then c=u;break;end;s=l;until true;else s=l;end end end f=f+1 end n=n+1;e=t[n];end else k=e[d];p=l[e[u]];l[k+1]=p;l[k]=p[e[r]];n=n+1;e=t[n];end else if 4>f then k=e[d]l[k]=l[k](h(l,k+1,e[u]))n=n+1;e=t[n];else if 2<=f then for _=11,77 do if f~=5 then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]]*e[r];break;end;else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end end end end else if 102~=f then repeat if f~=106 then l[e[d]]();break;end;s[e[u]]=l[e[d]];until true;else l[e[d]]();end end else if f<=101 then local f;l[e[d]]=l[e[u]];n=n+1;e=t[n];f=e[d]l[f](l[f+1])n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];l[e[d]]();n=n+1;e=t[n];do return end;n=n+1;e=t[n];for e=e[d],e[u]do l[e]=nil;end;else if f>98 then for _=17,92 do if f~=102 then local f,_,o;for h=0,4 do if 1>=h then if 1>h then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];else l(e[d],e[u]);n=n+1;e=t[n];end else if h<=2 then l[e[d]]=#l[e[u]];n=n+1;e=t[n];else if 4>h then l(e[d],e[u]);n=n+1;e=t[n];else f=e[d];_=l[f]o=l[f+2];if(o>0)then if(_>l[f+1])then n=e[u];else l[f+3]=_;end elseif(_<l[f+1])then n=e[u];else l[f+3]=_;end end end end end break;end;l[e[d]]=l[e[u]]-l[e[r]];break;end;else l[e[d]]=l[e[u]]-l[e[r]];end end end else if f>97 then if f>=99 then if f>99 then local f,o,r,_;f=e[d]l[f]=l[f](l[f+1])n=n+1;e=t[n];f=e[d]l[f]=l[f]()n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l[e[d]]=s[e[u]];n=n+1;e=t[n];f=e[d]o,r=b(l[f](h(l,f+1,e[u])))a=r+f-1 _=0;for e=f,a do _=_+1;l[e]=o[_];end;n=n+1;e=t[n];f=e[d]l[f]=l[f](h(l,f+1,a))else local _;for f=0,6 do if 3<=f then if f>=5 then if 1<=f then repeat if f~=6 then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);until true;else l(e[d],e[u]);end else if 4==f then l[e[d]]=l[e[u]];n=n+1;e=t[n];else _=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];end end else if 1>f then l(e[d],e[u]);n=n+1;e=t[n];else if-2<=f then repeat if 1<f then l(e[d],e[u]);n=n+1;e=t[n];break;end;l(e[d],e[u]);n=n+1;e=t[n];until true;else l(e[d],e[u]);n=n+1;e=t[n];end end end end end else local _;for f=0,3 do if 2>f then if f~=-1 then repeat if f<1 then l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];end else if f~=1 then for r=47,69 do if 2~=f then if not l[e[d]]then n=n+1;else n=e[u];end;break;end;_=e[d]l[_]=l[_](h(l,_+1,e[u]))n=n+1;e=t[n];break;end;else if not l[e[d]]then n=n+1;else n=e[u];end;end end end end else if f==96 then if l[e[d]]then n=n+1;else n=e[u];end;else local f;l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];l(e[d],e[u]);n=n+1;e=t[n];f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];l[e[d]]=l[e[u]];end end end else if f>=91 then if f>92 then if 93<f then if f<95 then l[e[d]]=m(y[e[u]],nil,s);else local t=e[d];local d={};for e=1,#k do local e=k[e];for n=0,#e do local e=e[n];local u=e[1];local n=e[2];if u==l and n>=t then d[n]=u[n];e[1]=d;end;end;end;end else local o,a,s,f,_,h,t;local n=0;while n>-1 do if n>2 then if n>4 then if n>=2 then for e=40,90 do if n>5 then n=-2;break;end;l[h]=t;break;end;else l[h]=t;end else if n==4 then t=l[_];for e=1+_,f[s]do t=t..l[e];end;else h=f[o];end end else if 1<=n then if n>1 then _=f[a];else f=e;end else o=d;a=u;s=r;end end n=n+1 end end else if f~=92 then l[e[d]]=l[e[u]]+e[r];else l[e[d]]=(e[u]~=0);end end else if 88>f then if 83<=f then for n=20,78 do if 86~=f then local e=e[d];a=e+z-1;for n=e,a do local e=p[n-e];l[n]=e;end;break;end;l[e[d]]=l[e[u]]%e[r];break;end;else l[e[d]]=l[e[u]]%e[r];end else if f<=88 then if l[e[d]]then n=n+1;else n=e[u];end;else if f~=87 then for _=12,89 do if f~=89 then local f;for _=0,2 do if _>0 then if _~=-2 then repeat if 1~=_ then l[e[d]][l[e[u]]]=l[e[r]];break;end;l[e[d]]=l[e[u]]-e[r];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]]-e[r];n=n+1;e=t[n];end else f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];end end break;end;local s,o,h,f,a,_;l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];l[e[d]]=l[e[u]][e[r]];n=n+1;e=t[n];l[e[d]][l[e[u]]]=l[e[r]];n=n+1;e=t[n];do return l[e[d]]end n=n+1;e=t[n];s=e[d];o={};for e=1,#k do h=k[e];for e=0,#h do f=h[e];a=f[1];_=f[2];if a==l and _>=s then o[_]=a[_];f[1]=o;end;end;end;break;end;else local f;for _=0,2 do if _>0 then if _~=-2 then repeat if 1~=_ then l[e[d]][l[e[u]]]=l[e[r]];break;end;l[e[d]]=l[e[u]]-e[r];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]]-e[r];n=n+1;e=t[n];end else f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];end end end end end end end else if f<118 then if 111<f then if f<115 then if 112<f then if 114~=f then local t,f,h,r,o,_;local n=0;while n>-1 do if n>3 then if n>5 then if 4<=n then repeat if n~=6 then n=-2;break;end;l[_]=o;until true;else n=-2;end else if n>=1 then repeat if 5>n then o=r[t[h]];break;end;_=t[f];until true;else _=t[f];end end else if n<=1 then if n~=0 then f=d;else t=e;end else if-2~=n then repeat if n~=2 then r=l;break;end;h=u;until true;else r=l;end end end n=n+1 end else local f,o;for _=0,6 do if 3<=_ then if _<=4 then if 2<_ then for o=12,84 do if 3~=_ then l[e[d]][l[e[u]]]=l[e[r]];n=n+1;e=t[n];break;end;f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];break;end;else f=e[d]l[f]=l[f](h(l,f+1,e[u]))n=n+1;e=t[n];end else if 2~=_ then repeat if _<6 then f=e[d];o=l[e[u]];l[f+1]=o;l[f]=o[e[r]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]];until true;else l[e[d]]=l[e[u]];end end else if _<1 then f=e[d];o=l[e[u]];l[f+1]=o;l[f]=o[e[r]];n=n+1;e=t[n];else if _~=-1 then repeat if _~=2 then l[e[d]]=l[e[u]];n=n+1;e=t[n];break;end;l[e[d]]=l[e[u]];n=n+1;e=t[n];until true;else l[e[d]]=l[e[u]];n=n+1;e=t[n];end end end end end else l[e[d]]=o[e[u]];end else if 115>=f then if not l[e[d]]then n=n+1;else n=e[u];end;else if f>=114 then repeat if f~=117 then local d=e[d];local t=l[d]local f=l[d+2];if(f>0)then if(t>l[d+1])then n=e[u];else l[d+3]=t;end elseif(t<l[d+1])then n=e[u];else l[d+3]=t;end break;end;o[e[u]]=l[e[d]];until true;else local d=e[d];local t=l[d]local f=l[d+2];if(f>0)then if(t>l[d+1])then n=e[u];else l[d+3]=t;end elseif(t<l[d+1])then n=e[u];else l[d+3]=t;end end end end else if f>108 then if f>109 then if 106<f then repeat if 111~=f then if(l[e[d]]~=e[r])then n=n+1;else n=e[u];end;break;end;local e=e[d]local d,n=b(l[e](l[e+1]))a=n+e-1 local n=0;for e=e,a do n=n+1;l[e]=d[n];end;until true;else local e=e[d]local d,n=b(l[e](l[e+1]))a=n+e-1 local n=0;for e=e,a do n=n+1;l[e]=d[n];end;end else local u,f,r;for h=0,1 do if h>-2 then repeat if 1~=h then u=e[d];a=u+z-1;for e=u,a do f=p[e-u];l[e]=f;end;n=n+1;e=t[n];break;end;u=e[d];r=l[u];for e=u+1,a do _.KleDoue_(r,l[e])end;until true;else u=e[d];a=u+z-1;for e=u,a do f=p[e-u];l[e]=f;end;n=n+1;e=t[n];end end end else if 104~=f then for n=20,61 do if f>107 then local _,h,f,t,r;local n=0;while n>-1 do if n<=2 then if n>=1 then if n~=0 then repeat if 1<n then f=u;break;end;h=d;until true;else f=u;end else _=e;end else if 5<=n then if n~=2 then for e=13,53 do if 6>n then l(r,t);break;end;n=-2;break;end;else l(r,t);end else if n>=1 then repeat if n~=4 then t=_[f];break;end;r=_[h];until true;else t=_[f];end end end n=n+1 end break;end;local e=e[d]local d,n=b(l[e](l[e+1]))a=n+e-1 local n=0;for e=e,a do n=n+1;l[e]=d[n];end;break;end;else local e=e[d]local d,n=b(l[e](l[e+1]))a=n+e-1 local n=0;for e=e,a do n=n+1;l[e]=d[n];end;end end end else if 123>f then if 120<=f then if 120>=f then if(l[e[d]]==e[r])then n=n+1;else n=e[u];end;else if 122>f then for e=e[d],e[u]do l[e]=nil;end;else local _,a,o,r,h,s,f,c,y,z,b,m,p;f=0;while f>-1 do if f>3 then if f>=6 then if f>=3 then repeat if 7~=f then l[s]=h;break;end;f=-2;until true;else f=-2;end else if f==4 then h=r[_[o]];else s=_[a];end end else if 1>=f then if-1<f then repeat if f~=1 then _=e;break;end;a=d;until true;else a=d;end else if f>-1 then repeat if 2~=f then r=l;break;end;o=u;until true;else o=u;end end end f=f+1 end n=n+1;e=t[n];f=0;while f>-1 do if 4<=f then if f<=5 then if 2<f then for e=43,73 do if f~=4 then s=_[a];break;end;h=r[_[o]];break;end;else h=r[_[o]];end else if 6~=f then f=-2;else l[s]=h;end end else if f<2 then if-4<f then repeat if 1~=f then _=e;break;end;a=d;until true;else a=d;end else if-1<=f then for e=23,85 do if 2<f then r=l;break;end;o=u;break;end;else r=l;end end end f=f+1 end n=n+1;e=t[n];c=e[d]l[c]=l[c](l[c+1])n=n+1;e=t[n];f=0;while f>-1 do if f>3 then if 5>=f then if f<5 then h=r[_[o]];else s=_[a];end else if f>=5 then for e=39,83 do if 7>f then l[s]=h;break;end;f=-2;break;end;else l[s]=h;end end else if f>1 then if f~=-2 then repeat if f~=3 then o=u;break;end;r=l;until true;else r=l;end else if 1==f then a=d;else _=e;end end end f=f+1 end n=n+1;e=t[n];do return l[e[d]]end n=n+1;e=t[n];c=e[d];y={};for e=1,#k do z=k[e];for e=0,#z do b=z[e];m=b[1];p=b[2];if m==l and p>=c then y[p]=m[p];b[1]=y;end;end;end;n=n+1;e=t[n];n=e[u];end end else if f~=114 then repeat if f>118 then local n=e[d];do return l[n](h(l,n+1,e[u]))end;break;end;l[e[d]]=l[e[u]]*e[r];until true;else local n=e[d];do return l[n](h(l,n+1,e[u]))end;end end else if f<126 then if 124>f then l[e[d]]=l[e[u]]+l[e[r]];else if f~=124 then local d=e[d];local n=l[e[u]];l[d+1]=n;l[d]=n[e[r]];else l[e[d]]();end end else if 127>f then local f,s,c,_,o,r;f=e[d];do return l[f](h(l,f+1,e[u]))end;n=n+1;e=t[n];f=e[d];do return h(l,f,a)end;n=n+1;e=t[n];f=e[d];s={};for e=1,#k do c=k[e];for e=0,#c do _=c[e];o=_[1];r=_[2];if o==l and r>=f then s[r]=o[r];_[1]=s;end;end;end;else if 125<f then for s=46,61 do if 128~=f then local s,a,b,c,k,f,r,o;for f=0,2 do if f>=1 then if f>=-3 then for a=48,65 do if f~=1 then r=e[d];o=l[r];for e=r+1,e[u]do _.KleDoue_(o,l[e])end;break;end;r=e[d]l[r]=l[r](h(l,r+1,e[u]))n=n+1;e=t[n];break;end;else r=e[d];o=l[r];for e=r+1,e[u]do _.KleDoue_(o,l[e])end;end else f=0;while f>-1 do if f>2 then if 4>=f then if f>0 then for e=38,88 do if f~=4 then c=s[b];break;end;k=s[a];break;end;else k=s[a];end else if 3~=f then repeat if f~=6 then l(k,c);break;end;f=-2;until true;else f=-2;end end else if 0>=f then s=e;else if 0~=f then repeat if f~=1 then b=u;break;end;a=d;until true;else a=d;end end end f=f+1 end n=n+1;e=t[n];end end break;end;local f;l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];f=e[d];do return l[f](h(l,f+1,e[u]))end;n=n+1;e=t[n];f=e[d];do return h(l,f,a)end;n=n+1;e=t[n];do return end;break;end;else local f;l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=o[e[u]];n=n+1;e=t[n];l[e[d]]=l[e[u]][l[e[r]]];n=n+1;e=t[n];f=e[d];do return l[f](h(l,f+1,e[u]))end;n=n+1;e=t[n];f=e[d];do return h(l,f,a)end;n=n+1;e=t[n];do return end;end end end end end end end end n=1+n;end;end;return de end;local u=0xff;local r={};local f=(1);local d='';(function(n)local l=n local t=0x00 local e=0x00 l={(function(_)if t>0x30 then return _ end t=t+1 e=(e+0xed3-_)%0x32 return(e%0x03==0x0 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x6);d='\37';u={function()u()end};d=d..'\100\43';end return true end)'UAdAt'and l[0x3](0x78+_))or(e%0x03==0x2 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x36);r[f]=ue();f=f+u;end return true end)'hxnOx'and l[0x2](_+0x3ba))or(e%0x03==0x1 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x83);end return true end)'UfuzD'and l[0x1](_+0x1f3))or _ end),(function(d)if t>0x24 then return d end t=t+1 e=(e+0x123b-d)%0x1a return(e%0x03==0x1 and(function(l)if not n[l]then e=e+0x01 n[l]=(0xbf);end return true end)'m_HFe'and l[0x3](0x1da+d))or(e%0x03==0x0 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x17);end return true end)'JgVbl'and l[0x2](d+0x3b4))or(e%0x03==0x2 and(function(l)if not n[l]then e=e+0x01 n[l]=(0xbf);end return true end)'DIraa'and l[0x1](d+0x298))or d end),(function(o)if t>0x27 then return o end t=t+1 e=(e+0xf40-o)%0x1a return(e%0x03==0x2 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x61);end return true end)'TzGmt'and l[0x2](0xef+o))or(e%0x03==0x1 and(function(l)if not n[l]then e=e+0x01 n[l]=(0xeb);u[2]=(u[2]*(ne(function()r()end,h(d))-ne(u[1],h(d))))+1;r[f]={};u=u[2];f=f+u;end return true end)'jRbkp'and l[0x1](o+0x247))or(e%0x03==0x0 and(function(l)if not n[l]then e=e+0x01 n[l]=(0x3a);d={d..'\58 a',d};r[f]=de();f=f+((not _.mldVGlIA)and 1 or 0);d[1]='\58'..d[1];u[2]=0xff;end return true end)'vEVeh'and l[0x3](o+0x6c))or o end)}l[0x1](0x200e)end){};local e=m(h(r));r[2]={};r[1]=e(r[1])TAnaoGAcIxsGiTM=nil;e=m(h(r))return e(...);end return le((function()local n={}local e=0x01;local l;if _.mldVGlIA then l=_.mldVGlIA(le)else l=''end if _.KXFCQanj(l,_.sgqyKVCL)then e=e+0;else e=e+1;end n[e]=0x02;n[n[e]+0x01]=0x03;return n;end)(),...)end)((function(l,e,n,d,u,t)local t;if 4<=l then if l<=5 then if 3<l then repeat if l~=4 then local l=d;do return function()local e=e(n,l(l,l),l(l,l));l(1);return e;end;end;break;end;local l=d;local t,d,u=u(2);do return function()local n,e,f,_=e(n,l(l,l),l(l,l)+3);l(4);return(_*t)+(f*d)+(e*u)+n;end;end;until true;else local l=d;do return function()local e=e(n,l(l,l),l(l,l));l(1);return e;end;end;end else if 6>=l then do return u[n]end;else if 4<=l then for e=33,57 do if l~=7 then do return n(l,nil,n);end break;end;do return setmetatable({},{['__\99\97\108\108']=function(e,u,d,l,n)if n then return e[n]elseif l then return e else e[u]=d end end})end break;end;else do return setmetatable({},{['__\99\97\108\108']=function(e,l,d,u,n)if n then return e[n]elseif u then return e else e[l]=d end end})end end end end else if 1<l then if 0~=l then for t=36,88 do if l~=3 then do return 16777216,65536,256 end;break;end;do return e(1),e(4,u,d,n,e),e(5,u,d,n)end;break;end;else do return e(1),e(4,u,d,n,e),e(5,u,d,n)end;end else if-4~=l then repeat if l<1 then do return e(1),e(4,u,d,n,e),e(5,u,d,n)end;break;end;do return function(n,e,l)if l then local e=(n/2^(e-1))%2^((l-1)-(e-1)+1);return e-e%1;else local e=2^(e-1);return(n%(e+e)>=e)and 1 or 0;end;end;end;until true;else do return e(1),e(4,u,d,n,e),e(5,u,d,n)end;end end end end),...)
+--Beta updatefix
+local version = "v2.0.0b31"
+
+---// Loading Section \\---
+repeat  task.wait() until game:IsLoaded()
+if game.PlaceId == 8304191830 then
+    repeat task.wait() until game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name)
+    repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("collection"):FindFirstChild("grid"):FindFirstChild("List"):FindFirstChild("Outer"):FindFirstChild("UnitFrames")
+else
+    repeat task.wait() until game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name)
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.vote_start:InvokeServer()
+    repeat task.wait() until game:GetService("Workspace")["_waves_started"].Value == true
+end
+------------------------------
+local a = 'Anime_Adventures' -- Paste Name
+local b = game:GetService('Players').LocalPlayer.Name .. '_AnimeAdventures.json' 
+Settings = {}
+function saveSettings()
+    local HttpService = game:GetService('HttpService')
+    if not isfolder(a) then
+        makefolder(a)
+    end
+    writefile(a .. '/' .. b, HttpService:JSONEncode(Settings))
+    Settings = ReadSetting()
+    warn("Settings Saved!")
+end
+function ReadSetting()
+    local s, e = pcall(function()
+        local HttpService = game:GetService('HttpService')
+        if not isfolder(a) then
+            makefolder(a)
+        end
+        return HttpService:JSONDecode(readfile(a .. '/' .. b))
+    end)
+    if s then
+        return e
+    else
+        saveSettings()
+        return ReadSetting()
+    end
+end
+Settings = ReadSetting()
+------------------------------
+local HttpService = game:GetService("HttpService")
+local Workspace = game:GetService("Workspace") 
+local plr = game:GetService("Players").LocalPlayer
+local RunService = game:GetService("RunService")
+local mouse = game.Players.LocalPlayer:GetMouse()
+local UserInputService = game:GetService("UserInputService")
+------------------------------
+------------item drop result
+local v5 = require(game.ReplicatedStorage.src.Loader)
+local v19 = v5.load_client_service(script, "ItemInventoryServiceClient")
+function get_inventory_items_unique_items()
+	return v19["session"]['inventory']['inventory_profile_data']['unique_items']
+end
+function get_inventory_items()
+	return v19["session"]["inventory"]['inventory_profile_data']['normal_items']
+end
+function get_Units_Owner()
+	return v19["session"]["collection"]["collection_profile_data"]['owned_units']
+end
+local Count_Portal_list = 0
+local Table_All_Items_Old_data = {}
+local Table_All_Items_New_data = {}
+for v2, v3 in pairs(game:GetService("ReplicatedStorage").src.Data.Items:GetDescendants()) do
+	if v3:IsA("ModuleScript") then
+		for v4, v5 in pairs(require(v3)) do
+		    Table_All_Items_Old_data[v4] = {}
+			Table_All_Items_Old_data[v4]['Name'] = v5['name']
+		    Table_All_Items_Old_data[v4]['Count'] = 0
+			Table_All_Items_New_data[v4] = {}
+			Table_All_Items_New_data[v4]['Name'] = v5['name']
+			Table_All_Items_New_data[v4]['Count'] = 0
+		end
+	end
+end
+local Data_Units_All_Games = require(game:GetService("ReplicatedStorage").src.Data.Units)
+for i,v in pairs(Data_Units_All_Games) do
+    if v.rarity then
+        Table_All_Items_Old_data[i] = {}
+        Table_All_Items_Old_data[i]['Name'] = v['name']
+        Table_All_Items_Old_data[i]['Count'] = 0
+        Table_All_Items_Old_data[i]['Count Shiny'] = 0
+        Table_All_Items_New_data[i] = {}
+        Table_All_Items_New_data[i]['Name'] = v['name']
+        Table_All_Items_New_data[i]['Count'] = 0
+        Table_All_Items_New_data[i]['Count Shiny'] = 0
+    end
+end
+for i,v in pairs(get_inventory_items()) do
+	Table_All_Items_Old_data[i]['Count'] = v
+end
+for i,v in pairs(get_inventory_items_unique_items()) do
+    if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
+        Count_Portal_list = Count_Portal_list + 1
+        Table_All_Items_Old_data[v['item_id']]['Count'] = Table_All_Items_Old_data[v['item_id']]['Count'] + 1
+    end
+end
+for i,v in pairs(get_Units_Owner()) do
+    Table_All_Items_Old_data[v["unit_id"]]['Count'] = Table_All_Items_Old_data[v["unit_id"]]['Count'] + 1
+    if v.shiny then
+        Table_All_Items_Old_data[v["unit_id"]]['Count'] = Table_All_Items_Old_data[v["unit_id"]]['Count'] - 1
+        Table_All_Items_Old_data[v["unit_id"]]['Count Shiny'] = Table_All_Items_Old_data[v["unit_id"]]['Count Shiny'] + 1
+    end
+end
+----------------Map & ID Map
+local function GetCurrentLevelId()
+    if game.Workspace._MAP_CONFIG then
+        return game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["id"]
+    end
+end
+local function GetCurrentLevelName()
+    if game.Workspace._MAP_CONFIG then
+        return game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["name"]
+    end
+end
+function comma_value(p1)
+	local value = p1;
+	while true do
+		local value2, value3 = string.gsub(value, "^(-?%d+)(%d%d%d)", "%1,%2");
+		value = value2;
+		if value3 ~= 0 then else
+			break;
+		end;
+	end;
+	return value;
+end;
+----------------endMap & ID Map
+getgenv().item = "-"
+plr.PlayerGui:FindFirstChild("HatchInfo"):FindFirstChild("holder"):FindFirstChild("info1"):FindFirstChild("UnitName").Text = getgenv().item
+function webhook()
+    if Settings.WebhookEnabled then
+    local url = Settings.WebhookUrl
+    print("webhook?")
+    if url == "" then
+        warn("Webhook Url is empty!")
+        return
+    end 
+    
+    local Time = os.date('!*t', OSTime);
+	local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+    local exec = tostring(identifyexecutor())
+    userlevel = plr.PlayerGui:FindFirstChild("spawn_units"):FindFirstChild("Lives"):FindFirstChild("Main"):FindFirstChild("Desc"):FindFirstChild("Level").Text
+    totalgems = plr.PlayerGui:FindFirstChild("spawn_units"):FindFirstChild("Lives"):FindFirstChild("Frame"):FindFirstChild("Resource"):FindFirstChild("Gem"):FindFirstChild("Level").Text
+    
+    ResultHolder = plr.PlayerGui:FindFirstChild("ResultsUI"):FindFirstChild("Holder")
+    if game.PlaceId ~= 8304191830 then
+    levelname = game:GetService("Workspace"):FindFirstChild("_MAP_CONFIG"):FindFirstChild("GetLevelData"):InvokeServer()["name"]
+    result = ResultHolder.Title.Text else levelname, result = "nil","nil" end
+    if result == "VICTORY" then result = "VICTORY" end
+    if result == "DEFEAT" then result = "DEFEAT" end
+    
+    _map = game:GetService("Workspace")["_BASES"].player.base["fake_unit"]:WaitForChild("HumanoidRootPart")
+    GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+    world = GetLevelData.world or GetLevelData.name
+    mapname = game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["name"]
+    cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
+	ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
+    waves = cwaves:split(": ")
+    if waves ~= nil and waves[2] == "999" then waves[2] = "Use [Auto Leave at Wave] or [Test Webhook]" end	
+	ttime = ctime:split(": ")
+    if waves ~= nil and ttime[2] == "22:55" then ttime[2] = "Use [Auto Leave at Wave] or [Test Webhook]" end	
+    gold = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GoldReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
+    if gold == "+99999" then gold = "+0" end	 
+    gems = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GemReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
+    if gems == "+99999" then gems = "+0" end	 
+    xpx = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("XPReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
+    xp = xpx:split(" ")
+    if xp[1] == "+99999" then xp[1] = "+0" end
+    trophy = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("TrophyReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
+    if trophy == "+99999" then trophy = "+0" end	 
+    
+    totaltime =  ResultHolder:FindFirstChild("Middle"):FindFirstChild("Timer").Text
+    totalwaves = ResultHolder:FindFirstChild("Middle"):FindFirstChild("WavesCompleted").Text
+      
+    local TextDropLabel = ""
+	local CountAmount = 1
+    for i,v in pairs(get_inventory_items()) do
+       Table_All_Items_New_data[i]['Count'] = v
+    end
+    for i,v in pairs(get_inventory_items_unique_items()) do
+        if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
+            Table_All_Items_New_data[v['item_id']]['Count'] = Table_All_Items_New_data[v['item_id']]['Count'] + 1
+        end
+    end
+    for i,v in pairs(get_Units_Owner()) do
+        Table_All_Items_New_data[v["unit_id"]]['Count'] = Table_All_Items_New_data[v["unit_id"]]['Count'] + 1
+        if v.shiny then
+            Table_All_Items_New_data[v["unit_id"]]['Count'] = Table_All_Items_New_data[v["unit_id"]]['Count'] - 1
+           Table_All_Items_New_data[v["unit_id"]]['Count Shiny'] = Table_All_Items_New_data[v["unit_id"]]['Count Shiny'] + 1
+        end
+    end
+	for i,v in pairs(Table_All_Items_New_data) do
+		if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+			if v['Count Shiny'] and v['Count'] then
+				if v['Count'] > 0 or v['Count Shiny'] > 0 then
+					if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+						TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count'])
+						if v['Count Shiny'] > 0 and (v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) > 0 then
+							TextDropLabel = TextDropLabel .. " | " .. tostring(v['Name']) .. " (Shiny) : x" .. tostring(v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) .. "\n"
+                            CountAmount = CountAmount + 1
+                        else
+                            TextDropLabel = TextDropLabel .. "\n"
+                            CountAmount = CountAmount + 1
+						end
+					end
+				end
+			end
+		elseif v['Count Shiny'] and v['Count Shiny'] > 0 and (v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) > 0 then
+			TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " (Shiny) : x" .. tostring(v['Count Shiny'] - Table_All_Items_Old_data[i]['Count Shiny']) .. "\n"
+			CountAmount = CountAmount + 1
+		end
+	end
+    for i,v in pairs(Table_All_Items_New_data) do
+		if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+            if v['Count Shiny'] and v['Count'] then
+			elseif string.find(i,"portal") or string.find(i,"disc") then
+				Count_Portal_list = Count_Portal_list + 1
+			if string.gsub(i, "%D", "") == "" then
+					TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+			else
+					TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " Tier " .. tostring(string.gsub(i, "%D", "")) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+                end
+				CountAmount = CountAmount + 1
+			else
+				TextDropLabel = TextDropLabel .. tostring(CountAmount) .. ". " .. tostring(v['Name']) .. " : x" .. tostring(v['Count'] - Table_All_Items_Old_data[i]['Count']) .. "\n"
+                CountAmount = CountAmount + 1
+		    end
+		end
+	end
+	if TextDropLabel == "" then
+		TextDropLabel = "Not Have Items Drops"
+	end
+    
+        local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures | ArponAG V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/2a167faf9e626e51c939309a70fca28e/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = "ArponAG V2 | Results ✔️",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱\nExecutors  : 🎮 "..exec.." 🎮 ",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+                            {
+                                ["name"] ="Current Level ✨ & Portals 🌀 & Gems 💎 & Gold 💰",
+                                ["value"] = "```ini\n"..tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text)..  " ✨\nCurrent Portals : ".. tostring(Count_Portal_list) .." 🌀\nCurrent Gems : "..tostring(comma_value(game.Players.LocalPlayer._stats.gem_amount.Value)).. " 💎\nCurrent Gold : "  ..tostring(comma_value(game.Players.LocalPlayer._stats.gold_amount.Value))..  " 💰```",
+                            },
+                            {
+                                ["name"] ="Results :",
+                                ["value"] = " ```ini\nWorld : "..mapname.. " 🌏\nMap : "..world.. " 🗺️\nResults : "..result.. " ⚔️\nWave End : " ..tostring(waves[2]).." 🌊\nTime : " ..tostring(ttime[2]).." ⌛```",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] ="Rewards :",
+                                ["value"] = "```ini\n" ..comma_value(gold).." Gold 💰\n"..comma_value(gems).." Gems 💎\n"..comma_value(xp[1]).." XP 🧪\n"..trophy.." Trophy 🏆```",
+                            },
+                            {
+                                ["name"] ="Items Drop :",
+                                ["value"] = "```ini\n" .. TextDropLabel .. "```",
+                                ["inline"] = false 
+                            }
+                        }
+                        }
+                }
+            }
+        
+    
+    local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+    local headers = {["content-type"] = "application/json"}
+    request = http_request or request or HttpPost or syn.request or http.request
+    local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+    warn("Sending webhook notification...")
+    request(sex)
+end
+end
+
+function BabyWebhook()
+    if Settings.BabyWebhookEnabled then
+	local url = Settings.BabyWebhookUrl
+    print("webhook baby?")
+    if url == "" then
+        warn("BabyWebhook Url is empty!")
+        return
+    end 
+		
+        local Time = os.date('!*t', OSTime);
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+        local exec = tostring(identifyexecutor())
+        --BTP lv.
+        btplv = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.V.Text
+        --next ammo level
+        nextlvbtp = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.FurthestRoom.V.Text
+       --room
+        rankroom = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.FurthestRoom.V.V.Text
+        if rankroom == "10" then rankroom = "Inf Castle Load Not Yet" end
+        --Rank title 
+        ranktitle = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.RankTitle.V.V.Text
+        if ranktitle == "Grandmaster" then ranktitle = "Inf Castle Load Not Yet" end
+        --rank %
+        rankper = game:GetService("Players").LocalPlayer.PlayerGui.InfinityCastleRankingUI.Main.Main.Scroll.YourRanking.Ranking.V.V.Text
+        if rankper == "10%" then rankper = "Inf Castle Load Not Yet" end
+        --Current Rank
+        crt = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentRank.Ranking.V.Text
+        if crt == "10%" then crt = "Tournament Load Not Yet" end
+        --Current Prize%
+        cpp = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentPrize.V.Text
+        if cpp == "10%" then cpp = "Tournament Load Not Yet" end
+        --Current Prize
+        cp = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Ranking.Wrapper.CurrentPrize.Prize.Text
+        if cp == "0% ~ 49.99%" then cp = "Tournament Load Not Yet" end
+        --Current Place#
+        cpr = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Main.Wrapper.Container.YourRow.Place.Text
+        if cpr == "#123456" then cpr = "Tournament Load Not Yet" end
+        --Dmg or kill 
+        cdk = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.Leaderboard.Main.Wrapper.Container.YourRow.Amount.Text
+        if cdk == "123456789000000" then cdk = "Tournament Load Not Yet" end
+        --Bracket
+        cubk = game:GetService("Players").LocalPlayer.PlayerGui.TournamentRankingUI.LevelSelect.InfoFrame.ScoreInfo.Bracket.V.Text
+        if cubk == "N" then cubk = "Tournament Load Not Yet" end
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Current BTP & Inf Castle & Tournament Results ✔️",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+                            {
+                                ["name"] ="Current Battle Pass Results 🔋 ",
+                                ["value"] = "```ini\nCurrent BTP Lv. : "..btplv.."  🔋\nNEED TO NEXT : "..nextlvbtp.. "  🔋```",
+                            },
+                            {
+                                ["name"] ="Current Tournament Results 🏆",
+                                ["value"] = "```ini\nYour Bracket: : "..cubk.."  🏆\nCurrent Rank : ["..cpr.." - "..crt.."]  🏆\nDMG or Kill : "..cdk.. "  🏆\nCurrent Prize : "..cpp.. "  🏆\nReward Prize : "  ..cp..  "  🏆```",
+                            },
+                            {
+                                ["name"] ="Current Infinity Castle Results  🚪",
+                                ["value"] = "```ini\nCurrent Room : "..rankroom.."  🚪\nCurrent Rank : "..ranktitle.. "  📊\nCurrent Percent : "  ..rankper..  "  🏅```",
+                            }
+                        }
+                    }
+                }
+            }
+        
+    
+            local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending infcastle webhook notification...")
+            request(sex)
+        end
+end
+
+function SnipeShopNew()
+    if Settings.snipeWebhookEnabled then
+pcall(function() 
+    SpecialSummonSniperWebhook()
+    StandardSummonSniperWebhook()
+    ShopSniperWebhook()
+end)
+end
+end
+--special
+function SpecialSummonSniperWebhook()
+    if Settings.snipeWebhookEnabled then
+	local url = Settings.SnipeWebhookUrl
+    print("webhook Special banner?")
+    if url == "" then
+        warn("SnipeWebhook Url is empty!")
+        return
+    end 
+		
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        special_banner = game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.EventClover.Main
+        units = {
+            special_banner["Featured_One"],
+            special_banner["Featured_Two"],
+            special_banner["Featured_Three"]
+        }
+
+        unitNamesForJson = {
+            special_banner["Featured_One"].name.Text,
+            special_banner["Featured_Two"].name.Text,
+            special_banner["Featured_Three"].name.Text
+        }
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Special Banner ",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+                            {
+                                ["name"] = "```" .. units[1].name.Text .. "```",
+                                ["value"] = "```(" .. units[1].Rarity.Text .. ") [Featured]```",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "```" .. units[2].name.Text .. "```",
+                                ["value"] = "```(" .. units[2].Rarity.Text .. ")```",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "```" .. units[3].name.Text .. "```",
+                                ["value"] = "```(" .. units[3].Rarity.Text .. ")```",
+                                ["inline"] = true
+                            }
+                        }
+                    }
+                }
+            }
+        
+    
+            local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending special banner webhook notification...")
+            request(sex)
+        end
+end
+
+--Standar
+function StandardSummonSniperWebhook()
+    if Settings.snipeWebhookEnabled then
+	local url = Settings.SnipeWebhookUrl
+    print("webhook Standard Banner?")
+    if url == "" then
+        warn("Webhook Url is empty!")
+        return
+    end 
+		
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        units = {
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["1"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["2"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["3"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["4"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["5"].Main,
+            game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["6"].Main
+        }
+
+        
+            U1 = units[1].petimage.WorldModel:GetChildren()[1].Name
+            U2 = units[2].petimage.WorldModel:GetChildren()[1].Name
+            U3 = units[3].petimage.WorldModel:GetChildren()[1].Name
+            U4 = units[4].petimage.WorldModel:GetChildren()[1].Name
+            U5 = units[5].petimage.WorldModel:GetChildren()[1].Name
+            U6 = units[6].petimage.WorldModel:GetChildren()[1].Name
+        
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Standard Banner ",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+
+                        }
+				    }
+			    }
+		    }
+
+        for i, unit in pairs(units) do
+            unit_stats = {
+                ["name"] = "```" .. unit.petimage.WorldModel:GetChildren()[1].Name .."```",
+                ["value"] = "```(" ..unit.Rarity.Text ..")```",
+                ["inline"] = true
+            }
+            table.insert(data["embeds"][1]["fields"], unit_stats)
+        end
+        
+    
+            local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending Standard banner webhook notification...")
+            request(sex)
+        end
+    end
+
+--Bulma's Shop webhook
+
+function ShopSniperWebhook()
+    if Settings.snipeWebhookEnabled then
+        local url = Settings.SnipeWebhookUrl
+        print("webhook Bulma's webhook?")
+        if url == "" then
+            warn("Webhook Url is empty!")
+            return
+        end 
+		print(game:GetService("ReplicatedStorage").src.client.Services.TravellingMerchantServiceClient)
+
+        local Time = os.date('!*t', OSTime);
+
+	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
+
+        local exec = tostring(identifyexecutor())
+
+        shop_items = require(game:GetService("ReplicatedStorage").src.client.Services["TravellingMerchantServiceClient"]).SELLING_ITEMS
+        shop_item_ids = {}
+        
+        print("exechere9")
+
+		local data = {
+            ["content"] = "",
+                ["username"] = "Anime Adventures V2",
+                ["avatar_url"] = "https://tr.rbxcdn.com/46f3a2a4f78c2a8f69e5e423f5b29ddc/150/150/Image/Png",
+                ["embeds"] = {
+                    {
+                        ["author"] = {
+                            ["name"] = " Bulma's Shop ",
+                            ["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+                        },
+                        ["thumbnail"] = {
+                            ['url'] = thumbnails_avatar.data[1].imageUrl,
+                        },
+                        ["description"] = " Player Name : 🐱 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🐱",
+                        ["color"] = 110335,
+                        ["timestamp"] = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
+                        ["fields"] = {
+
+                        }
+				    }
+			    }
+		    }
+
+		
+		print("exechere4")
+		
+		for i, item in pairs(shop_items) do
+            table.insert(shop_item_ids, item["id"])
+            if item["gem_cost"] then
+                table.insert(data["embeds"][1]["fields"], {
+                    ["name"] = "```" .. item["id"].."```",
+                    ["value"] = "```" .. item["gem_cost"] .. " 💎```",
+                    ["inline"] = true
+                })
+            else
+                table.insert(data["embeds"][1]["fields"], {
+                    ["name"] = "```" .. item["id"].."```",
+                    ["value"] = "```" .. item["gold_cost"] .. " 💰```",
+                    ["inline"] = true
+                })
+            end
+		end
+    
+        --print(dump(data["embeds"][1]["fields"]))
+
+        if not game:GetService("Workspace")["travelling_merchant"]["is_open"].Value then
+            table.insert(data["embeds"][1]["fields"], {
+                    ["name"] = "SHOP CLOSED",
+                    ["value"] = "SHOP CLOSED",
+                    ["inline"] = true
+                })
+        end
+        print("exec1")
+
+		local xd = game:GetService("HttpService"):JSONEncode(data)
+    
+            local headers = {["content-type"] = "application/json"}
+            request = http_request or request or HttpPost or syn.request or http.request
+            local sex = {Url = url, Body = xd, Method = "POST", Headers = headers}
+            warn("Sending Snipe Bulma's Shop webhook notification...")
+            request(sex)
+        end
+    end
+------------------------------\
+if game.CoreGui:FindFirstChild("FinityUI") then
+    game.CoreGui["FinityUI"]:Destroy()
+end
+local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
+local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
+local exec = tostring(identifyexecutor())
+--updatefix fixmap
+local Window = Uilib.new(true, "[UPD 12.0.0] Anime Adventures "..version.." - "..exec)
+Window.ChangeToggleKey(Enum.KeyCode.RightControl)
+local Home = Window:Category(" 📋 Home")
+local Developers = Home:Sector("Anime Adventures")
+local asdasd = Home:Sector(" ")
+local UIUPDT = Home:Sector("UI UPDATE (February 20th)")
+local Farm = Window:Category(" 🏹 Auto Farm")
+local SelectUnits = Farm:Sector("Units Selection")
+local SelectWorld = Farm:Sector("World Selection")
+local UnitPosition = Farm:Sector("Select Unit Position")
+local MoreFarmConfig = Farm:Sector("More Farming Config")
+local DeleteConfig2 = Farm:Sector("")
+local DeleteConfig = Farm:Sector("More Function Config")
+local AutoFarmConfig = Farm:Sector("Auto Farm Config")
+local ChallengeConfig = Farm:Sector("Challenge Config")
+
+local UC = Window:Category(" 👥 Unit Config")
+local NDY = UC:Sector("Beta Unit Config ")
+local NDY2 = UC:Sector(" Reset Unit Config ")
+local emptyxx = UC:Sector(" ")
+local emptyxx2 = UC:Sector(" ")
+local Unit1 = UC:Sector("Unit 1")
+local Unit2 = UC:Sector("Unit 2")
+local Unit3 = UC:Sector("Unit 3")
+local Unit4 = UC:Sector("Unit 4")
+local Unit5 = UC:Sector("Unit 5")
+local Unit6 = UC:Sector("Unit 6")
+local Misc = Window:Category(" 🛠 Misc")
+local AutoSummonSec = Misc:Sector("Auto Summon Units")
+local AutoSnipeMerchantSec = Misc:Sector("Auto Snipe Merchant")
+local WebhookSec = Misc:Sector("Discord Webhook")
+--local OtherSec = Misc:Sector("Other Options")
+
+local LG = Window:Category("🛠️ OTHER [BETA]")
+local LG1 = LG:Sector("Beta LAGGY Config ")
+local OtherSec = LG:Sector("Other Options")
+local OtherSec2 = LG:Sector("")
+local reFarmConfig = LG:Sector("🤖 Reset Farm Config 🤖")
+
+
+----------------------------------------------
+---------------- Units Selection -------------
+----------------------------------------------
+local function UnitSec()
+        --#region Select Units Tab
+        local Units = {}
+        
+        function Check()
+            local DataUnits = require(game:GetService("ReplicatedStorage").src.Data.Units)
+            for i, v in pairs(getgenv().profile_data.equipped_units) do
+                if DataUnits[v.unit_id] and v.equipped_slot then
+                    Settings.SelectedUnits["U"..tostring(v.equipped_slot)] = tostring(DataUnits[v.unit_id].id) .. " #" .. tostring(v.uuid)
+                    print("U"..tostring(v.equipped_slot).." "..tostring(DataUnits[v.unit_id].id).." #" .. tostring(v.uuid))
+                end
+            end
+            saveSettings()
+        end
+        function LoadUnits()
+            local DataUnits = require(game:GetService("ReplicatedStorage").src.Data.Units)
+            table.clear(Units)
+            for i, v in pairs(getgenv().profile_data.equipped_units) do
+                if DataUnits[v.unit_id] then
+                    table.insert(Units, DataUnits[v.unit_id].name .. " #" .. tostring(v.uuid))
+                end
+            end
+            Check()
+        end
+        function GetUnits()
+            if Settings.SelectedUnits == nil then
+                Settings.SelectedUnits = {
+                    U1 = "nil",
+                    U2 = "nil",
+                    U3 = "nil",
+                    U4 = "nil",
+                    U5 = "nil",
+                    U6 = "nil"
+                }
+                saveSettings()
+            end
+            getgenv().profile_data = { equipped_units = {} }; repeat
+                do
+                    for i, v in pairs(getgc(true)) do
+                        if type(v) == "table" and rawget(v, "xp") then wait()
+                            table.insert(getgenv().profile_data.equipped_units, v)
+                        end
+                    end
+                end
+            until #getgenv().profile_data.equipped_units > 0
+            LoadUnits()
+        end
+    GetUnits()
+    SelectUnits:Cheat("Button", "🦸 Select Units", function() --Selects Currently Equipped Units!
+        Settings.SelectedUnits = {
+            U1 = "nil",
+            U2 = "nil",
+            U3 = "nil",
+            U4 = "nil",
+            U5 = "nil",
+            U6 = "nil"
+        }
+        saveSettings()
+        GetUnits()
+    end)
+    function switchteam(string)
+        local args = { [1] = string }
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.switch_team_loadout:InvokeServer(unpack(args))
+    end
+    local a = SelectUnits:Cheat("Dropdown", "👥 Select Team",function(preset)
+        Settings.SelectedPreset = preset
+        print(preset)
+        saveSettings()
+    end, { 
+        options = { "Team 1", "Team 2", "Team 3", "Team 4","Team 5" }, 
+        default = Settings.SelectedPreset
+    })
+    SelectUnits:Cheat("Button", "⌛ Switch Team", function() --loads preset
+        preset = Settings.SelectedPreset
+        if preset == "Team 1" then
+            switchteam("1")
+        elseif preset == "Team 2" then
+            switchteam("2")
+        elseif preset == "Team 3" then
+            switchteam("3")
+        elseif preset == "Team 4" then
+            switchteam("4")
+        elseif preset == "Team 5" then
+            switchteam("5")
+        end
+        print(preset)
+        GetUnits()
+    end)
+end
+----------------------------------------------
+------------------ World Section -------------updatefix
+----------------------------------------------
+local function WorldSec()
+    SelectWorld:Cheat("Dropdown", "🌟 Select Category",function(value)
+        print(value)
+        Settings.WorldCategory = value
+        getgenv().updateworld()
+        getgenv().updatelevel()
+        getgenv().updatedifficulty()
+        saveSettings()
+    end, {
+        options = {
+            "Story Worlds",
+            "Legend Stages",
+            "Raid Worlds",
+            "Portals",
+            "Dungeon"
+        },
+        default = Settings.WorldCategory
+    })
+    local selectworld = SelectWorld:Cheat("Dropdown", "🌏 Select World",function(value)
+        print(value)
+        Settings.SelectedWorld = value
+        getgenv().updatelevel()
+        getgenv().updatedifficulty()
+        saveSettings()
+    end, {options = { }, default = Settings.SelectedWorld })
+--fixmap
+    getgenv().updateworld = function()
+        selectworld:ClearDrop() local storylist;
+        if Settings.WorldCategory == "Story Worlds" then
+            storylist = {"Planet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford",
+            "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom","Cape Canaveral", "Alien Spaceship","Fabled Kingdom",
+            "Hero City"}
+        elseif Settings.WorldCategory == "Legend Stages" then
+            storylist = {"Clover Kingdom (Elf Invasion)", "Hollow Invasion","Cape Canaveral (Legend)", "Fabled Kingdom (Legend)", "Hero City (Midnight)"}
+        elseif Settings.WorldCategory == "Raid Worlds" then
+            storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid", "Freezo's Invasion"}
+        elseif Settings.WorldCategory == "Portals" then
+            storylist = {"Alien Portals","Zeldris Portals", "Demon Portals"}
+        elseif Settings.WorldCategory == "Dungeon" then 
+            storylist = {"Cursed Womb","Crused Parade"}   
+        end
+    
+        for i = 1, #storylist do
+            selectworld:AddOption(storylist[i])
+        end
+    end
+    local selectlevel = SelectWorld:Cheat("Dropdown", "✨ Select Level",function(value)
+        print(value)
+        Settings.SelectedLevel = value
+        getgenv().updatedifficulty()
+        saveSettings()
+    end, {options = { }, default = Settings.SelectedLevel})
+    getgenv().updatelevel = function()
+        selectlevel:ClearDrop() local levellist; local level = Settings.SelectedWorld;
+        ---///Story Worlds\\\---
+        if level == "Planet Namak" then
+            levellist = {"namek_infinite", "namek_level_1", "namek_level_2", "namek_level_3", "namek_level_4", "namek_level_5", "namek_level_6"}
+        elseif level == "Shiganshinu District" then
+            levellist = {"aot_infinite", "aot_level_1", "aot_level_2", "aot_level_3", "aot_level_4","aot_level_5", "aot_level_6"}
+        elseif level == "Snowy Town" then
+            levellist = {"demonslayer_infinite", "demonslayer_level_1", "demonslayer_level_2", "demonslayer_level_3", "demonslayer_level_4", "demonslayer_level_5","demonslayer_level_6"}
+        elseif level == "Hidden Sand Village" then
+            levellist =  {"naruto_infinite", "naruto_level_1", "naruto_level_2", "naruto_level_3","naruto_level_4", "naruto_level_5", "naruto_level_6"}
+        elseif level == "Marine's Ford" then
+            levellist = {"marineford_infinite","marineford_level_1","marineford_level_2","marineford_level_3","marineford_level_4","marineford_level_5","marineford_level_6"}
+        elseif level == "Ghoul City" then
+            levellist = {"tokyoghoul_infinite","tokyoghoul_level_1","tokyoghoul_level_2","tokyoghoul_level_3","tokyoghoul_level_4","tokyoghoul_level_5","tokyoghoul_level_6"}
+        elseif level == "Hollow World" then
+            levellist = {"hueco_infinite","hueco_level_1","hueco_level_2","hueco_level_3","hueco_level_4","hueco_level_5","hueco_level_6"}
+        elseif level == "Ant Kingdom" then
+            levellist = {"hxhant_infinite","hxhant_level_1","hxhant_level_2","hxhant_level_3","hxhant_level_4","hxhant_level_5","hxhant_level_6"}
+        elseif level == "Magic Town" then
+            levellist =  {"magnolia_infinite","magnolia_level_1","magnolia_level_2","magnolia_level_3","magnolia_level_4","magnolia_level_5","magnolia_level_6"}
+        elseif level == "Cursed Academy" then
+            levellist = {"jjk_infinite","jjk_level_1","jjk_level_2","jjk_level_3", "jjk_level_4","jjk_level_5","jjk_level_6"}
+        elseif level == "Clover Kingdom" then
+            levellist = {"clover_infinite","clover_level_1","clover_level_2","clover_level_3","clover_level_4","clover_level_5","clover_level_6"}
+        elseif level == "Cape Canaveral" then
+            levellist = {"jojo_infinite","jojo_level_1","jojo_level_2","jojo_level_3","jojo_level_4","jojo_level_5","jojo_level_6",}
+        elseif level == "Alien Spaceship" then
+            levellist = {"opm_infinite","opm_level_1","opm_level_2","opm_level_3","opm_level_4","opm_level_5","opm_level_6",}
+        elseif level == "Fabled Kingdom" then
+            levellist = {"7ds_infinite","7ds_level_1","7ds_level_2","7ds_level_3","7ds_level_4","7ds_level_5","7ds_level_6",}
+        elseif level == "Hero City" then
+            levellist = {"mha_infinite","mha_level_1","mha_level_2","mha_level_3","mha_level_4","mha_level_5","mha_level_6",}
+        --///Legend Stages\\\---
+        elseif level == "Clover Kingdom (Elf Invasion)" then
+            levellist = {"clover_legend_1","clover_legend_2","clover_legend_3"}
+        elseif level == "Hollow Invasion" then
+            levellist = {"bleach_legend_1","bleach_legend_2","bleach_legend_3","bleach_legend_4","bleach_legend_5","bleach_legend_6"}
+        elseif level == "Cape Canaveral (Legend)" then
+            levellist = {"jojo_legend_1","jojo_legend_2","jojo_legend_3"}
+        elseif level == "Fabled Kingdom (Legend)" then
+            levellist = {"7ds_legend_1","7ds_legend_2","7ds_legend_3"}
+        elseif level == "Hero City (Midnight)" then
+            levellist = {"mha_legend_1","mha_legend_2","mha_legend_3","mha_legend_4","mha_legend_5","mha_legend_6"}
+        --///Raids\\\---
+        elseif level == "Storm Hideout" then
+            levellist = {"uchiha_level_1","uchiha_level_2","uchiha_level_3","uchiha_level_4","uchiha_level_5"}
+        elseif level == "West City" then
+            levellist = {"west_city_raid"}
+        elseif level == "Infinity Train" then
+            levellist = {"demonslayer_raid_1"}
+        elseif level == "Shiganshinu District - Raid" then
+            levellist = {"aot_raid_1"}
+        elseif level == "Hiddel Sand Village - Raid" then
+            levellist = {"naruto_raid_1"}
+        elseif level == "Freezo's Invasion" then
+            levellist = {"west_city_frieza_level_1","west_city_frieza_level_2","west_city_frieza_level_3","west_city_frieza_level_4","west_city_frieza_level_5"}
+        --///Portals\\\---
+        elseif level == "Alien Portals" then
+            levellist = {"portal_boros_g"}
+        elseif level == "Demon Portals" then
+            levellist = {"april_portal_item"}
+        elseif level == "Zeldris Portals" then
+            levellist = {"portal_zeldris"}
+            ---///Dungeon\\\---    updatefix
+        elseif level == "Cursed Womb" then
+            levellist = {"jjk_finger"} 
+        elseif level == "Crused Parade" then
+            levellist = {"jjk_raid"} 
+        end
+        for i = 1, #levellist do
+            selectlevel:AddOption(levellist[i])
+        end
+    end
+    --fixmap
+    local selectdiff = SelectWorld:Cheat("Dropdown", "💦 Difficulty",function(value)
+        print(value, " Selected")
+        Settings.Difficulty = value
+        saveSettings()
+    end, {
+        options = {}, default = Settings.Difficulty
+    })
+    getgenv().updatedifficulty = function()
+        selectdiff:ClearDrop(); level = Settings.SelectedLevel; cata = Settings.WorldCategory; local diff;
+        if level == "namek_infinite" or level == "aot_infinite" or level == "demonslayer_infinite" 
+        or level == "naruto_infinite" or level == "marineford_infinite" or level == "tokyoghoul_infinite" or level == "hueco_infinite" 
+        or level == "hxhant_infinite" or level == "magnolia_infinite" or level == "jjk_infinite" or level == "clover_infinite" 
+        or level == "jojo_infinite" or level == "opm_infinite" or level == "7ds_infinite"  or level == "mha_infinite"  or cata == "Legend Stages" or cata == "Raid Worlds" then
+            diff = {"Hard"}
+        elseif cata == "Portals" or cata == "Dungeon"  then
+            diff = {"Default"}
+        else
+            diff = {"Normal", "Hard"}
+        end
+        for i = 1, #diff do
+            selectdiff:AddOption(diff[i])
+        end
+    end
+    
+    SelectWorld:Cheat("Checkbox","🙋️ Friends Only  ", function(bool)
+        print(bool)
+        Settings.isFriendOnly = bool
+        saveSettings()
+    end,{enabled = Settings.isFriendOnly})
+end
+----------------------------------------------
+---------------- AutoFarm Config -------------
+----------------------------------------------
+local function AutoFarmSec()
+    AutoFarmConfig:Cheat("Checkbox","🌾 Auto Start  ", function(bool)
+        print(bool)
+        Settings.autostart = bool
+        saveSettings()
+    end,{enabled = Settings.autostart })
+    AutoFarmConfig:Cheat("Checkbox","👨‍🌾 Auto Place unit  ", function(bool)
+        print(bool)
+        Settings.AutoFarm = bool
+        saveSettings()
+    end,{enabled = Settings.AutoFarm })
+    AutoFarmConfig:Cheat("Checkbox","🏃 Auto Replay  ", function(bool)
+        print(bool)
+        Settings.AutoReplay = bool
+        saveSettings()
+    end,{enabled = Settings.AutoReplay})
+    AutoFarmConfig:Cheat("Checkbox","🏃 Auto Next Story  ", function(bool)
+        print(bool)
+        Settings.AutoNext = bool
+        saveSettings()
+    end,{enabled = Settings.AutoNext})
+    AutoFarmConfig:Cheat("Checkbox","🏃 Auto Leave  ", function(bool)
+        print(bool)
+        Settings.AutoLeave = bool
+        saveSettings()
+    end,{enabled = Settings.AutoLeave})
+    
+    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Abilities  ", function(bool)
+        print(bool)
+        Settings.AutoAbilities = bool
+        saveSettings()
+    end,{enabled = Settings.AutoAbilities})
+    AutoFarmConfig:Cheat("Checkbox","⭐️ Auto Upgrade Units  ", function(bool)
+        print(bool)
+        Settings.AutoUpgrade = bool
+        saveSettings()
+    end,{enabled = Settings.AutoUpgrade})
+    AutoFarmConfig:Cheat("Checkbox","⭐️ Sell Units At Wave  ", function(bool)
+        print(bool)
+        Settings.AutoSell = bool
+        saveSettings()
+    end,{enabled = Settings.AutoSell})
+    AutoFarmConfig:Cheat("Checkbox","⭐️ Leave At Wave  ", function(bool)
+        print(bool)
+        Settings.autoQuit = bool
+        saveSettings()
+    end,{enabled = Settings.autoQuit})
+    AutoFarmConfig:Cheat("Textbox", "Sell or Leave at Wave", function(Value)
+        Value = tonumber(Value)
+        Settings.AutoSellWave = Value
+        saveSettings()
+    end, {placeholder = Settings.AutoSellWave})
+end
+----------------------------------------------
+--------------- More Farm Config ------------- 
+----------------------------------------------
+local function MoreFarmSec()
+    MoreFarmConfig:Cheat("Checkbox","🏯 Auto Next Level inf castle  ", function(bool)
+        print(bool)
+        Settings.AutoContinue = bool
+        saveSettings()
+    end,{enabled = Settings.AutoContinue })
+    MoreFarmConfig:Cheat("Checkbox","🏰️ Auto Infinity Castle  ", function(bool)
+        print(bool)
+        Settings.AutoInfinityCastle = bool
+        saveSettings()
+    end,{enabled = Settings.AutoInfinityCastle})
+end
+
+-----------------------------------------------
+--resetautofarm config
+--resetall
+function refarmcon()
+    print("reset AutoFarm & find Picoro config ?")
+
+    --findPicoro
+    if Settings.picoHOP then
+        Settings.picoHOP = false end
+   --Start
+    if Settings.autostart then
+        Settings.autostart = false end
+    --Place unit
+    if Settings.AutoFarm then
+        Settings.AutoFarm = false end
+    --Replay
+    if Settings.AutoReplay then
+        Settings.AutoReplay = false end
+    --Next Story
+    if Settings.AutoNext then
+        Settings.AutoNext = false end
+    --Leave
+    if Settings.AutoLeave then
+        Settings.AutoLeave = false end
+    --Abilities
+    if Settings.AutoAbilities then
+        Settings.AutoAbilities = false end
+    --Upgrade
+    if Settings.AutoUpgrade then
+        Settings.AutoUpgrade = false end
+    --AutoSell
+    if Settings.AutoSell then
+        Settings.AutoSell = false end
+    --autoQuitWave
+    if Settings.autoQuit then
+        Settings.autoQuit = false end
+    --AutoSellWave
+    if Settings.AutoSellWave then
+        Settings.AutoSellWave = 0 end
+    --Inf Castle--
+    --Next Level inf cas
+    if Settings.AutoContinue then
+        Settings.AutoContinue = false end
+    --Auto Infinity Castle 
+    if Settings.AutoInfinityCastle then
+        Settings.AutoInfinityCastle = false end
+        saveSettings()
+        autoload2()
+  
+end
+
+if Settings.refarmc then
+    refarmcon()
+    autoload2()
+end
+
+--setAutoFarmStory
+function setfarm1()
+    print("Set AutoFarm Story ?")
+
+   --Start
+    if Settings.autostart then
+        Settings.autostart = true end
+    --Place unit
+    if Settings.AutoFarm then
+        Settings.AutoFarm = true end
+    --Replay
+    if Settings.AutoReplay then
+        Settings.AutoReplay = false end
+    --Next Story
+    if Settings.AutoNext then
+        Settings.AutoNext = false end
+    --Leave
+    if Settings.AutoLeave then
+        Settings.AutoLeave = true end
+    --Abilities
+    if Settings.AutoAbilities then
+        Settings.AutoAbilities = true end
+    --Upgrade
+    if Settings.AutoUpgrade then
+        Settings.AutoUpgrade = true end
+    --AutoSell
+    if Settings.AutoSell then
+        Settings.AutoSell = true end
+    --autoQuitWave
+    if Settings.autoQuit then
+        Settings.autoQuit = false end
+    --AutoSellWave
+    if Settings.AutoSellWave then
+        Settings.AutoSellWave = 50 end
+    --Inf Castle--
+    --Next Level inf cas
+    if Settings.AutoContinue then
+        Settings.AutoContinue = false end
+    --Auto Infinity Castle 
+    if Settings.AutoInfinityCastle then
+        Settings.AutoInfinityCastle = false end
+        saveSettings()
+        autoload2()
+  
+end
+
+if Settings.setfarm1 then
+    setfarm1()
+    autoload2()
+end
+
+--setAutoFarmStorynReplay
+function setfarm2()
+    print("Set AutoFarm Story & Replay ?")
+
+   --Start
+    if Settings.autostart then
+        Settings.autostart = true end
+    --Place unit
+    if Settings.AutoFarm then
+        Settings.AutoFarm = true end
+    --Replay
+    if Settings.AutoReplay then
+        Settings.AutoReplay = true end
+    --Next Story
+    if Settings.AutoNext then
+        Settings.AutoNext = false end
+    --Leave
+    if Settings.AutoLeave then
+        Settings.AutoLeave = true end
+    --Abilities
+    if Settings.AutoAbilities then
+        Settings.AutoAbilities = true end
+    --Upgrade
+    if Settings.AutoUpgrade then
+        Settings.AutoUpgrade = true end
+    --AutoSell
+    if Settings.AutoSell then
+        Settings.AutoSell = true end
+    --autoQuitWave
+    if Settings.autoQuit then
+        Settings.autoQuit = false end
+    --AutoSellWave
+    if Settings.AutoSellWave then
+        Settings.AutoSellWave = 50 end
+    --Inf Castle--
+    --Next Level inf cas
+    if Settings.AutoContinue then
+        Settings.AutoContinue = false end
+    --Auto Infinity Castle 
+    if Settings.AutoInfinityCastle then
+        Settings.AutoInfinityCastle = false end
+        saveSettings()
+        autoload2()
+  
+end
+
+if Settings.setfarm2 then
+    setfarm2()
+    autoload2()
+end
+
+--setAutoInfCastle
+function setfarmIC()
+    print("Set AutoFarm Inf Castle ?")
+
+   --Start
+    if Settings.autostart then
+        Settings.autostart = false end
+    --Place unit
+    if Settings.AutoFarm then
+        Settings.AutoFarm = true end
+    --Replay
+    if Settings.AutoReplay then
+        Settings.AutoReplay = false end
+    --Next Story
+    if Settings.AutoNext then
+        Settings.AutoNext = false end
+    --Leave
+    if Settings.AutoLeave then
+        Settings.AutoLeave = false end
+    --Abilities
+    if Settings.AutoAbilities then
+        Settings.AutoAbilities = true end
+    --Upgrade
+    if Settings.AutoUpgrade then
+        Settings.AutoUpgrade = true end
+    --AutoSell
+    if Settings.AutoSell then
+        Settings.AutoSell = true end
+    --autoQuitWave
+    if Settings.autoQuit then
+        Settings.autoQuit = false end
+    --AutoSellWave
+    if Settings.AutoSellWave then
+        Settings.AutoSellWave = 50 end
+    --Inf Castle--
+    --Next Level inf cas
+    if Settings.AutoContinue then
+        Settings.AutoContinue = true end
+    --Auto Infinity Castle 
+    if Settings.AutoInfinityCastle then
+        Settings.AutoInfinityCastle = true end
+        saveSettings()
+        autoload2()
+  
+end
+
+if Settings.setfarmIC then
+    setfarmIC()
+    autoload2()
+end
+
+
+-----------------------------------------------
+
+
+----------------------------------------------
+----------------- Challenge ------------------
+----------------------------------------------
+local function ChallengeSec()
+    local challengeconfig = ChallengeConfig:Cheat("Dropdown", "🥇 Select Reward",function(value)
+        print(value)
+        Settings.SelectedReward = value
+        saveSettings()
+    end, { options = {"star_fruit_random","star_remnant","gems", "gold"}, default =Settings.SelectedReward})
+    ChallengeConfig:Cheat("Checkbox","🎯 Auto Challenge  ", function(bool)
+        print(bool)
+        Settings.AutoChallenge = bool
+        saveSettings()
+    end, {enabled =Settings.AutoChallenge})
+    ChallengeConfig:Cheat("Checkbox","🏆 Farm Any Rewards  ", function(bool)
+        print(bool)
+       Settings.AutoChallengeAll = bool
+        saveSettings()
+    end,{enabled =Settings.AutoChallengeAll})
+end
+----------------------------------------------
+------------------ credits -------------------
+----------------------------------------------
+local function credits()
+    Developers:Cheat("Label","📝 Scripted by: Arpon AG#6612 & Forever4D#0001 & HOLYSHz#3819 ")    
+    Developers:Cheat("Label","📝 Also thanks to Trapstar#7845, bytenode#9646 for the help!")    
+    Developers:Cheat("Label","📐 UI By: detourious @ v3rmillion.net")    
+    Developers:Cheat("Label","🔧 To toggle the script press \"RightControl\"")   
+    Developers:Cheat("Button","🔗 Discord Invite", function()
+        setclipboard("https://discord.gg/2ttfCfzxut")
+    end)    
+    UIUPDT:Cheat("Label","[+] idk \n[+]reeeeeeeeeee")    
+end
+getgenv().posX = 1.5
+getgenv().posZ = 1.5
+----------------------------------------------
+---------------- Unit Config -----------------
+----------------------------------------------
+function updatepos(map, UnitPos, a,a2,a3,a4,a5,a6)
+    local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+    world = GetLevelData.world or GetLevelData.name
+    warn(map)		
+    if Settings[map] == nil then
+        Settings[map] = {}
+        saveSettings()
+    end
+    if Settings[map][UnitPos] == nil then
+        Settings[map] = {
+            UP1 = {
+                x = 0,
+                z = 0,
+                y = 0,
+                y2 = 0,
+                y3 = 0,
+                y4 = 0,
+                y5 = 0,
+                y6 = 0
+            },
+            UP2 = {
+                x = 0,
+                z = 0,
+                y = 0,
+                y2 = 0,
+                y3 = 0,
+                y4 = 0,
+                y5 = 0,
+                y6 = 0
+                },
+            UP3 = {
+                x = 0,
+                z = 0,
+                y = 0,
+                y2 = 0,
+                y3 = 0,
+                y4 = 0,
+                y5 = 0,
+                y6 = 0
+            },
+            UP4 = {
+                x = 0,
+                z = 0,
+                y = 0,
+                y2 = 0,
+                y3 = 0,
+                y4 = 0,
+                y5 = 0,
+                y6 = 0
+            },
+            UP5 = {
+                x = 0,
+                z = 0,
+                y = 0,
+                y2 = 0,
+                y3 = 0,
+                y4 = 0,
+                y5 = 0,
+                y6 = 0
+            },
+            UP6 = {
+                x = 0,
+                z = 0,
+                y = 0,
+                y2 = 0,
+                y3 = 0,
+                y4 = 0,
+                y5 = 0,
+                y6 = 0
+            }
+        }
+    saveSettings()
+    end
+    pcall(function()
+        
+    end)
+    Settings[map][UnitPos]["x"] = a.Position.X
+    Settings[map][UnitPos]["z"] = a.Position.Z
+    Settings[map][UnitPos]["y"] = a.Position.Y
+    Settings[map][UnitPos]["y2"] = a2.Position.Y
+    Settings[map][UnitPos]["y3"] = a3.Position.Y
+    Settings[map][UnitPos]["y4"] = a4.Position.Y
+    Settings[map][UnitPos]["y5"] = a5.Position.Y
+    Settings[map][UnitPos]["y6"] = a6.Position.Y
+    print("updatepos")
+    saveSettings()
+end
+--updatefix fixmap
+function saveposTEST(UnitPos, a,a2,a3,a4,a5,a6)
+    local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+    world = GetLevelData.world or GetLevelData.name
+    if game.workspace._MAP_CONFIG:WaitForChild("GetLevelData") then
+        updatepos(world, UnitPos, a,a2,a3,a4,a5,a6)
+    end
+    warn("savepos test")
+end
+
+function savepos(UnitPos, a,a2,a3,a4,a5,a6)
+    if game.Workspace._map:FindFirstChild("namek mushroom model") then
+        updatepos("namek", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("houses_new") then
+        updatepos("aot", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Snow Particles") then
+        updatepos("demonslayer", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("sand_gate") then 
+        updatepos("naruto", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("icebergs") then
+        updatepos("marineford", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
+        updatepos("tokyo_ghoul", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Bones/dust") then
+        updatepos("hueco", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("Ant Nest") then
+        updatepos("hxhant", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("light poles") then
+        updatepos("magnolia", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("LanternsGround") then
+        updatepos("jjk", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("pumpkins") then    
+        updatepos("thriller_park", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("skeleton") then
+        updatepos("clover", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("graves") then
+        updatepos("bleach_legend", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("vending machines") then
+        updatepos("chainsaw", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
+        updatepos("jojo", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("secret") then
+        updatepos("opm", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("s") then
+        updatepos("west_city", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("bushes and flowers") then
+        updatepos("uchiha", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("snow grass") then
+       updatepos("demonslayer_raid_1", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
+        updatepos("7ds", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
+        updatepos("mha", UnitPos, a,a2,a3,a4,a5,a6)
+    end
+    warn("savepos")
+end
+
+function mobilegui(UnitPos, a,a2,a3,a4,a5,a6)
+	local BillboardGui = Instance.new("BillboardGui")
+	local Frame = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	local Done = Instance.new("TextButton")
+	local UICorner = Instance.new("UICorner")
+	local Cancel = Instance.new("TextButton")
+	local UICorner_2 = Instance.new("UICorner")
+	--Properties:
+	BillboardGui.Adornee = a
+	BillboardGui.Parent = game.Players.LocalPlayer.PlayerGui 
+	BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	BillboardGui.Active = true
+	BillboardGui.LightInfluence = 1.000
+	BillboardGui.Size = UDim2.new(7, 0, 3, 0)
+	BillboardGui.SizeOffset = Vector2.new(0, 1.5)
+	Frame.Parent = BillboardGui
+	Frame.BackgroundColor3 = Color3.fromRGB(49, 49, 57)
+	Frame.BackgroundTransparency = 1.000
+	Frame.Size = UDim2.new(1, 0, 0.5, 0)
+	UIListLayout.Parent = Frame
+	UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout.Padding = UDim.new(0.0599999987, 0)
+	Done.Name = "Done"
+	Done.Parent = Frame
+	Done.BackgroundColor3 = Color3.fromRGB(34, 255, 0)
+	Done.Size = UDim2.new(0.469999999, 0, 1, 0)
+	Done.Font = Enum.Font.SourceSansBold
+	Done.Text = "Done"
+	Done.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Done.TextScaled = true
+	Done.TextSize = 1.000
+	Done.TextWrapped = true
+	Done.Activated:Connect(function()
+		_G.gg = false 
+		savepos(UnitPos, a,a2,a3,a4,a5,a6)
+		for i = 0, 1, 0.1 do
+			a.Transparency = i
+			a2.Transparency = i
+			a3.Transparency = i
+			a4.Transparency = i
+			a5.Transparency = i
+			a6.Transparency = i
+			task.wait()
+		end
+		a:Destroy()
+		a2:Destroy()
+		a3:Destroy()
+		a4:Destroy()
+		a5:Destroy()
+		a6:Destroy()
+		BillboardGui:Destroy();
+	end)
+	
+	UICorner.CornerRadius = UDim.new(0.119999997, 0)
+	UICorner.Parent = Done
+	Cancel.Name = "Cancel"
+	Cancel.Parent = Frame
+	Cancel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+	Cancel.Size = UDim2.new(0.469999999, 0, 1, 0)
+	Cancel.Font = Enum.Font.SourceSansBold
+	Cancel.Text = "Cancel"
+	Cancel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Cancel.TextScaled = true
+	Cancel.TextSize = 1.000
+	Cancel.TextWrapped = true
+	Cancel.Activated:Connect(function()
+		print("Cancel")
+		_G.gg = false 
+		for i = 0, 1, 0.1 do
+			a.Transparency = i
+			a2.Transparency = i
+			a3.Transparency = i
+			a4.Transparency = i
+			a5.Transparency = i
+			a6.Transparency = i
+			task.wait()
+		end
+		a:Destroy()
+		a2:Destroy()
+		a3:Destroy()
+		a4:Destroy()
+		a5:Destroy()
+		a6:Destroy()
+		BillboardGui:Destroy();
+	end)
+	
+	UICorner_2.CornerRadius = UDim.new(0.119999997, 0)
+	UICorner_2.Parent = Cancel
+end
+function MouseClick2(UnitPos)
+	if UserInputService.TouchEnabled then mobile = true else mobile = false end 
+	print("a")
+	local raycastParams = RaycastParams.new()
+	raycastParams.FilterType = Enum.RaycastFilterType.Whitelist
+	raycastParams.FilterDescendantsInstances = {game:GetService("Workspace")["_terrain"]}
+	_G.gg = true
+	task.wait(0.5)
+	local x = getgenv().posX
+	local z = getgenv().posZ
+	local a = Instance.new("Part", game.Workspace)
+	local a2 = Instance.new("Part", game.Workspace)
+	local a3 = Instance.new("Part", game.Workspace)
+	local a4 = Instance.new("Part", game.Workspace)
+	local a5 = Instance.new("Part", game.Workspace)
+	local a6 = Instance.new("Part", game.Workspace)
+	a.Size = Vector3.new(1, 1, 1)
+	a2.Size = Vector3.new(1, 1, 1)
+	a3.Size = Vector3.new(1, 1, 1)
+	a4.Size = Vector3.new(1, 1, 1)
+	a5.Size = Vector3.new(1, 1, 1)
+	a6.Size = Vector3.new(1, 1, 1)
+	a.Material = Enum.Material.Neon
+	a2.Material = Enum.Material.Neon
+	a3.Material = Enum.Material.Neon
+	a4.Material = Enum.Material.Neon
+	a5.Material = Enum.Material.Neon
+	a6.Material = Enum.Material.Neon
+	--a.Position = mouse.hit.p
+	game:GetService("RunService").RenderStepped:Connect(function()
+		pcall(function()
+			if _G.gg and not mobile then
+				mouse.TargetFilter  = a
+				local xPos = mouse.Hit.Position.X --x position of unit
+				local zPos = mouse.Hit.Position.Z --z position of unit
+				local rayOrigin = CFrame.new(xPos, 1000, zPos).p
+				local rayDestination = CFrame.new(xPos, -500, zPos).p
+				local rayDirection = (rayDestination - rayOrigin)
+				local raycastResult = workspace:Raycast(rayOrigin, rayDirection, raycastParams)
+				a.CFrame = CFrame.new(raycastResult.Position) * CFrame.Angles(0, -0, -0)
+				local xPos2 = a.Position.X --x position of unit
+				local zPos2 = a.Position.Z + z --z position of unit
+				local rayOrigin2 = CFrame.new(xPos2, 1000, zPos2).p
+				local rayDestination2 = CFrame.new(xPos2, -500, zPos2).p
+				local rayDirection2 = (rayDestination2 - rayOrigin2)
+				local raycastResult2 = workspace:Raycast(rayOrigin2, rayDirection2, raycastParams)
+				a2.CFrame = CFrame.new(raycastResult2.Position) * CFrame.Angles(0, -0, -0)
+				local xPos3 = a.Position.X + x --x position of unit
+				local zPos3 = a.Position.Z  --z position of unit
+				local rayOrigin3 = CFrame.new(xPos3, 1000, zPos3).p
+				local rayDestination3 = CFrame.new(xPos3, -500, zPos3).p
+				local rayDirection3 = (rayDestination3 - rayOrigin3)
+				local raycastResult3 = workspace:Raycast(rayOrigin3, rayDirection3, raycastParams)
+				a3.CFrame = CFrame.new(raycastResult3.Position) * CFrame.Angles(0, -0, -0)
+				local xPos4 = a.Position.X - x --x position of unit
+				local zPos4 = a.Position.Z  --z position of unit
+				local rayOrigin4 = CFrame.new(xPos4, 1000, zPos4).p
+				local rayDestination4 = CFrame.new(xPos4, -500, zPos4).p
+				local rayDirection4 = (rayDestination4 - rayOrigin4)
+				local raycastResult4 = workspace:Raycast(rayOrigin4, rayDirection4, raycastParams)
+				a4.CFrame = CFrame.new(raycastResult4.Position) * CFrame.Angles(0, -0, -0)
+				local xPos5 = a.Position.X + x--x position of unit
+				local zPos5 = a.Position.Z + z --z position of unit
+				local rayOrigin5 = CFrame.new(xPos5, 1000, zPos5).p
+				local rayDestination5 = CFrame.new(xPos5, -500, zPos5).p
+				local rayDirection5 = (rayDestination5 - rayOrigin5)
+				local raycastResult5 = workspace:Raycast(rayOrigin5, rayDirection5, raycastParams)
+				a5.CFrame = CFrame.new(raycastResult5.Position) * CFrame.Angles(0, -0, -0)
+				local xPos6 = a.Position.X - x --x position of unit
+				local zPos6 = a.Position.Z + z --z position of unit
+				local rayOrigin6 = CFrame.new(xPos6, 1000, zPos6).p
+				local rayDestination6 = CFrame.new(xPos6, -500, zPos6).p
+				local rayDirection6 = (rayDestination6 - rayOrigin6)
+				local raycastResult6 = workspace:Raycast(rayOrigin6, rayDirection6, raycastParams)
+				a6.CFrame = CFrame.new(raycastResult6.Position) * CFrame.Angles(0, -0, -0)	
+			elseif _G.gg and mobile then
+				warn("MOBILE DEVICE")
+				UserInputService.TouchLongPress:Connect(function()
+					mouse.TargetFilter  = a
+					local xPos = mouse.Hit.Position.X --x position of unit
+					local zPos = mouse.Hit.Position.Z --z position of unit
+					local rayOrigin = CFrame.new(xPos, 1000, zPos).p
+					local rayDestination = CFrame.new(xPos, -500, zPos).p
+					local rayDirection = (rayDestination - rayOrigin)
+					local raycastResult = workspace:Raycast(rayOrigin, rayDirection, raycastParams)
+					a.CFrame = CFrame.new(raycastResult.Position) * CFrame.Angles(0, -0, -0)
+					local xPos2 = a.Position.X --x position of unit
+					local zPos2 = a.Position.Z + z --z position of unit
+					local rayOrigin2 = CFrame.new(xPos2, 1000, zPos2).p
+					local rayDestination2 = CFrame.new(xPos2, -500, zPos2).p
+					local rayDirection2 = (rayDestination2 - rayOrigin2)
+					local raycastResult2 = workspace:Raycast(rayOrigin2, rayDirection2, raycastParams)
+					a2.CFrame = CFrame.new(raycastResult2.Position) * CFrame.Angles(0, -0, -0)
+					local xPos3 = a.Position.X + x --x position of unit
+					local zPos3 = a.Position.Z  --z position of unit
+					local rayOrigin3 = CFrame.new(xPos3, 1000, zPos3).p
+					local rayDestination3 = CFrame.new(xPos3, -500, zPos3).p
+					local rayDirection3 = (rayDestination3 - rayOrigin3)
+					local raycastResult3 = workspace:Raycast(rayOrigin3, rayDirection3, raycastParams)
+					a3.CFrame = CFrame.new(raycastResult3.Position) * CFrame.Angles(0, -0, -0)
+					local xPos4 = a.Position.X - x --x position of unit
+					local zPos4 = a.Position.Z  --z position of unit
+					local rayOrigin4 = CFrame.new(xPos4, 1000, zPos4).p
+					local rayDestination4 = CFrame.new(xPos4, -500, zPos4).p
+					local rayDirection4 = (rayDestination4 - rayOrigin4)
+					local raycastResult4 = workspace:Raycast(rayOrigin4, rayDirection4, raycastParams)
+					a4.CFrame = CFrame.new(raycastResult4.Position) * CFrame.Angles(0, -0, -0)
+					local xPos5 = a.Position.X + x--x position of unit
+					local zPos5 = a.Position.Z + z --z position of unit
+					local rayOrigin5 = CFrame.new(xPos5, 1000, zPos5).p
+					local rayDestination5 = CFrame.new(xPos5, -500, zPos5).p
+					local rayDirection5 = (rayDestination5 - rayOrigin5)
+					local raycastResult5 = workspace:Raycast(rayOrigin5, rayDirection5, raycastParams)
+					a5.CFrame = CFrame.new(raycastResult5.Position) * CFrame.Angles(0, -0, -0)
+					local xPos6 = a.Position.X - x --x position of unit
+					local zPos6 = a.Position.Z + z --z position of unit
+					local rayOrigin6 = CFrame.new(xPos6, 1000, zPos6).p
+					local rayDestination6 = CFrame.new(xPos6, -500, zPos6).p
+					local rayDirection6 = (rayDestination6 - rayOrigin6)
+					local raycastResult6 = workspace:Raycast(rayOrigin6, rayDirection6, raycastParams)
+					a6.CFrame = CFrame.new(raycastResult6.Position) * CFrame.Angles(0, -0, -0)	
+				end)
+			end
+		end)
+	end)
+	task.wait()
+	a.Anchored = true
+	a2.Anchored = true
+	a3.Anchored = true
+	a4.Anchored = true
+	a5.Anchored = true
+	a6.Anchored = true
+	a.CanCollide = false
+	a2.CanCollide = false
+	a3.CanCollide = false
+	a4.CanCollide = false
+	a5.CanCollide = false
+	a6.CanCollide = false
+	if _G.gg and not mobile then
+		kjqhwe = mouse.Button1Down:Connect(function()
+			kjqhwe:Disconnect()
+			print("b")
+			savepos(UnitPos, a,a2,a3,a4,a5,a6)
+			_G.gg = false 
+			for i = 0, 1, 0.1 do
+				a.Transparency = i
+				a2.Transparency = i
+				a3.Transparency = i
+				a4.Transparency = i
+				a5.Transparency = i
+				a6.Transparency = i
+				task.wait()
+			end
+			a:Destroy()
+			a2:Destroy()
+			a3:Destroy()
+			a4:Destroy()
+			a5:Destroy()
+			a6:Destroy()
+		end)
+	elseif _G.gg  and mobile then
+		mobilegui(UnitPos, a,a2,a3,a4,a5,a6)
+	end
+end
+local function UnitPosSec()
+    UnitPosition:Cheat("Button", "Unit 1 Position", function()
+        MouseClick2("UP1")
+    end)
+    UnitPosition:Cheat("Button", "Unit 2 Position", function()
+        MouseClick2("UP2")
+    end)
+    UnitPosition:Cheat("Button", "Unit 3 Position", function()
+        MouseClick2("UP3")
+    end)
+    UnitPosition:Cheat("Button", "Unit 4 Position", function()
+        MouseClick2("UP4")
+    end)
+    UnitPosition:Cheat("Button", "Unit 5 Position", function()
+        MouseClick2("UP5")
+    end)
+    UnitPosition:Cheat("Button", "Unit 6 Position", function()
+        MouseClick2("UP6")
+    end)
+end
+local function unitconfig()
+    --emptyxx:Cheat("Label","    ")
+    --NDY:Cheat("Label","THIS SECTION IS NOT FINISHED SO IT WILL NOT WORK. FOR UPDATE JOIN DISCORD!")
+    --NDY2:Cheat("Label","    ")
+    NDY:Cheat("Checkbox"," Open Unit Config  ", function(bool)
+        print(bool)
+        Settings.unitconfig = bool
+        saveSettings()
+    end,{enabled = Settings.unitconfig })
+    NDY2:Cheat("Button", "Test Reset unit config", function()
+        print(Settings.reunitc)
+        reunitcon()
+    end)
+    --//UNIT 1
+    Unit1:Cheat("Textbox", "Placement Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_UnPlace = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_UnPlace})
+    Unit1:Cheat("Textbox", "Place from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_Wave})
+    Unit1:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_TotalAmmount})
+    Unit1:Cheat("Textbox", "Upgrade Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_UpgPro = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_UpgPro})
+    Unit1:Cheat("Textbox", "Upgrade from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_UpgWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_UpgWave})
+    Unit1:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_UpgCap})
+    Unit1:Cheat("Textbox", "Auto Sell at wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_SellWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_SellWave}) 
+    --//UNIT 2
+    Unit2:Cheat("Textbox", "Placement Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_UnPlace = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_UnPlace})
+    Unit2:Cheat("Textbox", "Place from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_Wave})
+    Unit2:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_TotalAmmount})
+    Unit2:Cheat("Textbox", "Upgrade Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_UpgPro = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_UpgPro})
+    Unit2:Cheat("Textbox", "Upgrade from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_UpgWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_UpgWave})
+    Unit2:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_UpgCap})
+    Unit2:Cheat("Textbox", "Auto Sell at wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_SellWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_SellWave}) 
+    
+    --//UNIT 3
+    Unit3:Cheat("Textbox", "Placement Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_UnPlace = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_UnPlace})
+    Unit3:Cheat("Textbox", "Place from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_Wave})
+    
+    Unit3:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_TotalAmmount})
+    Unit3:Cheat("Textbox", "Upgrade Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_UpgPro = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_UpgPro})
+    
+    Unit3:Cheat("Textbox", "Upgrade from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_UpgWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_UpgWave})
+    
+    Unit3:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_UpgCap})
+    
+    Unit3:Cheat("Textbox", "Auto Sell at wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_SellWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_SellWave}) 
+    --//UNIT 4
+    Unit4:Cheat("Textbox", "Placement Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_UnPlace = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_UnPlace})
+    Unit4:Cheat("Textbox", "Place from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_Wave})
+    
+    Unit4:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_TotalAmmount})
+    Unit4:Cheat("Textbox", "Upgrade Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_UpgPro = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_UpgPro})
+    
+    Unit4:Cheat("Textbox", "Upgrade from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_UpgWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_UpgWave})
+    
+    Unit4:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_UpgCap})
+    
+    Unit4:Cheat("Textbox", "Auto Sell at wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_SellWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_SellWave}) 
+    
+    --//UNIT 5
+    Unit5:Cheat("Textbox", "Placement Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U5_UnPlace = Value
+        saveSettings()
+    end, {placeholder = Settings.U5_UnPlace})
+    Unit5:Cheat("Textbox", "Place from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U5_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U5_Wave})
+        
+    Unit5:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U5_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U5_TotalAmmount})
+    Unit5:Cheat("Textbox", "Upgrade Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U5_UpgPro = Value
+        saveSettings()
+    end, {placeholder = Settings.U5_UpgPro})
+        
+    Unit5:Cheat("Textbox", "Upgrade from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U5_UpgWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U5_UpgWave})
+        
+    Unit5:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U5_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U5_UpgCap})
+        
+    Unit5:Cheat("Textbox", "Auto Sell at wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U5_SellWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U5_SellWave}) 
+    --//UNIT 6
+    Unit6:Cheat("Textbox", "Placement Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_UnPlace = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_UnPlace})
+    Unit6:Cheat("Textbox", "Place from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_Wave = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_Wave})
+    
+    Unit6:Cheat("Textbox", "Total Units", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_TotalAmmount = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_TotalAmmount})
+    Unit6:Cheat("Textbox", "Upgrade Priority", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_UpgPro = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_UpgPro})
+    
+    Unit6:Cheat("Textbox", "Upgrade from wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_UpgWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_UpgWave})
+    
+    Unit6:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_UpgCap})
+    
+    Unit6:Cheat("Textbox", "Auto Sell at wave", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_SellWave = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_SellWave}) 
+end
+
+---------------------------------------------
+--resetautofarmUI
+local function reFarmconfig()
+
+    reFarmConfig:Cheat("Button", "Reset Farm config", function()
+        print(Settings.refarmc)
+        refarmcon()
+    end)
+
+    reFarmConfig:Cheat("Button", "Set Story", function()
+        print(Settings.setfarm1)
+        setfarm1()
+    end)
+
+    reFarmConfig:Cheat("Button", "Set Story & Replay", function()
+        print(Settings.setfarm2)
+        setfarm2()
+    end)
+
+    reFarmConfig:Cheat("Button", "Set Inf Castle & Next Level", function()
+        print(Settings.setfarmIC)
+        setfarmIC()
+    end)
+
+end
+---------------------------------------------
+
+---------------------------------------------
+local function LAGGYconfig()
+    LG1:Cheat("Label"," Is a BETA Version // Enjoy ")
+
+    LG1:Cheat("Textbox", "LAG Threads", function(Value)
+        print("LAG threads.:", Value)
+        Settings.max = tonumber(Value)
+        saveSettings()
+    end, {placeholder = Settings.max or 22})
+
+    LG1:Cheat("Textbox", "LAG Tries ", function(Value)
+        print("LAG tries.:", Value)
+        Settings.mix = tonumber(Value)
+        saveSettings()
+    end, {placeholder = Settings.mix or 0})
+
+    LG1:Cheat("Textbox", "Delay ", function(Value)
+        print("Delay.:", Value)
+        Settings.delag = tonumber(Value)
+        saveSettings()
+    end, {placeholder = Settings.delag or 1.5})
+
+    LG1:Cheat("Slider", "LAG Lv. [slide]", function(Value)
+        print("LAG Lv.:", Value)
+        Settings.mix = tonumber(Value)
+        saveSettings()
+    end, {min = 0, max = 7, suffix = "", default = 0 })
+
+    LG1:Cheat("Slider", "Delay [slide]", function(Value)
+        print("Delay.:", Value)
+        Settings.delag = tonumber(Value)
+        saveSettings()
+    end, {min = 0, max = 10, suffix = "", default = 1.5 })
+
+
+    LG1:Cheat("Label","  ")
+    LG1:Cheat("Label"," Set Tries to 0 for close LAG ")
+    LG1:Cheat("Label"," Threads = lower the faster it lags ")
+    LG1:Cheat("Label"," Tries = the higher the faster it lags ")
+    LG1:Cheat("Label"," Delay = lower the faster it lags")
+    LG1:Cheat("Label"," def settings : threads = 250, tries = 1, Delay = 1.5 ")
+    LG1:Cheat("Label"," fast-lag settings: threads = 10, tries = 1.5, Delay = 1.5 ")
+
+
+end
+----------------------------------------------
+---------------- Auto Summon -----------------
+----------------------------------------------
+function SummonUnits(banner, method)
+    local args = {
+        [1] = tostring(banner),
+        [2] = tostring(method)
+    }
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_from_banner:InvokeServer(unpack(args)) 
+    wait(1.5)
+end
+function AutoSummon()
+    local aaselectbanner = AutoSummonSec:Cheat("Dropdown", "Select Banner",function(value)
+        getgenv().SelectedBanner = value
+    end, { options = {"Special", "Standard"}})
+    local aaselectbanner = AutoSummonSec:Cheat("Dropdown", "Select Method",function(value)
+        getgenv().SelectedMethod = value
+    end, { options = {"ticket", "gems", "gems10"}})
+    AutoSummonSec:Cheat("Checkbox","Auto Summon", function(bool)
+        getgenv().AutoSummon = bool
+    end)
+end
+----------------------------------------------
+------------ Auto Snipe Merchant -------------
+----------------------------------------------
+function buymerchant(item)
+    local args = { [1] = item } 
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_travelling_merchant_item:InvokeServer(unpack(args))
+end
+function snipefunc(item)
+    if item =="Any StarFruits" then
+        if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
+            for i,v in pairs(game:GetService("Workspace")["travelling_merchant"]:FindFirstChild("stand"):FindFirstChild("items"):GetChildren()) do
+                if v.Name:match("StarFruitsRainbow") then
+                    buymerchant(v.Name)
+                    print(v.Name)
+                end   
+            end
+        end        
+    elseif item == "Any Items"then
+        if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
+            for i,v in pairs(game:GetService("Workspace")["travelling_merchant"]:FindFirstChild("stand"):FindFirstChild("items"):GetChildren()) do
+                if v.Name:match("LuckPotion") or v.Name:match("star_remnant") or v.Name:match("summon_ticket") then
+                    buymerchant(v.Name)
+                    print(v.Name)
+                end  
+            end
+        end
+    else
+        for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.ItemShop:FindFirstChild("Window"):FindFirstChild("Outer"):FindFirstChild("ItemFrames"):GetChildren()) do
+            if game:GetService("Workspace")["travelling_merchant"]["is_open"].Value == true then
+                for i,v in pairs(game:GetService("Workspace")["travelling_merchant"]:FindFirstChild("stand"):FindFirstChild("items"):GetChildren()) do
+                    if v.Name:match(tostring(item)) then
+                        buymerchant(v.Name)
+                        print(v.Name)
+                    end  
+                end
+            end 
+        end
+    end
+end
+function SnipeMerchant()
+    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Star Fruit",function(value)
+        Settings.ASM_SelectedFruit = value
+        saveSettings()
+    end, { options = {"None","StarFruit","StarFruitGreen","StarFruitRed", "StarFruitPink","StarFruitBlue","StarFruitEpic"}, default =Settings.ASM_SelectedFruit})
+   
+    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Other Items",function(value)
+        Settings.ASM_SelectedOtherItems = value
+        saveSettings()
+    end, { options = {"None","Any Items","LuckPotion","star_remnant","summon_ticket"}, default =Settings.ASM_SelectedOtherItems})
+
+    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Evo Items",function(value)
+        Settings.ASM_SelectedEvoItems = value
+        saveSettings()
+    end, { options = {"None"}, default =Settings.ASM_SelectedEvoItems})
+    
+    AutoSnipeMerchantSec:Cheat("Checkbox","Enable Auto Snipe", function(bool)
+        Settings.AutoSnipeMerchant = bool
+        saveSettings()
+    end,{enabled = Settings.AutoSnipeMerchant })
+end
+----------------------------------------------
+-------------- Discord Webhook ---------------
+----------------------------------------------
+function Webhooksec()
+    
+    WebhookSec:Cheat("Textbox", "Webhook Url", function(Value)
+        Settings.WebhookUrl = Value
+        saveSettings()
+    end, {placeholder = Settings.WebhookUrl})
+    
+    WebhookSec:Cheat("Textbox", "Baby Webhook Url", function(Value)
+        Settings.BabyWebhookUrl = Value
+        saveSettings()
+    end, {placeholder = Settings.BabyWebhookUrl})
+
+    WebhookSec:Cheat("Textbox", "Snipe Webhook Url", function(Value)
+        Settings.SnipeWebhookUrl = Value
+        saveSettings()
+    end, {placeholder = Settings.SnipeWebhookUrl})
+    WebhookSec:Cheat("Checkbox","Enable Webhook", function(bool)
+        Settings.WebhookEnabled = bool
+        saveSettings()
+    end,{enabled = Settings.WebhookEnabled})
+
+    WebhookSec:Cheat("Checkbox","Enable Baby Webhook [BTP,Castle,Tour]", function(bool)
+        Settings.BabyWebhookEnabled = bool
+        saveSettings()
+    end,{enabled = Settings.BabyWebhookEnabled})
+
+    WebhookSec:Cheat("Checkbox","Enable Snipe Webhook [Banner & Shop]", function(bool)
+        Settings.snipeWebhookEnabled = bool
+        saveSettings()
+    end,{enabled = Settings.snipeWebhookEnabled})
+
+    WebhookSec:Cheat("Button", "Test Webhook", function()
+        print(Settings.WebhookUrl)
+        webhook()
+    end)
+end
+
+function Webhooksec2()
+
+    WebhookSec:Cheat("Button", "Test Baby Webhook", function()
+        print(Settings.WebhookUrl)
+        BabyWebhook()
+        SnipeShopNew()
+    end)
+end
+----------------------------------------------
+------------------ Others --------------------
+----------------------------------------------
+function autoload()
+    pcall(function()
+        local exec = tostring(identifyexecutor())
+        if exec == "Synapse X" and Settings.AutoLoadScript then
+            syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua'))()")
+        elseif exec ~= "Synapse X" and Settings.AutoLoadScript then
+            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua'))()")
+        end
+    end)
+end
+if Settings.AutoLoadScript then
+    autoload()
+end
+
+function autoload2()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua'))()
+end
+
+if Settings.refarmc then
+    autoload2() end
+if Settings.setfarm1 then
+    autoload2() end
+if Settings.setfarm2 then
+    autoload2() end
+if Settings.setfarmIC then
+    autoload2() end
+
+
+function others()
+
+    OtherSec:Cheat("Button", "Leave To Lobby", function()
+        warn("Return to Lobby")
+        Teleport()
+    end)
+
+    OtherSec:Cheat("Button", "Redeem All Code", function()
+        print(Settings.redeemc)
+        Reedemcode()
+    end)
+
+    OtherSec:Cheat("Checkbox","⌛ Auto Load Script ⌛", function(bool)
+        Settings.AutoLoadScript = bool
+        saveSettings()
+        autoload()
+    end,{enabled = Settings.AutoLoadScript})
+
+    OtherSec:Cheat("Checkbox","🐱 Hide Name Player 🐱", function(bool)
+        Settings.hidenamep = bool
+        saveSettings()
+        hidename()
+    end,{enabled = Settings.hidenamep})
+
+    OtherSec:Cheat("Checkbox","Auto Grab Daily Quest ", function(bool)
+        print(Settings.autoDailyquest)
+        Settings.autoDailyquest = bool
+        saveSettings()
+        autoDailyquest()
+    end,{enabled = Settings.autoDailyquest})
+
+    OtherSec:Cheat("Checkbox","Auto Feed EGG ", function(bool)
+        print(bool)
+        Settings.AutoFeedEgg = bool
+        saveSettings()
+        --FeedEggA()
+    end,{enabled = Settings.AutoFeedEgg})
+    
+    OtherSec:Cheat("Checkbox","Auto Claim EGG ", function(bool)
+        print(bool)
+        Settings.AutoClaimEgg = bool
+        saveSettings()
+        --ClaimEggA()
+    end,{enabled = Settings.AutoClaimEgg})
+
+    OtherSec:Cheat("Checkbox","Find Picoro [HOP]", function(bool)
+        print(bool)
+        Settings.picoHOP = bool
+        saveSettings()
+        TeleportHOP()
+    end,{enabled = Settings.picoHOP})
+
+    --[[OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
+        Settings.deletemap = bool
+        saveSettings()
+        DelTer()
+        DelMap()
+    end,{enabled = Settings.deletemap})]]
+    
+end
+----------------------------------------------
+------------ /\/\/\/\/\/\/\/\/\ --------------
+----------------------------------------------
+if game.PlaceId == 8304191830 then
+    UnitPosition:Cheat("Label","Not available in game Lobby!")    
+    UnitSec()
+    WorldSec()
+    AutoFarmSec()
+    MoreFarmSec()
+    ChallengeSec()
+    unitconfig()
+    reFarmconfig()
+    LAGGYconfig()
+    credits()
+    AutoSummon()
+    SnipeMerchant()
+    Webhooksec()
+    Webhooksec2()
+    others()
+else
+    SelectUnits:Cheat("Label","Only available in game Lobby!")    
+    AutoSummonSec:Cheat("Label","Only available in game Lobby!")    
+    WorldSec()
+    AutoFarmSec()
+    MoreFarmSec()
+    ChallengeSec()
+    UnitPosSec()
+    unitconfig()
+    reFarmconfig()
+    LAGGYconfig()
+    credits()
+    SnipeMerchant()
+    Webhooksec()
+    others()
+    WebhookSec:Cheat("Label","")
+    WebhookSec:Cheat("Label","Test Baby&Shop Webhook Only available in game Lobby!")
+end
+----------------------------------------------
+------------ /\/\/\/\/\/\/\/\/\ --------------
+----------------------------------------------
+local function checkChallenge()
+    for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+        if v:IsA("SurfaceGui") then
+            if v:FindFirstChild("ChallengeCleared") then
+                return v.ChallengeCleared.Visible
+            end
+        end
+    end
+end
+local function checkReward() 
+    if checkChallenge() == false then
+        if Settings.SelectedReward == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value then
+            return true
+        elseif Settings.AutoChallengeAll then
+            return true
+        else
+            return false
+        end
+    else
+        return false
+    end
+end
+local function startChallenge()
+    if game.PlaceId == 8304191830 then
+        local cpos = plr.Character.HumanoidRootPart.CFrame
+        if Settings.AutoChallenge and Settings.AutoFarm  and checkReward() == true then
+            for i, v in pairs(game:GetService("Workspace")["_CHALLENGES"].Challenges:GetDescendants()) do
+                if v.Name == "Owner" and v.Value == nil then
+                    --print(v.Parent.Name.." "..v.Parent:GetFullName())
+                    local args = {  [1] = tostring(v.Parent.Name) }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+                    Settings.chdoor = v.Parent.Name
+                    break
+                end
+            end
+            task.wait()
+            plr.Character.HumanoidRootPart.CFrame = cpos
+        end
+    end
+end
+--test fixportal
+function getBorosPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_boros_g" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+
+function getDemonPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "april_portal_item" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+
+function getZeldrisPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_zeldris" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+function GetPortals(id)
+    local reg = getreg() 
+    local portals = {}
+    for i,v in next, reg do
+        if type(v) == 'function' then 
+            if getfenv(v).script then 
+                for _, v in pairs(debug.getupvalues(v)) do 
+                    if type(v) == 'table' then
+                        if v["session"] then
+                            for _, item in pairs(v["session"]["inventory"]['inventory_profile_data']['unique_items']) do
+                            if item["item_id"]:match(id) then
+                                    table.insert(portals, item)
+                              end
+                            end
+                            return portals
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+Settings.teleporting = true
+getgenv().door = "_lobbytemplategreen1"
+local function startfarming()
+    if game.PlaceId == 8304191830 and not Settings.farmprotal and Settings.autostart and Settings.AutoFarm and Settings.teleporting and not Settings.AutoInfinityCastle then
+        local cpos = plr.Character.HumanoidRootPart.CFrame; cata = Settings.WorldCategory; level = Settings.SelectedLevel;
+        
+        if cata == "Story Worlds" or cata == "Legend Stages" then
+            if tostring(game.Workspace._LOBBIES.Story[getgenv().door].Owner.Value) ~= plr.Name then
+                for i, v in pairs(game:GetService("Workspace")["_LOBBIES"].Story:GetDescendants()) do
+                    if v.Name == "Owner" and v.Value == nil then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+    
+                        task.wait()
+                    
+                        local args = {
+                            [1] = tostring(v.Parent.Name), -- Lobby 
+                            [2] = Settings.SelectedLevel, -- World/Level
+                            [3] = Settings.isFriendOnly or true, -- Friends Only or not
+                            [4] = Settings.Difficulty }
+    
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+    
+                        local args = { [1] =tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        
+                        getgenv().door = v.Parent.Name print(v.Parent.Name) --v.Parent:GetFullName()
+                        plr.Character.HumanoidRootPart.CFrame = v.Parent.Door.CFrame
+                        break
+                    end
+                end
+    
+                task.wait()
+    
+                plr.Character.HumanoidRootPart.CFrame = cpos
+    
+                if Workspace._LOBBIES.Story[getgenv().door].Owner == plr.Name then
+                    if Workspace._LOBBIES.Story[getgenv().door].Teleporting.Value == true then
+                        getgenv().teleporting = false
+                    else
+                        getgenv().teleporting = true
+                    end
+                end
+    
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
+                print("send Webhook")
+                task.wait(1.1)
+                warn("farming")
+                task.wait(3)
+            end
+        elseif cata == "Raid Worlds" then
+            getgenv().door =  "_lobbytemplate212"
+            if tostring(game.Workspace._RAID.Raid[getgenv().door].Owner.Value) ~= plr.Name then
+                for i, v in pairs(game:GetService("Workspace")["_RAID"].Raid:GetDescendants()) do
+                    if v.Name == "Owner" and v.Value == nil then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+    
+                        task.wait()
+                    
+                        local args = {
+                            [1] = tostring(v.Parent.Name), -- Lobby 
+                            [2] = Settings.SelectedLevel, -- World/Level
+                            [3] = Settings.isFriendOnly or true, -- Friends Only or not
+                            [4] = Settings.Difficulty }
+    
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+    
+                        local args = { [1] =tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        
+                        getgenv().door = v.Parent.Name print(v.Parent.Name) --v.Parent:GetFullName()
+                        plr.Character.HumanoidRootPart.CFrame = v.Parent.Door.CFrame
+                        break
+                    end
+                end
+    
+                task.wait()
+    
+                plr.Character.HumanoidRootPart.CFrame = cpos
+    
+                if Workspace._RAID.Raid[getgenv().door].Owner == plr.Name then
+                    if Workspace._RAID.Raid[getgenv().door].Teleporting.Value == true then
+                        getgenv().teleporting = false
+                    else
+                        getgenv().teleporting = true
+                    end
+                end
+    
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
+                print("send Webhook")
+                task.wait(1.1)
+                warn("farming")
+                task.wait(3)
+            end
+        elseif cata == "Portals" then
+            --aline fixportal
+            if level == "portal_boros_g" then
+                local args = {
+                    [1] = GetPortals("portal_boros_g")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                warn("Aline farming")
+                task.wait(7)
+                --Demon fixportal		
+            elseif level == "april_portal_item" then
+                local args = {
+                    [1] = GetPortals("april_portal_item")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+            pcall(function() 
+                BabyWebhook()
+                SnipeShopNew()
+             end)
+                print("send Webhook")
+                task.wait(1.1)
+                warn("Demon farming")
+                task.wait(7)
+                --7Ds fixportal		
+            elseif level == "portal_zeldris" then
+                local args = {
+                    [1] = GetPortals("portal_zeldris")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
+                print("send Webhook")
+                task.wait(1.1)
+                warn("7ds farming")
+                task.wait(7)
+            end
+        elseif cata == "Dungeon" then
+            if level == "jjk_finger" then --_lobbytemplate_event222
+            getgenv().door = "_lobbytemplate_event222"
+            local string_1 = "_lobbytemplate_event222";
+            local table_1 = {
+                ["selected_key"] = "key_jjk_finger" --key_jjk_finger
+            };
+            local Target = game:GetService("ReplicatedStorage").endpoints["client_to_server"]["request_join_lobby"];
+            Target:InvokeServer(string_1, table_1);
+        
+            if tostring(game.Workspace._DUNGEONS.Lobbies[getgenv().door].Owner.Value) ~= plr.Name then
+                for i, v in pairs(game:GetService("Workspace")["_DUNGEONS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and v.Value == nil then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+    
+                        task.wait()
+                    
+                        local args = {
+                            [1] = tostring(v.Parent.Name), -- Lobby 
+                            [2] = Settings.SelectedLevel, -- World/Level
+                            [3] = Settings.isFriendOnly or true, -- Friends Only or not
+                            [4] = Settings.Difficulty 
+                        }
+    
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+    
+                        local args = { [1] =tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        
+                        getgenv().door = v.Parent.Name print(v.Parent.Name) --v.Parent:GetFullName()
+                        plr.Character.HumanoidRootPart.CFrame = v.Parent.Door.CFrame
+                        break
+                    end
+                end
+    
+                task.wait()
+    
+                plr.Character.HumanoidRootPart.CFrame = cpos
+    
+                if Workspace._DUNGEONS.Lobbies[getgenv().door].Owner == plr.Name then
+                    if Workspace._DUNGEONS.Lobbies[getgenv().door].Teleporting.Value == true then
+                        getgenv().teleporting = false
+                    else
+                        getgenv().teleporting = true
+                    end
+                end
+    
+                pcall(function() 
+                    BabyWebhook() 
+                    SnipeShopNew()
+                
+                end)
+                print("send Webhook")
+                task.wait(1.1)
+                warn("DUNGEONS jjk_finger farming")
+                task.wait(3)
+            end
+                --ดันเกะโท
+        elseif cata == "Dungeon" then
+            if level == "jjk_raid" then
+                getgenv().door = "_lobbytemplate_event23"
+                local string_1 = "_lobbytemplate_event23";
+                local table_1 = {
+                    ["selected_key"] = "key_jjk_map"
+                };
+                local Target = game:GetService("ReplicatedStorage").endpoints["client_to_server"]["request_join_lobby"];
+                Target:InvokeServer(string_1, table_1);
+            
+                if tostring(game.Workspace._DUNGEONS.Lobbies[getgenv().door].Owner.Value) ~= plr.Name then
+                    for i, v in pairs(game:GetService("Workspace")["_DUNGEONS"].Lobbies:GetDescendants()) do
+                        if v.Name == "Owner" and v.Value == nil then
+                            local args = { [1] = tostring(v.Parent.Name) }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+        
+                            task.wait()
+                        
+                            local args = {
+                                [1] = tostring(v.Parent.Name), -- Lobby 
+                                [2] = Settings.SelectedLevel, -- World/Level
+                                [3] = Settings.isFriendOnly or true, -- Friends Only or not
+                                [4] = Settings.Difficulty 
+                            }
+        
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_lock_level:InvokeServer(unpack(args))
+        
+                            local args = { [1] =tostring(v.Parent.Name) }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                            
+                            getgenv().door = v.Parent.Name print(v.Parent.Name) --v.Parent:GetFullName()
+                            plr.Character.HumanoidRootPart.CFrame = v.Parent.Door.CFrame
+                            break
+                        end
+                    end
+        
+                    task.wait()
+        
+                    plr.Character.HumanoidRootPart.CFrame = cpos
+        
+                    if Workspace._DUNGEONS.Lobbies[getgenv().door].Owner == plr.Name then
+                        if Workspace._DUNGEONS.Lobbies[getgenv().door].Teleporting.Value == true then
+                            getgenv().teleporting = false
+                        else
+                            getgenv().teleporting = true
+                        end
+                    end
+        
+                    pcall(function() 
+                        BabyWebhook() 
+                        SnipeShopNew()
+                    
+                    end)
+                    print("send Webhook")
+                    task.wait(1.1)
+                    warn("DUNGEONS jjk_raid farming")
+                    task.wait(3)
+                end
+                end
+            end
+        end
+    end
+end
+getgenv().autoabilityerr = false
+function autoabilityfunc()
+    local success, err = pcall(function() --///
+        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+        for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+            if v:FindFirstChild("_stats") then
+                if v._stats:FindFirstChild("player") and v._stats:FindFirstChild("xp") then
+                    if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value > 0 then
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                    end
+                end
+            end
+        end
+    end)
+     
+     if err then
+         warn("//////////////////////////////////////////////////")
+         getgenv().autoabilityerr = true
+         error(err)
+     end
+end
+function autoupgradefunc()
+    local success, err = pcall(function() --///
+        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+        for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+           if v:FindFirstChild("_stats") then
+                if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end)
+    if err then
+        warn("//////////////////////////////////////////////////")
+        warn("//////////////////////////////////////////////////")
+        getgenv().autoupgradeerr = true
+        error(err)
+    end
+end
+local function FarmInfinityCastle()
+    if Settings.AutoInfinityCastle and Settings.AutoFarm or Settings.AutoInfinityCastle then
+        if game.PlaceId == 8304191830 then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12423.1855, 155.24025, 3198.07593, -1.34111269e-06, -2.02512282e-08, 1, 3.91705386e-13, 1, 2.02512282e-08, -1, 4.18864542e-13, -1.34111269e-06)
+            getgenv().infinityroom = 0
+            for i, v in pairs(game:GetService("Players")[game.Players.LocalPlayer.Name].PlayerGui.InfiniteTowerUI.LevelSelect.InfoFrame.LevelButtons:GetChildren()) do
+                if v.Name == "FloorButton" then
+                    if v.clear.Visible == false and v.Locked.Visible == false then
+                        local room = string.split(v.Main.text.Text, " ")
+                        local args = {
+                            [1] = tonumber(room[2])
+                        }
+                        
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower:InvokeServer(unpack(args))
+                        getgenv().infinityroom = tonumber(room[2])
+                        break
+                    end
+                end
+            end
+            task.wait(6)
+        end
+    end
+end
+
+
+coroutine.resume(coroutine.create(function()
+    while task.wait() do
+        if not Settings.AutoInfinityCastle then
+            if not checkChallenge() then --Challenge_Not_Complete
+                if  Settings.AutoChallenge and checkReward() == true then
+                    startChallenge() --S_Challenge
+                else
+                    startfarming()--S_Farming
+                end
+            elseif checkChallenge() == true then
+                startfarming()--S_Farming
+                BabyWebhook()
+                SnipeShopNew()
+            end
+        elseif not Settings.AutoInfinityCastle == true then--Infiniy Castle
+            if not checkChallenge() then --Challenge_Not_Complete
+                if  Settings.AutoChallengeAll then
+                    startChallenge() --S_Challenge
+                else
+                    startfarming()--S_Farming
+                end
+            elseif checkChallenge() == true then
+                startfarming()--S_Farming
+                BabyWebhook()
+                SnipeShopNew()
+            end
+        elseif Settings.AutoInfinityCastle == true then--Infiniy Castle
+            if not checkChallenge() then --Challenge_Not_Complete
+                if  Settings.AutoChallenge and checkReward() == true then
+                    startChallenge() --S_Challenge
+                else
+                    FarmInfinityCastle()--S_Farming
+                end
+            elseif checkChallenge() == true then
+                FarmInfinityCastle()--S_Farming
+                BabyWebhook()
+                SnipeShopNew()
+            end
+        end
+        if game.PlaceId ~= 8304191830 then
+            local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+            if Settings.autoQuit and not Settings.AutoSell and tonumber(Settings.AutoSellWave) <= _wave.Value then
+                pcall(function() webhook() end)
+                print("send Webhook")
+                task.wait(2.1)
+                print("Returning to lobby...")
+                task.wait(2.1)
+                Teleport()
+            end
+            if Settings.AutoSell and not Settings.autoQuit and tonumber(Settings.AutoSellWave) <= _wave.Value then
+                getgenv().disableatuofarm = true
+                repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+                for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+                    repeat task.wait()
+                    until v:WaitForChild("_stats")
+                    if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+                        repeat
+                            task.wait()
+                        until v:WaitForChild("_stats"):WaitForChild("upgrade")
+            
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+                    end
+                end
+            end
+        end
+    end
+end))
+
+coroutine.resume(coroutine.create(function()
+    while task.wait(2) do
+        if Settings.AutoAbilities then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    autoabilityfunc()
+                end)
+            end
+            if  getgenv().autoabilityerr == true then
+                task.wait()
+                autoabilityfunc()
+                getgenv().autoabilityerr = false
+            end
+        end
+        
+        if Settings.AutoUpgrade and not Settings.unitconfig then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    autoupgradefunc()
+                end)
+            end
+            if  getgenv().autoupgradeerr == true then
+                task.wait()
+                autoupgradefunc()
+                getgenv().autoupgradeerr = false
+            end
+        end
+
+        if Settings.unitconfig and not Settings.AutoUpgrade then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    upgradeunit(name, min)
+                end)
+            end
+            if  getgenv().autoupgradeerr == true then
+                task.wait()
+                autoupgradefunc()
+                getgenv().autoupgradeerr = false
+            end
+        end
+        if Settings.unitconfig and Settings.AutoUpgrade then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    upgradeunit(name, min)
+                end)
+            end
+            if  getgenv().autoupgradeerr == true then
+                task.wait()
+                autoupgradefunc()
+                getgenv().autoupgradeerr = false
+            end
+        end
+    end
+end))
+------// Auto Leave \\------
+--#region Auto Leave 
+local PlaceID = 8304191830
+local AllIDs = {}
+local foundAnything = ""
+local actualHour = os.date("!*t").hour
+local Deleted = false
+local last
+local File = pcall(function()
+   AllIDs = game:GetService('HttpService'):JSONDecode(readfile("NotSameServers.json"))
+end)
+if not File then
+   table.insert(AllIDs, actualHour)
+   writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+end
+function TPReturner()
+   local Site;
+   if foundAnything == "" then
+       Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+   else
+       Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+   end
+   local ID = ""
+   if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+       foundAnything = Site.nextPageCursor
+   end
+   local num = 0;
+   local extranum = 0
+   for i,v in pairs(Site.data) do
+       extranum += 1
+       local Possible = true
+       ID = tostring(v.id)
+       if tonumber(v.maxPlayers) > tonumber(v.playing) then
+           if extranum ~= 1 and tonumber(v.playing) < last or extranum == 1 then
+               last = tonumber(v.playing)
+           elseif extranum ~= 1 then
+               continue
+           end
+           for _,Existing in pairs(AllIDs) do
+               if num ~= 0 then
+                   if ID == tostring(Existing) then
+                       Possible = false
+                   end
+               else
+                   if tonumber(actualHour) ~= tonumber(Existing) then
+                       local delFile = pcall(function()
+                           delfile("NotSameServers.json")
+                           AllIDs = {}
+                           table.insert(AllIDs, actualHour)
+                       end)
+                   end
+               end
+               num = num + 1
+           end
+           if Possible == true then
+               table.insert(AllIDs, ID)
+               wait()
+               pcall(function()
+                   writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+                   wait()
+                   game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+               end)
+               wait(4)
+           end
+       end
+   end
+end
+function Teleport()
+   while wait() do
+       pcall(function()
+           TPReturner()
+           if foundAnything ~= "" then
+               TPReturner()
+           end
+       end)
+   end
+end
+
+-------------------------------------------
+--testHOP
+Time = 3 -- seconds
+repeat wait() until game:IsLoaded()
+wait(Time)
+local PlaceID = game.PlaceId
+local AllIDs = {}
+local foundAnything = ""
+local actualHour = os.date("!*t").hour
+local Deleted = false
+function HopServer()
+   local Site;
+   if foundAnything == "" then
+       Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+   else
+       Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+   end
+   local ID = ""
+   if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+       foundAnything = Site.nextPageCursor
+   end
+   local num = 0;
+   for i,v in pairs(Site.data) do
+       local Possible = true
+       ID = tostring(v.id)
+       if tonumber(v.maxPlayers) > tonumber(v.playing) then
+           for _,Existing in pairs(AllIDs) do
+               if num ~= 0 then
+                   if ID == tostring(Existing) then
+                       Possible = false
+                   end
+               else
+                   if tonumber(actualHour) ~= tonumber(Existing) then
+                       local delFile = pcall(function()
+                           delfile("NotSameServers.json")
+                           AllIDs = {}
+                           table.insert(AllIDs, actualHour)
+                       end)
+                   end
+               end
+               num = num + 1
+           end
+           if Possible == true then
+               table.insert(AllIDs, ID)
+               wait()
+               pcall(function()
+                   writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
+                   wait()
+                   game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+               end)
+               wait(4)
+           end
+       end
+   end
+end
+
+function TeleportHOP()
+    while wait() do
+     warn("Teleport HOP")
+        pcall(function()
+            HopServer()
+            if game.ReplicatedStorage.LOBBY_ASSETS._EVENT_NPCS:FindFirstChild("piccolo_npc") then
+                wait(3)
+                HopServer()
+            elseif game.Workspace._npcs:FindFirstChild("piccolo_npc") then
+                local a={[1]="veku_jacket"} game:GetService("ReplicatedStorage").endpoints.client_to_server.try_purchase_april_item:InvokeServer(unpack(a))
+                local a={[1]="veku_jacket"} game:GetService("ReplicatedStorage").endpoints.client_to_server.try_purchase_april_item:InvokeServer(unpack(a))
+            end
+        end)
+    end
+ end 
+
+if Settings.picoHOP and game.ReplicatedStorage.LOBBY_ASSETS._EVENT_NPCS:FindFirstChild("piccolo_npc") then
+    TeleportHOP()
+--[[else
+    Settings.picoHOP and game.Workspace:FindFirstChild("_npcs"):FindFirstChild("piccolo_npc")]]
+end
+-------------------------------------------
+coroutine.resume(coroutine.create(function()
+	
+    task.spawn(function()
+        local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
+        GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
+            print("Changed", GameFinished.Value == true)
+            if GameFinished.Value == true then
+                repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
+                pcall(function() webhook() end)
+                print("Wait next or leave")
+                task.wait(2.1)
+            if Settings.AutoReplay then
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    print("Replay...") 
+            elseif Settings.AutoNext then
+                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    print("Next Story...") 
+            elseif Settings.AutoContinue then
+                local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))
+                local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))   
+                    print("Next Room infint Castle...")              
+            elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext and not Settings.AutoContinue then
+                   game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
+                
+                    Teleport()
+                    print("Returning to lobby...")
+                end
+            end
+        end)
+    end)
+    
+    while task.wait() do
+        if getgenv().AutoSummon then
+            if getgenv().SelectedBanner == "Special" and getgenv().SelectedMethod ~= nil then
+                SummonUnits("EventClover", getgenv().SelectedMethod)
+            elseif getgenv().SelectedBanner == "Standard" and getgenv().SelectedMethod ~= nil then
+                SummonUnits("Standard", getgenv().SelectedMethod)
+            end
+        end
+        if Settings.AutoSnipeMerchant then
+            if Settings.ASM_SelectedFruit ~= "None" or Settings.ASM_SelectedFruit ~= nil then
+                if Settings.ASM_SelectedFruit == "Any StarFruits" then
+                    snipefunc("Any StarFruits")
+                else
+                    snipefunc(Settings.ASM_SelectedFruit)
+                end
+            end
+            if Settings.ASM_SelectedOtherItems ~= "None" or Settings.ASM_SelectedOtherItems ~= nil then
+                if Settings.ASM_SelectedOtherItems == "Any StarFruits" then
+                    snipefunc("Any Items")
+                else
+                    snipefunc(Settings.ASM_SelectedOtherItems)
+                end
+            end
+            if Settings.ASM_SelectedEvoItems ~= "None" or Settings.ASM_SelectedEvoItems ~= nil then
+           
+            end
+        end
+    end  
+end))
+
+function PlacePos(map,name,_uuid,unit)
+    if Settings.AutoFarm and not getgenv().disableatuofarm then
+        --local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+        x = getgenv().posX; z = getgenv().posZ
+        --world = GetLevelData.world or GetLevelData.name
+			--print(tostring(world))
+            print(map)
+        local pos = Settings[map][unit]
+        --warn(map.." attemp to place "..name)
+        if name ~= "metal_knight_evolved" then
+            local i = math.random(1,6)
+            if i == 1 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            elseif i == 2 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"], pos["y2"], pos["z"] + z) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            elseif i == 3 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            elseif i == 4 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y4"], pos["z"]) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            elseif i == 5 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y5"], pos["z"] + z) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            elseif i == 6 then
+                    local args = {
+                    [1] = _uuid,
+                    [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y6"], pos["z"] + z) )
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                return
+            end
+        elseif name == "metal_knight_evolved" then
+            local i = math.random(1,6)
+            if i == 1 then
+                task.spawn(function()
+                    --place units 0
+                    warn("p1")
+                    local args = {
+                        [1] = _uuid,
+                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                end)
+                return
+            elseif i == 2 then
+                task.spawn(function()
+                    --place units 1
+                    task.wait(2)
+                    local args = {
+                        [1] = _uuid,
+                        [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y2"], pos["z"]) )
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                end)
+                return
+            elseif i == 3 then
+                task.spawn(function()
+                    --place units 2
+                    task.wait(3)
+                    local args = {
+                        [1] = _uuid,
+                        [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                end)
+            end
+        end
+        return
+    end
+end
+
+
+
+function GetUnitInfo(Unit)
+    local unitinfo = Settings.SelectedUnits[Unit]
+    local unitinfo_ = unitinfo:split(" #")
+    local _units = {}
+    local uu = {}
+    table.clear(_units)
+    table.clear(uu)
+    local name = " "
+    local min;
+    for i, v in pairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do 
+        for i,v in pairs(v:GetChildren()) do 
+            if v.Name == "_stats" then
+                if v:FindFirstChild("uuid") then
+                    if v.uuid.Value == unitinfo_[2] then
+                        table.insert(_units,v.Parent.Name)
+                        name = v.Parent.Name
+                    end
+                end
+                if v:FindFirstChild("uuid") and v:FindFirstChild("upgrade") then
+                    if v.uuid.Value == unitinfo_[2] then
+                        table.insert(uu,v.upgrade.Value)
+                    end
+                end
+            end
+        end
+    end
+    
+    if #uu ~= 0 then
+        min = math.min(table.unpack(uu))
+        table.sort(uu, function(a, b) return a < b end)
+        local min = uu[1]
+    end
+    
+    return #_units or 0, unitinfo_[1], unitinfo_[2], min or 0
+end
+
+--test Upgrade
+function upgradeunit(name, min)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+            if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.id.Value == name and v._stats.upgrade.Value <= min then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+
+
+--U1
+function upgradeunit1(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U1_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U2
+function upgradeunit2(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U2_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U3
+function upgradeunit3(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U3_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U4
+function upgradeunit4(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U4_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U5
+function upgradeunit5(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U5_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+--U6
+function upgradeunit6(name)
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+                --if v.Name == name and v._stats.upgrade.Value <= min then
+                if v._stats.upgrade.Value <= tonumber(Settings.U6_UpgCap or 99) then
+                   game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+
+
+---------------------------------
+---------test sell unit----------
+---------------------------------
+--test
+function sellunit(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+
+
+--unit1
+function sellunit1(name) 
+    U1_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U1_SellWave) <= U1_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit2
+function sellunit2(name) 
+    U2_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U2_SellWave) <= U2_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit3
+function sellunit3(name) 
+    U3_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U3_SellWave) <= U3_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit4
+function sellunit4(name) 
+    U4_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U4_SellWave) <= U4_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit5
+function sellunit5(name) 
+    U5_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U5_SellWave) <= U5_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--unit6
+function sellunit6(name) 
+    U6_wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v.Name == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
+            if tonumber(Settings.U6_SellWave) <= U6_wave.Value then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+---------------------------------
+---------------------------------
+---------------------------------
+function PlaceUnitsTEST(map,name,_uuid,unit)
+    local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+    world = GetLevelData.world or GetLevelData.name
+    current_wave = game:GetService("Workspace")["_wave_num"].Value
+    U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 1, Settings.U2_Wave or 1, Settings.U3_Wave or 1, Settings.U4_Wave or 1, Settings.U5_Wave or 1, Settings.U6_Wave or 1
+    U1_TAmm, U2_TAmm, U3_TAmm, U4_TAmm, U5_TAmm, U6_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6, Settings.U3_TotalAmmount or 6, Settings.U4_TotalAmmount or 6, Settings.U5_TotalAmmount or 6, Settings.U6_TotalAmmount or 6
+    U1_upgW, U2_upgW, U3_upgW, U4_upgW, U5_upgW, U6_upgW = Settings.U1_UpgWave or 1, Settings.U2_UpgWave or 1, Settings.U3_UpgWave or 1, Settings.U4_UpgWave or 1, Settings.U5_UpgWave or 1, Settings.U6_UpgWave or 1
+    U1_upgCap, U2_upgCap, U3_upgCap, U4_upgCap, U5_upgCap, U6_upgCap = Settings.U1_UpgCap or 99, Settings.U2_UpgCap or 99, Settings.U3_UpgCap or 99, Settings.U4_UpgCap or 99, Settings.U5_UpgCap or 99, Settings.U6_UpgCap or 99
+    U1_sellW, U2_sellW, U3_sellW, U4_sellW, U5_sellW, U6_sellW = Settings.U1_SellWave or 999, Settings.U2_SellWave or 999, Settings.U3_SellWave or 999, Settings.U4_SellWave or 999, Settings.U5_SellWave or 999, Settings.U6_SellWave or 999
+    U1_upgP, U2_upgP, U3_upgP, U4_upgP, U5_upgP, U6_upgP = Settings.U1_UpgPro or 1, Settings.U2_UpgPro or 1, Settings.U3_UpgPro or 1, Settings.U4_UpgPro or 1, Settings.U5_UpgPro or 1, Settings.U6_UpgPro or 1
+    U1_UnP, U2_UnP, U3_UnP, U4_UnP, U5_UnP, U6_UnP = Settings.U1_UnPlace or 1, Settings.U2_UnPlace or 1, Settings.U3_UnPlace or 1, Settings.U4_UnPlace or 1, Settings.U5_UnPlace or 1, Settings.U6_UnPlace or 1
+    
+    --//Unit 1
+    local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
+    if U1_wv <= current_wave and U1_amm <= U1_TAmm then
+        --[[if U1_UnP <= U1_wv and U1_UnP <= U2_UnP and U1_UnP <= U3_UnP and U1_UnP <= U4_UnP and U1_UnP <= U5_UnP and U1_UnP <= U6_UnP then]]
+        if U1_sellW >= current_wave and U1_amm < U1_TAmm then
+            print("placing u1.."..U1_name)
+            PlacePos(map, U1_name, U1_uuid,"UP1")
+        end
+        if U1_sellW <= current_wave then
+            print("selling u1.."..U1_name)
+            sellunit1(U1_name)
+        end
+        if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave --[[and U1_upgP <= U2_upgP and U1_upgP <= U3_upgP and U1_upgP <= U4_upgP and U1_upgP <= U5_upgP and U1_upgP <= U6_upgP]] then
+            print("upgrading u1.."..U1_name)
+            --upgradeunit(tostring(U1_name), (U1_upgCap))
+            upgradeunit(U1_name, U1_upgCap)
+        end
+    end
+--end
+    --//Unit 2
+    local U2_amm, U2_name, U2_uuid, U2_u = GetUnitInfo("U2")
+    if U2_wv <= current_wave and U2_amm <= U2_TAmm then
+        --[[if U2_UnP <= U2_wv and  U2_UnP <= U1_UnP and U2_UnP <= U3_UnP and U2_UnP <= U4_UnP and U2_UnP <= U5_UnP and U2_UnP <= U6_UnP then]]
+        if U2_sellW >= current_wave and U2_amm < U2_TAmm then
+            print("placing u2.."..U2_name)
+            PlacePos(map, U2_name, U2_uuid,"UP2")
+        end
+        if U2_sellW <= current_wave then
+            print("selling u2.."..U2_name)
+            sellunit2(U2_name)
+        end
+        if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave --[[and U2_upgP <= U1_upgP and U2_upgP <= U3_upgP and U2_upgP <= U4_upgP and U2_upgP <= U5_upgP and U2_upgP <= U6_upgP]]  then
+            print("upgrading u2.."..U2_name)
+            --upgradeunit(tostring(U2_name), (U2_upgCap))
+            upgradeunit(U2_name, U2_upgCap)
+        end
+    end
+--end
+    --//Unit 3
+    local U3_amm, U3_name, U3_uuid, U3_u = GetUnitInfo("U3")
+    if U3_wv <= current_wave and U3_amm <= U3_TAmm then
+        --[[if U3_UnP <= U3_wv and U3_UnP <= U1_UnP and U3_UnP <= U2_UnP and U3_UnP <= U4_UnP and U3_UnP <= U5_UnP and U3_UnP <= U6_UnP then]]
+	    if U3_sellW >= current_wave and U3_amm < U3_TAmm then
+		    print("placing u3.."..U3_name)
+		    PlacePos(map, U3_name, U3_uuid,"UP3")
+        end
+	    if U3_sellW <= current_wave then
+		    print("selling u3.."..U3_name)
+		    sellunit3(U3_name)
+	    end
+        if U3_u < U3_upgCap and U3_upgW <= current_wave --[[and U3_sellW >= current_wave and U3_upgP <= U1_upgP and U3_upgP <= U2_upgP and U3_upgP <= U4_upgP and U3_upgP <= U5_upgP and U3_upgP <= U6_upgP]] then
+            print("upgrading u3.."..U3_name)
+            --upgradeunit(tostring(U3_name), (U3_upgCap))
+            upgradeunit(U3_name, U3_upgCap)
+        end
+    end
+--end
+    --//Unit 4
+    local U4_amm, U4_name, U4_uuid, U4_u = GetUnitInfo("U4")
+    if U4_wv <= current_wave and U4_amm <= U4_TAmm then
+        --[[if U4_UnP <= U4_wv and U4_UnP <= U1_UnP and U4_UnP <= U2_UnP and U4_UnP <= U3_UnP and U4_UnP <= U5_UnP and U4_UnP <= U6_UnP then]]
+	    if U4_sellW >= current_wave and U4_amm < U4_TAmm then
+		    print("placing u4.."..U4_name)
+		    PlacePos(map, U4_name, U4_uuid,"UP4")
+        end
+	    if U4_sellW <= current_wave then
+		    print("selling u4.."..U4_name)
+		    sellunit4(U4_name)
+	    end
+        if U4_u < U4_upgCap and U4_upgW <= current_wave and U4_sellW >= current_wave --[[and U4_upgP <= U1_upgP and U4_upgP <= U2_upgP and U4_upgP <= U3_upgP and U4_upgP <= U5_upgP and U4_upgP <= U6_upgP]] then
+            print("upgrading u4.."..U4_name)
+            --upgradeunit(tostring(U4_name), (U4_upgCap))
+            upgradeunit(U4_name, U4_upgCap)
+        end
+    end
+--end
+    --//Unit 5
+    local U5_amm, U5_name, U5_uuid, U5_u = GetUnitInfo("U5")
+    if U5_wv <= current_wave and U5_amm <= U5_TAmm then
+        --[[if U5_UnP <= U5_wv and U5_UnP <= U1_UnP and U5_UnP <= U2_UnP and U5_UnP <= U3_UnP and U5_UnP <= U4_UnP and U5_UnP <= U6_UnP then]]
+	    if U5_sellW >= current_wave and U5_amm < U5_TAmm then
+		    print("placing u5.."..U5_name)
+		    PlacePos(map, U5_name, U5_uuid,"UP5")
+        end
+	    if U5_sellW <= current_wave then
+		    print("selling u5.."..U5_name)
+		    sellunit5(U5_name)
+	    end
+        if U5_u < U5_upgCap and U5_upgW <= current_wave and U5_sellW >= current_wave --[[and U5_upgP <= U1_upgP and U5_upgP <= U2_upgP and U5_upgP <= U3_upgP and U5_upgP <= U4_upgP and U5_upgP <= U6_upgP]] then
+            print("upgrading u5.."..U5_name)
+            --upgradeunit(tostring(U5_name), (U5_upgCap))
+            upgradeunit(U5_name, U5_upgCap)
+        end
+    end
+--end
+    --//Unit 6
+    local U6_amm, U6_name, U6_uuid, U6_u = GetUnitInfo("U6")
+    if U6_wv <= current_wave and U6_amm <= U6_TAmm then
+        --[[if U6_UnP <= U6_wv and U6_UnP <= U1_UnP and U6_UnP <= U2_UnP and U6_UnP <= U3_UnP and U6_UnP <= U4_UnP and U6_UnP <= U5_UnP then]]
+	    if U6_sellW >= current_wave and U6_amm < U6_TAmm then
+		    print("placing u6.."..U6_name)
+		    PlacePos(map, U6_name, U6_uuid,"UP6")
+        end
+	    if U6_sellW <= current_wave then
+		    print("selling u6.."..U6_name)
+		    sellunit6(U6_name)
+	    end
+        if U6_u < U6_upgCap and U6_upgW <= current_wave and U6_sellW >= current_wave --[[and U6_upgP <= U1_upgP and U6_upgP <= U2_upgP and U6_upgP <= U3_upgP and U6_upgP <= U4_upgP and U6_upgP <= U5_upgP]]  then
+            print("upgrading u6.."..U6_name)
+            --upgradeunit(tostring(U6_name), (U6_upgCap))
+            upgradeunit(U6_name, U6_upgCap)
+            end
+        end
+    end
+--end
+
+--test reset unit config
+function reunitcon()
+    print("reset unit config ?")
+    if Settings.U1_Wave then
+        Settings.U1_Wave = 1 end
+    if Settings.U2_Wave then
+        Settings.U2_Wave = 1 end
+    if Settings.U3_Wave then
+        Settings.U3_Wave = 1 end
+    if Settings.U4_Wave then
+        Settings.U4_Wave = 1 end
+    if Settings.U5_Wave then
+        Settings.U5_Wave = 1 end
+    if Settings.U6_Wave then
+        Settings.U6_Wave = 1 end
+    if Settings.U1_TotalAmmount then
+        Settings.U1_TotalAmmount = 6 end
+    if Settings.U2_TotalAmmount then
+        Settings.U2_TotalAmmount = 6 end
+    if Settings.U3_TotalAmmount then
+        Settings.U3_TotalAmmount = 6 end
+    if Settings.U4_TotalAmmount then
+        Settings.U4_TotalAmmount = 6 end
+    if Settings.U5_TotalAmmount then
+        Settings.U5_TotalAmmount = 6 end
+    if Settings.U6_TotalAmmount then
+        Settings.U6_TotalAmmount = 6 end
+    if Settings.U1_UpgWave then
+        Settings.U1_UpgWave = 1 end
+    if Settings.U2_UpgWave then
+        Settings.U2_UpgWave = 1 end
+    if Settings.U3_UpgWave then
+        Settings.U3_UpgWave = 1 end
+    if Settings.U4_UpgWave then
+        Settings.U4_UpgWave = 1 end
+    if Settings.U5_UpgWave then
+        Settings.U5_UpgWave = 1 end
+    if Settings.U6_UpgWave then
+        Settings.U6_UpgWave = 1 end
+    if Settings.U1_UpgCap then
+        Settings.U1_UpgCap = 99 end
+    if Settings.U2_UpgCap then
+        Settings.U2_UpgCap = 99 end
+    if Settings.U3_UpgCap then
+        Settings.U3_UpgCap = 99 end
+    if Settings.U4_UpgCap then
+        Settings.U4_UpgCap = 99 end
+    if Settings.U5_UpgCap then
+        Settings.U5_UpgCap = 99 end
+    if Settings.U6_UpgCap then
+        Settings.U6_UpgCap = 99 end
+    if Settings.U1_SellWave then
+        Settings.U1_SellWave = 99 end
+    if Settings.U2_SellWave then
+        Settings.U2_SellWave = 99 end
+    if Settings.U3_SellWave then
+        Settings.U3_SellWave = 99 end
+    if Settings.U4_SellWave then
+        Settings.U4_SellWave = 99 end
+    if Settings.U5_SellWave then
+        Settings.U5_SellWave = 99 end
+    if Settings.U6_SellWave then
+        Settings.U6_SellWave = 99 end
+    if Settings.U1_UpgPro then
+        Settings.U1_UpgPro = 1 end
+    if Settings.U2_UpgPro then
+        Settings.U2_UpgPro = 1 end
+    if Settings.U3_UpgPro then
+        Settings.U3_UpgPro = 1 end
+    if Settings.U4_UpgPro then
+        Settings.U4_UpgPro = 1 end
+    if Settings.U5_UpgPro then
+        Settings.U5_UpgPro = 1 end
+    if Settings.U6_UpgPro then
+        Settings.U6_UpgPro = 1 end
+    if Settings.U1_UnPlace then
+        Settings.U1_UnPlace = 1 end
+    if Settings.U2_UnPlace then
+        Settings.U2_UnPlace = 1 end
+    if Settings.U3_UnPlace then
+        Settings.U3_UnPlace = 1 end
+    if Settings.U4_UnPlace then
+        Settings.U4_UnPlace = 1 end
+    if Settings.U5_UnPlace then
+        Settings.U5_UnPlace = 1 end
+    if Settings.U6_UnPlace then
+        Settings.U6_UnPlace = 1 end
+  
+end
+if Settings.reunitc then
+    reunitcon()
+end
+--fix sell and place spam
+function PlaceUnits(map)
+    pcall(function()
+        if Settings.AutoFarm and not getgenv().disableatuofarm then
+            --local GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
+            x = getgenv().posX; z = getgenv().posZ
+            --world = GetLevelData.world or GetLevelData.name
+			--print(tostring(world))
+            print(map)
+            for i = 1, 6 do
+                local unitinfo = Settings.SelectedUnits["U" .. i]
+                if unitinfo ~= nil then
+                    local unitinfo_ = unitinfo:split(" #")
+                    local pos = Settings[map]["UP" .. i]
+                    print(map.." attemp to place "..unitinfo_[1])
+    
+                    if unitinfo_[1] ~= "metal_knight_evolved" then
+    
+                        --place units 0
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            
+                        --place units 1
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y2"], pos["z"]) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            
+                        --place units 2 
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y3"], pos["z"]) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            
+                        --place units 3 
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y4"], pos["z"]) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            
+                        --place units 4
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y5"], pos["z"]) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            
+                        --place units 5
+                        local args = {
+                            [1] = unitinfo_[2],
+                            [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y6"], pos["z"]) )
+                        }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+    
+                    elseif unitinfo_[1] == "metal_knight_evolved" then
+                       
+                        task.spawn(function()
+                            --place units 0
+                            warn("p1" )
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]) )
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end)
+                  
+                        task.spawn(function()
+                            --place units 1
+                            task.wait(2)
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] - x, pos["y"], pos["z"]) )
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end)
+                   
+                        task.spawn(function()
+                            --place units 2
+                            task.wait(3)
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"] + x, pos["y"], pos["z"]) )
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end)
+                    end
+                end
+            end
+        end
+    end)
+end
+
+------------------------------------------------------------------------------------------------
+--test deletemap place unit
+
+--open unitconfig
+
+--[[coroutine.resume(coroutine.create(function()
+    while task.wait(1.5) do
+        if game.PlaceId ~= 8304191830 and Settings.AutoFarm and Settings.unitconfig and not getgenv().disableatuofarm then
+            warn("Enable Unit Config")
+        local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_terrain")
+
+        PlaceUnitsTEST()
+
+        print("function called")
+        end
+    end
+end))
+
+--Close Unitconfig
+
+coroutine.resume(coroutine.create(function()
+    while task.wait(1.5) do
+        if game.PlaceId ~= 8304191830 and Settings.AutoFarm and not Settings.unitconfig and not getgenv().disableatuofarm then
+            warn("Disabled Unit Config")
+        local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_terrain")
+
+        PlaceUnits()
+
+        print("function called")
+        end
+    end
+end))]]
+
+------------------------------------------------------------------------------------------
+--updatefix fixmap warn("Enable Unit Config")
+coroutine.resume(coroutine.create(function()
+    while task.wait(1.5) do
+        if game.PlaceId ~= 8304191830 and Settings.AutoFarm and Settings.unitconfig and not getgenv().disableatuofarm then
+            warn("Enable Unit Config")
+            local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+            repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
+            if game.Workspace._map:FindFirstChild("namek mushroom model") then
+                PlaceUnitsTEST("namek")
+            elseif game.Workspace._map:FindFirstChild("houses_new") then
+                PlaceUnitsTEST("aot")
+            elseif game.Workspace._map:FindFirstChild("Snow Particles") then
+                PlaceUnitsTEST("demonslayer")
+            elseif game.Workspace._map:FindFirstChild("sand_gate") then 
+                PlaceUnitsTEST("naruto")
+            elseif game.Workspace._map:FindFirstChild("icebergs") then
+                PlaceUnitsTEST("marineford")
+            elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
+                PlaceUnitsTEST("tokyo_ghoul")
+            elseif game.Workspace._map:FindFirstChild("Bones/dust") then
+                PlaceUnitsTEST("hueco")
+            elseif game.Workspace._map:FindFirstChild("Ant Nest") then
+                PlaceUnitsTEST("hxhant")
+            elseif game.Workspace._map:FindFirstChild("light poles") then
+                PlaceUnitsTEST("magnolia")
+            elseif game.Workspace._map:FindFirstChild("LanternsGround") then
+                PlaceUnitsTEST("jjk")
+            elseif game.Workspace._map:FindFirstChild("pumpkins") then    
+                PlaceUnitsTEST("thriller_park")  
+            elseif game.Workspace._map:FindFirstChild("skeleton") then
+                PlaceUnitsTEST("clover")
+            elseif game.Workspace._map:FindFirstChild("graves") then
+                PlaceUnitsTEST("bleach_legend")
+            elseif game.Workspace._map:FindFirstChild("vending machines") then
+                PlaceUnitsTEST("chainsaw")
+            elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
+                PlaceUnitsTEST("jojo")
+            elseif game.Workspace._map:FindFirstChild("secret") then
+                PlaceUnitsTEST("opm")
+            elseif game.Workspace._map:FindFirstChild("s") then
+                PlaceUnitsTEST("west_city")
+            elseif game.Workspace._map:FindFirstChild("bushes and flowers") then
+                PlaceUnitsTEST("uchiha")
+            elseif game.Workspace._map:FindFirstChild("snow grass") then
+                PlaceUnitsTEST("demonslayer_raid_1")
+            elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
+                PlaceUnitsTEST("7ds")
+            elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
+                PlaceUnitsTEST("mha")
+            end
+        end
+    end
+end))
+
+--warn("Disabled Unit Config")
+coroutine.resume(coroutine.create(function()
+    while task.wait(1.5) do
+        if game.PlaceId ~= 8304191830 and Settings.AutoFarm and not Settings.unitconfig and not getgenv().disableatuofarm then
+            warn("Disable Unit Config")
+            local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
+            repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
+            if game.Workspace._map:FindFirstChild("namek mushroom model") then
+                PlaceUnits("namek")
+            elseif game.Workspace._map:FindFirstChild("houses_new") then
+                PlaceUnits("aot")
+            elseif game.Workspace._map:FindFirstChild("Snow Particles") then
+                PlaceUnits("demonslayer")
+            elseif game.Workspace._map:FindFirstChild("sand_gate") then 
+                PlaceUnits("naruto")
+            elseif game.Workspace._map:FindFirstChild("icebergs") then
+                PlaceUnits("marineford")
+            elseif game.Workspace._map:FindFirstChild("Helicopter Pad") then
+                PlaceUnits("tokyo_ghoul")
+            elseif game.Workspace._map:FindFirstChild("Bones/dust") then
+                PlaceUnits("hueco")
+            elseif game.Workspace._map:FindFirstChild("Ant Nest") then
+                PlaceUnits("hxhant")
+            elseif game.Workspace._map:FindFirstChild("light poles") then
+                PlaceUnits("magnolia")
+            elseif game.Workspace._map:FindFirstChild("LanternsGround") then
+                PlaceUnits("jjk")
+            elseif game.Workspace._map:FindFirstChild("pumpkins") then    
+                PlaceUnits("thriller_park")  
+            elseif game.Workspace._map:FindFirstChild("skeleton") then
+                PlaceUnits("clover")
+            elseif game.Workspace._map:FindFirstChild("graves") then
+                PlaceUnits("bleach_legend")
+            elseif game.Workspace._map:FindFirstChild("vending machines") then
+                PlaceUnits("chainsaw")
+            elseif game.Workspace._map:FindFirstChild("SpaceCenter") then
+                PlaceUnits("jojo")
+            elseif game.Workspace._map:FindFirstChild("secret") then
+                PlaceUnits("opm")
+            elseif game.Workspace._map:FindFirstChild("s") then
+                PlaceUnits("west_city")
+            elseif game.Workspace._map:FindFirstChild("bushes and flowers") then
+                PlaceUnits("uchiha")
+            elseif game.Workspace._map:FindFirstChild("snow grass") then
+                PlaceUnits("demonslayer_raid_1")
+            elseif game.Workspace._map:FindFirstChild("misc nonocollide obstacles") then
+                PlaceUnits("7ds")
+            elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
+                PlaceUnits("mha")
+            end
+        end
+    end
+end))
+
+--hide name
+function hidename()
+task.spawn(function()  -- Hides name for yters (not sure if its Fe)
+    while task.wait() do
+        pcall(function()
+            if game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead") then
+                game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead"):Destroy()
+            end
+        end)
+    end
+end)
+end
+if Settings.hidenamep then
+    hidename()
+end
+
+--[[delete map 
+function DelMap()
+	task.spawn(function()  -- Hides name for yters (not sure if its Fe)
+		while task.wait() do
+			pcall(function()
+				if game.Workspace:FindFirstChild("_map") then
+					game.Workspace:FindFirstChild("_map"):Destroy()
+					warn("Delete Map")
+				end
+			end)
+		end
+	end)
+end
+
+--deletet terrain
+function DelTer()
+	if game.Workspace._terrain:FindFirstChild("terrain") then
+    	for i,v in pairs(game:GetService("Workspace")["_terrain"].terrain:GetChildren()) do
+        	if v.ClassName == "Model" then v:Destroy() end
+			if v.ClassName == "Folder" then v:Destroy() end
+			warn("Delete Terrain")
+        end
+    end  
+end   
+if Settings.deletemap then
+    DelMap()
+    DelTer()
+end]]
+
+--Auto Grab Daily Quest
+function autoDailyquest()
+    if Settings.autoDailyquest then
+         game:GetService("ReplicatedStorage").endpoints.client_to_server.accept_npc_quest:InvokeServer("7ds_daily")
+         wait(15)
+    end
+end
+
+if Settings.autoDailyquest then
+    autoDailyquest()
+end
+
+--AutoFeedEgg
+function FeedEgg()
+    if game.Workspace.EasterArea:FindFirstChild("leaderboard") then
+    eggs = {"easter_egg_1","easter_egg_2","easter_egg_3","easter_egg_4","easter_egg_5","easter_egg_6"}
+        for _, v in pairs(eggs) do
+        pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["feed_easter_meter"]:InvokeServer(v)()    end)
+        end
+    end
+end
+
+function FeedEggA()
+    print("Feed Eggs")
+        pcall(function()
+            FeedEgg()
+            wait(1)
+            FeedEgg()
+        return FeedEggA()
+        end)
+    end
+
+if Settings.AutoFeedEgg then
+    FeedEggA()
+end
+
+--AutoClaimEgg
+function ClaimEgg()
+    if game.Workspace.EasterArea:FindFirstChild("leaderboard") then
+    eggs = {"easter_egg_1","easter_egg_2","easter_egg_3","easter_egg_4","easter_egg_5","easter_egg_6"}
+        for _, v in pairs(eggs) do
+        pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["claim_easter_meter"]:InvokeServer(v)()    end)
+        end
+    end
+end
+
+function ClaimEggA()
+     print("Claim Eggs")
+        pcall(function()
+            ClaimEgg()
+                wait(1)
+            ClaimEgg()
+        return ClaimEggA()
+        end)
+    end
+
+if Settings.AutoClaimEgg then
+    ClaimEgg()
+end
+
+
+--ReedemCode
+function Reedemcode()
+    codes = {"TWOMILLION","subtomaokuma","CHALLENGEFIX","GINYUFIX","RELEASE","SubToKelvingts","SubToBlamspot","KingLuffy","TOADBOIGAMING","noclypso","FictioNTheFirst","GOLDENSHUTDOWN","GOLDEN"
+    ,"SINS2","subtosnowrbx","Cxrsed","subtomaokuma","VIGILANTE","HAPPYEASTER"}
+        for _, v in pairs(codes) do
+        pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["redeem_code"]:InvokeServer(v)()    end)
+    end
+end
+
+if Settings.redeemc then
+    Reedemcode()
+end
+
+--disms
+if game.PlaceId ~= 8304191830 then
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+end
+--disms
+if game.PlaceId == 8304191830 then
+    --game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+    --game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+end
+warn("Display Error Hider!!!")
+
+pcall(function()
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        wait(1)
+        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
+    warn("Anti-AFK Loaded!!!")
+end)
+warn("Hider Name Loaded!!!")
+warn("AA v2 Loaded!!!")
+
+--testlag
+function Laggy()
+    delaylag = tonumber(Settings.delag or 1.5)
+    while wait(tonumber(Settings.delag or 1.5)) do --// don't change it's the best
+    game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
+    local function getmaxvalue(val)
+       local mainvalueifonetable = 499999
+       if type(val) ~= "number" then
+           return nil
+       end
+       local calculateperfectval = (mainvalueifonetable/(val+2))
+       return calculateperfectval
+    end
+     
+    local function bomb(tableincrease, tries)
+    local maintable = {}
+    local spammedtable = {}
+    
+    table.insert(spammedtable, {})
+    z = spammedtable[1]
+
+    tableincrease = tonumber(Settings.max or 22)
+    for i = 1, tableincrease do
+        local tableins = {}
+        table.insert(z, tableins)
+        z = tableins
+    end
+     
+    local calculatemax = getmaxvalue(tableincrease)
+    local maximum
+     
+    if calculatemax then
+         maximum = calculatemax
+         else
+         maximum = 999999
+    end
+     
+    for i = 1, maximum do
+         table.insert(maintable, spammedtable)
+    end
+     
+    tries = tonumber(Settings.mix or 0)
+    for i = 1, tries do
+         game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
+    end
+end
+    
+    tableincrease = tonumber(Settings.max or 22)
+    tries = tonumber(Settings.mix or 0)
+     
+    bomb(tableincrease, tries)
+
+    end
+end
+
+if  Laggy() == false then
+        Laggy() 
+    end
+if Laggy() == true then
+        notLaggy()
+end
+
+warn("All Loaded !!!")
