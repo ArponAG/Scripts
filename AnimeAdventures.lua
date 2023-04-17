@@ -1,5 +1,5 @@
   -- Game Version Variable
-  local version = "v2.0.0b32"
+local version = "v2.0.0b32"
 
   -- Start of Local Global Variables
 local HttpService = game:GetService("HttpService")
