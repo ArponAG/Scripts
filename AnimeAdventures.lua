@@ -2246,7 +2246,7 @@ function autoload()
 end
 
 function autoload2()
-    loadstring(game:HttpGet("https://pastebin.com/raw/Yx8wfE2"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
 end
     -- End of Auto Load Function
     
@@ -2704,7 +2704,7 @@ local function startfarming()
 end
     -- End of Auto Start Farm Function
     
-    -- Start of Auto Ability Function [Changed by craymel02 --newfix]
+    -- Start of Auto Ability Function [Changed by craymel02 --newfix] autoskill
 getgenv().autoabilityerr = false
 function autoabilityfunc()
     local player = game.Players.LocalPlayer.Name
