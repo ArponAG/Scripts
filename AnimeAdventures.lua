@@ -991,7 +991,7 @@ local function AutoFarmSec()
             Settings.unitconfig = false
             Settings.AutoFarm = bool
             saveSettings()
-            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
             else
                 Settings.AutoFarm = bool
                 saveSettings()  
@@ -1027,7 +1027,7 @@ local function AutoFarmSec()
             Settings.unitconfig = false
             Settings.AutoUpgrade = bool
             saveSettings()
-            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
             else
                 Settings.AutoUpgrade = bool
                 saveSettings()
@@ -1687,17 +1687,17 @@ local function unitconfig()
             Settings.AutoFarm = false
             Settings.unitconfig = bool
             saveSettings()
-            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
         elseif Settings.AutoUpgrade == true then
             Settings.AutoUpgrade = false
             Settings.unitconfig = bool
             saveSettings()
-            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
         elseif Settings.AutoFarm == true then
             Settings.AutoFarm = false
             Settings.unitconfig = bool
             saveSettings()
-            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()   
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()   
             else
                 Settings.unitconfig = bool
                 saveSettings()
@@ -2010,9 +2010,9 @@ function autoload()
         pcall(function()
             local exec = tostring(identifyexecutor())
             if exec == "Synapse X" and Settings.AutoLoadScript then
-                syn.queue_on_teleport("loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()")
+                syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             elseif exec ~= "Synapse X" and Settings.AutoLoadScript then
-                queue_on_teleport("loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()")
+                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             end
         end)
     end
@@ -2851,7 +2851,7 @@ function PlacePos(map, name, _uuid, unit)
         warn("Unit Position for " .. map .. " not found, Set Unit Position First")
         Settings.unitconfig = false
         saveSettings()
-        loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
     end
     if Settings.unitconfig then
         local pos = Settings["UnitConfig_" .. tostring(map)].Position[unit]
@@ -3240,7 +3240,7 @@ function reunitcon()
             end
         end
         saveSettings()
-        loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
     end
 end
     -- End of Reset Unit Config for Current Map
@@ -3252,7 +3252,7 @@ function PlaceUnits()
         warn("Unit Position for " .. map .. " not found, Set Unit Position First")
         Settings.Autofarm = false
         saveSettings()
-        loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
     end
     pcall(function()
         if Settings.AutoFarm and not getgenv().disableautofarm then
