@@ -1,4 +1,4 @@
-  -- Game Version Variable 
+  -- Game Version Variable
   local version = "v2.0.0b32"
 
   -- Start of Local Global Variables
@@ -23,26 +23,26 @@ end
   -- End of Loading Section
   
   -- Start of Save and Read Settings Function
-local a = 'V2_Anime_Adventures' -- Paste Name
-local b = game:GetService('Players').LocalPlayer.Name .. '_AnimeAdventures.json' 
+fN = 'V2_Anime_Adventures' -- Paste Name
+pN = game:GetService('Players').LocalPlayer.Name .. '_AnimeAdventures.json' 
 
 Settings = {}
 function saveSettings()
     local HttpService = game:GetService('HttpService')
-    if not isfolder(a) then
-        makefolder(a)
+    if not isfolder(fN) then
+        makefolder(fN)
     end
-    writefile(a .. '/' .. b, HttpService:JSONEncode(Settings))
+    writefile(fN .. '/' .. pN, HttpService:JSONEncode(Settings))
     Settings = ReadSetting()
     warn("Settings Saved!")
 end
 function ReadSetting()
     local s, e = pcall(function()
         local HttpService = game:GetService('HttpService')
-        if not isfolder(a) then
-            makefolder(a)
+        if not isfolder(fN) then
+            makefolder(fN)
         end
-        return HttpService:JSONDecode(readfile(a .. '/' .. b))
+        return HttpService:JSONDecode(readfile(fN .. '/' .. pN))
     end)
     if s then
         return e
@@ -54,7 +54,7 @@ end
 Settings = ReadSetting()
   -- End of Save and Read Function
   
-    -- Start of Get Level Data of Map [Added by craymel02 --newfix]
+    -- Start of Get Level Data of Map [Added by Craymel02]
 function GLD()
 	local list = {}
 	for i,v in pairs(game.Workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()) do
@@ -649,14 +649,14 @@ end
 local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
-local Window = Uilib.new(true, "Anime Adventures "..version.." - "..exec)
+local Window = Uilib.new(true, "[UPD 12] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightControl)
 
     -- Start of Script Upgrade Sector
 local Script = Window:Category(" Script Update")
 local Update = Script:Sector("Script Update")
 local asdasd = Script:Sector("")
-local ScriptUpdate = Script:Sector("Code Changes by craymel02 ")
+local ScriptUpdate = Script:Sector("Code Changes by Craymel02")
     -- End of Script Update Sector
     
     -- Start of Home Sector
@@ -685,7 +685,7 @@ local NDY = UC:Sector("Map Unit Config ")
 local NDY2 = UC:Sector("Reset Map Unit Config ")
 local emptyxx = UC:Sector(" ")
 local emptyxx2 = UC:Sector(" ")
-    -- Changed by craymel02 --newfix
+    -- Changed by Craymel02
 local Unit = {}
 for i = 1, 6, 1 do
     Unit["Unit" .. i] = UC:Sector("Unit " .. i)
@@ -709,58 +709,53 @@ local LG = Window:Category("🛠️ OTHER [BETA]")
 local LG1 = LG:Sector("Beta LAGGY Config ")
 local OtherSec = LG:Sector("Other Options")
 local OtherSec2 = LG:Sector("")
-local reFarmConfig = LG:Sector("")
     -- End of Lag Sector
     -- End of User Interface
 
-    -- Start of Unit Section Function [Changed by craymel02 --newfix]
+    -- Start of Unit Section Function [Changed by Craymel02]
 local function UnitSec()
     SelectUnits:Cheat("Checkbox","🦸 Auto Save Unit  ", function(bool)
-        if Settings.Craymel == nil then
-            warn("Generate Preset First!")
-            else
-                warn("Auto Save Unit set to " .. tostring(bool))
-                Settings.AutoSaveUnit = bool
-                saveSettings()
-        end
+        warn("Auto Save Unit set to " .. tostring(bool))
+        Settings.AutoSaveUnit = bool
+        saveSettings()
     end,{enabled = Settings.AutoSaveUnit })
 end
     -- End of Unit Section Function
     
-    -- Start of Auto Save Unit Function [Added by craymel02 --newfix]
-local function AutoSaveUnit()
+    -- Start of Auto Save Unit Function [Added by Craymel02]
+function AutoSaveUnit()
     
-    -- Generate Selected Unit Parameters
-    if Settings.SelectedUnits == nil then
-        Settings.SelectedUnits = {}
-        for i = 1, 6, 1 do
-            Settings.SelectedUnits["UP" .. i] = "nil"
-        end
-        
-        else
-            -- Reset Selected Unit List to nil
+    if Settings.AutoSaveUnit then
+        local function saveUnit()
+        -- Generate Selected Unit Parameters
+        if Settings.SelectedUnits == nil then
+            Settings.SelectedUnits = {}
             for i = 1, 6, 1 do
                 Settings.SelectedUnits["UP" .. i] = "nil"
             end
-    end
             
-    -- Transfer Equipped Units to Selected Unit List and Save to JSON
-    for i, v in pairs(getgenv().profile_data.equipped_units) do
-        if v.equipped_slot then
-            Settings.SelectedUnits["UP" .. tostring(v.equipped_slot)] = tostring(v.unit_id) .. " #" .. tostring(v.uuid)
-            print("UP" .. tostring(v.equipped_slot) .. " " .. tostring(v.unit_id) .. " #" .. tostring(v.uuid))
+            else
+                -- Reset Selected Unit List to nil
+                for i = 1, 6, 1 do
+                    Settings.SelectedUnits["UP" .. i] = "nil"
+                end
         end
-    end
-    saveSettings()
-end
-
-coroutine.resume(coroutine.create(function()
-    while task.wait(1.5) do
-        if game.PlaceId == 8304191830 and Settings.AutoSaveUnit then
-            
+                
+        -- Transfer Equipped Units to Selected Unit List and Save to JSON
+        for i, v in pairs(getgenv().profile_data.equipped_units) do
+            if v.equipped_slot then
+                Settings.SelectedUnits["UP" .. tostring(v.equipped_slot)] = tostring(v.unit_id) .. " #" .. tostring(v.uuid)
+                print("UP" .. tostring(v.equipped_slot) .. " " .. tostring(v.unit_id) .. " #" .. tostring(v.uuid))
+            end
+        end
+        saveSettings()
+        end
+    
+        local function fetchUnit()
             getgenv().profile_data = { 
                 equipped_units = {}
             }
+            table.clear(getgenv().profile_data.equipped_units)
             
             -- Fetch Unit List
             for i, v in pairs(getgc(true)) do
@@ -769,7 +764,7 @@ coroutine.resume(coroutine.create(function()
                     table.insert(getgenv().profile_data.equipped_units, v)
                 end
             end
-            
+                
             -- Generate Selected Unit Parameters
             if Settings.SelectedUnits == nil then
                 Settings.SelectedUnits = {}
@@ -777,7 +772,7 @@ coroutine.resume(coroutine.create(function()
                     Settings.SelectedUnits["UP" .. i] = "nil"
                 end
             end
-
+    
             -- Generate Compare List Parameters
             EquippedList = {}
             table.clear(EquippedList)
@@ -785,30 +780,33 @@ coroutine.resume(coroutine.create(function()
             for i = 1, 6, 1 do
                 EquippedList["UP" .. i] = "nil"
             end
-            
+                
             -- Filter Fetched Unit to List Equipped Units Only
             for i, v in pairs(getgenv().profile_data.equipped_units) do
                 if v.equipped_slot then
                     EquippedList["UP" .. v.equipped_slot] = tostring(v.unit_id) .. " #" .. tostring(v.uuid)
                 end
             end
-            
+                
             -- If Equipped Slot in Empty, Put "nil"
             for i = 1, 6, 1 do
-				if EquippedList["UP"..i] == nil then
-					EquippedList["UP"..i] = "nil"
-				end
-			end
-            
+    			if EquippedList["UP"..i] == nil then
+    				EquippedList["UP"..i] = "nil"
+    			end
+    		end
+                
             -- Compared Current List to Saved JSON List if not the same then call AutoSave Function
             for i = 1, 6, 1 do
                 if EquippedList["UP"..i] ~= Settings.SelectedUnits["UP"..i] then
-                    AutoSaveUnit()
+                    saveUnit()
                 end
             end
         end
+        
+        fetchUnit()
+        
     end
-end))
+end
     -- End of Auto Save Unit Function
     
     -- Start of World Section Function
@@ -993,7 +991,7 @@ local function AutoFarmSec()
             Settings.unitconfig = false
             Settings.AutoFarm = bool
             saveSettings()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
+            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
             else
                 Settings.AutoFarm = bool
                 saveSettings()  
@@ -1029,7 +1027,7 @@ local function AutoFarmSec()
             Settings.unitconfig = false
             Settings.AutoUpgrade = bool
             saveSettings()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
+            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
             else
                 Settings.AutoUpgrade = bool
                 saveSettings()
@@ -1056,7 +1054,7 @@ local function AutoFarmSec()
 end
     -- End of Auto Farm Function
     
-    -- Start of Generate Default Config Function [Added by craymel02 --newfix] --fixmap updatefix
+    -- Start of Generate Default Config Function [Added by Craymel02]
 local function GenerateConfigSec()
     
     -- Button to Generate Presets
@@ -1094,13 +1092,6 @@ local function GenerateConfigSec()
             west_city = { x = { -2366.043701171875, -2362.55615234375, -2357.416259765625, -2330.9033203125, -2337.23828125, -2348.35302734375 }, y = { 19.763042449951173, 19.763042449951173, 19.763042449951173, 31.40303611755371, 31.40291404724121, 19.763042449951173 }, z = { -100.9094467163086, -66.028564453125, -70.55792236328125, -80.4635238647461, -80.1539306640625, -108.65594482421875 }, x2 = { -2364.543701171875, -2364.05615234375, -2358.916259765625, -2329.4033203125, -2335.73828125, -2346.85302734375 }, z2 = { -99.4094467163086, -67.528564453125, -72.05792236328125, -78.9635238647461, -78.6539306640625, -107.15594482421875 }, x3 = { -2367.543701171875, 0, 0, -2332.4033203125, -2338.73828125, -2349.85302734375 }, z3 = { 0, -64.528564453125, -69.05792236328125, 0, 0, 0 } },
             west_city_frieza = { x = { -2366.043701171875, -2362.55615234375, -2357.416259765625, -2330.9033203125, -2337.23828125, -2348.35302734375 }, y = { 19.763042449951173, 19.763042449951173, 19.763042449951173, 31.40303611755371, 31.40291404724121, 19.763042449951173 }, z = { -100.9094467163086, -66.028564453125, -70.55792236328125, -80.4635238647461, -80.1539306640625, -108.65594482421875 }, x2 = { -2364.543701171875, -2364.05615234375, -2358.916259765625, -2329.4033203125, -2335.73828125, -2346.85302734375 }, z2 = { -99.4094467163086, -67.528564453125, -72.05792236328125, -78.9635238647461, -78.6539306640625, -107.15594482421875 }, x3 = { -2367.543701171875, 0, 0, -2332.4033203125, -2338.73828125, -2349.85302734375 }, z3 = { 0, -64.528564453125, -69.05792236328125, 0, 0, 0 } },
             uchiha_hideout = { x = { 282.5268249511719, 269.29833984375, 275.0011901855469, 271.2455139160156, 265.5224304199219, 298.23797607421877 }, y = { 536.8999633789063, 536.8999633789063, 536.8999633789063, 539.8976440429688, 539.8976440429688, 536.8999633789063 }, z = { -581.7987060546875, -571.810791015625, -577.9029541015625, -561.8075561523438, -560.3048706054688, -609.886474609375 }, x2 = { 284.0268249511719, 270.79833984375, 276.5011901855469, 272.7455139160156, 267.0224304199219, 299.73797607421877 }, z2 = { -580.2987060546875, -570.310791015625, -576.4029541015625, -560.3075561523438, -558.8048706054688, -608.386474609375 }, x3 = { 281.0268249511719, 267.79833984375, 273.5011901855469, 269.7455139160156, 264.0224304199219, 296.73797607421877 }, z3 = { 0, 0, 0, 0, 0, 0 } }, }
-        
-        -- Reset Settings
-        if Settings.Craymel == nil then
-            Settings = {
-                Craymel = true
-            }
-        end
         
         -- Generate Preset Position and Unit Config
         for i = 1, #List.mapName do
@@ -1140,211 +1131,6 @@ local function MoreFarmSec()
     end,{enabled = Settings.AutoInfinityCastle})
 end
     -- End of Infinity Castle Function
-
-    -- Start of Reset Farm Config Function
-function refarmcon()
-    print("reset AutoFarm & find Picoro config ?")
-
-    -- findPicoro
-    if Settings.picoHOP then
-        Settings.picoHOP = false end
-    -- Start
-    if Settings.autostart then
-        Settings.autostart = false end
-    -- Place unit
-    if Settings.AutoFarm then
-        Settings.AutoFarm = false end
-    -- Replay
-    if Settings.AutoReplay then
-        Settings.AutoReplay = false end
-    -- Next Story
-    if Settings.AutoNext then
-        Settings.AutoNext = false end
-    -- Leave
-    if Settings.AutoLeave then
-        Settings.AutoLeave = false end
-    -- Abilities
-    if Settings.AutoAbilities then
-        Settings.AutoAbilities = false end
-    -- Upgrade
-    if Settings.AutoUpgrade then
-        Settings.AutoUpgrade = false end
-    -- AutoSell
-    if Settings.AutoSell then
-        Settings.AutoSell = false end
-    -- autoQuitWave
-    if Settings.autoQuit then
-        Settings.autoQuit = false end
-    -- AutoSellWave
-    if Settings.AutoSellWave then
-        Settings.AutoSellWave = 0 end
-    -- Next Level Infinity Castle
-    if Settings.AutoContinue then
-        Settings.AutoContinue = false end
-    -- Auto Infinity Castle 
-    if Settings.AutoInfinityCastle then
-        Settings.AutoInfinityCastle = false end
-        saveSettings()
-        autoload2()
-end
-
-if Settings.refarmc then
-    refarmcon()
-    autoload2()
-end
-    -- End Reset Farm Config and Find Picoro
-    
-    -- End of Reset Settings to Farm Story
-function setfarm1()
-    print("Set AutoFarm Story ?")
-
-    -- Start
-    if Settings.autostart then
-        Settings.autostart = true end
-    -- Place unit
-    if Settings.AutoFarm then
-        Settings.AutoFarm = true end
-    -- Replay
-    if Settings.AutoReplay then
-        Settings.AutoReplay = false end
-    -- Next Story
-    if Settings.AutoNext then
-        Settings.AutoNext = false end
-    -- Leave
-    if Settings.AutoLeave then
-        Settings.AutoLeave = true end
-    -- Abilities
-    if Settings.AutoAbilities then
-        Settings.AutoAbilities = true end
-    -- Upgrade
-    if Settings.AutoUpgrade then
-        Settings.AutoUpgrade = true end
-    -- AutoSell
-    if Settings.AutoSell then
-        Settings.AutoSell = true end
-    -- autoQuitWave
-    if Settings.autoQuit then
-        Settings.autoQuit = false end
-    -- AutoSellWave
-    if Settings.AutoSellWave then
-        Settings.AutoSellWave = 50 end
-    -- Next Level Infinity Castle
-    if Settings.AutoContinue then
-        Settings.AutoContinue = false end
-    -- Auto Infinity Castle 
-    if Settings.AutoInfinityCastle then
-        Settings.AutoInfinityCastle = false end
-        saveSettings()
-        autoload2()
-end
-
-if Settings.setfarm1 then
-    setfarm1()
-    autoload2()
-end
-    -- End of Reset Settings to Farm Story
-    
-    -- Start of Reset Settings to Farm Story and Next Level
-function setfarm2()
-    print("Set AutoFarm Story & Replay ?")
-
-    --Start
-    if Settings.autostart then
-        Settings.autostart = true end
-    -- Place unit
-    if Settings.AutoFarm then
-        Settings.AutoFarm = true end
-    -- Replay
-    if Settings.AutoReplay then
-        Settings.AutoReplay = true end
-    -- Next Story
-    if Settings.AutoNext then
-        Settings.AutoNext = false end
-    -- Leave
-    if Settings.AutoLeave then
-        Settings.AutoLeave = true end
-    -- Abilities
-    if Settings.AutoAbilities then
-        Settings.AutoAbilities = true end
-    -- Upgrade
-    if Settings.AutoUpgrade then
-        Settings.AutoUpgrade = true end
-    -- AutoSell
-    if Settings.AutoSell then
-        Settings.AutoSell = true end
-    -- autoQuitWave
-    if Settings.autoQuit then
-        Settings.autoQuit = false end
-    -- AutoSellWave
-    if Settings.AutoSellWave then
-        Settings.AutoSellWave = 50 end
-    -- Next Level Infinity Castle
-    if Settings.AutoContinue then
-        Settings.AutoContinue = false end
-    -- Auto Infinity Castle 
-    if Settings.AutoInfinityCastle then
-        Settings.AutoInfinityCastle = false end
-        saveSettings()
-        autoload2()
-end
-
-if Settings.setfarm2 then
-    setfarm2()
-    autoload2()
-end
-    -- End of Reset Settings to Farm Story and Next Level
-    
-    -- Start of Reset Settings to Farm Infinity Castle
-function setfarmIC()
-    print("Set AutoFarm Inf Castle ?")
-
-    -- Start
-    if Settings.autostart then
-        Settings.autostart = false end
-    -- Place unit
-    if Settings.AutoFarm then
-        Settings.AutoFarm = true end
-    -- Replay
-    if Settings.AutoReplay then
-        Settings.AutoReplay = false end
-    -- Next Story
-    if Settings.AutoNext then
-        Settings.AutoNext = false end
-    -- Leave
-    if Settings.AutoLeave then
-        Settings.AutoLeave = false end
-    -- Abilities
-    if Settings.AutoAbilities then
-        Settings.AutoAbilities = true end
-    -- Upgrade
-    if Settings.AutoUpgrade then
-        Settings.AutoUpgrade = true end
-    -- AutoSell
-    if Settings.AutoSell then
-        Settings.AutoSell = true end
-    -- autoQuitWave
-    if Settings.autoQuit then
-        Settings.autoQuit = false end
-    -- AutoSellWave
-    if Settings.AutoSellWave then
-        Settings.AutoSellWave = 50 end
-    -- Next Level Infinity Castle
-    if Settings.AutoContinue then
-        Settings.AutoContinue = true end
-    -- Auto Infinity Castle 
-    if Settings.AutoInfinityCastle then
-        Settings.AutoInfinityCastle = true end
-        saveSettings()
-        autoload2()
-  
-end
-
-if Settings.setfarmIC then
-    setfarmIC()
-    autoload2()
-end
-    -- Start of Reset Settings to Farm Infinity Castle
-    -- End Reset Farm Config Function
     
     -- Start of Challenge Function
 local function ChallengeSec()
@@ -1368,8 +1154,8 @@ end
     
     -- Start of Credits Section
 local function credits()
-    Developers:Cheat("Label","📝 Scripted by: Arpon AG#6612 & Forever4D#0001 & HOLYSHz#3819 ")    
-    Developers:Cheat("Label","📝 Also thanks to Trapstar#7845, bytenode#9646, ethreia#1036 for the help!")    
+    Developers:Cheat("Label","📝 Scripted by: Arpon AG#6612 & Forever4D#0001 & HOLYSHz#3819 & ethreia#1036 ")    
+    Developers:Cheat("Label","📝 Also thanks to Trapstar#7845, bytenode#9646 for the help!")    
     Developers:Cheat("Label","📐 UI By: detourious @ v3rmillion.net")    
     Developers:Cheat("Label","🔧 To toggle the script press \"RightControl\"")   
     Developers:Cheat("Button","🔗 Discord Invite", function()
@@ -1379,7 +1165,7 @@ local function credits()
 end
     -- End of Credits Section
 
-    -- Start of Generate Map Parameters in Settings [Changed by craymel02 --newfix]
+    -- Start of Generate Map Parameters in Settings [Changed by Craymel02]
 local function initMapUnitSettings(unitPrefix, unitCount)
 
     local map = GLD().map
@@ -1404,7 +1190,7 @@ local function initMapUnitSettings(unitPrefix, unitCount)
 end
     -- End of Generate Map Paramenters in Settings
   
-    -- Start of Horizontal Position to Save in Settings [Changed by craymel02 --newfix]
+    -- Start of Horizontal Position to Save in Settings [Changed by Craymel02]
 local function horPos(UnitPos, a)
     local x = getgenv().posX
     local z = getgenv().posZ
@@ -1422,7 +1208,7 @@ local function horPos(UnitPos, a)
 end
     -- End of Horizontal Position to Save in Settings
 
-    -- Start of Horizontal Position to Save in Settings [Changed by craymel02 --newfix]
+    -- Start of Horizontal Position to Save in Settings [Changed by Craymel02]
 local function verPos(UnitPos, a)
     local x = getgenv().posX
     local z = getgenv().posZ
@@ -1440,7 +1226,7 @@ local function verPos(UnitPos, a)
 end
     -- End of Upgrade Unit Position to Save in Settings
     
-    -- Start MobileGUI to get Unit Coordinates [Changed by craymel02 --newfix]
+    -- Start MobileGUI to get Unit Coordinates [Changed by Craymel02]
 function hormobilegui(UnitPos, a)
 	local BillboardGui = Instance.new("BillboardGui")
 	local Frame = Instance.new("Frame")
@@ -1626,7 +1412,7 @@ function vermobilegui(UnitPos, a)
 end
     -- End MobileGUI to get Unit Coordinates
   
-    -- Start Default Position to get Unit Coordinates [Changeed by craymel02 --newfix]
+    -- Start Default Position to get Unit Coordinates [Changeed by Craymel02]
     
 getgenv().posX = 1.5
 getgenv().posZ = 1.5
@@ -1823,7 +1609,7 @@ function DefaultPosition(UnitPos)
 end
     -- End of Default Position to get Unit Coordinates
     
-    -- Start of Unit Position Section [Changed by craymel02 --newfix]
+    -- Start of Unit Position Section [Changed by Craymel02]
 local function UnitPosSec()
     for i = 1, 6, 1 do
         UnitPosition:Cheat("Button", "Set Unit " .. i .. " Position", function()
@@ -1833,67 +1619,51 @@ local function UnitPosSec()
 end
     -- End of Unit Position Section
     
-    -- Start of Script Section [Added by craymel02 --newfix]
+    -- Start of Script Section [Added by Craymel02]
 local function scriptupdate()
-    Update:Cheat("Label", "📝 Script Update April 16th")
+    Update:Cheat("Label", "📝 Script Update April 17th")
     
     Notes = {
+        "[+] Fix Auto Start not Farming and other conflict.",
         "[+] Changes in Auto Farm Menu",
-        "      1. Added Generate Preset Config.",
-        "         - Press Button to Generate Preset Position for all Maps Excluding Highschool DxD",
-        "             Portals. It also Generate Preset Unit Config as well.",
-        "         - Generate Preset will also Reset Settings.JSON to avoid conflict with New Codings",
-        "         - Preset Position follows.",
+        "      1. Added Generate Preset Config Button.",
+        "         - This button will generate Unit Position for All Maps except New Portal and Unit",
+        "             Config Default Value as well.",
+        "         - Preset Unit Slot must be the following.",
         "             a. Unit 1 to 3 is for Ground Units.",
         "             b. Unit 4 to 5 is for Air / Hill or Hybrid Units.",
         "             c. Unit 6 is for Farmers 'Speedcart' or 'Bulma'",
-        "         - Preset Unit Config follows.",
-        "             a. All Total Unit is set to 1.",
-        "             b. Placement and Upgrade Priority is equal to Unit Position '1 to 6'.",
-        "             c. All Upgrade Cap is set to 1.",
-        "             d. All Place from Wave and Upgrade from Wave is set to 1.",
-        "             e. All Target Priority is set to 'first'.",
         "      2. Set Unit Position can now do Horizontal or Vertical Position.",
         "         - After Clicking Button, Press Q for Horizontal Position or Press R for Vertical",
         "             Position.",
-        "      3. Added Auto Save Selected Units when Current Unit Lineup Changed.",
-        "         - Must Generate Preset First to enable.",
-        "      4. For Replay, Next Story, Next Room in Infinity or Leave.",
-        "         - Choose only 1 of the button to Enabled to avoid not Teleporting.",
+        "      3. Added Auto Save Selected Units",
+        "         - When Enabled, it will Auto Fetch your Current Unit in Unit Slot to JSON File",
+        "      4. For Auto Start, Challenge and Infinity Castle Button.",
+        "         - If both Challenge and Auto Start is Enable, it'll do Challenge First",
+        "         - For Infinity Castle Run, Only Enable Infinity Castle Buttons",      
         "[+] Added fail safe when Next, Replay fails after 3 minutes you get Teleport",
         "      Back to Lobby.",
-        "[+] Shorten Long Codes, Added Auto Reconnect Function when get Disconnected.",
+        "[+] Added Auto Reconnect Function when get Disconnected.",
         "      1. Won't work if Disconnected before the game fully Load.",
         "[+] Changes in Unit Config Menu",
-        "      1. Can now Set Different Settings based on Map and is Not Available in Game Lobby.",
-        "      2. If Unit Config Settings on current Map is not Set, Script will disable Unit",
-        "          Config then Generate Default Parameters to Avoid Error and reload UI.",
-        "      2. If Position Settings on current Map is not Set, Script will disable Unit Config",
-        "          and reload UI to let you Set Unit Position and avoid Script Error.",
-        "      3. Reset Map Unit Config will only reset current Map and will not affect other",
-        "          Map Settings.",
-        "      4. You need to Set Position in Portal and Unit Config as well due to Portal",
-        "          and Normal Maps have different ID's.",
-        "      5. Check Unit Button is added to check all current deployed Unit in Roblox Log 'F9'.",
-        "[+] Fixed Unit Config Placement Priority, Upgrade Priority, Upgrade Cap, Upgrade",
-        "      from Wave and Sell from Wave and Added Target Priority with default target 'first'.",
-        "      1. Recode Unit Config to make Placement Priority and Upgrade Priority Works.",
-        "      2. Placement Priority and Upgrade Priority must be different per Unit or it'll",
-        "          cause error on the script. Priority 1 is first, 6 is last.",
-        "      3. Target Priority must be 'first', 'closest', 'last', 'farthest', 'strongest','weakest' or",
-        "          'flying' without '' symbol.",
-        "      4. If a Unit reached his 'Upgrade at Wave' while haven't placed other Unit due",
-        "          to lack of Yen, Script will do both Placing and Upgrading based on Priority.",
-        "      5. Dedicate Upgrade Priority '6' for Farmers that if detected with Bulma, Nami",
-        "          or Speedwagon is to Upgrade them simultaneously with Upgrade Priority 1",
-        "          to yield more yen along with it's 'Upgrade At Wave'.",
-        "      6. If Other Unit won't Upgrade or Place, double check Total Units or Upgrade Cap",
-        "            if it match the Units Max Placement or Max Upgrade.",
-        "            Example: Metal Knight Max Placement is 2 but input 3 on Total Units then will",
-        "            cause an error that won't proceed unless correction is made.",
-        "      7. Must always bring 6 Units to Avoid Possible Error, Put 0 on 'Total Units' if",
-        "          you want the script skip on them and ALWAYS PUT DIFFERENT",
-        "          PRIORITY NUMBER! (1 ~ 6)",
+        "      1. Can now Save Different Config per Map.",
+        "      2. Reset Button will only Reset Current Map you're in.",
+        "      3. Added Check Unit Button.",
+        "         - This will display current deployed Unit in Roblox 'F9' log.", 
+        "      4. Fix Unit Config [All is working now].",       
+        "         - Must have 6 Units or it'll cause error [Will update this for less units].",
+        "         - Placement Priority and Upgrade Priority must be different per Unit.",
+        "             a. Priority 1 = First, Priority 6 = Last",
+        "         - Added Target Priority.",
+        "             a. must be 'first', 'closest', 'last', 'farthers', 'strongers', 'weakest' or",
+        "              'flying' without '' symbol.",
+        "         - Upgrade Priority value 6 is also dedicated for farmers.",
+        "             a. If you put Upgrade Priority 6 to 'Nami', 'Bulma' or 'Speedcart', it will",
+        "              upgrade it simoulatnously with Upgrade Priority 1 to get more Yen.",
+        "         - If Unit is not Upgrading or Placing, double check Total Units or Upgrade Cap if",
+        "              it match the unit Max Placement or Max Upgrade.",
+        "             Example: Metal Knight Max Placement is 2 but input 3 on Total Units then it",
+        "              will cause error and wont proceed unless correction is made.",
         "[+] Added auto disable of Auto Upgrade and Auto Place Unit in Auto Farm when Unit",
         "      Config is On and Vice-Versa to avoid conflict with one another.",
         "[+] Recode Auto Use Abilities to fix issue with skill rotation, Abilities will be used if",
@@ -1906,7 +1676,7 @@ local function scriptupdate()
 end
     -- End of Script Section
     
-    -- Start of Unit Config Section [Changed by craymel02 --newfix]
+    -- Start of Unit Config Section [Changed by Craymel02]
 local function unitconfig()
 
     -- Start of Use Unit Config
@@ -1917,17 +1687,17 @@ local function unitconfig()
             Settings.AutoFarm = false
             Settings.unitconfig = bool
             saveSettings()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
+            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
         elseif Settings.AutoUpgrade == true then
             Settings.AutoUpgrade = false
             Settings.unitconfig = bool
             saveSettings()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
+            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
         elseif Settings.AutoFarm == true then
             Settings.AutoFarm = false
             Settings.unitconfig = bool
             saveSettings()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()   
+            loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()   
             else
                 Settings.unitconfig = bool
                 saveSettings()
@@ -2019,7 +1789,7 @@ local function unitconfig()
 end
     -- End of Unit Config Area
     
-    -- Start of Generate Unit Config Map Settings Parameters [Added by craymel02 --newfix]
+    -- Start of Generate Unit Config Map Settings Parameters [Added by Craymel02]
 function initUnitConfigMapSettings(unitPos, unitCount)
 
     local map = GLD().map
@@ -2060,33 +1830,39 @@ end
     -- Start of Laggy Function
 local function LAGGYconfig()
     LG1:Cheat("Label"," Is a BETA Version // Enjoy ")
-
+    
+    LG1:Cheat("Checkbox", "Enable Laggy", function(bool)
+    warn("Lag is set to", tostring(bool))
+    Settings.laggy = bool
+    saveSettings()
+    end, {placeholder = Settings.max or 22})
+    
     LG1:Cheat("Textbox", "LAG Threads", function(Value)
-        print("LAG threads.:", Value)
+        warn("LAG threads.:", Value)
         Settings.max = tonumber(Value)
         saveSettings()
     end, {placeholder = Settings.max or 22})
 
     LG1:Cheat("Textbox", "LAG Tries ", function(Value)
-        print("LAG tries.:", Value)
+        warn("LAG tries.:", Value)
         Settings.mix = tonumber(Value)
         saveSettings()
     end, {placeholder = Settings.mix or 0})
 
     LG1:Cheat("Textbox", "Delay ", function(Value)
-        print("Delay.:", Value)
+        warn("Delay.:", Value)
         Settings.delag = tonumber(Value)
         saveSettings()
     end, {placeholder = Settings.delag or 1.5})
 
     LG1:Cheat("Slider", "LAG Lv. [slide]", function(Value)
-        print("LAG Lv.:", Value)
+        warn("LAG Lv.:", Value)
         Settings.mix = tonumber(Value)
         saveSettings()
     end, {min = 0, max = 7, suffix = "", default = 0 })
 
     LG1:Cheat("Slider", "Delay [slide]", function(Value)
-        print("Delay.:", Value)
+        warn("Delay.:", Value)
         Settings.delag = tonumber(Value)
         saveSettings()
     end, {min = 0, max = 10, suffix = "", default = 1.5 })
@@ -2172,11 +1948,6 @@ function SnipeMerchant()
         Settings.ASM_SelectedOtherItems = value
         saveSettings()
     end, { options = {"None","Any Items","LuckPotion","star_remnant","summon_ticket"}, default =Settings.ASM_SelectedOtherItems})
-
-    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Evo Items",function(value)
-        Settings.ASM_SelectedEvoItems = value
-        saveSettings()
-    end, { options = {"None"}, default =Settings.ASM_SelectedEvoItems})
     
     AutoSnipeMerchantSec:Cheat("Checkbox","Enable Auto Snipe", function(bool)
         Settings.AutoSnipeMerchant = bool
@@ -2235,18 +2006,16 @@ end
 
     -- Start of Auto Load Function
 function autoload()
-    pcall(function()
-        local exec = tostring(identifyexecutor())
-        if exec == "Synapse X" and Settings.AutoLoadScript then
-            syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
-        elseif exec ~= "Synapse X" and Settings.AutoLoadScript then
-            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
-        end
-    end)
-end
-
-function autoload2()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
+    if Settings.AutoLoadScript then
+        pcall(function()
+            local exec = tostring(identifyexecutor())
+            if exec == "Synapse X" and Settings.AutoLoadScript then
+                syn.queue_on_teleport("loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()")
+            elseif exec ~= "Synapse X" and Settings.AutoLoadScript then
+                queue_on_teleport("loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()")
+            end
+        end)
+    end
 end
     -- End of Auto Load Function
     
@@ -2280,13 +2049,6 @@ function others()
         DelTer()
         DelMap()
     end,{enabled = Settings.deletemap})
-    
-    OtherSec:Cheat("Checkbox","Find Picoro [HOP]", function(bool)
-        print(bool)
-        Settings.picoHOP = bool
-        saveSettings()
-        TeleportHOP()
-    end,{enabled = Settings.picoHOP})
     
     OtherSec:Cheat("Button", "Leave To Lobby", function()
         warn("Return to Lobby")
@@ -2345,121 +2107,11 @@ else
 end
     -- End of Arrange UI Based on Location
     
-    -- Start of Check Challenge
-local function checkChallenge()
-    for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
-        if v:IsA("SurfaceGui") then
-            if v:FindFirstChild("ChallengeCleared") then
-                return v.ChallengeCleared.Visible
-            end
-        end
-    end
-end
-    -- End of Check Challenge
-    
-    -- Start of Check Reward
-local function checkReward() 
-    if checkChallenge() == false then
-        if Settings.SelectedReward == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value then
-            return true
-        elseif Settings.AutoChallengeAll then
-            return true
-        else
-            return false
-        end
-    else
-        return false
-    end
-end
-    -- End of Check Reward
-    
-    -- Start of Start Challenge
-local function startChallenge()
-    if game.PlaceId == 8304191830 then
-        local cpos = plr.Character.HumanoidRootPart.CFrame
-        if Settings.AutoChallenge and Settings.AutoFarm or Settings.unitconfig and checkReward() == true then
-            for i, v in pairs(game:GetService("Workspace")["_CHALLENGES"].Challenges:GetDescendants()) do
-                if v.Name == "Owner" and v.Value == nil then
-                    --print(v.Parent.Name.." "..v.Parent:GetFullName())
-                    local args = {  [1] = tostring(v.Parent.Name) }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
-                    Settings.chdoor = v.Parent.Name
-                    break
-                end
-            end
-            task.wait()
-            plr.Character.HumanoidRootPart.CFrame = cpos
-        end
-    end
-end
-    -- End of Start Challenge
-    
-    -- Start of Get Boros Portal
-function getBorosPortals()
-    local portals = {}
-    for _, item in pairs(get_inventory_items_unique_items()) do
-        if item["item_id"] == "portal_boros_g" then
-            table.insert(portals, item)
-        end
-    end
-    return portals
-end
-    -- End of Get Boros Portal
-    
-    -- Start of Get CSM Portal
-function getCSMPortals()
-    local portals = {}
-    for _, item in pairs(get_inventory_items_unique_items()) do
-        if item["item_id"] == "portal_csm" or "portal_csm1" or "portal_csm2" or "portal_csm3" or "portal_csm4" or "portal_csm5" then
-            table.insert(portals, item)
-        end
-    end
-    return portals
-end
-    -- End of Get CSM Porta
-    
-    -- Start of Get Zeldris Portal
-function getZeldrisPortals()
-    local portals = {}
-    for _, item in pairs(get_inventory_items_unique_items()) do
-        if item["item_id"] == "portal_zeldris" then
-            table.insert(portals, item)
-        end
-    end
-    return portals
-end
-    -- End of Get Zeldris Portal
-    
-    -- Start of Get Portals
-function GetPortals(id)
-    local reg = getreg() 
-    local portals = {}
-    for i,v in next, reg do
-        if type(v) == 'function' then 
-            if getfenv(v).script then 
-                for _, v in pairs(debug.getupvalues(v)) do 
-                    if type(v) == 'table' then
-                        if v["session"] then
-                            for _, item in pairs(v["session"]["inventory"]['inventory_profile_data']['unique_items']) do
-                            if item["item_id"]:match(id) then
-                                    table.insert(portals, item)
-                              end
-                            end
-                            return portals
-                        end
-                    end
-                end
-            end
-        end
-    end
-end
-    -- End of Get Portals
-    
     -- Start of Auto Start Farm Function
 Settings.teleporting = true
 getgenv().door = "_lobbytemplategreen1"
 local function startfarming()
-    if game.PlaceId == 8304191830 and Settings.autostart and Settings.teleporting and not Settings.AutoInfinityCastle then
+    if Settings.autostart and Settings.teleporting then
         local cpos = plr.Character.HumanoidRootPart.CFrame; cata = Settings.WorldCategory; level = Settings.SelectedLevel;
         if cata == "Story Worlds" or cata == "Legend Stages" then
             if tostring(game.Workspace._LOBBIES.Story[getgenv().door].Owner.Value) ~= plr.Name then
@@ -2704,245 +2356,194 @@ local function startfarming()
 end
     -- End of Auto Start Farm Function
     
-    -- Start of Auto Ability Function [Changed by craymel02 --newfix] autoskill
-getgenv().autoabilityerr = false
-function autoabilityfunc()
-    local player = game.Players.LocalPlayer.Name
-    repeat task.wait() until Workspace:WaitForChild("_UNITS")
-    local success, err = pcall(function()
-        for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
-            if v:FindFirstChild("_stats") then
-                
-                -- Look for Threat then execute Puchi Skill
-                if v._stats:FindFirstChild("threat") then
-                    if v._stats.threat.Value > 0 then
-                        UsePuchiSkill()
-                    end
-                    
-                -- Search Player Units
-				elseif v._stats:FindFirstChild("player") then
-					if tostring(v._stats.player.Value) == player then
+    -- Start of Check Challenge
+local function checkChallenge()
+    for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+        if v:IsA("SurfaceGui") then
+            if v:FindFirstChild("ChallengeCleared") then
+                return v.ChallengeCleared.Visible
+            end
+        end
+    end
+end
+    -- End of Check Challenge
+    
+    -- Start of Check Reward
+local function checkReward() 
+    if checkChallenge() == false then
+        if Settings.AutoChallengeAll then
+            return true
+        elseif Settings.SelectedReward == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value then
+            return true
+            else
+                return false
+        end
+        else
+            return false
+    end
+end
+    -- End of Check Reward
+    
+    -- Start of Start Challenge
+local function startChallenge()
+    local cpos = plr.Character.HumanoidRootPart.CFrame
+    for i, v in pairs(Workspace._CHALLENGES.Challenges:GetDescendants()) do
+        if v.Name == "Owner" and v.Value == nil then
+            --print(v.Parent.Name.." "..v.Parent:GetFullName())
+            local args = {  [1] = tostring(v.Parent.Name) }
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_join_lobby:InvokeServer(unpack(args))
+            Settings.chdoor = v.Parent.Name
+            break
+        end
+    end
+    task.wait()
+    plr.Character.HumanoidRootPart.CFrame = cpos
+end
 
-                        
-                        -- Execute Skill if Wendy and recast every 21 seconds
-                        if v._stats.id.Value == "wendy" or v._stats.id.Value == "erwin" then
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-                            task.wait(21)
-                        
-                        -- Execute Skill if Erwin and recast every 21 seconds
-                        elseif v._stats.id.Value == "erwin" then
-                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-                            task.wait(21)
-                            
-                        -- Execute Skill if Gojo and recast every 60 seconds    
-                        elseif v._stats.id.Value == "gojo_evolved" then
-                            if v._stats.state.Value == "attack" then
-                                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+    -- End of Start Challenge
+    
+    -- Start of Get Boros Portal
+function getBorosPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_boros_g" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+    -- End of Get Boros Portal
+    
+    -- Start of Get CSM Portal
+function getCSMPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_csm" or "portal_csm1" or "portal_csm2" or "portal_csm3" or "portal_csm4" or "portal_csm5" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+    -- End of Get CSM Porta
+    
+    -- Start of Get Zeldris Portal
+function getZeldrisPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_zeldris" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+    -- End of Get Zeldris Portal
+    
+    -- Start of Get Portals
+function GetPortals(id)
+    local reg = getreg() 
+    local portals = {}
+    for i,v in next, reg do
+        if type(v) == 'function' then 
+            if getfenv(v).script then 
+                for _, v in pairs(debug.getupvalues(v)) do 
+                    if type(v) == 'table' then
+                        if v["session"] then
+                            for _, item in pairs(v["session"]["inventory"]['inventory_profile_data']['unique_items']) do
+                            if item["item_id"]:match(id) then
+                                    table.insert(portals, item)
+                              end
                             end
-                        
-                        -- Execute Skill if Not Wendy, Erwin, Gojo and Puchi    
-                        elseif v._stats.id.Value ~= "pucci_heaven" then
-                            if v._stats.state.Value == "attack" then
-                                if v._stats.active_attack.Value ~= "nil" then
-                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-                                end
-                            end
+                            return portals
                         end
                     end
                 end
             end
         end
-    end)
-  
-     if err then
-         warn("Can't use Ability")
-         getgenv().autoabilityerr = true
-         error(err)
-     end
-end
-    -- End of Auto Abilities Function
-    
-    -- Start of Puchi Skill Function
-function UsePuchiSkill()
-    local player = game.Players.LocalPlayer.Name
-	for i, v in ipairs(Workspace["_UNITS"]:getChildren()) do
-		if v:FindFirstChild("_stats") then
-			if v._stats:FindFirstChild("player") then
-				if tostring(v._stats.player.Value) == player then
-					if v._stats.id.Value == "pucci_heaven" then
-					    if v._stats.state.Value == "attack" then
-					    
-					        -- Check if Game Mode is Infinite
-						    if GLD()._gamemode == "infinite" then
-						        if GetWaveNumber() % 10 == 0 then
-						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-						        end
-						    -- Check if Game Mode is Raid
-					        elseif GLD()._gamemode == "raid" then
-					            if GetWaveNumber() == 15 or 20 then
-						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-						        end
-						    -- Check if Game mode is Story or Infinite Tower
-					        elseif GLD()._gamemode == "story" or "infinite_tower" then
-					            if GetWaveNumber() == 15 then
-					                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-					            end
-					        end
-						end
-					end
-				end
-			end
-		end
-	end
-end
-    -- End of Puchi Skill Function
-    
-    -- Start of Auto Upgrade Function
-function autoupgradefunc()
-    local success, err = pcall(function() --///
-        repeat task.wait() until Workspace:WaitForChild("_UNITS")
-        for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-           if v:FindFirstChild("_stats") then
-                if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
-                end
-            end
-        end
-    end)
-    if err then
-        warn("Can't Upgrade Unit")
-        getgenv().autoupgradeerr = true
-        error(err)
     end
 end
-    -- End of Auto Upgrade Function
+    -- End of Get Portals
     
     -- Start of Auto Farm Infinity Castle Function
 local function FarmInfinityCastle()
-    if Settings.AutoInfinityCastle and Settings.AutoFarm or Settings.unitconfig then
-        if game.PlaceId == 8304191830 then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12423.1855, 155.24025, 3198.07593, -1.34111269e-06, -2.02512282e-08, 1, 3.91705386e-13, 1, 2.02512282e-08, -1, 4.18864542e-13, -1.34111269e-06)
-            getgenv().infinityroom = 0
-            for i, v in pairs(game:GetService("Players")[game.Players.LocalPlayer.Name].PlayerGui.InfiniteTowerUI.LevelSelect.InfoFrame.LevelButtons:GetChildren()) do
-                if v.Name == "FloorButton" then
-                    if v.clear.Visible == false and v.Locked.Visible == false then
-                        local room = string.split(v.Main.text.Text, " ")
-                        local args = {
-                            [1] = tonumber(room[2])
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower:InvokeServer(unpack(args))
-                        getgenv().infinityroom = tonumber(room[2])
-                        break
-                    end
-                end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12423.1855, 155.24025, 3198.07593, -1.34111269e-06, -2.02512282e-08, 1, 3.91705386e-13, 1, 2.02512282e-08, -1, 4.18864542e-13, -1.34111269e-06)
+    getgenv().infinityroom = 0
+    for i, v in pairs(game:GetService("Players")[game.Players.LocalPlayer.Name].PlayerGui.InfiniteTowerUI.LevelSelect.InfoFrame.LevelButtons:GetChildren()) do
+        if v.Name == "FloorButton" then
+            if v.clear.Visible == false and v.Locked.Visible == false then
+                local room = string.split(v.Main.text.Text, " ")
+                local args = {
+                    [1] = tonumber(room[2])
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower:InvokeServer(unpack(args))
+                getgenv().infinityroom = tonumber(room[2])
+                break
             end
-            task.wait(6)
         end
     end
+    task.wait(6)
 end
     -- End of Auto Farm Infinity Castle Function
 
-    -- Start of Coroutine for Infinity Castle, Challenge and Normal Farming
-coroutine.resume(coroutine.create(function()
-    while task.wait() do
-        if not Settings.AutoInfinityCastle then
-            if not checkChallenge() then --Challenge_Not_Complete
-                if  Settings.AutoChallenge and checkReward() == true then
-                    startChallenge() --S_Challenge
-                else
-                    startfarming()--S_Farming
+    -- Start of Check Function if Normal Story, Challenge or Infinity Castle [Changed by Craymel02]
+local function checkButtons()
+    if Settings.AutoChallenge then
+        if checkReward() == true then
+            if checkChallenge() ~= true then
+                if Settings.AutoChallengeAll then
+                    startChallenge()
+                    BabyWebhook()
+                    SnipeShopNew()
+                    else
+                        startChallenge()
+                        BabyWebhook()
+                        SnipeShopNew()
                 end
-            elseif checkChallenge() == true then
-                startfarming()--S_Farming
-                BabyWebhook()
-                SnipeShopNew()
-            end
-        elseif not Settings.AutoInfinityCastle == true then--Infiniy Castle
-            if not checkChallenge() then --Challenge_Not_Complete
-                if  Settings.AutoChallengeAll then
-                    startChallenge() --S_Challenge
-                else
-                    startfarming()--S_Farming
-                end
-            elseif checkChallenge() == true then
-                startfarming()--S_Farming
-                BabyWebhook()
-                SnipeShopNew()
-            end
-        elseif Settings.AutoInfinityCastle == true then--Infiniy Castle
-            if not checkChallenge() then --Challenge_Not_Complete
-                if  Settings.AutoChallenge and checkReward() == true then
-                    startChallenge() --S_Challenge
-                else
-                    FarmInfinityCastle()--S_Farming
-                end
-            elseif checkChallenge() == true then
-                FarmInfinityCastle()--S_Farming
+            else
+                startfarming()
                 BabyWebhook()
                 SnipeShopNew()
             end
         end
-        if game.PlaceId ~= 8304191830 then
-            local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
-            if Settings.autoQuit and not Settings.AutoSell and tonumber(Settings.AutoSellWave) <= _wave.Value then
-                pcall(function() webhook() end)
-                print("send Webhook")
-                task.wait(2.1)
-                print("Returning to lobby...")
-                task.wait(2.1)
-                Teleport()
-            end
-            if Settings.AutoSell and not Settings.autoQuit and tonumber(Settings.AutoSellWave) <= _wave.Value then
-                getgenv().disableautofarm = true
-                repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
-                for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
-                    repeat task.wait()
-                    until v:WaitForChild("_stats")
-                    if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
-                        repeat
-                            task.wait()
-                        until v:WaitForChild("_stats"):WaitForChild("upgrade")
-            
+    elseif Settings.AutoInfinityCastle then
+        FarmInfinityCastle()
+        BabyWebhook()
+        SnipeShopNew()
+        else
+            startfarming()
+            BabyWebhook()
+            SnipeShopNew()
+    end
+end
+    -- End of Check Function if Normal Story, Challenge or Infinity Castle
+    
+    -- Start of Auto Quit or Sell Function [Changed by Craymel02]
+local function autoQuitSell()
+    local player = game.Players.LocalPlayer.Name
+    if Settings.autoQuit then
+        if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
+            pcall(function()
+                webhook()
+            end)
+            print("send Webhook")
+            task.wait(2.1)
+            print("Returning to lobby...")
+            task.wait(2.1)
+            Teleport()
+        end
+    elseif Settings.AutoSell then
+        if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
+            getgenv().disableautofarm = true
+            for i, v in ipairs(Workspace._UNITS:GetChildren()) do
+                if v:FindFirstChild("_stats") then
+                    if tostring(v._stats.player.Value) == player then
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
                     end
                 end
             end
         end
     end
-end))
-    -- Start of Coroutine for Infinity Castle, Challenge and Normal Farming
-    
-    -- Start of Coroutine for Auto Ability and Auto Upgrade
-coroutine.resume(coroutine.create(function()
-    while task.wait(2) do
-        if Settings.AutoAbilities then
-            if game.PlaceId ~= 8304191830 then
-                pcall(function()
-                    autoabilityfunc()
-                end)
-            end
-            if  getgenv().autoabilityerr == true then
-                task.wait()
-                autoabilityfunc()
-                getgenv().autoabilityerr = false
-            end
-        end
-        
-        if Settings.AutoUpgrade then
-            if game.PlaceId ~= 8304191830 then
-                pcall(function()
-                    autoupgradefunc()
-                end)
-            end
-            if  getgenv().autoupgradeerr == true then
-                task.wait()
-                autoupgradefunc()
-                getgenv().autoupgradeerr = false
-            end
-        end
-    end
-end))
-    -- Start of Coroutine for Auto Ability and Auto Upgrade
+end
+    -- End of Auto Quit or Sell Function
     
     -- Start of Auto Leave Function
 local PlaceID = 8304191830
@@ -3032,163 +2633,225 @@ function Teleport()
 end
     -- End of Auto Leave Function
 
-    -- Start of Server Hop to Find Piccoro
-Time = 3 -- seconds
-repeat wait() until game:IsLoaded()
-wait(Time)
-local PlaceID = game.PlaceId
-local AllIDs = {}
-local foundAnything = ""
-local actualHour = os.date("!*t").hour
-local Deleted = false
-function HopServer()
-   local Site;
-   if foundAnything == "" then
-       Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
-   else
-       Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
-   end
-   local ID = ""
-   if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
-       foundAnything = Site.nextPageCursor
-   end
-   local num = 0;
-   for i,v in pairs(Site.data) do
-       local Possible = true
-       ID = tostring(v.id)
-       if tonumber(v.maxPlayers) > tonumber(v.playing) then
-           for _,Existing in pairs(AllIDs) do
-               if num ~= 0 then
-                   if ID == tostring(Existing) then
-                       Possible = false
-                   end
-               else
-                   if tonumber(actualHour) ~= tonumber(Existing) then
-                       local delFile = pcall(function()
-                           delfile("NotSameServers.json")
-                           AllIDs = {}
-                           table.insert(AllIDs, actualHour)
-                       end)
-                   end
-               end
-               num = num + 1
-           end
-           if Possible == true then
-               table.insert(AllIDs, ID)
-               wait()
-               pcall(function()
-                   writefile("NotSameServers.json", game:GetService('HttpService'):JSONEncode(AllIDs))
-                   wait()
-                   game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
-               end)
-               wait(4)
-           end
-       end
-   end
-end
-
-function TeleportHOP()
-    while wait() do
-     warn("Teleport HOP")
-        pcall(function()
-            HopServer()
-            if game.ReplicatedStorage.LOBBY_ASSETS._EVENT_NPCS:FindFirstChild("piccolo_npc") then
-                wait(3)
-                HopServer()
-            elseif game.Workspace._npcs:FindFirstChild("piccolo_npc") then
-                local a={[1]="veku_jacket"} game:GetService("ReplicatedStorage").endpoints.client_to_server.try_purchase_april_item:InvokeServer(unpack(a))
-                local a={[1]="veku_jacket"} game:GetService("ReplicatedStorage").endpoints.client_to_server.try_purchase_april_item:InvokeServer(unpack(a))
-            end
-        end)
-    end
- end 
-
-if Settings.picoHOP and game.ReplicatedStorage.LOBBY_ASSETS._EVENT_NPCS:FindFirstChild("piccolo_npc") then
-    TeleportHOP()
-end
-    -- End of Server Hop to Find Piccoro
-    -- Start of Coroutine to check if Game is Finished, Auto Summon, Snipe Shop
-coroutine.resume(coroutine.create(function()
-    task.spawn(function()
-        local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
-        GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
-            print("Changed", GameFinished.Value == true)
-            if GameFinished.Value == true then
-                repeat task.wait() until game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
-                pcall(function() webhook() end)
-                warn("Wait next or leave")
-                task.wait(2.1)
-                if Settings.AutoNext then
-                    local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                    task.wait(1)
-                    local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                    warn("Next Story...") 
-                elseif Settings.AutoReplay then
-                    local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                    task.wait(1)
-                    local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                    print("Replay...") 
-                elseif Settings.AutoContinue then
-                    local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))
-                    task.wait(1)
-                    local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))   
-                    print("Next Room infint Castle...")              
-                elseif Settings.AutoLeave then
-                    Teleport()
-                    print("Returning to lobby...")
-                end
-                task.wait(10)
-                -- Teleport back to Lobby if Next, Replay, Continue fails after 3 minutes
-                for i = 1, 180, 1 do
-                    task.wait(1)
-                    timer = 180 -i
-                    warn("Fail Safe Timer to Teleport: " .. timer)
-                    if i == 180 then
-                        if game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true then
-                            Teleport()
+    -- Start of Auto Ability Function [Changed by Craymel02]
+getgenv().autoabilityerr = false
+function autoabilityfunc()
+    local player = game.Players.LocalPlayer.Name
+    if Settings.AutoAbilities then
+        repeat task.wait() until Workspace:WaitForChild("_UNITS")
+        local success, err = pcall(function()
+            for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
+                if v:FindFirstChild("_stats") then
+                    
+                    -- Look for Threat then execute Puchi Skill
+                    if v._stats:FindFirstChild("threat") then
+                        if v._stats.threat.Value > 0 then
+                            UsePuchiSkill()
+                        end
+                        
+                    -- Search Player Units
+    				elseif v._stats:FindFirstChild("player") then
+    					if tostring(v._stats.player.Value) == player then
+    
+                            
+                            -- Execute Skill if Wendy and recast every 21 seconds
+                            if v._stats.id.Value == "wendy" or v._stats.id.Value == "erwin" then
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                task.wait(21)
+                            
+                            -- Execute Skill if Erwin and recast every 21 seconds
+                            elseif v._stats.id.Value == "erwin" then
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                task.wait(21)
+                                
+                            -- Execute Skill if Gojo and recast every 60 seconds    
+                            elseif v._stats.id.Value == "gojo_evolved" then
+                                if v._stats.state.Value == "attack" then
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                end
+                            
+                            -- Execute Skill if Not Wendy, Erwin, Gojo and Puchi    
+                            elseif v._stats.id.Value ~= "pucci_heaven" then
+                                if v._stats.state.Value == "attack" then
+                                    if v._stats.active_attack.Value ~= "nil" then
+                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    end
+                                end
+                            end
                         end
                     end
                 end
             end
         end)
-    end)
-    while task.wait() do
-        if getgenv().AutoSummon then
-            if getgenv().SelectedBanner == "Special" and getgenv().SelectedMethod ~= nil then
-                SummonUnits("EventClover", getgenv().SelectedMethod)
-            elseif getgenv().SelectedBanner == "Standard" and getgenv().SelectedMethod ~= nil then
-                SummonUnits("Standard", getgenv().SelectedMethod)
-            end
+      
+        if err then
+            warn("Can't use Ability")
+            getgenv().autoabilityerr = true
+            error(err)
         end
-        if Settings.AutoSnipeMerchant then
-            if Settings.ASM_SelectedFruit ~= "None" or Settings.ASM_SelectedFruit ~= nil then
-                if Settings.ASM_SelectedFruit == "Any StarFruits" then
-                    snipefunc("Any StarFruits")
-                else
-                    snipefunc(Settings.ASM_SelectedFruit)
-                end
-            end
-            if Settings.ASM_SelectedOtherItems ~= "None" or Settings.ASM_SelectedOtherItems ~= nil then
-                if Settings.ASM_SelectedOtherItems == "Any StarFruits" then
-                    snipefunc("Any Items")
-                else
-                    snipefunc(Settings.ASM_SelectedOtherItems)
-                end
-            end
-            if Settings.ASM_SelectedEvoItems ~= "None" or Settings.ASM_SelectedEvoItems ~= nil then
-            end
-        end
-    end  
-end))
-    -- End of Coroutine to check if Game is Finished, Auto Summon, Snipe Shop
+    end
+end
+    -- End of Auto Abilities Function
     
-    -- Start of Placing Unit to Position Function [Changed by craymel02 --newfix]
+    -- Start of Puchi Skill Function
+function UsePuchiSkill()
+    local player = game.Players.LocalPlayer.Name
+	for i, v in ipairs(Workspace["_UNITS"]:getChildren()) do
+		if v:FindFirstChild("_stats") then
+			if v._stats:FindFirstChild("player") then
+				if tostring(v._stats.player.Value) == player then
+					if v._stats.id.Value == "pucci_heaven" then
+					    if v._stats.state.Value == "attack" then
+					    
+					        -- Check if Game Mode is Infinite
+						    if GLD()._gamemode == "infinite" then
+						        if GetWaveNumber() % 10 == 0 then
+						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+						        end
+						    -- Check if Game Mode is Raid
+					        elseif GLD()._gamemode == "raid" then
+					            if GetWaveNumber() == 15 or 20 then
+						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+						        end
+						    -- Check if Game mode is Story or Infinite Tower
+					        elseif GLD()._gamemode == "story" or "infinite_tower" then
+					            if GetWaveNumber() == 15 then
+					                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+					            end
+					        end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+    -- End of Puchi Skill Function
+    
+    -- Start of Auto Upgrade Function
+function autoupgradefunc()
+    if Settings.AutoUpgrade then
+        local success, err = pcall(function() --///
+            repeat task.wait() until Workspace:WaitForChild("_UNITS")
+            for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+               if v:FindFirstChild("_stats") then
+                    if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+                    end
+                end
+            end
+        end)
+        
+        if err then
+            warn("Can't Upgrade Unit")
+            getgenv().autoupgradeerr = true
+            error(err)
+        end
+    end
+end
+    -- End of Auto Upgrade Function
+    
+    -- Start of Check if Game Round Finished [Changed by Craymel02]
+function checkRound()
+    local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
+    GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
+        print("Changed", GameFinished.Value == true)
+        if GameFinished.Value == true then
+            repeat task.wait() until game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
+            pcall(function() webhook() end)
+            warn("Wait next or leave")
+            task.wait(2.1)
+            if Settings.AutoNext then
+                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                task.wait(1)
+                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                warn("Next Story...") 
+            elseif Settings.AutoReplay then
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                task.wait(1)
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                print("Replay...") 
+            elseif Settings.AutoContinue then
+                local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))
+                task.wait(1)
+                local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))   
+                print("Next Room infint Castle...")              
+            elseif Settings.AutoLeave then
+                Teleport()
+                print("Returning to lobby...")
+            end
+            task.wait(10)
+            -- Teleport back to Lobby if Next, Replay, Continue fails after 3 minutes
+            for i = 1, 180, 1 do
+                task.wait(1)
+                timer = 180 -i
+                warn("Fail Safe Timer to Teleport: " .. timer)
+                if i == 180 then
+                    if game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true then
+                        Teleport()
+                    end
+                end
+            end
+        end
+    end)
+end
+    -- End of Check if Game Round Finished
+    
+    -- Start of Check Current Banner [Changed by Craymel02]
+function checkBanner()
+    if getgenv().AutoSummon then
+        if getgenv().SelectedBanner == "Special" and getgenv().SelectedMethod ~= nil then
+            SummonUnits("EventClover", getgenv().SelectedMethod)
+        elseif getgenv().SelectedBanner == "Standard" and getgenv().SelectedMethod ~= nil then
+            SummonUnits("Standard", getgenv().SelectedMethod)
+        end
+    end
+end
+    -- End of Check Current Banner
+    
+    -- Start of Check Merchant Shop [Changed by Craymel02]
+function checkMerchant()
+    if Settings.AutoSnipeMerchant then
+        if Settings.ASM_SelectedFruit ~= "None" or Settings.ASM_SelectedFruit ~= nil then
+            if Settings.ASM_SelectedFruit == "Any StarFruits" then
+                snipefunc("Any StarFruits")
+            else
+                snipefunc(Settings.ASM_SelectedFruit)
+            end
+        end
+        if Settings.ASM_SelectedOtherItems ~= "None" or Settings.ASM_SelectedOtherItems ~= nil then
+            if Settings.ASM_SelectedOtherItems == "Any StarFruits" then
+                snipefunc("Any Items")
+            else
+                snipefunc(Settings.ASM_SelectedOtherItems)
+            end
+        end
+    end
+end
+    -- End of Check Merchant Shop
+
+    -- Start of Check Connection [Added by Craymel02]
+function checkInterNet()
+    warn("Auto Reconnect Loaded")
+    while task.wait(5) do
+        game.CoreGui.RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(a)
+            if a.Name == 'ErrorPrompt' then
+                task.wait(10)
+				warn("Trying to Reconnect")
+				TPReturner()
+            end
+        end)
+    end
+end
+    
+    -- End of Check Connection
+    -- Start of Placing Unit to Position Function [Changed by Craymel02]
 function PlacePos(map, name, _uuid, unit)
     if Settings["UnitConfig_" .. tostring(map)].Position == nil then
         warn("Unit Position for " .. map .. " not found, Set Unit Position First")
         Settings.unitconfig = false
         saveSettings()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
     end
     if Settings.unitconfig then
         local pos = Settings["UnitConfig_" .. tostring(map)].Position[unit]
@@ -3277,7 +2940,7 @@ function PlacePos(map, name, _uuid, unit)
 end
     -- End of Placing Unit to Position Function
 
-    -- Start of Get Current Wave Number [Added by craymel02 --newfix]
+    -- Start of Get Current Wave Number [Added by Craymel02]
 function GetWaveNumber()
     return game:GetService("Workspace")["_wave_num"].Value
 end
@@ -3332,7 +2995,7 @@ function upgradeunit(name, min)
 end
     -- End of Upgrade Unit Function
     
-    -- Start of Unit Config Target Priority [Added by craymel02 --newfix]
+    -- Start of Unit Config Target Priority [Added by Craymel02]
 function targetpriority(name, priority)
     for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
        if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
@@ -3345,20 +3008,8 @@ function targetpriority(name, priority)
     end
 end
     -- End of Unit Config Target Priority
-  
-    -- Start of Auto Farm Sell Unit
-function sellunit(name) 
-    repeat task.wait() until Workspace:WaitForChild("_UNITS")
-    for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
-        repeat task.wait() until v:WaitForChild("_stats")
-        if v._stats.id.value == name and tostring(v._stats.player.Value) == game.Players.LocalPlayer.Name and v._stats:FindFirstChild("upgrade") then
-            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
-        end
-    end
-end
-    -- End of Auto Farm Sell Unit
  
-    -- Start of Unit Config Sell Unit [Changed by craymel02 --newfix]
+    -- Start of Unit Config Sell Unit [Changed by Craymel02]
 function sellunitConfig(name, wave)
     for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
        if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
@@ -3372,13 +3023,13 @@ function sellunitConfig(name, wave)
 end
     -- End of Unit Config Sell Unit
 
-    -- Start of Getting Unit Config Settings based on current Map [Added by craymel02 --newfix]
+    -- Start of Getting Unit Config Settings based on current Map [Added by Craymel02]
 function GetUnitSettings(map, unit)
     return Settings["UnitConfig_" .. tostring(map)].Parameters[unit]
 end
     -- End of Getting Unit Config Settings based on Current Map
 
-    -- Start of Unit Config Place Unit [Changed by craymel02 --newfix]
+    -- Start of Unit Config Place Unit [Changed by Craymel02]
 function UnitConfigPlaceUnits()
     
     local toPlace = {}
@@ -3395,7 +3046,6 @@ function UnitConfigPlaceUnits()
         while task.wait(0.5) do
             if Settings.unitconfig == true then
                 if Settings["UnitConfig_" .. tostring(map)] == nil then
-                    warn(map.." attemp to place "..name)
                     warn("Config for " .. tostring(map) .. " not found, Generating Default Settings")
                     Settings.unitconfig = false
                     reunitcon()
@@ -3554,7 +3204,7 @@ function UnitConfigPlaceUnits()
 end
     -- End of Unit Config Place Unit
     
-    -- Start of Reset Unit Config for Current Map [Changed by craymel02 --newfix]
+    -- Start of Reset Unit Config for Current Map [Changed by Craymel02]
 function reunitcon()
     local map = GLD().map
     if game.PlaceId ~= 8304191830 then
@@ -3590,13 +3240,20 @@ function reunitcon()
             end
         end
         saveSettings()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
     end
 end
     -- End of Reset Unit Config for Current Map
   
-    -- Start of Place Units Function for Auto Farm [Changed by craymel02 --newfix]
+    -- Start of Place Units Function for Auto Farm [Changed by Craymel02]
 function PlaceUnits()
+    local map = GLD().map
+    if Settings["UnitConfig_" .. tostring(map)].Position == nil then
+        warn("Unit Position for " .. map .. " not found, Set Unit Position First")
+        Settings.Autofarm = false
+        saveSettings()
+        loadstring(game:HttpGet('https://pastebin.com/raw/Yx8wfE2x'))()
+    end
     pcall(function()
         if Settings.AutoFarm and not getgenv().disableautofarm then
             local map = GLD().map
@@ -3605,8 +3262,6 @@ function PlaceUnits()
                 if unitinfo ~= nil then
                     local unitinfo_ = unitinfo:split(" #")
                     local pos = Settings["UnitConfig_" .. tostring(map)].Position["UP" .. i]
-                    print(map.." attemp to place "..unitinfo_[1])
-
                     if unitinfo_[1] ~= "metal_knight_evolved" then
                         local args = {
                             [1] = unitinfo_[2],
@@ -3669,121 +3324,84 @@ function PlaceUnits()
         end
     end)
 end
-    -- Start of Place Units Function for Auto Farm
-    
-    -- Start of Coroutine for Unit Config Auto Farming [Changed by craymel02 --newfix]
-    -- Removed Unnecessary if else statements that are not needed for it to work
-if game.PlaceId ~= 8304191830 then
-    repeat task.wait() until Workspace:WaitForChild("_terrain")
-    UnitConfigPlaceUnits()
-end
-    -- End of Coroutine for Unit Config Auto Farming
 
-    -- Start of Coroutine for Auto Farming [Changed by craymel02 --newfix]
-    -- Removed Unnecessary if else statements that are not needed for it to work
-coroutine.resume(coroutine.create(function()
-    while task.wait(1.5) do
-        if game.PlaceId ~= 8304191830 and Settings.AutoFarm and not Settings.unitconfig then
-        repeat task.wait() until Workspace:WaitForChild("_map")
-            PlaceUnits()
-        end
+    -- Start of Disable Error Function
+function disableError()
+    if game.PlaceId ~= 8304191830 then
+        game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+        game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+        game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false
+        else
+            game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false
     end
-end))
-    -- End of Coroutine for Auto Farming
+end
 
+    -- End of Disable Error Function
+    
     -- Start of Anti AFK Function
-pcall(function()
-    local vu = game:GetService("VirtualUser")
-    game:GetService("Players").LocalPlayer.Idled:connect(function()
-        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-        wait(1)
-        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+function antiAFK()
+    pcall(function()
+        local vu = game:GetService("VirtualUser")
+        game:GetService("Players").LocalPlayer.Idled:connect(function()
+            vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            wait(1)
+            vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        end)
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
+        warn("Anti-AFK has been Loaded!")
     end)
-    game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
-    warn("Anti-AFK has been Loaded!")
-end)
+end
     -- End of Anti AFK Function
     
-warn("AA v2 Loaded - craymel02 Edition")
-warn("Auto Reconnect Loaded")
-
-    -- Start of Auto Reconnect Function [Added by craymel02 --newfix]
-coroutine.resume(coroutine.create(function()
-    while task.wait(5) do
-        game.CoreGui.RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(a)
-            if a.Name == 'ErrorPrompt' then
-                task.wait(10)
-				warn("Trying to Reconnect")
-				TPReturner()
-            end
-        end)
-    end
-end))
-    -- End of Auto Reconnect Function
-    
-    -- Start of Auto Load Script Function
-if Settings.AutoLoadScript then
-    autoload()
-end
-    -- End of Auto Load Script Function
-    
-    -- Start of Disabling Annoying Errors
-if game.PlaceId ~= 8304191830 then
-    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false
-    else
-        game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false
-end
-    -- End of Disabling Annoying Errors
-
     -- Start of Hide Name Function
 function hidename()
-    task.spawn(function()  -- Hides name for yters (not sure if its Fe)
-        while task.wait() do
-            pcall(function()
-                if game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead") then
-                    game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead"):Destroy()
-                end
-            end)
-        end
-    end)
-end
-
-if Settings.hidenamep then
-    hidename()
-    warn("Name Hider has been Loaded!")
+    if Settings.hidenamep then
+        task.spawn(function()  -- Hides name for yters (not sure if its Fe)
+            while task.wait() do
+                pcall(function()
+                    if game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead") then
+                        game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead"):Destroy()
+                    end
+                end)
+            end
+        end)
+        warn("Name Hider has been Loaded!")
+    end
 end
     -- End of Hide Name Function
     
     -- Start of Delete Map Function
 function DelMap()
-	task.spawn(function()
-		while task.wait() do
-			pcall(function()
-				if game.Workspace:FindFirstChild("_map") then
-					game.Workspace:FindFirstChild("_map"):Destroy()
-					warn("Delete Map")
-				end
-			end)
-		end
-	end)
+    if Settings.deletemap then
+    	task.spawn(function()
+    		while task.wait() do
+    			pcall(function()
+    				if game.Workspace:FindFirstChild("_map") then
+    					game.Workspace:FindFirstChild("_map"):Destroy()
+    					warn("Delete Map")
+    				end
+    			end)
+    		end
+    	end)
+	end
 end
 
 function DelTer()
-	if game.Workspace._terrain:FindFirstChild("terrain") then
-    	for i,v in pairs(game:GetService("Workspace")["_terrain"].terrain:GetChildren()) do
-        	if v.ClassName == "Model" then v:Destroy() end
-			if v.ClassName == "Folder" then v:Destroy() end
-			warn("Delete Terrain")
-        end
-    end  
+    if Settings.deletemap then
+    	if game.Workspace._terrain:FindFirstChild("terrain") then
+        	for i,v in pairs(game:GetService("Workspace")["_terrain"].terrain:GetChildren()) do
+            	if v.ClassName == "Model" then
+            	    v:Destroy()
+                end
+    			if v.ClassName == "Folder" then
+    			    v:Destroy()
+    			end
+    			warn("Delete Terrain")
+            end
+    	end
+	end
 end
 
-if Settings.deletemap then
-    if game.PlaceId ~= 8304191830 then
-        DelMap()
-        DelTer()
-    end
-end
     -- End of Delete Map Function
     
     -- Start of Auto Daily Quest Function
@@ -3793,86 +3411,137 @@ function autoDailyquest()
          wait(15)
     end
 end
-
-if Settings.autoDailyquest then
-    autoDailyquest()
-end
     -- End of Auto Daily Quest Function
     
     -- Start of Redeem Code Function
 function Reedemcode()
-    codes = {"TWOMILLION","subtomaokuma","CHALLENGEFIX","GINYUFIX","RELEASE","SubToKelvingts","SubToBlamspot","KingLuffy","TOADBOIGAMING","noclypso","FictioNTheFirst","GOLDENSHUTDOWN","GOLDEN"
-    ,"SINS2","subtosnowrbx","Cxrsed","subtomaokuma","VIGILANTE"}
+    if Settings.redeemc then
+        codes = {"TWOMILLION","subtomaokuma","CHALLENGEFIX","GINYUFIX","RELEASE","SubToKelvingts","SubToBlamspot","KingLuffy","TOADBOIGAMING","noclypso","FictioNTheFirst","GOLDENSHUTDOWN","GOLDEN"
+        ,"SINS2","subtosnowrbx","Cxrsed","subtomaokuma","VIGILANTE"}
         for _, v in pairs(codes) do
-        pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["redeem_code"]:InvokeServer(v)()end)
+            pcall(function()
+                game:GetService("ReplicatedStorage").endpoints["client_to_server"]["redeem_code"]:InvokeServer(v)()
+            end)
+        end
     end
-end
-
-if Settings.redeemc then
-    Reedemcode()
 end
     -- Start of Redeem Code Function
-    
+
     -- Start of Laggy Function [Version of HOLYSHz]
 function Laggy()
-    
-    delaylag = tonumber(Settings.delag or 1.5)
-    while wait(tonumber(Settings.delag or 1.5)) do --// don't change it's the best
-        game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
-        
-        local function getmaxvalue(val)
-            local mainvalueifonetable = 499999
+    if Settings.laggy then
+        delaylag = tonumber(Settings.delag or 1.5)
+        while wait(tonumber(Settings.delag or 1.5)) do --// don't change it's the best
+            game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
             
-            if type(val) ~= "number" then
-                return nil
+            local function getmaxvalue(val)
+                local mainvalueifonetable = 499999
+                
+                if type(val) ~= "number" then
+                    return nil
+                end
+                
+                local calculateperfectval = (mainvalueifonetable/(val+2))
+                return calculateperfectval
             end
             
-            local calculateperfectval = (mainvalueifonetable/(val+2))
-            return calculateperfectval
-        end
-        
-        local function bomb(tableincrease, tries)
-            local maintable = {}
-            local spammedtable = {}
-            table.insert(spammedtable, {})
-            z = spammedtable[1]
+            local function bomb(tableincrease, tries)
+                local maintable = {}
+                local spammedtable = {}
+                table.insert(spammedtable, {})
+                z = spammedtable[1]
+                tableincrease = tonumber(Settings.max or 22)
+                
+                for i = 1, tableincrease do
+                    local tableins = {}
+                    table.insert(z, tableins)
+                    z = tableins
+                end
+                
+                local calculatemax = getmaxvalue(tableincrease)
+                local maximum
+                
+                if calculatemax then
+                    maximum = calculatemax
+                    else
+                        maximum = 999999
+                end
+                
+                for i = 1, maximum do
+                    table.insert(maintable, spammedtable)
+                end
+                
+                tries = tonumber(Settings.mix or 0)
+                for i = 1, tries do
+                    game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
+                end
+            end
             tableincrease = tonumber(Settings.max or 22)
-            
-            for i = 1, tableincrease do
-                local tableins = {}
-                table.insert(z, tableins)
-                z = tableins
-            end
-            
-            local calculatemax = getmaxvalue(tableincrease)
-            local maximum
-            
-            if calculatemax then
-                maximum = calculatemax
-                else
-                    maximum = 999999
-            end
-            
-            for i = 1, maximum do
-                table.insert(maintable, spammedtable)
-            end
-            
             tries = tonumber(Settings.mix or 0)
-            for i = 1, tries do
-                game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
-            end
+            bomb(tableincrease, tries)
         end
-        tableincrease = tonumber(Settings.max or 22)
-        tries = tonumber(Settings.mix or 0)
-        bomb(tableincrease, tries)
     end
 end
-
-if Laggy() == false then
-    Laggy() 
-end
-
-if Laggy() == true then
-    notLaggy()
-end
     -- End of Laggy Function [Version of HOLYSHz]
+    
+    -- Start of Coroutine Function [Change by Craymel02]   
+coroutine.resume(coroutine.create(function()
+    while task.wait(1) do
+        if game.PlaceId == 8304191830 then
+            repeat task.wait(0.5) until Workspace:FindFirstChild(game.Players.LocalPlayer.Name)
+            AutoSaveUnit()
+            checkButtons()
+            checkBanner()
+            checkMerchant()
+
+        elseif game.PlaceId ~= 830419830 then
+            repeat task.wait(0.5) until Workspace:WaitForChild("_terrain")
+            
+            autoQuitSell()
+            
+            if getgenv().autoabilityerr == true then
+                task.wait()
+                autoabilityfunc()
+                getgenv().autoabilityerr = false
+                else
+                    autoabilityfunc()
+            end
+            
+            if getgenv().autoupgradeerr == true then
+                task.wait()
+                autoupgradefunc()
+                getgenv().autoupgradeerr = false
+                else
+                    autoupgradefunc()
+            end
+            PlaceUnits()
+            
+        end
+    end
+end))
+    -- End of Coroutine Function
+    
+if game.PlaceId == 8304191830 then
+    autoload()
+    antiAFK()
+    disableError()
+    autoDailyquest()
+    Reedemcode()
+    hidename()
+    checkInterNet()
+elseif game.PlaceId ~= 8304191830 then
+    autoload()
+    antiAFK()
+    task.spawn(function()
+        checkRound()
+    end)
+    repeat task.wait(0.5) until Workspace:WaitForChild("_terrain")
+    UnitConfigPlaceUnits()
+    disableError()
+    DelMap()
+    DelTer()
+    hidename()
+    checkInterNet()
+end
+    
+warn("AA v2 Loaded - Craymel02 Edition")
