@@ -1,13 +1,15 @@
   -- Game Version Variable
-local version = "v2.0.0b32"
+local version = "v2.0.0b33"
 
   -- Start of Local Global Variables
 local HttpService = game:GetService("HttpService")
 local Workspace = game:GetService("Workspace")
+local Replicated = game:GetService("ReplicatedStorage")
 local plr = game:GetService("Players").LocalPlayer
 local RunService = game:GetService("RunService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
+local exec = tostring(identifyexecutor())
   -- End of Local Variables
   
   -- Start of Loading Section
@@ -164,7 +166,6 @@ function webhook()
         end
         local Time = os.date('!*t', OSTime);
 	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
-        local exec = tostring(identifyexecutor())
         userlevel = plr.PlayerGui:FindFirstChild("spawn_units"):FindFirstChild("Lives"):FindFirstChild("Main"):FindFirstChild("Desc"):FindFirstChild("Level").Text
         totalgems = plr.PlayerGui:FindFirstChild("spawn_units"):FindFirstChild("Lives"):FindFirstChild("Frame"):FindFirstChild("Resource"):FindFirstChild("Gem"):FindFirstChild("Level").Text
         ResultHolder = plr.PlayerGui:FindFirstChild("ResultsUI"):FindFirstChild("Holder")
@@ -346,7 +347,6 @@ function BabyWebhook()
     end 
         local Time = os.date('!*t', OSTime);
 	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
-        local exec = tostring(identifyexecutor())
         --BTP lv.
         btplv = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.V.Text
         --next ammo level
@@ -444,7 +444,6 @@ function SpecialSummonSniperWebhook()
     end 
         local Time = os.date('!*t', OSTime);
 	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
-        local exec = tostring(identifyexecutor())
         special_banner = game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.EventClover.Main
         units = {
             special_banner["Featured_One"],
@@ -513,7 +512,6 @@ function StandardSummonSniperWebhook()
     end 
         local Time = os.date('!*t', OSTime);
 	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
-        local exec = tostring(identifyexecutor())
         units = {
             game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["1"].Main,
             game:GetService("Players").LocalPlayer.PlayerGui.HatchGuiNew.BannerFrames.Standard.Main.Scroll["2"].Main,
@@ -581,7 +579,6 @@ function ShopSniperWebhook()
 		print(game:GetService("ReplicatedStorage").src.client.Services.TravellingMerchantServiceClient)
         local Time = os.date('!*t', OSTime);
 	    local thumbnails_avatar = HttpService:JSONDecode(game:HttpGet("https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. game:GetService("Players").LocalPlayer.UserId .. "&size=150x150&format=Png&isCircular=true", true))
-        local exec = tostring(identifyexecutor())
         shop_items = require(game:GetService("ReplicatedStorage").src.client.Services["TravellingMerchantServiceClient"]).SELLING_ITEMS
         shop_item_ids = {}
         print("exechere9")
@@ -648,7 +645,6 @@ if game.CoreGui:FindFirstChild("FinityUI") then
 end
 local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
-local exec = tostring(identifyexecutor())
 local Window = Uilib.new(true, "[UPD 12] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightControl)
 
@@ -1621,9 +1617,10 @@ end
     
     -- Start of Script Section [Added by Craymel02]
 local function scriptupdate()
-    Update:Cheat("Label", "📝 Script Update April 17th")
+    Update:Cheat("Label", "📝 Script Update April 18th")
     
     Notes = {
+        "[+] Fix UI keep reloading if Position for Current Map not Found.",
         "[+] Fix Auto Start not Farming and other conflict.",
         "[+] Changes in Auto Farm Menu",
         "      1. Added Generate Preset Config Button.",
@@ -2008,17 +2005,16 @@ end
 function autoload()
     if Settings.AutoLoadScript then
         pcall(function()
-            local exec = tostring(identifyexecutor())
-            if exec == "Synapse X" and Settings.AutoLoadScript then
+            if exec == "Synapse X" then
                 syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
-            elseif exec ~= "Synapse X" and Settings.AutoLoadScript then
-                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+                else
+                    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
             end
         end)
     end
 end
     -- End of Auto Load Function
-    
+  
     -- Start of Others Section
 function others()
 
@@ -2518,25 +2514,27 @@ end
     
     -- Start of Auto Quit or Sell Function [Changed by Craymel02]
 local function autoQuitSell()
-    local player = game.Players.LocalPlayer.Name
-    if Settings.autoQuit then
-        if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
-            pcall(function()
-                webhook()
-            end)
-            print("send Webhook")
-            task.wait(2.1)
-            print("Returning to lobby...")
-            task.wait(2.1)
-            Teleport()
-        end
-    elseif Settings.AutoSell then
-        if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
-            getgenv().disableautofarm = true
-            for i, v in ipairs(Workspace._UNITS:GetChildren()) do
-                if v:FindFirstChild("_stats") then
-                    if tostring(v._stats.player.Value) == player then
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+    while task.wait(0.75) do
+        local player = game.Players.LocalPlayer.Name
+        if Settings.autoQuit then
+            if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
+                pcall(function()
+                    webhook()
+                end)
+                print("send Webhook")
+                task.wait(2.1)
+                print("Returning to lobby...")
+                task.wait(2.1)
+                Teleport()
+            end
+        elseif Settings.AutoSell then
+            if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
+                getgenv().disableautofarm = true
+                for i, v in ipairs(Workspace._UNITS:GetChildren()) do
+                    if v:FindFirstChild("_stats") then
+                        if tostring(v._stats.player.Value) == player then
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+                        end
                     end
                 end
             end
@@ -2843,99 +2841,56 @@ function checkInterNet()
         end)
     end
 end
-    
     -- End of Check Connection
+    
     -- Start of Placing Unit to Position Function [Changed by Craymel02]
 function PlacePos(map, name, _uuid, unit)
-    if Settings["UnitConfig_" .. tostring(map)].Position == nil then
-        warn("Unit Position for " .. map .. " not found, Set Unit Position First")
-        Settings.unitconfig = false
-        saveSettings()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
-    end
     if Settings.unitconfig then
         local pos = Settings["UnitConfig_" .. tostring(map)].Position[unit]
-        if name ~= "metal_knight_evolved" then
-            local i = math.random(1,6)
-            if i == 1 then
-                    local args = {
-                    [1] = _uuid,
-                    [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]))
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                return
-            elseif i == 2 then
-                    local args = {
-                    [1] = _uuid,
-                    [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z"]))
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                return
-            elseif i == 3 then
-                    local args = {
-                    [1] = _uuid,
-                    [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z2"]))
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                return
-            elseif i == 4 then
-                    local args = {
-                    [1] = _uuid,
-                    [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x"], pos["y"], pos["z3"] or pos["z"]))
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                return
-            elseif i == 5 then
-                    local args = {
-                    [1] = _uuid,
-                    [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z2"]))
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                return
-            elseif i == 6 then
-                    local args = {
-                    [1] = _uuid,
-                    [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x2"], pos["y"], pos["z3"] or pos["z2"]))
-                }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                return
-            end
-        elseif name == "metal_knight_evolved" then
-            local i = math.random(1,6)
-            if i == 1 then
-                task.spawn(function()
-                    --place units 0
-                    local args = {
-                        [1] = _uuid,
-                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                end)
-                return
-            elseif i == 2 then
-                task.spawn(function()
-                    --place units 1
-                    task.wait(2)
-                    local args = {
-                        [1] = _uuid,
-                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z2"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                end)
-                return
-            elseif i == 3 then
-                task.spawn(function()
-                    --place units 2
-                    task.wait(3)
-                    local args = {
-                        [1] = _uuid,
-                        [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                end)
-            end
+        local i = math.random(1,6)
+        if i == 1 then
+            local args = {
+                [1] = _uuid,
+                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]))
+            }
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            return
+        elseif i == 2 then
+            local args = {
+                [1] = _uuid,
+                [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z"]))
+            }
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            return
+        elseif i == 3 then
+            local args = {
+                [1] = _uuid,
+                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z2"]))
+            }
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            return
+        elseif i == 4 then
+            local args = {
+                [1] = _uuid,
+                [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x"], pos["y"], pos["z3"] or pos["z"]))
+            }
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            return
+        elseif i == 5 then
+            local args = {
+                [1] = _uuid,
+                [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z2"]))
+            }
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            return
+        elseif i == 6 then
+            local args = {
+                [1] = _uuid,
+                [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x2"], pos["y"], pos["z3"] or pos["z2"]))
+            }
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+            return
         end
-        return
     end
 end
     -- End of Placing Unit to Position Function
@@ -3031,31 +2986,34 @@ end
 
     -- Start of Unit Config Place Unit [Changed by Craymel02]
 function UnitConfigPlaceUnits()
-    
+
     local toPlace = {}
     local toUpgrade = {}
+    local currentPlace = {}
+    local currentUpgrade = {}
     local map = GLD().map
     
     -- Start of Sort via Priority Function
     local sortRoutine = coroutine.create(function()
-
+                    
         local sortplacement = {}
         local sortupgrade = {}
             
         -- Check if Current Map Index is not Null
-        while task.wait(0.5) do
+        while task.wait(0.25) do
             if Settings.unitconfig == true then
-                if Settings["UnitConfig_" .. tostring(map)] == nil then
+                 if Settings["UnitConfig_" .. tostring(map)] == nil then
                     warn("Config for " .. tostring(map) .. " not found, Generating Default Settings")
                     Settings.unitconfig = false
                     reunitcon()
                     else
+                        
                         -- Sort Units via Priority
                         for i = 1, 6, 1 do
                             sortplacement[i] = Settings["UnitConfig_" .. tostring(map)].Parameters["UP" .. i].PlacementPriority
                             sortupgrade[i] = Settings["UnitConfig_" .. tostring(map)].Parameters["UP" .. i].UpgradePriority
                         end
-                        
+                            
                         for i, v in pairs(sortplacement) do
                         	toPlace[v] = tostring("UP" .. i)
                         end
@@ -3063,14 +3021,23 @@ function UnitConfigPlaceUnits()
                         for i, v in pairs(sortupgrade) do
                         	toUpgrade[v] = tostring("UP" .. i)
                         end
+                        
+                        if currentPlace ~= toPlace then
+                            currentPlace = toPlace
+                            
+                        elseif currentUpgrade ~= toUpgrade then
+                            currentUpgrade = toUpgrade
+                            else
+                                return
+                        end
                 end
             end
         end
     end)
     -- End of Sort via Priority Function
-    
     -- Start of Place and Upgrade Unit via Priority Order Function
     local UnitviaPriority = coroutine.create(function()
+
         local priority = {}
         local amount = {}
         local name = {}
@@ -3079,117 +3046,124 @@ function UnitConfigPlaceUnits()
         local _units = {}
         local player = game.Players.LocalPlayer.Name
         
-        while task.wait(1.5) do
+        while task.wait(0.75) do
             if Settings.unitconfig == true then
-                
-                -- Start of Count Units in Workspace Function
-                table.clear(_units)
-                for i, v in pairs(Workspace["_UNITS"]:GetChildren()) do 
-                    if v:FindFirstChild("_stats") then
-                        if v._stats:FindFirstChild("player") then
-                            if tostring(v._stats.player.Value) == player then
-                                table.insert(_units, v._stats.Parent.Name)
-                            end
-                        end
-                    end
-                end
-                -- End of Count Units in Workspace Function
-
-                -- Get Unit Information
-                for i = 1, 6, 1 do
-                    priority["U" .. i] = GetUnitSettings(map, toUpgrade[i])
-                    priority["P" .. i] = GetUnitSettings(map, toPlace[i])
-                    amount["U" .. i], name["U" .. i], uuid["U" .. i], upgrade["U" .. i] = GetUnitInfo(toUpgrade[i])
-                    amount["P" .. i], name["P" .. i], uuid["P" .. i] = GetUnitInfo(toPlace[i])
-                end
-    
-                -- Tally Total Units
-                local totalUnits = priority.P1.TotalUnits + priority.P2.TotalUnits + priority.P3.TotalUnits + priority.P4.TotalUnits + priority.P5.TotalUnits + priority.P6.TotalUnits
-                
-                -- Start of Sell Unit and Set Target Priority Function
-                local function SellandTarget()
+                if Settings["UnitConfig_" .. tostring(map)].Position == nil then
+                    warn("Position for " .. tostring(map) .. " not Found, Set Position First")
+                    Settings.unitconfig = false
+                    saveSettings()
+                    loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
                     
-                    -- Get Unit Information
-                    for i = 1, 6, 1 do
-                        -- Sell Unit Function
-                        if GetWaveNumber() >= priority["P" .. i].SellAtWave and amount["P" .. i] > 0 then
-                            sellunitConfig(name["P" .. i], priority["P" .. i].SellAtWave)
-                        end
-                        
-                        -- Set Target Priority Function
-                        targetpriority(name["P" .. i], priority["P" .. i].TargetPriority)
-                    end
-                end
-                -- End of Sell Unit and Set Target Priority Function
-                
-                -- Start of Upgrade Unit Function
-                local function upgradeUnit()
-            
-                    -- If Unit 6 is Bulma or Speedcart, Upgrade them with Priority 1 together
-                    if name.U6 == "bulma" or name.U6 == "speedwagon" or name.U6 == "nami_evolved" then
-                        if GetWaveNumber() >= priority.U6.UpgradeAtWave then
-                           upgradeunit(name.U6, priority.U6.UpgradeCap)
-                        end
-                    end
-                    
-                    -- Upgrade Unit via Priority
-                    for i = 1, 6, 1 do
-                        if i == 1 then
-                            if GetWaveNumber() < priority["U" .. i].SellAtWave and GetWaveNumber() >= priority["U" .. i].UpgradeAtWave then
-                                if upgrade["U" .. i] < priority["U" .. i].UpgradeCap then
-                                    upgradeunit(name["U" .. i], priority["U" .. i].UpgradeCap)
-                                end
-                            end
-                        end
-                        
-                        if i == 2 or i == 3 or i == 4 or i == 5 or i == 6 then
-                            if upgrade["U" .. i - 1] == priority["U" .. i - 1].UpgradeCap then
-                                if GetWaveNumber() < priority["U" .. i].SellAtWave and GetWaveNumber() >= priority["U" .. i].UpgradeAtWave then
-                                    if upgrade["U" .. i] < priority["U" .. i].UpgradeCap then
-                                        upgradeunit(name["U" .. i], priority["U" .. i].UpgradeCap)
+                    else
+                        -- Start of Count Units in Workspace Function
+                        table.clear(_units)
+                        for i, v in pairs(Workspace["_UNITS"]:GetChildren()) do 
+                            if v:FindFirstChild("_stats") then
+                                if v._stats:FindFirstChild("player") then
+                                    if tostring(v._stats.player.Value) == player then
+                                        table.insert(_units, v._stats.Parent.Name)
                                     end
                                 end
                             end
                         end
-                    end
-                end
-                -- End of Upgrade Unit Function
-                
-                -- Start of Place Unit Function
-                local function placeUnit(map)
+                        -- End of Count Units in Workspace Function
+        
+                        -- Get Unit Information
+                        for i = 1, 6, 1 do
+                            priority["U" .. i] = GetUnitSettings(map, currentUpgrade[i])
+                            priority["P" .. i] = GetUnitSettings(map, currentPlace[i])
+                            amount["U" .. i], name["U" .. i], uuid["U" .. i], upgrade["U" .. i] = GetUnitInfo(currentUpgrade[i])
+                            amount["P" .. i], name["P" .. i], uuid["P" .. i] = GetUnitInfo(currentPlace[i])
+                        end
             
-                    -- Place Unit via Priority
-                    for i = 1, 6, 1 do
-                        if i == 1 then
-                            if GetWaveNumber() < priority["P" .. i].SellAtWave and GetWaveNumber() >= priority["P" .. i].PlaceAtWave then
-                                if amount["P" .. i] < priority["P" .. i].TotalUnits then
-                                    PlacePos(map, name["P" .. i], uuid["P" .. i], toPlace[i])
-                                elseif amount["P" .. i] > priority["P" .. i].TotalUnits then
-                                    sellunitConfig(name["P" .. i], GetWaveNumber())
+                        -- Tally Total Units
+                        local totalUnits = priority.P1.TotalUnits + priority.P2.TotalUnits + priority.P3.TotalUnits + priority.P4.TotalUnits + priority.P5.TotalUnits + priority.P6.TotalUnits
+                        
+                        -- Start of Sell Unit and Set Target Priority Function
+                        local function SellandTarget()
+                            
+                            -- Get Unit Information
+                            for i = 1, 6, 1 do
+                                -- Sell Unit Function
+                                if GetWaveNumber() >= priority["P" .. i].SellAtWave and amount["P" .. i] > 0 then
+                                    sellunitConfig(name["P" .. i], priority["P" .. i].SellAtWave)
                                 end
+                                
+                                -- Set Target Priority Function
+                                targetpriority(name["P" .. i], priority["P" .. i].TargetPriority)
                             end
                         end
+                        -- End of Sell Unit and Set Target Priority Function
                         
-                        if i == 2 or i == 3 or i == 4 or i == 5 or i == 6 then
-                            if amount["P" .. i - 1] == priority["P" .. i - 1].TotalUnits then
-                                if GetWaveNumber() < priority["P" .. i].SellAtWave and GetWaveNumber() >= priority["P" .. i].PlaceAtWave then
-                                    if amount["P" .. i] < priority["P" .. i].TotalUnits then
-                                        PlacePos(map, name["P" .. i], uuid["P" .. i], toPlace[i])
-                                    elseif amount["P" .. i] > priority["P" .. i].TotalUnits then
-                                        sellunitConfig(name["P" .. i], GetWaveNumber())
+                        -- Start of Upgrade Unit Function
+                        local function upgradeUnit()
+                    
+                            -- If Unit 6 is Bulma or Speedcart, Upgrade them with Priority 1 together
+                            if name.U6 == "bulma" or name.U6 == "speedwagon" or name.U6 == "nami_evolved" then
+                                if GetWaveNumber() >= priority.U6.UpgradeAtWave then
+                                   upgradeunit(name.U6, priority.U6.UpgradeCap)
+                                end
+                            end
+                            
+                            -- Upgrade Unit via Priority
+                            for i = 1, 6, 1 do
+                                if i == 1 then
+                                    if GetWaveNumber() < priority["U" .. i].SellAtWave and GetWaveNumber() >= priority["U" .. i].UpgradeAtWave then
+                                        if upgrade["U" .. i] < priority["U" .. i].UpgradeCap then
+                                            upgradeunit(name["U" .. i], priority["U" .. i].UpgradeCap)
+                                        end
+                                    end
+                                end
+                                
+                                if i == 2 or i == 3 or i == 4 or i == 5 or i == 6 then
+                                    if upgrade["U" .. i - 1] == priority["U" .. i - 1].UpgradeCap then
+                                        if GetWaveNumber() < priority["U" .. i].SellAtWave and GetWaveNumber() >= priority["U" .. i].UpgradeAtWave then
+                                            if upgrade["U" .. i] < priority["U" .. i].UpgradeCap then
+                                                upgradeunit(name["U" .. i], priority["U" .. i].UpgradeCap)
+                                            end
+                                        end
                                     end
                                 end
                             end
                         end
-                    end
-                end
-                -- End of Place Unit Function
-                
-                upgradeUnit()
-                SellandTarget()
-                
-                if #_units ~= totalUnits then
-                    placeUnit(map)
+                        -- End of Upgrade Unit Function
+                        
+                        -- Start of Place Unit Function
+                        local function placeUnit(map)
+                    
+                            -- Place Unit via Priority
+                            for i = 1, 6, 1 do
+                                if i == 1 then
+                                    if GetWaveNumber() < priority["P" .. i].SellAtWave and GetWaveNumber() >= priority["P" .. i].PlaceAtWave then
+                                        if amount["P" .. i] < priority["P" .. i].TotalUnits then
+                                            PlacePos(map, name["P" .. i], uuid["P" .. i], toPlace[i])
+                                        elseif amount["P" .. i] > priority["P" .. i].TotalUnits then
+                                            sellunitConfig(name["P" .. i], GetWaveNumber())
+                                        end
+                                    end
+                                end
+                                
+                                if i == 2 or i == 3 or i == 4 or i == 5 or i == 6 then
+                                    if amount["P" .. i - 1] == priority["P" .. i - 1].TotalUnits then
+                                        if GetWaveNumber() < priority["P" .. i].SellAtWave and GetWaveNumber() >= priority["P" .. i].PlaceAtWave then
+                                            if amount["P" .. i] < priority["P" .. i].TotalUnits then
+                                                PlacePos(map, name["P" .. i], uuid["P" .. i], toPlace[i])
+                                            elseif amount["P" .. i] > priority["P" .. i].TotalUnits then
+                                                sellunitConfig(name["P" .. i], GetWaveNumber())
+                                            end
+                                        end
+                                    end
+                                end
+                            end
+                        end
+                        -- End of Place Unit Function
+                   
+                        upgradeUnit()
+                        SellandTarget()
+                        
+                        if #_units ~= totalUnits then
+                            placeUnit(map)
+                        end
                 end
             end
         end
@@ -3200,7 +3174,6 @@ function UnitConfigPlaceUnits()
     coroutine.resume(sortRoutine)
     coroutine.resume(UnitviaPriority)
     -- End Coroutine
-    
 end
     -- End of Unit Config Place Unit
     
@@ -3217,7 +3190,6 @@ function reunitcon()
             Settings["UnitConfig_" .. tostring(map)].Parameters = {}
         end
         
-            
         for i = 1, 6, 1 do
             
             local _default = {
@@ -3248,81 +3220,54 @@ end
     -- Start of Place Units Function for Auto Farm [Changed by Craymel02]
 function PlaceUnits()
     local map = GLD().map
-    if Settings["UnitConfig_" .. tostring(map)].Position == nil then
-        warn("Unit Position for " .. map .. " not found, Set Unit Position First")
-        Settings.Autofarm = false
-        saveSettings()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
-    end
-    pcall(function()
+    while task.wait(0.75) do
         if Settings.AutoFarm and not getgenv().disableautofarm then
-            local map = GLD().map
-            for i = 1, 6 do
-                local unitinfo = Settings.SelectedUnits["UP" .. i]
-                if unitinfo ~= nil then
-                    local unitinfo_ = unitinfo:split(" #")
-                    local pos = Settings["UnitConfig_" .. tostring(map)].Position["UP" .. i]
-                    if unitinfo_[1] ~= "metal_knight_evolved" then
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z"]))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z2"]))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x"], pos["y"], pos["z3"] or pos["z"]))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z2"]))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        local args = {
-                            [1] = unitinfo_[2],
-                            [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x2"], pos["y"], pos["z3"] or pos["z2"]))
-                        }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    elseif unitinfo_[1] == "metal_knight_evolved" then
-                        task.spawn(function()
-                            warn(map .. " attempt to place " .. unitinfo_[1])
+            if Settings["UnitConfig_" .. tostring(map)].Position == nil then
+                warn("Position for " .. tostring(map) .. " not Found, Set Position First")
+                Settings.AutoFarm = false
+                saveSettings()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
+                else
+                    for i = 1, 6 do
+                        local unitinfo = Settings.SelectedUnits["UP" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = Settings["UnitConfig_" .. tostring(map)].Position["UP" .. i]
                             local args = {
                                 [1] = unitinfo_[2],
                                 [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]))
                             }
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        end)
-                        task.spawn(function()
-                            task.wait(2)
                             local args = {
                                 [1] = unitinfo_[2],
                                 [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z"]))
                             }
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        end)
-                        task.spawn(function()
-                            task.wait(3)
                             local args = {
                                 [1] = unitinfo_[2],
                                 [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z2"]))
                             }
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                        end)
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x"], pos["y"], pos["z3"] or pos["z"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z2"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x2"], pos["y"], pos["z3"] or pos["z2"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
                     end
-                end
             end
         end
-    end)
+    end
 end
 
     -- Start of Disable Error Function
@@ -3496,9 +3441,6 @@ coroutine.resume(coroutine.create(function()
 
         elseif game.PlaceId ~= 830419830 then
             repeat task.wait(0.5) until Workspace:WaitForChild("_terrain")
-            
-            autoQuitSell()
-            
             if getgenv().autoabilityerr == true then
                 task.wait()
                 autoabilityfunc()
@@ -3514,14 +3456,13 @@ coroutine.resume(coroutine.create(function()
                 else
                     autoupgradefunc()
             end
-            PlaceUnits()
-            
         end
     end
 end))
     -- End of Coroutine Function
     
 if game.PlaceId == 8304191830 then
+    repeat task.wait(0.5) until Workspace:WaitForChild(game.Players.LocalPlayer.Name)
     autoload()
     antiAFK()
     disableError()
@@ -3530,13 +3471,15 @@ if game.PlaceId == 8304191830 then
     hidename()
     checkInterNet()
 elseif game.PlaceId ~= 8304191830 then
+    repeat task.wait(0.5) until Workspace:WaitForChild("_terrain")
     autoload()
     antiAFK()
     task.spawn(function()
         checkRound()
     end)
-    repeat task.wait(0.5) until Workspace:WaitForChild("_terrain")
     UnitConfigPlaceUnits()
+    PlaceUnits()
+    autoQuitSell()
     disableError()
     DelMap()
     DelTer()
