@@ -3517,7 +3517,6 @@ elseif game.PlaceId ~= 8304191830 then
     autoload()
     antiAFK()
     lowCPU()
-    ClaimFeedEgg()
     task.spawn(function()
         checkRound()
     end)
