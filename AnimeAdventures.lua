@@ -698,6 +698,7 @@ local Misc = Window:Category(" 🛠 Misc")
 local AutoSummonSec = Misc:Sector("Auto Summon Units")
 local AutoSnipeMerchantSec = Misc:Sector("Auto Snipe Merchant")
 local WebhookSec = Misc:Sector("Discord Webhook")
+local LowCPU = Misc:Sector("Multi-Roblox")
     -- End of Misc Sector
     
     -- Start of Lag Sector
@@ -706,6 +707,7 @@ local LG1 = LG:Sector("Beta LAGGY Config ")
 local OtherSec = LG:Sector("Other Options")
 local OtherSec2 = LG:Sector("")
     -- End of Lag Sector
+    
     -- End of User Interface
 
     -- Start of Unit Section Function [Changed by Craymel02]
@@ -2014,7 +2016,21 @@ function autoload()
     end
 end
     -- End of Auto Load Function
-  
+    
+    -- Start of Low CPU Section
+function lowCPUsec()
+    LowCPU:Cheat("Checkbox","Low CPU mode ", function(bool)
+        warn("Low CPU Mode is set to " .. tostring(bool))
+        Settings.lowCPU = bool
+        saveSettings()
+    end,{enabled = Settings.lowCPU})
+    
+    LowCPU:Cheat("Button","Activate Low CPU ", function()
+        lowCPU()
+    end)
+end
+    -- End of Low CPU Section
+    
     -- Start of Others Section
 function others()
 
@@ -2031,13 +2047,6 @@ function others()
         hidename()
     end,{enabled = Settings.hidenamep})
 
-    OtherSec:Cheat("Checkbox","Auto Grab Daily Quest ", function(bool)
-        warn("Auto Grab Daily Quest is set to " .. tostring(bool))
-        Settings.autoDailyquest = bool
-        saveSettings()
-        autoDailyquest()
-    end,{enabled = Settings.autoDailyquest})
-
     OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
         warn("Delete Map is set to " .. tostring(bool))
         Settings.deletemap = bool
@@ -2045,6 +2054,12 @@ function others()
         DelTer()
         DelMap()
     end,{enabled = Settings.deletemap})
+    
+    OtherSec:Cheat("Checkbox","Auto Claim / Feed Egg", function(bool)
+        warn("Auto Claim and Feed Egg is set to " .. tostring(bool))
+        Settings.AutoClaimFeedEgg = bool
+        saveSettings()
+    end,{enabled = Settings.AutoClaimFeedEgg})
     
     OtherSec:Cheat("Button", "Leave To Lobby", function()
         warn("Return to Lobby")
@@ -2080,6 +2095,7 @@ if game.PlaceId == 8304191830 then
     SnipeMerchant()
     Webhooksec()
     Webhooksec2()
+    lowCPUsec()
     LAGGYconfig()
     others()
 else
@@ -2096,6 +2112,7 @@ else
     AutoSummonSec:Cheat("Label", "Only available in game Lobby!")
     SnipeMerchant()
     Webhooksec()
+    lowCPUsec()
     LAGGYconfig()
     others()
     WebhookSec:Cheat("Label", "")
@@ -3345,17 +3362,40 @@ function DelTer()
     	end
 	end
 end
-
     -- End of Delete Map Function
     
-    -- Start of Auto Daily Quest Function
-function autoDailyquest()
-    if Settings.autoDailyquest then
-         game:GetService("ReplicatedStorage").endpoints.client_to_server.accept_npc_quest:InvokeServer("7ds_daily")
-         wait(15)
+    -- Start of Low Cpu Mode Function
+function lowCPU()
+    if Settings.lowCPU then
+        if not setfpscap then
+            return
+        end
+        warn("Low CPU Activated")
+        UserInputService.WindowFocusReleased:Connect(function()
+        	RunService:Set3dRenderingEnabled(false)
+        	setfpscap(5)
+        end)
+        UserInputService.WindowFocused:Connect(function()
+        	RunService:Set3dRenderingEnabled(true)
+        	setfpscap(120)
+        end)
     end
 end
-    -- End of Auto Daily Quest Function
+    -- End of Low Cpu Mode Function
+    
+    -- Start of Auto Claim and Feed Egg Function
+function ClaimFeedEgg()
+    if Settings.AutoClaimFeedEgg then
+        if game.Workspace.EasterArea:FindFirstChild("leaderboard") then
+        eggs = {"easter_egg_1","easter_egg_2","easter_egg_3","easter_egg_4","easter_egg_5","easter_egg_6"}
+            for _, v in pairs(eggs) do
+                game:GetService("ReplicatedStorage").endpoints["client_to_server"]["feed_easter_meter"]:InvokeServer(v)
+            end
+            game:GetService("ReplicatedStorage").endpoints["client_to_server"]["claim_easter_meter"]:InvokeServer()
+        end
+    end
+end
+    -- End of Auto Claim and Feed Egg Function
     
     -- Start of Redeem Code Function
 function Reedemcode()
@@ -3466,8 +3506,9 @@ if game.PlaceId == 8304191830 then
     repeat task.wait(0.5) until Workspace:WaitForChild(game.Players.LocalPlayer.Name)
     autoload()
     antiAFK()
+    lowCPU()
+    ClaimFeedEgg()
     disableError()
-    autoDailyquest()
     Reedemcode()
     hidename()
     checkInterNet()
@@ -3475,6 +3516,8 @@ elseif game.PlaceId ~= 8304191830 then
     repeat task.wait(0.5) until Workspace:WaitForChild("_terrain")
     autoload()
     antiAFK()
+    lowCPU()
+    ClaimFeedEgg()
     task.spawn(function()
         checkRound()
     end)
