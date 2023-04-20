@@ -13,7 +13,7 @@ local exec = tostring(identifyexecutor())
   -- End of Local Variables
   
   -- Start of Loading Section
-repeat  task.wait() until game:IsLoaded()
+repeat task.wait() until game:IsLoaded()
 if game.PlaceId == 8304191830 then
     repeat task.wait() until game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name)
     repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("collection"):FindFirstChild("grid"):FindFirstChild("List"):FindFirstChild("Outer"):FindFirstChild("UnitFrames")
@@ -2514,30 +2514,31 @@ end
     
     -- Start of Auto Quit or Sell Function [Changed by Craymel02]
 local function autoQuitSell()
-    local player = game.Players.LocalPlayer.Name
-    if Settings.autoQuit then
-        if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
-            pcall(function()
-                webhook()
-            end)
-            print("send Webhook")
-            task.wait(2.1)
-            print("Returning to lobby...")
-            task.wait(2.1)
-            Teleport()
-        end
-    elseif Settings.AutoSell then
-        if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
-            getgenv().disableautofarm = true
-            for i, v in ipairs(Workspace._UNITS:GetChildren()) do
-                if v:FindFirstChild("_stats") then
-                    if tostring(v._stats.player.Value) == player then
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+
+        local player = game.Players.LocalPlayer.Name
+        if Settings.autoQuit then
+            if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
+                pcall(function()
+                    webhook()
+                end)
+                print("send Webhook")
+                task.wait(2.1)
+                print("Returning to lobby...")
+                task.wait(2.1)
+                Teleport()
+            end
+        elseif Settings.AutoSell then
+            if tonumber(Settings.AutoSellWave or 50) <= GetWaveNumber() then
+                getgenv().disableautofarm = true
+                for i, v in ipairs(Workspace._UNITS:GetChildren()) do
+                    if v:FindFirstChild("_stats") then
+                        if tostring(v._stats.player.Value) == player then
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.sell_unit_ingame:InvokeServer(v)
+                        end
                     end
                 end
             end
-        end
-    end
+end
 end
     -- End of Auto Quit or Sell Function
     
@@ -3218,52 +3219,56 @@ end
     -- Start of Place Units Function for Auto Farm [Changed by Craymel02]
 function PlaceUnits()
     local map = GLD().map
-    if Settings.AutoFarm == true and getgenv().disableautofarm == true then
-        if Settings["UnitConfig_" .. tostring(map)].Position == nil then
-            warn("Position for " .. tostring(map) .. " not Found, Set Position First")
-            Settings.AutoFarm = false
-            saveSettings()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
-            else
-                for i = 1, 6 do
-                    local unitinfo = Settings.SelectedUnits["UP" .. i]
-                    local unitinfo_ = unitinfo:split(" #")
-                    local pos = Settings["UnitConfig_" .. tostring(map)].Position["UP" .. i]
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z2"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x"], pos["y"], pos["z3"] or pos["z"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z2"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                    local args = {
-                        [1] = unitinfo_[2],
-                        [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x2"], pos["y"], pos["z3"] or pos["z2"]))
-                    }
-                    game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-                end
+
+        if Settings.AutoFarm and not getgenv().disableautofarm then
+            if Settings["UnitConfig_" .. tostring(map)].Position == nil then
+                warn("Position for " .. tostring(map) .. " not Found, Set Position First")
+                Settings.AutoFarm = false
+                saveSettings()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()
+                else
+                    for i = 1, 6 do
+                        local unitinfo = Settings.SelectedUnits["UP" .. i]
+                        if unitinfo ~= nil then
+                            local unitinfo_ = unitinfo:split(" #")
+                            local pos = Settings["UnitConfig_" .. tostring(map)].Position["UP" .. i]
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x"], pos["y"], pos["z2"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x"], pos["y"], pos["z3"] or pos["z"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x2"], pos["y"], pos["z2"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                            local args = {
+                                [1] = unitinfo_[2],
+                                [2] = CFrame.new(Vector3.new(pos["x3"] or pos["x2"], pos["y"], pos["z3"] or pos["z2"]))
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
+                        end
+                    end
+            end
         end
-    end
+ 
 end
-    
+
     -- Start of Disable Error Function
 function disableError()
     if game.PlaceId ~= 8304191830 then
@@ -3435,9 +3440,7 @@ coroutine.resume(coroutine.create(function()
 
         elseif game.PlaceId ~= 830419830 then
             repeat task.wait(0.5) until Workspace:WaitForChild("_terrain")
-            
-            autoQuitSell()
-            
+                autoQuitSell()
             if getgenv().autoabilityerr == true then
                 task.wait()
                 autoabilityfunc()
@@ -3452,10 +3455,8 @@ coroutine.resume(coroutine.create(function()
                 getgenv().autoupgradeerr = false
                 else
                     autoupgradefunc()
+                    PlaceUnits()
             end
-            
-            PlaceUnits()
-            
         end
     end
 end))
