@@ -1387,7 +1387,7 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
         updatepos("7ds", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
         updatepos("mha", UnitPos, a,a2,a3,a4,a5,a6)
-    elseif game.Workspace._map:FindFirstChild("benches and barrels")
+    elseif game.Workspace._map:FindFirstChild("benches and barrels") then
         updatepos("entertain", UnitPos, a,a2,a3,a4,a5,a6)
     end
     warn("savepos")
