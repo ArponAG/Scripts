@@ -1387,6 +1387,8 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
         updatepos("7ds", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
         updatepos("mha", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("benches and barrels")
+        updatepos("entertain", UnitPos, a,a2,a3,a4,a5,a6)
     end
     warn("savepos")
 end
@@ -3768,6 +3770,8 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnitsTEST("7ds")
             elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
                 PlaceUnitsTEST("mha")
+            elseif game.Workspace._map:FindFirstChild("benches and barrels") then
+                PlaceUnitsTEST("entertain")
             end
         end
     end
@@ -3822,6 +3826,8 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnits("7ds")
             elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
                 PlaceUnits("mha")
+            elseif game.Workspace._map:FindFirstChild("benches and barrels") then
+                PlaceUnits("entertain")
             end
         end
     end
