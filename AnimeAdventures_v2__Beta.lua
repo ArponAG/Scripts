@@ -630,7 +630,7 @@ local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
 --updatefix fixmap
-local Window = Uilib.new(true, "[UPD 12.0.0] Anime Adventures "..version.." - "..exec)
+local Window = Uilib.new(true, "[UPD 12.5.0] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.RightControl)
 local Home = Window:Category(" 📋 Home")
 local Developers = Home:Sector("Anime Adventures")
@@ -800,7 +800,7 @@ local function WorldSec()
         elseif Settings.WorldCategory == "Legend Stages" then
             storylist = {"Clover Kingdom (Elf Invasion)", "Hollow Invasion","Cape Canaveral (Legend)", "Fabled Kingdom (Legend)", "Hero City (Midnight)"}
         elseif Settings.WorldCategory == "Raid Worlds" then
-            storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid", "Freezo's Invasion"}
+            storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid", "Freezo's Invasion", "Entertainment District"}
         elseif Settings.WorldCategory == "Portals" then
             storylist = {"Alien Portals","Zeldris Portals", "Demon Portals"}
         elseif Settings.WorldCategory == "Dungeon" then 
@@ -874,6 +874,8 @@ local function WorldSec()
             levellist = {"naruto_raid_1"}
         elseif level == "Freezo's Invasion" then
             levellist = {"west_city_frieza_level_1","west_city_frieza_level_2","west_city_frieza_level_3","west_city_frieza_level_4","west_city_frieza_level_5"}
+        elseif level == "Entertainment District" then
+            levellist = {"entertainment_district_level_1","entertainment_district_level_2","entertainment_district_level_3","entertainment_district_level_4","entertainment_district_level_5"}
         --///Portals\\\---
         elseif level == "Alien Portals" then
             levellist = {"portal_boros_g"}
