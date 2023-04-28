@@ -1682,11 +1682,11 @@ local function unitconfig()
         reunitcon()
     end)
     --//UNIT 1
-    Unit1:Cheat("Textbox", "Placement Priority", function(Value)
+   --[[ Unit1:Cheat("Textbox", "Placement Priority", function(Value)
         Value = tonumber(Value)
         Settings.U1_UnPlace = Value
         saveSettings()
-    end, {placeholder = Settings.U1_UnPlace})
+    end, {placeholder = Settings.U1_UnPlace})]]
     Unit1:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
         Settings.U1_Wave = Value
@@ -1697,32 +1697,32 @@ local function unitconfig()
         Settings.U1_TotalAmmount = Value
         saveSettings()
     end, {placeholder = Settings.U1_TotalAmmount})
-    Unit1:Cheat("Textbox", "Upgrade Priority", function(Value)
+   --[[ Unit1:Cheat("Textbox", "Upgrade Priority", function(Value)
         Value = tonumber(Value)
         Settings.U1_UpgPro = Value
         saveSettings()
-    end, {placeholder = Settings.U1_UpgPro})
+    end, {placeholder = Settings.U1_UpgPro})]]
     Unit1:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
         Settings.U1_UpgWave = Value
         saveSettings()
     end, {placeholder = Settings.U1_UpgWave})
-    Unit1:Cheat("Textbox", "Upgrade Cap", function(Value)
+    --[[Unit1:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U1_UpgCap = Value
         saveSettings()
-    end, {placeholder = Settings.U1_UpgCap})
+    end, {placeholder = Settings.U1_UpgCap})]]
     Unit1:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U1_SellWave = Value
         saveSettings()
     end, {placeholder = Settings.U1_SellWave}) 
     --//UNIT 2
-    Unit2:Cheat("Textbox", "Placement Priority", function(Value)
+   --[[ Unit2:Cheat("Textbox", "Placement Priority", function(Value)
         Value = tonumber(Value)
         Settings.U2_UnPlace = Value
         saveSettings()
-    end, {placeholder = Settings.U2_UnPlace})
+    end, {placeholder = Settings.U2_UnPlace})]]
     Unit2:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
         Settings.U2_Wave = Value
@@ -1733,33 +1733,33 @@ local function unitconfig()
         Settings.U2_TotalAmmount = Value
         saveSettings()
     end, {placeholder = Settings.U2_TotalAmmount})
-    Unit2:Cheat("Textbox", "Upgrade Priority", function(Value)
+    --[[Unit2:Cheat("Textbox", "Upgrade Priority", function(Value)
         Value = tonumber(Value)
         Settings.U2_UpgPro = Value
         saveSettings()
-    end, {placeholder = Settings.U2_UpgPro})
+    end, {placeholder = Settings.U2_UpgPro})]]
     Unit2:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
         Settings.U2_UpgWave = Value
         saveSettings()
     end, {placeholder = Settings.U2_UpgWave})
-    Unit2:Cheat("Textbox", "Upgrade Cap", function(Value)
+    --[[Unit2:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U2_UpgCap = Value
         saveSettings()
-    end, {placeholder = Settings.U2_UpgCap})
+    end, {placeholder = Settings.U2_UpgCap})]]
     Unit2:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U2_SellWave = Value
         saveSettings()
     end, {placeholder = Settings.U2_SellWave}) 
     
-    --//UNIT 3
-    Unit3:Cheat("Textbox", "Placement Priority", function(Value)
+    ---//UNIT 3
+    --[[Unit3:Cheat("Textbox", "Placement Priority", function(Value)
         Value = tonumber(Value)
         Settings.U3_UnPlace = Value
         saveSettings()
-    end, {placeholder = Settings.U3_UnPlace})
+    end, {placeholder = Settings.U3_UnPlace})]]
     Unit3:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
         Settings.U3_Wave = Value
@@ -1771,11 +1771,11 @@ local function unitconfig()
         Settings.U3_TotalAmmount = Value
         saveSettings()
     end, {placeholder = Settings.U3_TotalAmmount})
-    Unit3:Cheat("Textbox", "Upgrade Priority", function(Value)
+    --[[Unit3:Cheat("Textbox", "Upgrade Priority", function(Value)
         Value = tonumber(Value)
         Settings.U3_UpgPro = Value
         saveSettings()
-    end, {placeholder = Settings.U3_UpgPro})
+    end, {placeholder = Settings.U3_UpgPro})]]
     
     Unit3:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
@@ -1783,11 +1783,11 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U3_UpgWave})
     
-    Unit3:Cheat("Textbox", "Upgrade Cap", function(Value)
+    --[[Unit3:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U3_UpgCap = Value
         saveSettings()
-    end, {placeholder = Settings.U3_UpgCap})
+    end, {placeholder = Settings.U3_UpgCap})]]
     
     Unit3:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
@@ -1795,11 +1795,11 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U3_SellWave}) 
     --//UNIT 4
-    Unit4:Cheat("Textbox", "Placement Priority", function(Value)
+    --[[Unit4:Cheat("Textbox", "Placement Priority", function(Value)
         Value = tonumber(Value)
         Settings.U4_UnPlace = Value
         saveSettings()
-    end, {placeholder = Settings.U4_UnPlace})
+    end, {placeholder = Settings.U4_UnPlace})]]
     Unit4:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
         Settings.U4_Wave = Value
@@ -1811,11 +1811,11 @@ local function unitconfig()
         Settings.U4_TotalAmmount = Value
         saveSettings()
     end, {placeholder = Settings.U4_TotalAmmount})
-    Unit4:Cheat("Textbox", "Upgrade Priority", function(Value)
+    --[[Unit4:Cheat("Textbox", "Upgrade Priority", function(Value)
         Value = tonumber(Value)
         Settings.U4_UpgPro = Value
         saveSettings()
-    end, {placeholder = Settings.U4_UpgPro})
+    end, {placeholder = Settings.U4_UpgPro})]]
     
     Unit4:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
@@ -1823,11 +1823,11 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U4_UpgWave})
     
-    Unit4:Cheat("Textbox", "Upgrade Cap", function(Value)
+    --[[Unit4:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U4_UpgCap = Value
         saveSettings()
-    end, {placeholder = Settings.U4_UpgCap})
+    end, {placeholder = Settings.U4_UpgCap})]]
     
     Unit4:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
@@ -1836,11 +1836,11 @@ local function unitconfig()
     end, {placeholder = Settings.U4_SellWave}) 
     
     --//UNIT 5
-    Unit5:Cheat("Textbox", "Placement Priority", function(Value)
+    --[[Unit5:Cheat("Textbox", "Placement Priority", function(Value)
         Value = tonumber(Value)
         Settings.U5_UnPlace = Value
         saveSettings()
-    end, {placeholder = Settings.U5_UnPlace})
+    end, {placeholder = Settings.U5_UnPlace})]]
     Unit5:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
         Settings.U5_Wave = Value
@@ -1852,11 +1852,11 @@ local function unitconfig()
         Settings.U5_TotalAmmount = Value
         saveSettings()
     end, {placeholder = Settings.U5_TotalAmmount})
-    Unit5:Cheat("Textbox", "Upgrade Priority", function(Value)
+    --[[Unit5:Cheat("Textbox", "Upgrade Priority", function(Value)
         Value = tonumber(Value)
         Settings.U5_UpgPro = Value
         saveSettings()
-    end, {placeholder = Settings.U5_UpgPro})
+    end, {placeholder = Settings.U5_UpgPro})]]
         
     Unit5:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
@@ -1864,11 +1864,11 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U5_UpgWave})
         
-    Unit5:Cheat("Textbox", "Upgrade Cap", function(Value)
+    --[[Unit5:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U5_UpgCap = Value
         saveSettings()
-    end, {placeholder = Settings.U5_UpgCap})
+    end, {placeholder = Settings.U5_UpgCap})]]
         
     Unit5:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
@@ -1876,11 +1876,11 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U5_SellWave}) 
     --//UNIT 6
-    Unit6:Cheat("Textbox", "Placement Priority", function(Value)
+    --[[Unit6:Cheat("Textbox", "Placement Priority", function(Value)
         Value = tonumber(Value)
         Settings.U6_UnPlace = Value
         saveSettings()
-    end, {placeholder = Settings.U6_UnPlace})
+    end, {placeholder = Settings.U6_UnPlace})]]
     Unit6:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
         Settings.U6_Wave = Value
@@ -1892,11 +1892,11 @@ local function unitconfig()
         Settings.U6_TotalAmmount = Value
         saveSettings()
     end, {placeholder = Settings.U6_TotalAmmount})
-    Unit6:Cheat("Textbox", "Upgrade Priority", function(Value)
+    --[[Unit6:Cheat("Textbox", "Upgrade Priority", function(Value)
         Value = tonumber(Value)
         Settings.U6_UpgPro = Value
         saveSettings()
-    end, {placeholder = Settings.U6_UpgPro})
+    end, {placeholder = Settings.U6_UpgPro})]]
     
     Unit6:Cheat("Textbox", "Upgrade from wave", function(Value)
         Value = tonumber(Value)
@@ -1904,11 +1904,11 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U6_UpgWave})
     
-    Unit6:Cheat("Textbox", "Upgrade Cap", function(Value)
+    --[[Unit6:Cheat("Textbox", "Upgrade Cap", function(Value)
         Value = tonumber(Value)
         Settings.U6_UpgCap = Value
         saveSettings()
-    end, {placeholder = Settings.U6_UpgCap})
+    end, {placeholder = Settings.U6_UpgCap})]]
     
     Unit6:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
@@ -1965,6 +1965,12 @@ local function LAGGYconfig()
         Settings.delag = tonumber(Value)
         saveSettings()
     end, {placeholder = Settings.delag or 1.5})
+
+    LG1:Cheat("Slider", "LAG Threads [slide]", function(Value)
+        print("LAG Lv.:", Value)
+        Settings.max = tonumber(Value)
+        saveSettings()
+    end, {min = 0, max = 250, suffix = "", default = 22 })
 
     LG1:Cheat("Slider", "LAG Lv. [slide]", function(Value)
         print("LAG Lv.:", Value)
@@ -2181,33 +2187,15 @@ function others()
         autoDailyquest()
     end,{enabled = Settings.autoDailyquest})
 
-    OtherSec:Cheat("Checkbox","Auto Feed EGG ", function(bool)
-        print(bool)
-        Settings.AutoFeedEgg = bool
-        saveSettings()
-        --FeedEggA()
-    end,{enabled = Settings.AutoFeedEgg})
-    
-    OtherSec:Cheat("Checkbox","Auto Claim EGG ", function(bool)
-        print(bool)
-        Settings.AutoClaimEgg = bool
-        saveSettings()
-        --ClaimEggA()
-    end,{enabled = Settings.AutoClaimEgg})
-
-    OtherSec:Cheat("Checkbox","Find Picoro [HOP]", function(bool)
-        print(bool)
-        Settings.picoHOP = bool
-        saveSettings()
-        TeleportHOP()
-    end,{enabled = Settings.picoHOP})
-
-    --[[OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
+    OtherSec:Cheat("Checkbox","🗺️ Delete Map 🗺️", function(bool)
         Settings.deletemap = bool
         saveSettings()
         DelTer()
-        DelMap()
-    end,{enabled = Settings.deletemap})]]
+    end,{enabled = Settings.deletemap})
+
+    OtherSec:Cheat("Button","Activate Delete Map ", function()
+        DelTer()
+    end)
     
 end
 ----------------------------------------------
@@ -3686,40 +3674,6 @@ function PlaceUnits(map)
 end
 
 ------------------------------------------------------------------------------------------------
---test deletemap place unit
-
---open unitconfig
-
---[[coroutine.resume(coroutine.create(function()
-    while task.wait(1.5) do
-        if game.PlaceId ~= 8304191830 and Settings.AutoFarm and Settings.unitconfig and not getgenv().disableatuofarm then
-            warn("Enable Unit Config")
-        local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
-        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_terrain")
-
-        PlaceUnitsTEST()
-
-        print("function called")
-        end
-    end
-end))
-
---Close Unitconfig
-
-coroutine.resume(coroutine.create(function()
-    while task.wait(1.5) do
-        if game.PlaceId ~= 8304191830 and Settings.AutoFarm and not Settings.unitconfig and not getgenv().disableatuofarm then
-            warn("Disabled Unit Config")
-        local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
-        repeat task.wait() until game:GetService("Workspace"):WaitForChild("_terrain")
-
-        PlaceUnits()
-
-        print("function called")
-        end
-    end
-end))]]
-
 ------------------------------------------------------------------------------------------
 --updatefix fixmap warn("Enable Unit Config")
 coroutine.resume(coroutine.create(function()
@@ -3861,7 +3815,7 @@ function DelMap()
 			end)
 		end
 	end)
-end
+end]]
 
 --deletet terrain
 function DelTer()
@@ -3874,9 +3828,8 @@ function DelTer()
     end  
 end   
 if Settings.deletemap then
-    DelMap()
     DelTer()
-end]]
+end
 
 --Auto Grab Daily Quest
 function autoDailyquest()
@@ -3889,55 +3842,6 @@ end
 if Settings.autoDailyquest then
     autoDailyquest()
 end
-
---AutoFeedEgg
-function FeedEgg()
-    if game.Workspace.EasterArea:FindFirstChild("leaderboard") then
-    eggs = {"easter_egg_1","easter_egg_2","easter_egg_3","easter_egg_4","easter_egg_5","easter_egg_6"}
-        for _, v in pairs(eggs) do
-        pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["feed_easter_meter"]:InvokeServer(v)()    end)
-        end
-    end
-end
-
-function FeedEggA()
-    print("Feed Eggs")
-        pcall(function()
-            FeedEgg()
-            wait(1)
-            FeedEgg()
-        return FeedEggA()
-        end)
-    end
-
-if Settings.AutoFeedEgg then
-    FeedEggA()
-end
-
---AutoClaimEgg
-function ClaimEgg()
-    if game.Workspace.EasterArea:FindFirstChild("leaderboard") then
-    eggs = {"easter_egg_1","easter_egg_2","easter_egg_3","easter_egg_4","easter_egg_5","easter_egg_6"}
-        for _, v in pairs(eggs) do
-        pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["claim_easter_meter"]:InvokeServer(v)()    end)
-        end
-    end
-end
-
-function ClaimEggA()
-     print("Claim Eggs")
-        pcall(function()
-            ClaimEgg()
-                wait(1)
-            ClaimEgg()
-        return ClaimEggA()
-        end)
-    end
-
-if Settings.AutoClaimEgg then
-    ClaimEgg()
-end
-
 
 --ReedemCode
 function Reedemcode()
@@ -3952,6 +3856,17 @@ if Settings.redeemc then
     Reedemcode()
 end
 
+pcall(function()
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        wait(1)
+        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+    game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
+    warn("Anti-AFK Loaded!!!")
+end)
+
 --disms
 if game.PlaceId ~= 8304191830 then
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
@@ -3965,17 +3880,6 @@ if game.PlaceId == 8304191830 then
     game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
 end
 warn("Display Error Hider!!!")
-
-pcall(function()
-    local vu = game:GetService("VirtualUser")
-    game:GetService("Players").LocalPlayer.Idled:connect(function()
-        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-        wait(1)
-        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-    end)
-    game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
-    warn("Anti-AFK Loaded!!!")
-end)
 warn("Hider Name Loaded!!!")
 warn("AA v2 Loaded!!!")
 
