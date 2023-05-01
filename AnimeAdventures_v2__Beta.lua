@@ -12,7 +12,7 @@ else
     repeat task.wait() until game:GetService("Workspace")["_waves_started"].Value == true
 end
 ------------------------------
-local a = 'Anime_Adventures' -- Paste Name
+local a = 'V2_Anime_Adventures' -- Paste Name
 local b = game:GetService('Players').LocalPlayer.Name .. '_AnimeAdventures.json' 
 Settings = {}
 function saveSettings()
