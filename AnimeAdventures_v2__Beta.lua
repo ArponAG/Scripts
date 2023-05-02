@@ -2256,6 +2256,12 @@ function others()
         saveSettings()
         autoDailyquest()
     end,{enabled = Settings.autoDailyquest})
+    
+    OtherSec:Cheat("Checkbox","Escanor Infinite Range ", function(bool) -- added by craymel02
+        print("Esacanor Infinite Range is set to " .. tostring(bool))
+        Settings.escanorIR = bool
+        saveSettings()
+    end,{enabled = Settings.escanorIR})
 
     OtherSec:Cheat("Button", "Redeem All Code", function()
         print(Settings.redeemc)
@@ -5255,6 +5261,11 @@ if Settings.autoDailyquest then
     autoDailyquest()
 end
 
+-- added by craymel02
+function escanorIR()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/dontDelete-IR.lua"))()
+end
+
 --placeany
 function placeAny()
 
@@ -5313,6 +5324,7 @@ if game.PlaceId ~= 8304191830 then
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
     game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+
 end
 --disms
 if game.PlaceId == 8304191830 then
@@ -5321,7 +5333,7 @@ if game.PlaceId == 8304191830 then
     game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
 end
 warn("Display Error Hider!!!")
-
 warn("Hider Name Loaded!!!")
 warn("AA v2 Loaded!!!")
 warn("All Loaded !!!")
+escanorIR() -- added by craymel02
