@@ -5263,7 +5263,11 @@ end
 
 -- added by craymel02
 function escanorIR()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/dontDelete-IR.lua"))()
+    if Settings.escanorIR == nil then
+        Settings.escanorIR = false
+        else
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/dontDelete-IR.lua"))()
+    end
 end
 
 --placeany
