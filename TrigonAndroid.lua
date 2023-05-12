@@ -20,9 +20,11 @@ local UICorner_6 = Instance.new("UICorner")
 local min = Instance.new("ImageButton")
 local ImageLabel = Instance.new("ImageLabel")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local Pattern = Instance.new("ImageLabel")
 local TextBox = Instance.new("TextBox")
-local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local Frame = Instance.new("Frame")
 local Dock = Instance.new("ImageButton")
 local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
@@ -42,8 +44,8 @@ MainFrame.Name = "MainFrame"
 MainFrame.Parent = ss
 MainFrame.BackgroundColor3 = Color3.fromRGB(5, 17, 35)
 MainFrame.BackgroundTransparency = 0.350
-MainFrame.Position = UDim2.new(0.210015878, 0, 0.236278027, 0)
-MainFrame.Size = UDim2.new(0.579379678, 0, 0.561123788, 0)
+MainFrame.Position = UDim2.new(0.210015878, 0, 0.236277997, 0)
+MainFrame.Size = UDim2.new(0.722236872, 0, 0.50758332, 0)
 
 UIAspectRatioConstraint.Parent = MainFrame
 UIAspectRatioConstraint.AspectRatio = 1.885
@@ -146,6 +148,21 @@ ImageLabel.Image = "http://www.roblox.com/asset/?id=7628229268"
 
 UIAspectRatioConstraint_2.Parent = ImageLabel
 
+TextLabel.Parent = Top
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0670763254, 0, 0.0986866057, 0)
+TextLabel.Size = UDim2.new(0.405553967, 0, 0.740149558, 0)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "Trigon Evo - Powered by FluxTeam"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = TextLabel
+UITextSizeConstraint_4.MaxTextSize = 24
+
 Pattern.Name = "Pattern"
 Pattern.Parent = MainFrame
 Pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -176,7 +193,7 @@ TextBox.TextWrapped = true
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
 
-UITextSizeConstraint_4.Parent = TextBox
+UITextSizeConstraint_5.Parent = TextBox
 
 Frame.Parent = ss
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -192,8 +209,8 @@ Dock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Dock.BackgroundTransparency = 1.000
 Dock.Position = UDim2.new(0.208529666, 0, 0.209815755, 0)
 Dock.Size = UDim2.new(0.571447849, 0, 0.571447909, 0)
+Dock.Visible = false
 Dock.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-Dock.Visible = false	
 
 UIAspectRatioConstraint_3.Parent = Dock
 UIAspectRatioConstraint_3.AspectRatio = 1.000
@@ -217,7 +234,7 @@ UIAspectRatioConstraint_5.Parent = Frame
 
 -- Scripts:
 
-local function WMCCZY_fake_script() -- min.LocalScript 
+local function VNXORJP_fake_script() -- min.LocalScript 
 	local script = Instance.new('LocalScript', min)
 
 	local MainFrame = script.Parent.Parent.Parent
@@ -232,8 +249,8 @@ local function WMCCZY_fake_script() -- min.LocalScript
 	end)
 	
 end
-coroutine.wrap(WMCCZY_fake_script)()
-local function RRRLSHL_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(VNXORJP_fake_script)()
+local function NVGBFX_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local frame = script.Parent
@@ -241,8 +258,8 @@ local function RRRLSHL_fake_script() -- MainFrame.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(RRRLSHL_fake_script)()
-local function DPQIKKG_fake_script() -- Dock.LocalScript 
+coroutine.wrap(NVGBFX_fake_script)()
+local function LZTH_fake_script() -- Dock.LocalScript 
 	local script = Instance.new('LocalScript', Dock)
 
 	local Dock = script.Parent.Parent.Dock
@@ -266,7 +283,7 @@ local function DPQIKKG_fake_script() -- Dock.LocalScript
 	
 	
 end
-coroutine.wrap(DPQIKKG_fake_script)()
+coroutine.wrap(LZTH_fake_script)()
 
 
 Clear.Activated:Connect(function()
