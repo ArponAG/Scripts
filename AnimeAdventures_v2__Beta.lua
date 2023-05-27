@@ -248,7 +248,7 @@ function webhook()
         local data = {
             ["content"] = "",
                 ["username"] = "Anime Adventures | ArponAG V2",
-                ["avatar_url"] = "https://tr.rbxcdn.com/2a167faf9e626e51c939309a70fca28e/150/150/Image/Png",
+                ["avatar_url"] = "https://tr.rbxcdn.com/fbdb712cfd54ebcdf11fff6bed7d9616/150/150/Image/Png",
                 ["embeds"] = {
                     {
                         ["author"] = {
@@ -783,7 +783,7 @@ local function WorldSec()
         elseif Settings.WorldCategory == "Raid Worlds" then
             storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid", "Freezo's Invasion", "Entertainment District"}
         elseif Settings.WorldCategory == "Portals" then
-            storylist = {"Alien Portals","Zeldris Portals", "Demon Portals","Dressrosa Portals"}
+            storylist = {"Alien Portals","Zeldris Portals", "Demon Portals","Dressrosa Portals","Madoka Portals[ANY]"}
         elseif Settings.WorldCategory == "Dungeon" then 
             storylist = {"Cursed Womb","Crused Parade"}   
         end
@@ -859,7 +859,7 @@ local function WorldSec()
             levellist = {"west_city_frieza_level_1","west_city_frieza_level_2","west_city_frieza_level_3","west_city_frieza_level_4","west_city_frieza_level_5"}
         elseif level == "Entertainment District" then
             levellist = {"entertainment_district_level_1","entertainment_district_level_2","entertainment_district_level_3","entertainment_district_level_4","entertainment_district_level_5"}
-        --///Portals\\\---
+        --///Portals\\\--- fixportal
         elseif level == "Alien Portals" then
             levellist = {"portal_boros_g"}
         elseif level == "Demon Portals" then
@@ -868,6 +868,8 @@ local function WorldSec()
             levellist = {"portal_zeldris"}
         elseif level == "Dressrosa Portals" then
             levellist = {"portal_item__dressrosa"} 
+        elseif level == "Madoka Portals[ANY]" then
+            levellist = {"portal_item__madoka"}
             ---///Dungeon\\\---    updatefix
         elseif level == "Cursed Womb" then
             levellist = {"jjk_finger"} 
@@ -2315,6 +2317,18 @@ function getZeldrisPortals()
     end
     return portals
 end
+
+function getMadokaPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_item__madoka" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+
+
 function GetPortals(id)
     local reg = getreg() 
     local portals = {}
@@ -2503,6 +2517,29 @@ local function startfarming()
                 print("send Webhook")
                 task.wait(1.1)
                 warn("OPNew farming")
+                task.wait(7)
+                --Madoka fixportal		
+            elseif level == "portal_item__madoka" then
+                local args = {
+                    [1] = GetPortals("portal_item__madoka")[1]["uuid"],
+                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                        break;
+                    end 
+                end
+            pcall(function() 
+                BabyWebhook()
+                SnipeShopNew()
+             end)
+                print("send Webhook")
+                task.wait(1.1)
+                warn("Madoka farming")
                 task.wait(7)
                 --7Ds fixportal		
             elseif level == "portal_zeldris" then
