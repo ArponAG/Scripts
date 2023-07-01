@@ -641,6 +641,19 @@ local Unit3 = UC:Sector("Unit 3")
 local Unit4 = UC:Sector("Unit 4")
 local Unit5 = UC:Sector("Unit 5")
 local Unit6 = UC:Sector("Unit 6")
+
+--- Unit AOE
+local UA = Window:Category("⚔️ INF Range")
+
+Unit = {}
+for i = 1, 6 do
+    Unit["AOE"..i] = UA:Sector("Select Unit " .. i .. " INF Range")
+end
+
+local UnitAOE = UA:Sector("INF Range Config ")
+local UnitAOE1 = UA:Sector("Check Unit ")
+--- End of Unit AOE
+
 local Misc = Window:Category(" 🛠 Misc")
 local AutoSummonSec = Misc:Sector("Auto Summon Units")
 local AutoSnipeMerchantSec = Misc:Sector("Auto Snipe Merchant")
@@ -912,7 +925,17 @@ local function WorldSec()
             selectdiff:AddOption(diff[i])
         end
     end
-    
+    Table_Tier = {}
+    for i = 0,15 do
+        table.insert(Table_Tier,i)
+    end
+    Settings.SelectedTier = Settings.SelectedTier or 0
+    local selectlevel = SelectWorld:Cheat("Dropdown", "🎚️ Select Tier Portal",function(value)
+        print(value)
+        Settings.SelectedTier = value
+        saveSettings()
+    end, {options = Table_Tier, default = Settings.SelectedTier})
+
     SelectWorld:Cheat("Checkbox","🙋️ Friends Only  ", function(bool)
         print(bool)
         Settings.isFriendOnly = bool
@@ -1208,6 +1231,485 @@ local function ChallengeSec()
         saveSettings()
     end,{enabled =Settings.AutoChallengeAll})
 end
+
+----------------------------------------------
+------------- Unit AOE Config ---------------- 
+----------------------------------------------
+local function UNITAOEAA()
+    
+    UnitAOE:Cheat("Checkbox","Enable INF Range Unit [ZicZac] ", function(bool)
+        print(bool)
+        Settings.blackhole = bool
+        saveSettings()
+    end,{enabled = Settings.blackhole})
+    
+    --Unit1
+    task.spawn(function()
+        while task.wait() do
+            if Settings.blackhole then
+    
+                local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+                local player = game.Players.LocalPlayer.Name
+                local Unit = game.Workspace._UNITS
+                local distanceTable = {}
+            
+                local function getDistance(toCheck)
+                    table.clear(distanceTable)
+                    if Unit:getChildren()[1] then
+                        for i, v in pairs(Unit:getChildren()) do
+                            if v:WaitForChild("_stats"):FindFirstChild("base") then
+                                if tostring(v._stats.base.Value) == "pve" then
+                                    distance = tostring((base.Position - v.HumanoidRootPart.CFrame.Position).Magnitude)
+                                    table.insert(distanceTable, tonumber(distance))
+                                    table.sort(distanceTable)
+                                    if tonumber(distance) == distanceTable[1] then
+                                        enemy = v.HumanoidRootPart.CFrame *
+                                            CFrame.new(0, 0, -4)
+                                    end
+                                end
+                            end
+                        end
+                    end
+                    return enemy
+                end
+                    
+        local function followEnemyU1()
+            --Settings.unitAOE = "Select Units"
+            local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+            local player = game.Players.LocalPlayer.Name
+            local Unit = game.Workspace._UNITS
+                if Unit:getChildren()[1] then
+                    for i, v in pairs(Unit:getChildren()) do
+                        if v:WaitForChild("_stats"):FindFirstChild("player") then
+                            if tostring(v._stats.player.Value) == player then
+                                local success, err = pcall(function()
+                                    if tostring(v._stats.player.Value) == player then
+                                        if tostring(v._stats.id.Value) == Settings.UnitAOE1 then
+                                            --if game.Workspace._wave_time.Value > 0 then
+    
+                                            --game.Workspace._UNITS[Settings.UnitAOE1].HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            --game.Workspace._UNITS[Settings.UnitAOE1].HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                            v.HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            v.HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                        end
+                                    end
+                                end)
+                                if err then
+                                    return
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                followEnemyU1()
+                end
+            end
+        end)
+    
+    
+    --Unit2
+    task.spawn(function()
+        while task.wait() do
+            if Settings.blackhole then
+    
+                local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+                local player = game.Players.LocalPlayer.Name
+                local Unit = game.Workspace._UNITS
+                local distanceTable = {}
+            
+                local function getDistance(toCheck)
+                    table.clear(distanceTable)
+                    if Unit:getChildren()[1] then
+                        for i, v in pairs(Unit:getChildren()) do
+                            if v:WaitForChild("_stats"):FindFirstChild("base") then
+                                if tostring(v._stats.base.Value) == "pve" then
+                                    distance = tostring((base.Position - v.HumanoidRootPart.CFrame.Position).Magnitude)
+                                    table.insert(distanceTable, tonumber(distance))
+                                    table.sort(distanceTable)
+                                    if tonumber(distance) == distanceTable[1] then
+                                        enemy = v.HumanoidRootPart.CFrame *
+                                            CFrame.new(0, 0, -4)
+                                    end
+                                end
+                            end
+                        end
+                    end
+                    return enemy
+                end
+                    
+        local function followEnemyU2()
+            --Settings.unitAOE = "Select Units"
+            local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+            local player = game.Players.LocalPlayer.Name
+            local Unit = game.Workspace._UNITS
+                if Unit:getChildren()[1] then
+                    for i, v in pairs(Unit:getChildren()) do
+                        if v:WaitForChild("_stats"):FindFirstChild("player") then
+                            if tostring(v._stats.player.Value) == player then
+                                local success, err = pcall(function()
+                                    if tostring(v._stats.player.Value) == player then
+                                        if tostring(v._stats.id.Value) == Settings.UnitAOE2 then
+                                            --if game.Workspace._wave_time.Value > 0 then
+    
+                                            --game.Workspace._UNITS[Settings.UnitAOE2].HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            --game.Workspace._UNITS[Settings.UnitAOE2].HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                            v.HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            v.HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                        end
+                                    end
+                                end)
+                                if err then
+                                    return
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                followEnemyU2()
+                end
+            end
+        end)
+    
+    --Unit3
+    task.spawn(function()
+        while task.wait() do
+            if Settings.blackhole then
+    
+                local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+                local player = game.Players.LocalPlayer.Name
+                local Unit = game.Workspace._UNITS
+                local distanceTable = {}
+            
+                local function getDistance(toCheck)
+                    table.clear(distanceTable)
+                    if Unit:getChildren()[1] then
+                        for i, v in pairs(Unit:getChildren()) do
+                            if v:WaitForChild("_stats"):FindFirstChild("base") then
+                                if tostring(v._stats.base.Value) == "pve" then
+                                    distance = tostring((base.Position - v.HumanoidRootPart.CFrame.Position).Magnitude)
+                                    table.insert(distanceTable, tonumber(distance))
+                                    table.sort(distanceTable)
+                                    if tonumber(distance) == distanceTable[1] then
+                                        enemy = v.HumanoidRootPart.CFrame *
+                                            CFrame.new(0, 0, -4)
+                                    end
+                                end
+                            end
+                        end
+                    end
+                    return enemy
+                end
+                    
+        local function followEnemyU3()
+            --Settings.unitAOE = "Select Units"
+            local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+            local player = game.Players.LocalPlayer.Name
+            local Unit = game.Workspace._UNITS
+                if Unit:getChildren()[1] then
+                    for i, v in pairs(Unit:getChildren()) do
+                        if v:WaitForChild("_stats"):FindFirstChild("player") then
+                            if tostring(v._stats.player.Value) == player then
+                                local success, err = pcall(function()
+                                    if tostring(v._stats.player.Value) == player then
+                                        if tostring(v._stats.id.Value) == Settings.UnitAOE3 then
+                                            --if game.Workspace._wave_time.Value > 0 then
+    
+                                            --game.Workspace._UNITS[Settings.UnitAOE3].HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            --game.Workspace._UNITS[Settings.UnitAOE3].HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                            v.HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            v.HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                        end
+                                    end
+                                end)
+                                if err then
+                                    return
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                followEnemyU3()
+                end
+            end
+        end)
+    
+    --Unit4
+    task.spawn(function()
+        while task.wait() do
+            if Settings.blackhole then
+    
+                local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+                local player = game.Players.LocalPlayer.Name
+                local Unit = game.Workspace._UNITS
+                local distanceTable = {}
+            
+                local function getDistance(toCheck)
+                    table.clear(distanceTable)
+                    if Unit:getChildren()[1] then
+                        for i, v in pairs(Unit:getChildren()) do
+                            if v:WaitForChild("_stats"):FindFirstChild("base") then
+                                if tostring(v._stats.base.Value) == "pve" then
+                                    distance = tostring((base.Position - v.HumanoidRootPart.CFrame.Position).Magnitude)
+                                    table.insert(distanceTable, tonumber(distance))
+                                    table.sort(distanceTable)
+                                    if tonumber(distance) == distanceTable[1] then
+                                        enemy = v.HumanoidRootPart.CFrame *
+                                            CFrame.new(0, 0, -4)
+                                    end
+                                end
+                            end
+                        end
+                    end
+                    return enemy
+                end
+                    
+        local function followEnemyU4()
+            --Settings.unitAOE = "Select Units"
+            local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+            local player = game.Players.LocalPlayer.Name
+            local Unit = game.Workspace._UNITS
+                if Unit:getChildren()[1] then
+                    for i, v in pairs(Unit:getChildren()) do
+                        if v:WaitForChild("_stats"):FindFirstChild("player") then
+                            if tostring(v._stats.player.Value) == player then
+                                local success, err = pcall(function()
+                                    if tostring(v._stats.player.Value) == player then
+                                        if tostring(v._stats.id.Value) == Settings.UnitAOE4 then
+                                            --if game.Workspace._wave_time.Value > 0 then
+    
+                                            --game.Workspace._UNITS[Settings.UnitAOE4].HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            --game.Workspace._UNITS[Settings.UnitAOE4].HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                            v.HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            v.HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                        end
+                                    end
+                                end)
+                                if err then
+                                    return
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                followEnemyU4()
+                end
+            end
+        end)
+    
+    --Unit5
+    task.spawn(function()
+        while task.wait() do
+            if Settings.blackhole then
+    
+                local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+                local player = game.Players.LocalPlayer.Name
+                local Unit = game.Workspace._UNITS
+                local distanceTable = {}
+            
+                local function getDistance(toCheck)
+                    table.clear(distanceTable)
+                    if Unit:getChildren()[1] then
+                        for i, v in pairs(Unit:getChildren()) do
+                            if v:WaitForChild("_stats"):FindFirstChild("base") then
+                                if tostring(v._stats.base.Value) == "pve" then
+                                    distance = tostring((base.Position - v.HumanoidRootPart.CFrame.Position).Magnitude)
+                                    table.insert(distanceTable, tonumber(distance))
+                                    table.sort(distanceTable)
+                                    if tonumber(distance) == distanceTable[1] then
+                                        enemy = v.HumanoidRootPart.CFrame *
+                                            CFrame.new(0, 0, -4)
+                                    end
+                                end
+                            end
+                        end
+                    end
+                    return enemy
+                end
+                    
+        local function followEnemyU5()
+            --Settings.unitAOE = "Select Units"
+            local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+            local player = game.Players.LocalPlayer.Name
+            local Unit = game.Workspace._UNITS
+                if Unit:getChildren()[1] then
+                    for i, v in pairs(Unit:getChildren()) do
+                        if v:WaitForChild("_stats"):FindFirstChild("player") then
+                            if tostring(v._stats.player.Value) == player then
+                                local success, err = pcall(function()
+                                    if tostring(v._stats.player.Value) == player then
+                                        if tostring(v._stats.id.Value) == Settings.UnitAOE5 then
+                                            --if game.Workspace._wave_time.Value > 0 then
+    
+                                            --game.Workspace._UNITS[Settings.UnitAOE5].HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            --game.Workspace._UNITS[Settings.UnitAOE5].HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                            v.HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            v.HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                        end
+                                    end
+                                end)
+                                if err then
+                                    return
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                followEnemyU5()
+                end
+            end
+        end)
+    
+    --Unit6
+    task.spawn(function()
+        while task.wait() do
+            if Settings.blackhole then
+    
+        local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+        local player = game.Players.LocalPlayer.Name
+        local Unit = game.Workspace._UNITS
+        local distanceTable = {}
+    
+        local function getDistance(toCheck)
+            table.clear(distanceTable)
+            if Unit:getChildren()[1] then
+                for i, v in pairs(Unit:getChildren()) do
+                    if v:WaitForChild("_stats"):FindFirstChild("base") then
+                        if tostring(v._stats.base.Value) == "pve" then
+                            distance = tostring((base.Position - v.HumanoidRootPart.CFrame.Position).Magnitude)
+                            table.insert(distanceTable, tonumber(distance))
+                            table.sort(distanceTable)
+                            if tonumber(distance) == distanceTable[1] then
+                                enemy = v.HumanoidRootPart.CFrame *
+                                            CFrame.new(0, 0, -4)
+                            end
+                        end
+                    end
+                end
+            end
+            return enemy
+        end
+                           
+        local function followEnemyU6()
+            --Settings.unitAOE = "Select Units"
+            local base = game.Workspace._BASES.player.base.fake_unit.HumanoidRootPart.CFrame
+            local player = game.Players.LocalPlayer.Name
+            local Unit = game.Workspace._UNITS
+                if Unit:getChildren()[1] then
+                    for i, v in pairs(Unit:getChildren()) do
+                        if v:WaitForChild("_stats"):FindFirstChild("player") then
+                            if tostring(v._stats.player.Value) == player then
+                                local success, err = pcall(function()
+                                    if tostring(v._stats.player.Value) == player then
+                                        if tostring(v._stats.id.Value) == Settings.UnitAOE6 then
+    
+                                            v.HumanoidRootPart.CFrame = getDistance("enemyName")
+                                            v.HumanoidRootPart_Fake.CFrame = getDistance("enemyName")
+    
+                                        end
+                                    end
+                                end)
+                                if err then
+                                    return
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                followEnemyU6()
+                end
+            end
+        end)
+    
+    end
+    
+    
+    --- Fetch Units from Equipped List
+    local names = {}
+    --[[Settings.SelectedUnits = {
+        U1 = "nil",
+        U2 = "nil",
+        U3 = "nil",
+        U4 = "nil",
+        U5 = "nil",
+        U6 = "nil"
+    }]]
+    for h = 1, 6 do
+        Units = Settings.SelectedUnits["U"..h]:split(" #")
+        table.insert(names, Units[1])
+    end
+    --- End of Fetch Unit
+    
+    --- Check Slot Unit to Dropdown 
+    --Unit1
+    for i = 1, 1 do
+        Unit["AOE"..i]:Cheat("Dropdown", "Select Unit " .. i .. " Name",function(value)
+            Settings.UnitAOE1 = value
+            saveSettings()
+        end, { options = { "Off", names[i] }, default = Settings.UnitAOE1 or nil})
+    end
+    
+    
+    --Unit2
+    for i = 2, 2 do
+     Unit["AOE"..i]:Cheat("Dropdown", "Select Unit " .. i .. " Name",function(value)
+        Settings.UnitAOE2 = value
+        saveSettings()
+    end, { options = { "Off", names[i] }, default = Settings.UnitAOE2 or nil})
+    end
+    
+    
+    --Unit3
+    for i = 3, 3 do
+     Unit["AOE"..i]:Cheat("Dropdown", "Select Unit " .. i .. " Name",function(value)
+        Settings.UnitAOE3 = value
+        saveSettings()
+    end, { options = { "Off", names[i] }, default = Settings.UnitAOE3 or nil})
+    end
+    
+    
+    --Unit4
+    for i = 4, 4 do
+     Unit["AOE"..i]:Cheat("Dropdown", "Select Unit " .. i .. " Name",function(value)
+        Settings.UnitAOE4 = value
+        saveSettings()
+    end, { options = { "Off", names[i] }, default = Settings.UnitAOE4 or nil})
+    end
+    
+    
+    
+    --Unit5
+    for i = 5, 5 do
+     Unit["AOE"..i]:Cheat("Dropdown", "Select Unit " .. i .. " Name",function(value)
+        Settings.UnitAOE5 = value
+        saveSettings()
+    end, { options = { "Off", names[i] }, default = Settings.UnitAOE5 or nil})
+    end
+    
+    
+    --Unit6
+    for i = 6, 6 do
+     Unit["AOE"..i]:Cheat("Dropdown", "Select Unit " .. i .. " Name",function(value)
+        Settings.UnitAOE6 = value
+        saveSettings()
+    end, { options = { "Off", names[i] }, default = Settings.UnitAOE6 or nil})
+    end
+    --- End Check Unit
 ----------------------------------------------
 ------------------ credits -------------------
 ----------------------------------------------
@@ -2196,11 +2698,6 @@ function others()
         autoDailyquest()
     end,{enabled = Settings.autoDailyquest})
     
-    OtherSec:Cheat("Checkbox","Escanor Infinite Range ", function(bool) -- added by craymel02
-        print("Esacanor Infinite Range is set to " .. tostring(bool))
-        Settings.escanorIR = bool
-        saveSettings()
-    end,{enabled = Settings.escanorIR})
     OtherSec:Cheat("Button", "Redeem All Code", function()
         print(Settings.redeemc)
         Reedemcode()
@@ -2221,6 +2718,7 @@ if game.PlaceId == 8304191830 then
     AutoFarmSec()
     MoreFarmSec()
     ChallengeSec()
+    UNITAOEAA()
     unitconfig()
     reFarmconfig()
     LAGGYconfig()
@@ -2237,6 +2735,7 @@ else
     AutoFarmSec()
     MoreFarmSec()
     ChallengeSec()
+    UNITAOEAA()
     UnitPosSec()
     unitconfig()
     reFarmconfig()
@@ -2531,27 +3030,36 @@ local function startfarming()
                 task.wait(7)
                 --Madoka fixportal		
             elseif level == "portal_item__madoka" then
-                local args = {
-                    [1] = GetPortals("portal_item__madoka")[1]["uuid"],
-                    [2] = { ["friends_only"] = getgenv().isFriendOnly } }
-                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                
-                task.wait(1.5)
-                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
-                        local args = { [1] = tostring(v.Parent.Name) }
-                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
-                        break;
-                    end 
+                Portalmadoka = getMadokaPortals()
+                for i,v in pairs(Portalmadoka) do
+                    if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier then
+                        Portalmadoka = v
+                    end
                 end
-            pcall(function() 
-                BabyWebhook()
-                SnipeShopNew()
-             end)
-                print("send Webhook")
-                task.wait(1.1)
-                warn("Madoka farming")
-                task.wait(7)
+                if Portalmadoka ~= nil and Portalmadoka["uuid"] ~= nil then
+                    local args = {
+                        [1] = Portalmadoka["uuid"],
+                        [2] = { ["friends_only"] = getgenv().isFriendOnly } 
+                    }
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                    task.wait(1.5)
+                    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                            local args = { [1] = tostring(v.Parent.Name) }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                            break;
+                        end 
+                    end
+                    pcall(function() 
+                        BabyWebhook()
+                        SnipeShopNew()
+                    end)
+                    print("send Webhook")
+                    task.wait(1.1)
+                    warn("Madoka farming")
+                    task.wait(7)
+                end
+                task.wait(.1)
                 --7Ds fixportal		
             elseif level == "portal_zeldris" then
                 local args = {
@@ -5480,14 +5988,7 @@ if Settings.autoDailyquest then
     autoDailyquest()
 end
 
--- added by craymel02
-function escanorIR()
-    if Settings.escanorIR == nil then
-        Settings.escanorIR = false
-        else
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/dontDelete-IR.lua"))()
-    end
-end
+
 
 --placeany
 
@@ -5552,4 +6053,3 @@ warn("Display Error Hider!!!")
 warn("Hider Name Loaded!!!")
 warn("AA v2 Loaded!!!")
 warn("All Loaded !!!")
-escanorIR() -- added by craymel02
