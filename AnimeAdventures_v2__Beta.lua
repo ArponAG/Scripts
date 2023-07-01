@@ -3119,12 +3119,14 @@ end
 
 function StartPortal(input)
     local DataPlayerPortal = GetPlayerPortalUse(input)
-    if game.workspace._MAP_CONFIG:WaitForChild("GetLevelData") then
+    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name and game.workspace._MAP_CONFIG:WaitForChild("GetLevelData") then
+    --if game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer() then
         return DataPlayerPortal
     else
         local args = {
             [1] = DataPlayerPortal[2],
-            [2] = { ["friends_only"] = getgenv().isFriendOnly } 
+            [2] = { ["friends_only"] = Settings.isFriendOnly } --getgenv().isFriendOnly 
         }
         game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
         task.wait(1.5)
@@ -3133,6 +3135,9 @@ function StartPortal(input)
         task.wait(7)
     end
 end
+end
+--end
+
 
 Settings.teleporting = true
 getgenv().door = "_lobbytemplategreen1"
