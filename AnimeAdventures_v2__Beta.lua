@@ -3730,43 +3730,49 @@ end
 coroutine.resume(coroutine.create(function()
     task.spawn(function()
         local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
-        while wait() do
-            if GameFinished and GameFinished.Value == true then
-                print("Changed", GameFinished.Value == true)
-                if GameFinished.Value == true then
-                    repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
-                    pcall(function() webhook() end)
-                    print("Wait next or leave")
-                    task.wait(2.1)
-                    cata = Settings.WorldCategory; level = Settings.SelectedLevel;
-                    if Settings.AutoPickPortal and cata == "Portals"  then
-                        local DataPortalReplay = GetPlayerPortalUse(level)
-                        local args = {
-                            [1] = "replay",
-                            [2] = { ["item_uuid"] = DataPortalReplay[2] }
-                        }
-                        game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("set_game_finished_vote"):InvokeServer(unpack(args))
-                        print("Pick Portal Replay...") 
-                    elseif Settings.AutoReplay then
-                        local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                        local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                        print("Replay...") 
-                    elseif Settings.AutoNext then
-                        local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                        local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
-                        print("Next Story...") 
-                    elseif Settings.AutoContinue then
-                        local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))
-                        local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))   
-                        print("Next Room infint Castle...")         
-                    elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext and not Settings.AutoContinue then
-                        game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
-                        Teleport()
-                        print("Returning to lobby...")
-                    end
+        GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
+            print("Changed", GameFinished.Value == true)
+            if GameFinished.Value == true then
+                repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
+                pcall(function() webhook() end)
+                print("Wait next or leave")
+                task.wait(2.1)
+
+            cata = Settings.WorldCategory; level = Settings.SelectedLevel;
+            if Settings.AutoPickPortal and cata == "Portals"  then
+                local DataPortalReplay = GetPlayerPortalUse(level)
+                local args = {
+                    [1] = "replay",
+                    [2] = { ["item_uuid"] = DataPortalReplay[2] }
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(args))
+                local args = {
+                    [1] = "replay",
+                    [2] = { ["item_uuid"] = DataPortalReplay[2] }
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(args))
+                --game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("set_game_finished_vote"):InvokeServer(unpack(args))
+                warn("Pick Portal Replay...") 
+            elseif Settings.AutoReplay then
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                local a={[1]="replay"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    print("Replay...") 
+            elseif Settings.AutoNext then
+                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
+                    print("Next Story...") 
+            elseif Settings.AutoContinue then
+                local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))
+                local a={[1]="NextRetry"} game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower_from_game:InvokeServer(unpack(a))   
+                    print("Next Room infint Castle...")              
+            elseif Settings.AutoLeave and not Settings.AutoReplay and not Settings.AutoNext and not Settings.AutoContinue then
+                   game:GetService("TeleportService"):Teleport(8304191830, game.Players.LocalPlayer)
+                
+                    Teleport()
+                    print("Returning to lobby...")
                 end
             end
-        end
+        end)
     end)
 
     while task.wait() do
