@@ -3122,24 +3122,28 @@ end
 
 function StartPortal(input)
     local DataPlayerPortal = GetPlayerPortalUse(input)
-    for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
-        if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name and game.workspace._MAP_CONFIG:WaitForChild("GetLevelData") then
-    --if game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer() then
-        return DataPlayerPortal
-    else
-        local args = {
-            [1] = DataPlayerPortal[2],
-            [2] = { ["friends_only"] = Settings.isFriendOnly } --getgenv().isFriendOnly 
-        }
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-        task.wait(1.5)
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(DataPlayerPortal[3]))
-        warn(DataPlayerPortal[1])
-        task.wait(7)
+    --for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+        --if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name and game.workspace._MAP_CONFIG:WaitForChild("GetLevelData") then
+            if game.workspace:FindFirstChild("_MAP_CONFIG") and game.workspace:FindFirstChild("_MAP_CONFIG"):FindFirstChild("GetLevelData") then
+                return DataPlayerPortal
+            else
+                local args = {
+                    [1] = DataPlayerPortal[2],
+                    [2] = { ["friends_only"] = Settings.isFriendOnly } --getgenv().isFriendOnly 
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
+                task.wait(1.5)
+                for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
+                    if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
+                        local args = { [1] = tostring(v.Parent.Name) }
+                        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
+                --game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(DataPlayerPortal[3]))
+                warn(DataPlayerPortal[1])
+                task.wait(3)
+            end
+        end
     end
 end
-end
---end
 
 
 Settings.teleporting = true
