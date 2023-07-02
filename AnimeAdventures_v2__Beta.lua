@@ -695,7 +695,8 @@ local UnitAOE = UA:Sector("INF Range Config ")
 --- End of Unit AOE
 
 local LG = Window:Category("🛠️ Misc [BETA]")
-local LowCPU0 = LG:Sector(" ")
+local LowCPU = LG:Sector("")
+local LowCPU2 = LG:Sector("")
 local LG1 = LG:Sector("Beta LAGGY Config ")
 local DELMAP = LG:Sector("🗺️ New Function 🗺️")
 local DELMAP1 = LG:Sector(" ")
@@ -1093,6 +1094,13 @@ local function WorldSec()
         Settings.SelectedTier = value
         saveSettings()
     end, {options = Table_Tier, default = Settings.SelectedTier})
+
+    Settings.SelectedChallenge = Settings.SelectedChallenge or "double_cost"
+    local selectlevel = SelectWorld:Cheat("Dropdown", "Din't use Challenge",function(value)
+        Settings.SelectedChallenge = value
+        saveSettings()
+    end, { options = {"double_cost","short_range","fast_enemies","regen_enemies", "tank_enemies","shield_enemies","triple_cost","hyper_regen_enemies","hyper_shield_enemies",
+    "godspeed_enemies","flying_enemies","mini_range"}, default =Settings.SelectedChallenge})
 
     SelectWorld:Cheat("Checkbox","👬 Friends Only", function(bool)
         print(bool)
@@ -2897,6 +2905,7 @@ function others()
     end,{enabled = Settings.hidenamep})
 end
 
+
 ----------------------------------------------
 ------------ /\/\/\/\/\/\/\/\/\ --------------
 ----------------------------------------------
@@ -3107,6 +3116,7 @@ function GetPlayerPortalUse(level)
         local PortalEvent = GetPortals("portal_item__madoka")
         for i,v in pairs(PortalEvent) do
             if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] <= Settings.SelectedTier then
+            if v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge then
                 PortalEventUse = v
 
                 PortalName = "Madoka farming"
@@ -3115,10 +3125,10 @@ function GetPlayerPortalUse(level)
                 break
             end
         end
-
-
     end
 
+
+end
     return {PortalName,PortalUUID,PortalPlayer}
 end
 
