@@ -659,7 +659,7 @@ Window.ChangeToggleKey(Enum.KeyCode.P)
 local Home = Window:Category("🏠 Home")
 local Developers = Home:Sector("Anime Adventures")
 local asdasd = Home:Sector(" ")
-local UIUPDT = Home:Sector("⚙️ Fix UPDATE "..version.." ⚙️")
+local UIUPDT = Home:Sector("⚙️ Challenge Config ⚙️")
 
 
 local Farm = Window:Category("🤖 Auto Farm")
@@ -1967,9 +1967,8 @@ local function credits()
     Developers:Cheat("Label","🔧 To toggle the script press \" P \"")   
     Developers:Cheat("Button","🔗 Discord Invite", function()
         setclipboard("https://discord.gg/2ttfCfzxut")
-    end)    
-    UIUPDT:Cheat("Label","[+] With 'SAO' Map \n[+] Just use 'delete map' and set position in first round")  
-
+    end)     
+    UIUPDT:Cheat("Label"," \n \n \n \n \n \n \n \n \n \n double_cost = 'High Cost'   \n short_range = 'Short Range'   \n fast_enemies = 'Fast Enemies'  \n regen_enemies = 'Regen Enemies'  \n tank_enemies = 'Tank Enemies'  \n shield_enemies = 'Shield Enemies'  \n triple_cost = 'Triple Cost'   \n hyper_regen_enemies = 'Hyper-Regen Enemies'   \n hyper_shield_enemies = 'Steel-Plated Enemies'   \n godspeed_enemies = 'Godspeed Enemies'   \n flying_enemies = 'Flying Enemies'   \n mini_range = 'Mini-Range'  ")   
 end
 getgenv().posX = 1.5
 getgenv().posZ = 1.5
