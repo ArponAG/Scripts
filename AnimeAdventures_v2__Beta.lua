@@ -2694,12 +2694,14 @@ end)
     end, {min = 0.1, max = 10, suffix = "", default = Settings.delag })
     --LG1:Cheat("Label","LAG Delay :  "..tonumber(Settings.delag)) 
 
-    LG1:Cheat("Label"," Lag At Wave = Auto Lag when at Wave ")
-    LG1:Cheat("Label"," Threads = lower the faster it lags ")
-    LG1:Cheat("Label"," Tries = the higher the faster it lags ")
-    LG1:Cheat("Label"," Delay = lower the faster it lags")
-    LG1:Cheat("Label"," def settings : threads = 250, tries = 1, Delay = 1.5 ")
-    LG1:Cheat("Label"," fast-lag settings : threads = 10, tries = 1.5, Delay = 1.5 ")
+    LG1:Cheat("Label"," How to LAG Setting")
+    LG1:Cheat("Label"," Def-Setting")
+    LG1:Cheat("Label"," IMPACT(S) = 499k, Threads = 22")
+    LG1:Cheat("Label"," LAG Lv. = 1, Delay = 1")
+    LG1:Cheat("Label"," Fast-LAG")
+    LG1:Cheat("Label"," IMPACT(S) = 499k, Threads = 22")
+    LG1:Cheat("Label"," LAG Lv. = 1, Delay = 0.2")
+
 
 end
 ----------------------------------------------
