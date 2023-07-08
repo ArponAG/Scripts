@@ -1105,11 +1105,27 @@ local function WorldSec()
     end, {options = Table_Tier, default = Settings.SelectedTier})
 
     Settings.SelectedChallenge = Settings.SelectedChallenge or "double_cost"
-    local selectlevel = SelectWorld:Cheat("Dropdown", "Din't use Challenge",function(value)
+    local selectlevel = SelectWorld:Cheat("Dropdown", "🎚️ Din't use Challenge",function(value)
         Settings.SelectedChallenge = value
         saveSettings()
     end, { options = {"double_cost","short_range","fast_enemies","regen_enemies", "tank_enemies","shield_enemies","triple_cost","hyper_regen_enemies","hyper_shield_enemies",
     "godspeed_enemies","flying_enemies","mini_range"}, default =Settings.SelectedChallenge})
+
+    Settings.SelectedChallenge2 = Settings.SelectedChallenge2 or "double_cost"
+    local selectlevel = SelectWorld:Cheat("Dropdown", "🎚️ Din't use Challenge ",function(value)
+        warn("Change to : "..value)
+        Settings.SelectedChallenge2 = value
+        saveSettings()
+    end, { options = {"double_cost","short_range","fast_enemies","regen_enemies", "tank_enemies","shield_enemies","triple_cost","hyper_regen_enemies","hyper_shield_enemies",
+    "godspeed_enemies","flying_enemies","mini_range"}, default =Settings.SelectedChallenge2})
+
+    Settings.SelectedChallenge3 = Settings.SelectedChallenge3 or "double_cost"
+    local selectlevel = SelectWorld:Cheat("Dropdown", "🎚️ Din't use Challenge ",function(value)
+        warn("Change to : "..value)
+        Settings.SelectedChallenge3 = value
+        saveSettings()
+    end, { options = {"double_cost","short_range","fast_enemies","regen_enemies", "tank_enemies","shield_enemies","triple_cost","hyper_regen_enemies","hyper_shield_enemies",
+    "godspeed_enemies","flying_enemies","mini_range"}, default =Settings.SelectedChallenge3})
 
     SelectWorld:Cheat("Checkbox","👬 Friends Only", function(bool)
         print(bool)
@@ -3128,7 +3144,8 @@ function GetPlayerPortalUse(level)
         local PortalEvent = GetPortals("portal_item__madoka")
         for i,v in pairs(PortalEvent) do
             if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] <= Settings.SelectedTier then
-            if v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge then
+            if v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge2
+            and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge3 then
                 PortalEventUse = v
 
                 PortalName = "Madoka farming"
