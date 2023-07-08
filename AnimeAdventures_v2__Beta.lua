@@ -954,7 +954,7 @@ local function WorldSec()
             storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid", "Freezo's Invasion", "Entertainment District", 
             "Hero City (Hero Slayer)", "Marine's Ford (Buddha)"}
         elseif Settings.WorldCategory == "Portals" then
-            storylist = {"Alien Portals","Zeldris Portals","Demon Portals","Dressrosa Portals","Madoka Portals[ANY]"}
+            storylist = {"Alien Portals","Zeldris Portals","Demon Portals","Dressrosa Portals","Madoka Portals"}
         elseif Settings.WorldCategory == "Dungeon" then
             storylist = {"Cursed Womb","Crused Parade","Anniversary Island"}     
         end
@@ -1049,7 +1049,7 @@ local function WorldSec()
             levellist = {"portal_zeldris"}    
         elseif level == "Dressrosa Portals" then
             levellist = {"portal_item__dressrosa"}
-        elseif level == "Madoka Portals[ANY]" then
+        elseif level == "Madoka Portals" then
             levellist = {"portal_item__madoka"}
         elseif level == "The Eclipse" then
             levellist = {"portal_item__eclipse"}
@@ -1079,7 +1079,7 @@ local function WorldSec()
         or level == "naruto_infinite" or level == "marineford_infinite" or level == "tokyoghoul_infinite" or level == "hueco_infinite" 
         or level == "hxhant_infinite" or level == "magnolia_infinite" or level == "jjk_infinite" or level == "clover_infinite" 
         or level == "jojo_infinite" or level == "opm_infinite" or level == "7ds_infinite" or level == "mha_infinite" 
-        or level == "sao_infinite" 
+        or level == "sao_infinite" or level == "berserk_infinite" 
         or level == "dressrosa_infinite" or cata == "Legend Stages" or cata == "Raid Worlds"  then
             diff = {"Hard"}
         elseif cata == "Portals" or cata == "Dungeon"  then
