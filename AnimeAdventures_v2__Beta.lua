@@ -5248,6 +5248,42 @@ function DelMapSand4()
     end   
 end
 
+function DelMapSand5()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]:GetChildren()) do
+				if v.Name == "KazekageMansion" then v:Destroy() end
+        end
+    end   
+end
+
+function DelMapSand6()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]:GetChildren()) do
+				if v.Name == "branches" then v:Destroy() end
+        end
+    end   
+end
+
+function DelMapSand7()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]:GetChildren()) do
+				if v.Name == "mansion floor" then v:Destroy() end
+        end
+    end   
+end
+
+
+function DelMapSand8()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].KazekageMansion:GetChildren()) do
+				if v.ClassName == "MeshPart" then v:Destroy() end
+				if v.ClassName == "Model" then v:Destroy() end
+				if v.ClassName == "Part" then v:Destroy() end
+        end
+    end   
+end
+
+
 --Marine
 function DelMapMarine1()
 	if game.Workspace:FindFirstChild("_map") then
@@ -6649,13 +6685,16 @@ coroutine.resume(coroutine.create(function()
 				DelMapSnowy1()
 		DelMapSnowy2()
 		DelMapSnowy3()
-            elseif game.Workspace._map:FindFirstChild("sand_gate") then 
+            elseif game.Workspace._map:FindFirstChild("sand_gate") then  
                 DelTer() 
-				DelMapMain()
 				DelMapSand1()
 		DelMapSand2()
 		DelMapSand3()
 		DelMapSand4()
+        DelMapSand5()
+        DelMapSand6()
+        DelMapSand7()
+        DelMapSand8()
             elseif game.Workspace._map:FindFirstChild("icebergs") then
                 DelTer() 
 				DelMapMain()
