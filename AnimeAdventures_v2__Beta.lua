@@ -2446,6 +2446,13 @@ local function unitconfig()
     end)
 
     --//UNIT 1
+    
+    Settings.U1_Priority = Settings.U1_Priority or "first"
+    Unit1:Cheat("Dropdown", "Target Priority ",function(value)
+        warn("Change to : "..value)
+        Settings.U1_Priority = value
+        saveSettings()
+    end, { options = {"first","closest","last","farthest", "strongest","weakest","flying"}, default =Settings.U1_Priority})
 
     Unit1:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
@@ -2466,6 +2473,12 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U1_UpgWave})
 
+    Unit1:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U1_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U1_UpgCap})
+
     Unit1:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U1_SellWave = Value
@@ -2473,6 +2486,12 @@ local function unitconfig()
     end, {placeholder = Settings.U1_SellWave}) 
     
     --//UNIT 2
+    Settings.U2_Priority = Settings.U2_Priority or "first"
+    Unit2:Cheat("Dropdown", "Target Priority ",function(value)
+        warn("Change to : "..value)
+        Settings.U2_Priority = value
+        saveSettings()
+    end, { options = {"first","closest","last","farthest", "strongest","weakest","flying"}, default =Settings.U2_Priority})
 
     Unit2:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
@@ -2492,6 +2511,12 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U2_UpgWave})
 
+    Unit2:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U2_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U2_UpgCap})
+
     Unit2:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U2_SellWave = Value
@@ -2499,6 +2524,12 @@ local function unitconfig()
     end, {placeholder = Settings.U2_SellWave}) 
     
     --//UNIT 3
+    Settings.U3_Priority = Settings.U3_Priority or "first"
+    Unit3:Cheat("Dropdown", "Target Priority ",function(value)
+        warn("Change to : "..value)
+        Settings.U3_Priority = value
+        saveSettings()
+    end, { options = {"first","closest","last","farthest", "strongest","weakest","flying"}, default =Settings.U3_Priority})
 
     Unit3:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
@@ -2517,13 +2548,26 @@ local function unitconfig()
         Settings.U3_UpgWave = Value
         saveSettings()
     end, {placeholder = Settings.U3_UpgWave})
+
+    Unit3:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U3_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U3_UpgCap})
     
     Unit3:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U3_SellWave = Value
         saveSettings()
     end, {placeholder = Settings.U3_SellWave}) 
+
     --//UNIT 4
+    Settings.U4_Priority = Settings.U4_Priority or "first"
+    Unit4:Cheat("Dropdown", "Target Priority ",function(value)
+        warn("Change to : "..value)
+        Settings.U4_Priority = value
+        saveSettings()
+    end, { options = {"first","closest","last","farthest", "strongest","weakest","flying"}, default =Settings.U4_Priority})
 
     Unit4:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
@@ -2542,6 +2586,12 @@ local function unitconfig()
         Settings.U4_UpgWave = Value
         saveSettings()
     end, {placeholder = Settings.U4_UpgWave})
+
+    Unit4:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U4_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U4_UpgCap})
     
     Unit4:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
@@ -2550,6 +2600,12 @@ local function unitconfig()
     end, {placeholder = Settings.U4_SellWave})  
     
     --//UNIT 5
+    Settings.U5_Priority = Settings.U5_Priority or "first"
+    Unit5:Cheat("Dropdown", "Target Priority ",function(value)
+        warn("Change to : "..value)
+        Settings.U5_Priority = value
+        saveSettings()
+    end, { options = {"first","closest","last","farthest", "strongest","weakest","flying"}, default =Settings.U5_Priority})
 
     Unit5:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
@@ -2569,12 +2625,25 @@ local function unitconfig()
         saveSettings()
     end, {placeholder = Settings.U5_UpgWave})
 
+    Unit5:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U5_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U5_UpgCap})
+
     Unit5:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
         Settings.U5_SellWave = Value
         saveSettings()
     end, {placeholder = Settings.U5_SellWave}) 
+
     --//UNIT 6
+    Settings.U6_Priority = Settings.U6_Priority or "first"
+    Unit6:Cheat("Dropdown", "Target Priority ",function(value)
+        warn("Change to : "..value)
+        Settings.U6_Priority = value
+        saveSettings()
+    end, { options = {"first","closest","last","farthest", "strongest","weakest","flying"}, default =Settings.U6_Priority})
 
     Unit6:Cheat("Textbox", "Place from wave", function(Value)
         Value = tonumber(Value)
@@ -2593,6 +2662,12 @@ local function unitconfig()
         Settings.U6_UpgWave = Value
         saveSettings()
     end, {placeholder = Settings.U6_UpgWave})
+
+    Unit6:Cheat("Textbox", "Upgrade Cap", function(Value)
+        Value = tonumber(Value)
+        Settings.U6_UpgCap = Value
+        saveSettings()
+    end, {placeholder = Settings.U6_UpgCap})
 
     Unit6:Cheat("Textbox", "Auto Sell at wave", function(Value)
         Value = tonumber(Value)
@@ -4060,6 +4135,163 @@ function upgradeunit(name, min)
     end
 end
 
+function upgradeunit1(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.upgrade.Value ~= tonumber(Settings.U1_UpgCap) then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function upgradeunit2(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.upgrade.Value ~= tonumber(Settings.U2_UpgCap) then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function upgradeunit3(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.upgrade.Value ~= tonumber(Settings.U3_UpgCap) then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function upgradeunit4(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.upgrade.Value ~= tonumber(Settings.U4_UpgCap) then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function upgradeunit5(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.upgrade.Value ~= tonumber(Settings.U5_UpgCap) then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function upgradeunit6(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.upgrade.Value ~= tonumber(Settings.U6_UpgCap) then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.upgrade_unit_ingame:InvokeServer(v)
+            end
+        end
+    end
+end
+
+--test Priority
+
+function targetpriority(name)
+    for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
+       if v:FindFirstChild("_stats") and v:FindFirstChild("_hitbox") then
+            if tostring(v._stats.player.Value) == game.Players.LocalPlayer.Name then
+                if v._stats.id.Value == name and v._stats.priority.Value ~= Settings.U1_Priority then
+                    game:GetService("ReplicatedStorage").endpoints.client_to_server.cycle_priority:InvokeServer(v)
+                end
+            end
+        end
+    end
+end
+
+function Priorityunit1(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.priority.Value ~= Settings.U1_Priority then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.cycle_priority:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function Priorityunit2(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.priority.Value ~= Settings.U2_Priority then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.cycle_priority:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function Priorityunit3(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.priority.Value ~= Settings.U3_Priority then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.cycle_priority:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function Priorityunit4(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.priority.Value ~= Settings.U4_Priority then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.cycle_priority:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function Priorityunit5(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.priority.Value ~= Settings.U5_Priority then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.cycle_priority:InvokeServer(v)
+            end
+        end
+    end
+end
+
+function Priorityunit6(name) 
+    repeat task.wait() until game:GetService("Workspace"):WaitForChild("_UNITS")
+    for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+        repeat task.wait() until v:WaitForChild("_stats")
+        if v._stats.id.Value == name and tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name then
+            if v._stats.priority.Value ~= Settings.U6_Priority then
+            game:GetService("ReplicatedStorage").endpoints.client_to_server.cycle_priority:InvokeServer(v)
+            end
+        end
+    end
+end
 
 ---------------------------------
 ---------test sell unit----------
@@ -4170,25 +4402,27 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     U1_wv, U2_wv, U3_wv, U4_wv, U5_wv, U6_wv = Settings.U1_Wave or 1, Settings.U2_Wave or 1, Settings.U3_Wave or 1, Settings.U4_Wave or 1, Settings.U5_Wave or 1, Settings.U6_Wave or 1
     U1_TAmm, U2_TAmm, U3_TAmm, U4_TAmm, U5_TAmm, U6_TAmm = Settings.U1_TotalAmmount or 6, Settings.U2_TotalAmmount or 6, Settings.U3_TotalAmmount or 6, Settings.U4_TotalAmmount or 6, Settings.U5_TotalAmmount or 6, Settings.U6_TotalAmmount or 6
     U1_upgW, U2_upgW, U3_upgW, U4_upgW, U5_upgW, U6_upgW = Settings.U1_UpgWave or 1, Settings.U2_UpgWave or 1, Settings.U3_UpgWave or 1, Settings.U4_UpgWave or 1, Settings.U5_UpgWave or 1, Settings.U6_UpgWave or 1
-    U1_upgCap, U2_upgCap, U3_upgCap, U4_upgCap, U5_upgCap, U6_upgCap = Settings.U1_UpgCap or 99, Settings.U2_UpgCap or 99, Settings.U3_UpgCap or 99, Settings.U4_UpgCap or 99, Settings.U5_UpgCap or 99, Settings.U6_UpgCap or 99
     U1_sellW, U2_sellW, U3_sellW, U4_sellW, U5_sellW, U6_sellW = Settings.U1_SellWave or 999, Settings.U2_SellWave or 999, Settings.U3_SellWave or 999, Settings.U4_SellWave or 999, Settings.U5_SellWave or 999, Settings.U6_SellWave or 999
-    U1_upgP, U2_upgP, U3_upgP, U4_upgP, U5_upgP, U6_upgP = Settings.U1_UpgPro or 1, Settings.U2_UpgPro or 1, Settings.U3_UpgPro or 1, Settings.U4_UpgPro or 1, Settings.U5_UpgPro or 1, Settings.U6_UpgPro or 1
-    U1_UnP, U2_UnP, U3_UnP, U4_UnP, U5_UnP, U6_UnP = Settings.U1_UnPlace or 1, Settings.U2_UnPlace or 1, Settings.U3_UnPlace or 1, Settings.U4_UnPlace or 1, Settings.U5_UnPlace or 1, Settings.U6_UnPlace or 1
-    
+
     --//Unit 1
+
     local U1_amm, U1_name, U1_uuid, U1_u = GetUnitInfo("U1")
     if U1_wv <= current_wave and U1_amm <= U1_TAmm then
         if U1_sellW >= current_wave and U1_amm < U1_TAmm then
             print("placing u1.."..U1_name)
             PlacePos(map, U1_name, U1_uuid,"UP1")
         end
+        if U1_TAmm > 0 then
+            print("Target Priority u1.."..U1_name)
+            Priorityunit1(U1_name)
+        end
         if U1_sellW <= current_wave then
             print("selling u1.."..U1_name)
             sellunit1(U1_name)
         end
-        if U1_u < U1_upgCap and U1_upgW <= current_wave and U1_sellW >= current_wave then
+        if U1_upgW <= current_wave and U1_sellW >= current_wave then
             print("upgrading u1.."..U1_name)
-            upgradeunit(U1_name, U1_upgCap)
+            upgradeunit1(U1_name)
         end
     end
 --end
@@ -4199,13 +4433,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
             print("placing u2.."..U2_name)
             PlacePos(map, U2_name, U2_uuid,"UP2")
         end
+        if U2_TAmm > 0 then
+            print("Target Priority u2.."..U2_name)
+            Priorityunit2(U2_name)
+        end
         if U2_sellW <= current_wave then
             print("selling u2.."..U2_name)
             sellunit2(U2_name)
         end
-        if U2_u < U2_upgCap and U2_upgW <= current_wave and U2_sellW >= current_wave then
+        if U2_upgW <= current_wave and U2_sellW >= current_wave then
             print("upgrading u2.."..U2_name)
-            upgradeunit(U2_name, U2_upgCap)
+            upgradeunit2(U2_name)
         end
     end
 --end
@@ -4216,13 +4454,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("placing u3.."..U3_name)
 		    PlacePos(map, U3_name, U3_uuid,"UP3")
         end
+        if U3_TAmm > 0 then
+            print("Target Priority u3.."..U3_name)
+            Priorityunit3(U3_name)
+        end
 	    if U3_sellW <= current_wave then
 		    print("selling u3.."..U3_name)
 		    sellunit3(U3_name)
 	    end
-        if U3_u < U3_upgCap and U3_upgW <= current_wave then
+        if U3_upgW <= current_wave and U3_sellW >= current_wave then
             print("upgrading u3.."..U3_name)
-            upgradeunit(U3_name, U3_upgCap)
+            upgradeunit3(U3_name)
         end
     end
 --end
@@ -4233,13 +4475,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("placing u4.."..U4_name)
 		    PlacePos(map, U4_name, U4_uuid,"UP4")
         end
+        if U4_TAmm > 0 then
+            print("Target Priority u4.."..U4_name)
+            Priorityunit4(U4_name)
+        end
 	    if U4_sellW <= current_wave then
 		    print("selling u4.."..U4_name)
 		    sellunit4(U4_name)
 	    end
-        if U4_u < U4_upgCap and U4_upgW <= current_wave and U4_sellW >= current_wave then
+        if U4_upgW <= current_wave and U4_sellW >= current_wave then
             print("upgrading u4.."..U4_name)
-            upgradeunit(U4_name, U4_upgCap)
+            upgradeunit4(U4_name)
         end
     end
 --end
@@ -4250,13 +4496,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("placing u5.."..U5_name)
 		    PlacePos(map, U5_name, U5_uuid,"UP5")
         end
+        if U5_TAmm > 0 then
+            print("Target Priority u5.."..U5_name)
+            Priorityunit5(U5_name)
+        end
 	    if U5_sellW <= current_wave then
 		    print("selling u5.."..U5_name)
 		    sellunit5(U5_name)
 	    end
-        if U5_u < U5_upgCap and U5_upgW <= current_wave and U5_sellW >= current_wave then
+        if U5_upgW <= current_wave and U5_sellW >= current_wave then
             print("upgrading u5.."..U5_name)
-            upgradeunit(U5_name, U5_upgCap)
+            upgradeunit5(U5_name)
         end
     end
 --end
@@ -4267,13 +4517,17 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
 		    print("placing u6.."..U6_name)
 		    PlacePos(map, U6_name, U6_uuid,"UP6")
         end
+        if U6_TAmm > 0 then
+            print("Target Priority u6.."..U6_name)
+            Priorityunit6(U6_name)
+        end
 	    if U6_sellW <= current_wave then
 		    print("selling u6.."..U6_name)
 		    sellunit6(U6_name)
 	    end
-        if U6_u < U6_upgCap and U6_upgW <= current_wave and U6_sellW >= current_wave then
+        if U6_upgW <= current_wave and U6_sellW >= current_wave then
             print("upgrading u6.."..U6_name)
-            upgradeunit(U6_name, U6_upgCap)
+            upgradeunit6(U6_name)
             end
         end
     end
@@ -4475,7 +4729,7 @@ end
 ------------------------------------------------------------------------------------------
 --updatefix fixmap
 coroutine.resume(coroutine.create(function()
-    while task.wait(1.5) do
+    while task.wait(0.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and Settings.unitconfig and not getgenv().disableatuofarm then
             warn("Enable ฟังชั่น ตั้งค่า Unit")
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
@@ -4540,7 +4794,7 @@ coroutine.resume(coroutine.create(function()
 end))
 
 coroutine.resume(coroutine.create(function()
-    while task.wait(1.5) do
+    while task.wait(0.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and not Settings.unitconfig and not getgenv().disableatuofarm then
             warn("ปิด ฟังชั่น ตั้งค่า Unit")
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
