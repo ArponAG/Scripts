@@ -3293,14 +3293,14 @@ function StartPortal(input)
                     [2] = { ["friends_only"] = Settings.isFriendOnly } --getgenv().isFriendOnly 
                 }
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.use_portal:InvokeServer(unpack(args))
-                task.wait(1.5)
+                task.wait(1)
                 for i,v in pairs(game:GetService("Workspace")["_PORTALS"].Lobbies:GetDescendants()) do
                     if v.Name == "Owner" and tostring(v.value) == game.Players.LocalPlayer.Name then
                         local args = { [1] = tostring(v.Parent.Name) }
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(args))
                 --game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_game:InvokeServer(unpack(DataPlayerPortal[3]))
                 warn(DataPlayerPortal[1])
-                task.wait(1.5)
+                task.wait(1)
             end
         end
     end
@@ -3359,7 +3359,7 @@ local function startfarming()
                 print("send Webhook")
                 task.wait(0.5)
                 warn("farming")
-                task.wait(1.5)
+                task.wait(1)
             end
         elseif cata == "Raid Worlds" then
             getgenv().door =  "_lobbytemplate212"
@@ -3407,7 +3407,7 @@ local function startfarming()
                 print("send Webhook")
                 task.wait(0.5)
                 warn("Raid farming")
-                task.wait(1.5)
+                task.wait(1)
             end       
         elseif cata == "Portals" then
             StartPortal(level)
@@ -3466,7 +3466,7 @@ local function startfarming()
                 print("send Webhook")
                 task.wait(0.5)
                 warn("DUNGEONS jjk_finger farming")
-                task.wait(1.5)
+                task.wait(1)
             end
                 --ดันเกะโท
         elseif cata == "Dungeon" then
@@ -3524,7 +3524,7 @@ local function startfarming()
                     print("send Webhook")
                     task.wait(0.5)
                     warn("DUNGEONS jjk_raid farming")
-                    task.wait(1.5)
+                    task.wait(1)
                 end
                     --Events Annivesary
         elseif cata == "Dungeon" then
@@ -3582,7 +3582,7 @@ local function startfarming()
                     print("send Webhook")
                     task.wait(0.5)
                     warn("DUNGEONS Annivesary farming")
-                    task.wait(1.5)
+                    task.wait(1)
                 end
             end
 
@@ -3623,6 +3623,10 @@ function autoabilityfunc()
                                 end
                             --AutoSkill
                             elseif v._stats.id.Value == "homura_evolved" then
+                                if v._stats.state.Value == "attack" then
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                end
+                            elseif v._stats.id.Value == "shanks_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                                 end
