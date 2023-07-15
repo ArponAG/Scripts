@@ -695,8 +695,8 @@ local UnitAOE = UA:Sector("INF Range Config ")
 --- End of Unit AOE
 
 local LG = Window:Category("🛠️ Misc [BETA]")
-local LowCPU = LG:Sector("")
-local LowCPU2 = LG:Sector("")
+local LowCPU2 = LG:Sector("Low CPU Mode")
+local LowCPU3 = LG:Sector("")
 local LG1 = LG:Sector("Beta LAGGY Config ")
 local DELMAP = LG:Sector("🗺️ New Function 🗺️")
 local DELMAP1 = LG:Sector(" ")
@@ -1555,7 +1555,7 @@ local function UNITAOEAA()
                                     table.sort(distanceTable)
                                     if tonumber(distance) == distanceTable[1] then
                                         enemy = v.HumanoidRootPart.CFrame *
-                                            CFrame.new(0, 0, -4)
+                                            CFrame.new(0, 0, -2)
                                     end
                                 end
                             end
@@ -1622,7 +1622,7 @@ local function UNITAOEAA()
                                     table.sort(distanceTable)
                                     if tonumber(distance) == distanceTable[1] then
                                         enemy = v.HumanoidRootPart.CFrame *
-                                            CFrame.new(0, 0, -4)
+                                            CFrame.new(0, 0, -2)
                                     end
                                 end
                             end
@@ -1688,7 +1688,7 @@ local function UNITAOEAA()
                                     table.sort(distanceTable)
                                     if tonumber(distance) == distanceTable[1] then
                                         enemy = v.HumanoidRootPart.CFrame *
-                                            CFrame.new(0, 0, -4)
+                                            CFrame.new(0, 0, -2)
                                     end
                                 end
                             end
@@ -1754,7 +1754,7 @@ local function UNITAOEAA()
                                     table.sort(distanceTable)
                                     if tonumber(distance) == distanceTable[1] then
                                         enemy = v.HumanoidRootPart.CFrame *
-                                            CFrame.new(0, 0, -4)
+                                            CFrame.new(0, 0, -2)
                                     end
                                 end
                             end
@@ -1820,7 +1820,7 @@ local function UNITAOEAA()
                                     table.sort(distanceTable)
                                     if tonumber(distance) == distanceTable[1] then
                                         enemy = v.HumanoidRootPart.CFrame *
-                                            CFrame.new(0, 0, -4)
+                                            CFrame.new(0, 0, -2)
                                     end
                                 end
                             end
@@ -1886,7 +1886,7 @@ local function UNITAOEAA()
                             table.sort(distanceTable)
                             if tonumber(distance) == distanceTable[1] then
                                 enemy = v.HumanoidRootPart.CFrame *
-                                            CFrame.new(0, 0, -4)
+                                            CFrame.new(0, 0, -2)
                             end
                         end
                     end
@@ -2716,6 +2716,29 @@ local function reFarmconfig()
     end)
 
 end
+
+---------------------------------------------
+-------------- LOWW CPU Config --------------
+---------------------------------------------
+local function LowCPUModeT()
+    LowCPU2:Cheat("Checkbox","Enable Low CPU Mode ", function(bool)
+        print(bool)
+        Settings.lowCpuMode = bool
+        saveSettings()
+    end,{enabled = Settings.lowCpuMode})
+    
+    task.spawn(function()
+        while task.wait() do
+            if isrbxactive() ~= true and Settings.lowCpuMode then
+                setfpscap(30)
+                game:GetService("RunService"):Set3dRenderingEnabled(false)
+            else
+                setfpscap(1000)
+                game:GetService("RunService"):Set3dRenderingEnabled(true)
+            end
+        end
+    end)
+    end
 ---------------------------------------------
 -------------- LAGGY Config -----------------
 ---------------------------------------------
@@ -3051,6 +3074,7 @@ if game.PlaceId == 8304191830 then
     ChallengeSec()
     DeleteMapSec()
     unitconfig()
+    LowCPUModeT()
     LAGGYconfig()
     reFarmconfig()
     credits()
@@ -3071,6 +3095,7 @@ else
     DeleteMapSec()
     UnitPosSec()
     unitconfig()
+    LowCPUModeT()
     LAGGYconfig()
     reFarmconfig()
     credits()
@@ -3834,7 +3859,13 @@ coroutine.resume(coroutine.create(function()
         if Settings.unitconfig and not Settings.AutoUpgrade then
             if game.PlaceId ~= 8304191830 then
                 pcall(function()
-                    upgradeunit(name, min)
+                    --upgradeunit(name, min)
+                    upgradeunit1(name)
+                    upgradeunit2(name)
+                    upgradeunit3(name)
+                    upgradeunit4(name)
+                    upgradeunit5(name)
+                    upgradeunit6(name)
                     --upgradeunitTEST()
                 end)
             end
@@ -3847,7 +3878,13 @@ coroutine.resume(coroutine.create(function()
         if Settings.unitconfig and Settings.AutoUpgrade then
             if game.PlaceId ~= 8304191830 then
                 pcall(function()
-                    upgradeunit(name, min)
+                    --upgradeunit(name, min)
+                    upgradeunit1(name)
+                    upgradeunit2(name)
+                    upgradeunit3(name)
+                    upgradeunit4(name)
+                    upgradeunit5(name)
+                    upgradeunit6(name)
                     --upgradeunitTEST()
                 end)
             end
