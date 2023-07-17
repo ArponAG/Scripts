@@ -709,11 +709,13 @@ local DelMapConfig3 = LG:Sector("")
 local reFarmConfig = LG:Sector("🤖 Reset Farm Config 🤖")
 
 local ETC = Window:Category("🌐 Discord & Shop")
-local AutoSummonSec = ETC:Sector("💸 Auto Summon Units 💸")
-local AutoSnipeMerchantSec = ETC:Sector("🏪 Auto Snnipe Bulma 🏪")
+local AutoSummonSec = ETC:Sector("💸 Auto สุ่ม Units 💸")
+local AutoSnipeMerchantSec = ETC:Sector("🏪 Auto ชื้อของร้านค้า Bulma 🏪")
+local SellPortals = ETC:Sector("🌀 Sell Portals 🌀")
 local devilcity1 = ETC:Sector("")
-local OtherSec2 = ETC:Sector("")
 local WebhookSec = ETC:Sector("🌐 Discord Webhook 🌐")
+local OtherSec2 = ETC:Sector("")
+
 
 
 ----------------------------------------------
@@ -3029,6 +3031,79 @@ function Webhooksec2()
         SnipeShopNew()
     end)
 end
+
+-----------------------------------------------
+------------------Sell Portal------------------
+-----------------------------------------------
+function Sellportals()
+
+    Tier_sell = {}
+    for i = 0,15 do
+        table.insert(Tier_sell,i)
+    end
+    Settings.SelectedSellTier = Settings.SelectedSellTier or 0
+    SellPortals:Cheat("Dropdown", "🎚️ Select Tier Portal <=",function(value)
+    warn("Change to : "..value)
+    Settings.SelectedSellTier = value
+    saveSettings()
+    end, {options = Tier_sell, default = Settings.SelectedSellTier})
+    
+    
+    Settings.SelectedSellChallenge = Settings.SelectedSellChallenge or "double_cost"
+    SellPortals:Cheat("Dropdown", "🎚️ Select Challenge",function(value)
+    warn("Change to : "..value)
+    Settings.SelectedSellChallenge = value
+    saveSettings()
+    end, { options = {"double_cost","short_range","fast_enemies","regen_enemies", "tank_enemies","shield_enemies","triple_cost","hyper_regen_enemies","hyper_shield_enemies",
+    "godspeed_enemies","flying_enemies","mini_range"}, default =Settings.SelectedSellChallenge})
+    
+    SellPortals:Cheat("Checkbox","Auto Sell Portal ", function(bool)
+        print(bool)
+        Settings.AutoSellPortals = bool
+        saveSettings()
+    end,{enabled = Settings.AutoSellPortals})
+    
+    task.spawn(function()
+        while task.wait() do
+    if Settings.AutoSellPortals then
+    
+                    local Tier = tonumber(Settings.SelectedSellTier)
+                    local Loader = require(game.ReplicatedStorage.src.Loader)
+                    local ItemInventoryServiceClient = Loader.load_client_service(script, "ItemInventoryServiceClient")
+                    function get_inventory_items_unique_items()
+                        return ItemInventoryServiceClient["session"]['inventory']['inventory_profile_data']['unique_items']
+                    end
+                    local Table_All_Items_Old_data = {}
+                    for v2, v3 in pairs(game:GetService("ReplicatedStorage").src.Data.Items:GetDescendants()) do
+                        if v3:IsA("ModuleScript") then
+                            for v4, v5 in pairs(require(v3)) do
+                                Table_All_Items_Old_data[v4] = {}
+                                Table_All_Items_Old_data[v4]['Name'] = v5['name']
+                                Table_All_Items_Old_data[v4]['Count'] = 0
+                            end
+                        end
+                    end
+                    warn()
+                    for i,v in pairs(get_inventory_items_unique_items()) do
+                        if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
+                            if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] <= Settings.SelectedSellTier then
+                                if v["_unique_item_data"]["_unique_portal_data"]["challenge"] == Settings.SelectedSellChallenge then
+                                local args = {
+                                    [1] = {
+                                        [1] = v["uuid"]
+                                    }
+                                }
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
+                                warn("Sell Selecte Protals")
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end)
+    end
+    
 ----------------------------------------------
 ------------------ Others --------------------
 ----------------------------------------------
@@ -3094,6 +3169,7 @@ if game.PlaceId == 8304191830 then
     SnipeMerchant()
     Webhooksec()
     Webhooksec2()
+    Sellportals()
     others()
     DELMAPNEW()
     UNITAOEAA()
@@ -3113,6 +3189,7 @@ else
     credits()
     SnipeMerchant()
     Webhooksec()
+    Sellportals()
     others()
     DELMAPNEW()
     UNITAOEAA()
