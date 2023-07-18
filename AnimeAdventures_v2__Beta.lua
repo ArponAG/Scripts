@@ -1182,6 +1182,12 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoAbilities})
 
+    AutoFarmConfig:Cheat("Checkbox"," Auto Buff 100% [Loop] ", function(bool)
+        print(bool)
+        Settings.EnableBuffLoop = bool
+        saveSettings()
+    end,{enabled = Settings.EnableBuffLoop})
+
     AutoFarmConfig:Cheat("Checkbox","⭐️ Auto Upgrade Units  ", function(bool)
         print(bool)
         Settings.AutoUpgrade = bool
@@ -3800,6 +3806,48 @@ function UsePuchiSkill()
 	end
 end
 -- End  Puchi Skill Function
+
+function autoabilityloop()
+    if Settings.EnableBuffLoop then
+
+        repeat task.wait() until game:IsLoaded()
+        local LocalPlayer = game.Players.LocalPlayer
+        local Units = {'erwin','wendy','leafa'}
+        local Delay = {
+            ['erwin'] = 15.4,
+            ['wendy'] = 15.5,
+            ['leafa'] = 16.5,
+        }
+        _G.Stop = false
+        while wait() do
+          if _G.Stop then
+            break
+          end
+          local wendy1 = {}
+          for _,v in pairs(game:GetService("Workspace")._UNITS:GetChildren()) do
+              if table.find(Units,v.Name) and v._stats.player.Value == LocalPlayer then
+                  table.insert(wendy1, v)
+              end
+          end
+        
+          if #wendy1 == 4 then
+            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[1])
+            print("Use Skill Unit 1")
+            wait(Delay[wendy1[1].Name])
+            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[3])
+            print("Use Skill Unit 2")
+            wait(Delay[wendy1[1].Name])
+            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[2])
+            print("Use Skill Unit 3")
+            wait(Delay[wendy1[1].Name])
+            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[4])
+            print("Use Skill Unit 4")
+            wait(Delay[wendy1[1].Name])
+          end
+        end
+
+    end
+end
 
 function autoupgradefunc()
     local success, err = pcall(function() --///
