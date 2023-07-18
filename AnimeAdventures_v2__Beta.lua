@@ -3815,7 +3815,11 @@ local function startfarming()
     end
 end
 --end fixportal]]
-    -- Start Auto Ability Function
+
+------------------------------------
+---- Start Auto Ability Function----
+------------------------------------
+
 getgenv().autoabilityerr = false
 function autoabilityfunc()
     local player = game.Players.LocalPlayer.Name
@@ -3831,48 +3835,40 @@ function autoabilityfunc()
                             UsePuchiSkill()
                         end
                         
-                   
+
     				elseif v._stats:FindFirstChild("player") then
     					if tostring(v._stats.player.Value) == player then
-                            --[[if v._stats.id.Value == "wendy" then
-                                autoabilityloop()
-                            end
-                            if v._stats.id.Value == "erwin" then
-                                autoabilityloop()
-                            end
-                            if v._stats.id.Value == "leafa" then
-                                autoabilityloop()
-                            end]]
+
+                            --AutoSkill
 
                             if v._stats.id.Value == "gojo_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                                     warn("Use Skill Gojo")
                                 end
-                            --AutoSkill
-                            elseif v._stats.id.Value == "homura_evolved" then
+                            end
+                            
+                            if v._stats.id.Value == "homura_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                                     warn("Use Skill Homura")
                                 end
-                            elseif v._stats.id.Value == "shanks_evolved" then
+                            end
+
+                            if v._stats.id.Value == "shanks_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                                     warn("Use Skill Shanks")
                                 end
-                            elseif v._stats.id.Value ~= "pucci_heaven" then
-                                if v._stats.state.Value == "attack" then
-                                    if v._stats.active_attack.Value ~= "nil" then
-                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-                                        warn("Use Skill Puchi")
-                                    end
-                                end
                             end
+
                         end
                     end
                 end
             end
         end)
+
+
       
         if err then
             warn("Can't use Ability")
@@ -3886,6 +3882,7 @@ end
 -- Start  Puchi Skill Function
 function UsePuchiSkill()
     local player = game.Players.LocalPlayer.Name
+    local LocalPlayer = game.Players.LocalPlayer
 	for i, v in ipairs(Workspace["_UNITS"]:getChildren()) do
 		if v:FindFirstChild("_stats") then
 			if v._stats:FindFirstChild("player") then
@@ -3921,11 +3918,13 @@ function UsePuchiSkill()
 end
 -- End  Puchi Skill Function
 
+-- Start  Auto Buff 100 Function
 function autoabilityloop()
     if Settings.EnableBuffLoop then
 
         repeat task.wait() until game:IsLoaded()
         local LocalPlayer = game.Players.LocalPlayer
+        local LPlayer = game.Players.LocalPlayer.Name
         local Units = {'erwin','erwin:shiny','erwin_school','erwin_halloween','wendy','leafa'}
         local Delay = {
             ['erwin'] = 16.5,
@@ -3940,26 +3939,26 @@ function autoabilityloop()
           if _G.Stop then
             break
           end
-          local wendy1 = {}
+          local unit1 = {}
           for _,v in pairs(game:GetService("Workspace")._UNITS:GetChildren()) do
               if table.find(Units,v.Name) and v._stats.player.Value == LocalPlayer then
-                  table.insert(wendy1, v)
+                  table.insert(unit1, v)
               end
           end
         
-          if #wendy1 == 4 then
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[1])
-            warn("Use Skill " ..wendy1[1].Name .." 1 " )
-            wait(Delay[wendy1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[3])
-            warn("Use Skill " ..wendy1[1].Name .." 2 " )
-            wait(Delay[wendy1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[2])
-            warn("Use Skill " ..wendy1[1].Name .." 3 " )
-            wait(Delay[wendy1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[4])
-            warn("Use Skill " ..wendy1[1].Name .." 4 " )
-            wait(Delay[wendy1[1].Name])
+          if #unit1 == 4 then
+            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(unit1[1])
+            warn("Use Skill " ..unit1[1].Name .." 1 " )
+            wait(Delay[unit1[1].Name])
+            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(unit1[3])
+            warn("Use Skill " ..unit1[1].Name .." 2 " )
+            wait(Delay[unit1[1].Name])
+            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(unit1[2])
+            warn("Use Skill " ..unit1[1].Name .." 3 " )
+            wait(Delay[unit1[1].Name])
+            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(unit1[4])
+            warn("Use Skill " ..unit1[1].Name .." 4 " )
+            wait(Delay[unit1[1].Name])
           end
         end
 
@@ -4051,8 +4050,6 @@ function autoabilitywendy()
     end
 end
 
-
-
 function autoabilityleafa()
     if Settings.EnableBuffleafaLoop then
 
@@ -4094,7 +4091,8 @@ function autoabilityleafa()
     end
 end
 
-
+-- End  Auto Buff 100 Function
+-----------------------------------------------------------
 
 function autoupgradefunc()
     local success, err = pcall(function() --///
