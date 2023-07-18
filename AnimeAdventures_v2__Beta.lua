@@ -3745,20 +3745,24 @@ function autoabilityfunc()
                             if v._stats.id.Value == "gojo_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Gojo")
                                 end
                             --AutoSkill
                             elseif v._stats.id.Value == "homura_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Homura")
                                 end
                             elseif v._stats.id.Value == "shanks_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Shanks")
                                 end
                             elseif v._stats.id.Value ~= "pucci_heaven" then
                                 if v._stats.state.Value == "attack" then
                                     if v._stats.active_attack.Value ~= "nil" then
                                         game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                        warn("Use Skill Puchi")
                                     end
                                 end
                             end
@@ -3791,16 +3795,19 @@ function UsePuchiSkill()
 						    if GLD()._gamemode == "infinite" then
 						        if GetWaveNumber() % 10 == 0 then
 						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Puchi")
 						        end
 						    -- Check Raid
 					        elseif GLD()._gamemode == "raid" then
 					            if GetWaveNumber() == 15 or 20 then
 						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Puchi")
 						        end
 						    -- Check Story or Infinite Tower
 					        elseif GLD()._gamemode == "story" or "infinite_tower" then
 					            if GetWaveNumber() == 15 then
 					                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Puchi")
 					            end
 					        end
 						end
@@ -3817,10 +3824,12 @@ function autoabilityloop()
 
         repeat task.wait() until game:IsLoaded()
         local LocalPlayer = game.Players.LocalPlayer
-        local Units = {'erwin','erwin_school','wendy','leafa'}
+        local Units = {'erwin','erwin:shiny','erwin_school','erwin_halloween','wendy','leafa'}
         local Delay = {
-            ['erwin'] = 15.4,
-            ['erwin_school'] = 15.4,
+            ['erwin'] = 16.4,
+            ['erwin:shiny'] = 16.4,
+            ['erwin_school'] = 16.4,
+            ['erwin_halloween'] = 16.4,
             ['wendy'] = 15.5,
             ['leafa'] = 16.5,
         }
@@ -3986,13 +3995,13 @@ coroutine.resume(coroutine.create(function()
             end
         end
 
-        if Settings.EnableBuffLoop then
+        --[[if Settings.EnableBuffLoop then
             if game.PlaceId ~= 8304191830 then
                 pcall(function()
                     autoabilityloop()
                 end)
             end
-        end
+        end]]
         
         if Settings.AutoUpgrade and not Settings.unitconfig then
             if game.PlaceId ~= 8304191830 then
