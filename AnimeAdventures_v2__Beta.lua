@@ -3726,13 +3726,16 @@ function autoabilityfunc()
     				elseif v._stats:FindFirstChild("player") then
     					if tostring(v._stats.player.Value) == player then
                             if v._stats.id.Value == "wendy" then
-                                autoupgradefunc()
-                            elseif v._stats.id.Value == "erwin" then
-                                autoupgradefunc()
-                            elseif v._stats.id.Value == "leafa" then
-                                autoupgradefunc()
+                                autoabilityloop()
+                            end
+                            if v._stats.id.Value == "erwin" then
+                                autoabilityloop()
+                            end
+                            if v._stats.id.Value == "leafa" then
+                                autoabilityloop()
+                            end
 
-                            elseif v._stats.id.Value == "gojo_evolved" then
+                            if v._stats.id.Value == "gojo_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                                 end
