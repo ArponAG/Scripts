@@ -3830,7 +3830,7 @@ function autoabilityloop()
             ['erwin:shiny'] = 16.4,
             ['erwin_school'] = 16.4,
             ['erwin_halloween'] = 16.4,
-            ['wendy'] = 15.5,
+            ['wendy'] = 16.4,
             ['leafa'] = 16.5,
         }
         _G.Stop = false
@@ -3847,16 +3847,16 @@ function autoabilityloop()
         
           if #wendy1 == 4 then
             game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[1])
-            warn("Use Skill Unit 1")
+            warn("Use Skill " ..wendy1[1].Name .." 1 " )
             wait(Delay[wendy1[1].Name])
             game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[3])
-            warn("Use Skill Unit 2")
+            warn("Use Skill " ..wendy1[1].Name .." 2 " )
             wait(Delay[wendy1[1].Name])
             game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[2])
-            warn("Use Skill Unit 3")
+            warn("Use Skill " ..wendy1[1].Name .." 3 " )
             wait(Delay[wendy1[1].Name])
             game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[4])
-            warn("Use Skill Unit 4")
+            warn("Use Skill " ..wendy1[1].Name .." 4 " )
             wait(Delay[wendy1[1].Name])
           end
         end
