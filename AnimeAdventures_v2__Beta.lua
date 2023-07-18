@@ -1176,11 +1176,18 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoLeave})
     
-    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Abilities & Buff 100% ", function(bool)
+    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Abilities ", function(bool)
         print(bool)
         Settings.AutoAbilities = bool
         saveSettings()
     end,{enabled = Settings.AutoAbilities})
+
+    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Buff 100% [TEST] ", function(bool)
+        print(bool)
+        Settings.EnableBuffLoop = bool
+        autoabilityloop()
+        saveSettings()
+    end,{enabled = Settings.EnableBuffLoop})
 
     AutoFarmConfig:Cheat("Checkbox","⭐️ Auto Upgrade Units  ", function(bool)
         print(bool)
@@ -3725,7 +3732,7 @@ function autoabilityfunc()
                    
     				elseif v._stats:FindFirstChild("player") then
     					if tostring(v._stats.player.Value) == player then
-                            if v._stats.id.Value == "wendy" then
+                            --[[if v._stats.id.Value == "wendy" then
                                 autoabilityloop()
                             end
                             if v._stats.id.Value == "erwin" then
@@ -3733,7 +3740,7 @@ function autoabilityfunc()
                             end
                             if v._stats.id.Value == "leafa" then
                                 autoabilityloop()
-                            end
+                            end]]
 
                             if v._stats.id.Value == "gojo_evolved" then
                                 if v._stats.state.Value == "attack" then
@@ -3806,13 +3813,14 @@ end
 -- End  Puchi Skill Function
 
 function autoabilityloop()
-    --if Settings.EnableBuffLoop then
+    if Settings.EnableBuffLoop then
 
         repeat task.wait() until game:IsLoaded()
         local LocalPlayer = game.Players.LocalPlayer
-        local Units = {'erwin','wendy','leafa'}
+        local Units = {'erwin','erwin_school','wendy','leafa'}
         local Delay = {
             ['erwin'] = 15.4,
+            ['erwin_school'] = 15.4,
             ['wendy'] = 15.5,
             ['leafa'] = 16.5,
         }
@@ -3830,21 +3838,21 @@ function autoabilityloop()
         
           if #wendy1 == 4 then
             game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[1])
-            print("Use Skill Unit 1")
+            warn("Use Skill Unit 1")
             wait(Delay[wendy1[1].Name])
             game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[3])
-            print("Use Skill Unit 2")
+            warn("Use Skill Unit 2")
             wait(Delay[wendy1[1].Name])
             game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[2])
-            print("Use Skill Unit 3")
+            warn("Use Skill Unit 3")
             wait(Delay[wendy1[1].Name])
             game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[4])
-            print("Use Skill Unit 4")
+            warn("Use Skill Unit 4")
             wait(Delay[wendy1[1].Name])
           end
         end
 
-    --end
+    end
 end
 
 function autoupgradefunc()
