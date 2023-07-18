@@ -3985,6 +3985,19 @@ coroutine.resume(coroutine.create(function()
                 getgenv().autoabilityerr = false
             end
         end
+
+        if Settings.EnableBuffLoop then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    autoabilityloop()
+                end)
+            end
+            if  getgenv().autoabilityerr == true then
+                task.wait()
+                autoabilityloop()
+                getgenv().autoabilityerr = false
+            end
+        end
         
         if Settings.AutoUpgrade and not Settings.unitconfig then
             if game.PlaceId ~= 8304191830 then
