@@ -1176,17 +1176,11 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoLeave})
     
-    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Abilities ", function(bool)
+    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Abilities & Buff 100% ", function(bool)
         print(bool)
         Settings.AutoAbilities = bool
         saveSettings()
     end,{enabled = Settings.AutoAbilities})
-
-    AutoFarmConfig:Cheat("Checkbox"," Auto Buff 100% [Loop] ", function(bool)
-        print(bool)
-        Settings.EnableBuffLoop = bool
-        saveSettings()
-    end,{enabled = Settings.EnableBuffLoop})
 
     AutoFarmConfig:Cheat("Checkbox","⭐️ Auto Upgrade Units  ", function(bool)
         print(bool)
@@ -3731,13 +3725,14 @@ function autoabilityfunc()
                    
     				elseif v._stats:FindFirstChild("player") then
     					if tostring(v._stats.player.Value) == player then
-                            --[[if v._stats.id.Value == "wendy" then
-                                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-                                task.wait(21)
+                            if v._stats.id.Value == "wendy" then
+                                autoupgradefunc()
                             elseif v._stats.id.Value == "erwin" then
-                                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
-                                task.wait(21)]]
-                            if v._stats.id.Value == "gojo_evolved" then
+                                autoupgradefunc()
+                            elseif v._stats.id.Value == "leafa" then
+                                autoupgradefunc()
+
+                            elseif v._stats.id.Value == "gojo_evolved" then
                                 if v._stats.state.Value == "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                                 end
@@ -3808,7 +3803,7 @@ end
 -- End  Puchi Skill Function
 
 function autoabilityloop()
-    if Settings.EnableBuffLoop then
+    --if Settings.EnableBuffLoop then
 
         repeat task.wait() until game:IsLoaded()
         local LocalPlayer = game.Players.LocalPlayer
@@ -3846,7 +3841,7 @@ function autoabilityloop()
           end
         end
 
-    end
+    --end
 end
 
 function autoupgradefunc()
