@@ -692,6 +692,7 @@ for i = 1, 6 do
 end
 
 local UnitAOE = UA:Sector("INF Range Config ")
+local UnitAOE1 = UA:Sector("Check Unit ")
 --- End of Unit AOE
 
 local LG = Window:Category("🛠️ Misc [BETA]")
@@ -1537,6 +1538,16 @@ end
 ----------------------------------------------
 local function UNITAOEAA()
 
+    UnitAOE1:Cheat("Button", "Check Unit", function()
+        for i, v in pairs(game.Workspace._UNITS:getChildren()) do
+            if v:FindFirstChild("_stats"):FindFirstChild("player") then
+                if tostring(v._stats.player.Value) == game.Players.LocalPlayer.Name then
+                    warn(v)
+		        end
+	        end
+        end
+    end)
+
     UnitAOE:Cheat("Checkbox","Enable INF Range Unit [ZicZac] ", function(bool)
         print(bool)
         Settings.blackhole = bool
@@ -1989,6 +2000,14 @@ if Settings.SelectedUnits ~= nil then
         end, { options = { "Off", names[i] }, default = Settings.UnitAOE6 or nil})
     end
     --- End Check Unit
+    Settings.UnitAOE7 = Settings.UnitAOE7 or "femto"
+    UnitAOE:Cheat("Dropdown", " Select Griffin Name ",function(value)
+        warn("Change to : "..value)
+        Settings.UnitAOE7 = value
+        saveSettings()
+    end, { options = {"None","femto_egg","griffith_reincarnation","femto"}, default =Settings.UnitAOE7})
+
+
 end
 ----------------------------------------------
 ------------------ credits -------------------
