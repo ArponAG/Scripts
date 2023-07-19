@@ -1189,13 +1189,6 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoAbilities})
 
-    --[[AutoFarmConfig:Cheat("Checkbox","🔥 Auto Buff 100% [TEST] ", function(bool)
-        print(bool)
-        Settings.EnableBuffLoop = bool
-        autoabilityloop()
-        saveSettings()
-    end,{enabled = Settings.EnableBuffLoop})]]
-
     AutoFarmConfig:Cheat("Checkbox"," Auto Buff 100% [Erwin] ", function(bool)
         print(bool)
         Settings.EnableBufferwinLoop = bool
@@ -3966,52 +3959,6 @@ end
 -- End  Eren Skill Function
 
 -- Start  Auto Buff 100 Function
-function autoabilityloop()
-    if Settings.EnableBuffLoop then
-
-        repeat task.wait() until game:IsLoaded()
-        local LocalPlayer = game.Players.LocalPlayer
-        local LPlayer = game.Players.LocalPlayer.Name
-        local Units = {'erwin','erwin:shiny','erwin_school','erwin_halloween','wendy','leafa'}
-        local Delay = {
-            ['erwin'] = 16.5,
-            ['erwin:shiny'] = 16.5,
-            ['erwin_school'] = 16.5,
-            ['erwin_halloween'] = 16.5,
-            ['wendy'] = 16.5,
-            ['leafa'] = 16.5,
-        }
-        _G.Stop = false
-        while wait() do
-          if _G.Stop then
-            break
-          end
-          local unit1 = {}
-          for _,v in pairs(game:GetService("Workspace")._UNITS:GetChildren()) do
-              if table.find(Units,v.Name) and v._stats.player.Value == LocalPlayer then
-                  table.insert(unit1, v)
-              end
-          end
-        
-          if #unit1 == 4 then
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(unit1[1])
-            warn("Use Skill " ..unit1[1].Name .." 1 " )
-            wait(Delay[unit1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(unit1[3])
-            warn("Use Skill " ..unit1[1].Name .." 2 " )
-            wait(Delay[unit1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(unit1[2])
-            warn("Use Skill " ..unit1[1].Name .." 3 " )
-            wait(Delay[unit1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(unit1[4])
-            warn("Use Skill " ..unit1[1].Name .." 4 " )
-            wait(Delay[unit1[1].Name])
-          end
-        end
-
-    end
-end
-
 function autoabilityerwin()
     if Settings.EnableBufferwinLoop then
 
