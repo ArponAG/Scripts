@@ -3927,10 +3927,10 @@ function UseErenSkill()
 		if v:FindFirstChild("_stats") then
 			if v._stats:FindFirstChild("player") then
 				if tostring(v._stats.player.Value) == player then
-					if v._stats.id.Value == "eren_final" or v._stats.id.Value == "eren_final:shiny" then
-					    if v._stats.state.Value == "attack" then
+					if v._stats.id.Value == "eren_final" then       
+					    if v._stats.state.Value ~= "attack" then
 					    
-					        -- Check Infinite
+					        -- Check Infinite 
 						    if GLD()._gamemode == "infinite" then
 						        if GetWaveNumber() % 10 == 0 then
 						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
