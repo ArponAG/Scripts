@@ -1553,6 +1553,13 @@ local function DeleteMapSec()
         autoDailyquest()
     end,{enabled = Settings.autoDailyquest})
 
+    DelMapConfig2:Cheat("Checkbox","Auto Grab Daily Mission ", function(bool)
+        print(Settings.autoDailyMission)
+        Settings.autoDailyMission = bool
+        saveSettings()
+        autoDailyMission()
+    end,{enabled = Settings.autoDailyMission})
+
     DelMapConfig2:Cheat("Label","")  
 
 end
@@ -5712,17 +5719,6 @@ end
 --------------------DELETE MAP-----------------------
 -----------------------------------------------------
 --delete map Map id
---deletet terrain
-function DelTer()
-	if game.Workspace._terrain:FindFirstChild("terrain") then
-    	for i,v in pairs(game:GetService("Workspace")["_terrain"].terrain:GetChildren()) do
-			if v.ClassName == "MeshPart" then v:Destroy() end
-        	if v.ClassName == "Model" then v:Destroy() end
-			if v.ClassName == "Folder" then v:Destroy() end
-        end
-    end  
-end   
-
 function DelHill()
 	if game.Workspace._terrain:FindFirstChild("terrain") then
     	for i,v in pairs(game:GetService("Workspace")["_terrain"].hill:GetChildren()) do
@@ -5730,6 +5726,21 @@ function DelHill()
         	if v.ClassName == "Model" then v:Destroy() end
 			if v.ClassName == "Folder" then v:Destroy() end
 			if v.ClassName == "MeshPart" then v:Destroy() end
+        end
+    end  
+end   
+
+if Settings.deletehill then
+    DelHill()
+end
+
+--deletet terrain
+function DelTer()
+	if game.Workspace._terrain:FindFirstChild("terrain") then
+    	for i,v in pairs(game:GetService("Workspace")["_terrain"].terrain:GetChildren()) do
+			if v.ClassName == "MeshPart" then v:Destroy() end
+        	if v.ClassName == "Model" then v:Destroy() end
+			if v.ClassName == "Folder" then v:Destroy() end
         end
     end  
 end   
@@ -7713,6 +7724,23 @@ end
 
 if Settings.autoDailyquest then
     autoDailyquest()
+end
+
+function autoDailyMission()
+    if Settings.autoDailyMission then
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_claim_dailymission:InvokeServer("mha 12.0.0_dailymission_bleach2_daily")
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_claim_dailymission:InvokeServer("mha 12.0.0_dailymission_dressrosa_daily")
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_claim_dailymission:InvokeServer("mha 12.0.0_dailymission_clover_daily")
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_claim_dailymission:InvokeServer("mha 12.0.0_dailymission_7ds_daily")
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_claim_dailymission:InvokeServer("mha 12.0.0_dailymission_mha_daily")
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_claim_dailymission:InvokeServer("mha 12.0.0_dailymission_jojo_daily")
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.request_claim_dailymission:InvokeServer("mha 12.0.0_dailymission_opm_daily")
+        wait(15)
+    end
+end
+
+if Settings.autoDailyMission then
+    autoDailyMission()
 end
 
 -- Start of Check Connection
