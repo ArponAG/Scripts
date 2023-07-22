@@ -7783,11 +7783,6 @@ function placeAny()
     end)
 end
 
-if Settings.placeany then
-    placeAny()
-    placeunittwin()
-end
-
 function placeunittwin() 
     if game.Workspace:WaitForChild("_UNITS") then
     for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
