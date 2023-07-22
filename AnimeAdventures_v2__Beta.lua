@@ -6229,6 +6229,17 @@ function DelMapHollow1()
     end   
 end
 
+function DelMapHollow2()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].trees:GetChildren()) do
+				if v.Name == "obstacles" then v:Destroy() end
+				if v.ClassName == "MeshPart" then v:Destroy() end
+				if v.ClassName == "Model" then v:Destroy() end
+				if v.ClassName == "Part" then v:Destroy() end
+        end
+    end   
+end
+
 --Ant
 function DelMapAnt()
 	if game.Workspace._terrain:FindFirstChild("terrain") then
@@ -7527,6 +7538,7 @@ coroutine.resume(coroutine.create(function()
                 DelTer() 
 				DelMapMain()
 				DelMapHollow1()
+                DelMapHollow2()
             elseif game.Workspace._map:FindFirstChild("light poles") then
                 DelTer() 
 				DelMapMain()
