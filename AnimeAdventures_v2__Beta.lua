@@ -6711,6 +6711,7 @@ end
 function DelMapClover1()
 	if game.Workspace:FindFirstChild("_map") then
     	for i,v in pairs(game:GetService("Workspace")["_map"]["misc deco"]:GetChildren()) do
+                if v.ClassName == "Folder" then v:Destroy() end
 				if v.ClassName == "MeshPart" then v:Destroy() end
 				if v.ClassName == "Model" then v:Destroy() end
 				if v.ClassName == "Part" then v:Destroy() end
