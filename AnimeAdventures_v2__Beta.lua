@@ -4025,6 +4025,7 @@ end
 -- End  Eren Skill Function
 
 -- Start  Auto Buff 100 Function
+--Erwin
 function autoabilityerwin()
     if Settings.EnableBufferwinLoop then
 
@@ -4069,6 +4070,11 @@ function autoabilityerwin()
     end
 end
 
+if Settings.EnableBufferwinLoop then
+    autoabilityerwin()
+end
+
+--Wendy
 function autoabilitywendy()
     if Settings.EnableBuffwendyLoop then
 
@@ -4110,6 +4116,11 @@ function autoabilitywendy()
     end
 end
 
+if Settings.EnableBuffwendyLoop then
+    autoabilitywendy()
+end
+
+--Leafa
 function autoabilityleafa()
     if Settings.EnableBuffleafaLoop then
 
@@ -4149,6 +4160,10 @@ function autoabilityleafa()
         end
 
     end
+end
+
+if Settings.EnableBuffleafaLoop then
+    autoabilityleafa()
 end
 
 -- End  Auto Buff 100 Function
