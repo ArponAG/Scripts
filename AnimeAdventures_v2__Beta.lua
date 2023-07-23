@@ -5739,6 +5739,7 @@ function DelHill()
     	for i,v in pairs(game:GetService("Workspace")["_terrain"].hill:GetChildren()) do
 			if v.ClassName == "MeshPart" then v:Destroy() end
         	if v.ClassName == "Model" then v:Destroy() end
+            if v.ClassName == "Part" then v:Destroy() end
 			if v.ClassName == "Folder" then v:Destroy() end
 			if v.ClassName == "MeshPart" then v:Destroy() end
         end
