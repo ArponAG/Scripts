@@ -2112,7 +2112,7 @@ local function credits()
     Developers:Cheat("Label","📐 UI By: detourious @ v3rmillion.net")    
     Developers:Cheat("Label","🔧 To toggle the script press \" P \"")   
     Developers:Cheat("Button","🔗 Discord Invite", function()
-        setclipboard("https://discord.gg/2ttfCfzxut")
+        setclipboard("https://discord.gg/CQJ4Wfvefk")
     end)     
     UIUPDT:Cheat("Label"," \n \n \n \n \n \n \n \n \n \n double_cost = 'High Cost'   \n short_range = 'Short Range'   \n fast_enemies = 'Fast Enemies'  \n regen_enemies = 'Regen Enemies'  \n tank_enemies = 'Tank Enemies'  \n shield_enemies = 'Shield Enemies'  \n triple_cost = 'Triple Cost'   \n hyper_regen_enemies = 'Hyper-Regen Enemies'   \n hyper_shield_enemies = 'Steel-Plated Enemies'   \n godspeed_enemies = 'Godspeed Enemies'   \n flying_enemies = 'Flying Enemies'   \n mini_range = 'Mini-Range'  ")   
 end
@@ -6893,6 +6893,17 @@ end
 
 --Hero mha
 
+function DelMapmha0()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]["mha_city_night_rain"]:GetChildren()) do
+				if v.ClassName == "Folder" then v:Destroy() end
+				if v.ClassName == "MeshPart" then v:Destroy() end
+				if v.ClassName == "Model" then v:Destroy() end
+				if v.ClassName == "Part" then v:Destroy() end
+        end
+    end   
+end
+
 function DelMapmha1()
 	if game.Workspace:FindFirstChild("_map") then
     	for i,v in pairs(game:GetService("Workspace")["_map"]["bridge nocollide"]:GetChildren()) do
@@ -7639,6 +7650,7 @@ coroutine.resume(coroutine.create(function()
             elseif game.Workspace._map:FindFirstChild("bridge nocollide") then
                 DelTer() 
 				DelMapMain()
+                DelMapmha0()
 				DelMapmha1()
 		DelMapmha2()
             elseif game.Workspace._map:FindFirstChild("benches and barrels") then
@@ -7828,20 +7840,6 @@ if Settings.redeemc then
     Reedemcode()
 end
 
---disms
-if game.PlaceId ~= 8304191830 then
-    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
-    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
-    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
-end
---disms
-if game.PlaceId == 8304191830 then
-    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
-    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
-    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
-end
-warn("Display Error Hider!!!")
-
 pcall(function()
     local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -7852,6 +7850,20 @@ pcall(function()
     game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_daily_reward:InvokeServer()
 end)
 
+--disms
+if game.PlaceId ~= 8304191830 then
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+end
+warn("Display Error Hider!!!")
+--disms
+if game.PlaceId == 8304191830 then
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
+end
+warn("Display Error Hider!!!")
 warn("Arpon Anti-AFK Loaded!!!")
 warn("Arpon Hider Name Loaded!!!")
 warn("Arpon AA v2 Loaded!!!")
