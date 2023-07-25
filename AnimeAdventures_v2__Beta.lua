@@ -176,6 +176,8 @@ function webhook()
 	ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
     btp = plr.PlayerGui:FindFirstChild("BattlePass"):FindFirstChild("Main"):FindFirstChild("Level"):FindFirstChild("V").Text
     btp2 = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.Title.Text
+    btpAlllv = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Main.Rewards.Frame.Pages.Home.Amount.Text
+    btplv = game:GetService("Players").LocalPlayer.PlayerGui.BattlePass.Main.Level.V.Text
     waves = cwaves:split(": ")
     if waves ~= nil and waves[2] == "999" then waves[2] = "Use [Auto Leave at Wave] or [Test Webhook]" end	
 	ttime = ctime:split(": ")
@@ -276,7 +278,7 @@ function webhook()
                     ["fields"] = {
                         {
                             ["name"] ="Current Level ✨ & Gems 💎 & Gold 💰 & Portals 🌀",
-                            ["value"] = "```ini\n"..tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text)..  " ✨\nCurrent Gold : "..tostring(comma_value(game.Players.LocalPlayer._stats.gold_amount.Value)).. " 💰\nCurrent Gems : "..tostring(comma_value(game.Players.LocalPlayer._stats.gem_amount.Value)).. " 💎\nCurrent Trophies : "..tostring(comma_value(game.Players.LocalPlayer._stats.trophies.Value)).. " 🏆\nCurrent Portal : ".. tostring(Count_Portal_list) .." 🌀```",
+                            ["value"] = "```ini\n"..tostring(game.Players.LocalPlayer.PlayerGui.spawn_units.Lives.Main.Desc.Level.Text)..  " ✨\nCurrent Gold : "..tostring(comma_value(game.Players.LocalPlayer._stats.gold_amount.Value)).. " 💰\nCurrent Gems : "..tostring(comma_value(game.Players.LocalPlayer._stats.gem_amount.Value)).. " 💎\nCurrent Trophies : "..tostring(comma_value(game.Players.LocalPlayer._stats.trophies.Value)).. " 🏆\nCurrent Portal : ".. tostring(Count_Portal_list) .." 🌀\nBattle Pass Lv. : "..btplv.. " " ..btpAlllv.. " 📊```",
                         },
                         {
                             ["name"] ="Results :",
