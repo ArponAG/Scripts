@@ -5263,7 +5263,7 @@ end
 coroutine.resume(coroutine.create(function()
     while task.wait(0.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and Settings.unitconfig and not getgenv().disableatuofarm then
-            warn("Enable ฟังชั่น ตั้งค่า Unit")
+            warn("Enable Unit Config")
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
             if game.Workspace._map:FindFirstChild("namek mushroom model") then
@@ -5328,7 +5328,7 @@ end))
 coroutine.resume(coroutine.create(function()
     while task.wait(0.5) do
         if game.PlaceId ~= 8304191830 and Settings.AutoFarm and not Settings.unitconfig and not getgenv().disableatuofarm then
-            warn("ปิด ฟังชั่น ตั้งค่า Unit")
+            warn("Disable Unit Config")
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             repeat task.wait() until game:GetService("Workspace"):WaitForChild("_map")
             if game.Workspace._map:FindFirstChild("namek mushroom model") then
@@ -6730,7 +6730,6 @@ end
 function DelMapClover1()
 	if game.Workspace:FindFirstChild("_map") then
     	for i,v in pairs(game:GetService("Workspace")["_map"]["misc deco"]:GetChildren()) do
-                if v.ClassName == "Folder" then v:Destroy() end
 				if v.ClassName == "MeshPart" then v:Destroy() end
 				if v.ClassName == "Model" then v:Destroy() end
 				if v.ClassName == "Part" then v:Destroy() end
@@ -6826,6 +6825,45 @@ function DelMapClover9()
     end   
 end
 
+function DelMapClover10()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]["misc deco"].logs:GetChildren()) do
+				if v.ClassName == "MeshPart" then v:Destroy() end
+				if v.ClassName == "Model" then v:Destroy() end
+				if v.ClassName == "Part" then v:Destroy() end
+        end
+    end   
+end
+
+function DelMapClover11()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]["misc deco"].flowers:GetChildren()) do
+				if v.ClassName == "MeshPart" then v:Destroy() end
+				if v.ClassName == "Model" then v:Destroy() end
+				if v.ClassName == "Part" then v:Destroy() end
+        end
+    end   
+end
+
+function DelMapClover12()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]["misc deco"].bushes:GetChildren()) do
+				if v.ClassName == "MeshPart" then v:Destroy() end
+				if v.ClassName == "Model" then v:Destroy() end
+				if v.ClassName == "Part" then v:Destroy() end
+        end
+    end   
+end
+
+function DelMapClover13()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]["misc deco"].hay:GetChildren()) do
+				if v.ClassName == "MeshPart" then v:Destroy() end
+				if v.ClassName == "Model" then v:Destroy() end
+				if v.ClassName == "Part" then v:Destroy() end
+        end
+    end   
+end
 --Cape JoJo
 function DelMapJoJo1()
 	if game.Workspace:FindFirstChild("_map") then
@@ -7732,6 +7770,10 @@ coroutine.resume(coroutine.create(function()
 		DelMapClover7()
 		DelMapClover8()
 		DelMapClover9()
+        DelMapClover10()
+        DelMapClover11()
+        DelMapClover12()
+        DelMapClover13()
             end
         end
     end
