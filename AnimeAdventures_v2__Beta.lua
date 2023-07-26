@@ -7897,6 +7897,13 @@ pcall(function()
     game:GetService("ReplicatedStorage").endpoints.client_to_server.claim_christmas_calendar_reward:InvokeServer()
 end)
 
+pcall(function()
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
+    game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
+    game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false
+    warn("TEST Display Error Hider!!!")
+end)
+
 --start function mute Error
 --disms
 if game.PlaceId ~= 8304191830 then
@@ -7904,14 +7911,14 @@ if game.PlaceId ~= 8304191830 then
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
     game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
 end
-warn("Display Error Hider!!!")
+
 --disms
 if game.PlaceId == 8304191830 then
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error.Volume = 0
     game:GetService("ReplicatedStorage").packages.assets["ui_sfx"].error_old.Volume = 0
     game.Players.LocalPlayer.PlayerGui.MessageGui.Enabled = false --disables the annoying error messages 
 end
-warn("Display Error Hider!!!")
+
 --End of function mute Error
 
 warn("Arpon Anti-AFK Loaded!!!")
