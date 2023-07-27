@@ -1196,11 +1196,17 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoUpgrade})
     
-    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Abilities ", function(bool)
+    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Abilities [When Attack] ", function(bool)
         print(bool)
         Settings.AutoAbilities = bool
         saveSettings()
     end,{enabled = Settings.AutoAbilities})
+
+    AutoFarmConfig:Cheat("Checkbox","🔥 Auto Abilities [Global Cooldown] ", function(bool)
+        print(bool)
+        Settings.AutoGCDAbilities = bool
+        saveSettings()
+    end,{enabled = Settings.AutoGCDAbilities})
 
     AutoFarmConfig:Cheat("Checkbox"," Auto Buff 100% [Erwin] ", function(bool)
         print(bool)
@@ -3932,6 +3938,16 @@ function autoabilityfunc()
                                 end
                             end
 
+                            if v._stats.id.Value ~= "pucci_heaven" or v._stats.id.Value ~= "erwin" or v._stats.id.Value ~= "wendy" 
+                            or v._stats.id.Value ~= "leafa" or v._stats.id.Value ~= "erwin:shiny" or v._stats.id.Value ~= "erwin_school" 
+                            or v._stats.id.Value ~= "erwin_halloween" or v._stats.id.Value ~= "eren_final" then
+                                if v._stats.state.Value == "attack" then
+                                    if v._stats.active_attack.Value ~= "nil" then
+                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                end
+                            end
+                        end
+
                         end
                     end
                 end
@@ -3948,6 +3964,50 @@ function autoabilityfunc()
     end
 end
 -- End  Auto Abilities Function
+
+    -- Start of Auto Global Cooldown Abilities Function
+getgenv().autoGCDabilityerr = false
+function autoabilityGCDfunc()
+    local player = game.Players.LocalPlayer.Name
+    if Settings.AutoGCDAbilities then
+        repeat task.wait() until Workspace:WaitForChild("_UNITS")
+        local success, errGCD = pcall(function()
+            for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
+                if v:FindFirstChild("_stats") then
+                    
+                    -- Look for Threat then execute Puchi Skill
+                    if v._stats:FindFirstChild("threat") then
+                        if v._stats.threat.Value > 0 then
+                            UsePuchiSkill()
+                        end
+                        
+                    -- Search Player Units
+    				elseif v._stats:FindFirstChild("player") then
+    					if tostring(v._stats.player.Value) == player then
+    
+                            -- Execute Skill if Not Wendy, Erwin, Gojo and Puchi    
+                            if v._stats.id.Value ~= "pucci_heaven" or v._stats.id.Value ~= "erwin" or v._stats.id.Value ~= "wendy" 
+                            or v._stats.id.Value ~= "leafa" or v._stats.id.Value ~= "erwin:shiny" or v._stats.id.Value ~= "erwin_school" 
+                            or v._stats.id.Value ~= "erwin_halloween" or v._stats.id.Value ~= "eren_final" then
+                               -- if v._stats.state.Value ~= "attack" then
+                                    if v._stats.active_attack.Value ~= "nil" then
+                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end)
+        
+        if errGCD then
+            warn("Can't use Ability")
+            getgenv().autoGCDabilityerr = true
+            error(errGCD)
+        end
+    end
+end
+    -- End of Auto Global Cooldown Abilities Function
     
 -- Start  Puchi Skill Function
 function UsePuchiSkill()
@@ -4303,6 +4363,18 @@ coroutine.resume(coroutine.create(function()
             end
         end
 
+        if Settings.AutoGCDAbilities then
+            if game.PlaceId ~= 8304191830 then
+                pcall(function()
+                    autoabilityGCDfunc()
+                end)
+            end
+            if  getgenv().autoGCDabilityerr == true then
+                task.wait()
+                autoabilityGCDfunc()
+                getgenv().autoGCDabilityerr = false
+            end
+        end
         
         if Settings.AutoUpgrade and not Settings.unitconfig then
             if game.PlaceId ~= 8304191830 then
