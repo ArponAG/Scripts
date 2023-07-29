@@ -3114,6 +3114,54 @@ function SnipeMerchant()
         Settings.AutoSnipeMerchant = bool
         saveSettings()
     end,{enabled = Settings.AutoSnipeMerchant })
+
+    -----------------------------------------------------------------------------
+    --AutoBuySummer
+
+    AutoSnipeMerchantSec:Cheat("Label","🏪 Auto Buy Summer Item 🏪")  
+
+    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Summer Item",function(pornname)
+        getgenv().portalnameC = pornname
+        saveSettings()
+    end, { options = {"summer_portal_item_contract","capsule_summer"}, default = getgenv().portalnameC})
+
+    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Total item",function(value)
+        Settings.SummerNum = value
+        saveSettings()
+    end, { options = {"1","10","100"}, default = getgenv().SummerNum})
+
+    AutoSnipeMerchantSec:Cheat("Button","Buy Summer Item [One time]", function(bool)
+        local args = {
+            [1] = getgenv().portalnameC,
+            [2] = "event",
+            [3] = "event_shop",
+            [4] = Settings.SummerNum
+        }
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_item_generic:InvokeServer(unpack(args))
+        warn("Buy Summer Portal !!!")
+    end)
+
+    AutoSnipeMerchantSec:Cheat("Checkbox","Auto Buy Item Summer ", function(bool)
+        print(bool)
+        Settings.AutoBuySummer = bool
+        saveSettings()
+    end,{enabled = Settings.AutoBuySummer})
+
+    task.spawn(function()
+        while task.wait() do
+    if Settings.AutoBuySummer then
+        local args = {
+            [1] = getgenv().portalnameC,
+            [2] = "event",
+            [3] = "event_shop",
+            [4] = Settings.SummerNum
+        }
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_item_generic:InvokeServer(unpack(args))
+        end
+    end
+end)
+
+
 end
 ----------------------------------------------
 -------------- Discord Webhook ---------------
