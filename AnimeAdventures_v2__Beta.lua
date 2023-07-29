@@ -961,11 +961,11 @@ local function WorldSec()
             storylist = {"Storm Hideout","West City", "Infinity Train", "Shiganshinu District - Raid","Hiddel Sand Village - Raid", "Freezo's Invasion", "Entertainment District", 
             "Hero City (Hero Slayer)", "Marine's Ford (Buddha)"}
         elseif Settings.WorldCategory == "Portals" then
-            storylist = {"Alien Portals","Zeldris Portals","Demon Portals","Dressrosa Portals","Madoka Portals","The Eclipse"}
+            storylist = {"Alien Portals","Zeldris Portals","Demon Portals","Dressrosa Portals","Madoka Portals","The Eclipse","Summer Events"}
         elseif Settings.WorldCategory == "Dungeon" then
             storylist = {"Cursed Womb","Crused Parade","Anniversary Island"}    
         elseif Settings.WorldCategory == "Secret Portals" then
-            storylist = {"Dressrosa Secret Portals","Madoka Secret Portals","The Eclipse Secret"} 
+            storylist = {"Dressrosa Secret Portals","Madoka Secret Portals","The Eclipse Secret","Summer Secret"} 
         end
     
         for i = 1, #storylist do
@@ -1062,6 +1062,8 @@ local function WorldSec()
             levellist = {"portal_item__madoka"}
         elseif level == "The Eclipse" then
             levellist = {"portal_item__eclipse"}
+        elseif level == "Summer Events" then
+            levellist = {"portal_summer"}
         ---///Dungeon\\\---    updatefix
         elseif level == "Cursed Womb" then
             levellist = {"jjk_finger"}    
@@ -1076,6 +1078,8 @@ local function WorldSec()
             levellist = {"portal_item__madoka2"}
         elseif level == "The Eclipse Secret" then
             levellist = {"portal_item__femto"}
+        elseif level == "Summer Secret" then
+            levellist = {"portal_poseidon"}
         end
         for i = 1, #levellist do
             selectlevel:AddOption(levellist[i])
@@ -3428,6 +3432,16 @@ function getberserkPortals()
     return portals
 end
 
+function getSummerPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_summer" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+
 --Secret Portals
 
 function getSecretDoflamingo()
@@ -3454,6 +3468,16 @@ function getSecretEclipse()
     local portals = {}
     for _, item in pairs(get_inventory_items_unique_items()) do
         if item["item_id"] == "portal_item__femto" then
+            table.insert(portals, item)
+        end
+    end
+    return portals
+end
+
+function getPoseidonPortals()
+    local portals = {}
+    for _, item in pairs(get_inventory_items_unique_items()) do
+        if item["item_id"] == "portal_poseidon" then
             table.insert(portals, item)
         end
     end
@@ -3547,6 +3571,11 @@ function GetPlayerPortalUse(level)
         PortalName = "The Eclipse Secret Portals farming"
         PortalUUID = GetPortals("portal_item__femto")[1]["uuid"]
         PortalPlayer = GetPlayerPortal()
+
+    elseif level == "portal_poseidon" then
+        PortalName = "Summer Secret Portal farming"
+        PortalUUID = GetPortals("portal_poseidon")[1]["uuid"]
+        PortalPlayer = GetPlayerPortal()
     ------------------------------
     -- [[ Portal Event Portal ]] --
 
@@ -3560,6 +3589,22 @@ function GetPlayerPortalUse(level)
                 PortalEventUse = v
 
                 PortalName = "Madoka farming"
+                PortalUUID = PortalEventUse["uuid"]
+                PortalPlayer = GetPlayerPortal()
+                break
+            end
+        end
+    end
+
+    elseif level == "portal_summer" then
+        local PortalEvent = GetPortals("portal_summer")
+        for i,v in pairs(PortalEvent) do
+            if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] <= Settings.SelectedTier then
+            if v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge2
+            and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge3 then
+                PortalEventUse = v
+
+                PortalName = "Summer farming"
                 PortalUUID = PortalEventUse["uuid"]
                 PortalPlayer = GetPlayerPortal()
                 break
