@@ -1147,7 +1147,7 @@ local function WorldSec()
         table.insert(Table_Tier2,i)
     end
     
-    Settings.SelectedTier2 = Settings.SelectedTier2 or 0
+    --[[Settings.SelectedTier2 = Settings.SelectedTier2 or 0
     local selectlevel = SelectWorld:Cheat("Dropdown", "🎚️ Portal Tier ==",function(value)
         warn("Change to : "..value)
         Settings.SelectedTier2 = value
@@ -1164,7 +1164,7 @@ local function WorldSec()
         warn("Change to : "..value)
         Settings.SelectedTier3 = value
         saveSettings()
-    end, {options = Table_Tier3, default = Settings.SelectedTier3})
+    end, {options = Table_Tier3, default = Settings.SelectedTier3})]]
     
     Settings.SelectedChallenge = Settings.SelectedChallenge or "double_cost"
     local selectlevel = SelectWorld:Cheat("Dropdown", "🎚️ Din't use Challenge",function(value)
@@ -3674,8 +3674,8 @@ function GetPlayerPortalUse(level)
         local PortalEvent = GetPortals("portal_item__madoka")
         for i,v in pairs(PortalEvent) do
             if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] <= Settings.SelectedTier then
-            if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier2 then
-            if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier3 then
+            --if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier2 then
+            --if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier3 then
             if v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge2
             and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge3 then
                 PortalEventUse = v
@@ -3684,8 +3684,8 @@ function GetPlayerPortalUse(level)
                 PortalUUID = PortalEventUse["uuid"]
                 PortalPlayer = GetPlayerPortal()
                 break
-            end
-            end
+            --end
+            --end
             end
         end
     end
@@ -3695,8 +3695,8 @@ function GetPlayerPortalUse(level)
         local PortalEvent = GetPortals("portal_summer")
         for i,v in pairs(PortalEvent) do
             if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] <= Settings.SelectedTier then
-            if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier2 then
-            if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier3 then
+            --if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier2 then
+            --if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier3 then
             if v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge2
             and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge3 then
                 PortalEventUse = v
@@ -3705,8 +3705,8 @@ function GetPlayerPortalUse(level)
                 PortalUUID = PortalEventUse["uuid"]
                 PortalPlayer = GetPlayerPortal()
                 break
-            end
-            end
+            --end
+            --end
             end
         end
     end
