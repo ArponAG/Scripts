@@ -4203,7 +4203,10 @@ end
 function autoabilityerwin()
     if Settings.EnableBufferwinLoop then
 
+        --local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
+        --repeat task.wait() until  GameFinished.Value == true
         repeat task.wait() until game:IsLoaded()
+        --repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
         local LocalPlayer = game.Players.LocalPlayer
         local LPlayer = game.Players.LocalPlayer.Name
         local UnitsE = {'erwin','erwin:shiny','erwin_school','erwin_halloween'}
@@ -4220,7 +4223,7 @@ function autoabilityerwin()
           end
           local erwin1 = {}
           for _,v in pairs(game:GetService("Workspace")._UNITS:GetChildren()) do
-              if table.find(UnitsE,v.Name) and v._stats.player.Value == LocalPlayer then
+              if table.find(UnitsE,v.Name) and v:FindFirstChild("_stats"):FindFirstChild("player").Value == LocalPlayer then
                   table.insert(erwin1, v)
               end
           end
@@ -4252,7 +4255,10 @@ end
 function autoabilitywendy()
     if Settings.EnableBuffwendyLoop then
 
+        --local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
+        --repeat task.wait() until  GameFinished.Value == true
         repeat task.wait() until game:IsLoaded()
+        --repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
         local LocalPlayer = game.Players.LocalPlayer
         local LPlayer = game.Players.LocalPlayer.Name
         local UnitsW = {'wendy'}
@@ -4261,30 +4267,30 @@ function autoabilitywendy()
         }
         _G.Stop = false
         while wait() do
-          if _G.Stop then
-            break
-          end
-          local wendy1 = {}
-          for _,v in pairs(game:GetService("Workspace")._UNITS:GetChildren()) do
-              if table.find(UnitsW,v.Name) and v._stats.player.Value == LocalPlayer then
-                  table.insert(wendy1, v)
-              end
-          end
-        
-          if #wendy1 == 4 then
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[1])
-            warn("Use Skill " ..wendy1[1].Name .." 1 " )
-            wait(Delay[wendy1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[3])
-            warn("Use Skill " ..wendy1[1].Name .." 2 " )
-            wait(Delay[wendy1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[2])
-            warn("Use Skill " ..wendy1[1].Name .." 3 " )
-            wait(Delay[wendy1[1].Name])
-            game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[4])
-            warn("Use Skill " ..wendy1[1].Name .." 4 " )
-            wait(Delay[wendy1[1].Name])
-          end
+            if _G.Stop then
+                break
+            end
+            local wendy1 = {}
+            for _,v in pairs(game:GetService("Workspace")._UNITS:GetChildren()) do
+                if table.find(UnitsW,v.Name) and v:FindFirstChild("_stats"):FindFirstChild("player").Value == LocalPlayer then
+                    table.insert(wendy1, v)
+                end
+            end
+            
+            if #wendy1 == 4 then
+                game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[1])
+                warn("Use Skill " ..wendy1[1].Name .." 1 " )
+                wait(Delay[wendy1[1].Name])
+                game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[3])
+                warn("Use Skill " ..wendy1[1].Name .." 2 " )
+                wait(Delay[wendy1[1].Name])
+                game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[2])
+                warn("Use Skill " ..wendy1[1].Name .." 3 " )
+                wait(Delay[wendy1[1].Name])
+                game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("use_active_attack"):InvokeServer(wendy1[4])
+                warn("Use Skill " ..wendy1[1].Name .." 4 " )
+                wait(Delay[wendy1[1].Name])
+            end
         end
 
     end
@@ -4298,7 +4304,10 @@ end
 function autoabilityleafa()
     if Settings.EnableBuffleafaLoop then
 
+        --local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
+        --repeat task.wait() until  GameFinished.Value == true
         repeat task.wait() until game:IsLoaded()
+        --repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
         local LocalPlayer = game.Players.LocalPlayer
         local LPlayer = game.Players.LocalPlayer.Name
         local UnitsL = {'leafa'}
@@ -4312,7 +4321,7 @@ function autoabilityleafa()
           end
           local leafa1 = {}
           for _,v in pairs(game:GetService("Workspace")._UNITS:GetChildren()) do
-              if table.find(UnitsL,v.Name) and v._stats.player.Value == LocalPlayer then
+              if table.find(UnitsL,v.Name) and v:FindFirstChild("_stats"):FindFirstChild("player").Value == LocalPlayer then
                   table.insert(leafa1, v)
               end
           end
@@ -4339,6 +4348,7 @@ end
 if Settings.EnableBuffleafaLoop then
     autoabilityleafa()
 end
+
 
 -- End  Auto Buff 100 Function
 -----------------------------------------------------------
