@@ -737,11 +737,11 @@ local WebhookSec = ETC:Sector("🌐 Discord Webhook 🌐")
 local OtherSec2 = ETC:Sector("")
 
 local Summer = Window:Category("🦸🏽 Portal & Skin ")
-local SummerItem = Summer:Sector("💸 Auto Buy Semmer Item 💸")
+local SummerItem = Summer:Sector("💸 Auto Buy Summer Item 💸")
 local SellPortals = Summer:Sector("🌀 Sell Portals 🌀")
-local SummerSkin = Summer:Sector("💸 Auto Sell Semmer Skin 💸")
+local SummerSkin = Summer:Sector("💸 Auto Sell Summer Skin 💸")
 local SummerSkin0 = Summer:Sector("")
-local SummerEgg = Summer:Sector("🥚 Auto Open Semmer Egg 🥚")
+local SummerEgg = Summer:Sector("🥚 Auto Open Summer Egg 🥚")
 
 
 ----------------------------------------------
