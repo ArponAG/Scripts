@@ -733,11 +733,15 @@ local reFarmConfig = LG:Sector("🤖 Reset Farm Config 🤖")
 local ETC = Window:Category("🌐 Discord & Shop")
 local AutoSummonSec = ETC:Sector("💸 Auto สุ่ม Units 💸")
 local AutoSnipeMerchantSec = ETC:Sector("🏪 Auto ชื้อของร้านค้า Bulma 🏪")
-local SellPortals = ETC:Sector("🌀 Sell Portals 🌀")
-local devilcity1 = ETC:Sector("")
 local WebhookSec = ETC:Sector("🌐 Discord Webhook 🌐")
 local OtherSec2 = ETC:Sector("")
 
+local Summer = Window:Category("🦸🏽 Portal & Skin ")
+local SummerItem = Summer:Sector("💸 Auto Buy Semmer Item 💸")
+local SellPortals = Summer:Sector("🌀 Sell Portals 🌀")
+local SummerSkin = Summer:Sector("💸 Auto Sell Semmer Skin 💸")
+local SummerSkin0 = Summer:Sector("")
+local SummerEgg = Summer:Sector("🥚 Auto Open Semmer Egg 🥚")
 
 
 ----------------------------------------------
@@ -3160,19 +3164,17 @@ function SnipeMerchant()
     -----------------------------------------------------------------------------
     --AutoBuySummer
 
-    AutoSnipeMerchantSec:Cheat("Label","🏪 Auto Buy Summer Item 🏪")  
-
-    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Summer Item",function(pornname)
+    SummerItem:Cheat("Dropdown", "Select Item Summer",function(pornname)
         getgenv().portalnameC = pornname
         saveSettings()
     end, { options = {"summer_portal_item_contract","capsule_summer"}, default = getgenv().portalnameC})
 
-    AutoSnipeMerchantSec:Cheat("Dropdown", "Select Total item",function(value)
+    SummerItem:Cheat("Dropdown", "Select Total Item",function(value)
         Settings.SummerNum = value
         saveSettings()
     end, { options = {"1","10","100"}, default = getgenv().SummerNum})
 
-    AutoSnipeMerchantSec:Cheat("Button","Buy Summer Item [One time]", function(bool)
+    SummerItem:Cheat("Button","Buy Item [One Time]", function(bool)
         local args = {
             [1] = getgenv().portalnameC,
             [2] = "event",
@@ -3183,7 +3185,7 @@ function SnipeMerchant()
         warn("Buy Summer Portal !!!")
     end)
 
-    AutoSnipeMerchantSec:Cheat("Checkbox","Auto Buy Item Summer ", function(bool)
+    SummerItem:Cheat("Checkbox","Auto Buy Item [Many time]", function(bool)
         print(bool)
         Settings.AutoBuySummer = bool
         saveSettings()
@@ -3191,19 +3193,131 @@ function SnipeMerchant()
 
     task.spawn(function()
         while task.wait() do
-    if Settings.AutoBuySummer then
-        local args = {
-            [1] = getgenv().portalnameC,
-            [2] = "event",
-            [3] = "event_shop",
-            [4] = Settings.SummerNum
-        }
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_item_generic:InvokeServer(unpack(args))
+            if Settings.AutoBuySummer then
+                local args = {
+                    [1] = getgenv().portalnameC,
+                    [2] = "event",
+                    [3] = "event_shop",
+                    [4] = Settings.SummerNum
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_item_generic:InvokeServer(unpack(args))
+            end
+        end
+    end)
+
+    ----------------------------------------------------------------
+    --Auto Open Egg
+
+    SummerEgg:Cheat("Checkbox","Auto Open Summer Egg [1 ea]", function(bool)
+        print(bool)
+        Settings.AutoOpenSummer1 = bool
+        saveSettings()
+    end,{enabled = Settings.AutoOpenSummer1})
+
+    task.spawn(function()
+        while task.wait() do
+            if Settings.AutoOpenSummer1 then
+                local args = {
+                    [1] = "capsule_summer",
+                    [2] = {
+                        ["use10"] = false
+                    }
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_item:InvokeServer(unpack(args))
+            end
+        end
+    end)
+
+    SummerEgg:Cheat("Checkbox","Auto Open Summer Egg [10 ea]", function(bool)
+        print(bool)
+        Settings.AutoOpenSummer10 = bool
+        saveSettings()
+    end,{enabled = Settings.AutoOpenSummer10})
+
+    task.spawn(function()
+        while task.wait() do
+            if Settings.AutoOpenSummer10 then
+                local args = {
+                    [1] = "capsule_summer",
+                    [2] = {
+                        ["use10"] = true
+                    }
+                }
+                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_item:InvokeServer(unpack(args))
+            end
+        end
+    end)
+
+    ----------------------------------------------------------------
+    --Auto Sell Summer Skin
+
+    Settings.SelectedSellRarity = Settings.SelectedSellRarity or "Rare"
+    Settings.SelectedSellRarity2 = Settings.SelectedSellRarity2 or "Rare"
+    Settings.SelectedSellRarity3 = Settings.SelectedSellRarity3 or "Rare"
+    Settings.SelectedSellSeason = Settings.SelectedSellSeason or "Summer"
+    -- Table Of Skin
+    local SummerSkinTable,TableSeason = {},{}
+    for i,v in pairs(game:GetService("ReplicatedStorage").src.Data.Items.UniqueItems.Skins:GetChildren()) do
+        Remove_Items_Text = string.gsub(v.Name,"Items_","")
+        Remove_Skins_Text = string.gsub(Remove_Items_Text,"Skins","")
+        table.insert(TableSeason,Remove_Skins_Text)
+
+        for i,v in pairs(require(v)) do
+            SummerSkinTable[i] = v
         end
     end
-end)
+    
+    SummerSkin:Cheat("Dropdown","🎚️ Select Season", function(bool)
+        print(bool)
+        Settings.SelectedSellSeason = bool
+        saveSettings()
+    end,{options = TableSeason, default = Settings.SelectedSellSeason})
 
+    SummerSkin:Cheat("Dropdown", "🎚️ Select Rarity",function(value)
+        warn("Change to : "..value)
+        Settings.SelectedSellRarity = value
+        saveSettings()
+    end, { options = {"Rare","Epic","Legendary","Mythic"}, default = Settings.SelectedSellRarity})
 
+    SummerSkin:Cheat("Dropdown", "🎚️ Select Rarity 2",function(value)
+        warn("Change to : "..value)
+        Settings.SelectedSellRarity2 = value
+        saveSettings()
+    end, { options = {"Rare","Epic","Legendary","Mythic"}, default = Settings.SelectedSellRarity2})
+
+    SummerSkin:Cheat("Dropdown", "🎚️ Select Rarity 3",function(value)
+        warn("Change to : "..value)
+        Settings.SelectedSellRarity3 = value
+        saveSettings()
+    end, { options = {"Rare","Epic","Legendary","Mythic"}, default = Settings.SelectedSellRarity3})
+
+    SummerSkin:Cheat("Checkbox","Auto Sell Skins ", function(bool)
+        print(bool)
+        Settings.AutoSellSskin = bool
+        saveSettings()
+    end,{enabled = Settings.AutoSellSskin})
+    
+    task.spawn(function()
+        while task.wait() do 
+            if Settings.AutoSellSskin then
+                for i,v in pairs(get_inventory_items_unique_items()) do
+                    if string.find(v['item_id'],"_skin") then
+                        if SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity and SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity2 
+                        and SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity3  and string.find(v['item_id'],Settings.SelectedSellSeason:lower()) then
+                            local args = {
+                                [1] = {
+                                    [1] = v["uuid"]
+                                }
+                            }
+                            game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
+                            warn("Sell Skin")
+                            wait(1)
+                        end
+                    end
+                end
+            end
+        end
+    end)
 end
 ----------------------------------------------
 -------------- Discord Webhook ---------------
