@@ -667,9 +667,17 @@ function ShopSniperWebhook()
         end
     end
 ------------------------------\
-if game.Players.LocalPlayer:FindFirstChild("FinityUI") then
-    game.Players.LocalPlayer["FinityUI"]:Destroy()
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("FinityUI") then
+    game.Players.LocalPlayer.PlayerGui["FinityUI"]:Destroy()
 end
+
+--[[if game.Players.LocalPlayer:FindFirstChild("FinityUI") then
+    game.Players.LocalPlayer["FinityUI"]:Destroy()
+end]]
+
+--[[if game.CoreGui:FindFirstChild("FinityUI") then
+    game.CoreGui["FinityUI"]:Destroy()
+end]]
 
 local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
