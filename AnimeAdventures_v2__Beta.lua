@@ -667,8 +667,8 @@ function ShopSniperWebhook()
         end
     end
 ------------------------------\
-if game.CoreGui:FindFirstChild("FinityUI") then
-    game.CoreGui["FinityUI"]:Destroy()
+if game.Players.LocalPlayer:FindFirstChild("FinityUI") then
+    game.Players.LocalPlayer["FinityUI"]:Destroy()
 end
 
 local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
