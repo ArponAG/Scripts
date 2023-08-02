@@ -3291,7 +3291,8 @@ task.spawn(function()
                 --[1] = "capsule_summer",
                 [1] = Settings.SelecteStars,
                 [2] = {
-                    ["use10"] = Settings.AutoOpenSummer1 == false and Settings.AutoOpenSummer10 == true
+                    --["use10"] = Settings.AutoOpenSummer1 == false and Settings.AutoOpenSummer10 == true
+                    ["use10"] = Settings.AutoOpenSummer1 and false or Settings.AutoOpenSummer10 and true
                 }
             }
             game:GetService("ReplicatedStorage").endpoints.client_to_server.use_item:InvokeServer(unpack(args))
