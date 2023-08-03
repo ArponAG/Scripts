@@ -3567,7 +3567,7 @@ function Sellportals()
                                 }
                                 game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
                                 --warn("Sell Selecte Protals")
-                                warn("Sell : " ..tostring(Settings.SelectedSellPortals) .. " | Tier : "  ..tostring(Settings.SelectedSellTier.. " | Challenge : "  ..tostring(Settings.SelectedSellChallenge)))
+                                warn("Sell : " ..tostring(Settings.SelectedSellPortals) .. " | Tier : "  ..tostring(Settings.SelectedSellTier))
                                 wait(0.1)
                             end
                         end
@@ -3599,7 +3599,7 @@ function Sellportals()
                                 }
                                 game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
                                 --warn("Sell Selecte Protals")
-                                warn("Sell : " ..tostring(Settings.SelectedSellPortals) .. " | Tier : "  ..tostring(Settings.SelectedSellTier.. " | Challenge : "  ..tostring(Settings.SelectedSellChallenge)))
+                                warn("Sell : " ..tostring(Settings.SelectedSellPortals))
                                 wait(0.1)
                             --end
                         end
