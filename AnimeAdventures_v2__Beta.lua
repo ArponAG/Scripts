@@ -1561,11 +1561,33 @@ end
 ----------------------------------------------
 local function ChallengeSec()
 
-    local challengeconfig = ChallengeConfig:Cheat("Dropdown", "🥇 Select Reward",function(value)
+    Settings.SelectedReward = Settings.SelectedReward or "star_fruit_random"
+    local challengeconfig = ChallengeConfig:Cheat("Dropdown", "🥇 Select Reward 1",function(value)
         print(value)
         Settings.SelectedReward = value
         saveSettings()
     end, { options = {"star_fruit_random","star_remnant","gems", "gold"}, default =Settings.SelectedReward})
+
+    Settings.SelectedReward2 = Settings.SelectedReward2 or "star_fruit_random"
+    local challengeconfig = ChallengeConfig:Cheat("Dropdown", "🥇 Select Reward 2",function(value)
+        print(value)
+        Settings.SelectedReward2 = value
+        saveSettings()
+    end, { options = {"star_fruit_random","star_remnant","gems", "gold"}, default =Settings.SelectedReward2})
+
+    Settings.SelectedReward3 = Settings.SelectedReward3 or "star_fruit_random"
+    local challengeconfig = ChallengeConfig:Cheat("Dropdown", "🥇 Select Reward 3",function(value)
+        print(value)
+        Settings.SelectedReward3 = value
+        saveSettings()
+    end, { options = {"star_fruit_random","star_remnant","gems", "gold"}, default =Settings.SelectedReward3})
+
+    Settings.SelectedReward4 = Settings.SelectedReward4 or "star_fruit_random"
+    local challengeconfig = ChallengeConfig:Cheat("Dropdown", "🥇 Select Reward 4",function(value)
+        print(value)
+        Settings.SelectedReward4 = value
+        saveSettings()
+    end, { options = {"star_fruit_random","star_remnant","gems", "gold"}, default =Settings.SelectedReward4})
 
     ChallengeConfig:Cheat("Checkbox","🎯 Auto Challenge  ", function(bool)
         print(bool)
@@ -3717,8 +3739,11 @@ local function checkChallenge()
 end
 local function checkReward()
     if checkChallenge() == false then
-        if Settings.SelectedReward == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value then
-            return true
+        if Settings.SelectedReward == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value --then
+        or Settings.SelectedReward2 == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value --then
+        or Settings.SelectedReward3 == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value --then
+        or Settings.SelectedReward4 == game:GetService("Workspace")["_LOBBIES"]["_DATA"]["_CHALLENGE"]["current_reward"].Value then
+        return true
         elseif Settings.AutoChallengeAll then
             return true
         else
@@ -3728,6 +3753,7 @@ local function checkReward()
         return false
     end
 end
+
 ------------------------------------------------
 --[[local function startChallenge()
     if game.PlaceId == 8304191830 then
