@@ -3388,26 +3388,14 @@ end)
     ----------------------------------------------------------------
     --Auto Sell Summer Skin
 
-    Settings.SelectedSellRarity = Settings.SelectedSellRarity or "Rare"
     Settings.SelectedSellSeason = Settings.SelectedSellSeason or "Summer"
-    -- Table Of Skin
-    local SummerSkinTable,TableSeason = {},{}
-    for i,v in pairs(game:GetService("ReplicatedStorage").src.Data.Items.UniqueItems.Skins:GetChildren()) do
-        Remove_Items_Text = string.gsub(v.Name,"Items_","")
-        Remove_Skins_Text = string.gsub(Remove_Items_Text,"Skins","")
-        table.insert(TableSeason,Remove_Skins_Text)
-
-        for i,v in pairs(require(v)) do
-            SummerSkinTable[i] = v
-        end
-    end
-    
     SummerSkin:Cheat("Dropdown","🎚️ Select Season", function(bool)
         print(bool)
         Settings.SelectedSellSeason = bool
         saveSettings()
     end,{options = TableSeason, default = Settings.SelectedSellSeason})
 
+    Settings.SelectedSellRarity = Settings.SelectedSellRarity or "Rare"
     SummerSkin:Cheat("Dropdown", "🎚️ Select Rarity",function(value)
         warn("Change to : "..value)
         Settings.SelectedSellRarity = value
@@ -3419,21 +3407,22 @@ end)
         Settings.AutoSellSskin = bool
         saveSettings()
     end,{enabled = Settings.AutoSellSskin})
-    
+
     task.spawn(function()
         while task.wait() do 
             if Settings.AutoSellSskin then
                 for i,v in pairs(get_inventory_items_unique_items()) do
                     if string.find(v['item_id'],"_skin") then
-                        if SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity and tring.find(v['item_id'],Settings.SelectedSellSeason:lower()) then
+                        if SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity and string.find(v['item_id'],Settings.SelectedSellSeason:lower()) then
                             local args = {
                                 [1] = {
                                     [1] = v["uuid"]
                                 }
                             }
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
-                            warn("Sell Skin")
-                            wait(0.2)
+                            --warn("Sell Skin")
+                            warn("Sell " ..tostring(Settings.SelectedSellSeason) .. " Skin "  ..tostring(Settings.SelectedSellRarity))
+                            wait(0.1)
                         end
                     end
                 end
@@ -3509,7 +3498,7 @@ function Sellportals()
     end
 
     Settings.SelectedSellTier = Settings.SelectedSellTier or 0
-    SellPortals:Cheat("Dropdown", "🎚️ Select Tier Portal <=",function(value)
+    SellPortals:Cheat("Dropdown", "🎚️ Select Tier Portal ",function(value)
         warn("Change to : "..value)
         Settings.SelectedSellTier = value
         saveSettings()
@@ -3544,7 +3533,9 @@ function Sellportals()
                                     }
                                 }
                                 game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
-                                warn("Sell Selecte Protals")
+                                --warn("Sell Selecte Protals")
+                                warn("Sell : " ..tostring(Settings.SelectedSellPortals) .. " | Tier : "  ..tostring(Settings.SelectedSellTier.. " | Challenge : "  ..tostring(Settings.SelectedSellChallenge)))
+                                wait(0.1)
                             end
                             end
                         end
@@ -3554,6 +3545,7 @@ function Sellportals()
         end
     end)
 
+    SellPortals:Cheat("Label"," ")   
     SellPortals:Cheat("Checkbox","Auto Sell == [Select Tier]", function(bool)
         print(bool)
         Settings.AutoSellNRPortals = bool
@@ -3574,8 +3566,9 @@ function Sellportals()
                                     }
                                 }
                                 game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
-                                warn("Sell Selecte Protals")
-
+                                --warn("Sell Selecte Protals")
+                                warn("Sell : " ..tostring(Settings.SelectedSellPortals) .. " | Tier : "  ..tostring(Settings.SelectedSellTier.. " | Challenge : "  ..tostring(Settings.SelectedSellChallenge)))
+                                wait(0.1)
                             end
                         end
                     end
@@ -3584,6 +3577,7 @@ function Sellportals()
         end
     end)
 
+    SellPortals:Cheat("Label"," ")   
     SellPortals:Cheat("Checkbox","Auto Sell All [All Tier & Challenge]", function(bool)
         print(bool)
         Settings.AutoSellAllPortals = bool
@@ -3604,8 +3598,9 @@ function Sellportals()
                                     }
                                 }
                                 game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
-                                warn("Sell Selecte Protals")
-
+                                --warn("Sell Selecte Protals")
+                                warn("Sell : " ..tostring(Settings.SelectedSellPortals) .. " | Tier : "  ..tostring(Settings.SelectedSellTier.. " | Challenge : "  ..tostring(Settings.SelectedSellChallenge)))
+                                wait(0.1)
                             --end
                         end
                     end
