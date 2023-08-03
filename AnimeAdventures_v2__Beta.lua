@@ -4406,6 +4406,7 @@ function autoabilityGCDfunc()
                     if v._stats:FindFirstChild("threat") then
                         if v._stats.threat.Value > 0 then
                             UsePuchiSkill()
+                            UseErenSkill()
                         end
                         
                     -- Search Player Units
