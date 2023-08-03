@@ -3433,7 +3433,7 @@ end)
                             }
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
                             warn("Sell Skin")
-                            wait(0.3)
+                            wait(0.2)
                         end
                     end
                 end
@@ -3523,7 +3523,8 @@ function Sellportals()
         saveSettings()
     end, { options = {"double_cost","short_range","fast_enemies","regen_enemies", "tank_enemies","shield_enemies","triple_cost","hyper_regen_enemies","hyper_shield_enemies","godspeed_enemies","flying_enemies","mini_range"}, default =Settings.SelectedSellChallenge})
 
-    SellPortals:Cheat("Checkbox","Auto Sell Portal ", function(bool)
+
+    SellPortals:Cheat("Checkbox","Auto Sell [Select Tier & Challenge] ", function(bool)
         print(bool)
         Settings.AutoSellPortals = bool
         saveSettings()
@@ -3553,7 +3554,7 @@ function Sellportals()
         end
     end)
 
-    SellPortals:Cheat("Checkbox","Auto Sell Normal Portal [No Challenge]", function(bool)
+    SellPortals:Cheat("Checkbox","Auto Sell Tier [Select Tier]", function(bool)
         print(bool)
         Settings.AutoSellNRPortals = bool
         saveSettings()
@@ -3576,6 +3577,36 @@ function Sellportals()
                                 warn("Sell Selecte Protals")
 
                             end
+                        end
+                    end
+                end
+            end
+        end
+    end)
+
+    SellPortals:Cheat("Checkbox","Auto Sell All [All Tier & Challenge]", function(bool)
+        print(bool)
+        Settings.AutoSellAllPortals = bool
+        saveSettings()
+    end,{enabled = Settings.AutoSellAllPortals})
+
+    task.spawn(function()
+        while task.wait() do
+            if Settings.AutoSellAllPortals then
+                for i,v in pairs(get_inventory_items_unique_items()) do
+                    if string.find(v['item_id'],"portal") or string.find(v['item_id'],"disc") then
+
+                        if v['item_id'] == Settings.SelectedSellPortals then
+                        --if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] <= Settings.SelectedSellTier then
+                                local args = {
+                                    [1] = {
+                                        [1] = v["uuid"]
+                                    }
+                                }
+                                game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
+                                warn("Sell Selecte Protals")
+
+                            --end
                         end
                     end
                 end
