@@ -4623,7 +4623,7 @@ function autoabilitywendy()
         local LPlayer = game.Players.LocalPlayer.Name
         local UnitsW = {'wendy','wendy:shiny'}
         local Delay = {
-            ['wendy'] = 16.4
+            ['wendy'] = 16.4,
             ['wendy:shiny'] = 16.4,
         }
         _G.Stop = false
@@ -4673,7 +4673,7 @@ function autoabilityleafa()
         local LPlayer = game.Players.LocalPlayer.Name
         local UnitsL = {'leafa','leafa:shiny'}
         local Delay = {
-            ['leafa'] = 16.4
+            ['leafa'] = 16.4,
             ['leafa:shiny'] = 16.4,
         }
         _G.Stop = false
