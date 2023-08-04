@@ -4621,9 +4621,10 @@ function autoabilitywendy()
         --repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
         local LocalPlayer = game.Players.LocalPlayer
         local LPlayer = game.Players.LocalPlayer.Name
-        local UnitsW = {'wendy'}
+        local UnitsW = {'wendy','wendy:shiny'}
         local Delay = {
-            ['wendy'] = 16.4,
+            ['wendy'] = 16.4
+            ['wendy:shiny'] = 16.4,
         }
         _G.Stop = false
         while wait() do
@@ -4670,9 +4671,10 @@ function autoabilityleafa()
         --repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
         local LocalPlayer = game.Players.LocalPlayer
         local LPlayer = game.Players.LocalPlayer.Name
-        local UnitsL = {'leafa'}
+        local UnitsL = {'leafa','leafa:shiny'}
         local Delay = {
-            ['leafa'] = 16.4,
+            ['leafa'] = 16.4
+            ['leafa:shiny'] = 16.4,
         }
         _G.Stop = false
         while wait() do
