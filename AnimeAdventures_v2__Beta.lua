@@ -269,6 +269,7 @@ function webhook()
         end
         for i,v in pairs(Table_All_Items_New_data) do
             if v['Count'] > 0 and (v['Count'] - Table_All_Items_Old_data[i]['Count']) > 0 then
+            --if v['Count'] > 0 and (v['Count'] == Table_All_Items_Old_data[i]['Count']) > 0 then
                 if v['Count Shiny'] and v['Count'] then
                 elseif string.find(i,"portal") or string.find(i,"disc") then
                     Count_Portal_list = Count_Portal_list + 1
@@ -284,6 +285,7 @@ function webhook()
                 end
             end
         end
+    --end
 
         if TextDropLabel == "" then
             TextDropLabel = "Not Have Items Drops"
@@ -1678,11 +1680,11 @@ end
 ----------------------------------------------
 local function UNITAOEAA()
 
-    UnitAOE1:Cheat("Button", "Check Unit", function()
+    UnitAOE1:Cheat("Button", "Check Kill & Take Down [F9 to see]", function()
         for i, v in pairs(game.Workspace._UNITS:getChildren()) do
             if v:FindFirstChild("_stats"):FindFirstChild("player") then
                 if tostring(v._stats.player.Value) == game.Players.LocalPlayer.Name then
-                    warn(v)
+                    warn("Unit : " ..tostring(v._stats.id.Value) .. " | Kill : "  ..tostring(v._stats.kill_count.Value).. " | TakeDown : "  ..tostring(v._stats.takedown_count.Value))
 		        end
 	        end
         end
