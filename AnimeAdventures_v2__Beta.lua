@@ -1681,14 +1681,16 @@ end
 local function UNITAOEAA()
 
     UnitAOE1:Cheat("Button", "Check Kill & Take Down [F9 to see]", function()
-        for i, v in pairs(game.Workspace._UNITS:getChildren()) do
-            if v:FindFirstChild("_stats"):FindFirstChild("player") then
-                if tostring(v._stats.player.Value) == game.Players.LocalPlayer.Name then
+        for i, v in ipairs(game:GetService("Workspace")["_UNITS"]:GetChildren()) do
+            if v:FindFirstChild("_stats") then
+                if tostring(v["_stats"].player.Value) == game.Players.LocalPlayer.Name and v["_stats"].xp.Value >= 0 then
+                    if v._stats.takedown_count.Value >= 1 then
                     warn("Unit : " ..tostring(v._stats.id.Value) .. " | Kill : "  ..tostring(v._stats.kill_count.Value).. " | TakeDown : "  ..tostring(v._stats.takedown_count.Value))
-		        end
-	        end
+                end
+            end
         end
-    end)
+    end
+end)
 
     UnitAOE:Cheat("Checkbox","Enable INF Range Unit [ZicZac] ", function(bool)
         print(bool)
