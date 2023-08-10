@@ -2382,6 +2382,8 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
         updatepos("Berserk", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("Storm") then
         updatepos("Eclipse", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("summer_props") then
+        updatepos("Summer JJK", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map["misc deco"]:FindFirstChild("bushes") then
         updatepos("clover", UnitPos, a,a2,a3,a4,a5,a6)
     end
@@ -5874,6 +5876,8 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnitsTEST("Berserk")
             elseif game.Workspace._map:FindFirstChild("Storm") then
                 PlaceUnitsTEST("Eclipse")
+            elseif game.Workspace._map:FindFirstChild("summer_props") then
+                PlaceUnitsTEST("Summer JJK")
             elseif game.Workspace._map["misc deco"]:FindFirstChild("bushes") then
                 PlaceUnitsTEST("clover")
             end
@@ -5939,6 +5943,8 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnits("Berserk")
             elseif game.Workspace._map:FindFirstChild("Storm") then
                 PlaceUnits("Eclipse")
+            elseif game.Workspace._map:FindFirstChild("summer_props") then
+                PlaceUnits("Summer JJK")
             elseif game.Workspace._map["misc deco"]:FindFirstChild("bushes") then
                 PlaceUnits("clover") 
             end
@@ -8131,6 +8137,195 @@ function DelMapEclipse3()
     end   
 end
 
+--SUMMER
+--SummerCursed
+function DelMapSMCursed1()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].LanternsGround:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed2()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].Nature:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed3()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].Trees:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed4()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].bushes:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed5()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].LanternsSky:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed6()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].deco:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed7()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].dirt:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed8()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].fences:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed9()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].gate:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed10()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].lightning:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed11()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].logs:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed12()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]["notice boards and paper"]:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed13()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].sheds:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed14()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].stairs:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed15()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].wheelbarrows:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed16()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].cables:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapSMCursed17()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]["summer_props"]:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
 --fixmap
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
@@ -8351,6 +8546,26 @@ coroutine.resume(coroutine.create(function()
         DelMapEclipse()
 		DelMapEclipse2()
 		DelMapEclipse3()
+    elseif game.Workspace._map:FindFirstChild("summer_props") then
+        DelTer() 
+        DelMapMain()
+        DelMapSMCursed1()
+        DelMapSMCursed2()
+        DelMapSMCursed3()
+        DelMapSMCursed4()
+        DelMapSMCursed5()
+        DelMapSMCursed6()
+        DelMapSMCursed7()
+        DelMapSMCursed8()
+        DelMapSMCursed9()
+        DelMapSMCursed10()
+        DelMapSMCursed11()
+        DelMapSMCursed12()
+        DelMapSMCursed13()
+        DelMapSMCursed14()
+        DelMapSMCursed15()
+        DelMapSMCursed16()
+        DelMapSMCursed17()
     elseif game.Workspace._map["misc deco"]:FindFirstChild("bushes") then
         DelTer() 
 		DelMapMain()
