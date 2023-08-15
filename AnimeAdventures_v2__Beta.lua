@@ -763,8 +763,8 @@ local DelMapConfig3 = LG:Sector("")
 local reFarmConfig = LG:Sector("🤖 Reset Farm Config 🤖")
 
 local ETC = Window:Category("🌐 Discord & Shop")
-local AutoSummonSec = ETC:Sector("💸 Auto สุ่ม Units 💸")
-local AutoSnipeMerchantSec = ETC:Sector("🏪 Auto ชื้อของร้านค้า Bulma 🏪")
+local AutoSummonSec = ETC:Sector("💸 Auto Summon Units 💸")
+local AutoSnipeMerchantSec = ETC:Sector("🏪 Auto Snipe Bulma 🏪")
 local WebhookSec = ETC:Sector("🌐 Discord Webhook 🌐")
 local OtherSec2 = ETC:Sector("")
 
@@ -3420,12 +3420,26 @@ end)
         saveSettings()
     end,{options = TableSeason, default = Settings.SelectedSellSeason})
 
-    Settings.SelectedSellRarity = Settings.SelectedSellRarity or "Rare"
-    SummerSkin:Cheat("Dropdown", "🎚️ Select Rarity",function(value)
+    Settings.SelectedSellRarity1 = Settings.SelectedSellRarity1 or "Rare"
+    SummerSkin:Cheat("Dropdown", "🎚️ Select Rarity 1",function(value)
         warn("Change to : "..value)
-        Settings.SelectedSellRarity = value
+        Settings.SelectedSellRarity1 = value
         saveSettings()
-    end, { options = {"Rare","Epic","Legendary","Mythic"}, default = Settings.SelectedSellRarity})
+    end, { options = {"Rare","Epic","Legendary","Mythic"}, default = Settings.SelectedSellRarity1})
+
+    Settings.SelectedSellRarity2 = Settings.SelectedSellRarity2 or "Rare"
+    SummerSkin:Cheat("Dropdown", "🎚️ Select Rarity 2",function(value)
+        warn("Change to : "..value)
+        Settings.SelectedSellRarity2 = value
+        saveSettings()
+    end, { options = {"Rare","Epic","Legendary","Mythic"}, default = Settings.SelectedSellRarity2})
+
+    Settings.SelectedSellRarity3 = Settings.SelectedSellRarity3 or "Rare"
+    SummerSkin:Cheat("Dropdown", "🎚️ Select Rarity 3",function(value)
+        warn("Change to : "..value)
+        Settings.SelectedSellRarity3 = value
+        saveSettings()
+    end, { options = {"Rare","Epic","Legendary","Mythic"}, default = Settings.SelectedSellRarity3})
 
     SummerSkin:Cheat("Checkbox","Auto Sell Skins ", function(bool)
         print(bool)
@@ -3438,15 +3452,16 @@ end)
             if Settings.AutoSellSskin then
                 for i,v in pairs(get_inventory_items_unique_items()) do
                     if string.find(v['item_id'],"_skin") then
-                        if SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity and string.find(v['item_id'],Settings.SelectedSellSeason:lower()) then
+                        if SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity 
+                        or SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity2 
+                        or SummerSkinTable[v['item_id']].rarity == Settings.SelectedSellRarity3
+                        and string.find(v['item_id'],Settings.SelectedSellSeason:lower()) then
                             local args = {
                                 [1] = {
                                     [1] = v["uuid"]
                                 }
                             }
                             game:GetService("ReplicatedStorage").endpoints.client_to_server.delete_unique_items:InvokeServer(unpack(args))
-                            --warn("Sell Skin")
-                            --warn("Sell " ..tostring(Settings.SelectedSellSeason) .. " Skin "  ..tostring(Settings.SelectedSellRarity))
                             warn("Sell : " ..tostring(v['item_id']) .. " | "  ..tostring(Settings.SelectedSellSeason) .. " | "  ..tostring(Settings.SelectedSellRarity))
                             wait(0.1)
                         end
@@ -3516,7 +3531,7 @@ function Sellportals()
         Settings.SelectedSellPortals = value
         saveSettings()
     end, { options = {"portal_boros_g","april_portal_item","portal_zeldris","portal_item__dressrosa","portal_item__eclipse","portal_summer"}, default =Settings.SelectedSellPortals})
-
+--fixportal
 
     Tier_sell = {}
     for i = 0,15 do
@@ -3897,7 +3912,7 @@ function getPoseidonPortals()
     return portals
 end
 
---End Fixportal
+--End 
 
 function GetPortals(id)
     local reg = getreg() 
@@ -3943,33 +3958,33 @@ end
 
 function GetPlayerPortalUse(level)
     local PortalName,PortalUUID,PortalPlayer
-    -- Aline fixportal
+    -- Aline 
     if level == "portal_boros_g" then
         PortalName = "Aline farming"
         PortalUUID = GetPortals("portal_boros_g")[1]["uuid"]
         PortalPlayer = GetPlayerPortal()
-    -- Demon fixportal		
+    -- Demon 		
     elseif level == "april_portal_item" then
         PortalName = "Demon farming"
         PortalUUID = GetPortals("april_portal_item")[1]["uuid"]
         PortalPlayer = GetPlayerPortal()
-    --OPN fixportal		
+    --OPN 		
     elseif level == "portal_item__dressrosa" then
         PortalName = "OPNew farming"
         PortalUUID = GetPortals("portal_item__dressrosa")[1]["uuid"]
         PortalPlayer = GetPlayerPortal()
-        --7Ds fixportal		
+        --7Ds 		
     elseif level == "portal_zeldris" then
         PortalName = "7ds farming"
         PortalUUID = GetPortals("portal_zeldris")[1]["uuid"]
         PortalPlayer = GetPlayerPortal()
-                --Berserk fixportal		
+    --Berserk 		
     elseif level == "portal_item__eclipse" then
         PortalName = "Berserk farming"
         PortalUUID = GetPortals("portal_item__eclipse")[1]["uuid"]
         PortalPlayer = GetPlayerPortal()
 
-        --Secret Portals
+    --Secret Portals
     elseif level == "portal_item__doflamingo" then
         PortalName = "Dofamingo Secret Portals farming"
         PortalUUID = GetPortals("portal_item__doflamingo")[1]["uuid"]
@@ -4322,7 +4337,7 @@ local function startfarming()
         end
     end
 end
---end fixportal]]
+--end]]
 
 ------------------------------------
 ---- Start Auto Ability Function----
