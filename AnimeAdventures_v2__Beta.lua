@@ -771,9 +771,9 @@ local OtherSec2 = ETC:Sector("")
 local Summer = Window:Category("🦸🏽 Event & Skin ")
 local SummerItem = Summer:Sector("💸 Auto Buy Summer Item 💸")
 local SellPortals = Summer:Sector("🌀 Sell Portals 🌀")
-local SummerSkin = Summer:Sector("💸 Auto Sell Summer Skin 💸")
+local SummerSkin = Summer:Sector("💸 Auto Sell Events Skin 💸")
 local SummerSkin0 = Summer:Sector("")
-local SummerEgg = Summer:Sector("🥚 Auto Open Summer Egg 🥚")
+local SummerEgg = Summer:Sector("🥚 Auto Open Events Egg 🥚")
 
 
 ----------------------------------------------
@@ -5024,7 +5024,7 @@ coroutine.resume(coroutine.create(function()
                 task.wait(1.1)
 
             cata = Settings.WorldCategory; level = Settings.SelectedLevel;
-            if Settings.AutoPickPortal and cata == "Portals"  then
+            if Settings.AutoPickPortal and cata == "Portals" or cata == "Secret Portals"  then
                 local DataPortalReplay = GetPlayerPortalUse(level)
                 local args = {
                     [1] = "replay",
