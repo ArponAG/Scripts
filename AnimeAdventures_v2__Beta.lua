@@ -1333,17 +1333,24 @@ end
 ----------------------------------------------
 local function MoreFarmSec()
 
-    castleconfig:Cheat("Checkbox","🏯 Auto Next Level inf castle  ", function(bool)
-        print(bool)
-        Settings.AutoContinue = bool
+    Settings.SelectedDiffInf = Settings.SelectedDiffInf or "Normal"
+    castleconfig:Cheat("Dropdown", "🏯 Select Difficulty ",function(value)
+        warn("Change to : "..value)
+        Settings.SelectedDiffInf = value
         saveSettings()
-    end,{enabled = Settings.AutoContinue })
+    end, { options = {"Normal","Hard"}, default = Settings.SelectedDiffInf})
 
     castleconfig:Cheat("Checkbox","🏰️ Auto Infinity Castle   ", function(bool)
         print(bool)
         Settings.AutoInfinityCastle = bool
         saveSettings()
     end,{enabled = Settings.AutoInfinityCastle})
+
+    castleconfig:Cheat("Checkbox","🏯 Auto Next Level inf castle  ", function(bool)
+        print(bool)
+        Settings.AutoContinue = bool
+        saveSettings()
+    end,{enabled = Settings.AutoContinue })
 end
 
 -----------------------------------------------
@@ -4768,7 +4775,8 @@ local function FarmInfinityCastle()
                     if v.clear.Visible == false and v.Locked.Visible == false then
                         local room = string.split(v.Main.text.Text, " ")
                         local args = {
-                            [1] = tonumber(room[2])
+                            [1] = tonumber(room[2]),
+                            [2] = Settings.SelectedDiffInf
                         }
                         
                         game:GetService("ReplicatedStorage").endpoints.client_to_server.request_start_infinite_tower:InvokeServer(unpack(args))
