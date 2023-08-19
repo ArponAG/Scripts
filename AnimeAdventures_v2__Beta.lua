@@ -5030,7 +5030,7 @@ coroutine.resume(coroutine.create(function()
                 task.wait(1.5)
 
                 cata = Settings.WorldCategory; level = Settings.SelectedLevel;
-                if Settings.AutoPickPortal and cata == "Portals" or cata == "ประตูลับ" then
+                if Settings.AutoPickPortal and cata == "Portals" or cata == "Secret Portals" then
                     local DataPortalReplay = GetPlayerPortalUse(level)
                     local args = {
                         [1] = "replay",
