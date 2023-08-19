@@ -2687,9 +2687,8 @@ local function unitconfig()
         saveSettings()
     end,{enabled = Settings.unitconfig })
 
-    NDY2:Cheat("Button", "Reset unit config", function()
-        print(Settings.reunitc)
-        reunitcon()
+    NDY2:Cheat("Button", "Reload Script", function()
+        autoload2()
     end)
 
     --//UNIT 1
