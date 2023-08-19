@@ -294,7 +294,7 @@ function webhook()
         local data = {
             ["content"] = "",
             ["username"] = "Anime Adventures V2",
-            ["avatar_url"] = "https://tr.rbxcdn.com/7b6a3914cac2e93f7e7f27cbefa92280/150/150/Image/Png",
+            ["avatar_url"] = "https://tr.rbxcdn.com/8e885e939ad70638b40e74a7c84d1530/150/150/Image/Png",
             ["embeds"] = {
                 {
                     ["author"] = {
@@ -1008,7 +1008,7 @@ local function WorldSec()
         if Settings.WorldCategory == "Story Worlds" then
             storylist = {"Planet Namak", "Shiganshinu District", "Snowy Town","Hidden Sand Village", "Marine's Ford",
             "Ghoul City", "Hollow World", "Ant Kingdom", "Magic Town", "Cursed Academy","Clover Kingdom","Cape Canaveral", "Alien Spaceship","Fabled Kingdom",
-            "Hero City","Puppet Island","Virtual Dungeon","Windhym"}
+            "Hero City","Puppet Island","Virtual Dungeon","Windhym","Undead Tomb"}
         elseif Settings.WorldCategory == "Legend Stages" then
             storylist = {"Clover Kingdom (Elf Invasion)", "Hollow Invasion","Cape Canaveral (Legend)", "Fabled Kingdom (Legend)", "Hero City (Midnight)", "Virtual Dungeon (Bosses)"}
         elseif Settings.WorldCategory == "Raid Worlds" then
@@ -1071,6 +1071,8 @@ local function WorldSec()
             levellist = {"sao_infinite","sao_level_1","sao_level_2","sao_level_3","sao_level_4","sao_level_5","sao_level_6",}
         elseif level == "Windhym" then
             levellist = {"berserk_infinite","berserk_level_1","berserk_level_2","berserk_level_3","berserk_level_4","berserk_level_5","berserk_level_6",}
+        elseif level == "Undead Tomb" then
+            levellist = {"overlord_infinite","overlord_level_1","overlord_level_2","overlord_level_3","overlord_level_4","overlord_level_5","overlord_level_6",}
         --///Legend Stages\\\---
         elseif level == "Clover Kingdom (Elf Invasion)" then
             levellist = {"clover_legend_1","clover_legend_2","clover_legend_3"}
@@ -1084,6 +1086,8 @@ local function WorldSec()
             levellist = {"mha_legend_1","mha_legend_2","mha_legend_3","mha_legend_4","mha_legend_5","mha_legend_6"}
         elseif level == "Virtual Dungeon (Bosses)" then
             levellist = {"sao_legend_1","sao_legend_2","sao_legend_3"}
+        elseif level == "Undead Tomb (Legend)" then
+            levellist = {"overlord_legend_1","overlord_legend_2","overlord_legend_3"}
         --///Raids\\\---
         elseif level == "Storm Hideout" then
             levellist = {"uchiha_level_1","uchiha_level_2","uchiha_level_3","uchiha_level_4","uchiha_level_5"} 
@@ -1149,7 +1153,7 @@ local function WorldSec()
         or level == "naruto_infinite" or level == "marineford_infinite" or level == "tokyoghoul_infinite" or level == "hueco_infinite" 
         or level == "hxhant_infinite" or level == "magnolia_infinite" or level == "jjk_infinite" or level == "clover_infinite" 
         or level == "jojo_infinite" or level == "opm_infinite" or level == "7ds_infinite" or level == "mha_infinite" 
-        or level == "sao_infinite" or level == "berserk_infinite" 
+        or level == "sao_infinite" or level == "berserk_infinite" or level == "overlord_infinite" 
         or level == "dressrosa_infinite" or cata == "Legend Stages" or cata == "Raid Worlds"  then
             diff = {"Hard"}
         elseif cata == "Portals" or cata == "Dungeon" or cata == "Secret Portals"  then
@@ -2380,6 +2384,8 @@ function savepos(UnitPos, a,a2,a3,a4,a5,a6)
         updatepos("Berserk", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("Storm") then
         updatepos("Eclipse", UnitPos, a,a2,a3,a4,a5,a6)
+    elseif game.Workspace._map:FindFirstChild("_deathknights") then
+        updatepos("Overlord", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("summer_props") then
         updatepos("Summer JJK", UnitPos, a,a2,a3,a4,a5,a6)
     elseif game.Workspace._map:FindFirstChild("LanternsGround") then
@@ -3359,7 +3365,7 @@ task.spawn(function()
                 local data = {
                     ["content"] = "",
                     ["username"] = "Anime Adventures V2",
-                    ["avatar_url"] = "https://tr.rbxcdn.com/7b6a3914cac2e93f7e7f27cbefa92280/150/150/Image/Png",
+                    ["avatar_url"] = "https://tr.rbxcdn.com/8e885e939ad70638b40e74a7c84d1530/150/150/Image/Png",
                     ["embeds"] = {
                         {
                             ["author"] = {
@@ -5889,6 +5895,8 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnitsTEST("Berserk")
             elseif game.Workspace._map:FindFirstChild("Storm") then
                 PlaceUnitsTEST("Eclipse")
+            elseif game.Workspace._map:FindFirstChild("_deathknights") then
+                PlaceUnitsTEST("Overlord")
             elseif game.Workspace._map:FindFirstChild("summer_props") then
                 PlaceUnitsTEST("Summer JJK")
             elseif game.Workspace._map:FindFirstChild("LanternsGround") then
@@ -5956,6 +5964,8 @@ coroutine.resume(coroutine.create(function()
                 PlaceUnits("Berserk")
             elseif game.Workspace._map:FindFirstChild("Storm") then
                 PlaceUnits("Eclipse")
+            elseif game.Workspace._map:FindFirstChild("_deathknights") then
+                PlaceUnits("Overlord")
             elseif game.Workspace._map:FindFirstChild("summer_props") then
                 PlaceUnits("Summer JJK")
             elseif game.Workspace._map:FindFirstChild("LanternsGround") then
@@ -8341,6 +8351,38 @@ function DelMapSMCursed17()
     end   
 end
 
+--Overlord
+function DelMapOverlord1()
+	if game.Workspace:FindFirstChild("_map") then
+		for i,v in pairs(game:GetService("Workspace")["_map"]:GetChildren()) do
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+		end
+	end  
+end
+
+function DelMapOverlord2()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"].torches:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
+
+function DelMapOverlord3()
+	if game.Workspace:FindFirstChild("_map") then
+    	for i,v in pairs(game:GetService("Workspace")["_map"]["_deathknights"]:GetChildren()) do
+				if v.ClassName == "Folder" then v:Remove() end
+				if v.ClassName == "MeshPart" then v:Remove() end
+				if v.ClassName == "Model" then v:Remove() end
+				if v.ClassName == "Part" then v:Remove() end
+        end
+    end   
+end
 --fixmap
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
@@ -8542,6 +8584,11 @@ coroutine.resume(coroutine.create(function()
         DelMapEclipse()
 		DelMapEclipse2()
 		DelMapEclipse3()
+    elseif game.Workspace._map:FindFirstChild("_deathknights") then
+        DelTer() 
+        DelMapOverlord1()
+        DelMapOverlord2()
+        DelMapOverlord3()
     elseif game.Workspace._map:FindFirstChild("summer_props") then
         DelTer() 
         DelMapMain()
@@ -8626,7 +8673,7 @@ end
 --game:GetService("ReplicatedStorage").src.Data.QuestsEvent
 function autoDailyquest()
     if Settings.autoDailyquest then
-        game:GetService("ReplicatedStorage").endpoints.client_to_server.accept_npc_quest:InvokeServer("berserk_daily")
+        game:GetService("ReplicatedStorage").endpoints.client_to_server.accept_npc_quest:InvokeServer("overlord_daily")
         wait(15)
     end
 end
@@ -8698,7 +8745,7 @@ function placeunittwin()
 --ReedemCode updatefix
 function Reedemcode()
     codes = {"TWOMILLION","subtomaokuma","CHALLENGEFIX","GINYUFIX","RELEASE","SubToKelvingts","SubToBlamspot","KingLuffy","TOADBOIGAMING","noclypso","FictioNTheFirst","GOLDENSHUTDOWN","GOLDEN"
-    ,"SINS2","subtosnowrbx","Cxrsed","subtomaokuma","VIGILANTE","HAPPYEASTER","ENTERTAINMENT","DRESSROSA","BILLION","MADOKA","AINCRAD","ANNIVERSARY"}
+    ,"SINS2","subtosnowrbx","Cxrsed","subtomaokuma","VIGILANTE","HAPPYEASTER","ENTERTAINMENT","DRESSROSA","BILLION","MADOKA","AINCRAD","ANNIVERSARY","OVERLORD","SupperTierMagicSoon"}
         for _, v in pairs(codes) do
         pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["redeem_code"]:InvokeServer(v)()    end) 
     end
