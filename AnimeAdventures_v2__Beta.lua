@@ -235,8 +235,8 @@ function webhook()
         if poratChallengeS == "mini_range" then poratChallengeS = "Mini-Range" end
 
         MapDiff = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Difficulty.Text
-        if MapDiff == nil then MapDiff = " ไม่มี Difficulty " end
-        if MapDiff == "" then MapDiff = " ไม่มี Difficulty " end
+        if MapDiff == nil then MapDiff = " Not have Difficulty " end
+        if MapDiff == "" then MapDiff = " Not have Difficulty " end
         
         --------------------------------------------------------------------
 
