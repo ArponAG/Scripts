@@ -170,12 +170,20 @@ function webhook()
         result = ResultHolder.Title.Text else levelname, result = "nil","nil" end
         if result == "VICTORY" then result = "VICTORY" end
         if result == "DEFEAT" then result = "DEFEAT" end
-        
         _map = game:GetService("Workspace")["_BASES"].player.base["fake_unit"]:WaitForChild("HumanoidRootPart")
+
+        ---------------------------------
         GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
-        world = GetLevelData.id or GetLevelData.world or GetLevelData.name
-        mapname = game:GetService("Workspace")._MAP_CONFIG.GetLevelData:InvokeServer()["name"]
-        
+        name = GetLevelData.id or GetLevelData.world or GetLevelData.map
+        world = GetLevelData.name
+        --New Mapname
+        local Loader = require(game.ReplicatedStorage.src.Loader)
+        local Maps = Loader.load_data(script, "Maps")
+        local v100 = Maps[Loader.LevelData.map]
+        MapsNameTEST = v100.name or GetLevelData.name
+        MapDiff = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Difficulty.Text
+        -------------------------------
+
         cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
         ctime = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.Timer.Text
         btp = plr.PlayerGui:FindFirstChild("BattlePass"):FindFirstChild("Main"):FindFirstChild("Level"):FindFirstChild("V").Text
@@ -187,7 +195,7 @@ function webhook()
         ttime = ctime:split(": ")
         if waves ~= nil and ttime[2] == "22:55" then ttime[2] = "Use [Auto Leave at Wave] or [Test Webhook]" end	
         gold = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GoldReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
-        if gold == "+99999" then gold = "+0" end	 
+        if gold == "+99999" then gold = "+0" end	    
         gems = ResultHolder:FindFirstChild("LevelRewards"):FindFirstChild("ScrollingFrame"):FindFirstChild("GemReward"):FindFirstChild("Main"):FindFirstChild("Amount").Text
         if gems == "+99999" then gems = "+0" end	 
 
@@ -324,7 +332,7 @@ function webhook()
                         },
                         {
                             ["name"] ="Results :",
-                            ["value"] = "```ini\nWorld : "..mapname.. " 🌏\nMap : "..world.. " 🗺️\nPortal Tier : " ..tostring(poratltierS).." 🌀\nChallenge : " ..tostring(poratChallengeS).." 🌀\nResults : "..result.. " ⚔️\nWave End : " ..tostring(waves[2]).." 🌊\nTime : " ..tostring(ttime[2]).." ⌛\nAll Kill Count : " ..tostring(comma_value(game.Players.LocalPlayer._stats.kills.Value)).. " ⚔️\nDMG Deal : " ..tostring(comma_value(game.Players.LocalPlayer._stats.damage_dealt.Value)).."⚔️```",
+                            ["value"] = "```ini\nWorld : "..world.. " 🌏\nMap Name : "..tostring(MapsNameTEST).. " 🗺️\nMap Id : "..name.. " 🗺️\nDifficulty : "..MapDiff.. " 🗺️\nPortal Tier : " ..tostring(poratltierS).." 🌀\nChallenge : " ..tostring(poratChallengeS).." 🌀\nResults : "..result.. " ⚔️\nWave End : " ..tostring(waves[2]).." 🌊\nTime : " ..tostring(ttime[2]).." ⌛\nAll Kill Count : " ..tostring(comma_value(game.Players.LocalPlayer._stats.kills.Value)).. " ⚔️\nDMG Deal : " ..tostring(comma_value(game.Players.LocalPlayer._stats.damage_dealt.Value)).."⚔️```",
                             ["inline"] = true
                         },
                         {
@@ -760,7 +768,7 @@ local OtherSec3 = LG:Sector("🐱 Hide Name Player 🐱")
 local DelMapConfig = LG:Sector("")
 local DelMapConfig2 = LG:Sector("⚙️ Other Config ⚙️")
 local DelMapConfig3 = LG:Sector("")
-local reFarmConfig = LG:Sector("🤖 Reset Farm Config 🤖")
+
 
 local ETC = Window:Category("🌐 Discord & Shop")
 local AutoSummonSec = ETC:Sector("💸 Auto Summon Units 💸")
@@ -2953,17 +2961,6 @@ local function unitconfig()
 end
 
 ---------------------------------------------
---resetautofarmUI
-local function reFarmconfig()
-
-    reFarmConfig:Cheat("Button", "Reset Farm config", function()
-        print(Settings.refarmc)
-        refarmcon()
-    end)
-
-end
-
----------------------------------------------
 -------------- LOWW CPU Config --------------
 ---------------------------------------------
 local function LowCPUModeT()
@@ -3726,7 +3723,6 @@ if game.PlaceId == 8304191830 then
     unitconfig()
     LowCPUModeT()
     LAGGYconfig()
-    reFarmconfig()
     credits()
     AutoSummon()
     SnipeMerchant()
@@ -3748,7 +3744,6 @@ else
     unitconfig()
     LowCPUModeT()
     LAGGYconfig()
-    reFarmconfig()
     credits()
     SnipeMerchant()
     Webhooksec()
@@ -5652,98 +5647,6 @@ function PlaceUnitsTEST(map,name,_uuid,unit)
     end
 --end
 
---test reset unit config
-function reunitcon()
-    print("reset unit config ?")
-    if Settings.U1_Wave then
-        Settings.U1_Wave = 1 end
-    if Settings.U2_Wave then
-        Settings.U2_Wave = 1 end
-    if Settings.U3_Wave then
-        Settings.U3_Wave = 1 end
-    if Settings.U4_Wave then
-        Settings.U4_Wave = 1 end
-    if Settings.U5_Wave then
-        Settings.U5_Wave = 1 end
-    if Settings.U6_Wave then
-        Settings.U6_Wave = 1 end
-    if Settings.U1_TotalAmmount then
-        Settings.U1_TotalAmmount = 6 end
-    if Settings.U2_TotalAmmount then
-        Settings.U2_TotalAmmount = 6 end
-    if Settings.U3_TotalAmmount then
-        Settings.U3_TotalAmmount = 6 end
-    if Settings.U4_TotalAmmount then
-        Settings.U4_TotalAmmount = 6 end
-    if Settings.U5_TotalAmmount then
-        Settings.U5_TotalAmmount = 6 end
-    if Settings.U6_TotalAmmount then
-        Settings.U6_TotalAmmount = 6 end
-    if Settings.U1_UpgWave then
-        Settings.U1_UpgWave = 1 end
-    if Settings.U2_UpgWave then
-        Settings.U2_UpgWave = 1 end
-    if Settings.U3_UpgWave then
-        Settings.U3_UpgWave = 1 end
-    if Settings.U4_UpgWave then
-        Settings.U4_UpgWave = 1 end
-    if Settings.U5_UpgWave then
-        Settings.U5_UpgWave = 1 end
-    if Settings.U6_UpgWave then
-        Settings.U6_UpgWave = 1 end
-    if Settings.U1_UpgCap then
-        Settings.U1_UpgCap = 99 end
-    if Settings.U2_UpgCap then
-        Settings.U2_UpgCap = 99 end
-    if Settings.U3_UpgCap then
-        Settings.U3_UpgCap = 99 end
-    if Settings.U4_UpgCap then
-        Settings.U4_UpgCap = 99 end
-    if Settings.U5_UpgCap then
-        Settings.U5_UpgCap = 99 end
-    if Settings.U6_UpgCap then
-        Settings.U6_UpgCap = 99 end
-    if Settings.U1_SellWave then
-        Settings.U1_SellWave = 99 end
-    if Settings.U2_SellWave then
-        Settings.U2_SellWave = 99 end
-    if Settings.U3_SellWave then
-        Settings.U3_SellWave = 99 end
-    if Settings.U4_SellWave then
-        Settings.U4_SellWave = 99 end
-    if Settings.U5_SellWave then
-        Settings.U5_SellWave = 99 end
-    if Settings.U6_SellWave then
-        Settings.U6_SellWave = 99 end
-    if Settings.U1_UpgPro then
-        Settings.U1_UpgPro = 1 end
-    if Settings.U2_UpgPro then
-        Settings.U2_UpgPro = 1 end
-    if Settings.U3_UpgPro then
-        Settings.U3_UpgPro = 1 end
-    if Settings.U4_UpgPro then
-        Settings.U4_UpgPro = 1 end
-    if Settings.U5_UpgPro then
-        Settings.U5_UpgPro = 1 end
-    if Settings.U6_UpgPro then
-        Settings.U6_UpgPro = 1 end
-    if Settings.U1_UnPlace then
-        Settings.U1_UnPlace = 1 end
-    if Settings.U2_UnPlace then
-        Settings.U2_UnPlace = 1 end
-    if Settings.U3_UnPlace then
-        Settings.U3_UnPlace = 1 end
-    if Settings.U4_UnPlace then
-        Settings.U4_UnPlace = 1 end
-    if Settings.U5_UnPlace then
-        Settings.U5_UnPlace = 1 end
-    if Settings.U6_UnPlace then
-        Settings.U6_UnPlace = 1 end
-  
-end
-if Settings.reunitc then
-    reunitcon()
-end
 --fix sell and place spam
 
 function PlaceUnits(map)
