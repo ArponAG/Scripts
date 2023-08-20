@@ -176,14 +176,14 @@ function webhook()
         GetLevelData = game.workspace._MAP_CONFIG:WaitForChild("GetLevelData"):InvokeServer()
         name = GetLevelData.id or GetLevelData.world or GetLevelData.map
         world = GetLevelData.name
+        MapDiff = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Difficulty.Text
+        if MapDiff == nil then MapDiff = " ไม่มี Difficulty " end
+        if MapDiff == "" then MapDiff = " ไม่มี Difficulty " end
         --New Mapname
         local Loader = require(game.ReplicatedStorage.src.Loader)
         local Maps = Loader.load_data(script, "Maps")
         local v100 = Maps[Loader.LevelData.map]
         MapsNameTEST = v100.name or GetLevelData.name
-        MapDiff = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Difficulty.Text
-        if MapDiff == nil then MapDiff = " Not Have Difficulty " end
-        if MapDiff == "" then MapDiff = " Not Have Difficulty " end
         -------------------------------
 
         cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
