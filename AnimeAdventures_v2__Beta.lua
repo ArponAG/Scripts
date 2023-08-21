@@ -176,11 +176,11 @@ function webhook()
         --portaldiff test
         for i,v in pairs(get_inventory_items_unique_items()) do
             if string.find(v['item_id'],"portal") then
-                if v['item_id'] == Settings.SelectedSellPortals then
+                --if v['item_id'] == Settings.SelectedSellPortals then
 
                     PortalsDiff = v["_unique_item_data"]["_unique_portal_data"]["difficulty_scale"]
 
-                end
+                --end
             end
         end
         ---------------------------------
