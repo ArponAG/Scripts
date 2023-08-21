@@ -233,11 +233,11 @@ function webhook()
 
         local v5 = require(game.ReplicatedStorage.src.Loader)
         local poratltierS = v5.LevelData._portal_depth
-        if poratltierS == nil then poratltierS = " Not Have Tier " end
+        if poratltierS == nil then poratltierS = " Not a Portal " end
 
         local v5 = require(game.ReplicatedStorage.src.Loader)
         local poratChallengeS = v5.LevelData._challenge
-        if poratChallengeS == nil then poratChallengeS = " Not Have Challenge " end
+        if poratChallengeS == nil then poratChallengeS = " Not a Portal " end
         if poratChallengeS == "double_cost" then poratChallengeS = "High Cost" end
         if poratChallengeS == "short_range" then poratChallengeS = "Short Range" end
         if poratChallengeS == "fast_enemies" then poratChallengeS = "Fast Enemies" end
