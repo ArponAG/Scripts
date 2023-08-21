@@ -8633,7 +8633,7 @@ function checkInterNet()
     while task.wait(5) do
         game.CoreGui.RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(a)
             if a.Name == 'ErrorPrompt' then
-                task.wait(10)
+                task.wait(30)
                 warn("Trying to Reconnect")
                 TPReturner()
             end
