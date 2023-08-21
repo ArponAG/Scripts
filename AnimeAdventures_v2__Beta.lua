@@ -177,11 +177,11 @@ function webhook()
         for i,v in pairs(get_inventory_items_unique_items()) do
             if string.find(v['item_id'],"portal") then
                 --if v['item_id'] == Settings.SelectedSellPortals then
-                if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedSellTier then
+                --if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedSellTier then
 
                     PortalsDiff = v["_unique_item_data"]["_unique_portal_data"]["difficulty_scale"]
 
-                end
+                --end
             end
         end
         ---------------------------------
@@ -197,7 +197,7 @@ function webhook()
         MapDiff2 = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Difficulty.Text
         MapDiff3 = MapDiff2 or PortalsDiff
         --if GetLevelData.name == "Summer Hunt" then MapDiff3 = PortalsDiff end
-        if GetLevelData.name == "Summer Hunt" then MapDiff3 = PortalsDiff end
+        if GetLevelData.name == "Summer Hunt" then MapDiff3 = "Normal [Portas Difficulty]" end
         -------------------------------
     
         cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
