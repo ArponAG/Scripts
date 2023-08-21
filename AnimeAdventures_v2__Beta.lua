@@ -193,11 +193,13 @@ function webhook()
         local Maps = Loader.load_data(script, "Maps")
         local v100 = Maps[Loader.LevelData.map]
         MapsNameTEST = v100.name or GetLevelData.name
+        
         --Difficulty
+        PortalsDiff2 = tostring(comma_value(PortalsDiff))
         MapDiff2 = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Difficulty.Text
-        MapDiff3 = MapDiff2 or PortalsDiff
-        --if GetLevelData.name == "Summer Hunt" then MapDiff3 = PortalsDiff end
-        if GetLevelData.name == "Summer Hunt" then MapDiff3 = "Normal [Portas Difficulty]" end
+        MapDiff3 = MapDiff2
+        if GetLevelData.name == "Summer Hunt" then MapDiff3 = PortalsDiff2 end
+        --if GetLevelData.name == "Summer Hunt" then MapDiff3 = "[ Portal Difficulty ]" end
         -------------------------------
     
         cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
