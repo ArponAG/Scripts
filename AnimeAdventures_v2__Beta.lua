@@ -1,5 +1,5 @@
 --updatefix
-local version = "v2-16.0.0"
+local version = "16.0.0"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -193,13 +193,10 @@ function webhook()
         local Maps = Loader.load_data(script, "Maps")
         local v100 = Maps[Loader.LevelData.map]
         MapsNameTEST = v100.name or GetLevelData.name
-        
         --Difficulty
-        PortalsDiff2 = tostring(comma_value(PortalsDiff))
         MapDiff2 = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Difficulty.Text
         MapDiff3 = MapDiff2
-        if GetLevelData.name == "Summer Hunt" then MapDiff3 = PortalsDiff2 end
-        --if GetLevelData.name == "Summer Hunt" then MapDiff3 = "[ Portal Difficulty ]" end
+        if GetLevelData.name == "Summer Hunt" then MapDiff3 = " [ Default ] Is a Portal " end
         -------------------------------
     
         cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
@@ -733,7 +730,7 @@ local dir = "Anime_Adventures/"..game.Players.LocalPlayer.Name
 local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylibTEST"))()
 --local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
-local Window = Uilib.new(true, "[Arpon V2] Anime Adventures "..version.." - "..exec)
+local Window = Uilib.new(true, "[Arpon_V2] Anime Adventures UPD "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.P)
 
 local Home = Window:Category("🏠 Home")
