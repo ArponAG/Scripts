@@ -5063,7 +5063,7 @@ coroutine.resume(coroutine.create(function()
                 game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(args))
                 warn("Pick Portal Replay...") 
             cata = Settings.WorldCategory; 
-            elseif Settings.AutoNext and cata == "Story Worlds" then
+            elseif Settings.AutoNext and cata == "Story Worlds" or cata == "Legend Stages" or cata == "Raid Worlds" or cata == "Dungeon" or cata == "Portals" or cata == "Secret Portals" then
                 local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
                 local a={[1]="next_story"} game:GetService("ReplicatedStorage").endpoints.client_to_server.set_game_finished_vote:InvokeServer(unpack(a))
                 warn("Next Story...")
