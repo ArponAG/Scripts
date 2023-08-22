@@ -8628,17 +8628,26 @@ end
 
 -- Start of Check Connection
 function checkInterNet()
-    warn("Auto Reconnect Loaded")
+    warn("Auto Reconnect Enable")
+    warn("Auto Anti-AFK Enable")
     while task.wait(5) do
+        local vu = game:GetService("VirtualUser")
+        game:GetService("Players").LocalPlayer.Idled:connect(function()
+            vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            wait(0.5)
+            vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            wait(0.5)
+            vu:CaptureController()vu:ClickButton2(Vector2.new())
+        end)
         game.CoreGui.RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(a)
             if a.Name == 'ErrorPrompt' then
                 task.wait(30)
                 warn("Trying to Reconnect")
                 TPReturner()
-            end
-        end)
+                end
+            end)
+        end
     end
-end
 -- End of Check Connection
 
 --placeany
