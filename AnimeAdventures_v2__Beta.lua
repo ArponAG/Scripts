@@ -2998,12 +2998,12 @@ local function LowCPUModeT()
         end
     end)
     
-    LowCPU2:Cheat("Checkbox"," Enable Boost FPS Mode", function(bool)
-        print(Settings.fpsboost)
+    LowCPU2:Cheat("Checkbox","Enable Boost FPS Mode ", function(bool)
+        print(bool)
         Settings.fpsboost = bool
         saveSettings()
         FPSBOOST()
-    end,{enabled = Settings.fpsboos})
+    end,{enabled = Settings.fpsboost })
     
     LowCPU2:Cheat("Button","Activate Boost FPS Mode ", function()
         FPSBOOST()
