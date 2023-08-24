@@ -4417,6 +4417,22 @@ function autoabilityfunc()
                                 end
                             end
 
+                            if v._stats.id.Value == "stain_evolved" then
+                                if v._stats.state.Value == "attack" then
+                                    wait(1)
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill stain")
+                                end
+                            end
+
+                            if v._stats.id.Value == "ainz_evolved" then
+                                if v._stats.state.Value == "attack" then
+                                    wait(10)
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Ainz")
+                                end
+                            end
+
                             
 
                         end
@@ -8649,7 +8665,7 @@ function checkInterNet()
         end)
         game.CoreGui.RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(a)
             if a.Name == 'ErrorPrompt' then
-                task.wait(30)
+                task.wait(60)
                 warn("Trying to Reconnect")
                 TPReturner()
                 end
