@@ -2982,6 +2982,40 @@ end
 -------------- LOWW CPU Config --------------
 ---------------------------------------------
 local function LowCPUModeT()
+
+    --Start_FPS_Cap
+FPS_CAP = {}
+for i = 1,60 do
+    table.insert(FPS_CAP,i)
+end
+Settings.FPSCAPNum = Settings.FPSCAPNum or 15
+LowCPU2:Cheat("Dropdown", "🎚️ Select FPS Cap ",function(value)
+    warn("Change to : "..value)
+    Settings.FPSCAPNum = value
+    saveSettings()
+end, {options = FPS_CAP, default = Settings.FPSCAPNum})
+
+
+LowCPU2:Cheat("Checkbox","Enable FPS CAP ", function(bool)
+	print(bool)
+	Settings.FPSCapMode = bool
+	saveSettings()
+end,{enabled = Settings.FPSCapMode})
+task.spawn(function()
+
+    while task.wait() do
+    if Settings.FPSCapMode then
+        local FPS = tonumber(Settings.FPSCAPNum)
+        local clock = tick()
+
+            while clock + 1 / FPS > tick() do end
+            wait()
+            clock = tick()
+        end
+    end
+end)
+--End_FPS_Cap
+
     LowCPU2:Cheat("Checkbox","Enable Low CPU Mode ", function(bool)
         print(bool)
         Settings.lowCpuMode = bool
