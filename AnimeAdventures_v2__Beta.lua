@@ -4521,90 +4521,78 @@ end
 -- End  Auto Abilities Function
 
     -- Start of Auto Global Cooldown Abilities Function
-getgenv().autoGCDabilityerr = false
-function autoabilityGCDfunc()
-    local player = game.Players.LocalPlayer.Name
-    if Settings.AutoGCDAbilities then
-        repeat task.wait() until Workspace:WaitForChild("_UNITS")
-        local success, errGCD = pcall(function()
-            for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
-                if v:FindFirstChild("_stats") then
-                    
-                    -- Look for Threat then execute Puchi Skill
-                    if v._stats:FindFirstChild("threat") then
-                        if v._stats.threat.Value > 0 then
-                            UsePuchiSkill()
-                            UseErenSkill()
-                        end
+    getgenv().autoGCDabilityerr = false
+    function autoabilityGCDfunc()
+        local player = game.Players.LocalPlayer.Name
+        if Settings.AutoGCDAbilities then
+            repeat task.wait() until Workspace:WaitForChild("_UNITS")
+            local success, errGCD = pcall(function()
+                for i, v in ipairs(Workspace["_UNITS"]:GetChildren()) do
+                    if v:FindFirstChild("_stats") then
                         
-                    -- Search Player Units
-    				elseif v._stats:FindFirstChild("player") then
-    					if tostring(v._stats.player.Value) == player then
+                        -- Look for Threat then execute Puchi Skill
+                        if v._stats:FindFirstChild("threat") then
+                            if v._stats.threat.Value > 0 then
+                                UsePuchiSkill()
+                                UseErenSkill()
+                            end
+                            
+                        -- Search Player Units
+                        elseif v._stats:FindFirstChild("player") then
+                            if tostring(v._stats.player.Value) == player then
     
-                            -- Search Player Units
-    				elseif v._stats:FindFirstChild("player") then
-    					if tostring(v._stats.player.Value) == player then
-
-
-                            if v._stats.id.Value ~= "pucci_heaven" then
-                                if v._stats.state.Value ~= "attack" then
-                                    if v._stats.active_attack.Value ~= "nil" then
-                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+    
+                                if v._stats.id.Value ~= "pucci_heaven" then
+                                    if v._stats.state.Value ~= "attack" then
+                                        if v._stats.active_attack.Value ~= "nil" then
+                                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    end
                                 end
                             end
-                        end
-
-                        if v._stats.id.Value ~= "erwin" then
-                                if v._stats.state.Value ~= "attack" then
-                                    if v._stats.active_attack.Value ~= "nil" then
-                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+    
+                            if v._stats.id.Value ~= "erwin" then
+                                    if v._stats.state.Value ~= "attack" then
+                                        if v._stats.active_attack.Value ~= "nil" then
+                                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    end
                                 end
                             end
-                        end
-
-                        if v._stats.id.Value ~= "wendy" then
-                                if v._stats.state.Value ~= "attack" then
-                                    if v._stats.active_attack.Value ~= "nil" then
-                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+    
+                            if v._stats.id.Value ~= "wendy" then
+                                    if v._stats.state.Value ~= "attack" then
+                                        if v._stats.active_attack.Value ~= "nil" then
+                                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    end
                                 end
                             end
-                        end
-
-                        if v._stats.id.Value ~= "leafa" then
-                                if v._stats.state.Value ~= "attack" then
-                                    if v._stats.active_attack.Value ~= "nil" then
-                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+    
+                            if v._stats.id.Value ~= "leafa" then
+                                    if v._stats.state.Value ~= "attack" then
+                                        if v._stats.active_attack.Value ~= "nil" then
+                                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    end
                                 end
                             end
-                        end
-
-                        if v._stats.id.Value ~= "eren_final" then
-                                if v._stats.state.Value ~= "attack" then
-                                    if v._stats.active_attack.Value ~= "nil" then
-                                        game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+    
+                            if v._stats.id.Value ~= "eren_final" then
+                                    if v._stats.state.Value ~= "attack" then
+                                        if v._stats.active_attack.Value ~= "nil" then
+                                            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    end
                                 end
                             end
-                        end
-
-                        if v._stats.id.Value ~= "eren_final" then
-                            if v._stats.state.Value ~= "attack" then
-                                if v._stats.active_attack.Value ~= "nil" then
+    
+                            if v._stats.id.Value == "homura_evolved" then
+                                if v._stats.state.Value ~= "attack" then
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                end
                             end
-                        end
-                    end
-
-                        if v._stats.id.Value == "homura_evolved" then
-                            if v._stats.state.Value ~= "attack" then
-                                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                            
                             end
-                        end
-                        
                         end
                     end
                 end
-            end
-        end)
+            end)
         
         if errGCD then
             warn("Can't use Ability")
