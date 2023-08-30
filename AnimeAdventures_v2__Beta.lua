@@ -4497,7 +4497,7 @@ function autoabilityfunc()
 
                             if v._stats.id.Value == "ainz_evolved" then
                                 if v._stats.state.Value == "attack" then
-                                    wait(10)
+                                    wait(5)
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                                     warn("Use Skill Ainz")
                                 end
@@ -4505,9 +4505,17 @@ function autoabilityfunc()
 
                             if v._stats.id.Value == "roger_evolved" then
                                 if v._stats.state.Value == "attack" then
-                                    wait(10)
+                                    wait(1)
                                     game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
                                     warn("Use Skill Roger")
+                                end
+                            end
+
+                            if v._stats.id.Value ~= "eren_final" then
+                                if v._stats.state.Value == "attack" then
+                                    wait(1)
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill All Unit")
                                 end
                             end
                             
