@@ -4503,6 +4503,13 @@ function autoabilityfunc()
                                 end
                             end
 
+                            if v._stats.id.Value == "roger_evolved" then
+                                if v._stats.state.Value == "attack" then
+                                    wait(10)
+                                    game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Roger")
+                                end
+                            end
                             
 
                         end
