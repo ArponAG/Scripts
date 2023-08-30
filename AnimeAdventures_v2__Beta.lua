@@ -1,5 +1,5 @@
 --updatefix
-local version = "16.0.0-1x"
+local version = "16.0.0-1c"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -2983,39 +2983,34 @@ end
 ---------------------------------------------
 local function LowCPUModeT()
 
-    --Start_FPS_Cap
-FPS_CAP = {}
-for i = 1,60 do
-    table.insert(FPS_CAP,i)
-end
-Settings.FPSCAPNum = Settings.FPSCAPNum or 15
-LowCPU2:Cheat("Dropdown", "🎚️ Select FPS Cap ",function(value)
-    warn("Change to : "..value)
-    Settings.FPSCAPNum = value
-    saveSettings()
-end, {options = FPS_CAP, default = Settings.FPSCAPNum})
-
-
-LowCPU2:Cheat("Checkbox","Enable FPS CAP ", function(bool)
-	print(bool)
-	Settings.FPSCapMode = bool
-	saveSettings()
-end,{enabled = Settings.FPSCapMode})
-task.spawn(function()
-
-    while task.wait() do
-    if Settings.FPSCapMode then
-        local FPS = tonumber(Settings.FPSCAPNum)
-        local clock = tick()
-
-            while clock + 1 / FPS > tick() do end
-            wait()
-            clock = tick()
-        end
+    --New Fix isrbxactive
+    local IS_ROBLOX_ACTIVE = false
+    local UIS = game:GetService("UserInputService")
+    UIS.WindowFocused:Connect(function()
+        IS_ROBLOX_ACTIVE = true
+    end)
+    UIS.WindowFocusReleased:Connect(function()
+        IS_ROBLOX_ACTIVE = false
+    end)
+    function isrbxactive()
+        return IS_ROBLOX_ACTIVE
     end
-end)
---End_FPS_Cap
-
+    getgenv().isrbxactive = newcclosure(isrbxactive)
+    --End fix isrbxactive
+    
+    --Start_FPS_Cap
+    FPS_CAP = {}
+    for i = 1,60 do
+        table.insert(FPS_CAP,i)
+    end
+    Settings.FPSCAPNum = Settings.FPSCAPNum or 15
+    LowCPU2:Cheat("Dropdown", "🎚️ Select FPS Cap ",function(value)
+        warn("Change to : "..value)
+        Settings.FPSCAPNum = value
+        saveSettings()
+    end, {options = FPS_CAP, default = Settings.FPSCAPNum})
+    
+    
     LowCPU2:Cheat("Checkbox","Enable Low CPU Mode ", function(bool)
         print(bool)
         Settings.lowCpuMode = bool
@@ -3024,15 +3019,52 @@ end)
     
     task.spawn(function()
         while task.wait() do
-            if isrbxactive() ~= true and Settings.lowCpuMode then
-                setfpscap(30)
+            if IS_ROBLOX_ACTIVE ~= true and Settings.lowCpuMode then
+                setfpscap(tonumber(Settings.FPSCAPNum))
                 game:GetService("RunService"):Set3dRenderingEnabled(false)
+                isrbxactive(true)
             else
-                setfpscap(1000)
+                setfpscap(240)
                 game:GetService("RunService"):Set3dRenderingEnabled(true)
+                isrbxactive(false)
             end
         end
     end)
+    
+    
+    --New Fix isrbxactive
+    local IS_ROBLOX_ACTIVE2 = false
+    local UIS = game:GetService("UserInputService")
+    UIS.WindowFocused:Connect(function()
+        IS_ROBLOX_ACTIVE2 = true
+    end)
+    UIS.WindowFocusReleased:Connect(function()
+        IS_ROBLOX_ACTIVE2 = false
+    end)
+    function isrbxactive2()
+        return IS_ROBLOX_ACTIVE2
+    end
+    getgenv().isrbxactive2 = newcclosure(isrbxactive2)
+    --End fix isrbxactive
+    
+    LowCPU2:Cheat("Checkbox","Enable FPS Cap ", function(bool)
+        print(bool)
+        Settings.lowCpuMode2 = bool
+        saveSettings()
+    end,{enabled = Settings.lowCpuMode2})
+    
+    task.spawn(function()
+        while task.wait() do
+            if Settings.lowCpuMode2 then
+                setfpscap(tonumber(Settings.FPSCAPNum))
+                isrbxactive2(true)
+            --else
+               -- setfpscap(240)
+                --isrbxactive2(true)
+            end
+        end
+    end)
+    --End_FPS_Cap
     
     LowCPU2:Cheat("Checkbox","Enable Boost FPS Mode ", function(bool)
         print(bool)
@@ -3044,7 +3076,9 @@ end)
     LowCPU2:Cheat("Button","Activate Boost FPS Mode ", function()
         FPSBOOST()
     end)
-end
+    
+    
+    end
 
 ---------------------------------------------
 -------------- LAGGY Config -----------------
