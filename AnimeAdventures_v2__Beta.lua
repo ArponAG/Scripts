@@ -4451,6 +4451,7 @@ function autoabilityfunc()
                         if v._stats.threat.Value > 0 then
                             UsePuchiSkill()
                             UseErenSkill()
+                            UseDioOHSkill()
                         end
                         
 
@@ -4535,6 +4536,7 @@ end
                             if v._stats.threat.Value > 0 then
                                 UsePuchiSkill()
                                 UseErenSkill()
+                                UseDioOHSkill()
                             end
                             
                         -- Search Player Units
@@ -4680,6 +4682,48 @@ function UseErenSkill()
 	end
 end
 -- End  Eren Skill Function
+
+-- Start  Jio Hevent Skill Function
+function UseDioOHSkill()
+    local player = game.Players.LocalPlayer.Name
+    local LocalPlayer = game.Players.LocalPlayer
+	for i, v in ipairs(Workspace["_UNITS"]:getChildren()) do
+		if v:FindFirstChild("_stats") then
+			if v._stats:FindFirstChild("player") then
+				if tostring(v._stats.player.Value) == player then
+					if v._stats.id.Value == "dio_heaven" then       
+					    if v._stats.state.Value == "attack" then
+					    
+					        -- Check Infinite 
+						    if GLD()._gamemode == "infinite" then
+						        if GetWaveNumber() % 10 == 0 then
+                                    wait(10)
+						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Dio heaven")
+						        end
+						    -- Check Raid
+					        elseif GLD()._gamemode == "raid" then
+					            if GetWaveNumber() == 15 or 20 then
+                                    wait(10)
+						            game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Dio heaven")
+						        end
+						    -- Check Story or Infinite Tower
+					        elseif GLD()._gamemode == "story" or "infinite_tower" then
+					            if GetWaveNumber() == 15 then
+                                    wait(5)
+					                game:GetService("ReplicatedStorage").endpoints.client_to_server.use_active_attack:InvokeServer(v)
+                                    warn("Use Skill Dio heaven")
+					            end
+					        end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+-- End  Jio Hevent Skill Function
 
 -- Start  Auto Buff 100 Function
 --Erwin
