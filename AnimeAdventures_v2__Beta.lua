@@ -200,6 +200,8 @@ function webhook()
         if poratltierS ~= nil or poratltierS ~= " Not a Portal " then MapDiff3 = " Hard " end
         if poratltierS == nil or poratltierS == " Not a Portal " then MapDiff3 = MapDiff2 end
         if poratltierS == nil or poratltierS == " Not a Portal " then MapDiff3 = MapDiff end
+        if poratChallengeS ~= nil or poratChallengeS ~= " Not a Portal " then MapDiff3 = " Hard " end
+        if poratChallengeS ~= " Not a Portal " then MapDiff3 = " Hard " end
         -------------------------------
     
         cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
