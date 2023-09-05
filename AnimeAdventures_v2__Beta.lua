@@ -1,5 +1,5 @@
 --updatefix
-local version = "16.0.0-1x"
+local version = "16.0.0-1xx"
 
 ---// Loading Section \\---
 repeat  task.wait() until game:IsLoaded()
@@ -197,11 +197,11 @@ function webhook()
         MapDiff2 = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Difficulty.Text
         MapDiff3 = MapDiff2
         --if GetLevelData.name == "Summer Hunt" then MapDiff3 = " [ Default ] Is a Portal " end
-        if poratltierS ~= nil or poratltierS ~= " Not a Portal " then MapDiff3 = " Hard " end
-        if poratltierS == nil or poratltierS == " Not a Portal " then MapDiff3 = MapDiff2 end
-        if poratltierS == nil or poratltierS == " Not a Portal " then MapDiff3 = MapDiff end
-        if poratChallengeS ~= nil or poratChallengeS ~= " Not a Portal " then MapDiff3 = " Hard " end
-        if poratChallengeS ~= " Not a Portal " then MapDiff3 = " Hard " end
+        if poratltierS ~= nil or poratltierS ~= " Not have Tier " then MapDiff3 = " Hard " end
+        if poratltierS == nil or poratltierS == " Not have Tier " then MapDiff3 = MapDiff2 end
+        if poratltierS == nil or poratltierS == " Not have Tier " then MapDiff3 = MapDiff end
+        if poratChallengeS ~= nil or poratChallengeS ~= " Not have Challenge " then MapDiff3 = " Hard " end
+        if poratChallengeS ~= " Not have Challenge " then MapDiff3 = " Hard " end
         -------------------------------
     
         cwaves = game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Holder.Middle.WavesCompleted.Text
@@ -237,11 +237,11 @@ function webhook()
 
         local v5 = require(game.ReplicatedStorage.src.Loader)
         local poratltierS = v5.LevelData._portal_depth
-        if poratltierS == nil then poratltierS = " Not a Portal " end
+        if poratltierS == nil then poratltierS = " Not have Tier " end
 
         local v5 = require(game.ReplicatedStorage.src.Loader)
         local poratChallengeS = v5.LevelData._challenge
-        if poratChallengeS == nil then poratChallengeS = " Not a Portal " end
+        if poratChallengeS == nil then poratChallengeS = " Not have Challenge " end
         if poratChallengeS == "double_cost" then poratChallengeS = "High Cost" end
         if poratChallengeS == "short_range" then poratChallengeS = "Short Range" end
         if poratChallengeS == "fast_enemies" then poratChallengeS = "Fast Enemies" end
@@ -4163,8 +4163,8 @@ function GetPlayerPortalUse(level)
                 Settings.SelectedPortalsName3 = "7ds_infinite" end 
 
             if v["_unique_item_data"]["_unique_portal_data"]["level_id"] ~= Settings.SelectedPortalsName1
-            or v["_unique_item_data"]["_unique_portal_data"]["level_id"] ~= Settings.SelectedPortalsName2
-            or v["_unique_item_data"]["_unique_portal_data"]["level_id"] ~= Settings.SelectedPortalsName3 then
+            and v["_unique_item_data"]["_unique_portal_data"]["level_id"] ~= Settings.SelectedPortalsName2
+            and v["_unique_item_data"]["_unique_portal_data"]["level_id"] ~= Settings.SelectedPortalsName3 then
             if v["_unique_item_data"]["_unique_portal_data"]["portal_depth"] == Settings.SelectedTier then
             if v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge 
             and v["_unique_item_data"]["_unique_portal_data"]["challenge"] ~= Settings.SelectedChallenge2
